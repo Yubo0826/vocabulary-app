@@ -1,0 +1,16 @@
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: auto;
+  font-size: 0.95rem;
+  min-width: 0;
+}
+
+.account {
+  color: var(--muted);
+  max-width: 10em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

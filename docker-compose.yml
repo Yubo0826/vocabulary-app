@@ -1,0 +1,17 @@
+# 本機開發用 Postgres 16（5432/5433 已被其他服務占用，改用 5434）
+services:
+  db:
+    image: postgres:16
+    container_name: vocabulary-app-pg
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: vocab
+      POSTGRES_PASSWORD: vocab
+      POSTGRES_DB: vocab
+    ports:
+      - "5434:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:

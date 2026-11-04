@@ -1,0 +1,104 @@
+/* 共用的表單與按鈕樣式 */
+
+.button,
+.buttonPrimary,
+.buttonDanger,
+.buttonGhost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 40px;
+  padding: 0 16px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  cursor: pointer;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.button:hover,
+.buttonGhost:hover {
+  background: var(--accent-soft);
+  text-decoration: none;
+}
+
+.buttonPrimary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--background);
+  font-weight: 600;
+}
+
+.buttonPrimary:hover {
+  filter: brightness(1.08);
+  text-decoration: none;
+}
+
+.buttonDanger {
+  color: #b3261e;
+  border-color: currentColor;
+}
+
+.buttonGhost {
+  border-color: transparent;
+  background: transparent;
+  color: var(--accent);
+}
+
+.button:disabled,
+.buttonPrimary:disabled,
+.buttonDanger:disabled,
+.buttonGhost:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  font-size: 1rem;
+  outline: none;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+.textarea {
+  min-height: 72px;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.error {
+  color: #b3261e;
+  font-size: 0.9rem;
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 16px;
+}

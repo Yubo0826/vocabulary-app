@@ -1,0 +1,47 @@
+.header {
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.headerInner,
+.main,
+.footerInner {
+  width: 100%;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.headerInner {
+  display: flex;
+  align-items: center;
+  height: 52px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 0.04em;
+  color: var(--foreground);
+}
+
+.logo:hover {
+  text-decoration: none;
+}
+
+.main {
+  flex: 1;
+  padding-top: 24px;
+  padding-bottom: 48px;
+}
+
+.footer {
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.footerInner {
+  padding-top: 16px;
+  padding-bottom: 24px;
+}

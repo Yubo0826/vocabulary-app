@@ -1,0 +1,41 @@
+{
+  "name": "vocabulary-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "typecheck": "next typegen && tsc --noEmit",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "import:ecdict": "tsx scripts/import/ecdict.ts",
+    "import:tatoeba": "tsx scripts/import/tatoeba.ts",
+    "import:stats": "tsx scripts/import/stats.ts",
+    "import:wordnet": "tsx scripts/import/wordnet.ts",
+    "import:all": "npm run import:ecdict && npm run import:wordnet && npm run import:tatoeba && npm run import:stats",
+    "test": "tsx --test tests/*.test.ts"
+  },
+  "dependencies": {
+    "better-auth": "^1.7.16",
+    "csv-parse": "^7.0.3",
+    "drizzle-orm": "^0.45.4",
+    "next": "16.4.5",
+    "opencc-js": "^1.4.2",
+    "pg": "^8.23.1",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/pg": "^8.23.1",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "drizzle-kit": "^0.31.11",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.5",
+    "tsx": "^4.23.15",
+    "typescript": "^5"
+  }
+}
