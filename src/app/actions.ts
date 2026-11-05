@@ -45,22 +45,23 @@ export async function saveWordAction(headword: unknown): Promise<ActionResult> {
   });
 }
 
+/** 收藏並設定這個字屬於哪些單字本（沒勾的會移出） */
+export async function saveToWordbooksAction(headword: unknown, wordbookIds: unknown): Promise<ActionResult> {
+  return run(async (userId) => {
+    if (!Array.isArray(wordbookIds)) throw new data.ValidationError("單字本格式錯誤");
+    await data.saveToWordbooks(userId, str(headword, "headword"), wordbookIds.map((id) => uuid(id, "wordbook")));
+  });
+}
+
 export async function unsaveWordAction(headword: unknown): Promise<ActionResult> {
   return run((userId) => data.unsaveWord(userId, str(headword, "headword")));
 }
 
-export async function updateNoteAction(headword: unknown, note: unknown): Promise<ActionResult> {
-  return run((userId) => data.updateNote(userId, str(headword, "headword"), note == null ? null : str(note, "筆記")));
-}
-
-export async function setWordbookMembershipAction(
-  wordbookId: unknown,
-  headword: unknown,
-  member: unknown,
-): Promise<ActionResult> {
-  return run((userId) =>
-    data.setWordbookMembership(userId, uuid(wordbookId, "wordbook"), str(headword, "headword"), member === true),
-  );
+/** 儲存筆記；這個字還沒收藏時會一併收藏（並建立字卡） */
+export async function saveNoteAction(headword: unknown, note: unknown): Promise<ActionResult> {
+  return run(async (userId) => {
+    await data.saveWord(userId, str(headword, "headword"), note == null ? null : str(note, "筆記"));
+  });
 }
 
 export async function createWordbookAction(name: unknown, description?: unknown): Promise<ActionResult<{ id: string }>> {

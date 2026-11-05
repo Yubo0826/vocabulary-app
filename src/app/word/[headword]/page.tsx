@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { Suspense } from "react";
 import { ExampleSource, highlight } from "@/components/example-text";
-import { SavePanel } from "@/components/save-panel";
+import { NoteButton, NotePreview, SaveButton } from "@/components/save-panel";
 import { AccentToggle, SpeakButton } from "@/components/speech";
 import { Badge } from "@/components/ui/badge";
 import { findLemma, getWord, type WordDetail } from "@/lib/dictionary";
@@ -62,6 +62,12 @@ function WordView({ word }: { word: WordDetail }) {
         <div className="flex items-center gap-3">
           <h1 className="text-[clamp(2rem,8vw,2.6rem)] leading-tight font-bold wrap-anywhere">{entry.display}</h1>
           <SpeakButton text={entry.display} />
+          <div className="ml-auto flex shrink-0 items-center">
+            <Suspense fallback={null}>
+              <SaveButton headword={entry.headword} />
+              <NoteButton headword={entry.headword} />
+            </Suspense>
+          </div>
         </div>
         <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
           {entry.phonetic && <span className="font-mono text-muted-foreground">/{entry.phonetic}/</span>}
@@ -82,7 +88,7 @@ function WordView({ word }: { word: WordDetail }) {
           </p>
         )}
         <Suspense fallback={null}>
-          <SavePanel headword={entry.headword} />
+          <NotePreview headword={entry.headword} />
         </Suspense>
       </header>
 

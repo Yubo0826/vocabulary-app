@@ -6,6 +6,7 @@ import { listSavedWords, listWordbooks, type SavedSort } from "@/lib/user-data";
 import { isUuid } from "@/lib/uuid";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { noteToPlainText } from "@/lib/note";
 
 export const metadata = { title: "我的單字" };
 
@@ -98,7 +99,7 @@ async function SavedList({ bookParam, sort }: { bookParam: string | null; sort: 
                   <span className="shrink-0 text-xs text-muted-foreground">{dateFormat.format(w.savedAt)}</span>
                 </span>
                 {w.gloss && <span className="truncate text-sm text-muted-foreground">{w.gloss}</span>}
-                {w.note && <span className="line-clamp-2 text-sm wrap-anywhere">📝 {w.note}</span>}
+                {w.note && <span className="line-clamp-2 text-sm wrap-anywhere">📝 {noteToPlainText(w.note)}</span>}
               </Link>
             </li>
           ))}

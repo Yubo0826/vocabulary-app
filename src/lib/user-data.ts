@@ -6,7 +6,7 @@
  * - 每個查詢都以 userId 過濾；操作別人的資料一律視為「找不到」（NotFoundError），不透露資料是否存在。
  * - 不做硬刪除：取消收藏、刪除單字本都是設定 deleted_at（軟刪除）。
  */
-import { and, asc, desc, eq, isNotNull, isNull, sql } from "drizzle-orm";
+import { and, asc, desc, eq, inArray, isNotNull, isNull, notInArray, sql } from "drizzle-orm";
 import { db } from "@/db";
 import { cards, definitions, entries, savedWords, wordbookItems, wordbooks } from "@/db/schema";
 import { normalizeHeadword } from "./headword";
@@ -58,36 +58,82 @@ const activeWordbook = (userId: string) => and(eq(wordbooks.userId, userId), isN
 export async function saveWord(userId: string, rawHeadword: string, note?: string | null) {
   const headword = normalizeHeadword(rawHeadword);
   const cleanedNote = note === undefined ? undefined : cleanNote(note);
+  return db.transaction((tx) => saveWordIn(tx, userId, headword, cleanedNote));
+}
 
-  return db.transaction(async (tx) => {
-    const [entry] = await tx.select({ h: entries.headword }).from(entries).where(eq(entries.headword, headword));
-    if (!entry) throw new NotFoundError("headword");
+type Tx = Parameters<Parameters<typeof db.transaction>[0]>[0];
 
+/** saveWord 的本體，在呼叫端的 transaction 裡執行。headword 須已正規化 */
+async function saveWordIn(tx: Tx, userId: string, headword: string, cleanedNote: string | null | undefined) {
+  const [entry] = await tx.select({ h: entries.headword }).from(entries).where(eq(entries.headword, headword));
+  if (!entry) throw new NotFoundError("headword");
+
+  const now = new Date();
+  const [saved] = await tx
+    .insert(savedWords)
+    .values({ userId, headword, note: cleanedNote ?? null, origin: "search" })
+    .onConflictDoUpdate({
+      target: [savedWords.userId, savedWords.headword],
+      set: {
+        deletedAt: null,
+        updatedAt: now,
+        createdAt: sql`CASE WHEN ${savedWords.deletedAt} IS NOT NULL THEN ${now} ELSE ${savedWords.createdAt} END`,
+        ...(cleanedNote !== undefined ? { note: cleanedNote } : {}),
+      },
+    })
+    .returning({ id: savedWords.id, note: savedWords.note });
+
+  await tx
+    .insert(cards)
+    .values({ userId, headword, direction: "en_zh", due: now, state: 0 })
+    .onConflictDoUpdate({
+      target: [cards.userId, cards.headword, cards.direction],
+      set: { deletedAt: null, updatedAt: now },
+      setWhere: isNotNull(cards.deletedAt),
+    });
+
+  return saved;
+}
+
+/**
+ * 收藏這個字，並讓它剛好屬於 wordbookIds 這幾本單字本（沒列到的會移出）。
+ * 還沒收藏時會先收藏（並建立字卡）。單字本都必須屬於這個使用者。
+ */
+export async function saveToWordbooks(userId: string, rawHeadword: string, wordbookIds: string[]): Promise<void> {
+  const headword = normalizeHeadword(rawHeadword);
+  const ids = [...new Set(wordbookIds)];
+  await db.transaction(async (tx) => {
+    if (ids.length > 0) {
+      const books = await tx
+        .select({ id: wordbooks.id })
+        .from(wordbooks)
+        .where(and(activeWordbook(userId), inArray(wordbooks.id, ids)));
+      if (books.length !== ids.length) throw new NotFoundError("wordbook");
+    }
+
+    const saved = await saveWordIn(tx, userId, headword, undefined);
     const now = new Date();
-    const [saved] = await tx
-      .insert(savedWords)
-      .values({ userId, headword, note: cleanedNote ?? null, origin: "search" })
-      .onConflictDoUpdate({
-        target: [savedWords.userId, savedWords.headword],
-        set: {
-          deletedAt: null,
-          updatedAt: now,
-          createdAt: sql`CASE WHEN ${savedWords.deletedAt} IS NOT NULL THEN ${now} ELSE ${savedWords.createdAt} END`,
-          ...(cleanedNote !== undefined ? { note: cleanedNote } : {}),
-        },
-      })
-      .returning({ id: savedWords.id, note: savedWords.note });
-
     await tx
-      .insert(cards)
-      .values({ userId, headword, direction: "en_zh", due: now, state: 0 })
-      .onConflictDoUpdate({
-        target: [cards.userId, cards.headword, cards.direction],
-        set: { deletedAt: null, updatedAt: now },
-        setWhere: isNotNull(cards.deletedAt),
-      });
-
-    return saved;
+      .update(wordbookItems)
+      .set({ deletedAt: now, updatedAt: now })
+      .where(
+        and(
+          eq(wordbookItems.userId, userId),
+          eq(wordbookItems.savedWordId, saved.id),
+          isNull(wordbookItems.deletedAt),
+          ids.length > 0 ? notInArray(wordbookItems.wordbookId, ids) : undefined,
+        ),
+      );
+    if (ids.length > 0) {
+      await tx
+        .insert(wordbookItems)
+        .values(ids.map((wordbookId) => ({ wordbookId, savedWordId: saved.id, userId })))
+        .onConflictDoUpdate({
+          target: [wordbookItems.wordbookId, wordbookItems.savedWordId],
+          set: { deletedAt: null, updatedAt: now },
+          setWhere: isNotNull(wordbookItems.deletedAt),
+        });
+    }
   });
 }
 

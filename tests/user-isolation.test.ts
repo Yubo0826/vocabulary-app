@@ -179,6 +179,29 @@ describe("收藏與字卡", () => {
     );
   });
 
+  test("saveToWordbooks：未收藏時一併收藏，並剛好放進勾選的單字本", async () => {
+    const b1 = await data.createWordbook(userA, { name: "本一" });
+    const b2 = await data.createWordbook(userA, { name: "本二" });
+    const books = async () =>
+      (await data.getSaveState(userA, "cherry")).wordbooks.filter((b) => b.contains).map((b) => b.name);
+
+    await data.saveToWordbooks(userA, "cherry", [b1.id]);
+    assert.ok((await data.getSaveState(userA, "cherry")).saved, "已收藏");
+    assert.deepEqual(await books(), ["本一"], "只進勾選的那本");
+
+    await data.saveToWordbooks(userA, "cherry", [b2.id]);
+    assert.deepEqual(await books(), ["本二"], "沒勾的移出");
+
+    await data.saveToWordbooks(userA, "cherry", []);
+    assert.deepEqual(await books(), [], "可以都不勾");
+    assert.ok((await data.getSaveState(userA, "cherry")).saved, "都不勾仍是收藏");
+  });
+
+  test("saveToWordbooks 不能放進別人的單字本", async () => {
+    const bBook = await data.createWordbook(userB, { name: "B 的本" });
+    await assert.rejects(data.saveToWordbooks(userA, "apple", [bBook.id]), isNotFound);
+  });
+
   test("不存在於字典的字不能收藏", async () => {
     await assert.rejects(data.saveWord(userA, "notaword"), isNotFound);
   });
