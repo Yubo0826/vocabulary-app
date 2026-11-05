@@ -121,7 +121,29 @@ export const exampleWords = pgTable(
 );
 
 /**
- * 易混淆字組
+ * 相似字：單字頁「相似」區塊顯示的兩排字，由 scripts/import/similar.ts 預先算好。
+ * - kind = 'confusable'：拼法相近、容易看錯的字（編輯距離計算，source = 'computed'）
+ * - kind = 'synonym'：近義字（Open English WordNet 的同義、上下位、相似關係，source = 'oewn'）
+ * 每個 headword 各存前幾名，rank 越小越前面。只列字，不附辨析。
+ */
+export const similarWords = pgTable(
+  "dict_similar_words",
+  {
+    headword: text("headword")
+      .notNull()
+      .references(() => entries.headword, { onDelete: "cascade" }),
+    kind: text("kind", { enum: ["confusable", "synonym"] }).notNull(),
+    word: text("word")
+      .notNull()
+      .references(() => entries.headword, { onDelete: "cascade" }),
+    rank: smallint("rank").notNull(),
+    source: text("source").notNull(), // 'computed' | 'oewn'
+  },
+  (t) => [primaryKey({ columns: [t.headword, t.kind, t.word] })],
+);
+
+/**
+ * 易混淆字組的辨析（目前未使用，保留給日後以 LLM 生成或人工撰寫的辨析說明）
  * 一律讓 headwordA < headwordB，避免同一組存兩次。
  */
 export const confusables = pgTable(

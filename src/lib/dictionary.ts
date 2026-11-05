@@ -5,7 +5,7 @@
 import { and, asc, desc, eq, inArray, like, ne, sql } from "drizzle-orm";
 import { cacheLife } from "next/cache";
 import { db } from "@/db";
-import { definitions, entries, exampleWords, examples, wordForms } from "@/db/schema";
+import { definitions, entries, exampleWords, examples, similarWords, wordForms } from "@/db/schema";
 import { editDistance } from "./edit-distance";
 import { normalizeHeadword } from "./headword";
 
@@ -140,7 +140,7 @@ export async function getWord(input: string, exampleLimit = 20) {
   const [entry] = await db.select().from(entries).where(eq(entries.headword, headword));
   if (!entry) return null;
 
-  const [defs, exampleRows, inflections, lemmaOf] = await Promise.all([
+  const [defs, exampleRows, inflections, lemmaOf, similar] = await Promise.all([
     db
       .select({ lang: definitions.lang, pos: definitions.pos, text: definitions.text })
       .from(definitions)
@@ -174,6 +174,13 @@ export async function getWord(input: string, exampleLimit = 20) {
       .from(wordForms)
       .innerJoin(entries, eq(entries.headword, wordForms.lemma))
       .where(eq(wordForms.form, headword)),
+    // 相似字（易混淆、近義字），由 scripts/import/similar.ts 預先算好
+    db
+      .select({ kind: similarWords.kind, headword: similarWords.word, display: entries.display })
+      .from(similarWords)
+      .innerJoin(entries, eq(entries.headword, similarWords.word))
+      .where(eq(similarWords.headword, headword))
+      .orderBy(similarWords.kind, similarWords.rank),
   ]);
 
   return {
@@ -183,6 +190,8 @@ export async function getWord(input: string, exampleLimit = 20) {
     examples: exampleRows,
     inflections,
     lemmaOf,
+    confusables: similar.filter((s) => s.kind === "confusable").map(({ headword, display }) => ({ headword, display })),
+    synonyms: similar.filter((s) => s.kind === "synonym").map(({ headword, display }) => ({ headword, display })),
   };
 }
 

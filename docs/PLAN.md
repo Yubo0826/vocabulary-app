@@ -132,12 +132,20 @@
 
 ---
 
-## 階段 5：易混淆字
+## 階段 5：相似字（易混淆、近義字）
 
-- [ ] 腳本找候選：常用字範圍內，編輯距離 ≤ 2 或 Double Metaphone 編碼相同的字對；排除互為詞形變化的字對（例如 `go`/`goes`）
-- [ ] 以 LLM 批次生成繁體中文辨析（先詢問要用哪個 API 與預算上限），記錄 `model`
-- [ ] 管理用頁面（僅限自己的帳號）：抽查、標記 `reviewed`、隱藏不適合的字對
-- [ ] 單字頁顯示「容易混淆」區塊（只顯示未隱藏的）
+範圍調整（2026-11-05）：原本規劃用 LLM 生成辨析，討論後改成只列出相似的字（參考其他單字 App 的「相似」分頁），不附辨析，不需要 AI 或付費 API。
+
+- [x] 匯入腳本 `scripts/import/similar.ts` → `dict_similar_words`（migration `0003_similar_words`）
+  - 易混淆：常用字（詞頻前 12000）中拼法相近的字，依編輯距離計分；排除詞形變化（go/went）、同字根（negotiate/negotiation）、只差字首（happy/unhappy）。每字前 5 名
+  - 近義字：Open English WordNet 的同義、similar/also、上下位與同層關係，依 sense 常用程度加權。每字前 10 名
+- [x] 單字頁顯示「相似」區塊：易混淆、近義字兩排，每個字連到單字頁
+- [ ] （暫緩）易混淆字的辨析說明：`dict_confusables` 保留給日後使用。可用的現成資源：[Lexkite confused-words-dataset](https://github.com/lexkiteapp/confused-words-dataset)（CC BY 4.0，82 組，英文）；PlainSpell / Wiktionary 為 CC BY-SA，使用前需討論
+
+**備註**（2026-11-05 完成）：
+- 執行：`npm run import:similar`（約 100 秒），已加入 `import:all`（在 WordNet 之後）。重新匯入 ECDICT 會以 CASCADE 清空本表，需重跑。
+- 結果：易混淆 180,656 筆、近義字 120,662 筆。只收 WordNet 有收的小寫詞條，避免人名與縮寫。
+- 近義字受 WordNet 收錄範圍限制，部分字（例如 negotiate）只有 1–2 個。
 
 ---
 
