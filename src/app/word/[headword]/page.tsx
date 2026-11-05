@@ -1,10 +1,11 @@
 import { notFound, redirect } from "next/navigation";
 import { Suspense } from "react";
+import { Attribution, highlight } from "@/components/example-text";
 import { SavePanel } from "@/components/save-panel";
 import { AccentToggle, SpeakButton } from "@/components/speech";
 import { findLemma, getWord, type WordDetail } from "@/lib/dictionary";
 import { normalizeHeadword } from "@/lib/headword";
-import { tatoebaSentenceUrl, tatoebaUserUrl, wordHref } from "@/lib/urls";
+import { wordHref } from "@/lib/urls";
 import Link from "next/link";
 import styles from "./page.module.css";
 
@@ -169,35 +170,6 @@ function WordView({ word }: { word: WordDetail }) {
         </section>
       )}
     </article>
-  );
-}
-
-/** Tatoeba 出處：句子連結、作者、授權（CC BY 需逐句標示作者） */
-function Attribution({ id, author, license }: { id: number; author: string | null; license: string }) {
-  return (
-    <>
-      <a href={tatoebaSentenceUrl(id)} target="_blank" rel="noopener noreferrer">
-        Tatoeba #{id}
-      </a>
-      {author ? (
-        <>
-          {" · "}
-          <a href={tatoebaUserUrl(author)} target="_blank" rel="noopener noreferrer">
-            {author}
-          </a>
-        </>
-      ) : (
-        " · 作者不詳"
-      )}
-      {` · ${license}`}
-    </>
-  );
-}
-
-/** 把句子中屬於這個字（含變化形）的單字標成 <mark> */
-function highlight(text: string, forms: Set<string>) {
-  return text.split(/([A-Za-z]+(?:['’-][A-Za-z]+)*)/).map((part, i) =>
-    i % 2 === 1 && forms.has(part.toLowerCase()) ? <mark key={i}>{part}</mark> : part,
   );
 }
 

@@ -109,16 +109,26 @@
 
 ## 階段 4：FSRS 字卡複習
 
-- [ ] 讀取 `user_settings` 建立 FSRS 實例（`fsrsWeights` 為 null 時用預設參數）
-- [ ] 今日佇列：到期的複習卡（`due <= 現在`，排除 suspended 與 deleted）＋ 今日新卡（受 `newCardsPerDay` 限制）。「今天」的界線依 `timezone` 與 `dayStartsAtHour` 計算。
-- [ ] 複習介面：顯示英文 → 點擊翻面顯示中文釋義與例句 → 四個評分按鈕（Again / Hard / Good / Easy），按鈕上顯示下次間隔
-- [ ] 支援鍵盤快捷鍵（空白鍵翻面、1–4 評分）
-- [ ] 評分後：更新 `cards`，並新增一筆 `review_logs`（id 由用戶端產生）
-- [ ] 復原上一張（undo）：用最後一筆 review log 還原卡片狀態
-- [ ] 設定頁：每日新卡數、目標記憶保留率、換日時間
-- [ ] 簡單統計：今日已複習數、連續天數、未來 7 天到期數
+- [x] 讀取 `user_settings` 建立 FSRS 實例（`fsrsWeights` 為 null 時用預設參數）
+- [x] 今日佇列：到期的複習卡（`due <= 現在`，排除 suspended 與 deleted）＋ 今日新卡（受 `newCardsPerDay` 限制）。「今天」的界線依 `timezone` 與 `dayStartsAtHour` 計算。
+- [x] 複習介面：顯示英文 → 點擊翻面顯示中文釋義與例句 → 四個評分按鈕（Again / Hard / Good / Easy），按鈕上顯示下次間隔
+- [x] 支援鍵盤快捷鍵（空白鍵翻面、1–4 評分）
+- [x] 評分後：更新 `cards`，並新增一筆 `review_logs`（id 由用戶端產生）
+- [x] 復原上一張（undo）：用最後一筆 review log 還原卡片狀態
+- [x] 設定頁：每日新卡數、目標記憶保留率、換日時間
+- [x] 簡單統計：今日已複習數、連續天數、未來 7 天到期數
 
 **驗收條件**：同一張卡連續評 Good，間隔遞增；評 Again 後進入 Relearning；重送同一筆 review log 不會重複寫入。
+
+**備註**（2026-11-05 完成）：
+- ts-fsrs 6.0 的預設模型是 FSRS-7，已決定**明確指定 FSRS-6**（`DefaultScheduler({ version: "FSRS-6" })`，與現有 schema 相符）。之後要換 FSRS-7，需加 `stability_fast` 欄位、`scheduled_days` 改小數，並用 `Reschedule.replay` 依完整 review log 重建記憶狀態。
+- 排程一律在伺服器計算（`src/lib/review.ts`）；用戶端只送評分、logId（`crypto.randomUUID()`，每顯示一張卡產生一次）與作答時間。`reviewed_at` 用伺服器時間；離線複習（階段 6）時再改用用戶端時間。
+- 啟用 fuzz（ts-fsrs v6 以 cardId + reps 為種子，同一張卡結果固定，按鈕上的預覽與實際評分一致）。學習步驟用預設的 1m/10m，重新學習 10m。
+- 佇列順序：到期的學習中 → 今天到期的複習 → 新卡（依收藏順序）→ 20 分鐘內到期的學習中（提前出現，同 Anki）。複習卡以「天」為單位：今天學習日結束前到期就算到期（比 PLAN 原本寫的 `due <= 現在` 寬鬆，同 Anki）。
+- 復原：`review_logs` 新增 `last_review`（rollback 需要評分前的 lastReviewAt）與 `undone_at`（migration `0002_review_undo`）。復原時只寫入 `undone_at`，紀錄保留；統計、今日新卡數一律排除已復原的紀錄。可連續復原，但只限今天的評分。快捷鍵 Z。
+- 設定頁 `/settings`：每日新卡數 0–500、保留率 80/85/90/95%、換日時間 0–23 點。時區目前固定 Asia/Taipei（不提供修改）。
+- 測試：`tests/review.test.ts`（13 個），涵蓋驗收條件、復原、新卡上限、隔離、換日與夏令時間。兩個測試檔共用 `vocab_test`，`npm test` 已改成 `--test-concurrency=1` 依序執行。
+- 例句出處元件抽到 `src/components/example-text.tsx`，單字頁與字卡背面共用。
 
 ---
 

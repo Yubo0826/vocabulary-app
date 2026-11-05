@@ -15,7 +15,7 @@
     "import:stats": "tsx scripts/import/stats.ts",
     "import:wordnet": "tsx scripts/import/wordnet.ts",
     "import:all": "npm run import:ecdict && npm run import:wordnet && npm run import:tatoeba && npm run import:stats",
-    "test": "tsx --test tests/*.test.ts"
+    "test": "tsx --test --test-concurrency=1 tests/*.test.ts"
   },
   "dependencies": {
     "better-auth": "^1.7.16",
@@ -25,7 +25,8 @@
     "opencc-js": "^1.4.2",
     "pg": "^8.23.1",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "ts-fsrs": "^6.0.0"
   },
   "devDependencies": {
     "@types/node": "^20",

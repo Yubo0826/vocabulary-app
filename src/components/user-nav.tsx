@@ -14,6 +14,7 @@ export async function UserNav() {
   }
   return (
     <nav className={styles.nav}>
+      <Link href="/review">複習</Link>
       <Link href="/saved">我的單字</Link>
       <Link href="/account" className={styles.account} title={user.email}>
         {user.name || user.email}

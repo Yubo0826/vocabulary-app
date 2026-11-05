@@ -137,6 +137,8 @@ export const cards = pgTable(
  * 複習紀錄（append-only）
  * 欄位對應 ts-fsrs 的 ReviewLog；記錄的是「這次複習之前」的卡片狀態與評分。
  * id 由用戶端產生，伺服器用 ON CONFLICT DO NOTHING 寫入，離線重送也不會重複。
+ * 唯一的例外是「復原上一張」：只寫入一次 undone_at，紀錄本身保留；
+ * 統計與日後最佳化參數時要排除 undone_at 不為 null 的紀錄。
  */
 export const reviewLogs = pgTable(
   "review_logs",
@@ -153,9 +155,11 @@ export const reviewLogs = pgTable(
     difficulty: doublePrecision("difficulty").notNull(),
     scheduledDays: integer("scheduled_days").notNull(),
     learningSteps: integer("learning_steps").notNull().default(0),
+    lastReview: ts("last_review"), // 這次複習之前卡片的 last_review，復原時還原用
     reviewedAt: ts("reviewed_at").notNull(), // 用戶端的實際作答時間，不是寫入時間
     durationMs: integer("duration_ms"), // 作答花費時間，可做統計
     createdAt: ts("created_at").notNull().defaultNow(), // 伺服器收到的時間
+    undoneAt: ts("undone_at"), // 被「復原上一張」撤銷的時間
   },
   (t) => [
     index("review_logs_card_idx").on(t.cardId, t.reviewedAt),
