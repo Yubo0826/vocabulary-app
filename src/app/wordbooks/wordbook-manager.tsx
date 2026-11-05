@@ -3,8 +3,19 @@
 import Link from "next/link";
 import { useState, useTransition } from "react";
 import { createWordbookAction, deleteWordbookAction, updateWordbookAction, type ActionResult } from "@/app/actions";
-import ui from "@/components/ui.module.css";
-import styles from "./wordbook-manager.module.css";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 
 type Wordbook = { id: string; name: string; description: string | null; count: number };
 
@@ -22,7 +33,7 @@ export function WordbookManager({ wordbooks }: { wordbooks: Wordbook[] }) {
     });
 
   return (
-    <div className={styles.wrap}>
+    <div className="flex flex-col gap-4">
       <WordbookForm
         submitLabel="新增單字本"
         pending={pending}
@@ -30,17 +41,17 @@ export function WordbookManager({ wordbooks }: { wordbooks: Wordbook[] }) {
       />
 
       {error && (
-        <p className={ui.error} role="alert">
+        <p className="text-sm text-destructive" role="alert">
           {error}
         </p>
       )}
 
       {wordbooks.length === 0 ? (
-        <p className={ui.muted}>還沒有單字本。</p>
+        <p className="text-sm text-muted-foreground">還沒有單字本。</p>
       ) : (
-        <ul className={styles.list}>
+        <ul className="divide-y rounded-lg border bg-card">
           {wordbooks.map((b) => (
-            <li key={b.id} className={styles.item}>
+            <li key={b.id} className="flex flex-wrap items-center justify-between gap-2 px-4 py-3">
               {editing === b.id ? (
                 <WordbookForm
                   initial={b}
@@ -53,29 +64,36 @@ export function WordbookManager({ wordbooks }: { wordbooks: Wordbook[] }) {
                 />
               ) : (
                 <>
-                  <div className={styles.info}>
-                    <Link href={`/saved?book=${b.id}`} className={styles.name}>
+                  <div className="flex min-w-0 flex-wrap items-baseline gap-x-2.5 gap-y-1">
+                    <Link href={`/saved?book=${b.id}`} className="font-semibold wrap-anywhere">
                       {b.name}
                     </Link>
-                    <span className={ui.muted}>{b.count} 個字</span>
-                    {b.description && <p className={styles.description}>{b.description}</p>}
+                    <span className="text-sm text-muted-foreground">{b.count} 個字</span>
+                    {b.description && <p className="basis-full text-sm text-muted-foreground">{b.description}</p>}
                   </div>
-                  <div className={styles.actions}>
-                    <button type="button" className={ui.buttonGhost} disabled={pending} onClick={() => setEditing(b.id)}>
+                  <div className="flex gap-1">
+                    <Button variant="ghost" className="text-primary" disabled={pending} onClick={() => setEditing(b.id)}>
                       編輯
-                    </button>
-                    <button
-                      type="button"
-                      className={ui.buttonGhost}
-                      disabled={pending}
-                      onClick={() => {
-                        if (confirm(`確定要刪除「${b.name}」嗎？裡面的字仍會保留在收藏中。`)) {
-                          act(() => deleteWordbookAction(b.id));
-                        }
-                      }}
-                    >
-                      刪除
-                    </button>
+                    </Button>
+                    <AlertDialog>
+                      <AlertDialogTrigger asChild>
+                        <Button variant="ghost" className="text-primary" disabled={pending}>
+                          刪除
+                        </Button>
+                      </AlertDialogTrigger>
+                      <AlertDialogContent>
+                        <AlertDialogHeader>
+                          <AlertDialogTitle>刪除「{b.name}」？</AlertDialogTitle>
+                          <AlertDialogDescription>裡面的字仍會保留在收藏中。</AlertDialogDescription>
+                        </AlertDialogHeader>
+                        <AlertDialogFooter>
+                          <AlertDialogCancel>取消</AlertDialogCancel>
+                          <AlertDialogAction variant="destructive" onClick={() => act(() => deleteWordbookAction(b.id))}>
+                            刪除
+                          </AlertDialogAction>
+                        </AlertDialogFooter>
+                      </AlertDialogContent>
+                    </AlertDialog>
                   </div>
                 </>
               )}
@@ -108,36 +126,36 @@ function WordbookForm({
   };
   return (
     <form
-      className={styles.form}
+      className="flex w-full flex-col gap-2"
       onSubmit={(e) => {
         e.preventDefault();
         if (name.trim()) onSubmit(name, description, reset);
       }}
     >
-      <input
-        className={ui.input}
+      <Input
         value={name}
         maxLength={50}
         placeholder="單字本名稱，例如：多益、影集"
         aria-label="單字本名稱"
+        className="h-10 bg-card text-base md:text-sm"
         onChange={(e) => setName(e.target.value)}
       />
-      <input
-        className={ui.input}
+      <Input
         value={description}
         maxLength={200}
         placeholder="說明（選填）"
         aria-label="說明"
+        className="h-10 bg-card text-base md:text-sm"
         onChange={(e) => setDescription(e.target.value)}
       />
-      <div className={styles.actions}>
-        <button type="submit" className={ui.buttonPrimary} disabled={pending || !name.trim()}>
+      <div className="flex gap-1">
+        <Button type="submit" size="lg" disabled={pending || !name.trim()}>
           {submitLabel}
-        </button>
+        </Button>
         {onCancel && (
-          <button type="button" className={ui.buttonGhost} onClick={onCancel}>
+          <Button type="button" variant="ghost" size="lg" onClick={onCancel}>
             取消
-          </button>
+          </Button>
         )}
       </div>
     </form>

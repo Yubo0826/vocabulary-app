@@ -7,6 +7,7 @@
 ## 技術棧
 
 - Next.js（App Router、TypeScript strict），先做 PWA，不上架 App Store
+- UI：Tailwind CSS v4 + shadcn/ui（Radix 版），元件在 `src/components/ui/`（用 `npx shadcn add` 新增）；配色是 `globals.css` 的 CSS 變數，深色模式跟隨系統設定
 - 部署：Railway Hobby 方案，區域選 Singapore（使用者在台灣）
 - 資料庫：Railway Postgres，啟用 `pg_trgm`
 - ORM：Drizzle（drizzle-orm + drizzle-kit）

@@ -4,10 +4,11 @@ import { useRouter } from "next/navigation";
 import { useEffect, useId, useState } from "react";
 import type { SearchItem, SearchResult } from "@/lib/dictionary";
 import { wordHref } from "@/lib/urls";
-import styles from "./search-box.module.css";
+import { Badge } from "@/components/ui/badge";
+import { Input } from "@/components/ui/input";
+import { cn } from "@/lib/utils";
 
 const DEBOUNCE_MS = 200;
-
 
 async function fetchSearch(q: string, signal?: AbortSignal): Promise<SearchResult> {
   const res = await fetch(`/api/search?q=${encodeURIComponent(q)}`, { signal });
@@ -81,14 +82,14 @@ export function SearchBox({ initialQuery = "", autoFocus = false }: { initialQue
   return (
     <form
       role="search"
-      className={styles.form}
+      className="relative w-full"
       onSubmit={(e) => {
         e.preventDefault();
         void submit();
       }}
     >
-      <input
-        className={styles.input}
+      <Input
+        className="h-12 bg-card px-4 text-[1.05rem] md:text-[1.05rem]"
         type="search"
         inputMode="search"
         autoComplete="off"
@@ -113,24 +114,28 @@ export function SearchBox({ initialQuery = "", autoFocus = false }: { initialQue
         }}
       />
       {showList && (
-        <div className={styles.dropdown}>
-          {result.matchType === "fuzzy" && <p className={styles.hint}>找不到「{result.query}」，您是不是要找：</p>}
-          {items.length === 0 && <p className={styles.hint}>找不到相符的單字</p>}
-          <ul id={listId} role="listbox" className={styles.list}>
+        <div className="absolute inset-x-0 top-[calc(100%+6px)] z-10 overflow-hidden rounded-lg border bg-popover text-popover-foreground shadow-lg">
+          {result.matchType === "fuzzy" && <p className="px-4 pt-2.5 pb-1 text-sm text-muted-foreground">找不到「{result.query}」，您是不是要找：</p>}
+          {items.length === 0 && <p className="px-4 pt-2.5 pb-1 text-sm text-muted-foreground">找不到相符的單字</p>}
+          <ul id={listId} role="listbox">
             {items.map((item, i) => (
               <li
                 key={item.headword}
                 id={`${listId}-${i}`}
                 role="option"
                 aria-selected={i === active}
-                className={i === active ? `${styles.item} ${styles.active}` : styles.item}
+                className={cn("flex min-w-0 cursor-pointer items-baseline gap-2 px-4 py-2.5", i === active && "bg-accent")}
                 onMouseDown={(e) => e.preventDefault()}
                 onMouseEnter={() => setActive(i)}
                 onClick={() => go(item)}
               >
-                <span className={styles.word}>{item.display}</span>
-                {item.via === "form" && <span className={styles.badge}>{item.form} 的原形</span>}
-                {item.gloss && <span className={styles.gloss}>{item.gloss}</span>}
+                <span className="shrink-0 font-semibold">{item.display}</span>
+                {item.via === "form" && (
+                  <Badge variant="outline" className="shrink-0 border-primary text-primary">
+                    {item.form} 的原形
+                  </Badge>
+                )}
+                {item.gloss && <span className="min-w-0 truncate text-sm text-muted-foreground">{item.gloss}</span>}
               </li>
             ))}
           </ul>

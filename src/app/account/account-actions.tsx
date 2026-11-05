@@ -3,7 +3,10 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { authClient } from "@/lib/auth-client";
-import ui from "@/components/ui.module.css";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 
 export function AccountActions({ hasPassword }: { hasPassword: boolean }) {
   const router = useRouter();
@@ -42,51 +45,51 @@ export function AccountActions({ hasPassword }: { hasPassword: boolean }) {
   return (
     <>
       <div>
-        <button type="button" className={ui.button} onClick={signOut} disabled={pending}>
+        <Button variant="outline" size="lg" onClick={signOut} disabled={pending}>
           登出
-        </button>
+        </Button>
       </div>
 
-      <section className={ui.card} style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-        <h2 style={{ fontSize: "1.05rem" }}>刪除帳號</h2>
-        <p className={ui.muted}>刪除後，你的收藏、筆記、單字本、字卡與複習紀錄會全部永久刪除，無法復原。</p>
+      <Card className="gap-3 px-4">
+        <h2 className="text-[1.05rem] font-semibold">刪除帳號</h2>
+        <p className="text-sm text-muted-foreground">刪除後，你的收藏、筆記、單字本、字卡與複習紀錄會全部永久刪除，無法復原。</p>
         {!confirming ? (
           <div>
-            <button type="button" className={ui.buttonDanger} onClick={() => setConfirming(true)}>
+            <Button variant="destructive" size="lg" onClick={() => setConfirming(true)}>
               我要刪除帳號
-            </button>
+            </Button>
           </div>
         ) : (
-          <form onSubmit={deleteAccount} style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+          <form onSubmit={deleteAccount} className="flex flex-col gap-2.5">
             {hasPassword && (
-              <label className={ui.label}>
+              <Label className="flex-col items-stretch gap-1.5 font-normal text-muted-foreground">
                 請輸入密碼確認
-                <input
-                  className={ui.input}
+                <Input
                   type="password"
                   autoComplete="current-password"
                   required
                   value={password}
+                  className="h-10 text-base md:text-sm"
                   onChange={(e) => setPassword(e.target.value)}
                 />
-              </label>
+              </Label>
             )}
             {error && (
-              <p className={ui.error} role="alert">
+              <p className="text-sm text-destructive" role="alert">
                 {error}
               </p>
             )}
-            <div style={{ display: "flex", gap: 8 }}>
-              <button type="submit" className={ui.buttonDanger} disabled={pending}>
+            <div className="flex gap-2">
+              <Button type="submit" variant="destructive" size="lg" disabled={pending}>
                 永久刪除帳號
-              </button>
-              <button type="button" className={ui.buttonGhost} onClick={() => setConfirming(false)} disabled={pending}>
+              </Button>
+              <Button type="button" variant="ghost" size="lg" onClick={() => setConfirming(false)} disabled={pending}>
                 取消
-              </button>
+              </Button>
             </div>
           </form>
         )}
-      </section>
+      </Card>
     </>
   );
 }

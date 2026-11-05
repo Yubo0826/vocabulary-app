@@ -1,7 +1,10 @@
 "use client";
 
 import { useSyncExternalStore } from "react";
-import styles from "./speech.module.css";
+import { Volume2 } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
+import { cn } from "@/lib/utils";
 
 /** 發音（瀏覽器 Web Speech API）與美式／英式口音切換；口音選擇存在 localStorage */
 
@@ -63,18 +66,17 @@ export function SpeakButton({ text, size = "md" }: { text: string; size?: "md" |
   const supported = useSpeechSupported();
   if (!supported) return null;
   return (
-    <button
+    <Button
       type="button"
-      className={size === "sm" ? `${styles.speak} ${styles.small}` : styles.speak}
+      variant={size === "sm" ? "ghost" : "outline"}
+      size={size === "sm" ? "icon-sm" : "icon-lg"}
+      className={cn("rounded-full text-primary", size === "md" && "size-10")}
       onClick={() => speak(text, accent)}
       aria-label={`播放「${text}」的發音`}
       title="播放發音"
     >
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor" />
-        <path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
-      </svg>
-    </button>
+      <Volume2 className={size === "sm" ? "size-4" : "size-5"} />
+    </Button>
   );
 }
 
@@ -83,19 +85,24 @@ export function AccentToggle() {
   const supported = useSpeechSupported();
   if (!supported) return null;
   return (
-    <div className={styles.toggle} role="radiogroup" aria-label="發音口音">
+    <ToggleGroup
+      type="single"
+      variant="outline"
+      size="sm"
+      spacing={0}
+      value={accent}
+      onValueChange={(v) => v && setAccent(v as Accent)}
+      aria-label="發音口音"
+    >
       {ACCENTS.map((a) => (
-        <button
+        <ToggleGroupItem
           key={a.lang}
-          type="button"
-          role="radio"
-          aria-checked={accent === a.lang}
-          className={accent === a.lang ? `${styles.option} ${styles.selected}` : styles.option}
-          onClick={() => setAccent(a.lang)}
+          value={a.lang}
+          className="px-3 text-muted-foreground data-[state=on]:bg-accent data-[state=on]:font-semibold data-[state=on]:text-accent-foreground"
         >
           {a.label}
-        </button>
+        </ToggleGroupItem>
       ))}
-    </div>
+    </ToggleGroup>
   );
 }

@@ -4,12 +4,16 @@
  */
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
+import { connection } from "next/server";
 import { auth } from "./auth";
 
 export type CurrentUser = { id: string; name: string; email: string; image: string | null };
 
 /** 目前登入者；未登入回傳 null */
 export async function getCurrentUser(): Promise<CurrentUser | null> {
+  // Better Auth 檢查 session 時會用到 new Date()；先宣告這裡要等到實際請求才執行，
+  // 否則 Cache Components 預先渲染時會回報「unstable value new Date()」
+  await connection();
   const session = await auth.api.getSession({ headers: await headers() });
   if (!session) return null;
   const { id, name, email, image } = session.user;

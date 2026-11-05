@@ -4,8 +4,8 @@ import { requireUser } from "@/lib/session";
 import { wordHref } from "@/lib/urls";
 import { listSavedWords, listWordbooks, type SavedSort } from "@/lib/user-data";
 import { isUuid } from "@/lib/uuid";
-import ui from "@/components/ui.module.css";
-import styles from "./page.module.css";
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 export const metadata = { title: "我的單字" };
 
@@ -13,7 +13,7 @@ const dateFormat = new Intl.DateTimeFormat("zh-TW", { timeZone: "Asia/Taipei", y
 
 export default function SavedPage({ searchParams }: PageProps<"/saved">) {
   return (
-    <Suspense fallback={<p className={ui.muted}>載入中…</p>}>
+    <Suspense fallback={<p className="text-sm text-muted-foreground">載入中…</p>}>
       {searchParams.then(({ book, sort }) => (
         <SavedList bookParam={typeof book === "string" ? book : null} sort={sort === "alpha" ? "alpha" : "recent"} />
       ))}
@@ -38,54 +38,67 @@ async function SavedList({ bookParam, sort }: { bookParam: string | null; sort: 
     return qs ? `/saved?${qs}` : "/saved";
   };
 
+  const chip = (on: boolean) =>
+    cn(
+      "inline-flex items-center gap-1.5 rounded-full border bg-card px-3 py-1 text-sm text-foreground hover:border-primary hover:no-underline",
+      on && "border-primary bg-accent font-semibold text-accent-foreground",
+    );
+
   return (
-    <div className={styles.page}>
-      <div className={styles.headRow}>
-        <h1 className={styles.title}>我的單字</h1>
-        <Link href="/wordbooks" className={ui.buttonGhost}>
-          管理單字本
-        </Link>
+    <div className="flex flex-col gap-4">
+      <div className="flex items-center justify-between gap-2">
+        <h1 className="text-2xl font-bold">我的單字</h1>
+        <Button asChild variant="ghost" className="text-primary">
+          <Link href="/wordbooks">管理單字本</Link>
+        </Button>
       </div>
 
-      <nav className={styles.filters} aria-label="依單字本篩選">
-        <Link href={href({ book: null })} className={!book ? `${styles.chip} ${styles.chipOn}` : styles.chip}>
+      <nav className="flex flex-wrap gap-2" aria-label="依單字本篩選">
+        <Link href={href({ book: null })} className={chip(!book)}>
           全部
         </Link>
         {wordbooks.map((b) => (
-          <Link key={b.id} href={href({ book: b.id })} className={book?.id === b.id ? `${styles.chip} ${styles.chipOn}` : styles.chip}>
-            {b.name} <span className={styles.count}>{b.count}</span>
+          <Link key={b.id} href={href({ book: b.id })} className={chip(book?.id === b.id)}>
+            {b.name} <span className="text-xs font-normal text-muted-foreground">{b.count}</span>
           </Link>
         ))}
       </nav>
 
-      <div className={styles.toolbar}>
-        <span className={ui.muted}>共 {words.length} 個字</span>
-        <span className={styles.sort}>
+      <div className="flex flex-wrap items-center justify-between gap-2 text-sm text-muted-foreground">
+        <span>共 {words.length} 個字</span>
+        <span className="flex gap-2.5">
           排序：
-          <Link href={href({ sort: "recent" })} aria-current={sort === "recent" ? "true" : undefined}>
-            收藏時間
-          </Link>
-          <Link href={href({ sort: "alpha" })} aria-current={sort === "alpha" ? "true" : undefined}>
-            字母
-          </Link>
+          {(["recent", "alpha"] as const).map((s) => (
+            <Link
+              key={s}
+              href={href({ sort: s })}
+              aria-current={sort === s ? "true" : undefined}
+              className="aria-[current]:font-semibold aria-[current]:text-foreground"
+            >
+              {s === "recent" ? "收藏時間" : "字母"}
+            </Link>
+          ))}
         </span>
       </div>
 
       {words.length === 0 ? (
-        <p className={ui.muted}>
+        <p className="text-sm text-muted-foreground">
           {book ? "這個單字本還沒有字。" : "還沒有收藏任何單字。查字時按「收藏」就會出現在這裡。"}
         </p>
       ) : (
-        <ul className={styles.list}>
+        <ul className="divide-y overflow-hidden rounded-lg border bg-card">
           {words.map((w) => (
             <li key={w.id}>
-              <Link href={wordHref(w.headword)} className={styles.item}>
-                <span className={styles.itemHead}>
-                  <span className={styles.word}>{w.display}</span>
-                  <span className={styles.date}>{dateFormat.format(w.savedAt)}</span>
+              <Link
+                href={wordHref(w.headword)}
+                className="flex flex-col gap-0.5 px-4 py-3 text-foreground hover:bg-accent hover:no-underline"
+              >
+                <span className="flex items-baseline justify-between gap-2">
+                  <span className="text-[1.05rem] font-semibold wrap-anywhere">{w.display}</span>
+                  <span className="shrink-0 text-xs text-muted-foreground">{dateFormat.format(w.savedAt)}</span>
                 </span>
-                {w.gloss && <span className={styles.gloss}>{w.gloss}</span>}
-                {w.note && <span className={styles.note}>📝 {w.note}</span>}
+                {w.gloss && <span className="truncate text-sm text-muted-foreground">{w.gloss}</span>}
+                {w.note && <span className="line-clamp-2 text-sm wrap-anywhere">📝 {w.note}</span>}
               </Link>
             </li>
           ))}

@@ -1,23 +1,22 @@
 import Link from "next/link";
 import { Suspense } from "react";
+import { Button } from "@/components/ui/button";
 import { getReviewState } from "@/lib/review-session";
 import { requireUser } from "@/lib/session";
-import ui from "@/components/ui.module.css";
 import { ReviewSession } from "./review-session";
-import styles from "./page.module.css";
 
 export const metadata = { title: "複習" };
 
 export default function ReviewPage() {
   return (
-    <div className={styles.page}>
-      <div className={styles.headRow}>
-        <h1 className={styles.title}>複習</h1>
-        <Link href="/settings" className={ui.buttonGhost}>
-          複習設定
-        </Link>
+    <div className="flex flex-col gap-4">
+      <div className="flex items-center justify-between gap-2">
+        <h1 className="text-2xl font-bold">複習</h1>
+        <Button asChild variant="ghost" className="text-primary">
+          <Link href="/settings">複習設定</Link>
+        </Button>
       </div>
-      <Suspense fallback={<p className={ui.muted}>載入中…</p>}>
+      <Suspense fallback={<p className="text-sm text-muted-foreground">載入中…</p>}>
         <Review />
       </Suspense>
     </div>

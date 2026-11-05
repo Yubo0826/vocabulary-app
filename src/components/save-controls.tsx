@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useTransition } from "react";
+import { Star } from "lucide-react";
+import { useId, useState, useTransition } from "react";
 import {
   createWordbookAction,
   saveWordAction,
@@ -9,8 +10,13 @@ import {
   updateNoteAction,
   type ActionResult,
 } from "@/app/actions";
-import ui from "./ui.module.css";
-import styles from "./save-controls.module.css";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import { cn } from "@/lib/utils";
 
 type Props = {
   headword: string;
@@ -33,27 +39,24 @@ export function SaveControls({ headword, saved, wordbooks }: Props) {
 
   if (!saved) {
     return (
-      <div className={styles.panel}>
-        <button type="button" className={ui.buttonPrimary} disabled={pending} onClick={() => act(() => saveWordAction(headword))}>
-          ☆ 收藏
-        </button>
-        {error && <p className={ui.error}>{error}</p>}
+      <div className="flex flex-col items-start gap-2">
+        <Button size="lg" disabled={pending} onClick={() => act(() => saveWordAction(headword))}>
+          <Star /> 收藏
+        </Button>
+        {error && <ErrorText>{error}</ErrorText>}
       </div>
     );
   }
 
   return (
-    <div className={`${ui.card} ${styles.panel}`}>
-      <div className={styles.row}>
-        <span className={styles.savedLabel}>★ 已收藏</span>
-        <button
-          type="button"
-          className={ui.buttonGhost}
-          disabled={pending}
-          onClick={() => act(() => unsaveWordAction(headword))}
-        >
+    <Card className="gap-4 px-4">
+      <div className="flex items-center justify-between gap-2">
+        <span className="flex items-center gap-1.5 font-semibold text-primary">
+          <Star className="size-4 fill-current" /> 已收藏
+        </span>
+        <Button variant="ghost" disabled={pending} onClick={() => act(() => unsaveWordAction(headword))}>
           取消收藏
-        </button>
+        </Button>
       </div>
 
       <NoteEditor key={saved.note ?? ""} initial={saved.note ?? ""} pending={pending} onSave={(note) => act(() => updateNoteAction(headword, note))} />
@@ -71,38 +74,44 @@ export function SaveControls({ headword, saved, wordbooks }: Props) {
         }
       />
 
-      {error && (
-        <p className={ui.error} role="alert">
-          {error}
-        </p>
-      )}
-    </div>
+      {error && <ErrorText>{error}</ErrorText>}
+    </Card>
+  );
+}
+
+function ErrorText({ children }: { children: React.ReactNode }) {
+  return (
+    <p className="text-sm text-destructive" role="alert">
+      {children}
+    </p>
   );
 }
 
 function NoteEditor({ initial, pending, onSave }: { initial: string; pending: boolean; onSave: (note: string) => void }) {
+  const id = useId();
   const [note, setNote] = useState(initial);
   const dirty = note.trim() !== initial.trim();
   return (
-    <div className={styles.note}>
-      <label className={ui.label}>
+    <div className="flex flex-col gap-2">
+      <Label htmlFor={id} className="text-muted-foreground">
         個人筆記
-        <textarea
-          className={ui.textarea}
-          value={note}
-          maxLength={2000}
-          placeholder="例如：在哪裡看到、容易搞混的字、自己的例句…"
-          onChange={(e) => setNote(e.target.value)}
-        />
-      </label>
+      </Label>
+      <Textarea
+        id={id}
+        value={note}
+        maxLength={2000}
+        placeholder="例如：在哪裡看到、容易搞混的字、自己的例句…"
+        className="min-h-18 text-base md:text-sm"
+        onChange={(e) => setNote(e.target.value)}
+      />
       {dirty && (
-        <div className={styles.row}>
-          <button type="button" className={ui.button} disabled={pending} onClick={() => onSave(note)}>
+        <div className="flex gap-2">
+          <Button variant="outline" disabled={pending} onClick={() => onSave(note)}>
             儲存筆記
-          </button>
-          <button type="button" className={ui.buttonGhost} disabled={pending} onClick={() => setNote(initial)}>
+          </Button>
+          <Button variant="ghost" disabled={pending} onClick={() => setNote(initial)}>
             取消
-          </button>
+          </Button>
         </div>
       )}
     </div>
@@ -122,36 +131,42 @@ function WordbookPicker({
 }) {
   const [name, setName] = useState("");
   return (
-    <fieldset className={styles.books}>
-      <legend className={ui.muted}>單字本</legend>
+    <fieldset className="flex flex-col gap-2">
+      <legend className="mb-2 text-sm font-medium text-muted-foreground">單字本</legend>
       {wordbooks.length > 0 && (
-        <div className={styles.bookList}>
+        <div className="flex flex-wrap gap-2">
           {wordbooks.map((b) => (
-            <label key={b.id} className={b.contains ? `${styles.chip} ${styles.chipOn}` : styles.chip}>
-              <input type="checkbox" checked={b.contains} disabled={pending} onChange={(e) => onToggle(b.id, e.target.checked)} />
+            <Label
+              key={b.id}
+              className={cn(
+                "cursor-pointer rounded-full border px-3 py-1.5 font-normal",
+                b.contains && "border-primary bg-accent text-accent-foreground",
+              )}
+            >
+              <Checkbox checked={b.contains} disabled={pending} onCheckedChange={(v) => onToggle(b.id, v === true)} />
               {b.name}
-            </label>
+            </Label>
           ))}
         </div>
       )}
       <form
-        className={styles.row}
+        className="flex items-center gap-2"
         onSubmit={(e) => {
           e.preventDefault();
           if (name.trim()) onCreate(name, () => setName(""));
         }}
       >
-        <input
-          className={ui.input}
+        <Input
           value={name}
           maxLength={50}
           placeholder="新增單字本並加入"
           aria-label="新單字本名稱"
+          className="h-9 flex-1"
           onChange={(e) => setName(e.target.value)}
         />
-        <button type="submit" className={ui.button} disabled={pending || !name.trim()}>
+        <Button type="submit" variant="outline" size="lg" disabled={pending || !name.trim()}>
           新增
-        </button>
+        </Button>
       </form>
     </fieldset>
   );

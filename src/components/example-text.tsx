@@ -1,7 +1,47 @@
 import { tatoebaSentenceUrl, tatoebaUserUrl } from "@/lib/urls";
+import { Info } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 
-/** Tatoeba 出處：句子連結、作者、授權（CC BY 需逐句標示作者） */
-export function Attribution({ id, author, license }: { id: number; author: string | null; license: string }) {
+type ExampleSourceFields = {
+  enSentenceId: number;
+  enAuthor: string | null;
+  enLicense: string;
+  zhSentenceId: number | null;
+  zhAuthor: string | null;
+  zhLicense: string | null;
+};
+
+/** 例句出處：預設收成 ⓘ，點開才顯示（CC BY 仍需逐句標示，只是不直接攤在畫面上） */
+export function ExampleSource({ example }: { example: ExampleSourceFields }) {
+  return (
+    <Popover>
+      <PopoverTrigger asChild>
+        <Button
+          type="button"
+          variant="ghost"
+          size="icon-sm"
+          className="rounded-full text-muted-foreground/70 data-[state=open]:bg-accent data-[state=open]:text-foreground"
+          aria-label="例句出處"
+          title="例句出處"
+        >
+          <Info className="size-3.5" />
+        </Button>
+      </PopoverTrigger>
+      <PopoverContent align="end" className="w-auto max-w-[min(320px,calc(100vw-32px))] p-2.5 text-xs leading-normal text-muted-foreground [&_a]:text-muted-foreground [&_a]:underline [&_a]:decoration-border">
+        <Attribution id={example.enSentenceId} author={example.enAuthor} license={example.enLicense} />
+        {example.zhSentenceId && example.zhLicense && (
+          <div>
+            中譯 <Attribution id={example.zhSentenceId} author={example.zhAuthor} license={example.zhLicense} />
+          </div>
+        )}
+      </PopoverContent>
+    </Popover>
+  );
+}
+
+/** Tatoeba 出處：句子連結、作者、授權 */
+function Attribution({ id, author, license }: { id: number; author: string | null; license: string }) {
   return (
     <>
       <a href={tatoebaSentenceUrl(id)} target="_blank" rel="noopener noreferrer">

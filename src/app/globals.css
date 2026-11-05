@@ -1,75 +1,127 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+/* 深色模式跟隨系統設定（不做手動切換），shadcn 元件裡的 dark: 也會跟著生效 */
+@custom-variant dark (@media (prefers-color-scheme: dark));
+
 :root {
+  --radius: 0.625rem;
+  --app-font: var(--font-geist-sans), "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+  --app-mono: var(--font-geist-mono), ui-monospace, monospace;
+
   --background: #fbfaf7;
-  --surface: #ffffff;
   --foreground: #1c1b19;
-  --muted: #6b6760;
+  --card: #ffffff;
+  --card-foreground: #1c1b19;
+  --popover: #ffffff;
+  --popover-foreground: #1c1b19;
+  --primary: #2f5d50;
+  --primary-foreground: #fbfaf7;
+  --secondary: #f1efe9;
+  --secondary-foreground: #1c1b19;
+  --muted: #f1efe9;
+  --muted-foreground: #6b6760;
+  --accent: #e5efeb;
+  --accent-foreground: #2f5d50;
+  --destructive: #b3261e;
   --border: #e4e0d8;
-  --accent: #2f5d50;
-  --accent-soft: #e5efeb;
+  --input: #e4e0d8;
+  --ring: #2f5d50;
   --mark: #fdf0c4;
-  --radius: 10px;
-  --content-width: 720px;
-  --font-sans: var(--font-geist-sans), "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+
+  /* 複習評分與佇列數量 */
+  --again: #b3261e;
+  --hard: #b3541e;
+  --good: #2f7d4f;
+  --easy: #2f6fb0;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #141412;
-    --surface: #1d1c1a;
     --foreground: #ecebe7;
-    --muted: #9e9a92;
+    --card: #1d1c1a;
+    --card-foreground: #ecebe7;
+    --popover: #1d1c1a;
+    --popover-foreground: #ecebe7;
+    --primary: #8cc5b3;
+    --primary-foreground: #141412;
+    --secondary: #262522;
+    --secondary-foreground: #ecebe7;
+    --muted: #262522;
+    --muted-foreground: #9e9a92;
+    --accent: #233630;
+    --accent-foreground: #8cc5b3;
+    --destructive: #f2a49d;
     --border: #34322e;
-    --accent: #8cc5b3;
-    --accent-soft: #233630;
+    --input: #34322e;
+    --ring: #8cc5b3;
     --mark: #4a3f1a;
+
+    --again: #f2a49d;
+    --hard: #f0b48a;
+    --good: #8fd1a8;
+    --easy: #9cc3ef;
   }
   html {
     color-scheme: dark;
   }
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+@theme inline {
+  --font-sans: var(--app-font);
+  --font-heading: var(--app-font);
+  --font-mono: var(--app-mono);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-mark: var(--mark);
+  --color-again: var(--again);
+  --color-hard: var(--hard);
+  --color-good: var(--good);
+  --color-easy: var(--easy);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  min-height: 100dvh;
-  display: flex;
-  flex-direction: column;
-  color: var(--foreground);
-  background: var(--background);
-  font-family: var(--font-sans);
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  color: var(--accent);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-button,
-input {
-  font: inherit;
-  color: inherit;
-}
-
-mark {
-  background: var(--mark);
-  color: inherit;
-  border-radius: 3px;
-  padding: 0 1px;
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply font-sans;
+    overflow-x: hidden;
+  }
+  body {
+    @apply flex min-h-dvh flex-col bg-background leading-relaxed text-foreground antialiased;
+    overflow-x: hidden;
+  }
+  /* 內文中的一般連結；shadcn 元件（有 data-slot）自己決定樣式 */
+  a:not([data-slot]) {
+    @apply text-primary underline-offset-4 hover:underline;
+  }
+  mark {
+    @apply rounded-sm bg-mark px-0.5 text-inherit;
+  }
 }

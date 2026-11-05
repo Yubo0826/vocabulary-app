@@ -1,20 +1,23 @@
 "use client";
 
+import { Undo2 } from "lucide-react";
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState, useTransition } from "react";
 import { getReviewStateAction, reviewCardAction, undoReviewAction, type ActionResult } from "@/app/actions";
-import { Attribution, highlight } from "@/components/example-text";
+import { ExampleSource, highlight } from "@/components/example-text";
 import { AccentToggle, SpeakButton } from "@/components/speech";
-import ui from "@/components/ui.module.css";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
 import type { ReviewState } from "@/lib/review-session";
 import { wordHref } from "@/lib/urls";
-import styles from "./page.module.css";
+import { cn } from "@/lib/utils";
 
 const RATINGS = [
-  { grade: 1, label: "忘記", key: "1", className: styles.again },
-  { grade: 2, label: "困難", key: "2", className: styles.hard },
-  { grade: 3, label: "記得", key: "3", className: styles.good },
-  { grade: 4, label: "簡單", key: "4", className: styles.easy },
+  { grade: 1, label: "忘記", key: "1", className: "text-again" },
+  { grade: 2, label: "困難", key: "2", className: "text-hard" },
+  { grade: 3, label: "記得", key: "3", className: "text-good" },
+  { grade: 4, label: "簡單", key: "4", className: "text-easy" },
 ] as const;
 
 const STATE_LABELS: Record<number, string> = { 0: "新卡", 1: "學習中", 2: "複習", 3: "重新學習" };
@@ -95,34 +98,36 @@ export function ReviewSession({ initial }: { initial: ReviewState }) {
   const { counts, stats } = state;
 
   return (
-    <div className={styles.session}>
-      <div className={styles.counts} aria-label="今日剩餘">
-        <span className={styles.countNew}>新卡 {counts.new}</span>
-        <span className={styles.countLearning}>學習中 {counts.learning}</span>
-        <span className={styles.countReview}>複習 {counts.review}</span>
+    <div className="flex flex-col gap-4">
+      <div className="flex min-h-8 flex-wrap items-center gap-x-3.5 gap-y-1 text-sm tabular-nums" aria-label="今日剩餘">
+        <span className="text-easy">新卡 {counts.new}</span>
+        <span className="text-hard">學習中 {counts.learning}</span>
+        <span className="text-primary">複習 {counts.review}</span>
         {reviewedInSession > 0 && (
-          <button type="button" className={ui.buttonGhost} onClick={undo} disabled={pending} title="快捷鍵：Z">
-            ↶ 復原上一張
-          </button>
+          <Button variant="ghost" className="ml-auto text-primary" onClick={undo} disabled={pending} title="快捷鍵：Z">
+            <Undo2 /> 復原上一張
+          </Button>
         )}
       </div>
 
       {error && (
-        <p className={ui.error} role="alert">
+        <p className="text-sm text-destructive" role="alert">
           {error}
         </p>
       )}
 
       {item ? (
-        <section className={styles.card} aria-live="polite">
-          <div className={styles.front}>
-            <span className={styles.stateTag}>{STATE_LABELS[item.state]}</span>
-            <div className={styles.wordRow}>
-              <h2 className={styles.word}>{item.display}</h2>
+        <Card className="gap-5 px-4 py-6 text-base" aria-live="polite">
+          <div className="flex flex-col items-center gap-1.5 text-center">
+            <Badge variant="outline" className="font-normal text-muted-foreground">
+              {STATE_LABELS[item.state]}
+            </Badge>
+            <div className="flex max-w-full items-center gap-2">
+              <h2 className="text-4xl leading-tight font-bold wrap-anywhere">{item.display}</h2>
               <SpeakButton text={item.display} />
             </div>
-            <div className={styles.meta}>
-              {item.phonetic && <span className={styles.phonetic}>/{item.phonetic}/</span>}
+            <div className="flex flex-wrap items-center justify-center gap-2 text-muted-foreground">
+              {item.phonetic && <span className="font-mono">/{item.phonetic}/</span>}
               <AccentToggle />
             </div>
           </div>
@@ -130,28 +135,28 @@ export function ReviewSession({ initial }: { initial: ReviewState }) {
           {flipped ? (
             <>
               <Answer item={item} />
-              <div className={styles.ratings}>
+              <div className="grid grid-cols-4 gap-2">
                 {RATINGS.map((r) => (
-                  <button
+                  <Button
                     key={r.grade}
-                    type="button"
-                    className={`${styles.rating} ${r.className}`}
+                    variant="outline"
+                    className={cn("h-auto min-h-16 flex-col gap-0.5 border-current px-1 py-2 hover:text-current dark:border-current", r.className)}
                     onClick={() => rate(r.grade)}
                     disabled={pending}
                   >
-                    <span className={styles.ratingLabel}>{r.label}</span>
-                    <span className={styles.ratingInterval}>{item.intervals[r.grade]}</span>
-                    <kbd className={styles.kbd}>{r.key}</kbd>
-                  </button>
+                    <span className="text-base font-semibold">{r.label}</span>
+                    <span className="text-xs font-normal text-muted-foreground">{item.intervals[r.grade]}</span>
+                    <Kbd>{r.key}</Kbd>
+                  </Button>
                 ))}
               </div>
             </>
           ) : (
-            <button type="button" className={`${ui.buttonPrimary} ${styles.flip}`} onClick={() => setFlipped(true)}>
-              顯示答案 <kbd className={styles.kbd}>空白鍵</kbd>
-            </button>
+            <Button className="h-12 w-full text-base" onClick={() => setFlipped(true)}>
+              顯示答案 <Kbd>空白鍵</Kbd>
+            </Button>
           )}
-        </section>
+        </Card>
       ) : (
         <Done state={state} pending={pending} onRefresh={() => apply(getReviewStateAction)} />
       )}
@@ -161,53 +166,53 @@ export function ReviewSession({ initial }: { initial: ReviewState }) {
   );
 }
 
+function Kbd({ children }: { children: React.ReactNode }) {
+  return <kbd className="rounded border border-current px-1 font-mono text-[0.7rem] font-normal opacity-70">{children}</kbd>;
+}
+
+function Pos({ children }: { children: React.ReactNode }) {
+  return <span className="mr-1.5 text-sm text-muted-foreground">{children}</span>;
+}
+
 function Answer({ item }: { item: NonNullable<ReviewState["item"]> }) {
   const forms = new Set([item.headword, ...item.forms]);
   return (
-    <div className={styles.back}>
+    <div className="flex flex-col gap-3.5 border-t pt-4">
       {item.zh.length > 0 && (
-        <ul className={styles.zhList}>
+        <ul className="flex flex-col gap-1 text-lg">
           {item.zh.map((d, i) => (
             <li key={i}>
-              {d.pos && <span className={styles.pos}>{d.pos}</span>}
+              {d.pos && <Pos>{d.pos}</Pos>}
               <span>{d.text}</span>
             </li>
           ))}
         </ul>
       )}
       {item.en.length > 0 && (
-        <ol className={styles.enList}>
+        <ol className="list-decimal pl-6 text-[0.95rem] text-muted-foreground">
           {item.en.map((d, i) => (
             <li key={i}>
-              {d.pos && <span className={styles.pos}>{d.pos}</span>}
+              {d.pos && <Pos>{d.pos}</Pos>}
               {d.text}
             </li>
           ))}
         </ol>
       )}
       {item.examples.length > 0 && (
-        <ul className={styles.examples}>
+        <ul className="flex flex-col gap-2.5">
           {item.examples.map((ex) => (
             <li key={ex.id}>
-              <div className={styles.exampleEn}>
+              <div className="flex items-start gap-1">
                 <p>{highlight(ex.textEn, forms)}</p>
                 <SpeakButton text={ex.textEn} size="sm" />
+                <ExampleSource example={ex} />
               </div>
-              {ex.textZh && <p className={styles.exampleZh}>{ex.textZh}</p>}
-              <p className={styles.attribution}>
-                <Attribution id={ex.enSentenceId} author={ex.enAuthor} license={ex.enLicense} />
-                {ex.zhSentenceId && ex.zhLicense && (
-                  <>
-                    {" ／ 中譯 "}
-                    <Attribution id={ex.zhSentenceId} author={ex.zhAuthor} license={ex.zhLicense} />
-                  </>
-                )}
-              </p>
+              {ex.textZh && <p className="text-muted-foreground">{ex.textZh}</p>}
             </li>
           ))}
         </ul>
       )}
-      <Link href={wordHref(item.headword)} className={styles.wordLink} target="_blank">
+      <Link href={wordHref(item.headword)} className="self-start text-sm" target="_blank">
         查看完整單字頁 ↗
       </Link>
     </div>
@@ -217,52 +222,54 @@ function Answer({ item }: { item: NonNullable<ReviewState["item"]> }) {
 function Done({ state, pending, onRefresh }: { state: ReviewState; pending: boolean; onRefresh: () => void }) {
   const nextDue = state.nextLearningDue ? new Date(state.nextLearningDue) : null;
   return (
-    <section className={`${ui.card} ${styles.done}`}>
-      <p className={styles.doneTitle}>{state.stats.reviewedToday > 0 ? "今天的複習完成了 🎉" : "目前沒有要複習的卡片"}</p>
+    <Card className="gap-2 px-4">
+      <p className="text-lg font-semibold">{state.stats.reviewedToday > 0 ? "今天的複習完成了 🎉" : "目前沒有要複習的卡片"}</p>
       {nextDue ? (
         <>
-          <p className={ui.muted}>還有學習中的卡片，最早在 {timeFormat.format(nextDue)} 到期。</p>
+          <p className="text-sm text-muted-foreground">還有學習中的卡片，最早在 {timeFormat.format(nextDue)} 到期。</p>
           <div>
-            <button type="button" className={ui.button} onClick={onRefresh} disabled={pending}>
+            <Button variant="outline" size="lg" onClick={onRefresh} disabled={pending}>
               重新整理
-            </button>
+            </Button>
           </div>
         </>
       ) : (
-        <p className={ui.muted}>
+        <p className="text-sm text-muted-foreground">
           收藏新的單字就會自動建立字卡。<Link href="/saved">我的單字</Link>
         </p>
       )}
-    </section>
+    </Card>
   );
 }
 
 function Stats({ stats }: { stats: ReviewState["stats"] }) {
   const max = Math.max(1, ...stats.forecast.map((d) => d.count));
   return (
-    <section className={styles.stats} aria-label="統計">
-      <dl className={styles.statNumbers}>
+    <Card className="gap-4 px-4" aria-label="統計">
+      <dl className="grid grid-cols-2 gap-2">
         <div>
-          <dt>今日已複習</dt>
-          <dd>{stats.reviewedToday}</dd>
+          <dt className="text-muted-foreground">今日已複習</dt>
+          <dd className="text-2xl font-semibold tabular-nums">{stats.reviewedToday}</dd>
         </div>
         <div>
-          <dt>連續天數</dt>
-          <dd>{stats.streak}</dd>
+          <dt className="text-muted-foreground">連續天數</dt>
+          <dd className="text-2xl font-semibold tabular-nums">{stats.streak}</dd>
         </div>
       </dl>
       <div>
-        <h2 className={styles.statsTitle}>未來 7 天到期</h2>
-        <ol className={styles.forecast}>
+        <h2 className="mb-2 text-muted-foreground">未來 7 天到期</h2>
+        <ol className="grid h-30 grid-cols-7 gap-1.5">
           {stats.forecast.map((d, i) => (
-            <li key={d.date} title={`${d.date}：${d.count} 張`}>
-              <span className={styles.barCount}>{d.count}</span>
-              <span className={styles.bar} style={{ height: `${(d.count / max) * 70}%` }} />
-              <span className={styles.barLabel}>{i === 0 ? "今天" : `${Number(d.date.slice(5, 7))}/${Number(d.date.slice(8))}`}</span>
+            <li key={d.date} title={`${d.date}：${d.count} 張`} className="flex min-w-0 flex-col items-center justify-end gap-0.5">
+              <span className="text-xs tabular-nums">{d.count}</span>
+              <span className="min-h-0.5 w-full max-w-7 rounded-t-sm bg-primary" style={{ height: `${(d.count / max) * 70}%` }} />
+              <span className="text-[0.7rem] whitespace-nowrap text-muted-foreground">
+                {i === 0 ? "今天" : `${Number(d.date.slice(5, 7))}/${Number(d.date.slice(8))}`}
+              </span>
             </li>
           ))}
         </ol>
       </div>
-    </section>
+    </Card>
   );
 }

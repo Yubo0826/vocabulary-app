@@ -1,13 +1,13 @@
+import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { Suspense } from "react";
-import { Attribution, highlight } from "@/components/example-text";
+import { ExampleSource, highlight } from "@/components/example-text";
 import { SavePanel } from "@/components/save-panel";
 import { AccentToggle, SpeakButton } from "@/components/speech";
+import { Badge } from "@/components/ui/badge";
 import { findLemma, getWord, type WordDetail } from "@/lib/dictionary";
 import { normalizeHeadword } from "@/lib/headword";
 import { wordHref } from "@/lib/urls";
-import Link from "next/link";
-import styles from "./page.module.css";
 
 const FORM_LABELS: Record<string, string> = {
   p: "過去式",
@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: PageProps<"/word/[headword]">
 
 export default function WordPage({ params }: PageProps<"/word/[headword]">) {
   return (
-    <Suspense fallback={<p className={styles.loading}>載入中…</p>}>
+    <Suspense fallback={<p className="text-muted-foreground">載入中…</p>}>
       {params.then(({ headword }) => (
         <WordContent raw={headword} />
       ))}
@@ -52,28 +52,28 @@ async function WordContent({ raw }: { raw: string }) {
 }
 
 function WordView({ word }: { word: WordDetail }) {
-  const { entry, zh, en, examples, inflections, lemmaOf } = word;
+  const { entry, zh, en, examples, inflections, lemmaOf, confusables, synonyms } = word;
   const examTags = (entry.tags ?? []).filter((t) => t in EXAM_TAGS);
   const highlightForms = new Set([entry.headword, ...inflections.map((f) => f.form)]);
 
   return (
-    <article className={styles.article}>
-      <header className={styles.head}>
-        <div className={styles.titleRow}>
-          <h1 className={styles.title}>{entry.display}</h1>
+    <article className="flex flex-col gap-7">
+      <header className="flex flex-col gap-2">
+        <div className="flex items-center gap-3">
+          <h1 className="text-[clamp(2rem,8vw,2.6rem)] leading-tight font-bold wrap-anywhere">{entry.display}</h1>
           <SpeakButton text={entry.display} />
         </div>
-        <div className={styles.meta}>
-          {entry.phonetic && <span className={styles.phonetic}>/{entry.phonetic}/</span>}
+        <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
+          {entry.phonetic && <span className="font-mono text-muted-foreground">/{entry.phonetic}/</span>}
           <AccentToggle />
           {examTags.map((t) => (
-            <span key={t} className={styles.tag}>
+            <Badge key={t} variant="secondary" className="bg-accent tracking-wide text-accent-foreground">
               {EXAM_TAGS[t]}
-            </span>
+            </Badge>
           ))}
         </div>
         {lemmaOf.length > 0 && (
-          <p className={styles.lemmaOf}>
+          <p className="flex flex-wrap gap-x-3 gap-y-1 text-sm text-muted-foreground">
             {groupBy(lemmaOf, (f) => f.lemma).map(([lemma, forms]) => (
               <span key={lemma}>
                 也是 <Link href={wordHref(lemma)}>{lemma}</Link> 的{forms.map((f) => FORM_LABELS[f.kind]).join("、")}
@@ -87,52 +87,49 @@ function WordView({ word }: { word: WordDetail }) {
       </header>
 
       {zh.length > 0 && (
-        <section className={styles.section}>
-          <h2 className={styles.sectionTitle}>中文釋義</h2>
-          <ul className={styles.zhList}>
+        <Section title="中文釋義">
+          <ul className="flex flex-col gap-1.5 text-[1.05rem]">
             {zh.map((d, i) => (
-              <li key={i}>
-                <span className={styles.pos}>{d.pos}</span>
+              <li key={i} className="flex items-baseline gap-2">
+                <Pos>{d.pos}</Pos>
                 <span>{d.text}</span>
               </li>
             ))}
           </ul>
-        </section>
+        </Section>
       )}
 
       {inflections.length > 0 && (
-        <section className={styles.section}>
-          <h2 className={styles.sectionTitle}>詞形變化</h2>
-          <dl className={styles.forms}>
+        <Section title="詞形變化">
+          <dl className="flex flex-wrap gap-x-5 gap-y-2">
             {groupBy(inflections, (f) => f.kind)
               .sort(([a], [b]) => Object.keys(FORM_LABELS).indexOf(a) - Object.keys(FORM_LABELS).indexOf(b))
               .map(([kind, forms]) => (
-                <div key={kind} className={styles.formItem}>
-                  <dt>{FORM_LABELS[kind] ?? kind}</dt>
-                  <dd>{forms.map((f) => f.form).join("、")}</dd>
+                <div key={kind} className="flex items-baseline gap-1.5">
+                  <dt className="text-xs text-muted-foreground">{FORM_LABELS[kind] ?? kind}</dt>
+                  <dd className="font-semibold">{forms.map((f) => f.form).join("、")}</dd>
                 </div>
               ))}
           </dl>
-        </section>
+        </Section>
       )}
 
       {en.length > 0 && (
-        <section className={styles.section}>
-          <h2 className={styles.sectionTitle}>英英釋義</h2>
+        <Section title="英英釋義">
           {groupBy(en, (d) => d.pos ?? "").map(([pos, defs]) => (
-            <div key={pos} className={styles.enGroup}>
-              <h3 className={styles.enPos}>
-                {POS_LABELS[pos] ?? pos} <span className={styles.posCode}>{pos}</span>
+            <div key={pos} className="not-first:mt-2">
+              <h3 className="mb-1 font-semibold">
+                {POS_LABELS[pos] ?? pos} <span className="text-sm font-normal text-muted-foreground italic">{pos}</span>
               </h3>
-              <ol className={styles.enList}>
+              <ol className="flex list-decimal flex-col gap-1 pl-6">
                 {defs.slice(0, EN_DEFS_SHOWN).map((d, i) => (
                   <li key={i}>{d.text}</li>
                 ))}
               </ol>
               {defs.length > EN_DEFS_SHOWN && (
-                <details className={styles.more}>
-                  <summary>顯示其餘 {defs.length - EN_DEFS_SHOWN} 筆</summary>
-                  <ol className={styles.enList} start={EN_DEFS_SHOWN + 1}>
+                <details>
+                  <summary className="my-1.5 cursor-pointer text-sm text-primary">顯示其餘 {defs.length - EN_DEFS_SHOWN} 筆</summary>
+                  <ol className="flex list-decimal flex-col gap-1 pl-6" start={EN_DEFS_SHOWN + 1}>
                     {defs.slice(EN_DEFS_SHOWN).map((d, i) => (
                       <li key={i}>{d.text}</li>
                     ))}
@@ -141,36 +138,70 @@ function WordView({ word }: { word: WordDetail }) {
               )}
             </div>
           ))}
-        </section>
+        </Section>
+      )}
+
+      {(confusables.length > 0 || synonyms.length > 0) && (
+        <Section title="相似">
+          <dl className="flex flex-col gap-3">
+            <WordList label="易混淆" words={confusables} />
+            <WordList label="近義字" words={synonyms} />
+          </dl>
+        </Section>
       )}
 
       {examples.length > 0 && (
-        <section className={styles.section}>
-          <h2 className={styles.sectionTitle}>例句</h2>
-          <ul className={styles.examples}>
+        <Section title="例句">
+          <ul className="flex flex-col divide-y">
             {examples.map((ex) => (
-              <li key={ex.id} className={styles.example}>
-                <div className={styles.exampleEn}>
-                  <p>{highlight(ex.textEn, highlightForms)}</p>
+              <li key={ex.id} className="py-3 first:pt-0 last:pb-0">
+                <div className="flex items-start gap-1 text-[1.02rem]">
+                  <p className="flex-1">{highlight(ex.textEn, highlightForms)}</p>
                   <SpeakButton text={ex.textEn} size="sm" />
+                  <ExampleSource example={ex} />
                 </div>
-                {ex.textZh && <p className={styles.exampleZh}>{ex.textZh}</p>}
-                <p className={styles.attribution}>
-                  <Attribution id={ex.enSentenceId} author={ex.enAuthor} license={ex.enLicense} />
-                  {ex.zhSentenceId && ex.zhLicense && (
-                    <>
-                      {" ／ 中譯 "}
-                      <Attribution id={ex.zhSentenceId} author={ex.zhAuthor} license={ex.zhLicense} />
-                    </>
-                  )}
-                </p>
+                {ex.textZh && <p className="mt-0.5 text-muted-foreground">{ex.textZh}</p>}
               </li>
             ))}
           </ul>
-        </section>
+        </Section>
       )}
+
     </article>
   );
+}
+
+function Section({ title, children }: { title: string; children: React.ReactNode }) {
+  return (
+    <section className="flex flex-col gap-2.5">
+      <h2 className="border-b pb-1.5 text-xs font-semibold tracking-widest text-muted-foreground">{title}</h2>
+      {children}
+    </section>
+  );
+}
+
+/** 一排相關的字，每個字連到它的單字頁 */
+function WordList({ label, words }: { label: string; words: { headword: string; display: string }[] }) {
+  if (words.length === 0) return null;
+  return (
+    <div className="flex flex-col gap-1">
+      <dt className="text-sm font-semibold text-primary">{label}</dt>
+      <dd className="flex flex-wrap gap-x-1 gap-y-1 text-[1.02rem]">
+        {words.map((w, i) => (
+          <span key={w.headword}>
+            <Link href={wordHref(w.headword)} className="text-foreground underline-offset-4 hover:text-primary">
+              {w.display}
+            </Link>
+            {i < words.length - 1 && <span className="text-muted-foreground">,</span>}
+          </span>
+        ))}
+      </dd>
+    </div>
+  );
+}
+
+function Pos({ children }: { children: React.ReactNode }) {
+  return <span className="min-w-[2.6em] shrink-0 text-sm text-primary italic">{children}</span>;
 }
 
 function groupBy<T>(items: T[], key: (item: T) => string): [string, T[]][] {

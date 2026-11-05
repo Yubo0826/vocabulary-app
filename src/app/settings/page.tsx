@@ -1,16 +1,15 @@
 import { Suspense } from "react";
 import { getSettings } from "@/lib/review";
 import { requireUser } from "@/lib/session";
-import ui from "@/components/ui.module.css";
 import { SettingsForm } from "./settings-form";
 
 export const metadata = { title: "複習設定" };
 
 export default function SettingsPage() {
   return (
-    <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
-      <h1 style={{ fontSize: "1.6rem" }}>複習設定</h1>
-      <Suspense fallback={<p className={ui.muted}>載入中…</p>}>
+    <div className="flex flex-col gap-5">
+      <h1 className="text-2xl font-bold">複習設定</h1>
+      <Suspense fallback={<p className="text-sm text-muted-foreground">載入中…</p>}>
         <Settings />
       </Suspense>
     </div>

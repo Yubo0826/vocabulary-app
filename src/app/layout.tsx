@@ -4,7 +4,6 @@ import Link from "next/link";
 import { Suspense } from "react";
 import { UserNav } from "@/components/user-nav";
 import "./globals.css";
-import styles from "./layout.module.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,13 +25,16 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
+/** 頁首、內容、頁尾共用的寬度與左右留白 */
+const container = "mx-auto w-full max-w-[720px] px-4";
+
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="zh-Hant-TW" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body>
-        <header className={styles.header}>
-          <div className={styles.headerInner}>
-            <Link href="/" className={styles.logo}>
+        <header className="border-b bg-card">
+          <div className={`${container} flex h-13 items-center`}>
+            <Link href="/" className="text-lg font-bold tracking-wider text-foreground hover:no-underline">
               單字
             </Link>
             <Suspense fallback={null}>
@@ -40,9 +42,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             </Suspense>
           </div>
         </header>
-        <main className={styles.main}>{children}</main>
-        <footer className={styles.footer}>
-          <div className={styles.footerInner}>
+        <main className={`${container} flex-1 pt-6 pb-12`}>{children}</main>
+        <footer className="border-t text-xs text-muted-foreground">
+          <div className={`${container} pt-4 pb-6`}>
             字典資料來自 ECDICT（MIT）、Open English WordNet（CC BY 4.0）與 Tatoeba（CC BY 2.0 FR／CC0）。
             <Link href="/about">資料來源與授權</Link>
           </div>
