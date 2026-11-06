@@ -202,6 +202,22 @@ describe("收藏與字卡", () => {
     await assert.rejects(data.saveToWordbooks(userA, "apple", [bBook.id]), isNotFound);
   });
 
+  test("listNotes：只列自己有筆記的字，可搜尋筆記與單字", async () => {
+    await data.saveWord(userA, "apple", "紅色的 **水果**");
+    await data.saveWord(userA, "banana", "100% 黃色");
+    await data.saveWord(userB, "apple", "B 的筆記");
+    const words = async (q?: string) => (await data.listNotes(userA, { q, sort: "alpha" })).map((n) => n.headword);
+
+    assert.deepEqual(await words(), ["apple", "banana"], "cherry 沒有筆記，不列出");
+    assert.deepEqual(await words("水果"), ["apple"], "比對筆記內容");
+    assert.deepEqual(await words("BAN"), ["banana"], "比對單字，不分大小寫");
+    assert.deepEqual(await words("%"), ["banana"], "% 照字面比對");
+    assert.deepEqual(await words("B 的"), [], "看不到別人的筆記");
+
+    await data.unsaveWord(userA, "banana");
+    assert.deepEqual(await words(), ["apple"], "取消收藏後不列出");
+  });
+
   test("不存在於字典的字不能收藏", async () => {
     await assert.rejects(data.saveWord(userA, "notaword"), isNotFound);
   });

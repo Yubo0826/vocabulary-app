@@ -6,7 +6,7 @@
  * - 每個查詢都以 userId 過濾；操作別人的資料一律視為「找不到」（NotFoundError），不透露資料是否存在。
  * - 不做硬刪除：取消收藏、刪除單字本都是設定 deleted_at（軟刪除）。
  */
-import { and, asc, desc, eq, inArray, isNotNull, isNull, notInArray, sql } from "drizzle-orm";
+import { and, asc, desc, eq, ilike, inArray, isNotNull, isNull, notInArray, or, sql } from "drizzle-orm";
 import { db } from "@/db";
 import { cards, definitions, entries, savedWords, wordbookItems, wordbooks } from "@/db/schema";
 import { normalizeHeadword } from "./headword";
@@ -195,17 +195,18 @@ export async function getSaveState(userId: string, rawHeadword: string) {
 
 export type SavedSort = "recent" | "alpha";
 
-/** 收藏列表：可依單字本篩選、依收藏時間（新到舊）或字母排序 */
-export async function listSavedWords(userId: string, options: { wordbookId?: string | null; sort?: SavedSort } = {}) {
-  const { wordbookId, sort = "recent" } = options;
-  // 注意：select 欄位中的子查詢，Drizzle 會把 ${column} 輸出成不帶表名的欄位，關聯條件會錯，
-  // 因此子查詢一律用別名寫出完整欄位名稱
-  const gloss = sql<string | null>`(
+/** 收藏字的第一筆中文釋義（列表顯示用）。
+ * 注意：select 欄位中的子查詢，Drizzle 會把 ${column} 輸出成不帶表名的欄位，關聯條件會錯，
+ * 因此子查詢一律用別名寫出完整欄位名稱 */
+const firstGloss = () => sql<string | null>`(
     SELECT CASE WHEN d.pos IS NULL THEN d.text ELSE d.pos || ' ' || d.text END
     FROM ${definitions} d
     WHERE d.headword = "saved_words"."headword" AND d.lang = 'zh-TW'
     ORDER BY d.sort_order LIMIT 1)`;
 
+/** 收藏列表：可依單字本篩選、依收藏時間（新到舊）或字母排序 */
+export async function listSavedWords(userId: string, options: { wordbookId?: string | null; sort?: SavedSort } = {}) {
+  const { wordbookId, sort = "recent" } = options;
   const base = db
     .select({
       id: savedWords.id,
@@ -213,7 +214,7 @@ export async function listSavedWords(userId: string, options: { wordbookId?: str
       display: sql<string>`coalesce(${entries.display}, ${savedWords.headword})`,
       note: savedWords.note,
       savedAt: savedWords.createdAt,
-      gloss,
+      gloss: firstGloss(),
     })
     .from(savedWords)
     .leftJoin(entries, eq(entries.headword, savedWords.headword)); // 字典可能被替換，不用外鍵也不用 inner join
@@ -233,6 +234,39 @@ export async function listSavedWords(userId: string, options: { wordbookId?: str
   return query
     .where(activeSaved(userId))
     .orderBy(...(sort === "alpha" ? [asc(savedWords.headword)] : [desc(savedWords.createdAt), asc(savedWords.headword)]));
+}
+
+export type NoteSort = "recent" | "alpha";
+
+/**
+ * 筆記庫：有筆記的收藏字。q 會比對筆記內容與單字（不分大小寫）。
+ * 「最近」依收藏紀錄的 updated_at 排序（筆記沒有獨立的更新時間，重新收藏也會更新它）。
+ */
+export async function listNotes(userId: string, options: { q?: string | null; sort?: NoteSort } = {}) {
+  const { sort = "recent" } = options;
+  const q = options.q?.trim();
+  // LIKE 的 \ % _ 要跳脫，搜尋字串裡的這些字元才會照字面比對
+  const pattern = q ? `%${q.replace(/[\\%_]/g, (c) => "\\" + c)}%` : null;
+
+  return db
+    .select({
+      id: savedWords.id,
+      headword: savedWords.headword,
+      display: sql<string>`coalesce(${entries.display}, ${savedWords.headword})`,
+      note: sql<string>`${savedWords.note}`,
+      updatedAt: savedWords.updatedAt,
+      gloss: firstGloss(),
+    })
+    .from(savedWords)
+    .leftJoin(entries, eq(entries.headword, savedWords.headword))
+    .where(
+      and(
+        activeSaved(userId),
+        isNotNull(savedWords.note),
+        pattern ? or(ilike(savedWords.note, pattern), ilike(savedWords.headword, pattern)) : undefined,
+      ),
+    )
+    .orderBy(...(sort === "alpha" ? [asc(savedWords.headword)] : [desc(savedWords.updatedAt), asc(savedWords.headword)]));
 }
 
 // ---------------------------------------------------------------- 單字本
