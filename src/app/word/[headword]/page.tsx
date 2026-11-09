@@ -5,6 +5,7 @@ import { ExampleSource, highlight } from "@/components/example-text";
 import { NoteButton, NotePreview, SaveButton } from "@/components/save-panel";
 import { AccentToggle, SpeakButton } from "@/components/speech";
 import { Badge } from "@/components/ui/badge";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { findLemma, getWord, type WordDetail } from "@/lib/dictionary";
 import { normalizeHeadword } from "@/lib/headword";
 import { wordHref } from "@/lib/urls";
@@ -20,7 +21,6 @@ const FORM_LABELS: Record<string, string> = {
 };
 const POS_LABELS: Record<string, string> = { "n.": "名詞", "v.": "動詞", "adj.": "形容詞", "adv.": "副詞" };
 const EXAM_TAGS: Record<string, string> = { toefl: "TOEFL", ielts: "IELTS", gre: "GRE" };
-const FAMILY_POS_LABELS: Record<string, string> = { n: "名詞", v: "動詞", adj: "形容詞", adv: "副詞" };
 const EN_DEFS_SHOWN = 8; // 英英釋義每個詞性預設顯示幾筆，其餘收合
 
 export async function generateMetadata({ params }: PageProps<"/word/[headword]">) {
@@ -53,8 +53,9 @@ async function WordContent({ raw }: { raw: string }) {
 }
 
 function WordView({ word }: { word: WordDetail }) {
-  const { entry, zh, en, examples, inflections, lemmaOf, confusables, synonyms, family } = word;
+  const { entry, zh, en, examples, inflections, lemmaOf, confusables, synonyms } = word;
   const examTags = (entry.tags ?? []).filter((t) => t in EXAM_TAGS);
+  const similarCount = confusables.length + synonyms.length;
   const highlightForms = new Set([entry.headword, ...inflections.map((f) => f.form)]);
 
   return (
@@ -93,91 +94,88 @@ function WordView({ word }: { word: WordDetail }) {
         </Suspense>
       </header>
 
-      {zh.length > 0 && (
-        <Section title="中文釋義">
-          <ul className="flex flex-col gap-1.5 text-[1.05rem]">
-            {zh.map((d, i) => (
-              <li key={i} className="flex items-baseline gap-2">
-                <Pos>{d.pos}</Pos>
-                <span>{d.text}</span>
-              </li>
-            ))}
-          </ul>
-        </Section>
-      )}
-
-      {family.length > 0 && (
-        <Section title="詞性家族">
-          <dl className="flex flex-col gap-1.5">
-            {groupBy(family, (f) => f.pos).map(([pos, words]) => (
-              <div key={pos} className="flex items-baseline gap-3">
-                <dt className="w-12 shrink-0 text-xs text-muted-foreground">{FAMILY_POS_LABELS[pos] ?? pos}</dt>
-                <dd className="flex flex-wrap gap-x-3 gap-y-1">
-                  {words.map((w) => (
-                    <Link key={w.headword} href={wordHref(w.headword)} className="font-semibold">
-                      {w.display}
-                    </Link>
-                  ))}
-                </dd>
-              </div>
-            ))}
-          </dl>
-        </Section>
-      )}
-
-      {en.length > 0 && (
-        <Section title="英英釋義">
-          {groupBy(en, (d) => d.pos ?? "").map(([pos, defs]) => (
-            <div key={pos} className="not-first:mt-2">
-              <h3 className="mb-1 font-semibold">
-                {POS_LABELS[pos] ?? pos} <span className="text-sm font-normal text-muted-foreground italic">{pos}</span>
-              </h3>
-              <ol className="flex list-decimal flex-col gap-1 pl-6">
-                {defs.slice(0, EN_DEFS_SHOWN).map((d, i) => (
-                  <li key={i}>{d.text}</li>
+      <Tabs defaultValue="main" className="gap-6">
+        {similarCount > 0 && (
+          <TabsList variant="line" className="w-full justify-start gap-4 border-b pb-1">
+            <TabsTrigger value="main" className="flex-none px-1 text-base">
+              釋義
+            </TabsTrigger>
+            <TabsTrigger value="similar" className="flex-none px-1 text-base">
+              相似
+            </TabsTrigger>
+          </TabsList>
+        )}
+        <TabsContent value="main" className="flex flex-col gap-7 text-base">
+          {zh.length > 0 && (
+            <Section title="中文釋義">
+              <ul className="flex flex-col gap-1.5 text-[1.05rem]">
+                {zh.map((d, i) => (
+                  <li key={i} className="flex items-baseline gap-2">
+                    <Pos>{d.pos}</Pos>
+                    <span>{d.text}</span>
+                  </li>
                 ))}
-              </ol>
-              {defs.length > EN_DEFS_SHOWN && (
-                <details>
-                  <summary className="my-1.5 cursor-pointer text-sm text-primary">顯示其餘 {defs.length - EN_DEFS_SHOWN} 筆</summary>
-                  <ol className="flex list-decimal flex-col gap-1 pl-6" start={EN_DEFS_SHOWN + 1}>
-                    {defs.slice(EN_DEFS_SHOWN).map((d, i) => (
+              </ul>
+            </Section>
+          )}
+
+          {en.length > 0 && (
+            <Section title="英英釋義">
+              {groupBy(en, (d) => d.pos ?? "").map(([pos, defs]) => (
+                <div key={pos} className="not-first:mt-2">
+                  <h3 className="mb-1 font-semibold">
+                    {POS_LABELS[pos] ?? pos}{" "}
+                    <span className="text-sm font-normal text-muted-foreground italic">{pos}</span>
+                  </h3>
+                  <ol className="flex list-decimal flex-col gap-1 pl-6">
+                    {defs.slice(0, EN_DEFS_SHOWN).map((d, i) => (
                       <li key={i}>{d.text}</li>
                     ))}
                   </ol>
-                </details>
-              )}
-            </div>
-          ))}
-        </Section>
-      )}
-
-      {(confusables.length > 0 || synonyms.length > 0) && (
-        <Section title="相似">
-          <dl className="flex flex-col gap-3">
-            <WordList label="易混淆" words={confusables} />
-            <WordList label="近義字" words={synonyms} />
-          </dl>
-        </Section>
-      )}
-
-      {examples.length > 0 && (
-        <Section title="例句">
-          <ul className="flex flex-col divide-y">
-            {examples.map((ex) => (
-              <li key={ex.id} className="py-3 first:pt-0 last:pb-0">
-                <div className="flex items-start gap-1 text-[1.02rem]">
-                  <p className="flex-1">{highlight(ex.textEn, highlightForms)}</p>
-                  <SpeakButton text={ex.textEn} size="sm" />
-                  <ExampleSource example={ex} />
+                  {defs.length > EN_DEFS_SHOWN && (
+                    <details>
+                      <summary className="my-1.5 cursor-pointer text-sm text-primary">
+                        顯示其餘 {defs.length - EN_DEFS_SHOWN} 筆
+                      </summary>
+                      <ol className="flex list-decimal flex-col gap-1 pl-6" start={EN_DEFS_SHOWN + 1}>
+                        {defs.slice(EN_DEFS_SHOWN).map((d, i) => (
+                          <li key={i}>{d.text}</li>
+                        ))}
+                      </ol>
+                    </details>
+                  )}
                 </div>
-                {ex.textZh && <p className="mt-0.5 text-muted-foreground">{ex.textZh}</p>}
-              </li>
-            ))}
-          </ul>
-        </Section>
-      )}
+              ))}
+            </Section>
+          )}
 
+          {examples.length > 0 && (
+            <Section title="例句">
+              <ul className="flex flex-col divide-y">
+                {examples.map((ex) => (
+                  <li key={ex.id} className="py-3 first:pt-0 last:pb-0">
+                    <div className="flex items-start gap-1 text-[1.02rem]">
+                      <p className="flex-1">{highlight(ex.textEn, highlightForms)}</p>
+                      <SpeakButton text={ex.textEn} size="sm" />
+                      <ExampleSource example={ex} />
+                    </div>
+                    {ex.textZh && <p className="mt-0.5 text-muted-foreground">{ex.textZh}</p>}
+                  </li>
+                ))}
+              </ul>
+            </Section>
+          )}
+        </TabsContent>
+
+        {similarCount > 0 && (
+          <TabsContent value="similar" className="text-base">
+            <dl className="flex flex-col gap-4">
+              <WordList label="易混淆" words={confusables} />
+              <WordList label="近義字" words={synonyms} />
+            </dl>
+          </TabsContent>
+        )}
+      </Tabs>
     </article>
   );
 }
