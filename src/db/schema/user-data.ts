@@ -49,7 +49,7 @@ export const savedWords = pgTable(
     userId: userIdColumn(),
     headword: text("headword").notNull(),
     note: text("note"), // 個人筆記
-    // 從哪裡收藏的：'search' | 'extension' | 'csv'；擴充功能可另存出處網址與原句
+    // 從哪裡收藏的：'search' | 'extension' | 'import'（純文字清單匯入）；擴充功能可另存出處網址與原句
     origin: text("origin"),
     contextUrl: text("context_url"),
     contextSentence: text("context_sentence"),

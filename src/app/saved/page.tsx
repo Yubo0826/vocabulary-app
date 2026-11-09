@@ -1,3 +1,4 @@
+import { Download } from "lucide-react";
 import Link from "next/link";
 import { Suspense } from "react";
 import { requireUser } from "@/lib/session";
@@ -7,6 +8,7 @@ import { isUuid } from "@/lib/uuid";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { noteToPlainText } from "@/lib/note";
+import { ImportDialog } from "./import-dialog";
 
 export const metadata = { title: "我的單字" };
 
@@ -39,6 +41,9 @@ async function SavedList({ bookParam, sort }: { bookParam: string | null; sort: 
     return qs ? `/saved?${qs}` : "/saved";
   };
 
+  const exportHref = `/api/export/words${href({}).slice("/saved".length)}`;
+  const exportLabel = book ? `匯出「${book.name}」的單字` : "匯出所有單字";
+
   const chip = (on: boolean) =>
     cn(
       "inline-flex items-center gap-1.5 rounded-full border bg-card px-3 py-1 text-sm text-foreground hover:border-primary hover:no-underline",
@@ -49,9 +54,18 @@ async function SavedList({ bookParam, sort }: { bookParam: string | null; sort: 
     <div className="flex flex-col gap-4">
       <div className="flex items-center justify-between gap-2">
         <h1 className="text-2xl font-bold">我的單字</h1>
-        <Button asChild variant="ghost" className="text-primary">
-          <Link href="/wordbooks">管理單字本</Link>
-        </Button>
+        <div className="flex items-center">
+          <ImportDialog wordbooks={wordbooks.map(({ id, name }) => ({ id, name }))} defaultWordbookId={book?.id ?? null} />
+          {/* 一般 <a>：下載檔案，不用 Link 的預先載入 */}
+          <Button asChild variant="ghost" size="icon-lg" aria-label={exportLabel} title={exportLabel}>
+            <a href={exportHref} download>
+              <Download />
+            </a>
+          </Button>
+          <Button asChild variant="ghost" className="text-primary">
+            <Link href="/wordbooks">管理單字本</Link>
+          </Button>
+        </div>
       </div>
 
       <nav className="flex flex-wrap gap-2" aria-label="依單字本篩選">

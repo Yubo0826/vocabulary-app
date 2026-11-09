@@ -223,6 +223,50 @@ describe("收藏與字卡", () => {
   });
 });
 
+describe("匯入單字", () => {
+  test("parseWordList：每行一字、只取第一欄、去編號與引號、略過註解與重複", async () => {
+    const { parseWordList } = await import("../src/lib/word-list");
+    const text = '﻿Apple\r\n  take   off \n# 註解\n\nbanana\t香蕉\n"cherry",櫻桃\n1. date\n2) apple\n123\n';
+    assert.deepEqual(parseWordList(text), ["apple", "take off", "banana", "cherry", "date"]);
+  });
+
+  test("importWords：收藏字典有的字、變化形轉原形、列出找不到的字，並放進單字本", async () => {
+    const { eq } = await import("drizzle-orm");
+    await db.insert(schema.wordForms).values({ form: "apples", lemma: "apple", kind: "s" }).onConflictDoNothing();
+    const c = await signUp({ email: "c@example.com", password: "password-c-123", name: "C" });
+    const book = await data.createWordbook(c.id, { name: "匯入本" });
+
+    const r1 = await data.importWords(c.id, "cherry\nApples\tsomething\nnotaword\n1. banana\n", book.id);
+    assert.deepEqual(r1, {
+      added: 3,
+      alreadySaved: 0,
+      converted: [{ from: "apples", to: "apple" }],
+      notFound: ["notaword"],
+    });
+    const inBook = (await data.listSavedWords(c.id, { wordbookId: book.id, sort: "alpha" })).map((w) => w.headword);
+    assert.deepEqual(inBook, ["apple", "banana", "cherry"], "都放進單字本");
+
+    const cardRows = await db
+      .select({ headword: schema.cards.headword })
+      .from(schema.cards)
+      .where(eq(schema.cards.userId, c.id))
+      .orderBy(schema.cards.createdAt);
+    assert.deepEqual(cardRows.map((r) => r.headword), ["cherry", "apple", "banana"], "字卡依清單順序建立");
+
+    await data.unsaveWord(c.id, "banana");
+    const r2 = await data.importWords(c.id, "apple\nbanana", null);
+    assert.equal(r2.added, 1, "曾取消收藏的 banana 重新收藏");
+    assert.equal(r2.alreadySaved, 1, "apple 已收藏");
+
+    await assert.rejects(data.importWords(c.id, "\n# 只有註解\n", null), (e) => e instanceof data.ValidationError);
+  });
+
+  test("importWords 不能放進別人的單字本", async () => {
+    const bBook = await data.createWordbook(userB, { name: "B 的匯入本" });
+    await assert.rejects(data.importWords(userA, "apple", bBook.id), isNotFound);
+  });
+});
+
 describe("刪除帳號", () => {
   test("透過 Better Auth 刪除 A 後，A 的所有資料被 cascade 刪除，B 不受影響", async () => {
     const s = schema;

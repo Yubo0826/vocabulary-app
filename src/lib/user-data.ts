@@ -8,8 +8,9 @@
  */
 import { and, asc, desc, eq, ilike, inArray, isNotNull, isNull, notInArray, or, sql } from "drizzle-orm";
 import { db } from "@/db";
-import { cards, definitions, entries, savedWords, wordbookItems, wordbooks } from "@/db/schema";
+import { cards, definitions, entries, savedWords, wordbookItems, wordbooks, wordForms } from "@/db/schema";
 import { normalizeHeadword } from "./headword";
+import { MAX_IMPORT_CHARS, MAX_IMPORT_WORDS, parseWordList } from "./word-list";
 
 export class NotFoundError extends Error {
   constructor(what: string) {
@@ -134,6 +135,119 @@ export async function saveToWordbooks(userId: string, rawHeadword: string, wordb
           setWhere: isNotNull(wordbookItems.deletedAt),
         });
     }
+  });
+}
+
+export type ImportResult = {
+  added: number; // 新收藏（含曾取消收藏、這次恢復的）
+  alreadySaved: number;
+  converted: { from: string; to: string }[]; // 變化形轉成原形（went → go）
+  notFound: string[];
+};
+
+/**
+ * 匯入純文字單字清單（格式見 word-list.ts）：收藏字典裡有的字並建立字卡，可一併放進一本單字本。
+ * 字典沒有的字先試著轉成原形，仍找不到就列在 notFound。已收藏的字不變動（但會放進指定的單字本）。
+ * 新收藏的時間依清單順序遞增 1 毫秒，複習時新卡會照清單順序出現。
+ */
+export async function importWords(userId: string, text: string, wordbookId: string | null): Promise<ImportResult> {
+  if (text.length > MAX_IMPORT_CHARS) throw new ValidationError("內容太長，請分批匯入");
+  const words = parseWordList(text);
+  if (words.length === 0) throw new ValidationError("沒有讀到任何單字");
+  if (words.length > MAX_IMPORT_WORDS) throw new ValidationError(`一次最多匯入 ${MAX_IMPORT_WORDS} 個字（這次有 ${words.length} 個）`);
+
+  return db.transaction(async (tx) => {
+    if (wordbookId) {
+      const [book] = await tx
+        .select({ id: wordbooks.id })
+        .from(wordbooks)
+        .where(and(activeWordbook(userId), eq(wordbooks.id, wordbookId)));
+      if (!book) throw new NotFoundError("wordbook");
+    }
+
+    // 字典查詢：先找原字，找不到的再查變化形（同一個變化形對應多個原形時取最常用的）
+    const inDict = new Set(
+      (await tx.select({ h: entries.headword }).from(entries).where(inArray(entries.headword, words))).map((r) => r.h),
+    );
+    const missing = words.filter((w) => !inDict.has(w));
+    const lemmaOf = new Map<string, string>();
+    if (missing.length > 0) {
+      const rows = await tx
+        .select({ form: wordForms.form, lemma: wordForms.lemma })
+        .from(wordForms)
+        .innerJoin(entries, eq(entries.headword, wordForms.lemma))
+        .where(inArray(wordForms.form, missing))
+        .orderBy(sql`${entries.frequencyRank} ASC NULLS LAST`);
+      for (const r of rows) if (!lemmaOf.has(r.form)) lemmaOf.set(r.form, r.lemma);
+    }
+
+    const result: ImportResult = { added: 0, alreadySaved: 0, converted: [], notFound: [] };
+    const headwords: string[] = [];
+    for (const w of words) {
+      const h = inDict.has(w) ? w : lemmaOf.get(w);
+      if (!h) {
+        result.notFound.push(w);
+        continue;
+      }
+      if (h !== w) result.converted.push({ from: w, to: h });
+      if (!headwords.includes(h)) headwords.push(h);
+    }
+    if (headwords.length === 0) return result;
+
+    const active = new Set(
+      (
+        await tx
+          .select({ h: savedWords.headword })
+          .from(savedWords)
+          .where(and(activeSaved(userId), inArray(savedWords.headword, headwords)))
+      ).map((r) => r.h),
+    );
+    const toSave = headwords.filter((h) => !active.has(h));
+    result.alreadySaved = active.size;
+    result.added = toSave.length;
+
+    if (toSave.length > 0) {
+      const base = Date.now();
+      const at = (i: number) => new Date(base + i);
+      await tx
+        .insert(savedWords)
+        .values(toSave.map((headword, i) => ({ userId, headword, origin: "import", createdAt: at(i), updatedAt: at(i) })))
+        .onConflictDoUpdate({
+          // 只會撞到曾取消收藏的字：恢復，收藏時間改為這次匯入
+          target: [savedWords.userId, savedWords.headword],
+          set: {
+            deletedAt: null,
+            updatedAt: sql`excluded.updated_at`,
+            createdAt: sql`CASE WHEN ${savedWords.deletedAt} IS NOT NULL THEN excluded.created_at ELSE ${savedWords.createdAt} END`,
+          },
+        });
+      await tx
+        .insert(cards)
+        .values(toSave.map((headword, i) => ({ userId, headword, direction: "en_zh" as const, due: at(0), state: 0, createdAt: at(i) })))
+        .onConflictDoUpdate({
+          // 曾取消收藏的字恢復原本的字卡與複習進度（同 saveWord）
+          target: [cards.userId, cards.headword, cards.direction],
+          set: { deletedAt: null, updatedAt: at(0) },
+          setWhere: isNotNull(cards.deletedAt),
+        });
+    }
+
+    if (wordbookId) {
+      const saved = await tx
+        .select({ id: savedWords.id })
+        .from(savedWords)
+        .where(and(activeSaved(userId), inArray(savedWords.headword, headwords)));
+      const now = new Date();
+      await tx
+        .insert(wordbookItems)
+        .values(saved.map((s) => ({ wordbookId, savedWordId: s.id, userId })))
+        .onConflictDoUpdate({
+          target: [wordbookItems.wordbookId, wordbookItems.savedWordId],
+          set: { deletedAt: null, updatedAt: now },
+          setWhere: isNotNull(wordbookItems.deletedAt),
+        });
+    }
+    return result;
   });
 }
 

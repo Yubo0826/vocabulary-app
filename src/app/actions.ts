@@ -53,6 +53,13 @@ export async function saveToWordbooksAction(headword: unknown, wordbookIds: unkn
   });
 }
 
+/** 匯入純文字單字清單；wordbookId 為 null 時只收藏不放進單字本 */
+export async function importWordsAction(text: unknown, wordbookId: unknown): Promise<ActionResult<data.ImportResult>> {
+  return run((userId) =>
+    data.importWords(userId, str(text, "text"), wordbookId === null ? null : uuid(wordbookId, "wordbook")),
+  );
+}
+
 export async function unsaveWordAction(headword: unknown): Promise<ActionResult> {
   return run((userId) => data.unsaveWord(userId, str(headword, "headword")));
 }
