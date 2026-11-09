@@ -1,5 +1,6 @@
 "use client";
 
+import { Plus } from "lucide-react";
 import Link from "next/link";
 import { useState, useTransition } from "react";
 import { createWordbookAction, deleteWordbookAction, updateWordbookAction, type ActionResult } from "@/app/actions";
@@ -15,6 +16,7 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 
 type Wordbook = { id: string; name: string; description: string | null; count: number };
@@ -34,12 +36,6 @@ export function WordbookManager({ wordbooks }: { wordbooks: Wordbook[] }) {
 
   return (
     <div className="flex flex-col gap-4">
-      <WordbookForm
-        submitLabel="新增單字本"
-        pending={pending}
-        onSubmit={(name, description, reset) => act(() => createWordbookAction(name, description), reset)}
-      />
-
       {error && (
         <p className="text-sm text-destructive" role="alert">
           {error}
@@ -47,7 +43,7 @@ export function WordbookManager({ wordbooks }: { wordbooks: Wordbook[] }) {
       )}
 
       {wordbooks.length === 0 ? (
-        <p className="text-sm text-muted-foreground">還沒有單字本。</p>
+        <p className="text-sm text-muted-foreground">還沒有單字本，按右上角的 ＋ 新增。</p>
       ) : (
         <ul className="divide-y rounded-lg border bg-card">
           {wordbooks.map((b) => (
@@ -105,6 +101,52 @@ export function WordbookManager({ wordbooks }: { wordbooks: Wordbook[] }) {
   );
 }
 
+/** 標題列右側的「＋」：點開視窗新增單字本 */
+export function CreateWordbookDialog() {
+  const [open, setOpen] = useState(false);
+  const [pending, startTransition] = useTransition();
+  const [error, setError] = useState<string | null>(null);
+
+  return (
+    <Dialog
+      open={open}
+      onOpenChange={(o) => {
+        setOpen(o);
+        if (!o) setError(null);
+      }}
+    >
+      <DialogTrigger asChild>
+        <Button variant="ghost" size="icon-lg" aria-label="新增單字本" title="新增單字本">
+          <Plus />
+        </Button>
+      </DialogTrigger>
+      <DialogContent>
+        <DialogHeader>
+          <DialogTitle>新增單字本</DialogTitle>
+          <DialogDescription>一個字可以放進多本單字本。刪除單字本不會取消收藏。</DialogDescription>
+        </DialogHeader>
+        <WordbookForm
+          submitLabel="新增單字本"
+          pending={pending}
+          onSubmit={(name, description) =>
+            startTransition(async () => {
+              setError(null);
+              const result = await createWordbookAction(name, description);
+              if (result.ok) setOpen(false);
+              else setError(result.error);
+            })
+          }
+        />
+        {error && (
+          <p className="text-sm text-destructive" role="alert">
+            {error}
+          </p>
+        )}
+      </DialogContent>
+    </Dialog>
+  );
+}
+
 function WordbookForm({
   initial,
   submitLabel,
@@ -115,21 +157,17 @@ function WordbookForm({
   initial?: { name: string; description: string | null };
   submitLabel: string;
   pending: boolean;
-  onSubmit: (name: string, description: string, reset: () => void) => void;
+  onSubmit: (name: string, description: string) => void;
   onCancel?: () => void;
 }) {
   const [name, setName] = useState(initial?.name ?? "");
   const [description, setDescription] = useState(initial?.description ?? "");
-  const reset = () => {
-    setName("");
-    setDescription("");
-  };
   return (
     <form
       className="flex w-full flex-col gap-2"
       onSubmit={(e) => {
         e.preventDefault();
-        if (name.trim()) onSubmit(name, description, reset);
+        if (name.trim()) onSubmit(name, description);
       }}
     >
       <Input

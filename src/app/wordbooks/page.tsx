@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Suspense } from "react";
 import { requireUser } from "@/lib/session";
 import { listWordbooks } from "@/lib/user-data";
-import { WordbookManager } from "./wordbook-manager";
+import { CreateWordbookDialog, WordbookManager } from "./wordbook-manager";
 
 export const metadata = { title: "管理單字本" };
 
@@ -22,8 +22,12 @@ async function Wordbooks() {
       <p>
         <Link href="/saved">← 我的單字</Link>
       </p>
-      <h1 className="text-2xl font-bold">管理單字本</h1>
-      <p className="text-sm text-muted-foreground">一個字可以放進多本單字本。刪除單字本不會取消收藏。</p>
+      <div className="flex items-center gap-2">
+        <h1 className="text-2xl font-bold">管理單字本</h1>
+        <div className="ml-auto">
+          <CreateWordbookDialog />
+        </div>
+      </div>
       <WordbookManager wordbooks={wordbooks} />
     </div>
   );
