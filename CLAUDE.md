@@ -1,4 +1,6 @@
-# 單字 App
+# Moji（暫定名稱）
+
+名稱取自日文「文字（moji）」，暗藏學字的意思，聽起來也像寵物名。UI 上的 App 名稱一律用「Moji」。
 
 個人使用為主、未來可能公開上線的英文單字 App。解決的痛點：現有單字 App 沒有雲端同步，字典網站的複習功能陽春。
 
@@ -7,7 +9,7 @@
 ## 技術棧
 
 - Next.js（App Router、TypeScript strict），先做 PWA，不上架 App Store
-- UI：Tailwind CSS v4 + shadcn/ui（Radix 版），元件在 `src/components/ui/`（用 `npx shadcn add` 新增）；配色是 `globals.css` 的 CSS 變數，深色模式跟隨系統設定
+- UI：Tailwind CSS v4 + shadcn/ui（Radix 版），元件在 `src/components/ui/`（用 `npx shadcn add` 新增）；配色是 `globals.css` 的 CSS 變數，深色模式由 `<html class="dark">` 決定（預設跟隨系統，頁首按鈕可切換並記在 localStorage）
 - 部署：Railway Hobby 方案，區域選 Singapore（使用者在台灣）
 - 資料庫：Railway Postgres，啟用 `pg_trgm`
 - ORM：Drizzle（drizzle-orm + drizzle-kit）

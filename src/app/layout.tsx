@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
 import { Suspense } from "react";
+import { THEME_SCRIPT, ThemeToggle } from "@/components/theme-toggle";
 import { UserNav } from "@/components/user-nav";
 import "./globals.css";
 
@@ -16,8 +17,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: { default: "單字", template: "%s｜單字" },
-  description: "有雲端同步與間隔重複複習的英文單字 App",
+  title: { default: "Moji", template: "%s｜Moji" },
+  description: "Moji：有雲端同步與間隔重複複習的英文單字 App",
 };
 
 export const viewport: Viewport = {
@@ -30,16 +31,23 @@ const container = "mx-auto w-full max-w-[720px] px-4";
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="zh-Hant-TW" className={`${geistSans.variable} ${geistMono.variable}`}>
+    // suppressHydrationWarning：THEME_SCRIPT 會在 React 接手前加上 .dark class
+    <html lang="zh-Hant-TW" className={`${geistSans.variable} ${geistMono.variable}`} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: THEME_SCRIPT }} />
+      </head>
       <body>
         <header className="border-b bg-card">
           <div className={`${container} flex h-13 items-center`}>
             <Link href="/" className="text-lg font-bold tracking-wider text-foreground hover:no-underline">
-              單字
+              Moji
             </Link>
-            <Suspense fallback={null}>
-              <UserNav />
-            </Suspense>
+            <div className="ml-auto flex min-w-0 items-center gap-2">
+              <Suspense fallback={null}>
+                <UserNav />
+              </Suspense>
+              <ThemeToggle />
+            </div>
           </div>
         </header>
         <main className={`${container} flex-1 pt-6 pb-12`}>{children}</main>

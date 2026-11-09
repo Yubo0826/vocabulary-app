@@ -2,8 +2,8 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
-/* 深色模式跟隨系統設定（不做手動切換），shadcn 元件裡的 dark: 也會跟著生效 */
-@custom-variant dark (@media (prefers-color-scheme: dark));
+/* 深色模式由 <html class="dark"> 決定（預設跟隨系統，可用頁首按鈕切換，見 theme-toggle.tsx），shadcn 元件裡的 dark: 也會跟著生效 */
+@custom-variant dark (&:where(.dark, .dark *));
 
 :root {
   --radius: 0.625rem;
@@ -37,36 +37,33 @@
   --easy: #2f6fb0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #141412;
-    --foreground: #ecebe7;
-    --card: #1d1c1a;
-    --card-foreground: #ecebe7;
-    --popover: #1d1c1a;
-    --popover-foreground: #ecebe7;
-    --primary: #8cc5b3;
-    --primary-foreground: #141412;
-    --secondary: #262522;
-    --secondary-foreground: #ecebe7;
-    --muted: #262522;
-    --muted-foreground: #9e9a92;
-    --accent: #233630;
-    --accent-foreground: #8cc5b3;
-    --destructive: #f2a49d;
-    --border: #34322e;
-    --input: #34322e;
-    --ring: #8cc5b3;
-    --mark: #4a3f1a;
+:root.dark {
+  --background: #141412;
+  --foreground: #ecebe7;
+  --card: #1d1c1a;
+  --card-foreground: #ecebe7;
+  --popover: #1d1c1a;
+  --popover-foreground: #ecebe7;
+  --primary: #8cc5b3;
+  --primary-foreground: #141412;
+  --secondary: #262522;
+  --secondary-foreground: #ecebe7;
+  --muted: #262522;
+  --muted-foreground: #9e9a92;
+  --accent: #233630;
+  --accent-foreground: #8cc5b3;
+  --destructive: #f2a49d;
+  --border: #34322e;
+  --input: #34322e;
+  --ring: #8cc5b3;
+  --mark: #4a3f1a;
 
-    --again: #f2a49d;
-    --hard: #f0b48a;
-    --good: #8fd1a8;
-    --easy: #9cc3ef;
-  }
-  html {
-    color-scheme: dark;
-  }
+  --again: #f2a49d;
+  --hard: #f0b48a;
+  --good: #8fd1a8;
+  --easy: #9cc3ef;
+
+  color-scheme: dark;
 }
 
 @theme inline {
