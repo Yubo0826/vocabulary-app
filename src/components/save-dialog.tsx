@@ -1,6 +1,6 @@
 "use client";
 
-import { Plus, Star } from "lucide-react";
+import { Check, Plus } from "lucide-react";
 import { useState, useTransition } from "react";
 import { createWordbookAction, saveToWordbooksAction, unsaveWordAction } from "@/app/actions";
 import { Button } from "@/components/ui/button";
@@ -90,7 +90,7 @@ export function SaveDialog({ headword, saved, wordbooks }: Props) {
           aria-label={saved ? "已收藏，管理單字本" : "收藏"}
           className={cn(saved && "text-primary")}
         >
-          <Star className={cn(saved && "fill-current")} />
+          {saved ? <Check /> : <Plus />}
         </Button>
       </DialogTrigger>
       {/* 沒有說明文字，明確關掉 aria-describedby 以免 Radix 警告 */}
