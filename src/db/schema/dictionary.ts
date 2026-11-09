@@ -143,6 +143,28 @@ export const similarWords = pgTable(
 );
 
 /**
+ * 詞性家族：同字根、不同詞性的衍生字（diligent → diligence、diligently），由 scripts/import/family.ts 預先算好。
+ * - source = 'oewn'：Open English WordNet 的 derivation / pertainym 關係
+ * - source = 'computed'：字尾規則（-ly、-ness、-ful…）補 WordNet 缺漏，且衍生字須在字典中且詞性相符
+ * pos 是 word 在這個家族中的詞性；rank 越小越前面（依詞頻）。
+ */
+export const wordFamily = pgTable(
+  "dict_word_family",
+  {
+    headword: text("headword")
+      .notNull()
+      .references(() => entries.headword, { onDelete: "cascade" }),
+    word: text("word")
+      .notNull()
+      .references(() => entries.headword, { onDelete: "cascade" }),
+    pos: text("pos", { enum: ["n", "v", "adj", "adv"] }).notNull(),
+    rank: smallint("rank").notNull(),
+    source: text("source").notNull(), // 'oewn' | 'computed'
+  },
+  (t) => [primaryKey({ columns: [t.headword, t.word] })],
+);
+
+/**
  * 易混淆字組的辨析（目前未使用，保留給日後以 LLM 生成或人工撰寫的辨析說明）
  * 一律讓 headwordA < headwordB，避免同一組存兩次。
  */

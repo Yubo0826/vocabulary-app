@@ -20,6 +20,7 @@ const FORM_LABELS: Record<string, string> = {
 };
 const POS_LABELS: Record<string, string> = { "n.": "名詞", "v.": "動詞", "adj.": "形容詞", "adv.": "副詞" };
 const EXAM_TAGS: Record<string, string> = { toefl: "TOEFL", ielts: "IELTS", gre: "GRE" };
+const FAMILY_POS_LABELS: Record<string, string> = { n: "名詞", v: "動詞", adj: "形容詞", adv: "副詞" };
 const EN_DEFS_SHOWN = 8; // 英英釋義每個詞性預設顯示幾筆，其餘收合
 
 export async function generateMetadata({ params }: PageProps<"/word/[headword]">) {
@@ -52,7 +53,7 @@ async function WordContent({ raw }: { raw: string }) {
 }
 
 function WordView({ word }: { word: WordDetail }) {
-  const { entry, zh, en, examples, inflections, lemmaOf, confusables, synonyms } = word;
+  const { entry, zh, en, examples, inflections, lemmaOf, confusables, synonyms, family } = word;
   const examTags = (entry.tags ?? []).filter((t) => t in EXAM_TAGS);
   const highlightForms = new Set([entry.headword, ...inflections.map((f) => f.form)]);
 
@@ -116,6 +117,25 @@ function WordView({ word }: { word: WordDetail }) {
                   <dd className="font-semibold">{forms.map((f) => f.form).join("、")}</dd>
                 </div>
               ))}
+          </dl>
+        </Section>
+      )}
+
+      {family.length > 0 && (
+        <Section title="詞性家族">
+          <dl className="flex flex-col gap-1.5">
+            {groupBy(family, (f) => f.pos).map(([pos, words]) => (
+              <div key={pos} className="flex items-baseline gap-3">
+                <dt className="w-12 shrink-0 text-xs text-muted-foreground">{FAMILY_POS_LABELS[pos] ?? pos}</dt>
+                <dd className="flex flex-wrap gap-x-3 gap-y-1">
+                  {words.map((w) => (
+                    <Link key={w.headword} href={wordHref(w.headword)} className="font-semibold">
+                      {w.display}
+                    </Link>
+                  ))}
+                </dd>
+              </div>
+            ))}
           </dl>
         </Section>
       )}

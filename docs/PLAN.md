@@ -146,6 +146,7 @@
 - 執行：`npm run import:similar`（約 100 秒），已加入 `import:all`（在 WordNet 之後）。重新匯入 ECDICT 會以 CASCADE 清空本表，需重跑。
 - 結果：易混淆 180,656 筆、近義字 120,662 筆。只收 WordNet 有收的小寫詞條，避免人名與縮寫。
 - 近義字受 WordNet 收錄範圍限制，部分字（例如 negotiate）只有 1–2 個。
+- 追加（2026-11-09）：單字頁「詞性家族」區塊（diligent → diligence、diligently），放在詞形變化之後。`npm run import:family`（數秒），已加入 `import:all`；資料表 `dict_word_family`（migration `0004_word_family`）。來源是 OEWN 的 derivation / pertainym 關係，再用高準確度的字尾規則（-ly、-ness、-ful、-less、-able、-en 等）補缺漏，標 `source = computed`。約 12,800 個詞條有家族。
 
 ---
 
