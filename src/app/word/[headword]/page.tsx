@@ -106,21 +106,6 @@ function WordView({ word }: { word: WordDetail }) {
         </Section>
       )}
 
-      {inflections.length > 0 && (
-        <Section title="詞形變化">
-          <dl className="flex flex-wrap gap-x-5 gap-y-2">
-            {groupBy(inflections, (f) => f.kind)
-              .sort(([a], [b]) => Object.keys(FORM_LABELS).indexOf(a) - Object.keys(FORM_LABELS).indexOf(b))
-              .map(([kind, forms]) => (
-                <div key={kind} className="flex items-baseline gap-1.5">
-                  <dt className="text-xs text-muted-foreground">{FORM_LABELS[kind] ?? kind}</dt>
-                  <dd className="font-semibold">{forms.map((f) => f.form).join("、")}</dd>
-                </div>
-              ))}
-          </dl>
-        </Section>
-      )}
-
       {family.length > 0 && (
         <Section title="詞性家族">
           <dl className="flex flex-col gap-1.5">
