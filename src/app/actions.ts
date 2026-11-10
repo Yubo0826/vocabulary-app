@@ -71,6 +71,11 @@ export async function saveNoteAction(headword: unknown, note: unknown): Promise<
   });
 }
 
+/** 調整熟悉度（0–3）；選低／中／高時還沒收藏會一併收藏。等級格式在 setFamiliarity 檢查 */
+export async function setFamiliarityAction(headword: unknown, level: unknown): Promise<ActionResult<number>> {
+  return run((userId) => review.setFamiliarity(userId, str(headword, "headword"), level));
+}
+
 export async function createWordbookAction(name: unknown, description?: unknown): Promise<ActionResult<{ id: string }>> {
   return run(async (userId) => {
     const book = await data.createWordbook(userId, {

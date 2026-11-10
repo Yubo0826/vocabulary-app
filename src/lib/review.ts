@@ -4,13 +4,18 @@
  * - 演算法用 ts-fsrs 的 FSRS-6（明確指定，不用 v6 預設的 FSRS-7）；排程一律在伺服器計算。
  * - 跟 user-data.ts 一樣，第一個參數一律是 userId（由伺服器從 session 取得），每個查詢都以它過濾。
  * - review_logs 只新增；唯一的修改是復原時寫入 undone_at。統計一律排除已復原的紀錄。
+ * - 單字頁手動調整熟悉度也會寫一筆 review_log（rating = 0，即 ts-fsrs 的 Rating.Manual），
+ *   但它不是複習：不算進統計、每日新卡數，也不能用「復原上一張」撤銷。
  */
+import { randomUUID } from "node:crypto";
 import { and, asc, desc, eq, gte, inArray, isNull, lte, ne, sql } from "drizzle-orm";
 import { DefaultScheduler, type DefaultSchedulerCard, type DefaultSchedulerRevlog, type Grade } from "ts-fsrs";
 import { db } from "@/db";
 import { cards, reviewLogs, userSettings } from "@/db/schema";
+import { FAMILIARITY_SCHEDULE, familiarityOf, isFamiliarity, type Familiarity } from "./familiarity";
+import { normalizeHeadword } from "./headword";
 import { studyDateKey, studyDayStart } from "./study-day";
-import { NotFoundError, ValidationError } from "./user-data";
+import { NotFoundError, saveWordIn, ValidationError } from "./user-data";
 
 export type CardRow = typeof cards.$inferSelect;
 type ReviewLogRow = typeof reviewLogs.$inferSelect;
@@ -20,6 +25,11 @@ type SchedulerCard = DefaultSchedulerCard<"FSRS-6">;
 /** 卡片狀態（與 ts-fsrs State 相同的數值） */
 export const STATE = { New: 0, Learning: 1, Review: 2, Relearning: 3 } as const;
 export const GRADES = [1, 2, 3, 4] as const satisfies readonly Grade[];
+/** 手動調整（熟悉度）寫入 review_logs 的 rating */
+export const MANUAL_RATING = 0;
+/** 真正的複習紀錄：排除已復原與手動調整 */
+const realReviews = (userId: string) =>
+  and(eq(reviewLogs.userId, userId), isNull(reviewLogs.undoneAt), ne(reviewLogs.rating, MANUAL_RATING));
 
 /** 學習中的卡片到期前多久可以提前出現（其他卡都做完時），同 Anki 預設 */
 const LEARN_AHEAD_MS = 20 * 60_000;
@@ -188,12 +198,7 @@ export async function getQueue(userId: string, settings: ReviewSettings, now = n
     .select({ newToday: sql<number>`count(distinct ${reviewLogs.cardId})`.mapWith(Number) })
     .from(reviewLogs)
     .where(
-      and(
-        eq(reviewLogs.userId, userId),
-        isNull(reviewLogs.undoneAt),
-        eq(reviewLogs.state, STATE.New),
-        gte(reviewLogs.reviewedAt, dayStart),
-      ),
+      and(realReviews(userId), eq(reviewLogs.state, STATE.New), gte(reviewLogs.reviewedAt, dayStart)),
     );
   const newCount = Math.min(counts.newTotal, Math.max(0, settings.newCardsPerDay - newToday));
 
@@ -295,7 +300,7 @@ export async function undoLastReview(userId: string, now = new Date()): Promise<
     const [log] = await tx
       .select()
       .from(reviewLogs)
-      .where(and(eq(reviewLogs.userId, userId), isNull(reviewLogs.undoneAt), gte(reviewLogs.reviewedAt, dayStart)))
+      .where(and(realReviews(userId), gte(reviewLogs.reviewedAt, dayStart)))
       .orderBy(desc(reviewLogs.reviewedAt), desc(reviewLogs.createdAt))
       .limit(1)
       .for("update");
@@ -335,6 +340,75 @@ function toSchedulerRevlog(log: ReviewLogRow): DefaultSchedulerRevlog<"FSRS-6"> 
   };
 }
 
+// ---------------------------------------------------------------- 熟悉度（手動調整）
+
+/**
+ * 把這個字的熟悉度調成 level，回傳調整後的等級。
+ * - 低／中／高：還沒收藏就先收藏（含字卡），再把字卡改成對應的排程（見 FAMILIARITY_SCHEDULE）
+ * - 無：已收藏的字重設成新卡（不取消收藏）；沒收藏的字不做任何事
+ * - 等級沒變時不動字卡，避免重設複習進度
+ * 每次實際調整都新增一筆 rating = 0 的 review_log，記錄調整前的字卡狀態。
+ */
+export async function setFamiliarity(userId: string, rawHeadword: string, level: unknown, now = new Date()): Promise<Familiarity> {
+  if (!isFamiliarity(level)) throw new ValidationError("熟悉度格式錯誤");
+  const headword = normalizeHeadword(rawHeadword);
+  const scheduler = level === 0 ? null : await getScheduler(await getSettings(userId));
+
+  return db.transaction(async (tx) => {
+    if (level > 0) await saveWordIn(tx, userId, headword, undefined);
+
+    const [row] = await tx
+      .select()
+      .from(cards)
+      .where(
+        and(eq(cards.userId, userId), eq(cards.headword, headword), eq(cards.direction, "en_zh"), isNull(cards.deletedAt)),
+      )
+      .for("update");
+    if (!row) return 0; // 沒收藏又選「無」
+    if (familiarityOf(row) === level) return level;
+
+    await tx.insert(reviewLogs).values({
+      id: randomUUID(),
+      userId,
+      cardId: row.id,
+      rating: MANUAL_RATING,
+      state: row.state,
+      due: row.due,
+      stability: row.stability,
+      difficulty: row.difficulty,
+      scheduledDays: row.scheduledDays,
+      learningSteps: row.learningSteps,
+      lastReview: row.lastReview,
+      reviewedAt: now,
+    });
+
+    const next =
+      level === 0
+        ? { state: STATE.New, due: now, stability: 0, difficulty: 0, scheduledDays: 0, learningSteps: 0, lastReview: null }
+        : {
+            state: STATE.Review,
+            due: new Date(now.getTime() + FAMILIARITY_SCHEDULE[level].intervalDays * 86_400_000),
+            stability: FAMILIARITY_SCHEDULE[level].stability,
+            // 新卡還沒有難度：用 ts-fsrs 對新卡按「Good」的初始難度
+            difficulty: row.difficulty > 0 ? row.difficulty : initialDifficulty(scheduler!, row, now),
+            scheduledDays: FAMILIARITY_SCHEDULE[level].intervalDays,
+            learningSteps: 0,
+            lastReview: now,
+          };
+    await tx
+      .update(cards)
+      .set({ ...next, updatedAt: now })
+      .where(eq(cards.id, row.id));
+    return level;
+  });
+}
+
+function initialDifficulty(scheduler: Scheduler, row: CardRow, now: Date): number {
+  const fresh = toSchedulerCard({ ...row, state: STATE.New, stability: 0, difficulty: 0, lastReview: null, reps: 0, lapses: 0 });
+  const good = [...scheduler.preview({ card: fresh, now })].find((item) => item.grade === 3);
+  return good?.card.difficulty ?? 5;
+}
+
 // ---------------------------------------------------------------- 統計
 
 export type ReviewStats = {
@@ -352,7 +426,7 @@ export async function getReviewStats(userId: string, settings: ReviewSettings, n
   const bounds = Array.from({ length: 8 }, (_, i) => studyDayStart(now, timezone, dayStartsAtHour, i));
 
   const studyDayExpr = sql<string>`to_char((${reviewLogs.reviewedAt} at time zone ${timezone}) - make_interval(hours => ${dayStartsAtHour}), 'YYYY-MM-DD')`;
-  const notUndone = and(eq(reviewLogs.userId, userId), isNull(reviewLogs.undoneAt));
+  const notUndone = realReviews(userId);
 
   const [[{ reviewedToday }], days, [forecastRow]] = await Promise.all([
     db

@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { getCurrentUser } from "@/lib/session";
 import { wordHref } from "@/lib/urls";
 import { getSaveState } from "@/lib/user-data";
+import { FamiliarityPicker } from "./familiarity-picker";
 import { NoteContent } from "./note-content";
 import { NoteDialog } from "./note-dialog";
 import { SaveDialog } from "./save-dialog";
@@ -46,6 +47,13 @@ export async function NoteButton({ headword }: { headword: string }) {
     );
   }
   return <NoteDialog headword={headword} note={state.saved?.note ?? null} saved={state.saved !== null} />;
+}
+
+/** 單字標題列最右的熟悉度圓點；未登入時不顯示。讀 session，需放在 Suspense 內 */
+export async function FamiliarityControl({ headword }: { headword: string }) {
+  const state = await loadSaveState(headword);
+  if (!state) return null;
+  return <FamiliarityPicker headword={headword} level={state.familiarity} />;
 }
 
 /** 單字頁上顯示的筆記內容；沒有筆記（或未登入）時不顯示。編輯在筆記按鈕的視窗裡 */

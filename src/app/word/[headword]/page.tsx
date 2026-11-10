@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { Suspense } from "react";
 import { ExampleSource, highlight } from "@/components/example-text";
-import { NoteButton, NotePreview, SaveButton } from "@/components/save-panel";
+import { FamiliarityControl, NoteButton, NotePreview, SaveButton } from "@/components/save-panel";
 import { AccentToggle, SpeakButton } from "@/components/speech";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -68,6 +68,7 @@ function WordView({ word }: { word: WordDetail }) {
             <Suspense fallback={null}>
               <SaveButton headword={entry.headword} />
               <NoteButton headword={entry.headword} />
+              <FamiliarityControl headword={entry.headword} />
             </Suspense>
           </div>
         </div>

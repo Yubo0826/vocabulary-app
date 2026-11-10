@@ -7,6 +7,8 @@ import { isUuid } from "@/lib/uuid";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { noteToPlainText } from "@/lib/note";
+import { FAMILIARITY_LABELS } from "@/lib/familiarity";
+import { FamiliarityDot } from "@/components/familiarity-picker";
 import { ImportDialog } from "./import-dialog";
 
 export const metadata = { title: "我的單字" };
@@ -100,7 +102,15 @@ async function SavedList({ bookParam, sort }: { bookParam: string | null; sort: 
               >
                 <span className="flex items-baseline justify-between gap-2">
                   <span className="text-[1.05rem] font-semibold wrap-anywhere">{w.display}</span>
-                  <span className="shrink-0 text-xs text-muted-foreground">{dateFormat.format(w.savedAt)}</span>
+                  <span className="flex shrink-0 items-center gap-2 text-xs text-muted-foreground">
+                    {w.familiarity > 0 && (
+                      <span className="flex items-center gap-1" title="熟悉度">
+                        <FamiliarityDot level={w.familiarity} className="size-2.5" />
+                        {FAMILIARITY_LABELS[w.familiarity]}
+                      </span>
+                    )}
+                    {dateFormat.format(w.savedAt)}
+                  </span>
                 </span>
                 {w.gloss && <span className="truncate text-sm text-muted-foreground">{w.gloss}</span>}
                 {w.note && <span className="line-clamp-2 text-sm wrap-anywhere">📝 {noteToPlainText(w.note)}</span>}

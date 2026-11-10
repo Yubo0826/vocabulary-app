@@ -9,6 +9,7 @@
 import { and, asc, desc, eq, ilike, inArray, isNotNull, isNull, notInArray, or, sql } from "drizzle-orm";
 import { db } from "@/db";
 import { cards, definitions, entries, savedWords, wordbookItems, wordbooks, wordForms } from "@/db/schema";
+import { familiarityOf } from "./familiarity";
 import { normalizeHeadword } from "./headword";
 import { MAX_IMPORT_CHARS, MAX_IMPORT_WORDS, parseWordList } from "./word-list";
 
@@ -62,10 +63,10 @@ export async function saveWord(userId: string, rawHeadword: string, note?: strin
   return db.transaction((tx) => saveWordIn(tx, userId, headword, cleanedNote));
 }
 
-type Tx = Parameters<Parameters<typeof db.transaction>[0]>[0];
+export type Tx = Parameters<Parameters<typeof db.transaction>[0]>[0];
 
 /** saveWord 的本體，在呼叫端的 transaction 裡執行。headword 須已正規化 */
-async function saveWordIn(tx: Tx, userId: string, headword: string, cleanedNote: string | null | undefined) {
+export async function saveWordIn(tx: Tx, userId: string, headword: string, cleanedNote: string | null | undefined) {
   const [entry] = await tx.select({ h: entries.headword }).from(entries).where(eq(entries.headword, headword));
   if (!entry) throw new NotFoundError("headword");
 
@@ -279,7 +280,7 @@ export async function updateNote(userId: string, rawHeadword: string, note: stri
   if (updated.length === 0) throw new NotFoundError("saved word");
 }
 
-/** 單字頁用：這個字是否已收藏、筆記，以及各單字本是否包含它 */
+/** 單字頁用：這個字是否已收藏、筆記、熟悉度，以及各單字本是否包含它 */
 export async function getSaveState(userId: string, rawHeadword: string) {
   const headword = normalizeHeadword(rawHeadword);
   const [saved] = await db
@@ -304,8 +305,19 @@ export async function getSaveState(userId: string, rawHeadword: string) {
     .where(activeWordbook(userId))
     .orderBy(asc(wordbooks.sortOrder), asc(wordbooks.createdAt));
 
-  return { saved: saved ?? null, wordbooks: books };
+  const [card] = saved
+    ? await db
+        .select({ state: cards.state, stability: cards.stability })
+        .from(cards)
+        .where(enZhCard(userId, headword))
+    : [];
+
+  return { saved: saved ?? null, familiarity: familiarityOf(card), wordbooks: books };
 }
+
+/** 這個字的 en_zh 字卡（熟悉度依據） */
+const enZhCard = (userId: string, headword: string | typeof savedWords.headword) =>
+  and(eq(cards.userId, userId), eq(cards.headword, headword), eq(cards.direction, "en_zh"), isNull(cards.deletedAt));
 
 export type SavedSort = "recent" | "alpha";
 
@@ -329,9 +341,12 @@ export async function listSavedWords(userId: string, options: { wordbookId?: str
       note: savedWords.note,
       savedAt: savedWords.createdAt,
       gloss: firstGloss(),
+      cardState: cards.state,
+      cardStability: cards.stability,
     })
     .from(savedWords)
-    .leftJoin(entries, eq(entries.headword, savedWords.headword)); // 字典可能被替換，不用外鍵也不用 inner join
+    .leftJoin(entries, eq(entries.headword, savedWords.headword)) // 字典可能被替換，不用外鍵也不用 inner join
+    .leftJoin(cards, enZhCard(userId, savedWords.headword));
 
   const query = wordbookId
     ? base.innerJoin(
@@ -345,9 +360,13 @@ export async function listSavedWords(userId: string, options: { wordbookId?: str
       )
     : base;
 
-  return query
+  const rows = await query
     .where(activeSaved(userId))
     .orderBy(...(sort === "alpha" ? [asc(savedWords.headword)] : [desc(savedWords.createdAt), asc(savedWords.headword)]));
+  return rows.map(({ cardState, cardStability, ...row }) => ({
+    ...row,
+    familiarity: familiarityOf(cardState === null ? null : { state: cardState, stability: cardStability ?? 0 }),
+  }));
 }
 
 export type NoteSort = "recent" | "alpha";

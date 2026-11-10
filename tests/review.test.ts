@@ -274,3 +274,90 @@ describe("統計與換日", () => {
     assert.equal(stats.forecast[0].date, studyDay.studyDateKey(now, settings.timezone, settings.dayStartsAtHour));
   });
 });
+
+describe("熟悉度", () => {
+  type Fam = typeof import("../src/lib/familiarity");
+  let fam: Fam;
+  before(async () => {
+    fam = await import("../src/lib/familiarity");
+  });
+
+  const enZh = async (userId: string, headword: string) =>
+    (await db.select().from(schema.cards).where(eq(schema.cards.userId, userId))).find((c) => c.headword === headword);
+
+  test("由字卡換算：新卡或沒卡 = 無，依 stability 分低中高", () => {
+    assert.equal(fam.familiarityOf(null), 0);
+    assert.equal(fam.familiarityOf({ state: 0, stability: 50 }), 0);
+    assert.equal(fam.familiarityOf({ state: 1, stability: 0.5 }), 1);
+    assert.equal(fam.familiarityOf({ state: 2, stability: 3 }), 2);
+    assert.equal(fam.familiarityOf({ state: 2, stability: 20.9 }), 2);
+    assert.equal(fam.familiarityOf({ state: 2, stability: 21 }), 3);
+  });
+
+  test("沒收藏時選低／中／高會自動收藏，字卡排程改成對應等級，並寫一筆 rating 0 的 log", async () => {
+    const now = new Date();
+    assert.equal(await review.setFamiliarity(userA, "Apple", 2, now), 2);
+
+    const state = await data.getSaveState(userA, "apple");
+    assert.ok(state.saved);
+    assert.equal(state.familiarity, 2);
+    const card = await enZh(userA, "apple");
+    assert.ok(card);
+    assert.equal(card.state, review.STATE.Review);
+    assert.equal(card.due.getTime(), now.getTime() + 7 * DAY);
+    assert.ok(card.difficulty > 0);
+
+    const logs = await db.select().from(schema.reviewLogs).where(eq(schema.reviewLogs.cardId, card.id));
+    assert.equal(logs.length, 1);
+    assert.equal(logs[0].rating, review.MANUAL_RATING);
+    assert.equal(logs[0].state, review.STATE.New); // 記錄調整前的狀態
+
+    // 一步步往上調；等級相同時不動字卡、不寫 log
+    await review.setFamiliarity(userA, "apple", 3, now);
+    await review.setFamiliarity(userA, "apple", 3, now);
+    assert.equal((await data.getSaveState(userA, "apple")).familiarity, 3);
+    assert.equal((await db.select().from(schema.reviewLogs).where(eq(schema.reviewLogs.cardId, card.id))).length, 2);
+    assert.equal((await data.listSavedWords(userA))[0].familiarity, 3);
+  });
+
+  test("選「無」：已收藏的字重設成新卡但保留收藏；沒收藏的字不做事", async () => {
+    await review.setFamiliarity(userA, "apple", 3);
+    assert.equal(await review.setFamiliarity(userA, "apple", 0), 0);
+    const card = await enZh(userA, "apple");
+    assert.equal(card?.state, review.STATE.New);
+    assert.ok((await data.getSaveState(userA, "apple")).saved);
+
+    assert.equal(await review.setFamiliarity(userA, "banana", 0), 0);
+    assert.equal((await data.getSaveState(userA, "banana")).saved, null);
+    await assert.rejects(review.setFamiliarity(userA, "apple", 4), data.ValidationError);
+    await assert.rejects(review.setFamiliarity(userA, "apple", "2"), data.ValidationError);
+  });
+
+  test("選「低」今天就會出現在複習佇列；手動調整不算進統計、今日新卡數與復原", async () => {
+    const settings = await review.getSettings(userA);
+    const now = new Date();
+    await review.setFamiliarity(userA, "apple", 1, now);
+    const q = await review.getQueue(userA, settings, now);
+    assert.equal(q.next?.headword, "apple");
+    assert.equal(q.counts.review, 1);
+
+    // 另一張新卡：手動調整前是新卡，但不應扣掉今日新卡額度
+    await data.saveWord(userA, "banana");
+    await review.setFamiliarity(userA, "banana", 0, now);
+    await review.updateSettings(userA, { newCardsPerDay: 1, desiredRetention: 0.9, dayStartsAtHour: 4 });
+    await review.setFamiliarity(userA, "cherry", 2, now);
+    assert.equal((await review.getQueue(userA, await review.getSettings(userA), now)).counts.new, 1);
+
+    const stats = await review.getReviewStats(userA, settings, now);
+    assert.equal(stats.reviewedToday, 0);
+    assert.equal(stats.studiedToday, false);
+    await assert.rejects(review.undoLastReview(userA, now), data.NotFoundError);
+  });
+
+  test("只影響自己的字卡", async () => {
+    await data.saveWord(userB, "apple");
+    await review.setFamiliarity(userA, "apple", 3);
+    assert.equal((await data.getSaveState(userB, "apple")).familiarity, 0);
+    assert.equal((await enZh(userB, "apple"))?.state, review.STATE.New);
+  });
+});
