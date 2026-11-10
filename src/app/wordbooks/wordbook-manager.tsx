@@ -21,7 +21,18 @@ import { Input } from "@/components/ui/input";
 
 type Wordbook = { id: string; name: string; description: string | null; count: number };
 
-export function WordbookManager({ wordbooks }: { wordbooks: Wordbook[] }) {
+/** 一般 <a>：下載檔案，不用 Link 的預先載入 */
+function ExportButton({ href }: { href: string }) {
+  return (
+    <Button asChild variant="ghost" className="text-primary">
+      <a href={href} download>
+        匯出
+      </a>
+    </Button>
+  );
+}
+
+export function WordbookManager({ wordbooks, savedCount }: { wordbooks: Wordbook[]; savedCount: number }) {
   const [pending, startTransition] = useTransition();
   const [error, setError] = useState<string | null>(null);
   const [editing, setEditing] = useState<string | null>(null);
@@ -42,61 +53,71 @@ export function WordbookManager({ wordbooks }: { wordbooks: Wordbook[] }) {
         </p>
       )}
 
-      {wordbooks.length === 0 ? (
-        <p className="text-sm text-muted-foreground">還沒有單字本，按右上角的 ＋ 新增。</p>
-      ) : (
-        <ul className="divide-y rounded-lg border bg-card">
-          {wordbooks.map((b) => (
-            <li key={b.id} className="flex flex-wrap items-center justify-between gap-2 px-4 py-3">
-              {editing === b.id ? (
-                <WordbookForm
-                  initial={b}
-                  submitLabel="儲存"
-                  pending={pending}
-                  onCancel={() => setEditing(null)}
-                  onSubmit={(name, description) =>
-                    act(() => updateWordbookAction(b.id, name, description), () => setEditing(null))
-                  }
-                />
-              ) : (
-                <>
-                  <div className="flex min-w-0 flex-wrap items-baseline gap-x-2.5 gap-y-1">
-                    <Link href={`/saved?book=${b.id}`} className="font-semibold wrap-anywhere">
-                      {b.name}
-                    </Link>
-                    <span className="text-sm text-muted-foreground">{b.count} 個字</span>
-                    {b.description && <p className="basis-full text-sm text-muted-foreground">{b.description}</p>}
-                  </div>
-                  <div className="flex gap-1">
-                    <Button variant="ghost" className="text-primary" disabled={pending} onClick={() => setEditing(b.id)}>
-                      編輯
-                    </Button>
-                    <AlertDialog>
-                      <AlertDialogTrigger asChild>
-                        <Button variant="ghost" className="text-primary" disabled={pending}>
+      <ul className="divide-y rounded-lg border bg-card">
+        {/* 固定的第一列：所有收藏（包含沒放進任何單字本的字），只能匯出 */}
+        <li className="flex flex-wrap items-center justify-between gap-2 px-4 py-3">
+          <div className="flex min-w-0 flex-wrap items-baseline gap-x-2.5 gap-y-1">
+            <Link href="/saved" className="font-semibold">
+              全部收藏
+            </Link>
+            <span className="text-sm text-muted-foreground">{savedCount} 個字</span>
+          </div>
+          <div className="flex gap-1">
+            <ExportButton href="/api/export/words" />
+          </div>
+        </li>
+        {wordbooks.map((b) => (
+          <li key={b.id} className="flex flex-wrap items-center justify-between gap-2 px-4 py-3">
+            {editing === b.id ? (
+              <WordbookForm
+                initial={b}
+                submitLabel="儲存"
+                pending={pending}
+                onCancel={() => setEditing(null)}
+                onSubmit={(name, description) =>
+                  act(() => updateWordbookAction(b.id, name, description), () => setEditing(null))
+                }
+              />
+            ) : (
+              <>
+                <div className="flex min-w-0 flex-wrap items-baseline gap-x-2.5 gap-y-1">
+                  <Link href={`/saved?book=${b.id}`} className="font-semibold wrap-anywhere">
+                    {b.name}
+                  </Link>
+                  <span className="text-sm text-muted-foreground">{b.count} 個字</span>
+                  {b.description && <p className="basis-full text-sm text-muted-foreground">{b.description}</p>}
+                </div>
+                <div className="flex gap-1">
+                  <Button variant="ghost" className="text-primary" disabled={pending} onClick={() => setEditing(b.id)}>
+                    編輯
+                  </Button>
+                  <ExportButton href={`/api/export/words?book=${b.id}`} />
+                  <AlertDialog>
+                    <AlertDialogTrigger asChild>
+                      <Button variant="ghost" className="text-primary" disabled={pending}>
+                        刪除
+                      </Button>
+                    </AlertDialogTrigger>
+                    <AlertDialogContent>
+                      <AlertDialogHeader>
+                        <AlertDialogTitle>刪除「{b.name}」？</AlertDialogTitle>
+                        <AlertDialogDescription>裡面的字仍會保留在收藏中。</AlertDialogDescription>
+                      </AlertDialogHeader>
+                      <AlertDialogFooter>
+                        <AlertDialogCancel>取消</AlertDialogCancel>
+                        <AlertDialogAction variant="destructive" onClick={() => act(() => deleteWordbookAction(b.id))}>
                           刪除
-                        </Button>
-                      </AlertDialogTrigger>
-                      <AlertDialogContent>
-                        <AlertDialogHeader>
-                          <AlertDialogTitle>刪除「{b.name}」？</AlertDialogTitle>
-                          <AlertDialogDescription>裡面的字仍會保留在收藏中。</AlertDialogDescription>
-                        </AlertDialogHeader>
-                        <AlertDialogFooter>
-                          <AlertDialogCancel>取消</AlertDialogCancel>
-                          <AlertDialogAction variant="destructive" onClick={() => act(() => deleteWordbookAction(b.id))}>
-                            刪除
-                          </AlertDialogAction>
-                        </AlertDialogFooter>
-                      </AlertDialogContent>
-                    </AlertDialog>
-                  </div>
-                </>
-              )}
-            </li>
-          ))}
-        </ul>
-      )}
+                        </AlertDialogAction>
+                      </AlertDialogFooter>
+                    </AlertDialogContent>
+                  </AlertDialog>
+                </div>
+              </>
+            )}
+          </li>
+        ))}
+      </ul>
+      {wordbooks.length === 0 && <p className="text-sm text-muted-foreground">還沒有單字本，按右上角的 ＋ 新增。</p>}
     </div>
   );
 }

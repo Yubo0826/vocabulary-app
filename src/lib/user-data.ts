@@ -383,6 +383,15 @@ export async function listNotes(userId: string, options: { q?: string | null; so
     .orderBy(...(sort === "alpha" ? [asc(savedWords.headword)] : [desc(savedWords.updatedAt), asc(savedWords.headword)]));
 }
 
+/** 目前收藏中的字數 */
+export async function countSavedWords(userId: string): Promise<number> {
+  const [row] = await db
+    .select({ n: sql<number>`count(*)::int` })
+    .from(savedWords)
+    .where(and(eq(savedWords.userId, userId), isNull(savedWords.deletedAt)));
+  return row?.n ?? 0;
+}
+
 // ---------------------------------------------------------------- 單字本
 
 export async function listWordbooks(userId: string) {

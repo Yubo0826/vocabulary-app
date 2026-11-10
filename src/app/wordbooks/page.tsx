@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Suspense } from "react";
 import { requireUser } from "@/lib/session";
-import { listWordbooks } from "@/lib/user-data";
+import { countSavedWords, listWordbooks } from "@/lib/user-data";
 import { CreateWordbookDialog, WordbookManager } from "./wordbook-manager";
 
 export const metadata = { title: "管理單字本" };
@@ -16,7 +16,7 @@ export default function WordbooksPage() {
 
 async function Wordbooks() {
   const user = await requireUser("/wordbooks");
-  const wordbooks = await listWordbooks(user.id);
+  const [wordbooks, savedCount] = await Promise.all([listWordbooks(user.id), countSavedWords(user.id)]);
   return (
     <div className="flex flex-col gap-4">
       <p>
@@ -28,7 +28,7 @@ async function Wordbooks() {
           <CreateWordbookDialog />
         </div>
       </div>
-      <WordbookManager wordbooks={wordbooks} />
+      <WordbookManager wordbooks={wordbooks} savedCount={savedCount} />
     </div>
   );
 }

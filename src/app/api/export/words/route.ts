@@ -1,6 +1,7 @@
 /**
  * 匯出收藏的單字：純文字，每行一個字（可再匯入，也能貼進 Anki、Quizlet）。
- * 參數與「我的單字」頁相同：book（單字本 id，只接受自己的）、sort（recent | alpha）。
+ * 由「管理單字本」各單字本的「匯出」按鈕使用。
+ * 參數：book（單字本 id，只接受自己的；省略則匯出全部收藏）、sort（recent | alpha，預設 recent）。
  */
 import { getCurrentUser } from "@/lib/session";
 import { listSavedWords, listWordbooks } from "@/lib/user-data";
