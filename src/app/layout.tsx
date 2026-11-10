@@ -19,11 +19,18 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: { default: "Moji", template: "%s｜Moji" },
   description: "Moji：有雲端同步與間隔重複複習的英文單字 App",
+  // iOS「加入主畫面」：全螢幕開啟、主畫面上的名稱（圖示是 app/apple-icon.png）
+  appleWebApp: { capable: true, title: "Moji", statusBarStyle: "default" },
 };
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
+  // 瀏覽器網址列／狀態列顏色，跟著系統深淺色（與 globals.css 的背景色相同）
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#fbfaf7" },
+    { media: "(prefers-color-scheme: dark)", color: "#141412" },
+  ],
 };
 
 /** 頁首、內容、頁尾共用的寬度與左右留白 */

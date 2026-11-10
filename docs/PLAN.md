@@ -153,7 +153,7 @@
 
 ## 階段 6：PWA 與營運
 
-- [ ] PWA manifest、圖示、可加入主畫面
+- [x] PWA manifest、圖示、可加入主畫面（2026-11-10：`src/app/manifest.ts`；圖示是暫定的墨綠底米白 M，`public/icons/` 與 `src/app/apple-icon.png`、`icon.svg`；尚無 Service Worker，離線時顯示瀏覽器錯誤頁）
 - [ ] （需先討論）離線複習：IndexedDB 暫存卡片與 review logs，上線後依 `updated_at` 增量同步
 - [ ] 備份：GitHub Actions 每日 `pg_dump` 使用者資料表，上傳到 Railway 以外的儲存空間（如 Cloudflare R2）
 - [ ] Railway 設定 usage limit 與用量通知
