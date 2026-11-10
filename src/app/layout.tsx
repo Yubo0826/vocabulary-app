@@ -45,16 +45,18 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       </head>
       <body>
         <header className="border-b bg-card">
-          <div className={`${container} flex h-13 items-center`}>
-            <Link href="/" className="text-lg font-bold tracking-wider text-foreground hover:no-underline">
+          {/* 手機時導航換到第二列（見 UserNav） */}
+          <div className={`${container} flex flex-wrap items-center gap-x-3`}>
+            <Link
+              href="/"
+              className="flex h-13 items-center text-lg font-bold tracking-wider text-foreground hover:no-underline"
+            >
               Moji
             </Link>
-            <div className="ml-auto flex min-w-0 items-center gap-2">
-              <Suspense fallback={null}>
-                <UserNav />
-              </Suspense>
-              <ThemeToggle />
-            </div>
+            <Suspense fallback={<span className="ml-auto" />}>
+              <UserNav />
+            </Suspense>
+            <ThemeToggle />
           </div>
         </header>
         <main className={`${container} flex-1 pt-6 pb-12`}>{children}</main>
