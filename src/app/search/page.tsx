@@ -35,7 +35,7 @@ async function Results({ query }: { query: string }) {
         {matchType && matchType !== "fuzzy" && `「${normalized}」的搜尋結果`}
       </p>
       {items.length > 0 && (
-        <ul className="divide-y overflow-hidden rounded-lg border bg-card">
+        <ul className="surface divide-y overflow-hidden rounded-2xl">
           {items.map((item) => (
             <li key={item.headword}>
               <Link

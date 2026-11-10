@@ -44,14 +44,14 @@ async function SavedList({ bookParam, sort }: { bookParam: string | null; sort: 
 
   const chip = (on: boolean) =>
     cn(
-      "inline-flex items-center gap-1.5 rounded-full border bg-card px-3 py-1 text-sm text-foreground hover:border-primary hover:no-underline",
-      on && "border-primary bg-accent font-semibold text-accent-foreground",
+      "group inline-flex items-center gap-1.5 rounded-full bg-accent px-3.5 py-1.5 text-sm text-accent-foreground hover:bg-accent/70 hover:no-underline",
+      on && "bg-primary font-semibold text-primary-foreground hover:bg-primary",
     );
 
   return (
     <div className="flex flex-col gap-4">
       <div className="flex items-center justify-between gap-2">
-        <h1 className="text-2xl font-bold">我的單字</h1>
+        <h1 className="text-2xl font-semibold">我的單字</h1>
         <div className="flex items-center">
           <ImportDialog wordbooks={wordbooks.map(({ id, name }) => ({ id, name }))} defaultWordbookId={book?.id ?? null} />
           <Button asChild variant="ghost" className="text-primary">
@@ -66,7 +66,7 @@ async function SavedList({ bookParam, sort }: { bookParam: string | null; sort: 
         </Link>
         {wordbooks.map((b) => (
           <Link key={b.id} href={href({ book: b.id })} className={chip(book?.id === b.id)}>
-            {b.name} <span className="text-xs font-normal text-muted-foreground">{b.count}</span>
+            {b.name} <span className={cn("text-xs font-normal", book?.id === b.id ? "text-primary-foreground/80" : "text-muted-foreground")}>{b.count}</span>
           </Link>
         ))}
       </nav>
@@ -93,7 +93,7 @@ async function SavedList({ bookParam, sort }: { bookParam: string | null; sort: 
           {book ? "這個單字本還沒有字。" : "還沒有收藏任何單字。查字時按「收藏」就會出現在這裡。"}
         </p>
       ) : (
-        <ul className="divide-y overflow-hidden rounded-lg border bg-card">
+        <ul className="surface divide-y overflow-hidden rounded-2xl">
           {words.map((w) => (
             <li key={w.id}>
               <Link

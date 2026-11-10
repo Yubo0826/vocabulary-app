@@ -11,7 +11,7 @@ export default function ReviewPage() {
   return (
     <div className="flex flex-col gap-4">
       <div className="flex items-center justify-between gap-2">
-        <h1 className="text-2xl font-bold">複習</h1>
+        <h1 className="text-2xl font-semibold">複習</h1>
         <Button asChild variant="ghost" className="text-primary">
           <Link href="/settings">複習設定</Link>
         </Button>

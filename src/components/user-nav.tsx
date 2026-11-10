@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { getCurrentUser } from "@/lib/session";
-
-const navLink = "shrink-0 text-foreground hover:text-primary hover:no-underline";
+import { NavLinks } from "./nav-links";
 
 /**
  * 頁首：已登入顯示「複習」「我的單字」「筆記」與帳號，未登入顯示登入連結。讀 session，需放在 Suspense 內。
@@ -22,17 +21,9 @@ export async function UserNav() {
     <>
       <nav
         aria-label="主要"
-        className="order-last flex basis-full items-center gap-5 pb-2.5 text-[0.95rem] sm:order-none sm:ml-auto sm:basis-auto sm:gap-4 sm:pb-0"
+        className="order-last -mx-3 flex basis-full items-center gap-1 pb-2 text-[0.95rem] sm:order-none sm:mx-0 sm:ml-auto sm:basis-auto sm:pb-0"
       >
-        <Link href="/review" className={navLink}>
-          複習
-        </Link>
-        <Link href="/saved" className={navLink}>
-          我的單字
-        </Link>
-        <Link href="/notes" className={navLink}>
-          筆記
-        </Link>
+        <NavLinks />
       </nav>
       <Link
         href="/account"

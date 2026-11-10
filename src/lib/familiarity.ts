@@ -13,10 +13,10 @@ export type Familiarity = (typeof FAMILIARITY_LEVELS)[number];
 
 export const FAMILIARITY_LABELS: Record<Familiarity, string> = { 0: "無", 1: "低", 2: "中", 3: "高" };
 
-/** 一眼看出等級的顏色（Tailwind 文字色，圓點用 fill-current）：無 = 灰、低 = 藍、中 = 黃、高 = 綠 */
+/** 一眼看出等級的顏色（Tailwind 文字色，圓點用 fill-current）：無 = 灰、低 = 紫、中 = 黃、高 = 綠 */
 export const FAMILIARITY_COLORS: Record<Familiarity, string> = {
   0: "text-muted-foreground",
-  1: "text-sky-500",
+  1: "text-violet-500",
   2: "text-amber-500",
   3: "text-emerald-500",
 };

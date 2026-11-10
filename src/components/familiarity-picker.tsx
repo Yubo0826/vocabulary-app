@@ -1,7 +1,7 @@
 "use client";
 
 /**
- * 單字標題列的熟悉度圓點：顏色代表目前等級（無 = 灰色空心、低 = 藍、中 = 黃、高 = 綠）。
+ * 單字標題列的熟悉度圓點：顏色代表目前等級（無 = 灰色空心、低 = 紫、中 = 黃、高 = 綠）。
  * 滑鼠移上去就展開設定（手機點一下）；選了立即套用，失敗時退回原本的等級。
  * 用 Popover 而不是 Tooltip：Tooltip 內不能放可點的按鈕。
  */
@@ -51,7 +51,7 @@ export function FamiliarityPicker({ headword, level }: { headword: string; level
   return (
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
-        <Button variant="ghost" size="icon-lg" aria-label={label} onPointerEnter={hoverOpen} onPointerLeave={hoverClose}>
+        <Button variant="soft" size="icon-lg" aria-label={label} onPointerEnter={hoverOpen} onPointerLeave={hoverClose}>
           <FamiliarityDot level={optimistic} className="size-4" />
         </Button>
       </PopoverTrigger>
@@ -65,7 +65,7 @@ export function FamiliarityPicker({ headword, level }: { headword: string; level
         <p className="px-1 text-xs font-medium text-muted-foreground" id="familiarity-title">
           熟悉度
         </p>
-        <div role="radiogroup" aria-labelledby="familiarity-title" className="flex gap-0.5 rounded-lg bg-muted p-0.5">
+        <div role="radiogroup" aria-labelledby="familiarity-title" className="flex gap-0.5 rounded-full bg-muted p-0.5">
           {FAMILIARITY_LEVELS.map((l) => (
             <button
               key={l}
@@ -74,7 +74,7 @@ export function FamiliarityPicker({ headword, level }: { headword: string; level
               aria-checked={optimistic === l}
               onClick={() => choose(l)}
               title={l === 0 && optimistic > 0 ? "會把複習進度重設成新卡" : undefined}
-              className="flex items-center gap-1.5 rounded-md px-3 py-1.5 text-muted-foreground hover:text-foreground aria-checked:bg-background aria-checked:font-semibold aria-checked:text-foreground aria-checked:shadow-sm"
+              className="flex items-center gap-1.5 rounded-full px-3 py-1.5 text-muted-foreground hover:text-foreground aria-checked:bg-card aria-checked:font-semibold aria-checked:text-foreground aria-checked:shadow-sm"
             >
               <FamiliarityDot level={l} className="size-3 shrink-0" />
               {FAMILIARITY_LABELS[l]}

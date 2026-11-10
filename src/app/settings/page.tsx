@@ -8,7 +8,7 @@ export const metadata = { title: "複習設定" };
 export default function SettingsPage() {
   return (
     <div className="flex flex-col gap-5">
-      <h1 className="text-2xl font-bold">複習設定</h1>
+      <h1 className="text-2xl font-semibold">複習設定</h1>
       <Suspense fallback={<p className="text-sm text-muted-foreground">載入中…</p>}>
         <Settings />
       </Suspense>

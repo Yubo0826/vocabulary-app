@@ -61,7 +61,7 @@ export function AuthForm({ mode, next, googleEnabled }: { mode: "login" | "signu
 
   return (
     <div className="mx-auto flex max-w-[380px] flex-col gap-4 pt-[clamp(8px,6vh,48px)]">
-      <h1 className="text-2xl font-bold">{isSignup ? "註冊" : "登入"}</h1>
+      <h1 className="text-2xl font-semibold">{isSignup ? "註冊" : "登入"}</h1>
 
       {googleEnabled && (
         <>

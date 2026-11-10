@@ -87,9 +87,9 @@ export function AccentToggle() {
   return (
     <ToggleGroup
       type="single"
-      variant="outline"
       size="sm"
-      spacing={0}
+      spacing={0.5}
+      className="rounded-full bg-muted p-0.5"
       value={accent}
       onValueChange={(v) => v && setAccent(v as Accent)}
       aria-label="發音口音"
@@ -98,7 +98,7 @@ export function AccentToggle() {
         <ToggleGroupItem
           key={a.lang}
           value={a.lang}
-          className="px-3 text-muted-foreground data-[state=on]:bg-accent data-[state=on]:font-semibold data-[state=on]:text-accent-foreground"
+          className="rounded-full px-3 text-muted-foreground hover:bg-transparent data-[state=on]:bg-card data-[state=on]:font-semibold data-[state=on]:text-foreground data-[state=on]:shadow-sm"
         >
           {a.label}
         </ToggleGroupItem>

@@ -35,7 +35,7 @@ async function NoteList({ q, sort }: { q: string; sort: NoteSort }) {
 
   return (
     <div className="flex flex-col gap-4">
-      <h1 className="text-2xl font-bold">筆記</h1>
+      <h1 className="text-2xl font-semibold">筆記</h1>
 
       <form action="/notes" className="flex gap-2" role="search">
         <Input name="q" type="search" defaultValue={q} placeholder="搜尋筆記或單字" aria-label="搜尋筆記" className="h-9 flex-1" />
@@ -77,7 +77,7 @@ async function NoteList({ q, sort }: { q: string; sort: NoteSort }) {
       ) : (
         <ul className="flex flex-col gap-3">
           {notes.map((n) => (
-            <li key={n.id} className="flex flex-col gap-1.5 rounded-lg border bg-card px-4 py-3">
+            <li key={n.id} className="surface flex flex-col gap-1.5 rounded-2xl px-4 py-3">
               <div className="flex items-baseline justify-between gap-2">
                 <Link href={wordHref(n.headword)} className="text-[1.05rem] font-semibold wrap-anywhere">
                   {n.display}

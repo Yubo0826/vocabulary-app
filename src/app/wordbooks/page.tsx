@@ -23,7 +23,7 @@ async function Wordbooks() {
         <Link href="/saved">← 我的單字</Link>
       </p>
       <div className="flex items-center gap-2">
-        <h1 className="text-2xl font-bold">管理單字本</h1>
+        <h1 className="text-2xl font-semibold">管理單字本</h1>
         <div className="ml-auto">
           <CreateWordbookDialog />
         </div>

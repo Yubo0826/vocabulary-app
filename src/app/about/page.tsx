@@ -29,7 +29,7 @@ const SOURCES = [
 export default function AboutPage() {
   return (
     <article className="flex flex-col gap-4">
-      <h1 className="text-2xl font-bold">資料來源與授權</h1>
+      <h1 className="text-2xl font-semibold">資料來源與授權</h1>
       <p>本站的字典內容來自以下開放授權的資料，感謝各專案與貢獻者。</p>
       <ul className="flex flex-col gap-3">
         {SOURCES.map((s) => (

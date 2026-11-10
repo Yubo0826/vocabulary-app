@@ -53,7 +53,7 @@ export function NoteDialog({ headword, note, saved }: Props) {
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogTrigger asChild>
         <Button
-          variant="ghost"
+          variant="soft"
           size="icon-lg"
           aria-label={hasNote ? "編輯筆記" : "新增筆記"}
           className={cn("relative", hasNote && "text-primary")}

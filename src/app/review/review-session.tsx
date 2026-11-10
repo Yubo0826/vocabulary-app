@@ -14,10 +14,11 @@ import { wordHref } from "@/lib/urls";
 import { cn } from "@/lib/utils";
 
 const RATINGS = [
-  { grade: 1, label: "忘記", key: "1", className: "text-again" },
-  { grade: 2, label: "困難", key: "2", className: "text-hard" },
-  { grade: 3, label: "記得", key: "3", className: "text-good" },
-  { grade: 4, label: "簡單", key: "4", className: "text-easy" },
+  // 淡色底＋彩色字，滑過加深、按下時實心
+  { grade: 1, label: "忘記", key: "1", className: "bg-again/10 text-again hover:bg-again/20 hover:text-again active:bg-again active:text-background" },
+  { grade: 2, label: "困難", key: "2", className: "bg-hard/10 text-hard hover:bg-hard/20 hover:text-hard active:bg-hard active:text-background" },
+  { grade: 3, label: "記得", key: "3", className: "bg-good/10 text-good hover:bg-good/20 hover:text-good active:bg-good active:text-background" },
+  { grade: 4, label: "簡單", key: "4", className: "bg-easy/10 text-easy hover:bg-easy/20 hover:text-easy active:bg-easy active:text-background" },
 ] as const;
 
 const STATE_LABELS: Record<number, string> = { 0: "新卡", 1: "學習中", 2: "複習", 3: "重新學習" };
@@ -96,19 +97,37 @@ export function ReviewSession({ initial }: { initial: ReviewState }) {
   }, [item, flipped, rate, undo, reviewedInSession]);
 
   const { counts, stats } = state;
+  const remaining = counts.new + counts.learning + counts.review;
+  const doneToday = stats.reviewedToday;
+  const total = doneToday + remaining;
 
   return (
     <div className="flex flex-col gap-4">
       <div className="flex min-h-8 flex-wrap items-center gap-x-3.5 gap-y-1 text-sm tabular-nums" aria-label="今日剩餘">
         <span className="text-easy">新卡 {counts.new}</span>
         <span className="text-hard">學習中 {counts.learning}</span>
-        <span className="text-primary">複習 {counts.review}</span>
+        <span className="text-good">複習 {counts.review}</span>
         {reviewedInSession > 0 && (
           <Button variant="ghost" className="ml-auto text-primary" onClick={undo} disabled={pending} title="快捷鍵：Z">
             <Undo2 /> 復原上一張
           </Button>
         )}
       </div>
+      {total > 0 && (
+        <div className="flex items-center gap-3 text-xs text-muted-foreground tabular-nums">
+          <div
+            className="h-1.5 flex-1 overflow-hidden rounded-full bg-muted"
+            role="progressbar"
+            aria-label="今日進度"
+            aria-valuemin={0}
+            aria-valuemax={total}
+            aria-valuenow={doneToday}
+          >
+            <div className="h-full rounded-full bg-primary transition-[width]" style={{ width: `${(doneToday / total) * 100}%` }} />
+          </div>
+          {doneToday}/{total}
+        </div>
+      )}
 
       {error && (
         <p className="text-sm text-destructive" role="alert">
@@ -117,16 +136,17 @@ export function ReviewSession({ initial }: { initial: ReviewState }) {
       )}
 
       {item ? (
-        <Card className="gap-5 px-4 py-6 text-base" aria-live="polite">
-          <div className="flex flex-col items-center gap-1.5 text-center">
-            <Badge variant="outline" className="font-normal text-muted-foreground">
+        <Card className="gap-5 p-3 text-base sm:p-4" aria-live="polite">
+          {/* 題目區：淡藍大卡片，單字置中放大 */}
+          <div className="flex flex-col items-center gap-2 rounded-2xl bg-accent px-3 py-9 text-center text-accent-foreground">
+            <Badge variant="outline" className="border-accent-foreground/25 font-normal text-accent-foreground/80">
               {STATE_LABELS[item.state]}
             </Badge>
             <div className="flex max-w-full items-center gap-2">
-              <h2 className="text-4xl leading-tight font-bold wrap-anywhere">{item.display}</h2>
+              <h2 className="text-[2.6rem] leading-tight font-bold wrap-anywhere">{item.display}</h2>
               <SpeakButton text={item.display} />
             </div>
-            <div className="flex flex-wrap items-center justify-center gap-2 text-muted-foreground">
+            <div className="flex flex-wrap items-center justify-center gap-2 text-accent-foreground/75">
               {item.phonetic && <span className="font-mono">/{item.phonetic}/</span>}
               <AccentToggle />
             </div>
@@ -134,13 +154,15 @@ export function ReviewSession({ initial }: { initial: ReviewState }) {
 
           {flipped ? (
             <>
-              <Answer item={item} />
+              <div className="px-1">
+                <Answer item={item} />
+              </div>
               <div className="grid grid-cols-4 gap-2">
                 {RATINGS.map((r) => (
                   <Button
                     key={r.grade}
-                    variant="outline"
-                    className={cn("h-auto min-h-16 flex-col gap-0.5 border-current px-1 py-2 hover:text-current dark:border-current", r.className)}
+                    variant="ghost"
+                    className={cn("h-auto min-h-16 flex-col gap-0.5 rounded-2xl px-1 py-2", r.className)}
                     onClick={() => rate(r.grade)}
                     disabled={pending}
                   >
@@ -177,7 +199,7 @@ function Pos({ children }: { children: React.ReactNode }) {
 function Answer({ item }: { item: NonNullable<ReviewState["item"]> }) {
   const forms = new Set([item.headword, ...item.forms]);
   return (
-    <div className="flex flex-col gap-3.5 border-t pt-4">
+    <div className="flex flex-col gap-3.5">
       {item.zh.length > 0 && (
         <ul className="flex flex-col gap-1 text-lg">
           {item.zh.map((d, i) => (

@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 
 /**
  * PWA manifest（/manifest.webmanifest）：讓手機可以「加入主畫面」，以全螢幕開啟。
- * 圖示在 public/icons/（墨綠底米白 M；maskable 為滿版，供 Android 裁切成各種形狀）。
+ * 圖示在 public/icons/（藍色漸層底白色 M；maskable 為滿版，供 Android 裁切成各種形狀）。
  * 顏色與 globals.css 的淺色主題相同。
  */
 export default function manifest(): MetadataRoute.Manifest {
@@ -14,8 +14,8 @@ export default function manifest(): MetadataRoute.Manifest {
     start_url: "/",
     scope: "/",
     display: "standalone",
-    background_color: "#fbfaf7",
-    theme_color: "#2f5d50",
+    background_color: "#f5f7ff",
+    theme_color: "#4263eb",
     icons: [
       { src: "/icons/icon-192.png", sizes: "192x192", type: "image/png", purpose: "any" },
       { src: "/icons/icon-512.png", sizes: "512x512", type: "image/png", purpose: "any" },

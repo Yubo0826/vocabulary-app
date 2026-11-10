@@ -85,7 +85,7 @@ export function SaveDialog({ headword, saved, wordbooks }: Props) {
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogTrigger asChild>
         <Button
-          variant="ghost"
+          variant="soft"
           size="icon-lg"
           aria-label={saved ? "已收藏，管理單字本" : "收藏"}
           className={cn(saved && "text-primary")}
@@ -109,8 +109,8 @@ export function SaveDialog({ headword, saved, wordbooks }: Props) {
                   <Label
                     key={b.id}
                     className={cn(
-                      "cursor-pointer rounded-full border px-3 py-1.5 font-normal",
-                      checked && "border-primary bg-accent text-accent-foreground",
+                      "cursor-pointer rounded-full bg-muted px-3 py-1.5 font-normal",
+                      checked && "bg-accent text-accent-foreground",
                     )}
                   >
                     <Checkbox checked={checked} onCheckedChange={(v) => toggle(b.id, v === true)} />

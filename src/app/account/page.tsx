@@ -28,7 +28,7 @@ async function Account() {
 
   return (
     <div className="flex flex-col gap-5">
-      <h1 className="text-2xl font-bold">帳號</h1>
+      <h1 className="text-2xl font-semibold">帳號</h1>
       <Card className="px-4">
         <dl className="grid grid-cols-[auto_1fr] gap-x-4 gap-y-2 text-base">
           <dt className="text-muted-foreground">暱稱</dt>

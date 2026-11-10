@@ -64,7 +64,7 @@ function WordView({ word }: { word: WordDetail }) {
         <div className="flex items-center gap-3">
           <h1 className="text-[clamp(2rem,8vw,2.6rem)] leading-tight font-bold wrap-anywhere">{entry.display}</h1>
           <SpeakButton text={entry.display} />
-          <div className="ml-auto flex shrink-0 items-center">
+          <div className="ml-auto flex shrink-0 items-center gap-1.5">
             <Suspense fallback={null}>
               <SaveButton headword={entry.headword} />
               <NoteButton headword={entry.headword} />
@@ -97,16 +97,16 @@ function WordView({ word }: { word: WordDetail }) {
 
       <Tabs defaultValue="main" className="gap-6">
         {similarCount > 0 && (
-          <TabsList variant="line" className="w-full justify-start gap-4 border-b pb-1">
-            <TabsTrigger value="main" className="flex-none px-1 text-base">
+          <TabsList>
+            <TabsTrigger value="main" className="text-base">
               釋義
             </TabsTrigger>
-            <TabsTrigger value="similar" className="flex-none px-1 text-base">
+            <TabsTrigger value="similar" className="text-base">
               相似
             </TabsTrigger>
           </TabsList>
         )}
-        <TabsContent value="main" className="flex flex-col gap-7 text-base">
+        <TabsContent value="main" className="flex flex-col gap-4 text-base">
           {zh.length > 0 && (
             <Section title="中文釋義">
               <ul className="flex flex-col gap-1.5 text-[1.05rem]">
@@ -170,7 +170,7 @@ function WordView({ word }: { word: WordDetail }) {
 
         {similarCount > 0 && (
           <TabsContent value="similar" className="text-base">
-            <dl className="flex flex-col gap-4">
+            <dl className="surface flex flex-col gap-4 rounded-2xl p-4 sm:p-5">
               <WordList label="易混淆" words={confusables} />
               <WordList label="近義字" words={synonyms} />
             </dl>
@@ -183,8 +183,8 @@ function WordView({ word }: { word: WordDetail }) {
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <section className="flex flex-col gap-2.5">
-      <h2 className="border-b pb-1.5 text-xs font-semibold tracking-widest text-muted-foreground">{title}</h2>
+    <section className="surface flex flex-col gap-2.5 rounded-2xl p-4 sm:p-5">
+      <h2 className="text-xs font-semibold tracking-widest text-muted-foreground">{title}</h2>
       {children}
     </section>
   );

@@ -24,7 +24,7 @@ export async function SaveButton({ headword }: { headword: string }) {
   const state = await loadSaveState(headword);
   if (!state) {
     return (
-      <Button asChild variant="ghost" size="icon-lg" aria-label="登入後收藏">
+      <Button asChild variant="soft" size="icon-lg" aria-label="登入後收藏">
         <Link href={loginHref(headword)}>
           <Star />
         </Link>
@@ -39,7 +39,7 @@ export async function NoteButton({ headword }: { headword: string }) {
   const state = await loadSaveState(headword);
   if (!state) {
     return (
-      <Button asChild variant="ghost" size="icon-lg" aria-label="登入後寫筆記">
+      <Button asChild variant="soft" size="icon-lg" aria-label="登入後寫筆記">
         <Link href={loginHref(headword)}>
           <NotebookPen />
         </Link>
@@ -61,7 +61,7 @@ export async function NotePreview({ headword }: { headword: string }) {
   const note = (await loadSaveState(headword))?.saved?.note;
   if (!note) return null;
   return (
-    <section aria-label="我的筆記" className="rounded-lg border bg-muted/40 px-3 py-2.5">
+    <section aria-label="我的筆記" className="rounded-2xl bg-muted px-4 py-3">
       <h2 className="mb-1 flex items-center gap-1 text-xs font-medium text-muted-foreground">
         <NotebookPen className="size-3.5" aria-hidden /> 我的筆記
       </h2>
