@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { cache } from "react";
-import { NotebookPen, Plus } from "lucide-react";
+import { NotebookPen, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { getCurrentUser } from "@/lib/session";
 import { wordHref } from "@/lib/urls";
@@ -25,7 +25,7 @@ export async function SaveButton({ headword }: { headword: string }) {
     return (
       <Button asChild variant="ghost" size="icon-lg" aria-label="登入後收藏">
         <Link href={loginHref(headword)}>
-          <Plus />
+          <Star />
         </Link>
       </Button>
     );
