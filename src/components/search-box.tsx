@@ -89,9 +89,13 @@ export function SearchBox({ initialQuery = "", autoFocus = false }: { initialQue
         void submit();
       }}
     >
-      <Search className="pointer-events-none absolute top-1/2 left-4 size-5 -translate-y-1/2 text-muted-foreground" aria-hidden />
+      <Search className="pointer-events-none absolute top-6 left-4 z-30 size-5 -translate-y-1/2 text-muted-foreground" aria-hidden />
       <Input
-        className="h-12 rounded-full border-transparent bg-card pr-5 pl-11 text-[1.05rem] shadow-(--surface-shadow) md:text-[1.05rem] dark:bg-background"
+        className={cn(
+          "relative z-20 h-12 rounded-full border-transparent bg-card pr-5 pl-11 text-[1.05rem] shadow-(--surface-shadow) md:text-[1.05rem] dark:bg-background",
+          // 展開時輸入框形狀不變，只拿掉陰影與聚焦外框，讓它融進後面的清單卡片
+          showList && "shadow-none focus-visible:border-transparent focus-visible:ring-0",
+        )}
         type="search"
         inputMode="search"
         autoComplete="off"
@@ -116,7 +120,9 @@ export function SearchBox({ initialQuery = "", autoFocus = false }: { initialQue
         }}
       />
       {showList && (
-        <div className="absolute inset-x-0 top-[calc(100%+6px)] z-10 overflow-hidden rounded-2xl border bg-popover text-popover-foreground shadow-lg">
+        // 清單卡片從輸入框頂端開始、墊在輸入框後面（同底色、同圓角），看起來是同一張卡片（Google 搜尋欄的做法）
+        <div className="absolute inset-x-0 top-0 z-10 overflow-hidden rounded-3xl bg-card pt-12 pb-2 text-card-foreground shadow-(--surface-shadow) dark:bg-background">
+          <div className="mx-4 border-t" aria-hidden />
           {result.matchType === "fuzzy" && <p className="px-4 pt-2.5 pb-1 text-sm text-muted-foreground">找不到「{result.query}」，您是不是要找：</p>}
           {items.length === 0 && <p className="px-4 pt-2.5 pb-1 text-sm text-muted-foreground">找不到相符的單字</p>}
           <ul id={listId} role="listbox">
@@ -126,7 +132,8 @@ export function SearchBox({ initialQuery = "", autoFocus = false }: { initialQue
                 id={`${listId}-${i}`}
                 role="option"
                 aria-selected={i === active}
-                className={cn("flex min-w-0 cursor-pointer items-baseline gap-2 px-4 py-2.5", i === active && "bg-accent")}
+                // 選中列用 muted 色（不用 accent）：避免跟後面搜尋區塊的 accent 漸層連成一片
+                className={cn("flex min-w-0 cursor-pointer items-baseline gap-2 px-4 py-2.5", i === active && "bg-muted")}
                 onMouseDown={(e) => e.preventDefault()}
                 onMouseEnter={() => setActive(i)}
                 onClick={() => go(item)}
