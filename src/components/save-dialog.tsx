@@ -65,21 +65,24 @@ export function SaveDialog({ headword, saved, wordbooks }: Props) {
       toggle(result.data.id, true);
     });
 
-  const submit = () =>
+  /**
+   * 先關閉視窗再寫入：寫入後頁面資料會先更新成「已收藏」，若等寫完才關，
+   * 關閉前會閃一下「取消收藏」按鈕。失敗時重新打開並顯示錯誤（勾選狀態保留）。
+   */
+  const closeThenRun = (action: () => Promise<{ ok: true } | { ok: false; error: string }>) => {
+    setError(null);
+    setOpen(false);
     startTransition(async () => {
-      setError(null);
-      const result = await saveToWordbooksAction(headword, [...selected]);
-      if (result.ok) setOpen(false);
-      else setError(result.error);
+      const result = await action();
+      if (!result.ok) {
+        setError(result.error);
+        setOpen(true);
+      }
     });
+  };
 
-  const unsave = () =>
-    startTransition(async () => {
-      setError(null);
-      const result = await unsaveWordAction(headword);
-      if (result.ok) setOpen(false);
-      else setError(result.error);
-    });
+  const submit = () => closeThenRun(() => saveToWordbooksAction(headword, [...selected]));
+  const unsave = () => closeThenRun(() => unsaveWordAction(headword));
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
