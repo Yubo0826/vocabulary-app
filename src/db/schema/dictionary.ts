@@ -90,13 +90,14 @@ export const examples = pgTable(
     id: serial("id").primaryKey(),
     textEn: text("text_en").notNull(),
     textZh: text("text_zh"), // 已轉台灣繁體；沒有對應中文翻譯時為 null
-    enSentenceId: integer("en_sentence_id").notNull(), // Tatoeba 句子 ID，可組出原始連結
+    enSentenceId: integer("en_sentence_id"), // Tatoeba 句子 ID，可組出原始連結；LLM 產生的例句為 null
     zhSentenceId: integer("zh_sentence_id"),
     enAuthor: text("en_author"),
     zhAuthor: text("zh_author"),
-    enLicense: text("en_license").notNull(), // 'CC BY 2.0 FR' | 'CC0 1.0'
+    enLicense: text("en_license"), // 'CC BY 2.0 FR' | 'CC0 1.0'；LLM 產生的例句為 null
     zhLicense: text("zh_license"),
-    source: text("source").notNull().default("tatoeba"),
+    source: text("source").notNull().default("tatoeba"), // 'tatoeba' | 'llm'
+    model: text("model"), // source = 'llm' 時記錄產生的模型，例如 'claude-opus-5-5'
   },
   (t) => [uniqueIndex("dict_examples_pair_idx").on(t.enSentenceId, t.zhSentenceId)],
 );

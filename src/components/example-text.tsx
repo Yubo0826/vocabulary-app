@@ -4,16 +4,21 @@ import { Button } from "@/components/ui/button";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 
 type ExampleSourceFields = {
-  enSentenceId: number;
+  enSentenceId: number | null;
   enAuthor: string | null;
-  enLicense: string;
+  enLicense: string | null;
   zhSentenceId: number | null;
   zhAuthor: string | null;
   zhLicense: string | null;
 };
 
-/** 例句出處：預設收成 ⓘ，點開才顯示（CC BY 仍需逐句標示，只是不直接攤在畫面上） */
+/**
+ * 例句出處：預設收成 ⓘ，點開才顯示（CC BY 仍需逐句標示，只是不直接攤在畫面上）。
+ * LLM 產生的例句沒有 Tatoeba 句子可連，不顯示按鈕。
+ */
 export function ExampleSource({ example }: { example: ExampleSourceFields }) {
+  const { enSentenceId, enLicense } = example;
+  if (enSentenceId === null || enLicense === null) return null;
   return (
     <Popover>
       <PopoverTrigger asChild>
@@ -29,7 +34,7 @@ export function ExampleSource({ example }: { example: ExampleSourceFields }) {
         </Button>
       </PopoverTrigger>
       <PopoverContent align="end" className="w-auto max-w-[min(320px,calc(100vw-32px))] p-2.5 text-xs leading-normal text-muted-foreground [&_a]:text-muted-foreground [&_a]:underline [&_a]:decoration-border">
-        <Attribution id={example.enSentenceId} author={example.enAuthor} license={example.enLicense} />
+        <Attribution id={enSentenceId} author={example.enAuthor} license={enLicense} />
         {example.zhSentenceId && example.zhLicense && (
           <div>
             中譯 <Attribution id={example.zhSentenceId} author={example.zhAuthor} license={example.zhLicense} />

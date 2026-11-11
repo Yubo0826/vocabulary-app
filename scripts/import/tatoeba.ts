@@ -10,11 +10,11 @@
  *
  * 流程：英文句與中文翻譯配對（一句英文只取一句中文）→ 斷詞後透過 dict_word_forms 還原原形
  * → 依句長與常用字比例計分 → 每個 headword 保留分數最高的 N 句。
- * 必須在 ECDICT 匯入之後執行。可重複執行：TRUNCATE 兩張表後重灌。
+ * 必須在 ECDICT 匯入之後執行。可重複執行：刪除 source = 'tatoeba' 的例句後重灌（LLM 例句不受影響）。
  *
  * 參數：--per-headword=20
  */
-import { sql } from "drizzle-orm";
+import { eq } from "drizzle-orm";
 import { entries, exampleWords, examples, wordForms } from "../../src/db/schema";
 import { connect, getArg, insertInBatches, readLines, requireRawFile, run, toTaiwanese } from "./lib";
 
@@ -23,6 +23,8 @@ const HINT =
 const LICENSE_CC_BY = "CC BY 2.0 FR";
 const LICENSE_CC0 = "CC0 1.0";
 const COMMON_RANK = 5000; // 排名在此以內視為常用字，用於計分
+/** 超過這個字數的句子不收（Tatoeba 有整段日記式的長文）；因此沒有例句的字改由 LLM 補 */
+const MAX_WORDS = 25;
 
 type Sentence = { text: string; author: string | null };
 
@@ -95,7 +97,9 @@ run(async () => {
     const en = engSentences.get(enId);
     const zhId = zhIds.filter((id) => cmnSentences.has(id)).sort((a, b) => a - b)[0];
     if (!en || zhId === undefined) continue;
-    pairs.push({ enId, en, zhId, zh: cmnSentences.get(zhId)!, tokens: tokenize(en.text) });
+    const tokens = tokenize(en.text);
+    if (tokens.length > MAX_WORDS) continue;
+    pairs.push({ enId, en, zhId, zh: cmnSentences.get(zhId)!, tokens });
   }
 
   const { db, close } = connect();
@@ -160,7 +164,8 @@ run(async () => {
 
     // 6. 寫入
     await db.transaction(async (tx) => {
-      await tx.execute(sql`TRUNCATE ${exampleWords}, ${examples} RESTART IDENTITY`);
+      // 只清掉 Tatoeba 的例句（dict_example_words 由外鍵 cascade 一併刪除），保留 LLM 產生的例句
+      await tx.delete(examples).where(eq(examples.source, "tatoeba"));
       const exampleIdOf = new Map<number, number>();
       // 一句英文只配一句中文，所以英文句 id 可唯一對回配對
       const pairIndexOfEnId = new Map(usedPairs.map((i) => [pairs[i].enId, i]));
@@ -183,7 +188,7 @@ run(async () => {
           .insert(examples)
           .values(rows.slice(i, i + 2000))
           .returning({ id: examples.id, enId: examples.enSentenceId });
-        for (const r of inserted) exampleIdOf.set(pairIndexOfEnId.get(r.enId)!, r.id);
+        for (const r of inserted) exampleIdOf.set(pairIndexOfEnId.get(r.enId!)!, r.id); // Tatoeba 例句一定有英文句 id
       }
       await insertInBatches(
         tx,

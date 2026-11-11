@@ -1,0 +1,158 @@
+{
+  "model": "claude-opus-5-5",
+  "generatedAt": "2026-11-11",
+  "method": "Claude Code 對話中直接產生；每字 2 句，依 ECDICT 中文釋義與 OEWN 英英釋義選最常見詞義，中文為台灣用語意譯",
+  "sample": "考試字（TOEFL/IELTS/GRE）或詞頻前 5000、目前沒有例句的字，隨機抽 50 個（setseed 0.42）",
+  "words": [
+    { "headword": "aerial", "examples": [
+      { "en": "The photographer used a drone to take aerial shots of the coastline.", "zh": "攝影師用空拍機拍下海岸線的空拍畫面。" },
+      { "en": "The old TV only worked if you adjusted the aerial on the roof.", "zh": "那台舊電視要調整屋頂上的天線才看得到。" } ] },
+    { "headword": "affective", "examples": [
+      { "en": "Music therapy can help patients with affective disorders such as depression.", "zh": "音樂治療可以幫助患有憂鬱症等情感性疾患的病人。" },
+      { "en": "The study looked at both the cognitive and affective effects of social media.", "zh": "這項研究同時探討了社群媒體在認知與情感上的影響。" } ] },
+    { "headword": "aversion", "examples": [
+      { "en": "She has a strong aversion to crowds, so she rarely goes to concerts.", "zh": "她非常討厭人群，所以很少去聽演唱會。" },
+      { "en": "Many investors have an aversion to risk and prefer safer bonds.", "zh": "許多投資人厭惡風險，偏好較安全的債券。" } ] },
+    { "headword": "categorical", "examples": [
+      { "en": "The minister issued a categorical denial of the accusations.", "zh": "部長斷然否認了這些指控。" },
+      { "en": "He gave a categorical answer: there would be no further delays.", "zh": "他明確地回答：不會再有任何延誤。" } ] },
+    { "headword": "caustic", "examples": [
+      { "en": "Her caustic remarks about his cooking made everyone at the table uncomfortable.", "zh": "她對他廚藝的尖酸評論讓同桌的人都很尷尬。" },
+      { "en": "Wear gloves when handling caustic chemicals like drain cleaner.", "zh": "處理水管疏通劑這類腐蝕性化學品時要戴手套。" } ] },
+    { "headword": "churl", "examples": [
+      { "en": "Only a churl would refuse to thank the volunteers who helped him.", "zh": "只有沒教養的人才會連幫過他的志工都不道謝。" },
+      { "en": "In the story, the rich churl refuses to share even a crust of bread with the beggar.", "zh": "故事裡，那個有錢的吝嗇鬼連一小塊麵包都不肯分給乞丐。" } ] },
+    { "headword": "connive", "examples": [
+      { "en": "The guards were accused of conniving at the prisoners' escape.", "zh": "警衛被指控縱容囚犯逃獄。" },
+      { "en": "She believed her coworkers were conniving to get her fired.", "zh": "她認為同事們在暗中串通，想讓她被開除。" } ] },
+    { "headword": "construe", "examples": [
+      { "en": "His silence was construed as an admission of guilt.", "zh": "他的沉默被解讀為認罪。" },
+      { "en": "Please don't construe my criticism as a personal attack.", "zh": "請不要把我的批評理解成人身攻擊。" } ] },
+    { "headword": "convoy", "examples": [
+      { "en": "A convoy of trucks carried food and medicine to the flooded villages.", "zh": "一支卡車車隊把食物和藥品送到淹水的村莊。" },
+      { "en": "The cargo ships sailed in convoy to protect themselves from pirates.", "zh": "貨船組成船隊航行，以防海盜襲擊。" } ] },
+    { "headword": "daredevil", "examples": [
+      { "en": "The daredevil rode his motorcycle through a ring of fire.", "zh": "那位不怕死的特技演員騎著機車穿過火圈。" },
+      { "en": "As a kid, he was a real daredevil who climbed every tree in the neighborhood.", "zh": "他小時候膽子超大，附近每一棵樹都爬過。" } ] },
+    { "headword": "debase", "examples": [
+      { "en": "Critics say that reality shows debase public taste.", "zh": "評論家認為實境節目降低了大眾的品味。" },
+      { "en": "The king debased the currency by mixing cheaper metals into the coins.", "zh": "國王在硬幣中摻入較便宜的金屬，使貨幣貶值。" } ] },
+    { "headword": "deficient", "examples": [
+      { "en": "A diet deficient in iron can make you feel tired all the time.", "zh": "缺鐵的飲食會讓人一直覺得疲倦。" },
+      { "en": "The inspectors found the building's safety measures to be seriously deficient.", "zh": "檢查人員發現這棟建築的安全措施嚴重不足。" } ] },
+    { "headword": "dexterous", "examples": [
+      { "en": "The pianist's dexterous fingers moved quickly across the keys.", "zh": "鋼琴家靈巧的手指在琴鍵上快速移動。" },
+      { "en": "Surgeons need to be extremely dexterous to perform such delicate operations.", "zh": "外科醫師的手必須非常靈巧，才能進行這麼精細的手術。" } ] },
+    { "headword": "disbar", "examples": [
+      { "en": "The lawyer was disbarred for stealing money from his clients.", "zh": "那名律師因侵吞客戶的錢而被吊銷律師資格。" },
+      { "en": "If the charges are proven, she could be disbarred.", "zh": "如果罪名成立，她可能會被取消律師資格。" } ] },
+    { "headword": "endowment", "examples": [
+      { "en": "The university's endowment has grown to over two billion dollars.", "zh": "這所大學的捐贈基金已成長到超過二十億美元。" },
+      { "en": "Musical talent is a natural endowment, but it still needs practice.", "zh": "音樂天分是與生俱來的才能，但仍然需要練習。" } ] },
+    { "headword": "enfetter", "examples": [
+      { "en": "The prisoners were enfettered and led away in chains.", "zh": "囚犯被戴上腳鐐，用鐵鍊押走。" },
+      { "en": "He felt enfettered by his family's expectations.", "zh": "他覺得自己被家人的期望束縛住了。" } ] },
+    { "headword": "eventual", "examples": [
+      { "en": "Nobody expected the small startup to be the eventual winner of the contract.", "zh": "沒有人料到那家小新創公司最後會拿下這份合約。" },
+      { "en": "The project faced many delays, but its eventual success surprised everyone.", "zh": "這個計畫遭遇許多延宕，但最終的成功讓所有人都很驚訝。" } ] },
+    { "headword": "expiation", "examples": [
+      { "en": "He donated his fortune to charity in expiation of his past crimes.", "zh": "他把財產捐給慈善機構，為過去的罪行贖罪。" },
+      { "en": "The ritual was performed as an expiation for the sins of the village.", "zh": "這個儀式是為了替村子贖罪而舉行的。" } ] },
+    { "headword": "frivolous", "examples": [
+      { "en": "The judge dismissed the lawsuit as frivolous.", "zh": "法官認定這起訴訟毫無根據，予以駁回。" },
+      { "en": "Stop wasting money on frivolous things and start saving.", "zh": "別再把錢浪費在無謂的東西上，開始存錢吧。" } ] },
+    { "headword": "garner", "examples": [
+      { "en": "The documentary garnered several international awards.", "zh": "這部紀錄片獲得了好幾個國際獎項。" },
+      { "en": "The candidate traveled across the state to garner support from rural voters.", "zh": "那位候選人跑遍全州，爭取鄉村選民的支持。" } ] },
+    { "headword": "gradient", "examples": [
+      { "en": "The road climbs at a steep gradient, so cyclists often have to walk.", "zh": "這條路的坡度很陡，騎單車的人常常得下來牽車。" },
+      { "en": "Heat flows along a temperature gradient from hot areas to cold ones.", "zh": "熱會沿著溫度梯度，從高溫處流向低溫處。" } ] },
+    { "headword": "harpoon", "examples": [
+      { "en": "The whalers threw a harpoon at the huge animal.", "zh": "捕鯨人朝那隻巨大的動物擲出魚叉。" },
+      { "en": "In the past, fishermen harpooned sharks from small wooden boats.", "zh": "過去漁民會在小木船上用魚叉捕鯊魚。" } ] },
+    { "headword": "idolatrize", "examples": [
+      { "en": "Some fans idolatrize celebrities as if they could do no wrong.", "zh": "有些粉絲盲目崇拜名人，好像他們永遠不會犯錯。" },
+      { "en": "The cult members were taught to idolatrize their leader.", "zh": "那些邪教成員被教導要把領袖奉為偶像。" } ] },
+    { "headword": "induct", "examples": [
+      { "en": "She was inducted into the Hall of Fame after a long and successful career.", "zh": "她在漫長而成功的職業生涯後，入選名人堂。" },
+      { "en": "The new mayor will be inducted into office next Monday.", "zh": "新市長將在下週一正式就職。" } ] },
+    { "headword": "ingratiating", "examples": [
+      { "en": "He gave the boss an ingratiating smile and offered to work late.", "zh": "他對老闆露出討好的笑容，主動表示願意加班。" },
+      { "en": "Her ingratiating manner made some people suspicious of her motives.", "zh": "她刻意逢迎的態度讓一些人懷疑她的動機。" } ] },
+    { "headword": "invertebrate", "examples": [
+      { "en": "Insects, spiders and snails are all invertebrates.", "zh": "昆蟲、蜘蛛和蝸牛都是無脊椎動物。" },
+      { "en": "The coral reef is home to thousands of species of invertebrates.", "zh": "這片珊瑚礁是數千種無脊椎動物的棲息地。" } ] },
+    { "headword": "lateral", "examples": [
+      { "en": "The doctor asked for a lateral X-ray of the patient's knee.", "zh": "醫師要求幫病人照一張膝蓋的側面 X 光。" },
+      { "en": "Lateral thinking means approaching a problem from an unexpected angle.", "zh": "橫向思考是指從意想不到的角度來處理問題。" } ] },
+    { "headword": "limn", "examples": [
+      { "en": "The novel limns the daily life of a fishing village in great detail.", "zh": "這本小說細膩地描繪了一個漁村的日常生活。" },
+      { "en": "The artist limned the queen's portrait in soft colors.", "zh": "畫家用柔和的色彩描繪女王的肖像。" } ] },
+    { "headword": "maze", "examples": [
+      { "en": "The children got lost in the hedge maze for almost an hour.", "zh": "孩子們在樹籬迷宮裡迷路了將近一小時。" },
+      { "en": "Applying for a visa meant navigating a maze of rules and paperwork.", "zh": "申請簽證就得在一大堆繁雜的規定和文件中摸索。" } ] },
+    { "headword": "mollycoddle", "examples": [
+      { "en": "Stop mollycoddling him; he's old enough to do his own laundry.", "zh": "別再溺愛他了，他已經大到可以自己洗衣服了。" },
+      { "en": "Some teachers worry that parents mollycoddle their children too much.", "zh": "有些老師擔心家長太過寵溺孩子。" } ] },
+    { "headword": "muffled", "examples": [
+      { "en": "We could hear muffled voices through the wall.", "zh": "我們隔著牆聽到模糊的說話聲。" },
+      { "en": "The heavy snow made the city quiet, and every sound was muffled.", "zh": "大雪讓城市變得安靜，每個聲音都悶悶的。" } ] },
+    { "headword": "pesticide", "examples": [
+      { "en": "Farmers are using fewer pesticides to protect bees.", "zh": "為了保護蜜蜂，農民正在減少農藥的使用。" },
+      { "en": "Wash fruit carefully to remove any pesticide residue.", "zh": "水果要仔細清洗，去除殘留的農藥。" } ] },
+    { "headword": "platitudinous", "examples": [
+      { "en": "The speech was full of platitudinous remarks about hard work and success.", "zh": "那篇演講充斥著關於努力與成功的陳腔濫調。" },
+      { "en": "Critics found the film's platitudinous ending disappointing.", "zh": "評論家認為這部電影老套的結局令人失望。" } ] },
+    { "headword": "reaper", "examples": [
+      { "en": "The reapers worked in the fields from dawn until dusk.", "zh": "收割的工人從清晨到黃昏都在田裡工作。" },
+      { "en": "The invention of the mechanical reaper changed farming forever.", "zh": "機械收割機的發明徹底改變了農業。" } ] },
+    { "headword": "repulsive", "examples": [
+      { "en": "The smell from the garbage dump was absolutely repulsive.", "zh": "垃圾場傳來的味道令人作嘔。" },
+      { "en": "Many people find his racist views repulsive.", "zh": "很多人覺得他的種族歧視觀點令人反感。" } ] },
+    { "headword": "respondents", "examples": [
+      { "en": "More than half of the respondents said they were satisfied with the service.", "zh": "超過一半的受訪者表示對服務感到滿意。" },
+      { "en": "The survey asked respondents about their sleeping habits.", "zh": "這份問卷詢問受訪者的睡眠習慣。" } ] },
+    { "headword": "sawdust", "examples": [
+      { "en": "The workshop floor was covered in sawdust.", "zh": "工作室的地板上滿是木屑。" },
+      { "en": "Some farmers use sawdust as bedding for their animals.", "zh": "有些農民用木屑當作牲畜的墊料。" } ] },
+    { "headword": "scarlet", "examples": [
+      { "en": "She wore a scarlet dress to the party.", "zh": "她穿了一件鮮紅色的洋裝去參加派對。" },
+      { "en": "His face turned scarlet with embarrassment.", "zh": "他尷尬得滿臉通紅。" } ] },
+    { "headword": "scourge", "examples": [
+      { "en": "Malaria remains the scourge of many tropical countries.", "zh": "瘧疾仍然是許多熱帶國家的禍害。" },
+      { "en": "Fake news has become a scourge of the internet age.", "zh": "假新聞已成為網路時代的一大禍害。" } ] },
+    { "headword": "sculptor", "examples": [
+      { "en": "The sculptor spent three years carving the statue from a single block of marble.", "zh": "那位雕刻家花了三年，從一整塊大理石雕出這座雕像。" },
+      { "en": "Rodin is one of the most famous sculptors in history.", "zh": "羅丹是史上最著名的雕塑家之一。" } ] },
+    { "headword": "snowflake", "examples": [
+      { "en": "No two snowflakes are exactly alike.", "zh": "世上沒有兩片完全相同的雪花。" },
+      { "en": "The children tried to catch snowflakes on their tongues.", "zh": "孩子們試著用舌頭接住雪花。" } ] },
+    { "headword": "sod", "examples": [
+      { "en": "The workers laid fresh sod to make a new lawn.", "zh": "工人鋪上新的草皮，做出一片新草坪。" },
+      { "en": "After many years abroad, he returned to his native sod.", "zh": "在國外多年後，他回到了故鄉。" } ] },
+    { "headword": "squat", "examples": [
+      { "en": "He squatted down to tie his shoelaces.", "zh": "他蹲下來綁鞋帶。" },
+      { "en": "A family of four had been squatting in the empty house for months.", "zh": "一家四口已經擅自住進那棟空屋好幾個月了。" } ] },
+    { "headword": "staccato", "examples": [
+      { "en": "The teacher asked her to play the notes staccato.", "zh": "老師要她用斷奏的方式彈這些音。" },
+      { "en": "We heard the staccato sound of gunfire in the distance.", "zh": "我們聽到遠處傳來斷斷續續的槍聲。" } ] },
+    { "headword": "stinginess", "examples": [
+      { "en": "His stinginess is well known; he never buys anyone a drink.", "zh": "他的小氣出了名，從來不請任何人喝一杯。" },
+      { "en": "Customers complained about the company's stinginess with refunds.", "zh": "顧客抱怨這家公司在退款上很小氣。" } ] },
+    { "headword": "strangulation", "examples": [
+      { "en": "The autopsy showed that the victim had died of strangulation.", "zh": "驗屍結果顯示，死者是被勒死的。" },
+      { "en": "Many sea turtles die from strangulation in discarded fishing nets.", "zh": "許多海龜因為被廢棄漁網纏勒而死。" } ] },
+    { "headword": "trapeze", "examples": [
+      { "en": "The acrobat swung gracefully from one trapeze to another.", "zh": "特技演員優雅地從一個空中鞦韆盪到另一個。" },
+      { "en": "She learned to perform on the trapeze at circus school.", "zh": "她在馬戲學校學會了表演空中鞦韆。" } ] },
+    { "headword": "tusk", "examples": [
+      { "en": "Elephants are still killed illegally for their ivory tusks.", "zh": "大象至今仍因象牙而遭到非法獵殺。" },
+      { "en": "The wild boar has sharp tusks that can cause serious injuries.", "zh": "野豬有銳利的獠牙，可能造成嚴重的傷害。" } ] },
+    { "headword": "unbidden", "examples": [
+      { "en": "Tears came unbidden to her eyes as she read the letter.", "zh": "讀著那封信，她不由自主地流下淚來。" },
+      { "en": "An unbidden guest showed up at the wedding.", "zh": "一位不請自來的客人出現在婚禮上。" } ] },
+    { "headword": "wretched", "examples": [
+      { "en": "The refugees lived in wretched conditions without clean water.", "zh": "難民生活在沒有乾淨飲用水的悲慘環境中。" },
+      { "en": "I felt wretched after I lied to my best friend.", "zh": "我對最好的朋友說謊之後，心裡非常難受。" } ] }
+  ]
+}
