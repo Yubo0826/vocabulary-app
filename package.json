@@ -16,6 +16,8 @@
     "import:ecdict": "tsx scripts/import/ecdict.ts",
     "import:tatoeba": "tsx scripts/import/tatoeba.ts",
     "import:llm-examples": "tsx scripts/import/llm-examples.ts",
+    "llm:examples": "tsx scripts/llm/generate-examples.ts",
+    "llm:check": "tsx scripts/llm/check-examples.ts",
     "import:stats": "tsx scripts/import/stats.ts",
     "import:wordnet": "tsx scripts/import/wordnet.ts",
     "import:similar": "tsx scripts/import/similar.ts",
