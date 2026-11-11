@@ -1,13 +1,13 @@
 /**
  * 用 DeepSeek 產生中英例句 → data/llm/examples/<檔名>.json（之後由 npm run import:llm-examples 匯入）
  *
- * 挑字：詞頻前 20,000、目前沒有任何例句的字，排除專有名詞與縮寫
+ * 挑字：詞頻前 20,000、例句數不超過 --max-existing（預設 0，即沒有例句）的字，排除專有名詞與縮寫
  *   （原始寫法含大寫、中文釋義標示人名／地名／縮寫、或沒有英英釋義且 ≤ 4 個字母）。
  * 已出現在 data/llm/examples/ 任一檔案的字會跳過，所以中斷後重跑會接續。
  * 每批結果檢查（validate.ts）後才寫入；沒通過的字再送一次，仍失敗就列出不寫入。
  *
  * 需要 .env.local 的 DEEPSEEK_API_KEY。
- * 參數：--limit=250（這次最多處理幾個字）--batch=20（每次請求幾個字）--concurrency=4 --out=檔名.json
+ * 參數：--max-existing=0（例句少於等於幾句的字才補；1 = 也補只有一句的字）--limit=250（這次最多處理幾個字）--batch=20（每次請求幾個字）--concurrency=4 --out=檔名.json
  */
 import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
@@ -43,7 +43,7 @@ const SYSTEM_PROMPT = `你是英文學習字典的例句編輯。使用者會給
 
 headword 必須與輸入完全相同、依輸入順序、不可遺漏。只回覆 JSON。`;
 
-async function loadCandidates(db: ReturnType<typeof connect>["db"], done: Set<string>, limit: number) {
+async function loadCandidates(db: ReturnType<typeof connect>["db"], done: Set<string>, limit: number, maxExisting: number) {
   const { rows } = await db.execute<Word & { forms: string[] | null }>(sql`
     SELECT e.headword,
       coalesce((SELECT string_agg(coalesce(d.pos, '') || ' ' || d.text, ' ／ ' ORDER BY d.id)
@@ -55,7 +55,7 @@ async function loadCandidates(db: ReturnType<typeof connect>["db"], done: Set<st
     WHERE e.frequency_rank <= 20000
       AND e.headword ~ '^[a-z][a-z -]*[a-z]$'
       AND e.display = lower(e.display)
-      AND NOT EXISTS (SELECT 1 FROM dict_example_words w WHERE w.headword = e.headword)
+      AND (SELECT count(*) FROM dict_example_words w WHERE w.headword = e.headword) <= ${maxExisting}
     ORDER BY e.frequency_rank, e.headword`);
   const excluded = (w: Word) =>
     /(縮寫|abbr|人名|地名|男子名|女子名|姓氏|（[A-Z])/.test(w.zh) || (!w.en && w.headword.length <= 4);
@@ -108,6 +108,7 @@ async function callDeepSeek(apiKey: string, words: Word[]): Promise<{ model: str
 
 run(async () => {
   const limit = Number(getArg("limit") ?? 250);
+  const maxExisting = Number(getArg("max-existing") ?? 0);
   const batchSize = Number(getArg("batch") ?? 20);
   const concurrency = Number(getArg("concurrency") ?? 4);
   const outPath = path.join(DATA_DIR, getArg("out") ?? `${new Date().toISOString().slice(0, 10)}-deepseek.json`);
@@ -118,7 +119,7 @@ run(async () => {
 
   let queue: { word: Word; forms: Set<string>; attempts: number }[];
   try {
-    queue = (await loadCandidates(db, existingHeadwords(), limit)).map((c) => ({ ...c, attempts: 0 }));
+    queue = (await loadCandidates(db, existingHeadwords(), limit, maxExisting)).map((c) => ({ ...c, attempts: 0 }));
   } finally {
     await close();
   }

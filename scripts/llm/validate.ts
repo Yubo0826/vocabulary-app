@@ -45,8 +45,15 @@ const countWords = (s: string) => (s.match(/[A-Za-z]+(?:['’-][A-Za-z]+)*/g) ??
 function containsWord(headword: string, forms: Set<string>, en: string): boolean {
   if (headword.includes(" ")) return en.toLowerCase().includes(headword);
   const base = headword.replace(/(e|y)$/, "");
+  // 拉丁／希臘式不規則複數：thesis → theses、cactus → cacti、datum → data、criterion → criteria
+  const latin = headword.match(/^(.+)(is|us|um|on)$/);
+  const latinPlurals = latin ? { is: ["es"], us: ["i"], um: ["a"], on: ["a"] }[latin[2]]!.map((end) => latin[1] + end) : [];
   return tokenize(en).some(
-    (t) => t === headword || forms.has(t) || (t.startsWith(base) && t.length - headword.length <= 4 && t.length >= headword.length - 1),
+    (t) =>
+      t === headword ||
+      forms.has(t) ||
+      latinPlurals.includes(t) ||
+      (t.startsWith(base) && t.length - headword.length <= 4 && t.length >= headword.length - 1),
   );
 }
 
