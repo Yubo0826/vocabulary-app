@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Suspense } from "react";
 import { requireUser } from "@/lib/session";
 import { countSavedWords, listWordbooks } from "@/lib/user-data";
+import { ImportDialog } from "../saved/import-dialog";
 import { CreateWordbookDialog, WordbookManager } from "./wordbook-manager";
 
 export const metadata = { title: "管理單字本" };
@@ -24,7 +25,8 @@ async function Wordbooks() {
       </p>
       <div className="flex items-center gap-2">
         <h1 className="text-2xl font-semibold">管理單字本</h1>
-        <div className="ml-auto">
+        <div className="ml-auto flex items-center gap-1">
+          <ImportDialog wordbooks={wordbooks.map(({ id, name }) => ({ id, name }))} defaultWordbookId={null} />
           <CreateWordbookDialog />
         </div>
       </div>

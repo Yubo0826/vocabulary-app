@@ -1,6 +1,6 @@
 "use client";
 
-import { Download, EllipsisVertical, Pencil, Plus, Trash2 } from "lucide-react";
+import { EllipsisVertical, Pencil, Plus, Trash2, Upload } from "lucide-react";
 import Link from "next/link";
 import { useState, useTransition } from "react";
 import { createWordbookAction, deleteWordbookAction, updateWordbookAction } from "@/app/actions";
@@ -86,7 +86,7 @@ function ExportItem({ href }: { href: string }) {
   return (
     <DropdownMenuItem asChild>
       <a href={href} download className="text-inherit hover:no-underline">
-        <Download /> 匯出
+        <Upload /> 匯出
       </a>
     </DropdownMenuItem>
   );

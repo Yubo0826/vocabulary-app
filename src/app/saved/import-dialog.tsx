@@ -1,7 +1,7 @@
 "use client";
 
-/** 「我的單字」標題列的匯入按鈕：貼上或選擇純文字檔，每行一個單字 */
-import { Upload } from "lucide-react";
+/** 「我的單字」與「管理單字本」標題列的匯入按鈕：貼上或選擇純文字檔，每行一個單字 */
+import { Download } from "lucide-react";
 import { useRef, useState, useTransition } from "react";
 import { importWordsAction } from "@/app/actions";
 import { Button } from "@/components/ui/button";
@@ -64,7 +64,7 @@ export function ImportDialog({ wordbooks, defaultWordbookId }: { wordbooks: { id
     >
       <DialogTrigger asChild>
         <Button variant="ghost" size="icon-lg" aria-label="匯入單字" title="匯入單字">
-          <Upload />
+          <Download />
         </Button>
       </DialogTrigger>
       <DialogContent>
