@@ -75,7 +75,7 @@ Moji 的字典資料（`dict_` 開頭的表）全部由 `scripts/import/` 的匯
 - **只收有中文翻譯的英文句子**；一句英文有多個中文翻譯時，取 id 最小的一句。
 - **超過 25 個英文字的句子不收**（`MAX_WORDS`）。Tatoeba 有整段日記式的長文（例如 seemingly 原本配到 224 字的段落），因此沒有例句的字改由 LLM 補。
 - 斷詞後透過 `dict_word_forms` 還原原形，一句會關聯到句中所有字（例如含 preceding 的句子會同時掛在 precede 與 preceding 底下）。
-- **計分**（0–100）：句長 5–15 字得 50 分、超出範圍每字扣 8 分；詞頻前 5,000 名的常用字比例最多 50 分。中文翻譯含大陸用語（「工資」等，清單與 LLM 檢查共用）扣 30 分。每個詞條保留分數最高的 20 句（`--per-headword`），同分時短句優先。
+- **計分**（0–100）：句長 5–15 字得 50 分、超出範圍每字扣 8 分；詞頻前 5,000 名的常用字比例最多 50 分。中文翻譯含大陸用語（「漲工資」等，清單與 LLM 檢查共用）扣 30 分。每個詞條保留分數最高的 20 句（`--per-headword`），同分時短句優先。
 - **去除重複用法**：依分數依序挑選，若某句的實詞（去掉功能詞與該字本身，並還原成原形）和已選句子重疊 ≥ 50%，就視為重複（例如 raise 的多句「舉手」），排到所有不重複的句子之後（分數扣 100）。只排後、不刪除，每個詞條仍保留 20 句。
 - 單字頁預設顯示前 8 句例句，其餘收在「顯示其餘 N 句」。
 - 中文翻譯由簡體轉台灣繁體（OpenCC `cn` → `twp`）。
@@ -131,10 +131,20 @@ Moji 的字典資料（`dict_` 開頭的表）全部由 `scripts/import/` 的匯
 - 前端不標示「AI 生成」，也不顯示出處按鈕；資料庫保留 `source` 與 `model`，方便日後找出來重跑或刪除。
 - 依 CLAUDE.md 規定已人工抽查：opus 試跑 100 句、deepseek 隨機 100 句，皆通過。
 
+## LLM 詞義分組與翻譯修正
+
+詳見 `docs/SENSE-GROUPING.md`。由 `scripts/llm/generate-senses.ts` 產生、`import:llm-senses` 匯入：
+
+- `dict_senses`：每個字 1–8 個粗分詞義（中文標籤、對應的 WordNet synset id、模型）
+- `dict_example_words.sense_id`：例句屬於哪個詞義
+- `dict_examples.text_zh_revised`：LLM 修正後的中文翻譯，前端優先顯示，`text_zh` 保留 Tatoeba 原文
+
+Tatoeba 匯入另外把中文翻譯裡緊接在中文字後面的半形標點（, ? ! : ;）轉成全形。
+
 ## 重新匯入與同步正式環境
 
 ```bash
-npm run import:all          # ECDICT → WordNet → 相似字 → 詞性家族 → Tatoeba → LLM 例句 → 統計
+npm run import:all          # ECDICT → WordNet → 相似字 → 詞性家族 → Tatoeba → LLM 例句 → LLM 詞義 → 統計
 npm run llm:examples -- --limit=250            # 用 DeepSeek 產生例句（需要 .env.local 的 DEEPSEEK_API_KEY）
 npm run llm:examples -- --max-existing=1       # 補強只有 1 句例句的字
 npm run llm:check                              # 檢查 data/llm/examples/ 全部資料

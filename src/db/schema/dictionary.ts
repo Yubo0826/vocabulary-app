@@ -98,6 +98,9 @@ export const examples = pgTable(
     zhLicense: text("zh_license"),
     source: text("source").notNull().default("tatoeba"), // 'tatoeba' | 'llm'
     model: text("model"), // source = 'llm' 時記錄產生的模型，例如 'claude-opus-5-5'
+    // LLM 修正後的中文翻譯（原翻譯錯譯、不通順或用了大陸用語時）；前端優先顯示，text_zh 保留原文
+    textZhRevised: text("text_zh_revised"),
+    zhRevisedModel: text("zh_revised_model"),
   },
   (t) => [uniqueIndex("dict_examples_pair_idx").on(t.enSentenceId, t.zhSentenceId)],
 );
@@ -114,11 +117,35 @@ export const exampleWords = pgTable(
       .references(() => examples.id, { onDelete: "cascade" }),
     // 例句品質分數（長度適中、常用字比例高者優先顯示），匯入時計算
     score: smallint("score").notNull().default(0),
+    // 這句在這個字底下屬於哪個詞義（scripts/import/llm-senses.ts 寫入）；null = 未分組或不屬於任何詞義
+    senseId: integer("sense_id").references(() => senses.id, { onDelete: "set null" }),
   },
   (t) => [
     primaryKey({ columns: [t.headword, t.exampleId] }),
     index("dict_example_words_rank_idx").on(t.headword, t.score),
   ],
+);
+
+/**
+ * 詞義：LLM 參考 ECDICT 中文釋義與 WordNet 整理的粗分詞義，單字頁例句依此分組篩選（docs/SENSE-GROUPING.md）。
+ * 由 scripts/import/llm-senses.ts 從 data/llm/senses/*.json 匯入。
+ */
+export const senses = pgTable(
+  "dict_senses",
+  {
+    id: serial("id").primaryKey(),
+    headword: text("headword")
+      .notNull()
+      .references(() => entries.headword, { onDelete: "cascade" }),
+    senseOrder: smallint("sense_order").notNull(), // 1 起算，依常用程度
+    pos: text("pos"),
+    labelZh: text("label_zh").notNull(), // 例如「提高（價格、數量）」
+    glossEn: text("gloss_en"),
+    wordnetSynsets: text("wordnet_synsets").array(), // 合併進來的 WordNet synset id，方便核對
+    source: text("source").notNull().default("llm"),
+    model: text("model"),
+  },
+  (t) => [uniqueIndex("dict_senses_headword_order_idx").on(t.headword, t.senseOrder)],
 );
 
 /**

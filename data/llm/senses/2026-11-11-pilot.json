@@ -1,0 +1,7176 @@
+{
+ "model": "deepseek-flash",
+ "generatedAt": "2026-11-11",
+ "method": "scripts/llm/generate-senses.ts：依 ECDICT 中文釋義與 OEWN 詞義整理粗分詞義、例句分組、修正中文翻譯",
+ "words": [
+  {
+   "headword": "bank",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "銀行",
+     "gloss": "a financial institution that accepts deposits and lends money",
+     "synsets": [
+      "08437235-n",
+      "02790795-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "岸、堤",
+     "gloss": "sloping land beside a body of water; a raised mound or ridge",
+     "synsets": [
+      "09236472-n",
+      "09236341-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "依靠、信賴",
+     "gloss": "to rely or depend on someone or something",
+     "synsets": []
+    }
+   ],
+   "examples": [
+    {
+     "en": "I work for a bank.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "You can bank on that.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "Please go to the bank.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Is the bank far from here?",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Banks open at nine o'clock.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "He got a loan from the bank.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The bank has already closed.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Tom has various bank accounts.",
+     "sense": 1,
+     "zhFix": "湯姆有多個銀行帳戶。"
+    },
+    {
+     "en": "The children slid down the bank.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "The bank was held up a week ago.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Is there a bank near the station?",
+     "sense": 1,
+     "zhFix": "車站附近有銀行嗎？"
+    },
+    {
+     "en": "He's at the bank exchanging money.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The bank doesn't open on Saturdays.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Excuse me, where's the Bank of China?",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Tom stopped me from entering the bank.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "This car stopped in front of the bank.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The bank secured the city from a flood.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "I made a deposit of $1,000 at the bank.",
+     "sense": 1,
+     "zhFix": "我在銀行存了一千美元。"
+    },
+    {
+     "en": "There's no money left in my bank account.",
+     "sense": 1,
+     "zhFix": "我的銀行帳戶裡沒剩錢了。"
+    },
+    {
+     "en": "His office is past the bank on your left.",
+     "sense": 1,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "back",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "回、返回",
+     "gloss": "to or toward a previous place or state",
+     "synsets": [
+      "02001151-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "背部",
+     "gloss": "the posterior part of the body from neck to spine",
+     "synsets": [
+      "05566350-n"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "向後、退後",
+     "gloss": "toward the rear",
+     "synsets": [
+      "02001151-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "支持、贊助",
+     "gloss": "give support or approval to",
+     "synsets": [
+      "02459338-v",
+      "02562643-v",
+      "02222477-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "後面、後方",
+     "gloss": "the side that goes last or is not normally seen",
+     "synsets": [
+      "04066813-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "使後退、倒退",
+     "gloss": "cause to travel backward",
+     "synsets": [
+      "02001544-v"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "He lay on his back.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "I will be back soon.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I will be back late.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Can you rub my back?",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Go back to your seat.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "It's nice to be back.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "He'll be back in ten.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Give me back my money!",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "When will you be back?",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "We didn't bring it back.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The toilet is backed up.",
+     "sense": 6,
+     "zhFix": null
+    },
+    {
+     "en": "Stand back from the rope.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "Please come back at once.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "He will be back tomorrow.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "\"I'll be back,\" said Tom.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I'd better get back home.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The doctor called him back.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Welcome back. We missed you!",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "We're friends from way back.",
+     "sense": 5,
+     "zhFix": null
+    },
+    {
+     "en": "He answered his parents back.",
+     "sense": 0,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "aim",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "目標、目的",
+     "gloss": "a purpose or goal that you want to achieve",
+     "synsets": [
+      "05991037-n",
+      "05990115-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "瞄準、對準",
+     "gloss": "to point a weapon or object towards a target",
+     "synsets": [
+      "01153576-v",
+      "01153025-v",
+      "00817305-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "旨在、針對",
+     "gloss": "to intend or design something for a particular purpose or audience",
+     "synsets": [
+      "00714920-v",
+      "00957504-v",
+      "01028984-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "打算、致力",
+     "gloss": "to intend or try to achieve something",
+     "synsets": [
+      "00710809-v",
+      "00707283-v"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "My aim is to be a doctor.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "He achieved his aim at last.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I aimed my gun at the target.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "The hunters aimed at the elephant.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "What is the central aim of this plan?",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Wish big, aim high, be gentle, be careful.",
+     "sense": 0,
+     "zhFix": null
+    },
+    {
+     "en": "He has only one aim in life, to make money.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "A stable economy is the aim of every government.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "We should ban advertising aimed towards children.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "Their common aim was to make the project successful.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The aim of this game is to explode all the bombs on the screen.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "When you have nothing, aim low; when you get somewhere, aim high.",
+     "sense": 0,
+     "zhFix": null
+    },
+    {
+     "en": "The aim of this policy is to improve the environment in the poorest cities.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The city government held a large conference aimed at promoting cross-departmental cooperation.",
+     "sense": 3,
+     "zhFix": "市政府舉行了一次大型會議，旨在促進跨部門合作。"
+    },
+    {
+     "en": "He aimed, but missed.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "That aim is impossible to attain.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Reformers aim to improve the government.",
+     "sense": 4,
+     "zhFix": null
+    },
+    {
+     "en": "I aimed at a sparrow, but shot down a goose.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "That's my aim.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Mayuko always aims for perfection.",
+     "sense": 4,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "beat",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "打、揍、拍打",
+     "gloss": "hit repeatedly or strike",
+     "synsets": [
+      "01399864-v",
+      "01401573-v",
+      "01402230-v",
+      "02097888-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "打敗、戰勝",
+     "gloss": "defeat in a competition or conflict",
+     "synsets": [
+      "01104324-v",
+      "02752015-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "心跳、有節奏地跳動",
+     "gloss": "move or make a rhythmic sound",
+     "synsets": [
+      "01884106-v",
+      "02179274-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "節拍、拍子",
+     "gloss": "rhythmic unit in music",
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "疲憊的",
+     "gloss": "very tired",
+     "synsets": []
+    }
+   ],
+   "examples": [
+    {
+     "en": "Don't beat around the bush.",
+     "sense": 0,
+     "zhFix": null
+    },
+    {
+     "en": "My heart's beating so fast!",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "He was beaten black and blue.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I felt my heart beating rapidly.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "Calm down your beating, oh, my heart!",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "The rain is beating against the windows.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "My heart beat when I heard my name called.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "It's four against you. You'll be beaten up.",
+     "sense": 2,
+     "zhFix": "你們的對手有四個人。你們一定會被打敗的。"
+    },
+    {
+     "en": "We need to band together to beat the enemy.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "He was beaten to within an inch of his life.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "His heart stopped beating and he died immediately.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "As far as English is concerned, nobody can beat me.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Although the production of electric fans was reduced in February, it still beats January.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "She was humming a song in four beats.",
+     "sense": 4,
+     "zhFix": null
+    },
+    {
+     "en": "Stop beating yourself up and start beating up fascists.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Few things are more enraging to me than the sight of an animal being beaten.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I'll beat you up!",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "He'll never beat me.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Ken beat me at chess.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Waves are beating the shore.",
+     "sense": 1,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "advance",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "前進、推進",
+     "gloss": "move forward or cause to move forward",
+     "synsets": [
+      "01996535-v",
+      "01997958-v",
+      "01998320-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "提前、預先",
+     "gloss": "beforehand; in advance",
+     "synsets": [
+      "02288794-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "進展、發展",
+     "gloss": "develop or progress",
+     "synsets": [
+      "00249545-v",
+      "00559448-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "晉升、提拔",
+     "gloss": "promote to a higher position",
+     "synsets": [
+      "02402779-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "提出（建議、想法）",
+     "gloss": "bring forward for consideration",
+     "synsets": [
+      "00877337-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "前進、進展",
+     "gloss": "forward movement or progress",
+     "synsets": []
+    }
+   ],
+   "examples": [
+    {
+     "en": "You must pay in advance.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "I will let you know in advance.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Thank you in advance for your help.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "They advanced to the quarter-finals.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "She finished her work an hour in advance.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "I was uncertain whether to advance or to retreat.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The military power of this country is very advanced.",
+     "sense": 0,
+     "zhFix": null
+    },
+    {
+     "en": "The world today needs to advance its production of food.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "We have to be there an hour in advance to get our tickets.",
+     "sense": 2,
+     "zhFix": "我們必須提前一小時到那裡取票。"
+    },
+    {
+     "en": "What's more, you can only buy train tickets one week in advance.",
+     "sense": 2,
+     "zhFix": "而且，火車票只能提前一週購買。"
+    },
+    {
+     "en": "The winner of this quarter-final match will advance to the semi-final stage.",
+     "sense": 3,
+     "zhFix": "這場四分之一決賽的勝者將晉級準決賽。"
+    },
+    {
+     "en": "You can skip stage three of the certification process and advance immediately to stage six.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "Our plans are to advance toward the city.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The rugged terrain made the troops' advance difficult.",
+     "sense": 6,
+     "zhFix": null
+    },
+    {
+     "en": "As the story advances, the mystery unravels.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "The squirrel advanced against the strong wind.",
+     "sense": 1,
+     "zhFix": "松鼠頂著強風前進。"
+    },
+    {
+     "en": "The recent advances in medicine are remarkable.",
+     "sense": 6,
+     "zhFix": null
+    },
+    {
+     "en": "It is for advancing!",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "He advanced to colonel.",
+     "sense": 4,
+     "zhFix": "他晉升為上校。"
+    },
+    {
+     "en": "He rejected her advances.",
+     "sense": 0,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "bed",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "床、床鋪",
+     "gloss": "a piece of furniture for sleeping",
+     "synsets": [
+      "02821967-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "河床、海底",
+     "gloss": "a depression forming the ground under a body of water",
+     "synsets": [
+      "09240545-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "苗床、花壇",
+     "gloss": "a plot of ground for growing plants",
+     "synsets": [
+      "02822609-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "地層、礦層",
+     "gloss": "a layer of rock or ore",
+     "synsets": [
+      "09240774-n",
+      "08676707-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "底座、路基",
+     "gloss": "a foundation or flat base",
+     "synsets": [
+      "02822832-n",
+      "03655499-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "安置、栽種",
+     "gloss": "to place or plant in a bed",
+     "synsets": [
+      "02342062-v",
+      "01570434-v"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "I lay on my bed.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I should go to bed.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "He is still in bed.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Must I stay in bed?",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "How big is your bed?",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Jane is sick in bed.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "He jumped out of bed.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Tom got ready for bed.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I don't sleep in a bed.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "He needs to rest in bed.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "A hot bath and then bed.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The boy fell off the bed.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "She put sheets on her bed.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "He is confined to bed now.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I hid myself under the bed.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "We have space for two beds.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Which bed do you want to use?",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The beautiful girl is in bed.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "There's a monster under my bed.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "We found the beds quite comfortable.",
+     "sense": 1,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "clearance",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "間隙、淨空（高度）",
+     "gloss": "the space between two things, or vertical space for passing under something",
+     "synsets": [
+      "05097318-n",
+      "13800473-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "許可、放行",
+     "gloss": "permission to proceed",
+     "synsets": [
+      "01143914-n"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "The truck barely had enough clearance to pass under the bridge.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The pilot waited for clearance from the control tower before taking off.",
+     "sense": 2,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "begin",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "開始、著手",
+     "gloss": "to start doing something; to take the first step",
+     "synsets": [
+      "00346415-v",
+      "02614382-v",
+      "00349400-v",
+      "02615238-v",
+      "02614858-v",
+      "02606945-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "開始（說話、學習）",
+     "gloss": "to begin to speak or to learn a language",
+     "synsets": [
+      "00749644-v",
+      "01072799-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "起始於、從……開始",
+     "gloss": "to be the first item or point; to come first in a series",
+     "synsets": [
+      "02685037-v"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "Tell me when to begin.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Well begun is half done.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "They all began to laugh.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "He began to feel afraid.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "When does the game begin?",
+     "sense": 1,
+     "zhFix": "比賽幾點開始？"
+    },
+    {
+     "en": "I began living by myself.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "It began snowing just now.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "School begins at 8:30 a.m.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Suddenly, it began to rain.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "How did your journey begin?",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "You should begin right away.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "What time does boarding begin?",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Let's begin with this problem.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Have you begun studying English?",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "She gradually began to understand.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Read Lesson 10 from the beginning.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "Summer vacation begins next Monday.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The French Revolution began in 1789.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Class doesn't begin until eight-thirty.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The twenty-first century begins in 2001.",
+     "sense": 3,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "belt",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "腰帶、皮帶",
+     "gloss": "a band worn around the waist",
+     "synsets": [
+      "02830790-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "安全帶",
+     "gloss": "a strap that holds a person in a seat",
+     "synsets": [
+      "02831067-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "地帶、區域",
+     "gloss": "an elongated region with a particular feature",
+     "synsets": [
+      "08526807-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "一帶（專有名詞，如「一帶一路」）",
+     "gloss": "a belt in names of routes or regions",
+     "synsets": [
+      "09475783-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "繫上腰帶、用帶子固定",
+     "gloss": "fasten with a belt",
+     "synsets": [
+      "01368764-v"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "Tom took off his belt.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "What color is your belt?",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Drivers should wear seat belts.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "The belt became a symbol of fear for me.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Small businesses will have to tighten their belts to survive.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "It's the law: always buckle your safety belt in cars and airplanes.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "China is incorporating Algeria into its Belt and Road strategy.",
+     "sense": 4,
+     "zhFix": null
+    },
+    {
+     "en": "Fasten your seat belt at all times.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "None were wearing seat belts.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Tom would still be alive if he had been wearing his seat belt.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Always fasten your seat belt.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Fasten your seat belt, please.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Fasten your seat belt.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Fasten your seat belts.",
+     "sense": 2,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "bob",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "人名「巴布、鮑伯」",
+     "gloss": "a male given name (not a dictionary sense of the common noun)",
+     "synsets": []
+    },
+    {
+     "pos": "v.",
+     "label": "上下擺動、快速點頭",
+     "gloss": "move up and down repeatedly in a quick, short movement",
+     "synsets": [
+      "01869369-v",
+      "00337100-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "短髮（髮型）",
+     "gloss": "a short haircut all around",
+     "synsets": [
+      "05266592-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "浮標、懸掛重物",
+     "gloss": "a small float on a fishing line; a hanging weight",
+     "synsets": [
+      "02863403-n",
+      "02863579-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "剪短（頭髮、尾巴）",
+     "gloss": "cut hair short; shorten an animal's tail",
+     "synsets": [
+      "00038834-v",
+      "01558960-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "舊英國硬幣（五便士）",
+     "gloss": "a former British monetary unit",
+     "synsets": [
+      "13708982-n"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "Can I call you Bob?",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Bob is a nice person.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "She is going to Bob's.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I saw Bob this morning.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I asked for Bob's help.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Bob came home very late.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Bob is popular at school.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Bob can drive a car, too.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Bob is in the drama club.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Bill runs faster than Bob.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "You like Bob more than Tom.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Bob must have had an accident.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Bob filled the pot with water.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Bob has too many books to read.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Bob and Mary play the recorder.",
+     "sense": 1,
+     "zhFix": "鮑伯和瑪麗吹直笛。"
+    },
+    {
+     "en": "Bob lost interest in rock music.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Bob could not control his anger.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Bob can answer all the questions.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Bob seldom writes to his parents.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Bob reached the finish line first.",
+     "sense": 1,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "dark",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "黑暗的、暗的",
+     "gloss": "lacking light; not bright",
+     "synsets": [
+      "00273948-a"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "黑暗、夜色",
+     "gloss": "absence of light; darkness",
+     "synsets": [
+      "14007000-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "深色的、暗色的",
+     "gloss": "having a deep or intense color",
+     "synsets": [
+      "00410517-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "黑髮的、深色皮膚的",
+     "gloss": "having dark hair, skin, or eyes",
+     "synsets": [
+      "00246056-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "陰暗的、邪惡的",
+     "gloss": "evil or morally bad",
+     "synsets": [
+      "01135435-s",
+      "14587156-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "陰鬱的、悲觀的",
+     "gloss": "gloomy or depressing",
+     "synsets": [
+      "00365961-s"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "It will be dark soon.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "He had dark brown hair.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "Don't go out after dark.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "The boy feared the dark.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "The Japanese have dark eyes.",
+     "sense": 4,
+     "zhFix": null
+    },
+    {
+     "en": "The sky was completely dark.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "He always wears dark glasses.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "It is too dark for me to read.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "It is too dark to see clearly.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "She likes to wear dark colours.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "She is very afraid of the dark.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "It's getting darker and darker.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "It became dark before I knew it.",
+     "sense": 1,
+     "zhFix": "不知不覺中天色就變暗了。"
+    },
+    {
+     "en": "We will reach London before dark.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Dark bread is popular in Germany.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "It was very dark in Susan's room.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Don't only look at the dark side.",
+     "sense": 5,
+     "zhFix": null
+    },
+    {
+     "en": "It was pretty dark under the bridge.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I arrived at the village before dark.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Africa was once called the Dark Continent.",
+     "sense": 5,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "block",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "街區、街段",
+     "gloss": "the area or distance between two streets in a city",
+     "synsets": []
+    },
+    {
+     "pos": "v.",
+     "label": "阻塞、堵住",
+     "gloss": "to obstruct or block passage",
+     "synsets": [
+      "01480632-v",
+      "01481963-v",
+      "01479113-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "阻擋、妨礙",
+     "gloss": "to hinder or prevent progress",
+     "synsets": [
+      "02563025-v",
+      "02565578-v",
+      "01149526-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "封鎖、禁止",
+     "gloss": "to stop access or communication",
+     "synsets": [
+      "01058906-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "塊狀物、木塊",
+     "gloss": "a solid piece of material",
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "模組、區塊",
+     "gloss": "a unit or section, especially in computing",
+     "synsets": []
+    }
+   ],
+   "examples": [
+    {
+     "en": "My house is five blocks away.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Walk two blocks, and turn left.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "A fallen tree blocked the road.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "I learned to use a command block today.",
+     "sense": 6,
+     "zhFix": null
+    },
+    {
+     "en": "She lives a block away and her name is Susan.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "He quickly made friends with the new boy on the block.",
+     "sense": 1,
+     "zhFix": "他很快便與街區裡新來的男孩交上了朋友。"
+    },
+    {
+     "en": "In addition to a blocked nose, I'm also suffering from a high temperature.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "All these new blocks will undoubtedly impact the loading speed of the home page.",
+     "sense": 6,
+     "zhFix": null
+    },
+    {
+     "en": "The opposition formed a line in the box to try and block Messi from scoring.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "The statue was carved from a block of cherry wood.",
+     "sense": 5,
+     "zhFix": null
+    },
+    {
+     "en": "You're blocking my light.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "Traffic was blocked by a landslide.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Turkey has blocked access to Twitter.",
+     "sense": 4,
+     "zhFix": null
+    },
+    {
+     "en": "The drains are blocked up.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Facebook is blocked in China.",
+     "sense": 4,
+     "zhFix": null
+    },
+    {
+     "en": "Both of these are Song Dynasty block-printed editions.",
+     "sense": 5,
+     "zhFix": null
+    },
+    {
+     "en": "I blocked him.",
+     "sense": 4,
+     "zhFix": null
+    },
+    {
+     "en": "Block it!",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "One hutong connects with another, siheyuans connect with other siheyuans to form a block, and blocks join with other blocks to form the whole city.",
+     "sense": 1,
+     "zhFix": "一條衚衕連接著另一條，四合院和其他四合院形成一個街區，而街區跟其他街區匯聚成一個城市。"
+    },
+    {
+     "en": "A fallen tree blocked the path.",
+     "sense": 2,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "do",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "做、進行",
+     "gloss": "perform an action or activity",
+     "synsets": [
+      "02566500-v",
+      "01716563-v",
+      "02567910-v",
+      "02574587-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "助動詞（構成疑問、否定）",
+     "gloss": "used to form questions and negative statements",
+     "synsets": []
+    },
+    {
+     "pos": "v.",
+     "label": "足夠、合適",
+     "gloss": "be sufficient or adequate",
+     "synsets": [
+      "02675578-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "表現、行為",
+     "gloss": "behave in a certain manner",
+     "synsets": [
+      "00010428-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "產生、引起",
+     "gloss": "cause to happen",
+     "synsets": [
+      "01649143-v"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "Do you keep a diary?",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Did you leave a tip?",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Why don't we go home?",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "What do you want now?",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Do you believe in God?",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "You must do your best.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "How long did you stay?",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "I don't agree with him.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "You could have done it.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Do you have any pencils?",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "You must do it yourself.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "He doesn't look his age.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "They don't even know why.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Do whatever he tells you.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I don't like you anymore.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "You've done a perfect job.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "How do you spell \"pretty\"?",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "You shouldn't have done it.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Why don't you eat vegetables?",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Class doesn't begin until eight-thirty.",
+     "sense": 2,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "demand",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "需求、需要",
+     "gloss": "the need or desire for goods and services",
+     "synsets": [
+      "13482365-n",
+      "14472592-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "要求、強烈要求",
+     "gloss": "to request urgently and forcefully",
+     "synsets": [
+      "00756987-v",
+      "01019835-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "要求、請求",
+     "gloss": "an urgent or peremptory request",
+     "synsets": [
+      "07205939-n",
+      "01063257-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "需要、耗費",
+     "gloss": "to require as useful, just, or proper",
+     "synsets": [
+      "02634015-v"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "We must reduce energy demand.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The price varies with demand.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I demanded that she should go.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Do not give in to those demands.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "He is reasonable in his demands.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "She demanded to see the manager.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Our teacher demanded that we keep quiet.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "I demand an explanation for this mistake.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "They demand a reduction in working hours.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "They demanded that the mayor should resign.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "They demanded the king be put to death at once.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "He demanded that I should pay the money at once.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "There is close relationship between supply and demand.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Compiling a dictionary demands an enormous amount of time.",
+     "sense": 4,
+     "zhFix": null
+    },
+    {
+     "en": "The English ambassador demanded to meet with the President directly.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Our teacher is someone who likes precision, and always demands precise answers of her students.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "I am sorry, we are unable to satisfy your demand.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "Demand for occupational therapy has surged in recent years.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The demand is huge.",
+     "sense": 0,
+     "zhFix": null
+    },
+    {
+     "en": "The Colombian government demanded more money.",
+     "sense": 2,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "double",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "兩倍的、雙倍的",
+     "gloss": "twice as great or many",
+     "synsets": [
+      "02224928-s"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "使加倍、增加一倍",
+     "gloss": "increase twofold",
+     "synsets": [
+      "00247103-v"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "雙人的、雙層的",
+     "gloss": "consisting of or involving two parts or components usually in pairs; large enough for two",
+     "synsets": [
+      "02225139-s",
+      "01388083-s"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "兼任、兼用",
+     "gloss": "serve two purposes or have two functions",
+     "synsets": [
+      "01528293-v"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "雙重的、兩面的",
+     "gloss": "having more than one decidedly dissimilar aspects or qualities; having two meanings with intent to deceive",
+     "synsets": [
+      "02225486-s",
+      "00899319-s"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "I paid double the sum.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Do you have a double room?",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "Sales should double this year.",
+     "sense": 2,
+     "zhFix": "今年銷售額會加倍。"
+    },
+    {
+     "en": "I just thought I should double check.",
+     "sense": 0,
+     "zhFix": null
+    },
+    {
+     "en": "Riding double on a bicycle is dangerous.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "The price of coffee has doubled since then.",
+     "sense": 2,
+     "zhFix": "從那時起，咖啡的價格已經漲了一倍。"
+    },
+    {
+     "en": "The population of the world will double before long.",
+     "sense": 2,
+     "zhFix": "世界人口不久後就會增加一倍。"
+    },
+    {
+     "en": "How come this fucking apartment has no double-glazing? I'm freezing.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "Houses here are double the price of those in Kobe.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Saxophonists often double on flutes, which have similar fingerings to their primary instruments.",
+     "sense": 4,
+     "zhFix": "薩克斯風吹奏者常常兼吹長笛，因為長笛的指法和他們的主要樂器類似。"
+    },
+    {
+     "en": "There are no double-decker buses in Algiers.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "The value doubled.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Our sales doubled this year.",
+     "sense": 2,
+     "zhFix": "我們的銷售額今年增加了一倍。"
+    },
+    {
+     "en": "Tom doubled his investment in a year.",
+     "sense": 2,
+     "zhFix": "湯姆一年內讓他的投資增加了一倍。"
+    },
+    {
+     "en": "I would like a less expensive double room.",
+     "sense": 3,
+     "zhFix": "我想要一間便宜一點的雙人房。"
+    },
+    {
+     "en": "The number of officials doubled last year.",
+     "sense": 2,
+     "zhFix": "去年官員的數量增加了一倍。"
+    },
+    {
+     "en": "The price is double what it was last year.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The population has doubled in the last five years.",
+     "sense": 2,
+     "zhFix": "過去五年裡，人口增加了一倍。"
+    },
+    {
+     "en": "By the year 2020, the population of our city will have doubled.",
+     "sense": 2,
+     "zhFix": "到了2020年，我們城市的人口將會增加一倍。"
+    },
+    {
+     "en": "Prices are double what they were ten years ago.",
+     "sense": 1,
+     "zhFix": "價格是十年前的兩倍。"
+    }
+   ]
+  },
+  {
+   "headword": "front",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "前面、前方",
+     "gloss": "the side or part that is forward or most prominent",
+     "synsets": [
+      "08591019-n",
+      "03403382-n",
+      "08643655-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "前線、陣線",
+     "gloss": "the line along which opposing armies face each other",
+     "synsets": [
+      "08591221-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（氣象）鋒面",
+     "gloss": "the boundary between two different air masses",
+     "synsets": [
+      "11480887-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（建築）正面、前部",
+     "gloss": "the front part of a building or object",
+     "synsets": [
+      "08643655-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（服務）櫃檯、接待處",
+     "gloss": "the reception area or desk",
+     "synsets": [
+      "08660207-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "面向、朝向",
+     "gloss": "to be oriented in a certain direction; face",
+     "synsets": [
+      "02699161-v"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "What's in front of you?",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "My front teeth stick out.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Don't stand in front of me!",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I'd like a room in the front.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Move up to the front, please.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Why do we have eyes in front?",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "A cold front swept over Europe.",
+     "sense": 3,
+     "zhFix": "一股冷鋒橫掃歐洲。"
+    },
+    {
+     "en": "We found the front door locked.",
+     "sense": 4,
+     "zhFix": null
+    },
+    {
+     "en": "I get tongue-tied in front of you.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Mark performed in front of people.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Let's meet in front of the theater.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Put the chair in front of the desk.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The garden is in front of the house.",
+     "sense": 1,
+     "zhFix": "花園在房子前面。"
+    },
+    {
+     "en": "Tom practiced in front of the mirror.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "You've put your hat on back to front.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "This car stopped in front of the bank.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "There's a bank in front of the station.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "This is a front-loading washing machine.",
+     "sense": 4,
+     "zhFix": null
+    },
+    {
+     "en": "Tom criticized Mary in front of everyone.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Make another appointment at the front desk.",
+     "sense": 5,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "drop",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "掉落、落下",
+     "gloss": "fall or let fall to the ground",
+     "synsets": [
+      "01981715-v",
+      "01980855-v",
+      "01989937-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "下降、降低",
+     "gloss": "go down in value or level",
+     "synsets": [
+      "00433636-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "順道拜訪",
+     "gloss": "visit informally",
+     "synsets": []
+    },
+    {
+     "pos": "v.",
+     "label": "載送（某人）到某處",
+     "gloss": "take someone to a place and leave them there",
+     "synsets": [
+      "01492094-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "投下、空投",
+     "gloss": "release or let fall from above",
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "滴、少量",
+     "gloss": "a small amount of liquid",
+     "synsets": []
+    }
+   ],
+   "examples": [
+    {
+     "en": "Watch out for the drop.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Let's drop by his house.",
+     "sense": 3,
+     "zhFix": "我們去他家拜訪吧。"
+    },
+    {
+     "en": "The price of meat dropped.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "They dropped out of school.",
+     "sense": 0,
+     "zhFix": null
+    },
+    {
+     "en": "He sometimes drops in on me.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "That boy used to drop in on me.",
+     "sense": 3,
+     "zhFix": "那個男孩以前常來找我。"
+    },
+    {
+     "en": "He dropped in on me last night.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "I think the wind's dropping off.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "I thought I'd dropped something.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "He dropped the cup and broke it.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "There's not a drop of water left.",
+     "sense": 6,
+     "zhFix": null
+    },
+    {
+     "en": "I'll drop you off at the station.",
+     "sense": 4,
+     "zhFix": null
+    },
+    {
+     "en": "He dropped his books on the floor.",
+     "sense": 1,
+     "zhFix": "他把書掉在地板上了。"
+    },
+    {
+     "en": "The temperature has suddenly dropped.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Tom dropped the spoon into his pocket.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Drop me off at the front door, please.",
+     "sense": 4,
+     "zhFix": null
+    },
+    {
+     "en": "The enemy dropped bombs on the factory.",
+     "sense": 5,
+     "zhFix": null
+    },
+    {
+     "en": "A pool begins with many drops of water.",
+     "sense": 6,
+     "zhFix": "江海不擇細流，故能成其大。"
+    },
+    {
+     "en": "If you have time, please drop in on us.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "The plane dropped the bomb over the city.",
+     "sense": 5,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "fresh",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "新鮮的（食物）",
+     "gloss": "recently made, produced, or harvested; not stale or spoiled",
+     "synsets": [
+      "01071383-a",
+      "01074886-a",
+      "02378651-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "淡的（水）",
+     "gloss": "not containing salt; fresh water",
+     "synsets": [
+      "01077395-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "清新的、精神飽滿的",
+     "gloss": "imparting vitality; restored energy",
+     "synsets": [
+      "01359875-s",
+      "02443615-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "新奇的、新進的",
+     "gloss": "original and new; recently arrived or experienced",
+     "synsets": [
+      "01691809-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "乾淨的、未用過的",
+     "gloss": "free from impurities; not yet used",
+     "synsets": [
+      "01912517-s",
+      "00419717-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "冒失的、唐突的",
+     "gloss": "improperly forward or bold",
+     "synsets": [
+      "00206887-s"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "Let in some fresh air.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "I want some fresh eggs.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The bread is not fresh.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "These apples look very fresh.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "It is still fresh in my memory.",
+     "sense": 4,
+     "zhFix": null
+    },
+    {
+     "en": "That fish lives in fresh water.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "We ate fresh fruit after dinner.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Fresh fruit is good for your health.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I love you as fresh meat loves salt.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Do you need to wash fresh vegetables?",
+     "sense": 1,
+     "zhFix": "新鮮蔬菜要洗嗎？"
+    },
+    {
+     "en": "I was able to buy fresh fish in the market.",
+     "sense": 1,
+     "zhFix": "我在市場買到了新鮮的魚。"
+    },
+    {
+     "en": "Our new English teacher is fresh from college.",
+     "sense": 4,
+     "zhFix": null
+    },
+    {
+     "en": "I'm going to get my house a fresh coat of paint.",
+     "sense": 5,
+     "zhFix": null
+    },
+    {
+     "en": "I have coffee, tea, water, and fresh fruit juice.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "This device made it possible to turn sea-water into fresh water easily.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "With a warm and wet climate, Guangzhou has fresh flowers all year round.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Seeing the fresh lobster made me hungry.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "This corn is fresh.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Fresh food is wonderful.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The broccoli today isn't very fresh.",
+     "sense": 1,
+     "zhFix": "今天的青花菜不是很新鮮。"
+    }
+   ]
+  },
+  {
+   "headword": "hard",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "困難的、艱難的",
+     "gloss": "difficult to do or understand",
+     "synsets": [
+      "00748528-a"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "努力地、用力地",
+     "gloss": "with a lot of effort or force",
+     "synsets": [
+      "00840083-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "堅硬的、牢固的",
+     "gloss": "firm and solid; not easily broken",
+     "synsets": [
+      "01154418-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "辛苦的、艱苦的",
+     "gloss": "difficult to endure; full of hardship",
+     "synsets": [
+      "01131133-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "嚴厲的、苛刻的",
+     "gloss": "strict or harsh",
+     "synsets": [
+      "01158857-a"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "I had a hard day.",
+     "sense": 4,
+     "zhFix": null
+    },
+    {
+     "en": "She is hard on them.",
+     "sense": 5,
+     "zhFix": null
+    },
+    {
+     "en": "Dad is a hard worker.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "She hit the ball hard.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Why is change so hard?",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "It is blowing very hard.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "From now on, try harder.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Life has been very hard.",
+     "sense": 4,
+     "zhFix": null
+    },
+    {
+     "en": "Russian is hard to learn.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Insects have a hard skin.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "I'm going to study harder.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "It's hard to quit smoking.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Everybody had a hard time.",
+     "sense": 4,
+     "zhFix": null
+    },
+    {
+     "en": "This shouldn't be so hard.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "It rained hard last night.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "To master English is hard.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Who solved the hard problem?",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "You should have worked harder.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Study hard, and you'll succeed.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "It rained hard yesterday morning.",
+     "sense": 2,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "heat",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "熱、熱度",
+     "gloss": "the quality or state of being hot; high temperature",
+     "synsets": [
+      "11486442-n",
+      "05023355-n",
+      "05733472-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "加熱、使變熱",
+     "gloss": "make hot or become hot",
+     "synsets": [
+      "00371917-v",
+      "02338354-v",
+      "00373318-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "暖氣、供暖設備",
+     "gloss": "a system or equipment for warming a building",
+     "synsets": [
+      "03514169-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "激烈、激動",
+     "gloss": "intense emotion or excitement",
+     "synsets": [
+      "04635549-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "使激動、激起",
+     "gloss": "arouse or excite feelings and passions",
+     "synsets": [
+      "01764964-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "發情、性興奮",
+     "gloss": "state of sexual arousal in nonhuman mammals",
+     "synsets": [
+      "14061746-n"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "Tom had a heat stroke.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I can't stand the heat.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Heat is a form of energy.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "How do you heat the house?",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "If you heat ice, it melts.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "I'm very sensitive to heat.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The heat is terrible today.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "My mother hates summer heat.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The sun gives us light and heat.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I don't like studying in this heat.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "We had a heated discussion about it.",
+     "sense": 4,
+     "zhFix": null
+    },
+    {
+     "en": "Does the heating work in the winter?",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "The horses and cattle in heat never meet.",
+     "sense": 6,
+     "zhFix": null
+    },
+    {
+     "en": "Is there central heating in this building?",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "This heating equipment uses diesel as fuel.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "My father does not like the heat of summer.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "In the village we still heat our homes with wood.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "They went to Edinburgh to escape from the summer heat.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Heating water does not change its chemical composition.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "I tried very hard to put an end to their heated argument.",
+     "sense": 4,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "innocent",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "無罪的、清白的",
+     "gloss": "free from evil or guilt; not guilty of a crime",
+     "synsets": [
+      "01322826-a",
+      "02523672-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "無辜的、無害的",
+     "gloss": "lacking intent or capacity to injure; not deserving harm",
+     "synsets": [
+      "01163451-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "天真的、單純的",
+     "gloss": "lacking in sophistication or worldliness; naive",
+     "synsets": [
+      "02280420-s",
+      "01312175-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "天真的人、無知的人",
+     "gloss": "a person who lacks knowledge of evil",
+     "synsets": [
+      "09644529-n"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "He said he was innocent.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I believe Tom is innocent.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "She presumes him to be innocent.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "As far as I know, he is innocent.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "A DNA test showed he was innocent.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I am convinced that he is innocent.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The court declared the defendant innocent.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "If he is innocent, then his wife is guilty.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "How many innocent people were killed in Vietnam?",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "\"The Internet was so innocent back then, wasn't it?\" \"No, it wasn't.\"",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "Then, when he asked who had broken the window, all the boys acted innocent.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Yanni took the life of an innocent young man.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "All of your accusations are baseless. She is innocent, and we will prove that.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I think he's innocent.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "They're all innocent children.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "Masaru claims that he is innocent.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I'm innocent.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I dare say he is innocent.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "We believed him to be innocent.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "She keeps saying she's innocent.",
+     "sense": 1,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "life",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "生命、性命",
+     "gloss": "the condition of being alive; a living person's existence",
+     "synsets": [
+      "13984978-n",
+      "11493691-n",
+      "10280403-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "生活、人生",
+     "gloss": "the experience of being alive; a person's way of living",
+     "synsets": [
+      "05818587-n",
+      "13986528-n",
+      "13984685-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "一生、壽命",
+     "gloss": "the period between birth and death",
+     "synsets": [
+      "15165365-n",
+      "15165704-n",
+      "15165852-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "生物、生命體",
+     "gloss": "living things collectively",
+     "synsets": [
+      "00006269-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "活力、生氣",
+     "gloss": "animation and energy in action or expression",
+     "synsets": [
+      "04639514-n"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "I owe him my life.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Get out of my life!",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "I know life is short.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "A cat has nine lives.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "His life is in danger.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "She took her own life.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "She lives in a village.",
+     "sense": 0,
+     "zhFix": null
+    },
+    {
+     "en": "John lives in New York.",
+     "sense": 0,
+     "zhFix": null
+    },
+    {
+     "en": "He no longer lives here.",
+     "sense": 0,
+     "zhFix": null
+    },
+    {
+     "en": "Life has been very hard.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Bill lives near the sea.",
+     "sense": 0,
+     "zhFix": null
+    },
+    {
+     "en": "Life is always a mistake.",
+     "sense": 2,
+     "zhFix": "人生總是充滿錯誤。"
+    },
+    {
+     "en": "He lives inside an apple.",
+     "sense": 0,
+     "zhFix": null
+    },
+    {
+     "en": "Life's a ruin without you.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Life in Japan is expensive.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "You make life worth living.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "He lives in this neighborhood.",
+     "sense": 0,
+     "zhFix": null
+    },
+    {
+     "en": "He lives somewhere about here.",
+     "sense": 0,
+     "zhFix": null
+    },
+    {
+     "en": "Tom's life was changed forever.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "My grandmother lives by herself.",
+     "sense": 0,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "light",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "光、光線",
+     "gloss": "the natural agent that stimulates sight",
+     "synsets": [
+      "00270855-a"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "燈、燈光",
+     "gloss": "a device that produces light",
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "輕的",
+     "gloss": "of little physical weight",
+     "synsets": [
+      "01189951-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "淡色的、淺色的",
+     "gloss": "pale in color",
+     "synsets": [
+      "00409737-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "少量的、輕微的",
+     "gloss": "not great in degree or quantity",
+     "synsets": [
+      "01194536-a"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "點燃、照亮",
+     "gloss": "to ignite or illuminate",
+     "synsets": []
+    }
+   ],
+   "examples": [
+    {
+     "en": "I can see the light.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The sky is light blue.",
+     "sense": 4,
+     "zhFix": null
+    },
+    {
+     "en": "The light is green now.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "A light bulb gives light.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Please turn off the light.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "I felt light as a feather.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "Do you have any light beer?",
+     "sense": 5,
+     "zhFix": "你有淡啤酒嗎？"
+    },
+    {
+     "en": "Today my bag is very light.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "Leave the lights on, please.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Suddenly, the light went out.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "He himself was not the light.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "It is getting lighter outside.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Let's put up Christmas lights.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "God said, \"Let there be light!\"",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Light is much faster than sound.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "All plants need water and light.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The room lighting is sufficient.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "There was a light rain yesterday.",
+     "sense": 5,
+     "zhFix": null
+    },
+    {
+     "en": "I usually have a light breakfast.",
+     "sense": 5,
+     "zhFix": null
+    },
+    {
+     "en": "Traffic lights work all the time.",
+     "sense": 2,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "lost",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "丟失的、遺失的",
+     "gloss": "no longer possessed or able to be found",
+     "synsets": [
+      "01452455-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "迷路的、困惑的",
+     "gloss": "unable to find one's way; confused about location or identity",
+     "synsets": [
+      "01688793-s",
+      "01770645-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "失去的、喪失的",
+     "gloss": "no longer having something; deprived of",
+     "synsets": [
+      "01453748-a",
+      "01455045-a",
+      "01963677-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "專注的、入迷的",
+     "gloss": "deeply absorbed in thought",
+     "synsets": [
+      "02427955-s"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "I have lost my pen.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I have lost my cap.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I have lost the key.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "He has lost his job.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "I lost my meal card.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I have lost my watch.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Tom has lost his mind.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "We have not lost hope.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "I have lost my pencil.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Have you lost your way?",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "It's because he got lost.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "I lost my notebook today.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I've lost a little weight.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "He lost his cinema ticket.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Nothing is lost for asking.",
+     "sense": 0,
+     "zhFix": null
+    },
+    {
+     "en": "He lost everything he owned.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "Valuable time has been lost.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "She lost many library books.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "My grandmother lost her memory.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "You've lost weight, haven't you?",
+     "sense": 3,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "lose",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "遺失、丟失",
+     "gloss": "fail to keep or maintain possession of something",
+     "synsets": [
+      "02292463-v",
+      "02292634-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "失去、喪失",
+     "gloss": "suffer the loss of a person or thing through death, removal, or change",
+     "synsets": [
+      "01799093-v",
+      "02201537-v",
+      "02293000-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "輸、失敗",
+     "gloss": "fail to win or be successful",
+     "synsets": [
+      "01102003-v",
+      "00205234-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "迷路、迷失",
+     "gloss": "become lost or disoriented",
+     "synsets": [
+      "02132318-v",
+      "00497220-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "虧損、賠錢",
+     "gloss": "fail to make money in a business; make a loss",
+     "synsets": [
+      "02293733-v"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "Use it or lose it.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I have lost my cap.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I have lost my pen.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I have lost the key.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "He has lost his job.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "I lost my meal card.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I have lost my watch.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "We have not lost hope.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "I want to lose weight.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Tom has lost his mind.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "They were going to lose.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "It's because he got lost.",
+     "sense": 4,
+     "zhFix": null
+    },
+    {
+     "en": "My team is always losing.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "He lost his cinema ticket.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Nothing is lost for asking.",
+     "sense": 0,
+     "zhFix": null
+    },
+    {
+     "en": "Valuable time has been lost.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "He lost everything he owned.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "She's afraid of losing money.",
+     "sense": 5,
+     "zhFix": null
+    },
+    {
+     "en": "Mary loses her temper easily.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "My grandmother lost her memory.",
+     "sense": 2,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "material",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "材料、原料",
+     "gloss": "substance or things used to make something",
+     "synsets": [
+      "14604877-n",
+      "03735442-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "資料、素材",
+     "gloss": "information or ideas used to produce a finished work",
+     "synsets": [
+      "06648034-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "布料、材質",
+     "gloss": "cloth or fabric made from fibers",
+     "synsets": [
+      "03314753-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "物質的、肉體的",
+     "gloss": "relating to physical things rather than spiritual or mental ones",
+     "synsets": [
+      "02588172-s",
+      "00629641-a",
+      "01783738-s",
+      "00632838-a",
+      "00628097-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "重要的、有實質影響的",
+     "gloss": "relevant or significant to a matter",
+     "synsets": [
+      "01490990-a"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "We got all the materials together.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Japan is lacking in raw materials.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "She's collecting material for a book.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "I'm going to go buy some materials today.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Furniture made of good materials sells well.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Not material, but spiritual things determine our life.",
+     "sense": 4,
+     "zhFix": null
+    },
+    {
+     "en": "Plastics have taken the place of many conventional materials.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The prices of raw materials such as oil or coal continue to rise.",
+     "sense": 1,
+     "zhFix": "石油、煤炭等原物料的價格持續上漲。"
+    },
+    {
+     "en": "The end product is worth ten times as much as the materials used.",
+     "sense": 1,
+     "zhFix": "最終產品的價值是所用材料的十倍。"
+    },
+    {
+     "en": "This material is ruined.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Materials will be provided.",
+     "sense": 1,
+     "zhFix": "材料會提供。"
+    },
+    {
+     "en": "Food and drink are material needs.",
+     "sense": 4,
+     "zhFix": null
+    },
+    {
+     "en": "The best wealth is knowledge, average wealth is children, and the smallest wealth is material objects.",
+     "sense": 4,
+     "zhFix": null
+    },
+    {
+     "en": "Paper, glass and plastic are recyclable materials.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "The king, convinced, told the tailors to prepare the outfit, but he also couldn't see this material.",
+     "sense": 3,
+     "zhFix": "國王信以為真，吩咐裁縫師準備這套服裝，但他其實也看不見這塊布料。"
+    },
+    {
+     "en": "I prefer traditional characters. Due to the abundance of reading materials in simplified characters, I can recognize many of them too.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "She is collecting material for a book.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Japan depends on imports for raw materials.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Japan imports various raw materials from abroad.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I haven't yet collected sufficient materials to write a book.",
+     "sense": 2,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "market",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "市場、交易市場",
+     "gloss": "the world of commercial activity where goods and services are bought and sold",
+     "synsets": [
+      "01099197-n",
+      "08089673-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "市場（顧客需求）",
+     "gloss": "the customers for a particular product or service",
+     "synsets": [
+      "08441908-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "市場、菜市場",
+     "gloss": "a marketplace where groceries are sold",
+     "synsets": [
+      "03466317-n",
+      "03727779-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "行銷、推廣",
+     "gloss": "engage in the commercial promotion, sale, or distribution of",
+     "synsets": [
+      "02303121-v",
+      "00471317-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "上市、買賣",
+     "gloss": "deal in a market; buy household supplies",
+     "synsets": [
+      "02303432-v",
+      "02331194-v"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "I will go to the market.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "China is an emerging market.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The market rose half a point.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "We have a 20% share of the market.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Did you buy it on the black market?",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "He lost a fortune in the stock market.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "That market has been rapidly expanding.",
+     "sense": 1,
+     "zhFix": "那個市場一直在快速擴張。"
+    },
+    {
+     "en": "Japan's rice market is closed to imports.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "He's the manager of the marketing department.",
+     "sense": 4,
+     "zhFix": "他是行銷部的負責人。"
+    },
+    {
+     "en": "He's making a lot of money in the stock market.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "This new market may improve the entire industry.",
+     "sense": 1,
+     "zhFix": "這個新市場可能改善整個產業。"
+    },
+    {
+     "en": "There isn't a place in this market that isn't lively.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "My father is very much involved in the stock market now.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "For years he has been at the market every Tuesday morning with his fish stall.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "For media inquiries, please contact your local communications or marketing representative.",
+     "sense": 4,
+     "zhFix": "如需媒體洽詢，請聯繫當地的公關或行銷代表。"
+    },
+    {
+     "en": "I plan to accept the offer from that company to become their marketing department's manager.",
+     "sense": 4,
+     "zhFix": "我打算接受那家公司的聘書，去當他們行銷部的經理。"
+    },
+    {
+     "en": "The objectives of the marketing department and the sales department are not necessarily the same.",
+     "sense": 4,
+     "zhFix": "行銷部門和業務部門的目標不見得一樣。"
+    },
+    {
+     "en": "Are there any markets or supermarkets around here? Is it convenient for daily shopping?",
+     "sense": 3,
+     "zhFix": "這附近有沒有菜市場或大型超市？日常採買方便嗎？"
+    },
+    {
+     "en": "They are trying to drive Japanese goods out of the market.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "What can be done? These are market forces.",
+     "sense": 1,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "middle",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "中間、中央",
+     "gloss": "the central part or point of something",
+     "synsets": [
+      "08540894-n",
+      "05876894-n",
+      "05563106-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "中間的、中央的",
+     "gloss": "located at or near the center",
+     "synsets": [
+      "00331404-s",
+      "01018550-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "中期的、中等的",
+     "gloss": "occurring in the middle of a period or development",
+     "synsets": [
+      "00819510-a",
+      "00824027-a"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（時間）中途",
+     "gloss": "the middle point of a period or process",
+     "synsets": [
+      "15291496-n"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "She's a middle-aged fat woman.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "I'm in the middle of something.",
+     "sense": 4,
+     "zhFix": null
+    },
+    {
+     "en": "I live in the middle of nowhere.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I went to middle school in Japan.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "China has a growing middle class.",
+     "sense": 3,
+     "zhFix": "中國有日益壯大的中產階級。"
+    },
+    {
+     "en": "My PC is in the middle of an update.",
+     "sense": 4,
+     "zhFix": null
+    },
+    {
+     "en": "The tiger laid in the middle of the cage.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The library is in the middle of the city.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The church is in the middle of the village.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "A truck was standing in the middle of the road.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The cold woke me up in the middle of the night.",
+     "sense": 4,
+     "zhFix": null
+    },
+    {
+     "en": "Don't send me messages in the middle of the night.",
+     "sense": 4,
+     "zhFix": "不要半夜傳訊息給我。"
+    },
+    {
+     "en": "She and I were in the same class in middle school.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "The bus stopped suddenly in the middle of the street.",
+     "sense": 1,
+     "zhFix": "公車突然在路中央停了下來。"
+    },
+    {
+     "en": "The USA is acting like a terrorist force in the Middle East.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "The gardener planted a rose tree in the middle of the garden.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Islam first reached China about the middle of the 7th century.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "In the past, I was a middle school student. Now I am a college student.",
+     "sense": 3,
+     "zhFix": "以前我是中學生，現在我是大學生。"
+    },
+    {
+     "en": "Fucking hell, what idiot dare phone me in the middle of the night?",
+     "sense": 4,
+     "zhFix": "他媽的，哪個白痴敢在半夜打電話給我？"
+    },
+    {
+     "en": "What makes you think the Middle East is more important than the Andes?",
+     "sense": 2,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "part",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "部分、一部分",
+     "gloss": "a portion or piece of a whole",
+     "synsets": [
+      "13831419-n",
+      "03898588-n",
+      "09408804-n",
+      "05876035-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "角色、作用",
+     "gloss": "a role or function",
+     "synsets": [
+      "00721817-n",
+      "05937794-n",
+      "05679818-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "地區、區域",
+     "gloss": "a region or area",
+     "synsets": [
+      "08647614-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "零件、配件",
+     "gloss": "a component of a machine or artifact",
+     "synsets": [
+      "03898588-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "分開、分手",
+     "gloss": "to separate or divide",
+     "synsets": []
+    }
+   ],
+   "examples": [
+    {
+     "en": "I want to take part.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Part of his story is true.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Part of the roof blew off.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Now you're part of my life.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "That's the part I liked best.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The plane lost part of its wing.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I visited many parts of England.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "He kept back the part about himself.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "They knocked down a part of the wall.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "She is going to part from her boyfriend.",
+     "sense": 5,
+     "zhFix": null
+    },
+    {
+     "en": "Divide this line into twenty equal parts.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "They were for the most part young people.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "This factory manufactures automobile parts.",
+     "sense": 4,
+     "zhFix": null
+    },
+    {
+     "en": "They parted, never to see each other again.",
+     "sense": 5,
+     "zhFix": null
+    },
+    {
+     "en": "Imagination affects every part of our lives.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "TV plays an important part in everyday life.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "The participants were for the most part women.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The greater part of the guests were foreigners.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Flower arrangement is a part of Japanese culture.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Magic plays an important part in primitive society.",
+     "sense": 2,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "natural",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "自然的、天然的",
+     "gloss": "existing in or produced by nature; not artificial",
+     "synsets": [
+      "01574358-a",
+      "01575285-a",
+      "01578429-a",
+      "01959465-s",
+      "00075202-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "天生的、本能的",
+     "gloss": "inborn or instinctive; not learned",
+     "synsets": [
+      "02290719-s",
+      "01338661-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "正常的、自然的",
+     "gloss": "functioning or occurring in a normal way; free from abnormality",
+     "synsets": [
+      "01599632-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "自然科學的",
+     "gloss": "relating to the natural sciences",
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "有血緣的、親生的",
+     "gloss": "related by blood; genetically related",
+     "synsets": [
+      "01408930-a"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "白痴",
+     "gloss": "a foolish person",
+     "synsets": []
+    }
+   ],
+   "examples": [
+    {
+     "en": "Tom is a natural athlete.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "This car runs on natural gas.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "What's your natural hair color?",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "He has natural leadership ability.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Japan is poor in natural resources.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Acid rain isn't a natural phenomenon.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I like to drink natural mineral water.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "It comes natural to him to speak French.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "Physics is a fundamental natural science.",
+     "sense": 4,
+     "zhFix": null
+    },
+    {
+     "en": "Our country must develop its natural resources.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I think the sentence would sound more natural like that.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "I don't care about sounding natural. I just want to be understood.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "We want natural-sounding translations, not word-for-word direct translations.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "What was at first a natural disaster rapidly became a man-made debacle.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Don't change sentences that are correct. You can, instead, submit natural-sounding alternative translations.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "This man is a linguist. It's natural that he know.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "The United States is abundant in natural resources.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The natural sciences are harder than the social sciences.",
+     "sense": 4,
+     "zhFix": null
+    },
+    {
+     "en": "Coal and natural gas are natural fuels.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Read the list we sent you and check that all the sentences sound natural to you.",
+     "sense": 3,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "national",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "國家的、全國性的",
+     "gloss": "of or relating to a nation or country; concerned with an entire nation",
+     "synsets": [
+      "02999528-a",
+      "01109533-a",
+      "02999870-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "國立的、國有的",
+     "gloss": "owned or maintained by the national government",
+     "synsets": [
+      "01867716-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "本國的、國內的",
+     "gloss": "inside the country; domestic",
+     "synsets": [
+      "01042014-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "國民、僑民",
+     "gloss": "a person who owes allegiance to a nation",
+     "synsets": [
+      "09648571-n"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "It was a national scandal.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "A flag is a national symbol.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "April is the national minority health month.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "He's a professor at the National University.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Some national parks offer showers and even baby-sitting services.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "The China National Table Tennis Team had a month's closed training in winter.",
+     "sense": 1,
+     "zhFix": "中國國家桌球隊在冬季進行了一個月的封閉訓練。"
+    },
+    {
+     "en": "Tomorrow the Chinese national team play against the Korean national team in their home arena.",
+     "sense": 1,
+     "zhFix": "明天中國國家隊將在主場迎戰韓國國家隊。"
+    },
+    {
+     "en": "The text of the national anthem of Canada was first written in French.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Three days ago, many Chinese people celebrated the national day in Beijing.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Promoting Mandarin Chinese is China's national plan.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The panda is China's national treasure.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The French government has launched an online game that challenges taxpayers to balance the national budget.",
+     "sense": 1,
+     "zhFix": "法國政府推出了一款線上遊戲，讓納稅人挑戰平衡國家預算。"
+    },
+    {
+     "en": "National rescue teams are on standby ready to fly to Japan.",
+     "sense": 1,
+     "zhFix": "國家救難隊隨時待命，準備前往日本。"
+    },
+    {
+     "en": "Taiwan has nine national parks.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "The USS Monitor was designated the first National Marine Sanctuary on January 30, 1975.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "3 Malay nationals and a Filipino were killed in the Davao bombing on Mindanao.",
+     "sense": 4,
+     "zhFix": "3名馬來西亞僑民與1名菲律賓國民在民答那峨島達沃市爆炸案中喪生。"
+    },
+    {
+     "en": "Estonia has its own national anthem.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "If economic globalization is inevitable, it should primarily serve humanity rather than the interests of trans-national corporations.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "As figures from the National Development and Reform Committee show, the Internet has developed rapidly in rural China.",
+     "sense": 1,
+     "zhFix": "根據國家發展和改革委員會的數據顯示，網際網路在中國農村地區發展迅速。"
+    },
+    {
+     "en": "My husband and I are going on Sunday to see the ballet, Carmen, performed by the National Ballet Company at the Four Seasons Centre.",
+     "sense": 1,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "prove",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "證明、證實",
+     "gloss": "show that something is true with evidence",
+     "synsets": [
+      "00666706-v",
+      "01017253-v",
+      "00667548-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "結果是、顯示為",
+     "gloss": "be shown or found to be",
+     "synsets": [
+      "02639962-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "檢驗、測試",
+     "gloss": "put to the test to check quality",
+     "synsets": [
+      "02537291-v",
+      "01748860-v"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "I'll prove it to you.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Sam needed to prove that.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Prove you're not a chicken.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The rumor proved to be true.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "He believes that he can prove it.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "He proved to be an ideal husband.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Tom says he can prove Mary did that.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I don't think that we'll be able to prove it.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "My first impression of him proved to be correct.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "The facts proved that our worries were unnecessary.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "We have sufficient evidence to prove this hypothesis.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I just wanted to prove to myself that I could do this.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "A connection between personality and blood type has not been scientifically proven.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "It was proven that fleas living on dogs jump higher than fleas living on cats.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "All of your accusations are baseless. She is innocent, and we will prove that.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Can you prove it?",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "You can't prove that.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "It could prove useful.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Prove it by experiment.",
+     "sense": 3,
+     "zhFix": "用實驗來證明它。"
+    },
+    {
+     "en": "The rumour proved false.",
+     "sense": 2,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "quick",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "快的、迅速的",
+     "gloss": "moving or happening with speed; done in a short time",
+     "synsets": [
+      "00982557-s",
+      "01273596-s",
+      "00981945-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "敏捷的、靈敏的",
+     "gloss": "able to think or react quickly; mentally alert",
+     "synsets": [
+      "00032846-s",
+      "01338856-s"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "快地、迅速地",
+     "gloss": "with speed; quickly",
+     "synsets": [
+      "00106290-r"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "要害、敏感部位",
+     "gloss": "a sensitive area of the body, especially under a nail or skin",
+     "synsets": [
+      "05605735-n"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "He is a quick walker.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "He is a quick-witted man.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "She has a very quick mind.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Thanks for your quick answer.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "She gave my shoes a quick brush.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "He stopped for a quick cigarette.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "It's slow to say, but it was quick.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "He took a quick look at the magazine.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Be quick, or you will miss the train.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The quickest means of travel is by plane.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I need to have a quick look at the files.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "From here, it gets interesting very quick.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "He is quick at learning a foreign language.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "If you do it a bit slower, it goes quicker.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "Flying is the quickest method of travelling.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "You need to have quick reactions to play these computer games.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "The quick brown fox jumped over the lazy brown dog.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "She gave the blouse a quick wash.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "There's enough time for a quick snack.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Quick, help me!",
+     "sense": 1,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "row",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "一排、一行",
+     "gloss": "a line of people or things side by side",
+     "synsets": [
+      "08448447-n",
+      "09440243-n",
+      "08450457-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "連續（一連）",
+     "gloss": "a continuous succession without interruption",
+     "synsets": [
+      "05052831-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "划船",
+     "gloss": "propel with oars",
+     "synsets": [
+      "01950855-v",
+      "00446336-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "爭吵",
+     "gloss": "an angry dispute",
+     "synsets": [
+      "07198809-n"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "It rained five days in a row.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "It snowed for ten days in a row.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Let's take turns rowing the boat.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "Tom always wants to sit in the front row.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "We rowed up the river against the current.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "The charge for a front row seat is 5 dollars.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "It's at the third home in the second row of houses.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "That athlete won three times in a row in this tournament.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "There is no difference between this row of clothes and the one next to it.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "There's a row of ants coming in and out of the kitchen.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The suits in this row are all made of imported European fabric.",
+     "sense": 1,
+     "zhFix": "這一排的西裝都是進口歐洲布料做的。"
+    },
+    {
+     "en": "She put her CDs in a row on the shelf.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I planted three rows of potatoes.",
+     "sense": 1,
+     "zhFix": "我種了三行馬鈴薯。"
+    },
+    {
+     "en": "A beautiful woman was seated one row in front of me.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "We have to win seven times in a row to win this tournament.",
+     "sense": 2,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "ready",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "準備好的、就緒的",
+     "gloss": "completely prepared or in condition for immediate action or use",
+     "synsets": [
+      "01936911-a",
+      "14055005-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "現成的、可立即使用的",
+     "gloss": "made suitable and available for immediate use; (of money) immediately available",
+     "synsets": [
+      "01850666-s",
+      "00187059-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "願意的、甘心的",
+     "gloss": "mentally disposed or willing",
+     "synsets": [
+      "02576431-s"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "使準備好、預備",
+     "gloss": "make ready or suitable in advance; prepare",
+     "synsets": [
+      "00407168-v",
+      "01668067-v"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "I am ready to die.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "When will it be ready?",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Is Tom ready for that?",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "We'll be ready in time.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The food's not ready yet.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "We're not ready to leave.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Dinner will be ready soon.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I should be ready by 2:30.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "She said she wasn't ready.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "It'll be ready right away.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I'm ready to go back home.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I'll be ready in a moment.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "She is getting breakfast ready.",
+     "sense": 4,
+     "zhFix": null
+    },
+    {
+     "en": "Call me when you're ready to go.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Mary asked whether we were ready.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I am ready to do anything for you.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "Please be ready in fifteen minutes.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "We arrived to find a huge meal ready for us.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Too late! The wall magazine is ready to be published!",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "It will be five or ten years before the technology is ready.",
+     "sense": 1,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "run",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "跑、奔跑",
+     "gloss": "move fast on foot",
+     "synsets": [
+      "01930264-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "經營、管理",
+     "gloss": "direct or control a business",
+     "synsets": [
+      "02448714-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "運轉、運行",
+     "gloss": "function or operate",
+     "synsets": [
+      "01528454-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "流出、流動",
+     "gloss": "flow or move along as a liquid",
+     "synsets": [
+      "02070867-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "逃跑、逃離",
+     "gloss": "flee or escape",
+     "synsets": [
+      "02079296-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "用完、耗盡",
+     "gloss": "use up or exhaust",
+     "synsets": []
+    }
+   ],
+   "examples": [
+    {
+     "en": "We ran out of gas.",
+     "sense": 6,
+     "zhFix": null
+    },
+    {
+     "en": "May I run with you?",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "We ran down the hill.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "We ran after the cat.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "He ran into the room.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Do you run every day?",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "We ran short of money.",
+     "sense": 6,
+     "zhFix": null
+    },
+    {
+     "en": "We ran around the park.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The clock does not run.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "His parents ran a hotel.",
+     "sense": 2,
+     "zhFix": "他的父母經營一家飯店。"
+    },
+    {
+     "en": "Do you go running daily?",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I'm running out of ideas.",
+     "sense": 6,
+     "zhFix": null
+    },
+    {
+     "en": "My father runs a restaurant.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Don't run across the street.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Sensing danger, he ran away.",
+     "sense": 5,
+     "zhFix": null
+    },
+    {
+     "en": "Mike ran very fast yesterday.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Jane sometimes runs to school.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Don't leave the water running.",
+     "sense": 4,
+     "zhFix": null
+    },
+    {
+     "en": "That runs against my principles.",
+     "sense": 0,
+     "zhFix": null
+    },
+    {
+     "en": "This computer runs on batteries.",
+     "sense": 3,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "raise",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "舉起、抬起",
+     "gloss": "lift to a higher position",
+     "synsets": [
+      "01978076-v",
+      "01977773-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "提高（價格、數量、程度）",
+     "gloss": "increase the level or amount",
+     "synsets": [
+      "00158311-v",
+      "00545629-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "養育、飼養",
+     "gloss": "bring up a child or animal",
+     "synsets": [
+      "02545454-v",
+      "01743695-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "提出（問題、建議）",
+     "gloss": "bring up for discussion",
+     "synsets": [
+      "00943197-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "籌集（資金）",
+     "gloss": "collect funds",
+     "synsets": [
+      "02311261-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "加薪",
+     "gloss": "an increase in salary",
+     "synsets": []
+    }
+   ],
+   "examples": [
+    {
+     "en": "Raise up your left hand.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "We suggest raising the fees.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Where was he born and raised?",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "Don't you raise your voice at me.",
+     "sense": 4,
+     "zhFix": null
+    },
+    {
+     "en": "Bob wants to raise a fox at home.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "You can't raise a cat to be a dog.",
+     "sense": 0,
+     "zhFix": null
+    },
+    {
+     "en": "He was raised in an artistic family.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "The landlord says he wants to raise the rent.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Jesus is said to have raised a man from the dead.",
+     "sense": 0,
+     "zhFix": null
+    },
+    {
+     "en": "An interesting proposition is raised in your book.",
+     "sense": 4,
+     "zhFix": null
+    },
+    {
+     "en": "The criminal came out of the house with arms raised.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I'll see to it that you have a raise after the first year.",
+     "sense": 6,
+     "zhFix": "我保證你們第一年後會加薪。"
+    },
+    {
+     "en": "He raised the glass to his mouth and drained it all in one shot.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Our boss begrudged us even a small raise in pay.",
+     "sense": 6,
+     "zhFix": "我們老闆連給我們加一點薪水都捨不得。"
+    },
+    {
+     "en": "The only useful answers are those that raise new questions.",
+     "sense": 4,
+     "zhFix": null
+    },
+    {
+     "en": "Boston is a great place to raise kids.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "I need a raise.",
+     "sense": 6,
+     "zhFix": null
+    },
+    {
+     "en": "Politicians are good at raising money.",
+     "sense": 5,
+     "zhFix": "政客都很會募款。"
+    },
+    {
+     "en": "They monopolized the supply market and drastically raised prices.",
+     "sense": 2,
+     "zhFix": "他們壟斷了供應市場，並大幅提高價格。"
+    },
+    {
+     "en": "He sows discord by raising controversial subjects.",
+     "sense": 4,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "skin",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "皮膚",
+     "gloss": "the natural outer covering of a person or animal",
+     "synsets": [
+      "05245612-n",
+      "01898376-n",
+      "13985384-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "果皮、外皮",
+     "gloss": "the outer layer of a fruit or vegetable",
+     "synsets": [
+      "07754329-n",
+      "04237155-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "剝皮、去皮",
+     "gloss": "remove the skin from",
+     "synsets": [
+      "01265500-v",
+      "01266348-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "擦破皮、使破皮",
+     "gloss": "injure the skin or surface",
+     "synsets": [
+      "01312138-v"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "She got wet to the skin.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Beauty is but skin deep.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Insects have a hard skin.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I don't eat chicken skin.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "She is all skin and bone.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Tom has a rare skin disease.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Her skin is whiter than snow.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The actress' skin has makeup on it.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Staying up late is terrible for your skin.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Anger me again, I might just peel your skin off.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "This medicine will cure you of your skin disease.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Skin shouldn't be exposed to sunlight for too long.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The skin of a shark is much rougher than that of a tuna fish.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Please scrape the skin off the potatoes.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "I have dry skin.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "You have nice skin.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Her skin is smooth.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Ultraviolet rays can cause skin cancer.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "We all know that blue-eyed red-heads are sensitive to sunshine, burning more readily than dark-skinned people.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The skin of nectarines is slippery.",
+     "sense": 2,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "shape",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "形狀、外形",
+     "gloss": "the form or outline of something",
+     "synsets": [
+      "05071206-n",
+      "00028005-n",
+      "04684871-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "健康狀態、體態",
+     "gloss": "state of health or physical condition",
+     "synsets": [
+      "14569829-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "塑造、使成形",
+     "gloss": "give shape or form to; make something",
+     "synsets": [
+      "00142011-v",
+      "01663142-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "影響、決定",
+     "gloss": "influence or determine the development of something",
+     "synsets": [
+      "00702806-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "具體化、實現",
+     "gloss": "a concrete representation of a concept",
+     "synsets": [
+      "05949928-n"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "He's really in good shape.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Tom needs to get into shape.",
+     "sense": 2,
+     "zhFix": "Tom需要鍛鍊身體。"
+    },
+    {
+     "en": "She patted her hair into shape.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The idea was brought into shape.",
+     "sense": 5,
+     "zhFix": null
+    },
+    {
+     "en": "The fire spread out in a fan-shape.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The mountain has a beautiful shape.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "That cloud is in the shape of a fish.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "This sweater is all stretched out of shape.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The globe is similar in shape to an orange.",
+     "sense": 1,
+     "zhFix": "地球的形狀和橘子相似。"
+    },
+    {
+     "en": "The house stood out because of its unusual shape.",
+     "sense": 1,
+     "zhFix": "那棟房子因為形狀特殊而顯得突出。"
+    },
+    {
+     "en": "My father has been in good shape since his operation.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "This fruit is shaped like an orange and tastes like a pineapple.",
+     "sense": 3,
+     "zhFix": "這種水果形狀像橘子，味道像鳳梨。"
+    },
+    {
+     "en": "When chickens pancake-shape maintain, the tractor must have won again.",
+     "sense": 0,
+     "zhFix": null
+    },
+    {
+     "en": "Our plans for the summer are taking shape.",
+     "sense": 5,
+     "zhFix": null
+    },
+    {
+     "en": "All of the cookies are in the shape of stars.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "2. Draw a boomerang shape on the card with a pen. Cut out the boomerang you've drawn.",
+     "sense": 1,
+     "zhFix": "二、在卡紙上畫一個回力鏢的形狀，然後把畫好的回力鏢剪下來。"
+    },
+    {
+     "en": "Anna's striking almond-shaped eyes, inherited from her Asian lineage, exude a captivating depth and a hint of mystery.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "His upper body looks like it has the shape of an inverted triangle; standing there, he seems extremely handsome!",
+     "sense": 1,
+     "zhFix": "他的上半身看起來呈倒三角形；站在那裡，他顯得非常帥氣！"
+    },
+    {
+     "en": "Lake Manicouagan, a ring-shaped lake in Quebec, Canada, is all that remains of a crater from a massive impact over 200 million years ago.",
+     "sense": 1,
+     "zhFix": "馬尼誇根湖是加拿大魁北克的一座環形湖，是兩億多年前一次巨大撞擊留下的隕石坑遺跡。"
+    },
+    {
+     "en": "You're in better shape than I am.",
+     "sense": 2,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "special",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "特別的、特殊的",
+     "gloss": "not ordinary; different from what is usual",
+     "synsets": [
+      "00490174-s",
+      "01107719-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "專門的、專用的",
+     "gloss": "designed or reserved for a particular purpose",
+     "synsets": [
+      "02285760-s",
+      "01107537-s",
+      "01683388-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "特價品、推薦餐",
+     "gloss": "a special offer or featured dish",
+     "synsets": [
+      "07181502-n",
+      "07595818-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "特別節目",
+     "gloss": "a television production focusing on a particular person or topic",
+     "synsets": [
+      "07030648-n"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "What's so special about Tom?",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "We have a special connection.",
+     "sense": 1,
+     "zhFix": "我們有特殊的連結。"
+    },
+    {
+     "en": "What's your most special dish?",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "Christmas is a special holiday.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I'm a special person? Thanks. ;)",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Do you have any special talents?",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "This hut is a very special place.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I think that that was very special.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "You'll need a special tool to do it.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "This point deserves special emphasis.",
+     "sense": 1,
+     "zhFix": "這個論點值得特別強調。"
+    },
+    {
+     "en": "What do you have for today's special?",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "We want to give special thanks to Tom.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Translation is a kind of special skill.",
+     "sense": 2,
+     "zhFix": "翻譯是一種特殊的技能。"
+    },
+    {
+     "en": "Special forces surrounded the building.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "I have a special relationship with my aunt.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Tom only wears a suit on special occasions.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The special conditions will be valid until 2025.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "This year is definitely a special year in human history.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Your initial order is subject to a special discount of 5%.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "If necessary, I have no objection to paying a special fee.",
+     "sense": 1,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "standard",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "標準、準則",
+     "gloss": "a basis for comparison or a principle used to judge",
+     "synsets": [
+      "07275291-n",
+      "05933552-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "標準的、合規格的",
+     "gloss": "conforming to an accepted or established standard",
+     "synsets": [
+      "02303673-a",
+      "00489512-s",
+      "02302509-a",
+      "02305339-a",
+      "01966886-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "規格、規格品",
+     "gloss": "a required or agreed level of quality or quantity",
+     "synsets": [
+      "13639233-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "本位（貨幣）",
+     "gloss": "the value behind a monetary system",
+     "synsets": [
+      "13394387-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "旗、軍旗",
+     "gloss": "a distinctive flag or banner",
+     "synsets": [
+      "04308278-n",
+      "04308380-n"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "You have to learn standard English.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "We tried to come up to the standard.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "This school sets high moral standards for pupils.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "It needs to be judged on whether it meets the ethical standards.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Our company will implement new price standards regarding this product.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "The amount of paper produced by a country is closely related to its cultural standards.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "She is looking for a job, but her standards are too high.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "However, other aspects have already surpassed the standards of many Western countries.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "JST stands for Japan Standard Time.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Standard Chinese is also called Mandarin.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "You yourself belong to this group of people that you're talking about - the one that doesn't speak standard Mandarin well.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "While you drone on about preserving the standard of living for the middle class, our parents are dying of hypothermia.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The modern version, which is now popularly recognized in China as the standard qipao, was first developed in Shanghai after 1900.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "I want to learn standard English.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "I would like to learn standard English.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Standard Chinese, commonly referred to as Mandarin, is based on Pekinese.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "That's not standard English pronunciation.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "I can speak Standard Chinese (Putonghua), Southwestern Mandarin, Wu Chinese, and Spanish.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "There are many people in the world studying English, so English people are used to learners' non-standard accents, their grammatical errors and so on.",
+     "sense": 2,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "star",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "星星、恆星",
+     "gloss": "a celestial body visible in the night sky",
+     "synsets": [
+      "09467004-n",
+      "09467687-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "明星、主角",
+     "gloss": "a famous performer or principal actor",
+     "synsets": [
+      "09781932-n",
+      "10668135-n",
+      "10183316-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "星形、星號",
+     "gloss": "a star-shaped figure or symbol",
+     "synsets": [
+      "13904301-n",
+      "06841439-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "星級（旅館等）",
+     "gloss": "a rating symbol for hotels etc.",
+     "synsets": []
+    },
+    {
+     "pos": "v.",
+     "label": "主演、擔任主角",
+     "gloss": "to feature as the star",
+     "synsets": [
+      "02637430-v",
+      "01724857-v"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "明星的、主要的",
+     "gloss": "indicating the most important performer",
+     "synsets": [
+      "01475933-s"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "Today, I saw a star.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The sky is full of stars.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "This is a book about stars.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Who's your favourite TV star?",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Your eyes remind me of stars.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I love Fist of the North Star!",
+     "sense": 0,
+     "zhFix": null
+    },
+    {
+     "en": "Planets move around a fixed star.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The American flag has fifty stars.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "Tom usually stays at five-star hotels.",
+     "sense": 4,
+     "zhFix": "湯姆通常住五星級飯店。"
+    },
+    {
+     "en": "There was a big gold star on the door.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "They like the beautiful stars and moon.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The moon and stars were shining above us.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "You can use a telescope to look at the stars.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "They shone like stars in the dark, dirty building.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The distance between stars is measured in light years.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "This is a three-star hotel; three hundred dollars a night.",
+     "sense": 4,
+     "zhFix": "這是三星級飯店，一晚三百元。"
+    },
+    {
+     "en": "That tiny star there is the brightest out of all the stars.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Tom doesn't know the difference between a star and a planet.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "This hotel is far from deserving the four stars the guidebook gives it.",
+     "sense": 4,
+     "zhFix": "這家飯店完全配不上旅遊指南給的四星級評價。"
+    },
+    {
+     "en": "Is it normal that many young people these days idolize pretty boy stars?",
+     "sense": 2,
+     "zhFix": "現在很多年輕人追捧小鮮肉明星的現象正常嗎？"
+    }
+   ]
+  },
+  {
+   "headword": "stop",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "停止、停下",
+     "gloss": "to cease moving or doing something",
+     "synsets": [
+      "01864781-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "阻止、制止",
+     "gloss": "to prevent someone from doing something",
+     "synsets": [
+      "01077970-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "停止、終止",
+     "gloss": "the event or act of ending something",
+     "synsets": [
+      "07380449-n",
+      "01077970-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "車站、停靠站",
+     "gloss": "a place where a vehicle stops",
+     "synsets": [
+      "08674524-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "停留、逗留",
+     "gloss": "a brief stay during a journey",
+     "synsets": [
+      "01058335-n"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "How do I stop him?",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "I've got to stop her.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Don't try to stop me.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Tell me when to stop.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "No one can stop time.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I really want to stop.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Tom isn't going to stop.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Why didn't you stop them?",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "At last, the bus stopped.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Not even one taxi stopped.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Has it stopped raining yet?",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Could you stop saying that?",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Please stop that right now.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "People need to stop hating.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "You had better stop smoking.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The tree has stopped growing.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Stop looking for problems, Tom.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Stop pulling your sister's hair.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "What stopped you coming yesterday?",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Suddenly my computer stopped working.",
+     "sense": 1,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "strength",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "力氣、體力",
+     "gloss": "physical energy or intensity",
+     "synsets": [
+      "05042508-n",
+      "05036872-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "長處、優勢",
+     "gloss": "a strong point or advantage",
+     "synsets": [
+      "05166608-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "力量、實力",
+     "gloss": "power or influence",
+     "synsets": [
+      "05199100-n",
+      "05210917-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "強度、濃度",
+     "gloss": "intensity or concentration",
+     "synsets": [
+      "05107058-n",
+      "05041380-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "耐力、持久力",
+     "gloss": "durability or resistance",
+     "synsets": [
+      "05060839-n"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "My strength is all gone.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "A woman's strength is in her tongue.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "Everyone has strengths and weaknesses.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "I don't have the strength to keep trying.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Because your business can play to my strengths.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "It is not just to prefer strength to good wisdom.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "Tom got the job on the strength of your recommendation.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "To remain competitive, we've got to play to our strengths.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "He pulled with all his strength, but the rock would not move.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "A great warrior radiates strength. He doesn't have to fight to the death.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "War is peace. Freedom is slavery. Ignorance is strength.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "Relying on strength alone cannot guarantee victory.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "I have no strength.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "So wine and venison, to their hearts' desire, / refreshed their strength.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Don't underestimate your own strength.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "I suspect Koreans must have trained their wrist strength to use those iron chopsticks so well.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "We, ACME Ltd., hereby announce that we will resist with all our strength this hostile takeover.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "He got where he wanted to be in life by just using his raw mental strength and willpower.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "What surpasses strength?",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "You cannot compare the strength of a man to that of a tiger, but nevertheless, the tiger is still the inferior creature.",
+     "sense": 3,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "tap",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "輕拍、輕敲",
+     "gloss": "strike lightly",
+     "synsets": [
+      "01250368-v",
+      "02189819-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "水龍頭",
+     "gloss": "a device for controlling the flow of liquid",
+     "synsets": [
+      "02365273-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "監聽（電話）",
+     "gloss": "intercept a communication",
+     "synsets": [
+      "02193294-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "開發、利用",
+     "gloss": "make use of",
+     "synsets": [
+      "01166589-v",
+      "02317298-v"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "Someone tapped me on the shoulder.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The tap in the kitchen is dripping.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Dan's home phone was tapped by police.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "There's a chance that tap water may contain harmful substances like chlorine and lead.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "He tapped me on the shoulder.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I feel that someone tapped my shoulder.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Mend the tap in the kitchen.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "A stranger tapped me on the shoulder from behind. He must have mistaken me for someone else.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "The tap is dripping.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "A stranger tapped me on the shoulder from behind. He took me for some other person, I'm sure.",
+     "sense": 1,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "sure",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "確信的、肯定的",
+     "gloss": "having no doubt; confident",
+     "synsets": [
+      "00337729-a",
+      "00336793-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "一定會、必然的",
+     "gloss": "certain to happen or succeed",
+     "synsets": [
+      "00341137-a",
+      "02470814-s",
+      "02310503-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "可靠的、穩妥的",
+     "gloss": "reliable or dependable",
+     "synsets": [
+      "00310538-s",
+      "02101913-s",
+      "00727841-s",
+      "02475203-s"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "當然、確實",
+     "gloss": "certainly; definitely (informal)",
+     "synsets": [
+      "00145758-r"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "I can't say for sure.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Be sure to come at 3.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Tom sure talks a lot.",
+     "sense": 4,
+     "zhFix": "湯姆話還真多。"
+    },
+    {
+     "en": "He is sure to succeed.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Make sure you tell them.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "I'm sure you'll do great.",
+     "sense": 1,
+     "zhFix": "我相信你會表現得很棒。"
+    },
+    {
+     "en": "I'm sure it'll get better.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "I'm sure Tom would approve.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I'm sure that she's correct.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "This method is sure to work.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "It's going to rain, for sure.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I'm not sure what's going on.",
+     "sense": 1,
+     "zhFix": "我不確定發生了什麼事。"
+    },
+    {
+     "en": "I'm sure I've seen him before.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I'm sure she has other skills.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I'm sure we'll find a solution.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Mother will be furious for sure!",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Sure, but let's eat dinner first.",
+     "sense": 4,
+     "zhFix": null
+    },
+    {
+     "en": "Mary admits that she wasn't sure.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "He sure likes oranges, doesn't he?",
+     "sense": 4,
+     "zhFix": "他真的喜歡柳橙，對吧？"
+    },
+    {
+     "en": "Constant effort yields sure success.",
+     "sense": 2,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "third",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "第三的",
+     "gloss": "coming next after the second",
+     "synsets": [
+      "02209976-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "三分之一",
+     "gloss": "one of three equal parts",
+     "synsets": [
+      "13759330-n"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "第三（地）",
+     "gloss": "in the third place",
+     "synsets": [
+      "00103536-r"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "第三（名、位）",
+     "gloss": "the third position in a series",
+     "synsets": [
+      "13869097-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "三檔（汽車）",
+     "gloss": "third gear",
+     "synsets": [
+      "04433112-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "三壘（棒球）",
+     "gloss": "third base",
+     "synsets": [
+      "04432939-n",
+      "00725419-n"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "He won the third prize.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "We're on the third floor.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "It's the third of October.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "We have French third period.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "My son's in the third grade.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "At best he may take third place.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Sales fell off in the third quarter.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Let's turn back to the third lesson.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "One-third of the six members were women.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "One third of the earth's surface is desert.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "I wonder if a third world war will break out.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Seems like I'm the third wheel here. I should go.",
+     "sense": 0,
+     "zhFix": null
+    },
+    {
+     "en": "This verb is normally used only in the third person.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Today is the twenty-third of November twenty-sixteen.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Only one third of the members turned up at the meeting.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "More than a third of the world population lives near a coast.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Go straight down this street and turn right at the third light.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "If you go by bus, you can get there in about one-third of the time.",
+     "sense": 2,
+     "zhFix": "如果你搭公車去，大約只要花三分之一的時間就能到。"
+    },
+    {
+     "en": "The emergence of a third gender has added legal and administrative complications, creating unnecessary burdens.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "One third of the population of that country cannot read.",
+     "sense": 2,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "transfer",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "轉移、移動",
+     "gloss": "move from one place to another",
+     "synsets": [
+      "02236972-v",
+      "02016196-v",
+      "02090707-v",
+      "00556317-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "調任、轉學",
+     "gloss": "transfer somebody to a different position or location of work",
+     "synsets": [
+      "02398228-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "轉接（電話）",
+     "gloss": "send from one person or place to another",
+     "synsets": [
+      "01438013-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "轉讓、過戶",
+     "gloss": "cause to change ownership",
+     "synsets": [
+      "02225243-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "換車、轉乘",
+     "gloss": "change from one vehicle or transportation line to another",
+     "synsets": [
+      "02092508-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "轉帳、匯款",
+     "gloss": "the act of moving something from one location to another",
+     "synsets": [
+      "00316812-n"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "Do I need to transfer?",
+     "sense": 5,
+     "zhFix": null
+    },
+    {
+     "en": "Could you please transfer me to Mr. Smith?",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "We will make the payment by bank transfer.",
+     "sense": 6,
+     "zhFix": null
+    },
+    {
+     "en": "Please stay on the line while your call is transferred to a customer service representative.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "Is it convenient to transfer between the subway and the light rail here?",
+     "sense": 5,
+     "zhFix": null
+    },
+    {
+     "en": "Hearing that a transfer student was coming, the class buzzed with excitement.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "It's time for the Tuaregs to transfer their herds to the valley.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Tsung-han got transferred to the Kaohsiung branch. I heard the pay's good.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "\"That's an unusual hobby she's got, the transfer student.\" \"She's cute so it's fine with me.\"",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "If you connect your phone to your PC via USB, you can even transfer files and photos.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Every transfer window is a test of judgment and patience, and every match brings its own surprises and tension.",
+     "sense": 0,
+     "zhFix": null
+    },
+    {
+     "en": "Sami was transferred from customer service.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "Tsung-han was recently transferred to the Kaohsiung branch, and I heard the benefits are pretty good.",
+     "sense": 2,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "tip",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "小費",
+     "gloss": "a small amount of money given for a service",
+     "synsets": [
+      "13319724-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "尖端、末端",
+     "gloss": "the pointed end of something",
+     "synsets": [
+      "08680894-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "提示、建議",
+     "gloss": "a piece of advice or useful information",
+     "synsets": [
+      "06664322-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "給小費",
+     "gloss": "give a gratuity to",
+     "synsets": [
+      "02206915-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "傾斜、翻倒",
+     "gloss": "cause to tilt or overturn",
+     "synsets": [
+      "02043389-v",
+      "02101325-v",
+      "02042202-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "踮腳走",
+     "gloss": "walk on one's toes",
+     "synsets": [
+      "01927976-v"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "Did you leave a tip?",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "We do not accept tips.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I'll give you a little tip.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "It's on the tip of my tongue.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "There is no tipping culture in China.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "You'd better remember that tipping is necessary in the USA.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I'll keep the tips you shared for improving my presentation skills.",
+     "sense": 3,
+     "zhFix": null
+    },
+    {
+     "en": "She stood on tip-toe and whispered something in his ear, and then went away.",
+     "sense": 6,
+     "zhFix": null
+    },
+    {
+     "en": "My room is a tip. I need to tidy it.",
+     "sense": 0,
+     "zhFix": null
+    },
+    {
+     "en": "The tip of the spear was dipped in a deadly poison.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "I don't know if you know or not, but here in America you're expected to tip the waiter.",
+     "sense": 4,
+     "zhFix": null
+    },
+    {
+     "en": "His name was on the tip of my tongue, but I couldn't remember it.",
+     "sense": 2,
+     "zhFix": null
+    },
+    {
+     "en": "We don't accept tips.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "It's tipping it down.",
+     "sense": 0,
+     "zhFix": null
+    },
+    {
+     "en": "Tips are not accepted.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "After finishing his meal at the restaurant in a great mood, he left a generous tip, much to the waiter's delighted surprise.",
+     "sense": 1,
+     "zhFix": null
+    }
+   ]
+  },
+  {
+   "headword": "translate",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "翻譯、轉譯",
+     "gloss": "express words from one language in another",
+     "synsets": [
+      "00961859-v",
+      "02734017-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "轉化、轉換",
+     "gloss": "change into another form or medium",
+     "synsets": [
+      "00384213-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "理解、解讀",
+     "gloss": "make sense of; interpret",
+     "synsets": [
+      "00595247-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "調動、移動",
+     "gloss": "move to a different place or position",
+     "synsets": [
+      "00523521-v",
+      "02108203-v"
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "en": "Can you help me translate?",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Do not translate this sentence!",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Translating wears a person out.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Please translate this into German.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Can you translate this song for me?",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Translate the passage word for word.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I don't have time to translate this text.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "When translating articles we used a dictionary.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "How long did it take you to translate this book?",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Please translate this text from Japanese to French.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "This isn't my opinion, it's just what I've translated.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I'll need at least three days to translate that thesis.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "How much money will it cost to get that book translated?",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "At this very moment, you're reading and translating this.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "Tom translated a letter from French to English for his boss.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "We know it's difficult, but please don't translate literally.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "It took me more than two hours to translate a few pages of English.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I can translate between Chinese and English, and can participate in negotiations with foreigners.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I don't like Google Translate either, but I always use it for reference.",
+     "sense": 1,
+     "zhFix": null
+    },
+    {
+     "en": "I'm tired of translating.",
+     "sense": 1,
+     "zhFix": null
+    }
+   ]
+  }
+ ]
+}

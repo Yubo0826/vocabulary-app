@@ -13,10 +13,10 @@ import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { sql } from "drizzle-orm";
 import { connect, getArg, ROOT, run } from "../import/lib";
+import { chatJson, DEEPSEEK_MODEL, type Usage } from "./deepseek";
 import { checkWord, type Example } from "./validate";
 
-const API_URL = "https://api.deepseek.com/chat/completions";
-const MODEL = "deepseek-chat";
+const MODEL = DEEPSEEK_MODEL;
 const DATA_DIR = path.join(ROOT, "data/llm/examples");
 const MAX_ATTEMPTS = 2;
 
@@ -74,36 +74,9 @@ function existingHeadwords(): Set<string> {
   return set;
 }
 
-type Usage = { prompt_tokens: number; completion_tokens: number; prompt_cache_hit_tokens?: number };
-
 async function callDeepSeek(apiKey: string, words: Word[]): Promise<{ model: string; words: unknown; usage: Usage }> {
-  for (let attempt = 1; ; attempt++) {
-    try {
-      const res = await fetch(API_URL, {
-        method: "POST",
-        headers: { "content-type": "application/json", authorization: `Bearer ${apiKey}` },
-        body: JSON.stringify({
-          model: MODEL,
-          messages: [
-            { role: "system", content: SYSTEM_PROMPT },
-            { role: "user", content: JSON.stringify(words) },
-          ],
-          response_format: { type: "json_object" },
-          temperature: 0.7,
-          max_tokens: 8000,
-        }),
-        signal: AbortSignal.timeout(180_000),
-      });
-      if (!res.ok) throw new Error(`HTTP ${res.status}: ${(await res.text()).slice(0, 300)}`);
-      const data = await res.json();
-      const content = data.choices?.[0]?.message?.content ?? "";
-      return { model: data.model ?? MODEL, words: JSON.parse(content).words, usage: data.usage };
-    } catch (err) {
-      if (attempt >= 4) throw err;
-      console.warn(`  請求失敗（第 ${attempt} 次），稍後重試：${(err as Error).message}`);
-      await new Promise((r) => setTimeout(r, 2000 * attempt));
-    }
-  }
+  const { model, json, usage } = await chatJson(apiKey, SYSTEM_PROMPT, JSON.stringify(words));
+  return { model, words: (json as { words?: unknown }).words, usage };
 }
 
 run(async () => {

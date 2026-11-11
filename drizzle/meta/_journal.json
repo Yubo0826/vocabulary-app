@@ -43,6 +43,13 @@
       "when": 1794375999821,
       "tag": "0005_llm_examples",
       "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1794390343533,
+      "tag": "0006_senses",
+      "breakpoints": true
     }
   ]
 }

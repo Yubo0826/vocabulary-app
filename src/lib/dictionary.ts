@@ -5,8 +5,9 @@
 import { and, asc, desc, eq, inArray, like, ne, sql } from "drizzle-orm";
 import { cacheLife } from "next/cache";
 import { db } from "@/db";
-import { definitions, entries, exampleWords, examples, similarWords, wordForms } from "@/db/schema";
+import { definitions, entries, exampleWords, examples, senses, similarWords, wordForms } from "@/db/schema";
 import { editDistance } from "./edit-distance";
+import { TECHNICAL_GLOSS_PATTERN, withoutTechnicalGlosses } from "./gloss";
 import { normalizeHeadword } from "./headword";
 
 export type MatchType = "exact" | "form" | "prefix" | "fuzzy";
@@ -114,7 +115,7 @@ export async function searchDictionary(input: string, limit = 10): Promise<Searc
   };
 }
 
-/** 每個 headword 的第一筆中文釋義（含詞性） */
+/** 每個 headword 的第一筆中文釋義（含詞性）；優先取一般釋義，專業領域釋義排後 */
 async function firstGlosses(headwords: string[]): Promise<Map<string, string>> {
   if (headwords.length === 0) return new Map();
   const rows = await db
@@ -125,7 +126,7 @@ async function firstGlosses(headwords: string[]): Promise<Map<string, string>> {
     })
     .from(definitions)
     .where(and(inArray(definitions.headword, headwords), eq(definitions.lang, "zh-TW")))
-    .orderBy(definitions.headword, definitions.sortOrder);
+    .orderBy(definitions.headword, sql`${definitions.text} ~ ${TECHNICAL_GLOSS_PATTERN}`, definitions.sortOrder);
   return new Map(rows.map((r) => [r.headword, r.pos ? `${r.pos} ${r.text}` : r.text]));
 }
 
@@ -140,7 +141,7 @@ export async function getWord(input: string, exampleLimit = 20) {
   const [entry] = await db.select().from(entries).where(eq(entries.headword, headword));
   if (!entry) return null;
 
-  const [defs, exampleRows, inflections, lemmaOf, similar] = await Promise.all([
+  const [defs, exampleRows, senseRows, inflections, lemmaOf, similar] = await Promise.all([
     db
       .select({ lang: definitions.lang, pos: definitions.pos, text: definitions.text })
       .from(definitions)
@@ -157,12 +158,20 @@ export async function getWord(input: string, exampleLimit = 20) {
         zhAuthor: examples.zhAuthor,
         enLicense: examples.enLicense,
         zhLicense: examples.zhLicense,
+        textZhRevised: examples.textZhRevised,
+        senseId: exampleWords.senseId,
       })
       .from(exampleWords)
       .innerJoin(examples, eq(examples.id, exampleWords.exampleId))
       .where(eq(exampleWords.headword, headword))
       .orderBy(desc(exampleWords.score), sql`length(${examples.textEn})`)
       .limit(exampleLimit),
+    // 詞義（LLM 整理的粗分詞義，例句依此分組）
+    db
+      .select({ id: senses.id, pos: senses.pos, label: senses.labelZh })
+      .from(senses)
+      .where(eq(senses.headword, headword))
+      .orderBy(senses.senseOrder),
     // 這個字的變化形（go → went, gone …）
     db
       .select({ form: wordForms.form, kind: wordForms.kind })
@@ -185,9 +194,16 @@ export async function getWord(input: string, exampleLimit = 20) {
 
   return {
     entry,
-    zh: defs.filter((d) => d.lang === "zh-TW"),
+    zh: withoutTechnicalGlosses(defs.filter((d) => d.lang === "zh-TW")),
     en: defs.filter((d) => d.lang === "en"),
-    examples: exampleRows,
+    // 有修正翻譯時顯示修正版（text_zh 保留 Tatoeba 原文）
+    examples: exampleRows.map(({ textZhRevised, ...ex }) => ({
+      ...ex,
+      textZh: textZhRevised ?? ex.textZh,
+      zhRevised: textZhRevised !== null,
+    })),
+    // 只列出有例句的詞義
+    senses: senseRows.filter((s) => exampleRows.some((ex) => ex.senseId === s.id)),
     inflections,
     lemmaOf,
     confusables: similar.filter((s) => s.kind === "confusable").map(({ headword, display }) => ({ headword, display })),

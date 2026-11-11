@@ -59,6 +59,11 @@ async function readSentences(file: string, wanted: Set<number>): Promise<Map<num
   return map;
 }
 
+const FULL_WIDTH: Record<string, string> = { ",": "，", "?": "？", "!": "！", ":": "：", ";": "；" };
+/** 中文翻譯的半形標點轉全形：只轉緊接在中文字後面的（「1,000」「8:30」這種數字不動） */
+const fullWidthPunctuation = (zh: string) =>
+  zh.replace(/([\u4e00-\u9fff])\s*([,?!:;])\s*/g, (_, ch: string, p: string) => ch + FULL_WIDTH[p]);
+
 /** 英文斷詞：小寫、保留字中的撇號與連字號 */
 function tokenize(text: string): string[] {
   return text.toLowerCase().replace(/’/g, "'").match(/[a-z]+(?:['-][a-z]+)*/g) ?? [];
@@ -150,7 +155,7 @@ run(async () => {
     };
 
     // 4. 計分，依 headword 分組；中文先轉台灣繁體（寫入時沿用）
-    const zhTw = pairs.map((p) => toTaiwanese(p.zh.text));
+    const zhTw = pairs.map((p) => fullWidthPunctuation(toTaiwanese(p.zh.text)));
     const candidates = new Map<string, { pair: number; score: number }[]>();
     pairs.forEach((pair, index) => {
       const linked = new Set<string>();

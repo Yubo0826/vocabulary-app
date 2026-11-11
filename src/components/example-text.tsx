@@ -10,6 +10,7 @@ type ExampleSourceFields = {
   zhSentenceId: number | null;
   zhAuthor: string | null;
   zhLicense: string | null;
+  zhRevised?: boolean; // 中文翻譯經 LLM 修正
 };
 
 /**
@@ -38,6 +39,7 @@ export function ExampleSource({ example }: { example: ExampleSourceFields }) {
         {example.zhSentenceId && example.zhLicense && (
           <div>
             中譯 <Attribution id={example.zhSentenceId} author={example.zhAuthor} license={example.zhLicense} />
+            {example.zhRevised && "（中譯經修正）"}
           </div>
         )}
       </PopoverContent>
