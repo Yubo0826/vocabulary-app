@@ -1,12 +1,10 @@
 import { eq } from "drizzle-orm";
-import Link from "next/link";
 import { Suspense } from "react";
 import { db } from "@/db";
 import { account } from "@/db/schema";
 import { requireUser } from "@/lib/session";
-import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { AccountActions } from "./account-actions";
+import { DeleteAccount, SignOutButton } from "./account-actions";
 
 export const metadata = { title: "帳號" };
 
@@ -28,7 +26,12 @@ async function Account() {
 
   return (
     <div className="flex flex-col gap-5">
-      <h1 className="text-2xl font-semibold">帳號</h1>
+      <div className="flex items-center gap-2">
+        <h1 className="text-2xl font-semibold">帳號</h1>
+        <div className="ml-auto">
+          <SignOutButton />
+        </div>
+      </div>
       <Card className="px-4">
         <dl className="grid grid-cols-[auto_1fr] gap-x-4 gap-y-2 text-base">
           <dt className="text-muted-foreground">暱稱</dt>
@@ -39,12 +42,7 @@ async function Account() {
           <dd>{providers.map((p) => PROVIDER_LABELS[p] ?? p).join("、")}</dd>
         </dl>
       </Card>
-      <div className="flex flex-wrap gap-2">
-        <Button asChild variant="outline" size="lg">
-          <Link href="/settings">複習設定</Link>
-        </Button>
-      </div>
-      <AccountActions hasPassword={providers.includes("credential")} />
+      <DeleteAccount email={user.email} hasPassword={providers.includes("credential")} />
     </div>
   );
 }

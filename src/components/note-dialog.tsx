@@ -19,7 +19,7 @@ import { cn } from "@/lib/utils";
 // 編輯器較大，打開筆記視窗時才載入
 const NoteEditor = dynamic(() => import("./note-editor"), {
   ssr: false,
-  loading: () => <div className="min-h-32 rounded-lg border border-input dark:bg-input/30" aria-hidden />,
+  loading: () => <div className="min-h-[18.5rem]" aria-hidden />,
 });
 
 type Props = { headword: string; note: string | null; saved: boolean };
@@ -63,16 +63,11 @@ export function NoteDialog({ headword, note, saved }: Props) {
         </Button>
       </DialogTrigger>
       {/* 沒有說明文字，明確關掉 aria-describedby 以免 Radix 警告 */}
-      <DialogContent aria-describedby={undefined}>
+      <DialogContent aria-describedby={undefined} className="sm:max-w-xl">
         <DialogHeader>
           <DialogTitle>筆記</DialogTitle>
         </DialogHeader>
-        <div className="flex flex-col gap-1.5">
-          <NoteEditor initial={note ?? ""} placeholder="例如：在哪裡看到、容易搞混的字、自己的例句…" onChange={setDraft} />
-          <p className="text-xs leading-relaxed text-muted-foreground">
-            支援格式：<b>**粗體**</b>、<i>*斜體*</i>、<code className="font-mono">`程式碼`</code>、- 清單、1. 編號清單、[文字](網址)
-          </p>
-        </div>
+        <NoteEditor initial={note ?? ""} placeholder="「思考會以螺旋式成長，而活用內在資產就從記錄開始。」 —— 金翼漢《巨人的筆記》" onChange={setDraft} />
         {error && (
           <p className="text-sm text-destructive" role="alert">
             {error}
