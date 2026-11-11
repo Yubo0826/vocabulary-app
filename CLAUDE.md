@@ -41,7 +41,9 @@
 | ECDICT | MIT | 英中釋義、音標、詞頻、詞形變化（exchange 欄位） |
 | Open English WordNet 2025 | CC BY 4.0（需標示出處） | 英英釋義（`source = 'oewn'`，已定案不用 Princeton WordNet 3.1） |
 | Tatoeba | 多數 CC BY 2.0 FR，部分 CC0 | 例句；**必須逐句記錄作者與授權** |
-| LLM 生成 | — | 易混淆字辨析，需記錄模型名稱並人工抽查 |
+| LLM 生成 | — | 補 Tatoeba 沒有或太少例句的字（`data/llm/examples/`），需記錄模型名稱並人工抽查 |
+
+各來源的匯入方式、過濾條件與目前資料量見 `docs/DATA-SOURCES.md`，改匯入腳本時一併更新。
 
 **禁止**：抓取或使用 Cambridge、Oxford、Merriam-Webster、Longman 等有著作權字典的內容。Wiktionary（CC BY-SA）暫不使用，若要引入需先討論。
 

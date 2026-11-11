@@ -22,6 +22,7 @@ const FORM_LABELS: Record<string, string> = {
 const POS_LABELS: Record<string, string> = { "n.": "名詞", "v.": "動詞", "adj.": "形容詞", "adv.": "副詞" };
 const EXAM_TAGS: Record<string, string> = { toefl: "TOEFL", ielts: "IELTS", gre: "GRE" };
 const EN_DEFS_SHOWN = 8; // 英英釋義每個詞性預設顯示幾筆，其餘收合
+const EXAMPLES_SHOWN = 8; // 例句預設顯示幾句，其餘收合
 
 export async function generateMetadata({ params }: PageProps<"/word/[headword]">) {
   const { headword } = await params;
@@ -152,18 +153,15 @@ function WordView({ word }: { word: WordDetail }) {
 
           {examples.length > 0 && (
             <Section title="例句">
-              <ul className="flex flex-col divide-y">
-                {examples.map((ex) => (
-                  <li key={ex.id} className="py-3 first:pt-0 last:pb-0">
-                    <div className="flex items-start gap-1 text-[1.02rem]">
-                      <p className="flex-1">{highlight(ex.textEn, highlightForms)}</p>
-                      <SpeakButton text={ex.textEn} size="sm" />
-                      <ExampleSource example={ex} />
-                    </div>
-                    {ex.textZh && <p className="mt-0.5 text-muted-foreground">{ex.textZh}</p>}
-                  </li>
-                ))}
-              </ul>
+              <ExampleList examples={examples.slice(0, EXAMPLES_SHOWN)} highlightForms={highlightForms} />
+              {examples.length > EXAMPLES_SHOWN && (
+                <details className="group">
+                  <summary className="mt-1 cursor-pointer text-sm text-primary group-open:mb-3">
+                    顯示其餘 {examples.length - EXAMPLES_SHOWN} 句
+                  </summary>
+                  <ExampleList examples={examples.slice(EXAMPLES_SHOWN)} highlightForms={highlightForms} />
+                </details>
+              )}
             </Section>
           )}
         </TabsContent>
@@ -178,6 +176,23 @@ function WordView({ word }: { word: WordDetail }) {
         )}
       </Tabs>
     </article>
+  );
+}
+
+function ExampleList({ examples, highlightForms }: { examples: WordDetail["examples"]; highlightForms: Set<string> }) {
+  return (
+    <ul className="flex flex-col divide-y">
+      {examples.map((ex) => (
+        <li key={ex.id} className="py-3 first:pt-0 last:pb-0">
+          <div className="flex items-start gap-1 text-[1.02rem]">
+            <p className="flex-1">{highlight(ex.textEn, highlightForms)}</p>
+            <SpeakButton text={ex.textEn} size="sm" />
+            <ExampleSource example={ex} />
+          </div>
+          {ex.textZh && <p className="mt-0.5 text-muted-foreground">{ex.textZh}</p>}
+        </li>
+      ))}
+    </ul>
   );
 }
 

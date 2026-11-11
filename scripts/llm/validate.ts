@@ -28,8 +28,8 @@ const toTraditional = OpenCC.Converter({ from: "cn", to: "tw" });
 const SIMPLIFIED_IN_BIG5 = new Set([..."机网么叶云"]);
 const isSimplified = (c: string) =>
   /[\u4e00-\u9fff]/.test(c) && (SIMPLIFIED_IN_BIG5.has(c) || (!BIG5.has(c) && toTraditional(c) !== c));
-/** 常見的大陸用語；「質量」在物理是正確用法，命中時只當提醒 */
-const MAINLAND = ["信息", "軟件", "硬件", "網絡", "視頻", "出租車", "屏幕", "鼠標", "程序員", "默認", "博客", "短信", "公交", "激光", "數據庫", "土豆", "打印", "質量"];
+/** 常見的大陸用語（不含「質量」：物理的質量是正確用法）。Tatoeba 匯入也用這份清單替翻譯扣分 */
+export const MAINLAND_TERMS = ["信息", "軟件", "硬件", "網絡", "視頻", "出租車", "屏幕", "鼠標", "程序員", "默認", "博客", "短信", "公交", "激光", "數據庫", "土豆", "打印", "工資"];
 
 export const MIN_WORDS = 6;
 export const MAX_WORDS = 22;
@@ -74,7 +74,7 @@ export function checkWord(headword: string, forms: Set<string>, examples: unknow
     if (!containsWord(headword, forms, en)) problems.push(`句中沒有該字：${en}`);
     const simplified = [...new Set([...zh].filter(isSimplified))];
     if (simplified.length) problems.push(`簡體字 ${simplified.join("")}：${zh}`);
-    const mainland = MAINLAND.filter((m) => m !== "質量" && zh.includes(m));
+    const mainland = MAINLAND_TERMS.filter((m) => zh.includes(m));
     if (mainland.length) problems.push(`大陸用語 ${mainland.join("、")}：${zh}`);
     if (/[,?!:;]/.test(zh)) problems.push(`中文用了半形標點：${zh}`);
     if (!/[一-鿿]/.test(zh)) problems.push(`中文翻譯沒有中文：${zh}`);

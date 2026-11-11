@@ -16,6 +16,7 @@
  */
 import { eq } from "drizzle-orm";
 import { entries, exampleWords, examples, wordForms } from "../../src/db/schema";
+import { MAINLAND_TERMS } from "../llm/validate";
 import { connect, getArg, insertInBatches, readLines, requireRawFile, run, toTaiwanese } from "./lib";
 
 const HINT =
@@ -25,6 +26,15 @@ const LICENSE_CC0 = "CC0 1.0";
 const COMMON_RANK = 5000; // 排名在此以內視為常用字，用於計分
 /** 超過這個字數的句子不收（Tatoeba 有整段日記式的長文）；因此沒有例句的字改由 LLM 補 */
 const MAX_WORDS = 25;
+/** 中文翻譯含大陸用語（轉繁體後仍看得出來的，例如「工資」）時扣分，讓翻譯較道地的句子排前面 */
+const MAINLAND_PENALTY = 30;
+/** 和已選句子的實詞重疊度 ≥ 這個值就視為重複（raise your hand 出現好幾次），排到後面 */
+const DUPLICATE_OVERLAP = 0.5;
+const DUPLICATE_PENALTY = 100;
+/** 判斷重複時忽略的功能詞 */
+const STOPWORDS = new Set(
+  "a an the i you he she it we they me him her us them my your his its our their this that these those to of in on at for with and or but if when where how what who why is are was were be been being am do does did done can could would will shall should may might must not no have has had please up out so as by from than then there here very just too also all some any one".split(" "),
+);
 
 type Sentence = { text: string; author: string | null };
 
@@ -117,8 +127,11 @@ run(async () => {
       else lemmasOf.set(f.form, [f.lemma]);
     }
 
-    /** 一個 token 對應到的 headword：本身是詞條就算，加上它的原形 */
+    /** 一個 token 對應到的 headword：本身是詞條就算，加上它的原形（結果快取） */
+    const headwordCache = new Map<string, string[]>();
     const headwordsOf = (token: string): string[] => {
+      const cached = headwordCache.get(token);
+      if (cached) return cached;
       const result = new Set<string>();
       const tryWord = (w: string) => {
         if (rankOf.has(w)) result.add(w);
@@ -131,10 +144,13 @@ run(async () => {
         if (stripped !== token) tryWord(stripped);
         if (stripped.includes("-")) stripped.split("-").forEach(tryWord);
       }
-      return [...result];
+      const list = [...result];
+      headwordCache.set(token, list);
+      return list;
     };
 
-    // 4. 計分，依 headword 分組
+    // 4. 計分，依 headword 分組；中文先轉台灣繁體（寫入時沿用）
+    const zhTw = pairs.map((p) => toTaiwanese(p.zh.text));
     const candidates = new Map<string, { pair: number; score: number }[]>();
     pairs.forEach((pair, index) => {
       const linked = new Set<string>();
@@ -144,7 +160,8 @@ run(async () => {
         hws.forEach((h) => linked.add(h));
         if (hws.some((h) => (rankOf.get(h) ?? Infinity) <= COMMON_RANK)) common++;
       }
-      const score = scoreSentence(pair.tokens.length, common);
+      const mainland = MAINLAND_TERMS.some((m) => zhTw[index].includes(m));
+      const score = scoreSentence(pair.tokens.length, common) - (mainland ? MAINLAND_PENALTY : 0);
       for (const h of linked) {
         const list = candidates.get(h);
         if (list) list.push({ pair: index, score });
@@ -152,13 +169,38 @@ run(async () => {
       }
     });
 
-    // 5. 每個 headword 取前 N 句（同分時短句優先）
+    // 5. 每個 headword 取前 N 句（同分時短句優先）。依序挑選時，和已選句子實詞重疊太多的視為重複，
+    //    排到所有不重複的句子之後（分數扣 DUPLICATE_PENALTY，單字頁依分數排序）
+    /** 句中的實詞：去掉功能詞與這個 headword 本身的各種形式，並還原成原形（hands → hand） */
+    const contentWords = (pair: number, headword: string) =>
+      new Set(
+        pairs[pair].tokens
+          .filter((t) => !STOPWORDS.has(t) && !headwordsOf(t).includes(headword))
+          .map((t) => lemmasOf.get(t)?.[0] ?? t),
+      );
+    const overlap = (a: Set<string>, b: Set<string>) => {
+      if (a.size === 0 || b.size === 0) return 0;
+      let shared = 0;
+      for (const w of a) if (b.has(w)) shared++;
+      return shared / Math.min(a.size, b.size);
+    };
     const kept: { headword: string; pair: number; score: number }[] = [];
+    let duplicates = 0;
     for (const [headword, list] of candidates) {
-      list
-        .sort((a, b) => b.score - a.score || pairs[a.pair].tokens.length - pairs[b.pair].tokens.length || a.pair - b.pair)
-        .slice(0, perHeadword)
-        .forEach((c) => kept.push({ headword, ...c }));
+      list.sort((a, b) => b.score - a.score || pairs[a.pair].tokens.length - pairs[b.pair].tokens.length || a.pair - b.pair);
+      const picked: { c: (typeof list)[number]; words: Set<string> }[] = [];
+      const repeated: (typeof list)[number][] = [];
+      for (const c of list) {
+        if (picked.length >= perHeadword) break;
+        const words = contentWords(c.pair, headword);
+        if (picked.some((p) => overlap(words, p.words) >= DUPLICATE_OVERLAP)) repeated.push(c);
+        else picked.push({ c, words });
+      }
+      picked.forEach(({ c }) => kept.push({ headword, ...c }));
+      for (const c of repeated.slice(0, perHeadword - picked.length)) {
+        kept.push({ headword, pair: c.pair, score: c.score - DUPLICATE_PENALTY });
+        duplicates++;
+      }
     }
     const usedPairs = [...new Set(kept.map((k) => k.pair))].sort((a, b) => a - b);
 
@@ -173,7 +215,7 @@ run(async () => {
         const p = pairs[i];
         return {
           textEn: p.en.text,
-          textZh: toTaiwanese(p.zh.text),
+          textZh: zhTw[i],
           enSentenceId: p.enId,
           zhSentenceId: p.zhId,
           enAuthor: p.en.author,
@@ -200,7 +242,7 @@ run(async () => {
 
     const cc0 = usedPairs.filter((i) => engCc0.has(pairs[i].enId)).length;
     console.log(`英中配對 ${pairs.length} 組，寫入例句 ${usedPairs.length} 句（英文 CC0 ${cc0} 句）`);
-    console.log(`例句關聯 ${kept.length} 筆，涵蓋 ${candidates.size} 個詞條`);
+    console.log(`例句關聯 ${kept.length} 筆（其中重複排後 ${duplicates} 筆），涵蓋 ${candidates.size} 個詞條`);
   } finally {
     await close();
   }
