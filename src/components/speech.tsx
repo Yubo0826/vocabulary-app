@@ -1,6 +1,6 @@
 "use client";
 
-import { useSyncExternalStore } from "react";
+import { useEffect, useSyncExternalStore } from "react";
 import { Volume2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
@@ -61,9 +61,26 @@ function speak(text: string, lang: Accent) {
   synth.speak(utterance);
 }
 
-export function SpeakButton({ text, size = "md" }: { text: string; size?: "md" | "sm" }) {
+export function SpeakButton({
+  text,
+  size = "md",
+  autoPlay = false,
+}: {
+  text: string;
+  size?: "md" | "sm";
+  /** 顯示時自動播放一次（單字頁標題用）。直接開網址或重新整理時，瀏覽器會因為使用者還沒互動過而擋下，屬正常 */
+  autoPlay?: boolean;
+}) {
   const accent = useAccent();
   const supported = useSpeechSupported();
+
+  // 用 readAccent() 而不是 accent：切換口音時不要重播；離開頁面時停止還沒念完的聲音
+  useEffect(() => {
+    if (!autoPlay || !("speechSynthesis" in window)) return;
+    speak(text, readAccent());
+    return () => window.speechSynthesis.cancel();
+  }, [autoPlay, text]);
+
   if (!supported) return null;
   return (
     <Button

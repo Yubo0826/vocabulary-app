@@ -2,7 +2,7 @@
 
 import { Search } from "lucide-react";
 import { useRouter } from "next/navigation";
-import { useEffect, useId, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import type { SearchItem, SearchResult } from "@/lib/dictionary";
 import { wordHref } from "@/lib/urls";
 import { Badge } from "@/components/ui/badge";
@@ -24,6 +24,19 @@ export function SearchBox({ initialQuery = "", autoFocus = false }: { initialQue
   const [result, setResult] = useState<SearchResult | null>(null);
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState(-1);
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  // Next.js（Cache Components）離開頁面時用 <Activity> 隱藏而不卸載，state 會被保留。
+  // 隱藏時（effect cleanup）把輸入還原；再次顯示時（effect 重跑）重新聚焦，回到頁面就能直接打字。
+  useEffect(() => {
+    if (autoFocus) inputRef.current?.focus();
+    return () => {
+      setQuery(initialQuery);
+      setResult(null);
+      setOpen(false);
+      setActive(-1);
+    };
+  }, [autoFocus, initialQuery]);
 
   const trimmed = query.trim();
 
@@ -91,6 +104,7 @@ export function SearchBox({ initialQuery = "", autoFocus = false }: { initialQue
     >
       <Search className="pointer-events-none absolute top-6 left-4 z-30 size-5 -translate-y-1/2 text-muted-foreground" aria-hidden />
       <Input
+        ref={inputRef}
         className={cn(
           "relative z-20 h-12 rounded-full border-transparent bg-card pr-5 pl-11 text-[1.05rem] shadow-(--surface-shadow) md:text-[1.05rem] dark:bg-background",
           // 展開時輸入框形狀不變，只拿掉陰影與聚焦外框，讓它融進後面的清單卡片

@@ -63,7 +63,7 @@ function WordView({ word }: { word: WordDetail }) {
       <header className="flex flex-col gap-2">
         <div className="flex items-center gap-3">
           <h1 className="text-[clamp(2rem,8vw,2.6rem)] leading-tight font-bold wrap-anywhere">{entry.display}</h1>
-          <SpeakButton text={entry.display} />
+          <SpeakButton text={entry.display} autoPlay />
           <div className="ml-auto flex shrink-0 items-center gap-1.5">
             <Suspense fallback={null}>
               <SaveButton headword={entry.headword} />
