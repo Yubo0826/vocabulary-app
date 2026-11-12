@@ -4,7 +4,7 @@ import { Undo2 } from "lucide-react";
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState, useTransition } from "react";
 import { getReviewStateAction, reviewCardAction, undoReviewAction, type ActionResult } from "@/app/actions";
-import { ExampleSource, highlight } from "@/components/example-text";
+import { ExampleSource, highlight, type WordLinks } from "@/components/example-text";
 import { AccentToggle, SpeakButton } from "@/components/speech";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -20,6 +20,8 @@ const RATINGS = [
   { grade: 3, label: "記得", key: "3", className: "bg-good/10 text-good hover:bg-good/20 hover:text-good active:bg-good active:text-background" },
   { grade: 4, label: "簡單", key: "4", className: "bg-easy/10 text-easy hover:bg-easy/20 hover:text-easy active:bg-easy active:text-background" },
 ] as const;
+
+const NO_MARK = new Set<string>(); // 英英釋義不標色
 
 const STATE_LABELS: Record<number, string> = { 0: "新卡", 1: "學習中", 2: "複習", 3: "重新學習" };
 
@@ -198,6 +200,8 @@ function Pos({ children }: { children: React.ReactNode }) {
 
 function Answer({ item }: { item: NonNullable<ReviewState["item"]> }) {
   const forms = new Set([item.headword, ...item.forms]);
+  // 點例句或英英釋義的字另開分頁，不打斷複習
+  const links: WordLinks = { words: new Set(item.linkable.filter((w) => !forms.has(w))), newTab: true };
   return (
     <div className="flex flex-col gap-3.5">
       {item.zh.length > 0 && (
@@ -215,7 +219,7 @@ function Answer({ item }: { item: NonNullable<ReviewState["item"]> }) {
           {item.en.map((d, i) => (
             <li key={i}>
               {d.pos && <Pos>{d.pos}</Pos>}
-              {d.text}
+              {highlight(d.text, NO_MARK, links)}
             </li>
           ))}
         </ol>
@@ -225,7 +229,7 @@ function Answer({ item }: { item: NonNullable<ReviewState["item"]> }) {
           {item.examples.map((ex) => (
             <li key={ex.id}>
               <div className="flex items-start gap-1">
-                <p>{highlight(ex.textEn, forms)}</p>
+                <p>{highlight(ex.textEn, forms, links)}</p>
                 <SpeakButton text={ex.textEn} size="sm" />
                 <ExampleSource example={ex} />
               </div>

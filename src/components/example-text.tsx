@@ -1,4 +1,6 @@
-import { tatoebaSentenceUrl, tatoebaUserUrl } from "@/lib/urls";
+import Link from "next/link";
+import { normalizeHeadword, WORD_SPLIT } from "@/lib/headword";
+import { tatoebaSentenceUrl, tatoebaUserUrl, wordHref } from "@/lib/urls";
 import { Info } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
@@ -69,9 +71,32 @@ function Attribution({ id, author, license }: { id: number; author: string | nul
   );
 }
 
-/** 把句子中屬於這個字（含變化形）的單字標成 <mark> */
-export function highlight(text: string, forms: Set<string>) {
-  return text.split(/([A-Za-z]+(?:['’-][A-Za-z]+)*)/).map((part, i) =>
-    i % 2 === 1 && forms.has(part.toLowerCase()) ? <mark key={i}>{part}</mark> : part,
-  );
+export type WordLinks = {
+  /** 有單字頁可去的字（已正規化） */
+  words: Set<string>;
+  /** 另開分頁（複習中不離開目前流程） */
+  newTab?: boolean;
+};
+
+/**
+ * 把句子中屬於這個字（含變化形）的單字標成 <mark>；有給 links 時，其他查得到的字做成連到單字頁的連結
+ * （平常看起來跟一般文字一樣，滑過才變色加底線）。
+ */
+export function highlight(text: string, forms: Set<string>, links?: WordLinks) {
+  return text.split(WORD_SPLIT).map((part, i) => {
+    if (i % 2 === 0) return part;
+    const word = normalizeHeadword(part);
+    if (forms.has(word)) return <mark key={i}>{part}</mark>;
+    if (!links?.words.has(word)) return part;
+    return (
+      <Link
+        key={i}
+        href={wordHref(word)}
+        className="text-inherit hover:text-primary"
+        {...(links.newTab && { target: "_blank", rel: "noopener" })}
+      >
+        {part}
+      </Link>
+    );
+  });
 }

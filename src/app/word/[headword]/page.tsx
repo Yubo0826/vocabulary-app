@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { Suspense } from "react";
 import { ExampleBrowser } from "@/components/example-browser";
+import { highlight, type WordLinks } from "@/components/example-text";
 import { FamiliarityControl, NoteButton, NotePreview, SaveButton } from "@/components/save-panel";
 import { AccentToggle, SpeakButton } from "@/components/speech";
 import { Badge } from "@/components/ui/badge";
@@ -53,10 +54,13 @@ async function WordContent({ raw }: { raw: string }) {
 }
 
 function WordView({ word }: { word: WordDetail }) {
-  const { entry, zh, en, examples, senses, inflections, lemmaOf, confusables, synonyms } = word;
+  const { entry, zh, en, examples, senses, inflections, lemmaOf, confusables, synonyms, linkable } = word;
   const examTags = (entry.tags ?? []).filter((t) => t in EXAM_TAGS);
   const similarCount = confusables.length + synonyms.length;
   const highlightForms = new Set([entry.headword, ...inflections.map((f) => f.form)]);
+  // 英英釋義裡的字連到單字頁；這個字本身（含變化形）不連、也不標色
+  const defLinks: WordLinks = { words: new Set(linkable.filter((w) => !highlightForms.has(w))) };
+  const noMark = new Set<string>();
 
   return (
     <article className="flex flex-col gap-7">
@@ -130,7 +134,7 @@ function WordView({ word }: { word: WordDetail }) {
                   </h3>
                   <ol className="flex list-decimal flex-col gap-1 pl-6">
                     {defs.slice(0, EN_DEFS_SHOWN).map((d, i) => (
-                      <li key={i}>{d.text}</li>
+                      <li key={i}>{highlight(d.text, noMark, defLinks)}</li>
                     ))}
                   </ol>
                   {defs.length > EN_DEFS_SHOWN && (
@@ -140,7 +144,7 @@ function WordView({ word }: { word: WordDetail }) {
                       </summary>
                       <ol className="flex list-decimal flex-col gap-1 pl-6" start={EN_DEFS_SHOWN + 1}>
                         {defs.slice(EN_DEFS_SHOWN).map((d, i) => (
-                          <li key={i}>{d.text}</li>
+                          <li key={i}>{highlight(d.text, noMark, defLinks)}</li>
                         ))}
                       </ol>
                     </details>
@@ -152,7 +156,7 @@ function WordView({ word }: { word: WordDetail }) {
 
           {examples.length > 0 && (
             <Section title="例句">
-              <ExampleBrowser examples={examples} senses={senses} forms={[...highlightForms]} />
+              <ExampleBrowser examples={examples} senses={senses} forms={[...highlightForms]} linkable={linkable} />
             </Section>
           )}
         </TabsContent>

@@ -5,3 +5,11 @@
 export function normalizeHeadword(input: string): string {
   return input.trim().toLowerCase().replace(/\s+/g, " ");
 }
+
+/** 把英文句子切成單字（含 don't、well-known 這類以撇號或連字號相連的字）；split 後奇數索引是單字 */
+export const WORD_SPLIT = /([A-Za-z]+(?:['’-][A-Za-z]+)*)/;
+
+/** 句子裡不重複的單字（已正規化） */
+export function wordsIn(text: string): string[] {
+  return text.split(WORD_SPLIT).filter((_, i) => i % 2 === 1).map(normalizeHeadword);
+}

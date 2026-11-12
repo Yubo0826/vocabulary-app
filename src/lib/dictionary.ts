@@ -8,7 +8,7 @@ import { db } from "@/db";
 import { definitions, entries, exampleWords, examples, senses, similarWords, wordForms } from "@/db/schema";
 import { editDistance } from "./edit-distance";
 import { TECHNICAL_GLOSS_PATTERN, withoutTechnicalGlosses } from "./gloss";
-import { normalizeHeadword } from "./headword";
+import { normalizeHeadword, wordsIn } from "./headword";
 
 export type MatchType = "exact" | "form" | "prefix" | "fuzzy";
 
@@ -192,10 +192,15 @@ export async function getWord(input: string, exampleLimit = 20) {
       .orderBy(similarWords.kind, similarWords.rank),
   ]);
 
+  const en = defs.filter((d) => d.lang === "en");
+  const linkable = await findLinkableWords([...en.map((d) => d.text), ...exampleRows.map((ex) => ex.textEn)]);
+
   return {
     entry,
     zh: withoutTechnicalGlosses(defs.filter((d) => d.lang === "zh-TW")),
-    en: defs.filter((d) => d.lang === "en"),
+    en,
+    /** 例句與英英釋義中查得到單字頁的字（詞條或變化形），顯示時做成連結 */
+    linkable,
     // 有修正翻譯時顯示修正版（text_zh 保留 Tatoeba 原文）
     examples: exampleRows.map(({ textZhRevised, ...ex }) => ({
       ...ex,
@@ -209,6 +214,21 @@ export async function getWord(input: string, exampleLimit = 20) {
     confusables: similar.filter((s) => s.kind === "confusable").map(({ headword, display }) => ({ headword, display })),
     synonyms: similar.filter((s) => s.kind === "synonym").map(({ headword, display }) => ({ headword, display })),
   };
+}
+
+/** 這些文字裡有單字頁可去的字：本身是詞條，或是某個詞條的變化形（單字頁會轉到原形） */
+async function findLinkableWords(texts: string[]): Promise<string[]> {
+  const words = [...new Set(texts.flatMap(wordsIn))];
+  if (words.length === 0) return [];
+  const [direct, forms] = await Promise.all([
+    db.select({ word: entries.headword }).from(entries).where(inArray(entries.headword, words)),
+    db
+      .selectDistinct({ word: wordForms.form })
+      .from(wordForms)
+      .innerJoin(entries, eq(entries.headword, wordForms.lemma))
+      .where(inArray(wordForms.form, words)),
+  ]);
+  return [...new Set([...direct, ...forms].map((r) => r.word))];
 }
 
 /** 輸入不是詞條但是某字的變化形時，回傳原形（單字頁用來轉址） */

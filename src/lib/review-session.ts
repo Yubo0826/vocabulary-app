@@ -27,6 +27,8 @@ export type ReviewItem = {
   en: { pos: string | null; text: string }[];
   forms: string[];
   examples: WordDetail["examples"];
+  /** 例句與英英釋義中有單字頁可去的字 */
+  linkable: string[];
   /** 評分 1–4 的下次間隔文字，例如「10 分鐘」「3 天」 */
   intervals: Record<1 | 2 | 3 | 4, string>;
 };
@@ -68,6 +70,7 @@ async function toItem(card: CardRow, now: Date, settings: Awaited<ReturnType<typ
     en: word?.en.slice(0, EN_DEFS_SHOWN).map(({ pos, text }) => ({ pos, text })) ?? [],
     forms: word?.inflections.map((f) => f.form) ?? [],
     examples: word?.examples ?? [],
+    linkable: word?.linkable ?? [],
     intervals: {
       1: formatInterval(preview[1].getTime() - now.getTime()),
       2: formatInterval(preview[2].getTime() - now.getTime()),
