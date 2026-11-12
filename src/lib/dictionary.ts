@@ -216,9 +216,24 @@ export async function getWord(input: string, exampleLimit = 20) {
   };
 }
 
-/** 這些文字裡有單字頁可去的字：本身是詞條，或是某個詞條的變化形（單字頁會轉到原形） */
+/** 虛詞：冠詞、代名詞、介系詞、連接詞、助動詞等。查字的需求低，不做成連結 */
+const FUNCTION_WORDS = new Set(
+  `a an the
+  i me my mine myself you your yours yourself yourselves he him his himself she her hers herself
+  it its itself we us our ours ourselves they them their theirs themselves
+  this that these those who whom whose which what
+  about above across after against along among around as at before behind below beneath beside between
+  beyond by down during except for from in inside into near of off on onto out outside over past since
+  through throughout till to toward towards under until up upon with within without
+  and but or nor so yet if because although though while whereas whether than
+  be am is are was were been being have has had having do does did doing done
+  will would shall should can could may might must
+  not no`.split(/\s+/),
+);
+
+/** 這些文字裡有單字頁可去的字：本身是詞條，或是某個詞條的變化形（單字頁會轉到原形）；虛詞除外 */
 async function findLinkableWords(texts: string[]): Promise<string[]> {
-  const words = [...new Set(texts.flatMap(wordsIn))];
+  const words = [...new Set(texts.flatMap(wordsIn))].filter((w) => !FUNCTION_WORDS.has(w));
   if (words.length === 0) return [];
   const [direct, forms] = await Promise.all([
     db.select({ word: entries.headword }).from(entries).where(inArray(entries.headword, words)),
