@@ -143,7 +143,7 @@ export async function getWord(input: string, exampleLimit = 20) {
 
   const [defs, exampleRows, senseRows, inflections, lemmaOf, similar] = await Promise.all([
     db
-      .select({ lang: definitions.lang, pos: definitions.pos, text: definitions.text })
+      .select({ lang: definitions.lang, pos: definitions.pos, text: definitions.text, sourceRef: definitions.sourceRef })
       .from(definitions)
       .where(eq(definitions.headword, headword))
       .orderBy(definitions.lang, definitions.sortOrder),
@@ -168,7 +168,7 @@ export async function getWord(input: string, exampleLimit = 20) {
       .limit(exampleLimit),
     // 詞義（LLM 整理的粗分詞義，例句依此分組）
     db
-      .select({ id: senses.id, pos: senses.pos, label: senses.labelZh })
+      .select({ id: senses.id, pos: senses.pos, label: senses.labelZh, gloss: senses.glossEn, synsets: senses.wordnetSynsets })
       .from(senses)
       .where(eq(senses.headword, headword))
       .orderBy(senses.senseOrder),
@@ -193,6 +193,14 @@ export async function getWord(input: string, exampleLimit = 20) {
   ]);
 
   const en = defs.filter((d) => d.lang === "en");
+  // 只列出有例句的詞義；每個詞義配一筆英英釋義：對應的 WordNet synset 中跟詞義英文說明最接近的一筆（對不到就沒有）
+  const shownSenses = senseRows
+    .filter((s) => exampleRows.some((ex) => ex.senseId === s.id))
+    .map(({ synsets, gloss, ...s }) => ({
+      ...s,
+      def: closestDef(gloss, en.filter((d) => d.sourceRef !== null && synsets?.includes(d.sourceRef))),
+    }));
+  const usedDefs = new Set(shownSenses.map((s) => s.def));
   const linkable = await findLinkableWords([...en.map((d) => d.text), ...exampleRows.map((ex) => ex.textEn)]);
 
   return {
@@ -207,8 +215,9 @@ export async function getWord(input: string, exampleLimit = 20) {
       textZh: textZhRevised ?? ex.textZh,
       zhRevised: textZhRevised !== null,
     })),
-    // 只列出有例句的詞義
-    senses: senseRows.filter((s) => exampleRows.some((ex) => ex.senseId === s.id)),
+    senses: shownSenses,
+    /** 有詞義時，沒放到詞義標題下的英英釋義（例句區最後收合顯示） */
+    otherEn: shownSenses.length > 0 ? en.filter((d) => !usedDefs.has(d)) : [],
     inflections,
     lemmaOf,
     confusables: similar.filter((s) => s.kind === "confusable").map(({ headword, display }) => ({ headword, display })),
@@ -230,6 +239,33 @@ const FUNCTION_WORDS = new Set(
   will would shall should can could may might must
   not no`.split(/\s+/),
 );
+
+/** 實詞的粗略詞幹集合（去掉虛詞與常見字尾），比對兩段英文用 */
+function contentStems(text: string): Set<string> {
+  return new Set(
+    wordsIn(text)
+      .filter((w) => !FUNCTION_WORDS.has(w))
+      .map((w) => (w.length > 4 ? w.replace(/(ing|ed|es|s)$/, "") : w)),
+  );
+}
+
+/**
+ * 從候選英英釋義中挑出跟詞義英文說明（LLM 寫的 gloss_en）用字最接近的一筆（Jaccard 相似度）；
+ * 同分取排序較前的。沒有說明時直接取第一筆。
+ */
+function closestDef<T extends { text: string }>(gloss: string | null, candidates: T[]): T | null {
+  if (!gloss || candidates.length <= 1) return candidates[0] ?? null;
+  const target = contentStems(gloss);
+  let best = candidates[0];
+  let bestScore = -1;
+  for (const d of candidates) {
+    const stems = contentStems(d.text);
+    const shared = [...stems].filter((s) => target.has(s)).length;
+    const score = shared / (stems.size + target.size - shared || 1);
+    if (score > bestScore) [best, bestScore] = [d, score];
+  }
+  return best;
+}
 
 /** 這些文字裡有單字頁可去的字：本身是詞條，或是某個詞條的變化形（單字頁會轉到原形）；虛詞除外 */
 async function findLinkableWords(texts: string[]): Promise<string[]> {

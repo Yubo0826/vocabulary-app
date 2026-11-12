@@ -124,7 +124,8 @@ function WordView({ word }: { word: WordDetail }) {
             </Section>
           )}
 
-          {en.length > 0 && (
+          {/* 有詞義分組時，英英釋義改放在例句區各詞義標題下 */}
+          {en.length > 0 && senses.length === 0 && (
             <Section title="英英釋義">
               {groupBy(en, (d) => d.pos ?? "").map(([pos, defs]) => (
                 <div key={pos} className="not-first:mt-2">
@@ -156,7 +157,7 @@ function WordView({ word }: { word: WordDetail }) {
 
           {examples.length > 0 && (
             <Section title="例句">
-              <ExampleBrowser examples={examples} senses={senses} forms={[...highlightForms]} linkable={linkable} />
+              <ExampleBrowser examples={examples} senses={senses} otherEn={word.otherEn} forms={[...highlightForms]} linkable={linkable} />
             </Section>
           )}
         </TabsContent>
