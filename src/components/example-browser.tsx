@@ -50,7 +50,7 @@ export function ExampleBrowser({
     <div className="flex flex-col gap-8">
       {groups.map((g) => (
         <section key={g.key} className="flex flex-col gap-3">
-          <div className="border-b pb-2">
+          <div className="rounded-r-lg border-l-4 border-primary bg-primary/8 py-2 pr-3 pl-3">
             <h3 className="flex items-baseline gap-1.5 font-semibold text-primary">
               {g.pos && <span className="text-sm font-normal italic">{g.pos}</span>}
               {g.label}
