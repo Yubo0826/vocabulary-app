@@ -152,6 +152,7 @@ export function ReviewSession({ initial }: { initial: ReviewState }) {
               {item.phonetic && <span className="font-mono">/{item.phonetic}/</span>}
               <AccentToggle />
             </div>
+            {item.frontExample && <FrontExample item={item} example={item.frontExample} flipped={flipped} />}
           </div>
 
           {flipped ? (
@@ -196,6 +197,29 @@ function Kbd({ children }: { children: React.ReactNode }) {
 
 function Pos({ children }: { children: React.ReactNode }) {
   return <span className="mr-1.5 text-sm text-muted-foreground">{children}</span>;
+}
+
+/** 題目例句：只顯示英文、不做單字連結（避免提前看答案）；翻面後才出現中文 */
+function FrontExample({
+  item,
+  example,
+  flipped,
+}: {
+  item: NonNullable<ReviewState["item"]>;
+  example: NonNullable<NonNullable<ReviewState["item"]>["frontExample"]>;
+  flipped: boolean;
+}) {
+  const forms = new Set([item.headword, ...item.forms]);
+  return (
+    <div className="mt-3 flex w-full max-w-xl flex-col gap-1 border-t border-accent-foreground/15 pt-4">
+      <div className="flex items-start justify-center gap-1">
+        <p className="text-lg leading-relaxed text-foreground">{highlight(example.textEn, forms)}</p>
+        <SpeakButton text={example.textEn} size="sm" />
+        <ExampleSource example={example} />
+      </div>
+      {flipped && example.textZh && <p className="text-muted-foreground">{example.textZh}</p>}
+    </div>
+  );
 }
 
 function Answer({ item }: { item: NonNullable<ReviewState["item"]> }) {

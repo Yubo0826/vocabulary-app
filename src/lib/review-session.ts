@@ -14,7 +14,9 @@ import {
   type ReviewStats,
 } from "./review";
 
-const EXAMPLES_SHOWN = 2;
+const EXAMPLES_SHOWN = 2; // 翻面後除了題目例句，再顯示幾句
+
+type Example = WordDetail["examples"][number];
 const EN_DEFS_SHOWN = 3;
 
 export type ReviewItem = {
@@ -26,7 +28,10 @@ export type ReviewItem = {
   zh: { pos: string | null; text: string }[];
   en: { pos: string | null; text: string }[];
   forms: string[];
-  examples: WordDetail["examples"];
+  /** 題目面的例句（只顯示英文，翻面後才出現中文）；每次複習輪流換一句 */
+  frontExample: Example | null;
+  /** 翻面後的其他例句（不含題目例句） */
+  examples: Example[];
   /** 例句與英英釋義中有單字頁可去的字 */
   linkable: string[];
   /** 評分 1–4 的下次間隔文字，例如「10 分鐘」「3 天」 */
@@ -59,7 +64,10 @@ export async function getReviewState(userId: string, cardId?: string): Promise<R
 }
 
 async function toItem(card: CardRow, now: Date, settings: Awaited<ReturnType<typeof getSettings>>): Promise<ReviewItem> {
-  const [word, preview] = await Promise.all([getWord(card.headword, EXAMPLES_SHOWN), previewCard(card, settings, now)]);
+  const [word, preview] = await Promise.all([getWord(card.headword), previewCard(card, settings, now)]);
+  const rotation = word ? exampleRotation(word) : [];
+  // 用已複習次數輪流挑，復原後 reps 退回，會看到同一句
+  const frontExample = rotation.length > 0 ? rotation[card.reps % rotation.length] : null;
   return {
     cardId: card.id,
     headword: card.headword,
@@ -69,7 +77,8 @@ async function toItem(card: CardRow, now: Date, settings: Awaited<ReturnType<typ
     zh: word?.zh.map(({ pos, text }) => ({ pos, text })) ?? [],
     en: word?.en.slice(0, EN_DEFS_SHOWN).map(({ pos, text }) => ({ pos, text })) ?? [],
     forms: word?.inflections.map((f) => f.form) ?? [],
-    examples: word?.examples ?? [],
+    frontExample,
+    examples: (word?.examples ?? []).filter((ex) => ex !== frontExample).slice(0, EXAMPLES_SHOWN),
     linkable: word?.linkable ?? [],
     intervals: {
       1: formatInterval(preview[1].getTime() - now.getTime()),
@@ -78,6 +87,20 @@ async function toItem(card: CardRow, now: Date, settings: Awaited<ReturnType<typ
       4: formatInterval(preview[4].getTime() - now.getTime()),
     },
   };
+}
+
+/**
+ * 題目例句的輪替順序：有詞義分組時各詞義輪流（第 1 個詞義的第 1 句、第 2 個詞義的第 1 句…），
+ * 讓連續幾次複習看到不同用法；沒有詞義時照例句排序。
+ */
+function exampleRotation(word: WordDetail): Example[] {
+  const groups = word.senses.map((s) => word.examples.filter((ex) => ex.senseId === s.id)).filter((g) => g.length > 0);
+  if (groups.length === 0) return word.examples;
+  const order: Example[] = [];
+  for (let i = 0; groups.some((g) => i < g.length); i++) {
+    for (const g of groups) if (i < g.length) order.push(g[i]);
+  }
+  return order;
 }
 
 /** 間隔的顯示文字 */
