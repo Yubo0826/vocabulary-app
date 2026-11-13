@@ -2,10 +2,10 @@
  * 字典查詢（僅限伺服器端）。字典資料只在匯入時變動，因此查詢結果以 `use cache` 快取；
  * 重新匯入後需重啟伺服器或等快取過期（cacheLife "days"）。
  */
-import { and, asc, desc, eq, inArray, like, ne, sql } from "drizzle-orm";
+import { and, asc, desc, eq, inArray, like, lte, ne, sql } from "drizzle-orm";
 import { cacheLife } from "next/cache";
 import { db } from "@/db";
-import { definitions, entries, exampleWords, examples, senses, similarWords, wordForms } from "@/db/schema";
+import { definitions, entries, entrySenses, exampleWords, examples, senses, similarWords, wordForms } from "@/db/schema";
 import { editDistance } from "./edit-distance";
 import { TECHNICAL_GLOSS_PATTERN, withoutTechnicalGlosses } from "./gloss";
 import { normalizeHeadword, wordsIn } from "./headword";
@@ -115,9 +115,25 @@ export async function searchDictionary(input: string, limit = 10): Promise<Searc
   };
 }
 
-/** 每個 headword 的第一筆中文釋義（含詞性）；優先取一般釋義，專業領域釋義排後 */
+/**
+ * 每個 headword 的簡短中文釋義（含詞性）。有 LLM 現代化詞條時取第一個詞義（第二個詞義詞性相同時一併列出），
+ * 否則取 ECDICT 第一筆（優先一般釋義，專業領域釋義排後）。
+ */
 async function firstGlosses(headwords: string[]): Promise<Map<string, string>> {
   if (headwords.length === 0) return new Map();
+  const modern = await db
+    .select({ headword: entrySenses.headword, pos: entrySenses.pos, label: entrySenses.labelZh, order: entrySenses.senseOrder })
+    .from(entrySenses)
+    .where(and(inArray(entrySenses.headword, headwords), lte(entrySenses.senseOrder, 2)))
+    .orderBy(entrySenses.headword, entrySenses.senseOrder);
+  const glosses = new Map<string, string>();
+  for (const [headword, rows] of Map.groupBy(modern, (r) => r.headword)) {
+    const first = rows[0];
+    glosses.set(headword, `${first.pos} ${rows.filter((r) => r.pos === first.pos).map((r) => r.label).join("；")}`);
+  }
+
+  const rest = headwords.filter((h) => !glosses.has(h));
+  if (rest.length === 0) return glosses;
   const rows = await db
     .selectDistinctOn([definitions.headword], {
       headword: definitions.headword,
@@ -125,9 +141,10 @@ async function firstGlosses(headwords: string[]): Promise<Map<string, string>> {
       text: definitions.text,
     })
     .from(definitions)
-    .where(and(inArray(definitions.headword, headwords), eq(definitions.lang, "zh-TW")))
+    .where(and(inArray(definitions.headword, rest), eq(definitions.lang, "zh-TW")))
     .orderBy(definitions.headword, sql`${definitions.text} ~ ${TECHNICAL_GLOSS_PATTERN}`, definitions.sortOrder);
-  return new Map(rows.map((r) => [r.headword, r.pos ? `${r.pos} ${r.text}` : r.text]));
+  for (const r of rows) glosses.set(r.headword, r.pos ? `${r.pos} ${r.text}` : r.text);
+  return glosses;
 }
 
 export type WordDetail = NonNullable<Awaited<ReturnType<typeof getWord>>>;
@@ -141,7 +158,7 @@ export async function getWord(input: string, exampleLimit = 20) {
   const [entry] = await db.select().from(entries).where(eq(entries.headword, headword));
   if (!entry) return null;
 
-  const [defs, exampleRows, senseRows, inflections, lemmaOf, similar] = await Promise.all([
+  const [defs, exampleRows, senseRows, inflections, lemmaOf, similar, modernRows] = await Promise.all([
     db
       .select({ lang: definitions.lang, pos: definitions.pos, text: definitions.text, sourceRef: definitions.sourceRef })
       .from(definitions)
@@ -190,21 +207,46 @@ export async function getWord(input: string, exampleLimit = 20) {
       .innerJoin(entries, eq(entries.headword, similarWords.word))
       .where(eq(similarWords.headword, headword))
       .orderBy(similarWords.kind, similarWords.rank),
+    // LLM 現代化詞條（docs/DATA-SOURCES.md「LLM 現代化詞條」）；有的話取代 ECDICT 中文與 WordNet 英英
+    db
+      .select({
+        pos: entrySenses.pos,
+        label: entrySenses.labelZh,
+        zh: entrySenses.defZh,
+        en: entrySenses.defEn,
+        usage: entrySenses.usage,
+        register: entrySenses.register,
+        synsets: entrySenses.wordnetSynsets,
+      })
+      .from(entrySenses)
+      .where(eq(entrySenses.headword, headword))
+      .orderBy(entrySenses.senseOrder),
   ]);
 
   const en = defs.filter((d) => d.lang === "en");
-  // 只列出有例句的詞義；每個詞義配一筆英英釋義：對應的 WordNet synset 中跟詞義英文說明最接近的一筆（對不到就沒有）
+  const modern = modernRows.map((s) => ({ pos: s.pos, label: s.label, zh: s.zh, en: s.en, usage: s.usage, register: s.register }));
+  // 只列出有例句的詞義；每個詞義配一筆英英釋義（對不到就沒有）：
+  // 有現代化詞條時取 WordNet synset 有重疊的第一個詞義的英英釋義，否則取對應 synset 中跟詞義英文說明最接近的 WordNet 釋義
   const shownSenses = senseRows
     .filter((s) => exampleRows.some((ex) => ex.senseId === s.id))
-    .map(({ synsets, gloss, ...s }) => ({
-      ...s,
-      def: closestDef(gloss, en.filter((d) => d.sourceRef !== null && synsets?.includes(d.sourceRef))),
-    }));
-  const usedDefs = new Set(shownSenses.map((s) => s.def));
-  const linkable = await findLinkableWords([...en.map((d) => d.text), ...exampleRows.map((ex) => ex.textEn)]);
+    .map(({ synsets, gloss, ...s }) => {
+      if (modernRows.length > 0) {
+        const match = modernRows.find((m) => m.synsets?.some((id) => synsets?.includes(id)));
+        return { ...s, def: match ? { text: match.en } : null };
+      }
+      const def = closestDef(gloss, en.filter((d) => d.sourceRef !== null && synsets?.includes(d.sourceRef)));
+      return { ...s, def: def ? { text: def.text } : null };
+    });
+  const usedDefs = new Set(shownSenses.map((s) => s.def?.text));
+  const linkable = await findLinkableWords([
+    ...(modern.length > 0 ? modern.map((s) => s.en) : en.map((d) => d.text)),
+    ...exampleRows.map((ex) => ex.textEn),
+  ]);
 
   return {
     entry,
+    /** LLM 現代化詞條的詞義（依現代常用程度排序）；空陣列表示這個字沒有，改用 zh／en */
+    modern,
     zh: withoutTechnicalGlosses(defs.filter((d) => d.lang === "zh-TW")),
     en,
     /** 例句與英英釋義中查得到單字頁的字（詞條或變化形），顯示時做成連結 */
@@ -216,8 +258,8 @@ export async function getWord(input: string, exampleLimit = 20) {
       zhRevised: textZhRevised !== null,
     })),
     senses: shownSenses,
-    /** 有詞義時，沒放到詞義標題下的英英釋義（例句區最後收合顯示） */
-    otherEn: shownSenses.length > 0 ? en.filter((d) => !usedDefs.has(d)) : [],
+    /** 有詞義、沒有現代化詞條時，沒放到詞義標題下的 WordNet 英英釋義（例句區最後收合顯示） */
+    otherEn: shownSenses.length > 0 && modern.length === 0 ? en.filter((d) => !usedDefs.has(d.text)) : [],
     inflections,
     lemmaOf,
     confusables: similar.filter((s) => s.kind === "confusable").map(({ headword, display }) => ({ headword, display })),

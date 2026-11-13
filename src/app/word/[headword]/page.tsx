@@ -3,6 +3,7 @@ import { notFound, redirect } from "next/navigation";
 import { Suspense } from "react";
 import { ExampleBrowser } from "@/components/example-browser";
 import { highlight, type WordLinks } from "@/components/example-text";
+import { ModernDefinitions } from "@/components/modern-definitions";
 import { FamiliarityControl, NoteButton, NotePreview, SaveButton } from "@/components/save-panel";
 import { AccentToggle, SpeakButton } from "@/components/speech";
 import { Badge } from "@/components/ui/badge";
@@ -54,7 +55,7 @@ async function WordContent({ raw }: { raw: string }) {
 }
 
 function WordView({ word }: { word: WordDetail }) {
-  const { entry, zh, en, examples, senses, inflections, lemmaOf, confusables, synonyms, linkable } = word;
+  const { entry, modern, zh, en, examples, senses, inflections, lemmaOf, confusables, synonyms, linkable } = word;
   const examTags = (entry.tags ?? []).filter((t) => t in EXAM_TAGS);
   const similarCount = confusables.length + synonyms.length;
   const highlightForms = new Set([entry.headword, ...inflections.map((f) => f.form)]);
@@ -111,7 +112,14 @@ function WordView({ word }: { word: WordDetail }) {
           </TabsList>
         )}
         <TabsContent value="main" className="flex flex-col gap-4 text-base">
-          {zh.length > 0 && (
+          {/* 有 LLM 現代化詞條時取代 ECDICT 中文與 WordNet 英英 */}
+          {modern.length > 0 && (
+            <Section title="釋義">
+              <ModernDefinitions senses={modern} links={defLinks} />
+            </Section>
+          )}
+
+          {modern.length === 0 && zh.length > 0 && (
             <Section title="中文釋義">
               <ul className="flex flex-col gap-1.5 text-[1.05rem]">
                 {zh.map((d, i) => (
@@ -125,7 +133,7 @@ function WordView({ word }: { word: WordDetail }) {
           )}
 
           {/* 有詞義分組時，英英釋義改放在例句區各詞義標題下 */}
-          {en.length > 0 && senses.length === 0 && (
+          {modern.length === 0 && en.length > 0 && senses.length === 0 && (
             <Section title="英英釋義">
               {groupBy(en, (d) => d.pos ?? "").map(([pos, defs]) => (
                 <div key={pos} className="not-first:mt-2">

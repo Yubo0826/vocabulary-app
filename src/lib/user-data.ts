@@ -9,7 +9,7 @@
 import { and, asc, desc, eq, ilike, inArray, isNotNull, isNull, notInArray, or, sql } from "drizzle-orm";
 import { db } from "@/db";
 import { cards, definitions, entries, savedWords, wordbookItems, wordbooks, wordForms } from "@/db/schema";
-import { TECHNICAL_GLOSS_PATTERN } from "@/lib/gloss";
+import { modernGlossSql, TECHNICAL_GLOSS_PATTERN } from "@/lib/gloss";
 import { familiarityOf } from "./familiarity";
 import { normalizeHeadword } from "./headword";
 import { MAX_IMPORT_CHARS, MAX_IMPORT_WORDS, parseWordList } from "./word-list";
@@ -325,11 +325,12 @@ export type SavedSort = "recent" | "alpha";
 /** 收藏字的第一筆中文釋義（列表顯示用；優先取一般釋義，專業領域釋義排後）。
  * 注意：select 欄位中的子查詢，Drizzle 會把 ${column} 輸出成不帶表名的欄位，關聯條件會錯，
  * 因此子查詢一律用別名寫出完整欄位名稱 */
-const firstGloss = () => sql<string | null>`(
-    SELECT CASE WHEN d.pos IS NULL THEN d.text ELSE d.pos || ' ' || d.text END
+const firstGloss = () => sql<string | null>`coalesce(
+    ${modernGlossSql(sql`"saved_words"."headword"`)},
+    (SELECT CASE WHEN d.pos IS NULL THEN d.text ELSE d.pos || ' ' || d.text END
     FROM ${definitions} d
     WHERE d.headword = "saved_words"."headword" AND d.lang = 'zh-TW'
-    ORDER BY d.text ~ ${TECHNICAL_GLOSS_PATTERN}, d.sort_order LIMIT 1)`;
+    ORDER BY d.text ~ ${TECHNICAL_GLOSS_PATTERN}, d.sort_order LIMIT 1))`;
 
 /** 收藏列表：可依單字本篩選、依收藏時間（新到舊）或字母排序 */
 export async function listSavedWords(userId: string, options: { wordbookId?: string | null; sort?: SavedSort } = {}) {

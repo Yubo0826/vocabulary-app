@@ -74,8 +74,20 @@ async function toItem(card: CardRow, now: Date, settings: Awaited<ReturnType<typ
     display: word?.entry.display ?? card.headword,
     phonetic: word?.entry.phonetic ?? null,
     state: card.state,
-    zh: word?.zh.map(({ pos, text }) => ({ pos, text })) ?? [],
-    en: word?.en.slice(0, EN_DEFS_SHOWN).map(({ pos, text }) => ({ pos, text })) ?? [],
+    // 有 LLM 現代化詞條時只列常用的意思（沒有常用的就列第一個），否則用 ECDICT 中文與 WordNet 英英
+    ...(word && word.modern.length > 0
+      ? (() => {
+          const common = word.modern.filter((s) => s.usage === "common");
+          const shown = common.length > 0 ? common : word.modern.slice(0, 1);
+          return {
+            zh: shown.map((s) => ({ pos: s.pos, text: s.label })),
+            en: shown.slice(0, EN_DEFS_SHOWN).map((s) => ({ pos: s.pos, text: s.en })),
+          };
+        })()
+      : {
+          zh: word?.zh.map(({ pos, text }) => ({ pos, text })) ?? [],
+          en: word?.en.slice(0, EN_DEFS_SHOWN).map(({ pos, text }) => ({ pos, text })) ?? [],
+        }),
     forms: word?.inflections.map((f) => f.form) ?? [],
     frontExample,
     examples: (word?.examples ?? []).filter((ex) => ex !== frontExample).slice(0, EXAMPLES_SHOWN),
