@@ -57,6 +57,13 @@
       "when": 1794552013929,
       "tag": "0007_review_front_example",
       "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1794559163924,
+      "tag": "0008_llm_entry_senses",
+      "breakpoints": true
     }
   ]
 }

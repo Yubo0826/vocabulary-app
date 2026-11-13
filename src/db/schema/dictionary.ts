@@ -149,6 +149,33 @@ export const senses = pgTable(
 );
 
 /**
+ * LLM 整理的現代化詞條：每個詞義有中文標籤、中文說明、學習者風格的英英釋義、常用程度與語域。
+ * 以 ECDICT 與 OEWN 為參考依據，去掉古義、依現代用法排序。
+ * 由 scripts/import/llm-entries.ts 從 data/llm/entries/full/*.json 匯入（scripts/llm/generate-entries.ts 產生）。
+ * 跟 dict_senses（例句分組用）是兩套獨立的資料，不互相參照。
+ */
+export const entrySenses = pgTable(
+  "dict_entry_senses",
+  {
+    id: serial("id").primaryKey(),
+    headword: text("headword")
+      .notNull()
+      .references(() => entries.headword, { onDelete: "cascade" }),
+    senseOrder: smallint("sense_order").notNull(), // 1 起算，依現代常用程度
+    pos: text("pos").notNull(),
+    labelZh: text("label_zh").notNull(), // 簡短中文標籤，例如「擔心的、憂慮的」
+    defZh: text("def_zh").notNull(), // 一句中文說明
+    defEn: text("def_en").notNull(), // 學習者風格的英英釋義
+    usage: text("usage", { enum: ["common", "less_common", "rare"] }).notNull(),
+    register: text("register").array().notNull().default(sql`'{}'::text[]`), // formal、informal、slang、literary、old、technical、offensive
+    wordnetSynsets: text("wordnet_synsets").array(), // 對應的 OEWN synset id，方便核對
+    source: text("source").notNull().default("llm"),
+    model: text("model"),
+  },
+  (t) => [uniqueIndex("dict_entry_senses_headword_order_idx").on(t.headword, t.senseOrder)],
+);
+
+/**
  * 相似字：單字頁「相似」區塊顯示的兩排字，由 scripts/import/similar.ts 預先算好。
  * - kind = 'confusable'：拼法相近、容易看錯的字（編輯距離計算，source = 'computed'）
  * - kind = 'synonym'：近義字（Open English WordNet 的同義、上下位、相似關係，source = 'oewn'）

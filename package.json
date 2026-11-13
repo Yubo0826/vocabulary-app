@@ -17,6 +17,7 @@
     "import:tatoeba": "tsx scripts/import/tatoeba.ts",
     "import:llm-examples": "tsx scripts/import/llm-examples.ts",
     "import:llm-senses": "tsx scripts/import/llm-senses.ts",
+    "import:llm-entries": "tsx scripts/import/llm-entries.ts",
     "llm:examples": "tsx scripts/llm/generate-examples.ts",
     "llm:check": "tsx scripts/llm/check-examples.ts",
     "llm:senses": "tsx scripts/llm/generate-senses.ts",
@@ -24,7 +25,7 @@
     "import:wordnet": "tsx scripts/import/wordnet.ts",
     "import:similar": "tsx scripts/import/similar.ts",
     "import:family": "tsx scripts/import/family.ts",
-    "import:all": "npm run import:ecdict && npm run import:wordnet && npm run import:similar && npm run import:family && npm run import:tatoeba && npm run import:llm-examples && npm run import:llm-senses && npm run import:stats",
+    "import:all": "npm run import:ecdict && npm run import:wordnet && npm run import:similar && npm run import:family && npm run import:tatoeba && npm run import:llm-examples && npm run import:llm-senses && npm run import:llm-entries && npm run import:stats",
     "test": "tsx --test --test-concurrency=1 tests/*.test.ts"
   },
   "dependencies": {

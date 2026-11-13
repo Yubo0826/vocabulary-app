@@ -3,7 +3,7 @@
 Moji 的字典資料（`dict_` 開頭的表）全部由 `scripts/import/` 的匯入腳本寫入，App 只讀不寫。
 本文件記錄每個來源怎麼取得、用了哪些過濾條件，以及目前的資料量。過濾條件以腳本為準，改腳本時請一併更新本文件。
 
-最後更新：2026-11-11
+最後更新：2026-11-13
 
 ## 總覽
 
@@ -13,6 +13,7 @@ Moji 的字典資料（`dict_` 開頭的表）全部由 `scripts/import/` 的匯
 | [Open English WordNet 2025](https://github.com/globalwordnet/english-wordnet) | CC BY 4.0（需標示出處） | 英英釋義、近義字、詞性家族 | `dict_definitions`（en）、`dict_similar_words`、`dict_word_family` | `import:wordnet`、`import:similar`、`import:family` |
 | [Tatoeba](https://tatoeba.org) | 多數 CC BY 2.0 FR，部分 CC0 | 真人例句與中文翻譯 | `dict_examples`（source = `tatoeba`）、`dict_example_words` | `import:tatoeba` |
 | LLM 產生 | — | 補 Tatoeba 沒有或太少例句的字 | `dict_examples`（source = `llm`）、`dict_example_words` | `llm:examples` → `import:llm-examples` |
+| LLM 產生 | — | 現代化詞條：詞義、中英釋義、常用程度、語域（以 ECDICT 與 OEWN 為參考） | `dict_entry_senses` | `generate-entries.ts` → `import:llm-entries` |
 | 自行計算 | — | 易混淆字、部分詞性家族 | `dict_similar_words`、`dict_word_family`（source = `computed`） | `import:similar`、`import:family` |
 
 **禁止使用**：Cambridge、Oxford、Merriam-Webster、Longman 等有著作權的字典內容。Wiktionary（CC BY-SA）暫不使用，要引入需先討論。
@@ -141,10 +142,26 @@ Moji 的字典資料（`dict_` 開頭的表）全部由 `scripts/import/` 的匯
 
 Tatoeba 匯入另外把中文翻譯裡緊接在中文字後面的半形標點（, ? ! : ;）轉成全形。
 
+## LLM 現代化詞條
+
+ECDICT 與 WordNet 源自舊字典：收了古義（apprehensive「敏悟的」、awful「莊嚴的」）、排序不依現代用法、沒有語域標記。改由 LLM 以這兩者為參考，重新整理每個字。由 `scripts/llm/generate-entries.ts` 產生、`import:llm-entries` 匯入 `dict_entry_senses`：
+
+- 每個詞義：詞性、中文標籤（`label_zh`）、一句中文說明（`def_zh`）、學習者風格的英英釋義（`def_en`）、常用程度（`usage`：common／less_common／rare）、語域（`register`：formal、informal、slang、literary、old、technical、offensive）、對應的 OEWN synset id
+- 古義、罕用義放在 JSON 的 `omitted`（附原因），不進資料庫
+- 提示要求補上現代網路、科技用法（stream「串流」、ghost「突然斷聯」），並以自己的話撰寫英英釋義、不照抄有著作權的字典
+- 資料檔依字首分檔：`data/llm/entries/full/<字首>.json`；試跑與抽查對照在 `data/llm/entries/*.md`
+- 目前進度（2026-11-13，deepseek-flash）：10,696 字、33,969 個詞義，涵蓋詞頻約前 9,600 名。計畫做到詞頻前 2 萬，其餘的字維持 ECDICT／WordNet
+- 與 `dict_senses`（例句分組用）是兩套獨立資料
+
+```bash
+npx tsx --env-file=.env.local scripts/llm/generate-entries.ts --max-rank=20000 --concurrency=12   # 接續產生（已完成的字會跳過）
+npm run import:llm-entries
+```
+
 ## 重新匯入與同步正式環境
 
 ```bash
-npm run import:all          # ECDICT → WordNet → 相似字 → 詞性家族 → Tatoeba → LLM 例句 → LLM 詞義 → 統計
+npm run import:all          # ECDICT → WordNet → 相似字 → 詞性家族 → Tatoeba → LLM 例句 → LLM 詞義 → LLM 詞條 → 統計
 npm run llm:examples -- --limit=250            # 用 DeepSeek 產生例句（需要 .env.local 的 DEEPSEEK_API_KEY）
 npm run llm:examples -- --max-existing=1       # 補強只有 1 句例句的字
 npm run llm:check                              # 檢查 data/llm/examples/ 全部資料
