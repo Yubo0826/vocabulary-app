@@ -25,6 +25,7 @@ async function Settings() {
         newCardsPerDay: settings.newCardsPerDay,
         desiredRetention: settings.desiredRetention,
         dayStartsAtHour: settings.dayStartsAtHour,
+        frontExample: settings.frontExample,
       }}
       timezone={settings.timezone}
     />

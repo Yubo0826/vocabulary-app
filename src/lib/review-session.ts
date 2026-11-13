@@ -65,7 +65,7 @@ export async function getReviewState(userId: string, cardId?: string): Promise<R
 
 async function toItem(card: CardRow, now: Date, settings: Awaited<ReturnType<typeof getSettings>>): Promise<ReviewItem> {
   const [word, preview] = await Promise.all([getWord(card.headword), previewCard(card, settings, now)]);
-  const rotation = word ? exampleRotation(word) : [];
+  const rotation = word && settings.frontExample ? exampleRotation(word) : [];
   // 用已複習次數輪流挑，復原後 reps 退回，會看到同一句
   const frontExample = rotation.length > 0 ? rotation[card.reps % rotation.length] : null;
   return {

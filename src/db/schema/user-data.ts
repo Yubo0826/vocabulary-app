@@ -17,6 +17,7 @@ import {
   uuid,
   integer,
   smallint,
+  boolean,
   doublePrecision,
   real,
   jsonb,
@@ -179,5 +180,6 @@ export const userSettings = pgTable("user_settings", {
   newCardsPerDay: integer("new_cards_per_day").notNull().default(20),
   dayStartsAtHour: smallint("day_starts_at_hour").notNull().default(4), // 凌晨 4 點換日
   timezone: text("timezone").notNull().default("Asia/Taipei"),
+  reviewFrontExample: boolean("review_front_example").notNull().default(true), // 複習題目面顯示一句例句
   updatedAt: ts("updated_at").notNull().defaultNow(),
 });

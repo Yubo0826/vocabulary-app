@@ -5,17 +5,19 @@ import { useId, useState, useTransition } from "react";
 import { updateSettingsAction } from "@/app/actions";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { NativeSelect } from "@/components/ui/native-select";
 
-type Values = { newCardsPerDay: number; desiredRetention: number; dayStartsAtHour: number };
+type Values = { newCardsPerDay: number; desiredRetention: number; dayStartsAtHour: number; frontExample: boolean };
 
 const RETENTION_OPTIONS = [0.8, 0.85, 0.9, 0.95];
 const HOURS = Array.from({ length: 24 }, (_, h) => h);
 
 export function SettingsForm({ initial, timezone }: { initial: Values; timezone: string }) {
   const [values, setValues] = useState(initial);
+  const frontExampleId = useId();
   const [pending, startTransition] = useTransition();
   const [message, setMessage] = useState<{ ok: boolean; text: string } | null>(null);
   const retentionOptions = RETENTION_OPTIONS.includes(initial.desiredRetention)
@@ -84,6 +86,18 @@ export function SettingsForm({ initial, timezone }: { initial: Values; timezone:
             </NativeSelect>
           )}
         </Field>
+
+        <div className="flex flex-col gap-1.5">
+          <div className="flex items-center gap-2.5">
+            <Checkbox
+              id={frontExampleId}
+              checked={values.frontExample}
+              onCheckedChange={(checked) => setValues({ ...values, frontExample: checked === true })}
+            />
+            <Label htmlFor={frontExampleId}>題目顯示例句</Label>
+          </div>
+          <p className="text-sm text-muted-foreground">複習時在單字下方附一句英文例句，翻面後才顯示中文。每次複習輪流換一句。</p>
+        </div>
 
         {message && (
           <p className={message.ok ? "text-sm text-muted-foreground" : "text-sm text-destructive"} role={message.ok ? "status" : "alert"}>

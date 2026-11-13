@@ -43,6 +43,8 @@ export type ReviewSettings = {
   newCardsPerDay: number;
   dayStartsAtHour: number;
   timezone: string;
+  /** 複習題目面顯示一句例句 */
+  frontExample: boolean;
 };
 
 export const DEFAULT_SETTINGS: ReviewSettings = {
@@ -52,6 +54,7 @@ export const DEFAULT_SETTINGS: ReviewSettings = {
   newCardsPerDay: 20,
   dayStartsAtHour: 4,
   timezone: "Asia/Taipei",
+  frontExample: true,
 };
 
 export const SETTINGS_LIMITS = {
@@ -71,12 +74,14 @@ export async function getSettings(userId: string): Promise<ReviewSettings> {
     newCardsPerDay: row.newCardsPerDay,
     dayStartsAtHour: row.dayStartsAtHour,
     timezone: row.timezone,
+    frontExample: row.reviewFrontExample,
   };
 }
 
+/** 更新設定；frontExample 沒給時維持原值 */
 export async function updateSettings(
   userId: string,
-  input: { newCardsPerDay: number; desiredRetention: number; dayStartsAtHour: number },
+  input: { newCardsPerDay: number; desiredRetention: number; dayStartsAtHour: number; frontExample?: boolean },
 ): Promise<void> {
   const check = (value: number, key: keyof typeof SETTINGS_LIMITS, label: string, integer: boolean) => {
     const { min, max } = SETTINGS_LIMITS[key];
@@ -92,6 +97,7 @@ export async function updateSettings(
     newCardsPerDay: input.newCardsPerDay,
     desiredRetention: Math.round(input.desiredRetention * 100) / 100,
     dayStartsAtHour: input.dayStartsAtHour,
+    ...(input.frontExample !== undefined && { reviewFrontExample: input.frontExample }),
     updatedAt: new Date(),
   };
   await db

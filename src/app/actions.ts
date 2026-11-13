@@ -142,6 +142,7 @@ export async function updateSettingsAction(input: {
   newCardsPerDay: unknown;
   desiredRetention: unknown;
   dayStartsAtHour: unknown;
+  frontExample: unknown;
 }): Promise<ActionResult> {
   const num = (v: unknown) => (typeof v === "number" ? v : NaN);
   return run((userId) =>
@@ -149,6 +150,7 @@ export async function updateSettingsAction(input: {
       newCardsPerDay: num(input.newCardsPerDay),
       desiredRetention: num(input.desiredRetention),
       dayStartsAtHour: num(input.dayStartsAtHour),
+      frontExample: typeof input.frontExample === "boolean" ? input.frontExample : undefined,
     }),
   );
 }

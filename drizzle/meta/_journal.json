@@ -50,6 +50,13 @@
       "when": 1794390343533,
       "tag": "0006_senses",
       "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1794552013929,
+      "tag": "0007_review_front_example",
+      "breakpoints": true
     }
   ]
 }
