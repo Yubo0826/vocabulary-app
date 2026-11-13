@@ -1,0 +1,1484 @@
+{
+ "model": "deepseek-flash",
+ "generatedAt": "2026-11-13",
+ "method": "scripts/llm/generate-entries.ts：以 ECDICT 中文釋義與 OEWN 詞義為參考，整理現代化詞義、中英釋義、常用程度與語域",
+ "words": [
+  {
+   "headword": "yacht",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "遊艇、帆船（休閒用）",
+     "zh": "有錢人用來休閒出遊或比賽的船，可靠風帆或引擎推動。",
+     "en": "a costly boat driven by sails or an engine, used for pleasure trips or races",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04617370-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "乘遊艇、駕遊艇",
+     "zh": "搭遊艇或自己開遊艇出遊，多用於書面或較正式的說法。",
+     "en": "to travel or sail in a yacht, especially for pleasure",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01949240-v"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "yank",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "猛拉、用力一扯",
+     "zh": "突然用力把某物拉向自己或拉開，動作短促而有力。",
+     "en": "to pull something quickly and with force",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01594993-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "猛拉、用力一扯",
+     "zh": "指突然用力拉扯的動作，常說 give something a yank。",
+     "en": "a quick, strong pull on something",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "美國人（口語）",
+     "zh": "非美國人（尤其英國人）口中對美國人的俗稱，帶點隨意或調侃。",
+     "en": "an American, used especially by people from other countries",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "09766150-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "美國北方人（尤指南北戰爭時期）",
+     "reason": "歷史專義，現代一般語境幾乎不用"
+    }
+   ]
+  },
+  {
+   "headword": "yard",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "庭院、院子",
+     "zh": "房子周圍圍起來的土地，通常有草皮或花園。",
+     "en": "an area of land around a house or other building, often with grass or a garden",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04618236-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "碼（長度單位）",
+     "zh": "英制長度單位，1 碼等於 3 英尺（約 91.44 公分），常用於運動場地或布料。",
+     "en": "a unit of length equal to 3 feet or 91.44 centimeters, used especially in sports and for measuring cloth",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "13672065-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "場地、工場",
+     "zh": "圍起來供特定活動使用的土地，例如造船廠、廢車場。",
+     "en": "an enclosed area of land used for a particular activity, such as a shipyard or junkyard",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "08702032-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "鐵路調車場",
+     "zh": "鐵路系統中停放、調度或維修車廂的區域。",
+     "en": "an area with railway tracks where trains are kept, sorted, or repaired",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "04618511-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（家禽、牲畜的）圍欄",
+     "zh": "圈養雞、豬等動物的圍欄或小牧場。",
+     "en": "an enclosed area for keeping animals such as chickens or pigs",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "04617860-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "百、一百",
+     "zh": "口語或非正式場合中表示「一百」的說法。",
+     "en": "an informal word for the number 100",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "13772984-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "碼（體積單位，用於沙石）",
+     "reason": "專業領域過窄，一般學習者不會遇到。"
+    },
+    {
+     "meaning": "堆積原木的場地",
+     "reason": "罕用，僅在林業特定情境出現。"
+    },
+    {
+     "meaning": "帆桁（橫桁）",
+     "reason": "航海專業術語，現代一般用法極少見。"
+    }
+   ]
+  },
+  {
+   "headword": "yarn",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "紗、紗線",
+     "zh": "用來編織或縫紉的細線，由棉花、羊毛等纖維捻成。",
+     "en": "a thin thread made from twisted fibers, used for knitting or making cloth",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04433923-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（口語）長篇故事、奇聞",
+     "zh": "口語上指一段很長、常帶誇張色彩的故事或經歷。",
+     "en": "a long story, often one that is exciting or hard to believe",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "07235433-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "講（長篇）故事",
+     "zh": "口語用法，指滔滔不絕地講故事或經歷。",
+     "en": "to tell a long story about events or experiences",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "00956070-v"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "yeah",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "對、是啊",
+     "zh": "口語中表示同意、贊同對方的說法，是最常見的簡短回應。",
+     "en": "used to say that you agree with someone or that what they said is right",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "adv.",
+     "label": "嗯、對（回應呼喚）",
+     "zh": "別人叫你或問你話時，用來表示「我在聽」或「聽到了」。",
+     "en": "used to show that you are listening or that you have heard someone",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "adv.",
+     "label": "對啦、也是（帶保留）",
+     "zh": "語氣較隨意，表示同意但不太熱衷，或只是順著話題接話。",
+     "en": "used to agree in a casual way, sometimes without much interest",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "adv.",
+     "label": "而且、不只如此",
+     "zh": "在口語中接續補充更進一步的資訊，帶有加強語氣的效果。",
+     "en": "used to add something more to what was just said",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "00499758-r"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "year",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "年、一年",
+     "zh": "指十二個月、約三百六十五天的時間單位，用來說日期、期間或計算時間。",
+     "en": "a period of twelve months, used for talking about dates, lengths of time, or ages",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "15228587-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "年度、學年",
+     "zh": "指某種活動或制度劃分出來的一年期間，例如學年、會計年度。",
+     "en": "a period of about a year used for a particular activity, such as a school year or financial year",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "15229093-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "年齡、歲數",
+     "zh": "用來說某人幾歲，常見於「幾歲」的說法。",
+     "en": "used to talk about how old someone is",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "同屆畢業生、年級",
+     "zh": "指同一年畢業或入學的學生群體，常見於學校情境。",
+     "en": "a group of students who finish school in the same year",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "08255581-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "行星公轉週期",
+     "zh": "指行星繞太陽一圈所需的時間，屬於天文學用語。",
+     "en": "the time it takes a planet to go around the sun once",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "15226340-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "yearly",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "每年的、一年一度的",
+     "zh": "形容每年發生一次或每年計算一次的事物。",
+     "en": "happening once every year, or calculated over a period of one year",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01976215-s"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "每年、一年一次",
+     "zh": "表示某事每年發生一次，沒有例外。",
+     "en": "once every year, or every year without missing",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00082087-r"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "年鑑、年刊（每年出版一次的參考書）",
+     "reason": "名詞用法在現代英語幾乎不用，現多說 yearbook 或 annual；且與形容詞、副詞用法無關"
+    }
+   ]
+  },
+  {
+   "headword": "yearn",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "渴望、嚮往",
+     "zh": "強烈希望得到某事物或達到某種狀態，常帶有情感上的渴求。",
+     "en": "to want something very strongly, often over a long period of time",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01832347-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "思念、懷念（某人事物）",
+     "zh": "因為某人或某段時光已不在身邊而深深想念。",
+     "en": "to miss someone or something that is no longer with you and wish they were back",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01809651-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "同情",
+     "reason": "舊字典義，現代英語幾乎不用 yearn 表達同情，屬過時用法"
+    },
+    {
+     "meaning": "喜愛、疼愛",
+     "reason": "古義且罕用，現代多以 feel affection 等說法表達"
+    }
+   ]
+  },
+  {
+   "headword": "yell",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "大喊、吼叫",
+     "zh": "因為生氣、興奮、害怕或想引起注意而用很大的聲音喊出來",
+     "en": "to say something in a very loud voice, especially because you are angry, excited, or trying to be heard",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00915018-v",
+      "00914786-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "喊叫聲、吼聲",
+     "zh": "某人用力喊出來的聲音，常帶有情緒",
+     "en": "a loud cry made by someone, usually showing strong feeling",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07135232-n",
+      "07135865-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "（為某人）加油吶喊",
+     "zh": "在比賽或表演中齊聲大聲支持某個隊伍或表演者",
+     "en": "to shout loudly together to support a team or performer",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（齊聲）吶喊歡呼",
+     "reason": "與「加油吶喊」意思重複，已合併處理"
+    }
+   ]
+  },
+  {
+   "headword": "yellow",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "黃色的",
+     "zh": "像蛋黃、檸檬那樣的顏色，用來形容東西的顏色。",
+     "en": "having the color of an egg yolk or a lemon",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00386818-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "黃色",
+     "zh": "光譜上介於綠與橙之間的顏色，可指顏料或色調。",
+     "en": "the color between green and orange, like the color of the sun",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04972838-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "膽小的、怯懦的",
+     "zh": "口語用來罵人沒種、不敢面對事情。",
+     "en": "not brave; afraid to do something dangerous or difficult",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "00266180-s",
+      "01231243-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（報刊）煽情的、八卦的",
+     "zh": "形容媒體專門炒作醜聞、聳動消息。",
+     "en": "used about newspapers that focus on shocking or exciting stories",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "02109222-s"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "變黃、發黃",
+     "zh": "紙張、葉子等因時間久或老化而轉成黃色。",
+     "en": "to become yellow, especially over time",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00290602-v",
+      "01644956-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（因黃疸）皮膚發黃的",
+     "reason": "專業醫學用法，一般學習者少見"
+    },
+    {
+     "meaning": "容易受驚的",
+     "reason": "古義，現代已不使用"
+    }
+   ]
+  },
+  {
+   "headword": "yeltsin",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "葉爾欽（俄羅斯前總統）",
+     "zh": "指俄羅斯聯邦第一任總統鮑里斯·葉爾欽，常見於新聞、歷史與政治報導。",
+     "en": "Boris Yeltsin, the first president of Russia after the Soviet Union broke up",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "yen",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "日圓、日元",
+     "zh": "日本的貨幣單位，也指日本的錢幣。",
+     "en": "the unit of money used in Japan",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "13731805-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "渴望、嚮往",
+     "zh": "對某事物強烈的想望，多用於書面或較文雅的表達。",
+     "en": "a strong wish or longing for something",
+     "usage": "less_common",
+     "register": [
+      "literary"
+     ],
+     "synsets": [
+      "07502062-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "渴望、嚮往",
+     "zh": "很想要某樣東西或很想做某件事，語氣比 want 強烈。",
+     "en": "to want something very much, especially something you cannot have",
+     "usage": "less_common",
+     "register": [
+      "literary"
+     ],
+     "synsets": [
+      "01809651-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "嗜好、癖好",
+     "reason": "舊字典義，現代英語幾乎不用這個意思，渴望之義已涵蓋相關用法"
+    }
+   ]
+  },
+  {
+   "headword": "yep",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "是、對（口語）",
+     "zh": "口語上表示同意或肯定的回答，比 yes 輕鬆隨意，常用在對話、訊息和社群留言中。",
+     "en": "used to say yes in a casual way, especially in speech or online messages",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "美國俚語的「是」",
+     "reason": "與第一義重複，僅是同一意思的舊式標註方式"
+    }
+   ]
+  },
+  {
+   "headword": "yer",
+   "senses": [
+    {
+     "pos": "det.",
+     "label": "你的（口語、方言拼法）",
+     "zh": "把 your 寫成 yer，用來模擬隨意、粗獷或地方口音的說話方式。",
+     "en": "a way of writing \"your\" that shows a casual, rough, or regional way of speaking",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "西里爾字母中的兩個字母之一（原本代表斯拉夫語的超短母音）",
+     "reason": "專業語言學術語，一般學習者不會遇到，且與本字日常用法無關"
+    }
+   ]
+  },
+  {
+   "headword": "yes",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "是、對（表示同意）",
+     "zh": "回答問題或回應提議時，表示同意或肯定。",
+     "en": "used to give an affirmative answer or to agree with what someone says",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "adv.",
+     "label": "（應答呼喚）我在、什麼事",
+     "zh": "有人叫你的名字或呼喚你時，用來回應，表示你聽到了。",
+     "en": "used to answer when someone calls your name or gets your attention",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "adv.",
+     "label": "（回應敲門、詢問）請進、好的",
+     "zh": "有人敲門或在門外詢問時，用來表示可以進來或同意對方。",
+     "en": "used to say that someone may come in or that what they asked is fine",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "同意、肯定的答覆",
+     "zh": "指贊成或肯定的回答，常用於「是或否」的選擇情境。",
+     "en": "an answer or vote that says you agree or accept",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "07218560-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "v. 同意",
+     "reason": "字典把口語應答的 yes 硬列成動詞，現代英文不把 yes 當動詞用，屬誤譯。"
+    }
+   ]
+  },
+  {
+   "headword": "yesterday",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "昨天、昨日",
+     "zh": "指今天之前的那一天，常與過去式動詞連用。",
+     "en": "on the day before today",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00510249-r"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "昨天",
+     "zh": "指今天之前的那一天，可當主詞或與介系詞連用。",
+     "en": "the day that comes before today",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "15181147-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "過去、往日",
+     "zh": "指不久前的過去，常用於回顧或感嘆時光流逝。",
+     "en": "the time that has recently passed",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "15287949-n"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "不久前、近日",
+     "zh": "表示事情才剛發生不久，多用於書面或正式語境。",
+     "en": "only a short time ago",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00510352-r"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "yet",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "還、尚未（用於否定句）",
+     "zh": "表示某事到目前為止還沒發生，常與 not 或疑問句連用。",
+     "en": "used in negative sentences or questions to say that something has not happened up to now",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00028314-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "已經（用於疑問、肯定句）",
+     "zh": "在疑問句或肯定句中表示某事到目前為止已經發生。",
+     "en": "used in questions or affirmative sentences to ask or say whether something has happened by now",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00028191-r"
+     ]
+    },
+    {
+     "pos": "conj.",
+     "label": "然而、可是",
+     "zh": "連接兩個對比或讓步的句子，語氣比 but 正式一些。",
+     "en": "used to introduce a contrasting idea, meaning despite that",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00027761-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "更（與比較級連用）",
+     "zh": "放在比較級前面，表示程度更高，常見於 yet another、yet more。",
+     "en": "used before a comparative word to mean even more or one more",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00018101-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "總有一天、終究",
+     "zh": "表示在未來某個不確定的時間會發生。",
+     "en": "at some time in the future, especially after a period of waiting",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00048179-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "至今（最…的）",
+     "zh": "放在最高級後面，強調到目前為止最突出的一次。",
+     "en": "used after a superlative to mean the best or most extreme so far",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00028594-r"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "yield",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "屈服、讓步",
+     "zh": "在壓力、說服或誘惑下放棄抵抗或改變立場",
+     "en": "to stop resisting or give in to pressure, persuasion, or temptation",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00436056-v",
+      "02709149-v",
+      "01118865-v",
+      "00807711-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "出產、產生",
+     "zh": "土地、作物或過程產生某種結果或數量",
+     "en": "to produce or provide something as a result, especially crops or profits",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02344167-v",
+      "01632192-v",
+      "01632595-v",
+      "02296669-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "產量、收益",
+     "zh": "生產出來的數量，或投資、土地帶來的利潤",
+     "en": "the amount produced, or the profit earned from an investment or land",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00916463-n",
+      "13281089-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "讓出（路權、座位）",
+     "zh": "讓別人先走或把位置讓給別人",
+     "en": "to let someone else go first or take your place",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01852407-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "讓路、退讓",
+     "zh": "在交通中讓其他車輛或行人先行",
+     "en": "to allow other traffic or pedestrians to go before you",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01852407-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "（物體）彎曲、塌陷",
+     "zh": "受到壓力時彎曲或斷裂",
+     "en": "to bend or break under pressure or force",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01452389-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "投降、停止戰鬥",
+     "reason": "與「屈服、讓步」意思重疊，已合併"
+    },
+    {
+     "meaning": "死於、被壓倒",
+     "reason": "古義，現代已不使用"
+    },
+    {
+     "meaning": "勉強同意",
+     "reason": "與「屈服、讓步」意思重疊，已合併"
+    },
+    {
+     "meaning": "倒塌",
+     "reason": "與「彎曲、塌陷」意思重疊，已合併"
+    }
+   ]
+  },
+  {
+   "headword": "yo",
+   "senses": [
+    {
+     "pos": "int.",
+     "label": "嗨、喲（打招呼）",
+     "zh": "見到熟人、朋友時隨口打招呼，語氣輕鬆。",
+     "en": "a casual way of greeting someone you know",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "int.",
+     "label": "喂、欸（引起注意）",
+     "zh": "要叫住對方或把注意力拉過來時用。",
+     "en": "used to get someone's attention or call out to them",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "int.",
+     "label": "喲（強調語氣）",
+     "zh": "放在句尾或句中，替語氣加點強調或情緒，常見於口語和網路。",
+     "en": "used at the end of a sentence to add emphasis or feeling",
+     "usage": "less_common",
+     "register": [
+      "informal",
+      "slang"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "int.",
+     "label": "喲（表示驚訝、警告）",
+     "zh": "對某事感到驚訝，或提醒對方注意時發出的短促聲音。",
+     "en": "a short sound showing surprise or giving a warning",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "唷（表示鼓勵）",
+     "reason": "現代少見，鼓勵的語氣多半改用 come on、go 等，此義已併入語氣強調的用法"
+    }
+   ]
+  },
+  {
+   "headword": "yoga",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "瑜珈（運動）",
+     "zh": "結合姿勢、呼吸與冥想的健身運動，在健身房、教室或家中練習。",
+     "en": "a set of physical positions, breathing exercises, and meditation done to keep the body and mind healthy",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00632200-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "瑜珈（印度哲學修行）",
+     "zh": "源自印度的精神修行體系，透過行動、知識與虔誠追求心靈平靜與領悟。",
+     "en": "an Indian spiritual practice that aims to bring the mind peace and deeper understanding",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "06249497-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "yogurt",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "優格、酸奶",
+     "zh": "用牛奶發酵製成的濃稠食品，常當早餐或點心吃。",
+     "en": "a thick food made from milk that has been left to become sour and set",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07865312-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "酸乳酪（舊譯）",
+     "reason": "「酸乳酪」是舊式說法，現代台灣多說「優格」，意思與第一條相同，不另列。"
+    }
+   ]
+  },
+  {
+   "headword": "york",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "約克（英格蘭城市）",
+     "zh": "英格蘭北部的歷史城市，常出現在地名、旅遊與文化話題中。",
+     "en": "a historic city in northern England",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "約克（人名、地名）",
+     "zh": "常見於人名或地名，如紐約（New York）即由約克公爵得名。",
+     "en": "used in names of people and places, as in New York",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "約克王朝",
+     "zh": "十五世紀英格蘭的王室家族，以白玫瑰為標誌，常見於歷史教材。",
+     "en": "an English royal family that ruled in the 15th century",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "08176823-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "約克郡",
+     "reason": "應為 Yorkshire（約克郡）之簡稱誤用，York 本身不是郡名"
+    }
+   ]
+  },
+  {
+   "headword": "yorkshire",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "約克郡",
+     "zh": "英格蘭北部的一個傳統郡，常出現在地名、旅遊與英國文化相關話題中。",
+     "en": "a traditional county in northern England",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "約克夏（品種名）",
+     "zh": "用於約克夏㹴、約克夏布丁等名稱，指源自約克郡的事物或品種。",
+     "en": "used in names of things from Yorkshire, such as a breed of small terrier or a kind of pudding",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "約克王朝",
+     "reason": "歷史專有名詞，現代一般語境幾乎不用，且屬英國王室歷史的特定稱呼"
+    }
+   ]
+  },
+  {
+   "headword": "you",
+   "senses": [
+    {
+     "pos": "pron.",
+     "label": "你、你們",
+     "zh": "指對話的對象，單數或複數都可用。",
+     "en": "the person or people you are speaking to",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "pron.",
+     "label": "任何人、人們（泛指）",
+     "zh": "泛指一般人或某個不特定的人，常見於說明、規則或口語。",
+     "en": "used to mean any person in general, not a particular one",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "young",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "年輕的、年紀小的",
+     "zh": "指人或動物年紀輕、生命階段還早。",
+     "en": "having lived or existed for only a short time; not old",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01651383-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "年幼的、幼小的（動植物）",
+     "zh": "指動植物還在成長初期、尚未成熟。",
+     "en": "still growing and not yet fully developed, used of plants or animals",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00821577-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "年輕有活力的、朝氣蓬勃的",
+     "zh": "形容樣子或氣氛像年輕人一樣有精神。",
+     "en": "having the energy and freshness that is typical of young people",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01654162-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "資淺的、沒經驗的",
+     "zh": "指人剛進入某工作或領域，經驗還不多。",
+     "en": "new to a job or activity and not yet experienced in it",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00941001-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "幼獸、幼鳥",
+     "zh": "指動物生下來不久的小孩。",
+     "en": "a baby animal or bird",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01324070-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "年輕人（集合稱）",
+     "zh": "當複數用，泛指社會上年輕的一群人。",
+     "en": "young people thought of as a group",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "07960326-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "youngster",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "年輕人、小夥子",
+     "zh": "指年紀輕的人，尤其青少年或二十歲上下，語氣比 child 正式一點、比 youth 口語一點。",
+     "en": "a young person, especially a teenager or someone in their early twenties",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "09937051-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "小孩",
+     "reason": "現代 youngster 多指青少年到二十幾歲的年輕人，指幼童的用法已少見，且與主要詞義重疊"
+    }
+   ]
+  },
+  {
+   "headword": "your",
+   "senses": [
+    {
+     "pos": "pron.",
+     "label": "你的、你們的",
+     "zh": "表示某物屬於對方或與對方有關，是最基本的所屬說法。",
+     "en": "belonging to or connected with the person or people you are speaking to",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "pron.",
+     "label": "一般的、大家的（泛指）",
+     "zh": "用於泛指任何人，常見於格言、說明或抱怨某種普遍現象。",
+     "en": "used to talk about people in general rather than one particular person",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "pron.",
+     "label": "（餐廳、店員用語）您的",
+     "zh": "服務業對客人說話時的禮貌用法，例如點餐、帶位。",
+     "en": "used politely by someone serving a customer, as in a restaurant",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "yours",
+   "senses": [
+    {
+     "pos": "pron.",
+     "label": "你的、你們的（東西）",
+     "zh": "指屬於對方或對方群體的人事物，後面不接名詞，單獨使用。",
+     "en": "the thing or things that belong to you, used without a noun after it",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "pron.",
+     "label": "（信末）敬上、謹上",
+     "zh": "寫在信件結尾的禮貌用語，表示寫信人是對方的人。",
+     "en": "used at the end of a letter before your name, to end politely",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "pron.",
+     "label": "你的（問候、祝福）",
+     "zh": "用在問候語中，表示對對方或其家人的關心，如「問候你家人」。",
+     "en": "used in greetings to express good wishes to someone or their family",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "yourself",
+   "senses": [
+    {
+     "pos": "pron.",
+     "label": "你自己",
+     "zh": "指說話對象本人，用於強調或表示動作回到自己身上。",
+     "en": "used to talk about the person you are speaking to, or to show that an action comes back to that person",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "pron.",
+     "label": "你本人、親自",
+     "zh": "放在名詞或代名詞後面，強調就是那個人本身，不是別人。",
+     "en": "used after a noun or pronoun to emphasize that it is that exact person and no one else",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "pron.",
+     "label": "（口語）平常的你",
+     "zh": "指人在身心正常、自然的狀態下的樣子，常見於 be yourself 這類說法。",
+     "en": "your normal or natural state, especially in phrases like be yourself",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "pron.",
+     "label": "自己動手、自行",
+     "zh": "用於 by yourself、for yourself 等說法，表示不靠別人、獨自完成。",
+     "en": "used in phrases like by yourself or for yourself to mean without help from anyone else",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "yourselves",
+   "senses": [
+    {
+     "pos": "pron.",
+     "label": "你們自己（反身代名詞）",
+     "zh": "當動作的對象就是你們自己時使用，例如「你們要照顧好自己」。",
+     "en": "used when the people you are speaking to do something to their own selves",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "pron.",
+     "label": "你們親自、你們本人（強調用法）",
+     "zh": "放在 you 後面或句末，強調是「你們本人」而不是別人。",
+     "en": "used after 'you' to emphasize that you yourself, not someone else, do something",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "pron.",
+     "label": "（口語）你們自己、自行（不必別人幫忙）",
+     "zh": "常見於 help yourselves、make yourselves at home 這類招呼語，表示自行取用、不必拘束。",
+     "en": "used in phrases telling people to take something or act without waiting to be served",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "youth",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "青年、年輕人",
+     "zh": "指某個年輕人，尤指年輕男性；複數 youths 常在新聞中用來指涉滋事或涉案的年輕人。",
+     "en": "a young person, especially a young man or boy",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10824010-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "青年們、年輕人（集合）",
+     "zh": "把年輕人當成一個群體來談，例如「青年就業」「青年文化」。",
+     "en": "young people thought of as a group",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07960326-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "青年時期、青少年階段",
+     "zh": "指從童年到成年之間的人生階段，例如「他青年時期住過高雄」。",
+     "en": "the period of life when someone is young, between childhood and adulthood",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "15172673-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "青春、年輕活力",
+     "zh": "強調年輕帶來的朝氣、活力與新鮮感，常見於「青春不再」這類說法。",
+     "en": "the energy and freshness that comes with being young",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "04935762-n",
+      "14449257-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "初期、發展早期",
+     "zh": "用於組織、運動或事物的早期階段，如「政黨的初創時期」，文體較正式。",
+     "en": "the early stage in the development of something",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "15290845-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "年輕、未成熟的狀態",
+     "reason": "與「青年時期」「青春活力」意思重疊，已合併處理"
+    }
+   ]
+  },
+  {
+   "headword": "youthful",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "年輕的、青年的",
+     "zh": "指人年紀輕，或屬於年輕人的階段與特質。",
+     "en": "young, or having the qualities typical of young people",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01654162-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "有活力的、朝氣蓬勃的",
+     "zh": "形容外表、精神或風格顯得年輕有勁，常用於讚美較年長者。",
+     "en": "looking or feeling young and full of energy",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01654162-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "yugoslav",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "南斯拉夫的、南斯拉夫人的",
+     "zh": "用來指已解體的南斯拉夫這個國家，或與其人民、文化有關的事物。",
+     "en": "relating to the former country of Yugoslavia, its people, or their culture",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "02973558-a"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "南斯拉夫人",
+     "zh": "指過去南斯拉夫這個國家的人民，現在多用來談歷史或族群背景。",
+     "en": "a person who came from the former country of Yugoslavia",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "09770222-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "yugoslavia",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "南斯拉夫（已不存在的國家）",
+     "zh": "二十世紀位於巴爾幹半島的國家，1990 年代解體；現在多用來指這個歷史上的國家或該地區。",
+     "en": "a country that existed in the Balkans during the 20th century and broke apart in the 1990s",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  }
+ ]
+}

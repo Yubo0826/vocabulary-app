@@ -1,0 +1,2253 @@
+{
+ "model": "deepseek-flash",
+ "generatedAt": "2026-11-13",
+ "method": "scripts/llm/generate-entries.ts：以 ECDICT 中文釋義與 OEWN 詞義為參考，整理現代化詞義、中英釋義、常用程度與語域",
+ "words": [
+  {
+   "headword": "qb",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "四分衛（美式足球）",
+     "zh": "美式足球中負責組織進攻、傳球或跑陣的球員，口語與新聞常寫成 QB。",
+     "en": "the player in American football who leads the offense and throws or hands off the ball",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "QB（電玩遊戲的縮寫）",
+     "zh": "少數遊戲社群把 QB 當成遊戲名稱的縮寫，一般英文幾乎不會遇到。",
+     "en": "a short form used in some gaming communities for a game title",
+     "usage": "rare",
+     "register": [
+      "slang"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "定量（電生理）電池",
+     "reason": "專業領域過窄的縮寫，現代一般英文幾乎不用，且與常見的「四分衛」用法無關"
+    }
+   ]
+  },
+  {
+   "headword": "qc",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "品質管制、品管",
+     "zh": "製造或服務流程中確保產品品質符合標準的管理工作，常寫成 QC。",
+     "en": "the practice of checking and controlling the quality of products or services",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "（職場）品管人員、品管部門",
+     "zh": "公司裡負責檢查品質的人或單位，例如 QC 小組。",
+     "en": "the person or team in a company whose job is to check quality",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "（法律）御用大律師",
+     "zh": "英國等地的資深大律師頭銜，全稱 Queen's Counsel，現多寫成 KC。",
+     "en": "a senior lawyer in some countries, short for Queen's Counsel",
+     "usage": "rare",
+     "register": [
+      "formal",
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "[化] 質量管理",
+     "reason": "「質量管理」為中國大陸用語，台灣作「品質管制」；且此義已併入第一條，不另列。"
+    }
+   ]
+  },
+  {
+   "headword": "quake",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "地震",
+     "zh": "地層移動或火山活動造成地面震動，新聞與日常都用這個字，比 earthquake 簡短。",
+     "en": "a shaking of the ground caused by movement deep inside the earth",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07443554-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "顫抖、發抖",
+     "zh": "形容人因害怕、寒冷或情緒激動而身體抖動，帶文學或較書面的味道。",
+     "en": "to shake slightly, especially because of fear, cold, or strong feeling",
+     "usage": "less_common",
+     "register": [
+      "literary"
+     ],
+     "synsets": [
+      "01893122-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "（地面）震動",
+     "zh": "描述地震時地面或建築物晃動，常見於新聞報導。",
+     "en": "to shake or move because of movement inside the earth",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01892777-v"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "qualification",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "資格、條件",
+     "zh": "為了從事某項工作或活動而必須具備的學歷、證照或條件",
+     "en": "something such as a degree, certificate, or skill that you need in order to do a job or activity",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04724415-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（比賽）晉級資格",
+     "zh": "在比賽中達到規定成績而取得進入下一輪的資格",
+     "en": "the right to take part in the next stage of a competition because you have reached the required standard",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "保留、但書",
+     "zh": "在陳述或同意某件事時加上的限制條件",
+     "en": "a statement that adds a limit or condition to something you have said or agreed to",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "06775091-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "修改或調整某個想法的強度",
+     "reason": "罕用，現代幾乎只出現在修辭學等特定領域，一般學習者不會遇到"
+    }
+   ]
+  },
+  {
+   "headword": "qualified",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "有資格的、合格的",
+     "zh": "具備必要的訓練、證照或條件，能勝任某職位或工作。",
+     "en": "having the training, skills, or official permission needed for a job or activity",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01917434-a",
+      "01965069-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "有保留的、有限度的",
+     "zh": "並非完全或絕對，帶有條件限制（常用於贊同、支持等說法）。",
+     "en": "not complete or absolute; having some limits or conditions",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "01919581-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "有條件的、視情況而定的",
+     "zh": "必須先滿足某個條件才會成立或發生。",
+     "en": "only happening if something else happens first",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00558400-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（語意）受限制的，如 tall man 中的 man",
+     "reason": "語言學專業術語，一般學習者幾乎不會遇到"
+    }
+   ]
+  },
+  {
+   "headword": "qualify",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "取得資格、符合條件",
+     "zh": "經過學習、訓練或達到標準，而具備做某事的資格",
+     "en": "to reach the standard or meet the conditions needed to do something",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02684822-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "使有資格、使合格",
+     "zh": "讓某人具備資格，或讓某物達到可接受的標準",
+     "en": "to give someone the ability or right to do something, or make something acceptable",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00301542-v",
+      "00974223-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "（比賽）晉級、取得下一輪資格",
+     "zh": "在比賽中表現夠好，得以進入下一階段",
+     "en": "to do well enough in a competition to move on to the next stage",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "v.",
+     "label": "補充說明、限定範圍",
+     "zh": "在陳述中加入條件或細節，讓意思更精確",
+     "en": "to add details or limits to a statement so it is more exact",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00199684-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "（文法）修飾",
+     "zh": "文法中用來修飾另一個詞，限定它的意思",
+     "en": "in grammar, to add to another word and limit its meaning",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00171140-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "准予、授權",
+     "reason": "與「使有資格」意思重疊，現代多併入該義"
+    },
+    {
+     "meaning": "描述或刻畫（某人特質）",
+     "reason": "古義，現代幾乎不使用"
+    },
+    {
+     "meaning": "在合約中明訂為條件",
+     "reason": "專業領域過窄，一般學習者少見"
+    }
+   ]
+  },
+  {
+   "headword": "qualifying",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "資格賽的、預選的",
+     "zh": "體育賽事中用來決定誰能進入正式比賽的選拔階段",
+     "en": "relating to a competition or match that decides who can take part in the main event",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "取得資格的、符合條件的",
+     "zh": "達到某項要求或標準，因而有資格做某事或獲得某事物",
+     "en": "meeting the conditions or standards needed to do something or get something",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "附加條件的、限定的",
+     "zh": "在正式文件中用來修飾或限制另一詞語的意思，常見於文法說明",
+     "en": "adding a condition or limit to the meaning of another word, especially in grammar",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "13823013-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "通過測驗、合格",
+     "zh": "成功達到測驗或規定的要求",
+     "en": "the act of passing a test or meeting a requirement",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00066395-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "[計] 限定的、限制的",
+     "reason": "參考資料把電腦領域的標記誤當成一般釋義，現代英文不這樣單獨使用這個字"
+    }
+   ]
+  },
+  {
+   "headword": "qualitative",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "質性的、定性的",
+     "zh": "指依性質、特徵來區分或描述，而不是用數字衡量。",
+     "en": "based on qualities or features rather than on numbers or amounts",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01920902-a",
+      "02988415-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "質化研究的",
+     "zh": "指用訪談、觀察等方式深入了解現象的研究方法，常見於社會科學與市場調查。",
+     "en": "using methods like interviews or observation to understand something in depth",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "性質的",
+     "reason": "與「質性的、定性的」意思重複，已合併"
+    }
+   ]
+  },
+  {
+   "headword": "quality",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "品質、質量",
+     "zh": "東西或服務的好壞程度，常與價格、水準一起討論",
+     "en": "how good or bad something is",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04735326-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "特質、特性",
+     "zh": "人或事物本身具有、可用來辨認的特點",
+     "en": "a feature that is part of someone's or something's nature",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04731092-n",
+      "05857811-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "優質的、高品質的",
+     "zh": "放在名詞前，表示東西做得好、水準高",
+     "en": "of a high standard; very good",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02351005-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "音色、音質",
+     "zh": "聲音或樂器聽起來的特色與乾淨程度",
+     "en": "the way a sound or voice sounds, especially how clear it is",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "04994869-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（人的）優良品格",
+     "zh": "指一個人誠實、可靠等值得肯定的內在素養",
+     "en": "a good personal trait such as honesty or kindness",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "高社會地位",
+     "zh": "指上流階層或身分顯赫的地位，現代少用",
+     "en": "the state of belonging to a high social class",
+     "usage": "rare",
+     "register": [
+      "old"
+     ],
+     "synsets": [
+      "13971206-n",
+      "00262352-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "才能",
+     "reason": "舊字典義，現代多說 ability、talent，不用 quality 表達"
+    }
+   ]
+  },
+  {
+   "headword": "quantify",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "量化、用數字表示",
+     "zh": "把某事物用具體數字或數量表達出來，常用於研究、報告與分析。",
+     "en": "to show or measure something as an amount or number",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00490773-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "測量、計量",
+     "zh": "實際測出某物的數量或程度，常與難以衡量的效果、影響連用。",
+     "en": "to measure how much of something there is",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00493031-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "用作量詞",
+     "reason": "專業語言學用法，一般學習者幾乎不會遇到"
+    }
+   ]
+  },
+  {
+   "headword": "quantitative",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "數量的、量化的",
+     "zh": "與數量或數字有關的，常用於研究、分析、資料等正式語境。",
+     "en": "relating to numbers or amounts, especially in research or analysis",
+     "usage": "common",
+     "register": [
+      "formal",
+      "technical"
+     ],
+     "synsets": [
+      "01921311-a",
+      "02988743-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "定量的、可測量的",
+     "zh": "指某事物可以用數字測量或表示，常與 qualitative（質性的）對比。",
+     "en": "able to be measured or expressed as an amount or number",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01921311-a"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（詩律）以音節長短構成的",
+     "reason": "專業領域過窄，僅見於古典詩律討論，現代一般學習者不會遇到"
+    }
+   ]
+  },
+  {
+   "headword": "quantity",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "數量、量",
+     "zh": "指東西有多少，可用數字計算或衡量。",
+     "en": "the amount or number of something that can be counted or measured",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00033914-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "大量、為數不少",
+     "zh": "表示某物的量很多、足夠，常與 a 連用。",
+     "en": "a large or sufficient amount of something",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "05116040-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "量（數學、物理概念）",
+     "zh": "數學或物理中可表示大小、以數值呈現的量。",
+     "en": "a thing that has size and can be shown by a number in math or science",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "05863690-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "quantum",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "量子",
+     "zh": "物理學中能量等物理量最小的不可分割單位",
+     "en": "the smallest separate unit of energy or another physical quantity in physics",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "05864101-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "量子的、量子（物理）的",
+     "zh": "用於描述與量子力學或量子科技有關的事物，如量子電腦、量子力學",
+     "en": "relating to quantum physics or to technology that uses it",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "（可計的）分量、額度",
+     "zh": "某種事物可區分出的固定分量，多用於正式或學術文體",
+     "en": "a fixed or separate amount of something, especially in formal or academic writing",
+     "usage": "less_common",
+     "register": [
+      "formal",
+      "technical"
+     ],
+     "synsets": [
+      "05864332-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "量（一般性的「量」）",
+     "reason": "舊字典把 quantum 泛譯為「量」，現代一般「量」多用 amount、quantity，此義已罕用"
+    }
+   ]
+  },
+  {
+   "headword": "quarrel",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "爭吵、口角",
+     "zh": "兩人之間因不滿而發生的激烈言語衝突",
+     "en": "an angry argument between people who disagree",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07198809-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "爭吵、爭論",
+     "zh": "因為意見不同而跟別人吵起來",
+     "en": "to argue angrily with someone because you disagree",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00777201-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "抱怨、挑剔（+with）",
+     "zh": "對某件事表達不滿，常見於 quarrel with 的搭配",
+     "en": "to complain about or find fault with something",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "方頭鑿",
+     "reason": "專業木工術語，一般學習者不會遇到"
+    },
+    {
+     "meaning": "弩箭（四稜箭頭）",
+     "reason": "古義，指十字弓用的箭，現代已不使用"
+    }
+   ]
+  },
+  {
+   "headword": "quarry",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "採石場",
+     "zh": "開採石材或板岩的露天礦場",
+     "en": "a place where stone is dug out from the ground, usually an open pit",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03955718-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "獵物、追捕對象",
+     "zh": "被追捕的動物，或比喻被鎖定攻擊、利用的對象",
+     "en": "an animal that is being hunted, or a person who is being chased or attacked",
+     "usage": "less_common",
+     "register": [
+      "literary"
+     ],
+     "synsets": [
+      "02155533-n",
+      "10490045-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "開採（石材）、挖出",
+     "zh": "從採石場挖取石頭，或比喻費力取得某物",
+     "en": "to take stone out of the ground, or to get something with effort",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01166163-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "方形石",
+     "reason": "古義，現代已不使用"
+    },
+    {
+     "meaning": "來源",
+     "reason": "舊字典的引申義，現代不單獨這樣用"
+    },
+    {
+     "meaning": "費力地找",
+     "reason": "罕用，現代多說 search 或 hunt"
+    }
+   ]
+  },
+  {
+   "headword": "quarter",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "四分之一",
+     "zh": "指某物分成四等份中的一份，常用於數量、比例。",
+     "en": "one of four equal parts of something",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "13759620-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "一刻鐘、十五分鐘",
+     "zh": "指時間上的十五分鐘，常用於說時間或活動長度。",
+     "en": "a period of fifteen minutes",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "15259739-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "季度、三個月",
+     "zh": "指一年分成四期的其中一期，常用於商業、財務或學期。",
+     "en": "a period of three months, especially as a division of a year",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "15231386-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "學季、四學期制的一學期",
+     "zh": "指學校學年分成四段中的一段，常見於美國學制。",
+     "en": "one of four periods that a school year is divided into",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "15250842-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "地區、區域",
+     "zh": "指城市或某地具有特色的區域，常用於描述居住或活動範圍。",
+     "en": "an area of a city or town with a particular character",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "08645494-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（比賽）一節",
+     "zh": "指美式足球、籃球等比賽分成四節中的一節。",
+     "en": "one of four periods into which some sports games are divided",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "15283261-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "二十五分錢硬幣",
+     "zh": "指美國或加拿大價值四分之一美元的硬幣。",
+     "en": "a coin worth one fourth of a dollar in the US or Canada",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "13411417-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "把……分成四份",
+     "zh": "指將某物切成或分成四個相等部分。",
+     "en": "to divide something into four equal parts",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "v.",
+     "label": "駐紮、供宿",
+     "zh": "指軍隊駐紮或安排人員住宿，現代較少用。",
+     "en": "to provide housing for soldiers or other people",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "02659254-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "肢解",
+     "reason": "古義，現代已不使用"
+    },
+    {
+     "meaning": "（羅盤的）四方位之一",
+     "reason": "專業領域過窄，現代一般少用"
+    },
+    {
+     "meaning": "英擔的四分之一（25或28磅）",
+     "reason": "罕用單位，現代幾乎不用"
+    },
+    {
+     "meaning": "船尾",
+     "reason": "古義，現代已不使用"
+    },
+    {
+     "meaning": "鞋靴後跟的皮革",
+     "reason": "專業領域過窄，現代一般少用"
+    },
+    {
+     "meaning": "對戰敗者的寬恕",
+     "reason": "古義，現代已不使用"
+    },
+    {
+     "meaning": "某個不明確的人",
+     "reason": "罕用，現代幾乎不用"
+    }
+   ]
+  },
+  {
+   "headword": "quarterback",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "四分衛",
+     "zh": "美式足球隊中負責指揮進攻、傳球給隊友的球員",
+     "en": "the player in American football who leads the team's attack and throws the ball to other players",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10518401-n",
+      "00727818-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "擔任四分衛",
+     "zh": "在美式足球比賽中擔任四分衛這個位置",
+     "en": "to play the position of the player who leads the team's attack in American football",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01078763-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "主導、指揮（計畫、團隊）",
+     "zh": "引申指像四分衛一樣帶頭規劃並推動某項工作或團隊",
+     "en": "to lead and direct a plan, project, or group of people",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "quartet",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "四重奏、四重唱（樂曲）",
+     "zh": "由四個人一起演奏或演唱的樂曲，常見於古典音樂。",
+     "en": "a piece of music written for four people to play or sing together",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07055434-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "四重奏樂團、四重唱團",
+     "zh": "由四位演奏者或歌手組成的表演團體。",
+     "en": "a group of four musicians or singers who perform together",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "08264172-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "四人一組、四件一套",
+     "zh": "把四個人或四樣東西當成一個整體來看待。",
+     "en": "a group of four people or things that are seen as a unit",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "08003822-n",
+      "08004531-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "四（基數）",
+     "reason": "僅為數字 four 的釋義，與本詞的實際用法無關，屬字典拆分詞義的產物"
+    }
+   ]
+  },
+  {
+   "headword": "quay",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "碼頭、駁岸",
+     "zh": "沿著岸邊建造、供船隻停靠裝卸貨物或上下乘客的碼頭。",
+     "en": "a platform built along the edge of the water where ships can stop to load or unload.",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "04039558-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "queen",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "女王、女君主",
+     "zh": "指女性君主，如英國女王；現代新聞與歷史敘述常見。",
+     "en": "a woman who rules a country as its monarch",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10518940-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "王后、皇后",
+     "zh": "指國王的妻子或遺孀，用於王室稱謂。",
+     "en": "the wife of a king, or a king's widow",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10519442-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（某領域的）女王、天后",
+     "zh": "用來稱呼在某個領域最出色、最有代表性的女性，如「流行天后」。",
+     "en": "a woman who is the best or most important in a particular field",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10519802-n",
+      "85801071-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（紙牌）皇后",
+     "zh": "撲克牌四張人頭牌之一，牌面印有皇后圖案。",
+     "en": "one of the four playing cards with a picture of a queen",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04039901-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（西洋棋）皇后",
+     "zh": "西洋棋中威力最強的棋子，可直走、橫走、斜走。",
+     "en": "the most powerful piece in chess, able to move in any straight line",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04039763-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（蜂、蟻的）蟻后、蜂王",
+     "zh": "指蜜蜂、螞蟻等群體昆蟲中唯一負責產卵的雌性。",
+     "en": "the single female insect in a colony that lays eggs",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "02315660-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（同志俚語）娘娘腔男子",
+     "zh": "對男同性戀者的貶稱，具冒犯性，現代應避免使用。",
+     "en": "an offensive word for a gay man",
+     "usage": "rare",
+     "register": [
+      "offensive",
+      "slang"
+     ],
+     "synsets": [
+      "10095821-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "（西洋棋）兵升變為皇后",
+     "zh": "西洋棋中兵走到對方底線時升格為皇后。",
+     "en": "in chess, to promote a pawn to a queen",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "02599946-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "立為女王；做女王",
+     "reason": "舊字典的動詞釋義，現代幾乎不用，實際動詞用法只見西洋棋的升變"
+    },
+    {
+     "meaning": "母貓",
+     "reason": "罕用義，現代口語多說 female cat"
+    },
+    {
+     "meaning": "裸鼴鼠族群中的雌性首領",
+     "reason": "專業動物學用法，範圍過窄，一般學習者不會遇到"
+    }
+   ]
+  },
+  {
+   "headword": "query",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "問題、疑問",
+     "zh": "心中不明白、想得到答案的事，常用於 have a query about 這類說法。",
+     "en": "a question or doubt about something that you want to have explained",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07208256-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "詢問、質疑",
+     "zh": "向人提出問題以確認或表達懷疑，常見於較正式或商務的情境。",
+     "en": "to ask someone a question, especially to check or express doubt about something",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00786670-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "查詢（資料庫、系統）",
+     "zh": "在電腦系統、資料庫或搜尋引擎中輸入條件以取得資料。",
+     "en": "a request for information from a computer system or database",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "v.",
+     "label": "查詢（資料）",
+     "zh": "在資料庫或系統中依條件找出特定資料。",
+     "en": "to search a computer system or database for particular information",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "質問、查詢（舊字典釋義）",
+     "reason": "與「詢問、疑問」意思重複，已合併進 senses"
+    }
+   ]
+  },
+  {
+   "headword": "quest",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "探索、尋求",
+     "zh": "為了找到某物或達成某目標而進行的長期努力或探索，常用於抽象目標。",
+     "en": "a long search for something, especially an abstract goal",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "05778388-n",
+      "00948466-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "尋找、追求",
+     "zh": "努力尋找或追求某事物，常用於書面或正式語境。",
+     "en": "to search for or try to achieve something",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "02245663-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（電玩）任務、冒險",
+     "zh": "角色扮演遊戲中玩家要完成的任務或冒險，常以「quest」稱之。",
+     "en": "a task or adventure that a player must complete in a game",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "v.",
+     "label": "追蹤（獵物）",
+     "zh": "狩獵時循著獵物的蹤跡追尋，為較專門的用法。",
+     "en": "to follow the tracks of an animal when hunting",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "02006623-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（狗）持續吠叫",
+     "reason": "罕用義，現代英語幾乎不用於此義。"
+    },
+    {
+     "meaning": "（為宗教目的）乞討",
+     "reason": "古義，現代已不使用。"
+    },
+    {
+     "meaning": "表達需要或渴望",
+     "reason": "與「尋找、追求」義重疊，且現代不單獨用 quest 表達此義。"
+    }
+   ]
+  },
+  {
+   "headword": "question",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "問題、疑問",
+     "zh": "需要回答或解決的事情，可用於一般提問或待處理的議題。",
+     "en": "something that needs an answer or needs to be solved",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07211342-n",
+      "06796625-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "提問、詢問",
+     "zh": "口語或正式場合中向人發問的行為。",
+     "en": "the act of asking someone for information",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07208256-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "詢問、質問",
+     "zh": "向某人提出問題以獲取資訊，常用於訪問或盤問。",
+     "en": "to ask someone for information, often in an official or formal situation",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00789846-v",
+      "00786670-v",
+      "00810517-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "質疑、懷疑",
+     "zh": "對某事的正確性、正當性表達不信任或提出異議。",
+     "en": "to express doubt about whether something is true or right",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00869073-v",
+      "00927081-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "不確定、疑問",
+     "zh": "對事情的真實性或存在與否感到不確定。",
+     "en": "a feeling of not being sure about something",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "04764777-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（議會）動議、提案",
+     "zh": "在正式會議中提出供討論表決的議案。",
+     "en": "a formal proposal to be discussed and voted on in a meeting",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "07178244-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（口語）求婚",
+     "reason": "現代日常幾乎不用，僅在特定舊式或幽默語境出現"
+    }
+   ]
+  },
+  {
+   "headword": "questionable",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "可疑的、有問題的",
+     "zh": "讓人懷疑是否真實、正確或妥當，常用來形容說法、決定或行為。",
+     "en": "likely to be wrong, dishonest, or not suitable, so people doubt it",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01922610-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "未必確實的、可質疑的",
+     "zh": "指某個說法或資料還不能被當成確定事實，仍有討論空間。",
+     "en": "not certain to be true or correct, and open to being doubted",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00724815-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "questioning",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "懷疑的、質疑的",
+     "zh": "對某件事抱持懷疑，認為它可能不對或不可信",
+     "en": "showing doubt about whether something is true or right",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02473075-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "詢問的、探詢的",
+     "zh": "帶著好奇或想了解更多的態度提問",
+     "en": "asking questions because you want to know more about something",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00668084-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "困惑的、被問倒的",
+     "zh": "被問到答不出來而顯得不知所措",
+     "en": "looking confused because you are expected to know something you do not",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01771296-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "提問、詢問",
+     "zh": "提出問題以取得資訊的行為，常見於正式或書面語境",
+     "en": "the act of asking for information",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "07207844-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "審問、訊問（法律）",
+     "reason": "屬法律專業領域用法，現代一般語境少見，且與「提問」義重疊"
+    }
+   ]
+  },
+  {
+   "headword": "questionnaire",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "問卷、調查表",
+     "zh": "列出一組問題、發給一群人填寫以蒐集資料或意見的表格，常見於研究、市調與客服回饋。",
+     "en": "a set of written questions given to many people to collect information or opinions",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "06485793-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "queue",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "隊伍、行列",
+     "zh": "指人或車輛排成一列等待的情況，常見於排隊購物、等車等場合。",
+     "en": "a line of people or vehicles waiting for something",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "08449355-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "排隊",
+     "zh": "指排成一列等待，常用於口語或指示中。",
+     "en": "to form a line and wait for something",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02040600-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "佇列（電腦）",
+     "zh": "在電腦科學中，指按順序處理的任務或訊息列表，屬於專業術語。",
+     "en": "an ordered list of tasks or messages to be processed in a computer system",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "06506807-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "辮子",
+     "zh": "指將頭髮編成的辮子，為較舊或文學性的用法，現代英語較少用。",
+     "en": "a length of hair that has been braided and hangs down the back",
+     "usage": "rare",
+     "register": [
+      "old",
+      "literary"
+     ],
+     "synsets": [
+      "05267306-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "將頭髮梳成辮子",
+     "reason": "與名詞「辮子」對應的動詞用法已罕用，現代英語幾乎不用。"
+    }
+   ]
+  },
+  {
+   "headword": "quick",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "快的、迅速的",
+     "zh": "形容動作或事情在短時間內完成，不拖延。",
+     "en": "moving fast or happening in a short time",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00982557-s",
+      "00981945-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "短暫的、倉促的",
+     "zh": "形容時間很短、匆匆完成的事情，如快速看一眼或短暫休息。",
+     "en": "lasting only a short time and done in a hurry",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01273596-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "敏捷的、靈巧的",
+     "zh": "形容人或動作輕快靈活，移動得又快又穩。",
+     "en": "moving fast and lightly with easy control",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00032846-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "反應快的、機靈的",
+     "zh": "形容頭腦或感官反應迅速，能馬上理解或察覺。",
+     "en": "able to understand or notice things fast",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01338856-s"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "快地、趕快",
+     "zh": "口語中放在動詞後，表示動作要快一點。",
+     "en": "fast, or without waiting",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "00106290-r"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "易怒的、急躁的",
+     "zh": "形容人脾氣急、容易發火，現代多見於 quick temper 這類固定說法。",
+     "en": "easily made angry or excited",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00922132-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "新長出的肉",
+     "reason": "古義，現代英文已不使用"
+    },
+    {
+     "meaning": "要害、核心、感覺敏銳部位",
+     "reason": "古義，僅見於 cut to the quick 等舊式固定說法，現代一般不用"
+    },
+    {
+     "meaning": "（指甲下的）敏感部位",
+     "reason": "專業領域過窄，僅指身體特定部位，學習者不需單獨記"
+    }
+   ]
+  },
+  {
+   "headword": "quicker",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "更快的、較快的",
+     "zh": "quick 的比較級，用來比較兩者速度或所需時間的長短。",
+     "en": "moving or happening at a higher speed than something else",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "adv.",
+     "label": "更快地",
+     "zh": "口語中當副詞用，表示比之前或比別人更迅速地做某事。",
+     "en": "at a higher speed than before or than someone else",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "00087016-r"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "quickly",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "快速地、迅速地",
+     "zh": "表示動作或事情進行的速度很快，是這個字最核心的意思。",
+     "en": "at a high speed; in a short amount of time",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00086161-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "立刻、馬上",
+     "zh": "強調幾乎沒有等待或延遲就發生，常與回應、行動有關。",
+     "en": "right away, with almost no delay",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00106290-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "倉促地、草率地",
+     "zh": "指做事匆忙、不仔細，帶有負面意味，常說 quickly done。",
+     "en": "in a hurried way, without care or attention",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00292249-r"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "quid",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "英鎊、一鎊",
+     "zh": "英國的貨幣單位，日常口語說法，等於 100 便士。",
+     "en": "a pound in British money, used in informal speech",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "13708765-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "交換物、回報",
+     "zh": "某人付出或承諾後所得到（或將得到）的東西，常見於 quid pro quo 這個片語。",
+     "en": "something given or promised in return for something else",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "13344482-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "咀嚼用的菸草塊",
+     "zh": "指塞在嘴裡嚼的一團菸草，屬較舊的用法。",
+     "en": "a lump of tobacco chewed in the mouth",
+     "usage": "rare",
+     "register": [
+      "old"
+     ],
+     "synsets": [
+      "07594964-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "一鎊金幣",
+     "reason": "舊式說法，指實際的金幣，現代只用來指貨幣單位，已不這樣用"
+    }
+   ]
+  },
+  {
+   "headword": "quiet",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "安靜的、寂靜的",
+     "zh": "沒有聲音或聲音很小的",
+     "en": "making little or no noise",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01925383-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "平靜的、寧靜的",
+     "zh": "沒有太多活動、干擾或變化的",
+     "en": "with little activity, disturbance, or change",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01929162-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "沉默寡言的、不多話的",
+     "zh": "人不太說話或不想引人注意的",
+     "en": "tending not to talk much or attract attention",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01855098-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "低調的、不張揚的",
+     "zh": "顏色、樣式或態度不顯眼、不誇張的",
+     "en": "not bright, showy, or attention-seeking",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01855098-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（聲音）輕柔的、壓低的",
+     "zh": "說話或聲音刻意放輕、放低的",
+     "en": "spoken in a soft, low voice",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01458319-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "安靜、寂靜",
+     "zh": "沒有聲音的狀態或一段安靜的時間",
+     "en": "a state or period of little or no noise",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04989456-n",
+      "14546558-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "使安靜、使平息",
+     "zh": "讓聲音或情緒緩和下來",
+     "en": "to make someone or something calm or less noisy",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01768652-v",
+      "02194634-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（太陽）表面活動低的",
+     "reason": "專業天文領域過窄，一般學習者不會遇到"
+    },
+    {
+     "meaning": "（水面）平靜無浪的",
+     "reason": "與「平靜的、寧靜的」意思重複，已合併"
+    },
+    {
+     "meaning": "從容的、暗中的",
+     "reason": "舊字典釋義，現代不這樣單獨使用"
+    },
+    {
+     "meaning": "閒適、內心平靜無壓力",
+     "reason": "現代少用，且與「平靜的、寧靜的」重疊"
+    },
+    {
+     "meaning": "副詞用法（非標準的 quietly）",
+     "reason": "非標準變體，現代標準英語用 quietly"
+    }
+   ]
+  },
+  {
+   "headword": "quietly",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "安靜地、輕聲地",
+     "zh": "以很小的聲音說話或行動，不發出吵鬧聲",
+     "en": "in a way that makes little or no noise",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00070566-r",
+      "00231015-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "低調地、不張揚地",
+     "zh": "不引人注意地做某事，例如低調處理、默默進行",
+     "en": "in a way that does not attract attention or is not made public",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "adv.",
+     "label": "平靜地、沉著地",
+     "zh": "情緒穩定、不慌不忙地進行某事",
+     "en": "in a calm way, without getting upset or excited",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00231184-r",
+      "00440039-r"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "秘密地",
+     "reason": "與「低調、不張揚」意思重疊，現代多併入該義，不另立一項"
+    }
+   ]
+  },
+  {
+   "headword": "quilt",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "被子、棉被",
+     "zh": "睡覺時蓋在身上保暖的床具，通常中間夾有填充物。",
+     "en": "a warm cover for a bed, made of two layers of cloth with soft material between them",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04040471-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "縫製被子、絎縫",
+     "zh": "把布料與填充物縫在一起，做成被子或保暖衣物。",
+     "en": "to sew two layers of cloth together with soft material in between",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01671199-v",
+      "01671344-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "拼湊（文章、資料）",
+     "zh": "把不同來源的片段東拼西湊成一篇東西，略帶貶義。",
+     "en": "to make something by putting together parts from different sources",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "縫被子（不及物動詞）",
+     "reason": "現代幾乎不單獨這樣用，實際出現時多為及物用法，已併入縫製被子的詞義。"
+    }
+   ]
+  },
+  {
+   "headword": "quinn",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "奎恩（姓氏）",
+     "zh": "愛爾蘭常見姓氏，現代多見於人名、運動員或公眾人物。",
+     "en": "a common Irish family name, used as a surname for people",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "quit",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "辭職、離職",
+     "zh": "主動離開工作或職位，不再繼續任職。",
+     "en": "to leave your job or position and stop working there",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02387509-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "停止、戒除",
+     "zh": "停止做某事，尤其指戒掉抽菸、喝酒等習慣。",
+     "en": "to stop doing something, especially a habit like smoking or drinking",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02686624-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "放棄、退出",
+     "zh": "放棄某個活動、計畫或比賽，不再繼續參與。",
+     "en": "to stop taking part in an activity or trying to do something",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02232269-v",
+      "01085437-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "離開（地方）",
+     "zh": "離開某個地方或場所，較口語的說法。",
+     "en": "to leave a place",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "02012411-v"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "已辭職的、已退出的",
+     "zh": "用在名詞前，表示已經離開職位或不再參與。",
+     "en": "having left a job or stopped being involved in something",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "使解除、免除（義務等）",
+     "reason": "現代罕用，多見於舊式或法律文體，學習者幾乎不會遇到。"
+    },
+    {
+     "meaning": "離開（名詞用法）",
+     "reason": "現代幾乎不用名詞形式，口語中多以動詞表達。"
+    }
+   ]
+  },
+  {
+   "headword": "quite",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "相當、滿",
+     "zh": "修飾形容詞或副詞，表示程度比預期高一些，但不到「非常」；英式用法常指「還算可以」。",
+     "en": "used before an adjective or adverb to mean a fairly large amount, but not very much",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00019243-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "完全、徹底",
+     "zh": "與某些詞（如 quite right、not quite）連用，表示完全或一點也不。",
+     "en": "completely or entirely, especially in fixed phrases like quite right or not quite",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00019039-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "確實、真的",
+     "zh": "強調所說的是事實或程度極高，常見於口語的 quite a／quite the。",
+     "en": "used to stress that something is really true or is an extreme example",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "00019643-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "格外、不尋常地",
+     "zh": "表示某事物屬於特別突出、罕見的一類，如 quite a character。",
+     "en": "used to say someone or something is an unusually noticeable kind",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00019380-r"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "quiz",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "小測驗、隨堂考",
+     "zh": "課堂上針對近期教材做的簡短測驗，通常題數不多。",
+     "en": "a short test with a few questions, often given in class to check what students have learned",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07213851-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "測驗、考查",
+     "zh": "用問題來測試某人對某個主題懂多少。",
+     "en": "to ask someone questions in order to find out how much they know about something",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00788120-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "問答比賽、益智問答",
+     "zh": "酒吧或活動中一群人搶答常識問題的娛樂活動，也指網路上的趣味問答。",
+     "en": "a game or event in which people compete to answer questions correctly, often for fun",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "惡作劇、戲弄",
+     "reason": "舊式用法，現代英文幾乎不再這樣用，口語中表達同類意思會用 prank、tease 等字"
+    },
+    {
+     "meaning": "智力測驗",
+     "reason": "與「小測驗」詞義重複，且現代多直接說 IQ test 或 intelligence test"
+    }
+   ]
+  },
+  {
+   "headword": "quota",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "配額、限額",
+     "zh": "規定好的數量上限，例如進口配額或生產配額。",
+     "en": "an official limit on the amount of something that is allowed",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "13620591-n",
+      "06673141-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "分配額、份額",
+     "zh": "每個人或每個團體分到的比例或數量。",
+     "en": "the share of something that each person or group is given",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "13310767-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "quotation",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "引文、引句",
+     "zh": "從書本、演講或文章裡摘出來、照原話引用的句子或段落。",
+     "en": "a sentence or short passage taken from a book, speech, or article and repeated exactly",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "06625409-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "報價、估價",
+     "zh": "廠商或賣方針對某項商品、工程或服務提出的價格。",
+     "en": "a price that a company or seller says they will charge for goods or work",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "06768978-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "引用出處、註明來源",
+     "zh": "學術寫作或報導中標明某句話出自何處的註記。",
+     "en": "a note that shows where a piece of information or a quoted passage came from",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "06776392-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "引用（的行為）",
+     "zh": "寫文章或演講時引用他人話語的這種做法。",
+     "en": "the act of repeating words from books or plays in your own writing or speech",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "01032674-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "牌價",
+     "reason": "舊字典用語，現代多說 price 或 listed price，已不這樣用"
+    }
+   ]
+  },
+  {
+   "headword": "quote",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "引用、引述",
+     "zh": "把別人說過或寫過的話原樣說出來或寫出來",
+     "en": "to repeat the exact words that someone else has said or written",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01025268-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "引文、引語",
+     "zh": "從書本、演講或對話中摘錄出來的一段話",
+     "en": "a sentence or phrase taken from a book, speech, or conversation",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "06625409-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "報價",
+     "zh": "商業上告訴客戶某項商品或服務的價格",
+     "en": "to tell a customer how much something will cost",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01025934-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "報價、估價單",
+     "zh": "商業上提供給客戶的價格說明",
+     "en": "a statement of how much something will cost",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "v.",
+     "label": "舉例說明",
+     "zh": "引用某個例子或證據來支持論點",
+     "en": "to mention something as an example or proof",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "01025583-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "引號",
+     "zh": "標點符號，用來標示直接引述的話",
+     "en": "a punctuation mark used to show that words are someone else's",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "06857249-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "加上引號",
+     "reason": "與「引用」意思重疊，且現代口語少單獨使用"
+    }
+   ]
+  },
+  {
+   "headword": "qv",
+   "senses": [
+    {
+     "pos": "abbr.",
+     "label": "參見（拉丁縮寫）",
+     "zh": "學術或正式文章中用來指引讀者去看另一處的縮寫，源自拉丁文 quod vide。",
+     "en": "used in formal or academic writing to tell readers to look at another place for more information",
+     "usage": "less_common",
+     "register": [
+      "formal",
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "abbr.",
+     "label": "顫抖（quivering 縮寫）",
+     "zh": "極少見的縮寫，只在特定文本或筆記中代替 quivering 這個字。",
+     "en": "a rare short form of quivering, meaning shaking slightly",
+     "usage": "rare",
+     "register": [
+      "old"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "質量確認（quality verification）",
+     "reason": "僅為特定產業內部縮寫，非一般英文詞彙，學習者幾乎不會遇到"
+    },
+    {
+     "meaning": "隨意量（拉丁語 quantum vis）",
+     "reason": "拉丁文片語的縮寫，現代英文已不使用"
+    }
+   ]
+  }
+ ]
+}

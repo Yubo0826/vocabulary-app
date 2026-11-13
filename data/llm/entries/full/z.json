@@ -1,0 +1,437 @@
+{
+ "model": "deepseek-flash",
+ "generatedAt": "2026-11-13",
+ "method": "scripts/llm/generate-entries.ts：以 ECDICT 中文釋義與 OEWN 詞義為參考，整理現代化詞義、中英釋義、常用程度與語域",
+ "words": [
+  {
+   "headword": "zambia",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "尚比亞",
+     "zh": "非洲南部的內陸國家，首都為路沙卡。",
+     "en": "a country in southern Africa whose capital is Lusaka",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "zealand",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "西蘭島（丹麥）",
+     "zh": "丹麥東部、哥本哈根所在的島嶼，是丹麥最大的島。",
+     "en": "the largest island of Denmark, where the city of Copenhagen is partly located",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "紐西蘭（Zealand 的常見誤寫）",
+     "zh": "常出現在「New Zealand」的拼寫中，指大洋洲國家紐西蘭；單獨使用時多半是這個國名的一部分。",
+     "en": "used in the country name New Zealand; the word alone is rarely used for the country",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "西蘭島（丹麥最大的島）",
+     "reason": "已列為第一個詞義，未省略"
+    }
+   ]
+  },
+  {
+   "headword": "zero",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "零、數字 0",
+     "zh": "數字 0，用來說數量或編號。",
+     "en": "the number 0, used for counting or in numbers",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "13764498-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "零的、沒有的",
+     "zh": "表示完全沒有某種東西，常放在名詞前。",
+     "en": "having none of something; not any",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02193771-s",
+      "02276900-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "零度、零點",
+     "zh": "溫度計或刻度上的 0，例如攝氏零度。",
+     "en": "the 0 mark on a scale, such as a thermometer",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "05864801-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "毫無、一無所有",
+     "zh": "強調什麼都沒有，常說「從零開始」。",
+     "en": "nothing at all; a complete lack of something",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "13762308-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "歸零、校正到零",
+     "zh": "把儀器或裝置調回零點，技術場合用。",
+     "en": "to set an instrument or device back to zero",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00298288-v",
+      "00298114-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "最低點",
+     "reason": "與「毫無、一無所有」意思重疊，現代少單獨使用"
+    },
+    {
+     "meaning": "對炮火作協調校正",
+     "reason": "軍事專業用法，範圍過窄"
+    },
+    {
+     "meaning": "空集合的（數學）",
+     "reason": "數學專業術語，一般學習者少見"
+    }
+   ]
+  },
+  {
+   "headword": "zimbabwe",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "辛巴威",
+     "zh": "非洲南部的內陸國家，首都為哈拉雷；1980 年獨立後由羅德西亞改名而來。",
+     "en": "a landlocked country in southern Africa whose capital is Harare",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "zip",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "拉鏈、拉鍊",
+     "zh": "衣服、包包上用來開合的拉鏈",
+     "en": "a fastener with two rows of teeth that you close by pulling a small tab",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04245427-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "拉上（拉鏈）",
+     "zh": "把拉鏈拉起來，常與 up 連用",
+     "en": "to close something using a zipper, often with \"up\"",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01356373-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "快速移動、呼嘯而過",
+     "zh": "人或車子以很快的速度經過或移動",
+     "en": "to move or travel somewhere very quickly",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "02059573-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "活力、精力",
+     "zh": "形容人有衝勁、做事有精神",
+     "en": "energy and liveliness that makes someone do things with enthusiasm",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "05043116-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "郵遞區號",
+     "zh": "美國地址中用來分揀郵件的五位數字代碼",
+     "en": "a set of numbers added to a US postal address to help sort mail",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "06367112-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "壓縮（檔案）",
+     "zh": "把電腦檔案壓縮成較小的 ZIP 格式",
+     "en": "to make computer files smaller by putting them into a special compressed format",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "尖嘯聲、噓噓地響",
+     "reason": "罕用，現代日常幾乎不這樣用"
+    },
+    {
+     "meaning": "零、無關緊要的東西",
+     "reason": "古義與俚語用法，現代少見"
+    },
+    {
+     "meaning": "給……以速度、使增加活力",
+     "reason": "舊字典的動詞釋義，現代不這樣用"
+    }
+   ]
+  },
+  {
+   "headword": "zone",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "地區、區域",
+     "zh": "指具有某種特徵或用途的特定區域，如商業區、戰區、時區等。",
+     "en": "an area that is different from the areas around it because of a particular feature or use",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "08526463-n",
+      "08705985-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "氣候帶、緯度帶",
+     "zh": "指地球表面依緯度或氣候劃分的大範圍地帶，如熱帶、溫帶。",
+     "en": "one of the large areas of the Earth's surface that are divided by latitude or climate",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "08559404-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（身體的）帶狀構造",
+     "zh": "解剖學上指環繞或帶狀的結構，如帶狀疹（herpes zoster）中的帶狀分布。",
+     "en": "a belt-like or encircling structure in the body",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "05618817-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "劃分區域、分區",
+     "zh": "指將某地區劃分為特定用途的區域，常用於都市計畫或土地分區。",
+     "en": "to divide an area into sections for a particular purpose, especially in town planning",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00333645-v",
+      "02517816-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "環繞",
+     "reason": "古義，現代已不使用"
+    }
+   ]
+  },
+  {
+   "headword": "zoning",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "分區、土地使用分區",
+     "zh": "政府把土地劃分成住宅、商業、工業等不同用途區域的制度",
+     "en": "a system of rules that divide land into areas for different uses, such as housing, business, or industry",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00930566-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（依用途）劃分區域",
+     "zh": "把某個空間或範圍按功能切成不同區塊的作法",
+     "en": "the act of dividing a space into separate areas for different purposes",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00930566-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "zoo",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "動物園",
+     "zh": "飼養並展示野生動物供人參觀的地方，是假日常見的親子去處。",
+     "en": "a place where wild animals are kept so that people can come and look at them",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03750637-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "zoom",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "視訊會議軟體 Zoom",
+     "zh": "指疫情後廣泛使用的視訊會議平台，常直接說「用 Zoom 開會」。",
+     "en": "a popular video conferencing app used for online meetings and classes",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "v.",
+     "label": "快速移動、疾行",
+     "zh": "形容人或車輛快速移動，常與 past、by、off 等搭配。",
+     "en": "to move or travel very quickly, often with a smooth or continuous motion",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02059445-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "急速上升、猛增",
+     "zh": "用於價格、數量、人氣等快速上升，常見於新聞與商業報導。",
+     "en": "to increase very quickly in amount, level, or popularity",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01947577-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "變焦、拉近鏡頭",
+     "zh": "攝影或相機功能，指調整鏡頭焦距以放大或縮小畫面。",
+     "en": "the act of changing the lens setting to make an image appear closer or farther away",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "v.",
+     "label": "（鏡頭）變焦、推近",
+     "zh": "指用相機或攝影機調整焦距，讓畫面拉近或拉遠。",
+     "en": "to adjust a camera lens so that the subject appears larger or smaller",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "嗡嗡聲、低鳴聲",
+     "zh": "指引擎、機器或昆蟲發出的低頻連續聲響。",
+     "en": "a low continuous humming or buzzing sound",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "02060133-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "急速上升",
+     "zh": "指價格、數量等突然且大幅地上升，較常用於書面或新聞語境。",
+     "en": "a sudden and rapid increase in price, amount, or level",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "07390125-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "使攝象機移動",
+     "reason": "與「變焦、推近」詞義重複，且現代用法已涵蓋在鏡頭調整的解釋中。"
+    },
+    {
+     "meaning": "向上飛升的動作",
+     "reason": "罕用，現代英語幾乎不用此名詞義。"
+    }
+   ]
+  }
+ ]
+}

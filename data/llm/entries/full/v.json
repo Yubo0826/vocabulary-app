@@ -1,0 +1,8091 @@
+{
+ "model": "deepseek-flash",
+ "generatedAt": "2026-11-13",
+ "method": "scripts/llm/generate-entries.ts：以 ECDICT 中文釋義與 OEWN 詞義為參考，整理現代化詞義、中英釋義、常用程度與語域",
+ "words": [
+  {
+   "headword": "vacancy",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "職缺、空缺",
+     "zh": "公司或組織中等待人來填補的工作職位",
+     "en": "a job or position that is available for someone to take",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "空房、空位（住宿）",
+     "zh": "旅館、飯店裡還沒有人訂的房間",
+     "en": "a room in a hotel that is not being used and is available",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "14479414-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "空曠、空無一物",
+     "zh": "某個地方或空間沒有東西、沒有人佔用的狀態",
+     "en": "the state of a place or space being empty and not used",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "14479414-n",
+      "13933131-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "空虛、空閒",
+     "reason": "「空虛」多指心理狀態，現代英文表達此義通常用 emptiness，不用 vacancy；「空閒」為舊字典籠統的釋義，現代少見"
+    }
+   ]
+  },
+  {
+   "headword": "vacant",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "空著的、無人使用的",
+     "zh": "指房間、座位、房屋等沒有被使用或沒有人佔用",
+     "en": "not being used or occupied by anyone",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01091666-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "空缺的（職位）",
+     "zh": "指工作或職位還沒有人擔任，常用於徵才公告",
+     "en": "not yet filled by a person, as a job or position",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01091666-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "茫然的、空洞的",
+     "zh": "形容眼神或表情沒有專注或思考，看起來呆滯",
+     "en": "showing no interest, thought, or understanding",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "02581841-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "空虛的",
+     "reason": "與「茫然的、空洞的」意思重疊，且現代多說 empty 或 hollow"
+    },
+    {
+     "meaning": "空白的",
+     "reason": "舊字典義，現代指空白多用 blank，vacant 不這樣用"
+    }
+   ]
+  },
+  {
+   "headword": "vacation",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "假期、休假",
+     "zh": "離開工作或學校、用來休息或旅遊的一段時間",
+     "en": "a period of time when you are away from work or school to rest or travel",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "15162842-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "度假",
+     "zh": "到外地旅遊或休息一段時間，常見於美式英語",
+     "en": "to spend time traveling or resting away from home, especially in American English",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "02714581-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "使（法律文件）失效、撤銷",
+     "reason": "法律專業術語，現代一般用法幾乎不會遇到"
+    }
+   ]
+  },
+  {
+   "headword": "vaccine",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "疫苗",
+     "zh": "接種後讓身體產生抗體、預防疾病的藥物，如新冠疫苗、流感疫苗。",
+     "en": "a substance given to people to make their body fight off a disease",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04524830-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（電腦）病毒碼、防毒定義檔",
+     "zh": "防毒軟體用來辨識惡意程式的一組特徵資料，常以更新方式下載。",
+     "en": "a file that helps antivirus software recognize and block harmful programs",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "牛痘苗",
+     "reason": "歷史上的特定說法，現代一般統稱疫苗"
+    },
+    {
+     "meaning": "疫苗的、牛痘的（形容詞）",
+     "reason": "現代幾乎不用形容詞用法，多改用 vaccine 加名詞或 vaccination"
+    }
+   ]
+  },
+  {
+   "headword": "vacuum",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "真空、真空狀態",
+     "zh": "完全沒有空氣或物質的空間，常見於物理、包裝與保溫容器等情境。",
+     "en": "a space with no air or other matter in it",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "14479502-n",
+      "08671049-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "空白、空虛（地位、權力）",
+     "zh": "指某人離開或某事消失後留下的空缺，常說權力真空。",
+     "en": "a situation where someone or something is missing and needs to be filled",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "13933131-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "吸塵器",
+     "zh": "打掃地板用的家電，英式口語常直接說 the vacuum。",
+     "en": "a machine that cleans floors by sucking up dirt",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04525118-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "用吸塵器打掃",
+     "zh": "指用吸塵器清理地板、地毯或沙發等。",
+     "en": "to clean a floor or surface with a machine that sucks up dirt",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01247417-v"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "真空的、利用真空的",
+     "zh": "放在名詞前，表示與真空技術或真空包裝有關。",
+     "en": "using or relating to a space from which air has been removed",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "空間",
+     "reason": "舊字典的籠統釋義，現代多改用 space、room，不單獨用 vacuum 表示"
+    }
+   ]
+  },
+  {
+   "headword": "vague",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "含糊的、不明確的",
+     "zh": "說法或內容沒有講清楚，讓人難以確定意思",
+     "en": "not expressed clearly enough to be understood exactly",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00432720-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "模糊的、不具體的",
+     "zh": "範圍、數量或細節沒有明確界定，例如模糊的計畫或記憶",
+     "en": "not exact or clearly defined, such as a plan or a memory",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00700834-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（影像、輪廓）模糊不清的",
+     "zh": "看東西或畫面時輪廓不清楚、難以辨認",
+     "en": "not clear or sharp to see, like a shape or an image",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00785775-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "茫然的、心不在焉的",
+     "zh": "神情恍惚，好像沒在注意周遭發生的事",
+     "en": "looking as if you are not paying attention to what is around you",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "vaguely",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "隱約地、模糊地",
+     "zh": "感覺或記憶不很清楚，只有大概的印象。",
+     "en": "in a way that is not clear or exact, especially when talking about feelings or memories",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00234331-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "含糊地、語焉不詳地",
+     "zh": "說話或表達內容不具體，讓人無法確定真正的意思。",
+     "en": "in a way that does not give clear details or a definite answer",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00234331-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "略微、有點（相似）",
+     "zh": "用來說某事物稍微像另一件事，但並不真的相同。",
+     "en": "used to say that something is slightly similar to something else",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "曖昧地",
+     "reason": "舊字典用語，現代多指感情關係的曖昧，與 vaguely 的實際用法不符，屬誤譯"
+    }
+   ]
+  },
+  {
+   "headword": "vale",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "山谷、溪谷",
+     "zh": "詩歌或文學作品中指兩山之間的低地，常帶有優美、田園的意境。",
+     "en": "a low area of land between hills, used especially in poetry and old literature",
+     "usage": "less_common",
+     "register": [
+      "literary"
+     ],
+     "synsets": [
+      "09491734-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "告別、再見",
+     "reason": "古義與舊式說法，現代英文幾乎不用；現代表達再見用 goodbye、farewell 等"
+    }
+   ]
+  },
+  {
+   "headword": "valid",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "有效的、有法律效力的",
+     "zh": "文件、票券、合約等在期限內仍可使用或具有法律效力。",
+     "en": "legally or officially acceptable and able to be used",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00941928-s",
+      "02508521-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "合理的、站得住腳的",
+     "zh": "理由、論點或說法有事實或邏輯根據，能讓人接受。",
+     "en": "based on good reasons or facts and therefore acceptable",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02508521-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（電腦）有效的、合法的",
+     "zh": "輸入的資料、格式或帳號符合規定，系統可以接受。",
+     "en": "correctly entered and accepted by a computer system",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "正確的",
+     "reason": "與「合理的、站得住腳」意思重疊，現代多說 correct 或 right，不另立詞義"
+    }
+   ]
+  },
+  {
+   "headword": "validate",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "證實、確認（正確性）",
+     "zh": "用證據或檢查證明某個說法、資料或結果是正確的。",
+     "en": "to prove or check that something is true or correct",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00669142-v",
+      "00449245-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "驗證（資料、帳號、票券）",
+     "zh": "在系統或網站上檢查資料、身分、票券等是否有效，例如驗證電子郵件或停車票。",
+     "en": "to check that data, an identity, or a ticket is real and can be used",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "v.",
+     "label": "使生效、正式認可",
+     "zh": "讓文件、合約或決定在法律上生效，或由有權者正式批准。",
+     "en": "to make something legally or officially acceptable",
+     "usage": "less_common",
+     "register": [
+      "formal",
+      "technical"
+     ],
+     "synsets": [
+      "02484290-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "印證、佐證（感受、想法）",
+     "zh": "常用於 validate someone's feelings，表示讓對方覺得自己的感受是合理、被理解的。",
+     "en": "to show that someone's feelings or ideas are reasonable and worth respect",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01014570-v"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "validation",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "驗證、確認",
+     "zh": "檢查或證明某個說法、資料、系統是否正確或有效",
+     "en": "the process of checking or proving that something is true or valid",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00154781-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "認可、肯定（心理需求）",
+     "zh": "希望自己的感受、努力或存在被別人承認與重視",
+     "en": "the feeling of being accepted and valued by other people",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "（系統、軟體的）驗證",
+     "zh": "在科技或工程領域，確認產品、程式或資料符合規定與標準",
+     "en": "the process of checking that a product, system, or piece of software meets the required standards",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "05834615-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "批准",
+     "reason": "舊字典釋義偏向「批准、核可」，現代英文多用 approval；validation 著重「確認正確有效」，不列為獨立義項"
+    }
+   ]
+  },
+  {
+   "headword": "validity",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "有效性、效力",
+     "zh": "指方法、論點或文件在法律或邏輯上站得住腳、能成立。",
+     "en": "the state of being legally or logically acceptable and able to be defended",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "04816705-n",
+      "04790831-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（研究、測驗的）效度",
+     "zh": "研究或測驗是否真的測到、證明瞭它聲稱要測的東西。",
+     "en": "how well a test or study measures or shows what it claims to",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "正確性",
+     "reason": "與「有效性」高度重疊，現代多說 accuracy 或 correctness，不另立詞義"
+    }
+   ]
+  },
+  {
+   "headword": "valley",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "山谷、溪谷",
+     "zh": "兩山之間低窪的地帶，常有河流流過。",
+     "en": "a low area of land between hills or mountains, often with a river flowing through it",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "09491734-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（產業）聚落、園區",
+     "zh": "指某種產業或科技公司聚集的特定地區，如矽谷。",
+     "en": "a area where many companies of a particular industry are based",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "低谷、低潮期",
+     "zh": "比喻活動、景氣或情緒低落的一段時期。",
+     "en": "a period when activity, business, or mood is at a low level",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "流域",
+     "reason": "現代多直接用 river basin，此義已少見"
+    },
+    {
+     "meaning": "凹地",
+     "reason": "與「山谷」義重複，且屬地理專業用法"
+    }
+   ]
+  },
+  {
+   "headword": "valuable",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "貴重的、值錢的",
+     "zh": "指東西本身價格高、能賣到好價錢，例如珠寶、手錶、房產。",
+     "en": "worth a lot of money and able to be sold for a high price",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02510833-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "寶貴的、有價值的",
+     "zh": "指經驗、建議、資訊、時間等對人有幫助或很重要。",
+     "en": "very useful or important to someone, though not something you buy or sell",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02598053-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "貴重物品",
+     "zh": "通常用複數 valuables，指珠寶、現金等值錢、要小心保管的東西。",
+     "en": "things such as jewelry or cash that are worth a lot and need to be kept safe",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "13392203-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "可估價的",
+     "reason": "舊字典直譯，現代英文幾乎不用這個說法，屬罕用義。"
+    }
+   ]
+  },
+  {
+   "headword": "valuation",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "估價、評價",
+     "zh": "對某物的價值或價格所做的評估，常用於房地產、公司資產等場合。",
+     "en": "a judgment about how much money something is worth",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "05744094-n",
+      "13326695-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（公司、企業的）估值",
+     "zh": "投資、併購或新創募資時，對一家公司整體價值的估算。",
+     "en": "the estimated total worth of a company or business",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "13326695-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "價值判斷、看法",
+     "zh": "對人或事物重要性的主觀評價，較正式的說法。",
+     "en": "a judgment about how good or important someone or something is",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "05744094-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "value",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "價值、重要性",
+     "zh": "某事物本身具有的用處或重要性，常用來談東西、想法或行為的意義。",
+     "en": "the importance or usefulness of something",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "05145753-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "價格、價值",
+     "zh": "東西值多少錢，或換算成金錢的數額。",
+     "en": "the amount of money that something is worth",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "13434666-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "數值",
+     "zh": "計算或測量得到的數字，常用在數學、科學或資料的情境。",
+     "en": "a number that is measured or calculated",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "05864972-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "價值觀、準則",
+     "zh": "個人或群體認為重要、值得追求的理想或行為標準，常用複數。",
+     "en": "beliefs about what is right and important in life",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "05932615-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "重視、珍視",
+     "zh": "認為某人或某物很重要而好好對待，常用於人際關係或意見。",
+     "en": "to think that someone or something is important and worth caring about",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02260917-v",
+      "00695834-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "估價、評價",
+     "zh": "判斷東西值多少錢，或評估事物的好壞與程度。",
+     "en": "to decide how much money something is worth, or to judge its quality",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00696992-v",
+      "00683348-v",
+      "00662642-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "顏色的明暗度",
+     "reason": "專業領域過窄，一般學習者幾乎不會遇到"
+    },
+    {
+     "meaning": "音符的相對長度",
+     "reason": "音樂專業術語，日常英文極少使用"
+    }
+   ]
+  },
+  {
+   "headword": "valve",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "閥、活門（管線）",
+     "zh": "裝在管子或機械上，用來開關或調節液體、氣體流量的裝置。",
+     "en": "a device that opens, closes, or controls the flow of liquid or gas through a pipe or machine",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "04526448-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "瓣膜（心臟、血管）",
+     "zh": "心臟或血管中防止血液倒流的一片組織。",
+     "en": "a small flap or structure in the heart or a blood vessel that keeps blood flowing in one direction",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "05402629-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（銅管樂器的）活塞、按鍵",
+     "zh": "小號、法國號等銅管樂器上用來改變音高的按鍵裝置。",
+     "en": "a part on a brass instrument that you press to change the pitch of the note",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "04526831-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（貝類的）殼瓣",
+     "zh": "雙殼貝或腕足動物兩片相連外殼中的一片。",
+     "en": "one of the two joined shells of a shellfish such as a clam",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01907102-n",
+      "01907224-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "v. 裝閥、用閥調節",
+     "reason": "動詞用法在現代英語幾乎不用，一般只當名詞"
+    },
+    {
+     "meaning": "蝸牛等軟體動物的整片外殼",
+     "reason": "生物學專用且罕用，現代一般場合不會遇到"
+    }
+   ]
+  },
+  {
+   "headword": "vampire",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "吸血鬼",
+     "zh": "民間傳說中夜裡從墳墓爬出、吸活人血的怪物，常見於恐怖小說與影視作品。",
+     "en": "in old stories, a dead person who comes out of the grave at night and bites people to drink their blood",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "09567238-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "吸血的人、剝削者",
+     "zh": "比喻不斷榨取別人金錢或精力的人，常用於抱怨老闆、房東或商人。",
+     "en": "a person who takes a lot of money or energy from other people and gives nothing back",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "吸血鬼（流行文化角色）",
+     "zh": "電影、影集、電玩中帶有魅力、長生不老的吸血鬼角色，如《暮光之城》、《吸血鬼日記》。",
+     "en": "a popular character in films, TV shows, and games who lives forever and drinks blood",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "van",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "廂型貨車、貨車",
+     "zh": "有封閉車廂、用來載貨或載工具的車輛，日常最常見的意思。",
+     "en": "a vehicle with an enclosed space for carrying goods or equipment",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04527465-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "廂型休旅車、露營車",
+     "zh": "車廂較大、可載多人或改裝成露營用的車，常指休旅車或露營車。",
+     "en": "a large vehicle for carrying people or camping, often with living space",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04527677-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "先鋒、前驅",
+     "zh": "在隊伍或潮流最前面帶頭的人或事物，多用於書面或比喻。",
+     "en": "the person or group at the front of a movement or army",
+     "usage": "less_common",
+     "register": [
+      "formal",
+      "literary"
+     ],
+     "synsets": [
+      "08232416-n",
+      "08482569-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（英式）行李車廂",
+     "zh": "英國火車上專門載行李或貨物的封閉車廂。",
+     "en": "a closed railway car for baggage or goods, used in Britain",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "04527775-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "用貨車搬運",
+     "reason": "動詞用法在現代英語中幾乎不用，學習者不必記。"
+    }
+   ]
+  },
+  {
+   "headword": "vanilla",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "香草、香草精",
+     "zh": "從香草莢提煉、常用於冰淇淋、蛋糕與甜點的香料。",
+     "en": "a sweet flavoring used in desserts, made from the seed pods of a tropical plant",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07844783-n",
+      "05724409-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "香草口味的",
+     "zh": "形容食物或飲料加了香草香料，如香草冰淇淋、香草拿鐵。",
+     "en": "having the sweet flavor of vanilla added",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02833957-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "普通的、基本款的",
+     "zh": "口語中形容某事物沒有特別之處、不加額外功能或裝飾。",
+     "en": "ordinary and plain, with no special features or extras",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "01798634-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "香草植物、香莢蘭",
+     "zh": "熱帶地區的攀藤植物，其果莢即香草的來源。",
+     "en": "a tropical climbing plant whose pods are used to make a sweet flavoring",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "12107056-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "vanish",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "消失、不見",
+     "zh": "人或東西突然不見，常讓人覺得莫名其妙。",
+     "en": "to disappear suddenly, often in a way that is hard to explain",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00427911-v",
+      "02160976-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "消失無蹤、不存在了",
+     "zh": "指某種事物、現象或感覺完全消失、不再存在。",
+     "en": "to stop existing completely",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00428350-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "迅速消逝（時間、歲月）",
+     "zh": "用來說時間過得很快，帶有文學或感嘆的語氣。",
+     "en": "to pass very quickly, especially of time",
+     "usage": "less_common",
+     "register": [
+      "literary"
+     ],
+     "synsets": [
+      "02076993-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "迅速減少、消散",
+     "zh": "指數量或東西快速變少，最後消失不見。",
+     "en": "to become less and then disappear quickly",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00152881-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "成為零",
+     "reason": "數學術語，指數值變成零，一般情境幾乎不用"
+    }
+   ]
+  },
+  {
+   "headword": "vanity",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "虛榮、自負",
+     "zh": "過度在意自己的外表、成就或別人對自己的看法，並因此感到驕傲。",
+     "en": "too much pride in your own appearance, abilities, or what others think of you",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04894324-n",
+      "07524235-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "空虛、徒勞",
+     "zh": "指事物沒有價值或努力終究白費，常見於文學或正式寫作。",
+     "en": "the state of being worthless or of no real use",
+     "usage": "less_common",
+     "register": [
+      "literary",
+      "formal"
+     ],
+     "synsets": [
+      "05148287-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "梳妝臺",
+     "zh": "附鏡子的低矮桌子，坐著化妝或整理儀容時使用。",
+     "en": "a low table with a mirror where you sit to put on makeup or get dressed",
+     "usage": "less_common",
+     "register": [
+      "old"
+     ],
+     "synsets": [
+      "03243289-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "時髦的小擺飾",
+     "reason": "舊義，現代幾乎不用，且與本詞主要意思無關"
+    }
+   ]
+  },
+  {
+   "headword": "vantage",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "有利位置、制高點",
+     "zh": "能清楚觀察或掌握全局的地點或角度，常見於 vantage point 一詞。",
+     "en": "a position or place that gives you a clear view of something or an advantage over others",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "08694813-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "優勢、有利條件",
+     "zh": "比別人更有利的地位或條件，現代多見於書面語。",
+     "en": "a better or more favorable position than other people",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "05163204-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "vapor",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "蒸氣、水氣",
+     "zh": "液體受熱或蒸發後形成的氣體，常指看得見的白霧狀水氣",
+     "en": "a gas that forms when a liquid is heated or evaporates, often seen as a white mist",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "15080200-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（電子煙的）煙霧",
+     "zh": "電子煙加熱菸油後產生的霧氣，也指抽電子煙這個行為",
+     "en": "the mist produced by an electronic cigarette, or the act of smoking one",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "v.",
+     "label": "蒸發、變成氣體",
+     "zh": "液體轉變成氣體的過程，常見於科學或技術描述",
+     "en": "to change from a liquid into a gas",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "13593639-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "使蒸發（及物動詞）",
+     "reason": "現代少用，且與不及物用法重複，學習者不必單獨記"
+    },
+    {
+     "meaning": "汽、蒸氣（舊式拼寫 vapour 的釋義）",
+     "reason": "與第一個詞義重複，僅拼法不同"
+    }
+   ]
+  },
+  {
+   "headword": "vapour",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "蒸氣、水氣",
+     "zh": "液體受熱或蒸發後形成的氣狀物，常見於水蒸氣、霧氣等情境。",
+     "en": "a mass of very small drops of water or gas in the air, often produced when a liquid is heated",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "15080200-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "蒸發（過程）",
+     "zh": "液體變成氣體的過程，多用於科學或技術說明。",
+     "en": "the process of a liquid changing into a gas",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "13593639-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "吹牛、說大話",
+     "reason": "舊字典的罕用義，現代英文幾乎不用 vapour 表達此意"
+    },
+    {
+     "meaning": "使蒸發、使汽化（及物動詞）",
+     "reason": "現代少用，且多見於專業或文學文體，一般學習者不需掌握"
+    }
+   ]
+  },
+  {
+   "headword": "variability",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "變異性、變化程度",
+     "zh": "指事物會變動、不固定的程度，常用於統計、科學或資料分析。",
+     "en": "the degree to which something changes or differs over time or between cases",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "04742473-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "不一致、參差不齊",
+     "zh": "指事物分布不均、缺乏一致性的情況。",
+     "en": "the state of being uneven or not the same in all parts",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "04779129-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "variable",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "變數、變量",
+     "zh": "數學或程式設計中可代表不同數值的量或符號，如 x、y。",
+     "en": "a letter or symbol, such as x or y, that stands for a number that can change",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "05866043-n",
+      "07285985-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "可變的、會變動的",
+     "zh": "形容價格、速度、天氣等會隨情況改變，不是固定不變的。",
+     "en": "able to change or likely to change from one situation to another",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02514176-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "多變的、不穩定的",
+     "zh": "形容情況、結果或表現起伏不定、難以預測。",
+     "en": "changing often and in ways that are hard to predict",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "02517573-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "變動因素、不確定因素",
+     "zh": "指會影響結果、且難以控制或預測的事物。",
+     "en": "a thing that can change and affect the result of a situation",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "09492089-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "可調式的（裝置）",
+     "zh": "形容燈光、速度等裝置可依需要調整強弱。",
+     "en": "designed so that a setting such as brightness or speed can be changed",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01032411-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "變星（亮度會變化的恆星）",
+     "reason": "天文學專業術語，一般學習者幾乎不會遇到"
+    }
+   ]
+  },
+  {
+   "headword": "variance",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "差異、不一致",
+     "zh": "指說法、數據或事實之間有出入、對不上。",
+     "en": "a difference between things that should be the same, such as facts, claims, or amounts",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04756982-n",
+      "07381227-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "變異、變動程度",
+     "zh": "指某事物在數量、品質或狀況上的變化幅度。",
+     "en": "the amount by which something changes or differs from one time or case to another",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04742473-n",
+      "00195818-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "變異數（統計）",
+     "zh": "統計學上指各數值與平均值差距平方的平均，用來衡量資料分散程度。",
+     "en": "a statistical measure of how spread out a set of numbers is around their average",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "06034344-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "分歧、不和",
+     "zh": "指團體或人之間意見不合、產生裂痕。",
+     "en": "disagreement that causes a group to split or people to be in conflict",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "07196502-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "特例許可（法規）",
+     "zh": "指官方核准可以不遵守某項規定（如建築法規）的例外許可。",
+     "en": "official permission to do something that a rule or law normally does not allow",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01144471-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "variant",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "變體、版本",
+     "zh": "與同類事物略有不同的一種形式，如產品的不同版本或疾病的變異株。",
+     "en": "a form of something that is slightly different from other forms of the same thing",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "05849159-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（生物）變異株、變種",
+     "zh": "同一物種中因微小差異而分出的群體，常用於病毒、基因等討論。",
+     "en": "a group of living things within a species that differ slightly from the rest",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "08128123-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "不同的、有差異的",
+     "zh": "用來形容某事物與標準或一般版本不一樣。",
+     "en": "different from other things of the same kind or from the usual standard",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "02075681-s",
+      "02515460-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（拼字、讀音的）異體",
+     "zh": "同一個字在拼法或讀音上的另一種寫法，常見於詞典標示。",
+     "en": "a different way of spelling or saying the same word",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "出乎意料的事件",
+     "reason": "WordNet 的 07381227-n 屬罕用義，現代日常幾乎不用 variant 表達此意"
+    },
+    {
+     "meaning": "隨機變數",
+     "reason": "統計學專業術語，一般學習者不會遇到"
+    }
+   ]
+  },
+  {
+   "headword": "variation",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "變化、差異",
+     "zh": "指事物在程度、數量或情況上的改變或不同，常用於統計、數據或一般描述。",
+     "en": "a change in amount, level, or condition, or a difference between things",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07351990-n",
+      "13593527-n",
+      "00195818-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "變體、版本",
+     "zh": "指同一類事物中略有不同的版本或形式，如產品、食譜、規則的變體。",
+     "en": "a slightly different form or version of something of the same type",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "05849159-n",
+      "04528994-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "變奏曲",
+     "zh": "音樂中將主題加以變化重複的段落或樂曲。",
+     "en": "a repeated musical theme that has been changed or decorated",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "07043499-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "變異、突變體",
+     "zh": "生物學上指因基因或染色體改變而產生不同特徵的個體。",
+     "en": "a living thing that differs because of a change in its genes or chromosomes",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "10361391-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "磁偏角",
+     "zh": "地理與航海領域指出某地磁北與真北之間的夾角。",
+     "en": "the angle between magnetic north and true north at a place",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "13916003-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "芭蕾獨舞或舞步",
+     "reason": "專業領域過窄，一般學習者不會遇到"
+    },
+    {
+     "meaning": "天體軌道的攝動",
+     "reason": "天文學專業術語，使用範圍極窄"
+    }
+   ]
+  },
+  {
+   "headword": "varied",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "各種各樣的、多樣的",
+     "zh": "由多種不同的人事物組成，強調種類豐富",
+     "en": "made up of many different kinds of things or people",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02516600-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "不同的、各異的",
+     "zh": "彼此不一樣，用來形容意見、結果、程度等差別很大",
+     "en": "different from each other; not all the same",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00787025-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "富變化的、不單調的",
+     "zh": "形容生活、工作、興趣等有變化、不枯燥",
+     "en": "full of different activities or experiences, so not boring",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00356194-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "雜色的",
+     "reason": "舊字典義，現代指花色多用 multicolored、variegated，幾乎不用 varied 表達"
+    }
+   ]
+  },
+  {
+   "headword": "variety",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "多樣性、變化",
+     "zh": "指事物種類多、有變化，不單調。",
+     "en": "the quality of being different and not all the same",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04758560-n",
+      "04759289-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "種類、品種",
+     "zh": "指某一類東西中的不同類型，常用 a variety of 表示多種。",
+     "en": "a type of something that is different from others in the same group",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "05847533-n",
+      "08118051-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "綜藝節目、雜耍表演",
+     "zh": "指由歌唱、舞蹈、短劇等組成的娛樂表演。",
+     "en": "a show with different short performances such as singing, dancing, and comedy",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "07033353-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "多種、各式各樣",
+     "zh": "指包含多種不同東西的集合，常用於 a variety of。",
+     "en": "a collection of different kinds of things",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "08415730-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "various",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "各種的、各式各樣的",
+     "zh": "指事物種類很多、不一樣，常放在名詞前修飾複數名詞。",
+     "en": "of several different kinds or types",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02073069-s",
+      "02517830-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "不同的、相異的",
+     "zh": "強調彼此不一樣、有差別，常用於說明原因、意見或情況各異。",
+     "en": "different from each other; not the same",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02074895-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "各自的、個別的",
+     "zh": "指分別來看每個人或每件事，常見於 for various reasons 這類說法。",
+     "en": "considered separately, one by one",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00496454-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "雜色的",
+     "reason": "舊字典義，現代英語幾乎不用這個意思，只在極少數文學描述中出現"
+    }
+   ]
+  },
+  {
+   "headword": "vary",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "變化、有所不同",
+     "zh": "指事物在某方面改變，或彼此之間有差異",
+     "en": "to change in some way, or to be different from one another",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00122978-v",
+      "02668375-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "使多樣化、改變（做法）",
+     "zh": "主動讓內容或做法更有變化、不單調",
+     "en": "to change something so that it includes different things or is not always the same",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00437832-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "因人而異、視情況而定",
+     "zh": "常與 according to、depending on 連用，表示隨條件不同而改變",
+     "en": "to be different depending on the person, situation, or conditions",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02668375-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "與……不符、偏離",
+     "zh": "正式用法，指與規則、標準或預期不一致",
+     "en": "to differ from or not follow a rule, standard, or what is expected",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "02667330-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "違反",
+     "reason": "舊字典把 vary from 譯成「違反」，語感偏誤；現代多說 differ from 或 deviate from，此義已併入「與……不符」一項"
+    }
+   ]
+  },
+  {
+   "headword": "varying",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "不同的、各異的",
+     "zh": "用來形容多個事物彼此不一樣、有差異，常見於 varying degrees、varying sizes 等搭配。",
+     "en": "different from one another; not all the same",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02517573-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "不斷變化的、時而不同的",
+     "zh": "形容某事物隨時間或情況而改變，如 varying weather、varying prices。",
+     "en": "changing often or depending on the situation",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "[計] 改變",
+     "reason": "參考資料只給出電腦領域的動詞釋義，且標示不完整；現代英語中 varying 主要作形容詞，動詞用法屬 vary 的變化形，不另立義項。"
+    }
+   ]
+  },
+  {
+   "headword": "vase",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "花瓶",
+     "zh": "用來插花或當裝飾的玻璃、陶瓷容器。",
+     "en": "a container made of glass or clay, often used for holding flowers or as a decoration",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04529463-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "瓶（泛指容器）",
+     "reason": "舊字典把 vase 泛譯成「瓶」，現代英文中泛指瓶子多用 bottle 或 jar，vase 專指花瓶或裝飾用容器"
+    }
+   ]
+  },
+  {
+   "headword": "vast",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "廣大的、遼闊的",
+     "zh": "形容土地、海洋、空間等範圍極大、一眼望不盡。",
+     "en": "extremely large in area or stretching very far",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01390253-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "大量的、龐大的",
+     "zh": "形容數量、金額、程度等非常大，常用於 vast amount、vast majority 等搭配。",
+     "en": "very large in amount, number, or degree",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01390253-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "巨大的（差距、差異）",
+     "zh": "形容兩者之間的差別或距離非常大，如 vast difference、vast gap。",
+     "en": "much bigger than usual when comparing two things",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01390253-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "非常的",
+     "reason": "舊字典的副詞用法，現代英文不以 vast 表示「非常」，屬過時誤譯"
+    }
+   ]
+  },
+  {
+   "headword": "vastly",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "大大地、極大地",
+     "zh": "表示程度差距或變化非常大，常用來強調比較的結果",
+     "en": "very much, especially when comparing two things or showing a big change",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00006160-r"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "廣大地（指空間範圍）",
+     "reason": "舊字典把 vast 的「廣大」直接套到副詞，現代英文 vastly 幾乎只表程度，不表空間範圍"
+    }
+   ]
+  },
+  {
+   "headword": "vat",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "增值稅（VAT）",
+     "zh": "依商品或服務價值課徵的稅，常見於英國、歐盟等地，寫作 VAT。",
+     "en": "a tax added to the price of goods and services, based on their value",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "89535166-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "大桶、大槽",
+     "zh": "工廠、釀酒廠等用來盛裝或儲存液體的大型容器。",
+     "en": "a large container used for holding or storing liquids",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "04500676-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "裝入大桶、在大桶裡處理",
+     "reason": "動詞用法罕見，現代幾乎只出現在舊式或專業文本中"
+    }
+   ]
+  },
+  {
+   "headword": "vaughan",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "沃恩（姓氏、男子名）",
+     "zh": "英語系國家常見的姓氏，也可當男子名使用。",
+     "en": "a common family name, also used as a man's first name",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "vault",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "金庫、保險庫",
+     "zh": "銀行或大型場所中存放貴重物品、現金的安全房間",
+     "en": "a secure room or container where money and valuables are kept",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04531126-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（體育館的） vault、穹頂",
+     "zh": "體育館或大型建築中高挑的拱形屋頂結構",
+     "en": "a high arched roof or ceiling, especially in a large building",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "04530820-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "墓室、地下墓穴",
+     "zh": "埋葬遺體的地下空間，常見於教堂或墓地",
+     "en": "an underground room where people are buried, often under a church",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "04530985-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "跳過、躍過",
+     "zh": "用手撐或用力跳過某個障礙物",
+     "en": "to jump over something, using your hands or legs to push yourself up",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01970175-v",
+      "01969813-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "撐竿跳",
+     "zh": "田徑運動中撐竿躍過橫桿的項目",
+     "en": "the sport of jumping over a high bar using a long pole",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00121335-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "做成圓拱形、成穹狀彎曲",
+     "reason": "現代少用，多見於建築專業描述，一般學習者幾乎不會遇到"
+    },
+    {
+     "meaning": "窖、地下室",
+     "reason": "舊義，現代多改用 cellar、basement 表達"
+    }
+   ]
+  },
+  {
+   "headword": "vauxhall",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "沃克斯豪爾（倫敦地名、車站名）",
+     "zh": "倫敦南部的一個地區，也是當地地鐵站與鐵路站的名稱。",
+     "en": "an area in south London, also the name of its underground and railway station",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "沃克斯豪爾（英國汽車品牌）",
+     "zh": "英國的汽車品牌，曾為歐寶的英國分廠，現多用於老車或品牌歷史的討論。",
+     "en": "a British car brand, once the UK branch of Opel, now mainly mentioned in car history",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "沃克斯豪爾（倫敦音樂場館）",
+     "zh": "倫敦著名的演唱會與夜店場館，常簡稱 Vauxhall。",
+     "en": "a well-known London music and nightclub venue",
+     "usage": "rare",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "歐寶的英國分廠",
+     "reason": "已併入品牌義，且現代多指品牌本身而非分廠組織"
+    }
+   ]
+  },
+  {
+   "headword": "vector",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "向量、矢量",
+     "zh": "數學或物理中具有大小和方向的量，例如速度、力。",
+     "en": "a quantity that has both size and direction, such as velocity or force",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "05873161-n",
+      "13936278-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "病媒、傳播媒介",
+     "zh": "傳播疾病的生物，例如蚊子、蜱蟲。",
+     "en": "an animal or insect that carries and spreads a disease",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "09492415-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（基因）載體",
+     "zh": "基因工程中用來將 DNA 送入細胞的病毒或其他工具。",
+     "en": "a virus or other agent used to carry DNA into a cell in genetic engineering",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01374679-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（電腦）向量",
+     "zh": "電腦繪圖中以數學方式描述圖形的方式，或機器學習中表示資料特徵的數值陣列。",
+     "en": "in computing, a set of numbers used to represent data or describe graphics",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "（攻擊）途徑、手段",
+     "zh": "攻擊者或疾病傳播所利用的管道或方式，常用於資安領域。",
+     "en": "a way or means by which something harmful is spread or carried out",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "vt. (用無線電)導引, 給...導航",
+     "reason": "罕用且過時的動詞用法，現代英語幾乎不用。"
+    }
+   ]
+  },
+  {
+   "headword": "veer",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "突然轉向、改變方向",
+     "zh": "指車輛、風、路線或話題突然偏離原本的方向。",
+     "en": "to change direction suddenly, especially a vehicle, the wind, or a course",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02037140-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "（話題、意見）轉變",
+     "zh": "指人的想法、立場或討論內容轉往另一個方向。",
+     "en": "to change from one opinion, subject, or way of doing something to another",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "v.",
+     "label": "（風）轉向",
+     "zh": "指風向改變，常見於天氣或航海描述。",
+     "en": "if the wind veers, it changes direction, often clockwise",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00561841-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "使轉向（及物用法）",
+     "reason": "現代少用，通常改用 turn 或 steer，且與不及物義重複"
+    },
+    {
+     "meaning": "轉向（名詞）",
+     "reason": "現代幾乎不用名詞形，改說 change of direction"
+    }
+   ]
+  },
+  {
+   "headword": "vegetable",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "蔬菜",
+     "zh": "可食用的植物部位，如葉菜、根莖、豆類或花球，通常搭配主餐食用。",
+     "en": "a plant or part of a plant that is eaten as food, usually with a main meal",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07723196-n",
+      "12232878-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "植物人、重病臥床者",
+     "zh": "因重傷或重病而失去意識、長期臥床的人，常見於醫療與新聞報導。",
+     "en": "a person who is so badly injured or ill that they cannot move or respond",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "蔬菜的",
+     "zh": "放在名詞前，表示與蔬菜有關，如蔬菜湯、蔬菜油。",
+     "en": "used before a noun to mean made from or relating to vegetables",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "植物",
+     "reason": "舊義，現代一般用 plant 表示植物，vegetable 已專指蔬菜"
+    },
+    {
+     "meaning": "無精打采之人",
+     "reason": "口語罕用，現代幾乎不再這樣說"
+    },
+    {
+     "meaning": "植物的（形容詞）",
+     "reason": "舊義，現代形容詞用法只保留「蔬菜的」"
+    }
+   ]
+  },
+  {
+   "headword": "vegetarian",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "素食者",
+     "zh": "不吃肉或魚的人，有些人也不吃蛋奶等動物性食品",
+     "en": "a person who does not eat meat or fish, and often avoids other animal products",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10766787-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "素食的、不含肉的",
+     "zh": "形容餐點、餐廳或飲食不含肉或魚",
+     "en": "describing food, meals, or places that contain or serve no meat or fish",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "82572455-a"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "食草動物",
+     "reason": "舊字典的誤譯；食草動物應為 herbivore，vegetarian 只用於人"
+    }
+   ]
+  },
+  {
+   "headword": "vegetation",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "植被、草木",
+     "zh": "某一地區或時期生長的各種植物，通常指整體的植物群落。",
+     "en": "the plants that grow in a particular area or period, considered as a whole",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "08453769-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "植物生長過程",
+     "zh": "植物生長的過程，屬於生物學或農業領域的用法。",
+     "en": "the process by which plants grow",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "13594260-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "異常的生長物（尤指心臟瓣膜上的疣狀贅生物）",
+     "reason": "專業醫學領域過窄，一般學習者不會遇到"
+    },
+    {
+     "meaning": "被動而單調的無所事事（如植物般不活動）",
+     "reason": "文學或罕用比喻義，現代幾乎不使用"
+    }
+   ]
+  },
+  {
+   "headword": "vehicle",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "車輛、交通工具",
+     "zh": "在路上運送人或貨物的機器，如汽車、卡車、機車等。",
+     "en": "a machine such as a car, truck, or motorcycle that carries people or things on roads",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04531608-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "媒介、手段",
+     "zh": "用來表達想法或達成某種目的的方法或管道。",
+     "en": "a way of expressing ideas or achieving something",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "06265658-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "傳染媒介",
+     "zh": "把病菌從一個人或動物帶給另一個的生物或物體。",
+     "en": "a living thing or object that carries a disease from one person or animal to another",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "09306099-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（顏料、藥物的）調和劑",
+     "zh": "與顏料或藥物混合、方便使用的液體。",
+     "en": "a liquid that is mixed with paint or a drug so it can be used",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "15136653-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "veil",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "面紗",
+     "zh": "女性遮住臉部或頭部的薄紗，常見於婚禮或宗教場合。",
+     "en": "a thin piece of cloth worn by a woman to cover her face or head",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03507475-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "遮蔽物、簾幕",
+     "zh": "比喻用來遮掩或分隔的東西，如霧、幕等。",
+     "en": "something that hides or separates, like a curtain or a layer of mist",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "v.",
+     "label": "掩飾、遮掩",
+     "zh": "把真實情況或情感隱藏起來，不讓別人知道。",
+     "en": "to hide or cover something so that it cannot be seen or understood",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01485877-v",
+      "00314788-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（修女）頭巾",
+     "zh": "修女戴的頭巾，是宗教服裝的一部分。",
+     "en": "a piece of cloth worn over the head by a nun",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "（天主教）聖帶",
+     "zh": "天主教神父在彌撒時披在肩上的絲質披帶。",
+     "en": "a silk shawl worn by a priest during Mass in the Roman Catholic Church",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "03554110-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（蘑菇）菌幕",
+     "reason": "專業領域過窄，一般學習者不會遇到。"
+    },
+    {
+     "meaning": "（胚胎）羊膜",
+     "reason": "專業領域過窄，一般學習者不會遇到。"
+    },
+    {
+     "meaning": "戴面紗（動詞）",
+     "reason": "現代少用，通常用 wear a veil 表達。"
+    }
+   ]
+  },
+  {
+   "headword": "vein",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "靜脈、血管",
+     "zh": "把血液送回心臟的血管，日常談健康、抽血、打點滴時常用。",
+     "en": "a tube in the body that carries blood back toward the heart",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "05426061-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（葉子的）葉脈、紋路",
+     "zh": "葉片或昆蟲翅膀上像血管一樣分岔的細紋。",
+     "en": "one of the thin lines that branch through a leaf or an insect's wing",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "13118945-n",
+      "02471366-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "風格、調性",
+     "zh": "形容說話、寫作或作品帶有某種一貫的語氣或取向，常說 in a similar vein。",
+     "en": "a particular style or way of expressing something",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "07103814-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "礦脈",
+     "zh": "岩層之間夾著的一層礦物，屬地質與採礦用語。",
+     "en": "a layer of metal or mineral found between layers of rock",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "09493352-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "使有脈絡、像脈絡般分佈",
+     "reason": "動詞用法極罕見，現代幾乎不用"
+    },
+    {
+     "meaning": "氣質、情緒",
+     "reason": "舊字典的籠統釋義，現代對應說法多為 mood 或 in the mood，不單獨用 vein 表達"
+    }
+   ]
+  },
+  {
+   "headword": "velocity",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "速度（物理量）",
+     "zh": "物體在單位時間內移動的距離，是物理與工程常用的基本概念。",
+     "en": "the speed at which something moves in a particular direction, measured as distance over time",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "15307914-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "速度、快慢",
+     "zh": "泛指事情進行或變化的快慢，常見於商業、行銷與一般說明。",
+     "en": "the speed at which something happens or changes",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "迅速",
+     "reason": "舊字典把「迅速」當成名詞釋義，現代英文通常用 speed 或 rapidity，velocity 不這樣單獨使用。"
+    }
+   ]
+  },
+  {
+   "headword": "velvet",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "天鵝絨、絲絨",
+     "zh": "一種表面有細密絨毛、摸起來柔滑的布料，常用於禮服、窗簾或首飾盒內襯。",
+     "en": "a soft cloth with a thick smooth surface on one side, used for clothes and decoration",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04532333-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "天鵝絨製的",
+     "zh": "用天鵝絨做成的，放在名詞前說明材質。",
+     "en": "made of velvet",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "柔滑的、絨毛般的",
+     "zh": "形容觸感或外觀像天鵝絨一樣平滑柔軟，也可形容聲音低沉柔和。",
+     "en": "smooth and soft, like the surface of velvet",
+     "usage": "less_common",
+     "register": [
+      "literary"
+     ],
+     "synsets": [
+      "02246054-s",
+      "01158709-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "vendor",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "攤販、小販",
+     "zh": "在街頭或市場擺攤賣東西的人，常見於夜市、市集等場合。",
+     "en": "a person who sells things from a small stall or on the street",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10596736-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "供應商、廠商",
+     "zh": "企業或組織往來採購時，提供商品或服務的公司，常用於商業與採購情境。",
+     "en": "a company or person that supplies goods or services to a business",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "10596736-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（活動的）攤位、參展商",
+     "zh": "展覽、市集或活動中設攤販售或展示的單位。",
+     "en": "a seller with a stand at an event, fair, or market",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "10596736-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "自動售貨機",
+     "reason": "舊字典把 vending machine 的意思誤掛在 vendor 上；現代英文的 vendor 不指機器本身。"
+    }
+   ]
+  },
+  {
+   "headword": "vengeance",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "報復、復仇",
+     "zh": "因為別人傷害了自己或親近的人，而採取行動讓對方付出代價。",
+     "en": "the act of harming someone in return for something bad they have done to you",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "01238028-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（口語）徹底地、狠狠地",
+     "zh": "用於 with a vengeance，表示某事以更強烈、更徹底的方式發生。",
+     "en": "used in the phrase \"with a vengeance\" to mean to a very great degree or with great force",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（宗教）死後的報應、來世復仇",
+     "reason": "WordNet 定義中的「especially in the next life」屬宗教語境，現代一般用法已不再強調，併入主要詞義即可。"
+    }
+   ]
+  },
+  {
+   "headword": "venice",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "威尼斯",
+     "zh": "義大利東北部的觀光城市，以運河、貢多拉與面具嘉年華聞名。",
+     "en": "a city in northeast Italy famous for its canals, boats, and old buildings",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "vent",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "發洩（情緒）、吐苦水",
+     "zh": "把強烈的情緒或不滿說出來，讓自己好過一點",
+     "en": "to express strong feelings, especially anger or frustration, in order to feel better",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00946580-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "通風孔、排氣口",
+     "zh": "讓氣體或空氣排出或進入的孔洞或管道",
+     "en": "a hole or pipe that allows gas or air to escape or enter",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04533536-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（情緒的）出口、抒發",
+     "zh": "讓壓抑的情緒或精力有地方表現出來的途徑",
+     "en": "a way of expressing or releasing strong feelings or energy",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01266940-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（火山）噴發口",
+     "zh": "地殼上岩漿和氣體噴出的裂口",
+     "en": "an opening in the earth's surface through which lava and gases come out",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "09493680-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（衣服的）開衩",
+     "zh": "衣服背後或側邊的細長開口，常見於西裝外套",
+     "en": "a long narrow opening in the back or side of a jacket or other piece of clothing",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "04533711-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（低等脊椎動物的）泄殖腔孔",
+     "reason": "專業生物學術語，一般學習者不會遇到"
+    },
+    {
+     "meaning": "使涼爽、冷卻（透過空氣流通）",
+     "reason": "罕用義，現代英語幾乎不用"
+    }
+   ]
+  },
+  {
+   "headword": "ventilation",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "通風、空氣流通",
+     "zh": "讓室內或密閉空間有新鮮空氣進來、把髒空氣排出去，是最日常的用法。",
+     "en": "the process of letting fresh air into a room or closed space and removing stale air",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00267489-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "通風系統、通風設備",
+     "zh": "指建築物裡負責換氣的機械系統，例如空調、抽風機、管道。",
+     "en": "the equipment or system in a building that keeps air moving and fresh",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "04533815-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "公開討論、抒發（意見）",
+     "zh": "讓某個議題或情緒公開表達出來，常見於「ventilation of opinions」這類說法。",
+     "en": "the act of expressing an issue or feeling openly so that people can discuss it",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "07158898-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "呼吸、氣體交換",
+     "reason": "WordNet 的生理學義（吸氣吐氣）在現代一般英文幾乎不用 ventilation 表達，屬專業領域用法，學習者不必記。"
+    }
+   ]
+  },
+  {
+   "headword": "venture",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "新創事業、冒險事業",
+     "zh": "指有風險但可能帶來利潤的新商業計畫或投資，常用於新創公司或創業語境。",
+     "en": "a new business project or investment that involves risk but may be profitable",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01119485-n",
+      "13363707-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "冒險前往、大膽去（某處）",
+     "zh": "指不顧危險或困難前往某地，常用於 venture out、venture into 等片語。",
+     "en": "to go somewhere despite the risk or difficulty involved",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02378427-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "大膽提出（意見、猜測）",
+     "zh": "指在可能被質疑的情況下，仍勇敢說出自己的想法或猜測。",
+     "en": "to say or suggest something even though it may be criticized or wrong",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00918880-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "冒險做、拿（生命、金錢）去賭",
+     "zh": "指冒著失去某物的風險去做某事，常用於 venture one's life、venture a guess 等。",
+     "en": "to risk losing something valuable, such as money or one's life, in order to do something",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "02550969-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "冒險、風險",
+     "zh": "泛指有風險的行動或嘗試，常用於文學或正式語境。",
+     "en": "an action or attempt that involves risk or uncertainty",
+     "usage": "less_common",
+     "register": [
+      "literary",
+      "formal"
+     ],
+     "synsets": [
+      "00799539-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "venue",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "場地、會場",
+     "zh": "舉辦活動、表演或會議的地方，如體育館、劇院、會議中心。",
+     "en": "a place where an event, performance, or meeting happens",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "08695366-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（犯罪）現場",
+     "zh": "新聞或法律語境中指犯罪或事故發生的地點。",
+     "en": "the place where a crime or accident happened",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "審判地、管轄法院",
+     "zh": "法律用語，指案件審理所在的法院或司法管轄區。",
+     "en": "the court or area where a legal case is heard",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "08695263-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "發生地點（泛指任何事件）",
+     "reason": "與「場地、會場」意思重疊，現代多指活動場所，已合併處理"
+    }
+   ]
+  },
+  {
+   "headword": "venus",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "金星",
+     "zh": "太陽系中離太陽第二近的行星，夜空中常可見到的明亮星體。",
+     "en": "the second planet from the sun, often seen shining brightly in the night sky",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "維納斯（羅馬女神）",
+     "zh": "羅馬神話中掌管愛與美的女神，常出現在藝術與文學作品裡。",
+     "en": "the Roman goddess of love and beauty, often shown in art and stories",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "verb",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "動詞",
+     "zh": "表示動作、事件或狀態的詞類，例如 run、happen、be。",
+     "en": "a word that shows an action, an event, or a state, such as run, happen, or be",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "06329055-n",
+      "06331562-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "verbal",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "口頭的、言語的",
+     "zh": "用說話表達而非書寫的，如口頭約定、口頭警告",
+     "en": "spoken rather than written",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02292058-s",
+      "00502355-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "言辭的、用詞的",
+     "zh": "與文字或言語表達有關的，如言語溝通、語言表達能力",
+     "en": "relating to words or the use of words",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02834859-a",
+      "02238326-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "動詞的",
+     "zh": "文法上與動詞有關的，如動詞片語",
+     "en": "relating to a verb, in grammar",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "02834663-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "冗長的、喋喋不休的",
+     "zh": "形容人話多或文章囉嗦、篇幅拖得很長",
+     "en": "talking or writing too much, in a boring and long way",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00551001-a"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "逐字的",
+     "reason": "舊字典義，現代英文幾乎不用 verbal 表達「逐字」之意，多改用 word-for-word"
+    }
+   ]
+  },
+  {
+   "headword": "verdict",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "裁決、判決",
+     "zh": "陪審團在法庭上對案件事實作出的正式認定，常見於法律新聞與法庭劇。",
+     "en": "an official decision made by a jury in a court about whether someone is guilty",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01194640-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "判決結果、裁定",
+     "zh": "法官或陪審團對整起案件作出的最終結論，也指判有罪或無罪的結果。",
+     "en": "the final decision in a court case, especially whether someone is guilty or not",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "定論、普遍看法",
+     "zh": "大家經過討論或觀察後形成的共同結論或評價，常用於媒體評論。",
+     "en": "a general opinion or conclusion that people reach after considering something",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "（比賽、選舉的）結果",
+     "zh": "體育或選舉等場合中最後揭曉的勝負或投票結果。",
+     "en": "the final result of a competition, election, or similar event",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "判斷性意見",
+     "reason": "與「定論、普遍看法」意思重疊，已合併"
+    },
+    {
+     "meaning": "結論",
+     "reason": "與「定論、普遍看法」意思重疊，已合併"
+    }
+   ]
+  },
+  {
+   "headword": "verge",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "邊緣、瀕臨",
+     "zh": "指即將發生某事的臨界點，常見於 on the verge of 的搭配。",
+     "en": "the point at which something is about to happen or change",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "05132458-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "接近、近乎",
+     "zh": "表示某事物接近某種狀態或程度，常用於書面敘述。",
+     "en": "to be very close to a particular state or quality",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "02709650-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（道路旁的）草地、路邊綠帶",
+     "zh": "指馬路或人行道邊緣的窄條草地，屬英式用法。",
+     "en": "a narrow strip of grass at the side of a road",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "04535551-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "邊界、界線",
+     "zh": "指劃分兩地的界線或邊界地帶，較少單獨使用。",
+     "en": "a line or area that marks the border between two places",
+     "usage": "rare",
+     "register": [],
+     "synsets": [
+      "13926744-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "權杖、儀典杖",
+     "reason": "古義，指象徵權位的杖，現代幾乎不使用"
+    },
+    {
+     "meaning": "下沉、趨向（舊字典動詞義）",
+     "reason": "舊字典的罕用義，現代英文不這樣用"
+    }
+   ]
+  },
+  {
+   "headword": "verify",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "查證、核實",
+     "zh": "確認某事的真實性或正確性，常用於查證資訊、身分、帳號等。",
+     "en": "to check that something is true or correct",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00666401-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "證實、證明",
+     "zh": "用證據或事實來證明某個說法或理論是正確的。",
+     "en": "to show or prove that something is true",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00666401-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "檢驗、驗證（實驗、資料）",
+     "zh": "透過比對或重複實驗來確認科學結果或資料的正確性。",
+     "en": "to test or check something by comparing it with a standard or by repeating an experiment",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "02526663-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "宣誓作證、正式確認",
+     "zh": "在法律文件或正式場合中宣誓陳述為真，常見於法律文書。",
+     "en": "to state formally or officially that something is true, especially in a legal document",
+     "usage": "less_common",
+     "register": [
+      "formal",
+      "technical"
+     ],
+     "synsets": [
+      "01013058-v",
+      "01014404-v"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "versatile",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "多才多藝的、樣樣通的",
+     "zh": "形容一個人會很多技能，能輕鬆勝任不同工作或角色。",
+     "en": "able to do many different things well and switch between them easily",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02235908-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "多用途的、萬用的",
+     "zh": "形容工具、設備或材料能用在很多不同場合與用途。",
+     "en": "useful for many different purposes or jobs",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02517830-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "變化多樣的、豐富的",
+     "zh": "形容技能、興趣或內容涵蓋多種不同面向。",
+     "en": "including many different kinds of things or activities",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "02517830-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "可多向轉動的",
+     "zh": "技術用語，形容關節、接頭或鏡頭能朝各方向自由活動。",
+     "en": "able to turn or move freely in every direction",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01528841-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "善變的、不專一的",
+     "reason": "古義，現代幾乎不用這個意思，容易造成誤解"
+    },
+    {
+     "meaning": "萬向的（機械構件名稱）",
+     "reason": "專業領域過窄，已併入「可多向轉動的」詞義"
+    }
+   ]
+  },
+  {
+   "headword": "verse",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "詩句、詩行",
+     "zh": "詩或歌詞中的一行文字",
+     "en": "a single line of a poem or song",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "06396351-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "詩、韻文",
+     "zh": "以節奏和韻律寫成的文學作品，相對於散文",
+     "en": "writing arranged in lines with a regular rhythm, especially poetry",
+     "usage": "common",
+     "register": [
+      "literary"
+     ],
+     "synsets": [
+      "07107220-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（歌曲的）主歌",
+     "zh": "流行歌曲中反覆出現、與副歌交替的段落",
+     "en": "a section of a song that is repeated several times, usually between choruses",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "（聖經的）節",
+     "zh": "聖經或其他宗教經典中編號的小段落",
+     "en": "a numbered short section of a holy book, such as the Bible",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "v.",
+     "label": "作詩、寫詩",
+     "zh": "以詩的形式創作或表達",
+     "en": "to write poetry or express something in the form of a poem",
+     "usage": "less_common",
+     "register": [
+      "literary"
+     ],
+     "synsets": [
+      "01706373-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "用詩表達",
+     "reason": "與「作詩、寫詩」意思重疊，且現代少用"
+    },
+    {
+     "meaning": "透過深入學習或經驗而熟悉",
+     "reason": "古義，現代幾乎不使用"
+    }
+   ]
+  },
+  {
+   "headword": "version",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "版本（軟體、產品）",
+     "zh": "指軟體、應用程式或產品經過更新或修改後的特定形式。",
+     "en": "a particular form of a product, especially software, that is different from other forms",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "05849159-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "版本、改編本",
+     "zh": "指書籍、電影、劇本等作品經過修改或改編後的不同形式。",
+     "en": "a form of a book, movie, play, etc. that is different from other forms",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "06420422-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "說法、描述",
+     "zh": "指對某件事從某個角度或觀點所做的描述或敘述。",
+     "en": "a description of an event or situation from a particular point of view",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07188236-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "譯本、翻譯版本",
+     "zh": "指將某文本從一種語言翻譯成另一種語言的成品。",
+     "en": "a translation of a text into another language",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "06548380-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "理解、詮釋",
+     "zh": "指個人對某事物意義或重要性的心理認知或解讀。",
+     "en": "a person's particular understanding or interpretation of something",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "05937299-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（醫療）胎兒手動轉位",
+     "reason": "專業領域過窄，僅用於醫學特定情境。"
+    }
+   ]
+  },
+  {
+   "headword": "versus",
+   "senses": [
+    {
+     "pos": "prep.",
+     "label": "對、對抗（比賽、訴訟）",
+     "zh": "用於表示比賽、訴訟或衝突中兩方相對，常縮寫為 vs. 或 v.",
+     "en": "used to show that two teams, people, or sides are competing or fighting against each other",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "prep.",
+     "label": "與……相對、相較（兩種選擇）",
+     "zh": "用於比較兩個選項、做法或觀點，表示二者對立或擇一，常見於標題與討論中",
+     "en": "used to compare two choices, ideas, or ways of doing something that are different or opposite",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "prep.",
+     "label": "（法律）訴……、對……提起訴訟",
+     "zh": "法律文件與判決書中表示訴訟雙方，如「A 訴 B」，常縮寫為 v.",
+     "en": "used in law to show who is suing whom in a court case",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "vertical",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "垂直的、直立的",
+     "zh": "與地面或水平線成直角，例如垂直的線、直立的柱子。",
+     "en": "going straight up and down at an angle of 90 degrees to the ground or a flat surface",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01236220-a",
+      "01238732-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "垂直整合的（企業、產業）",
+     "zh": "指企業從生產到銷售各階段都由自己掌控的經營模式。",
+     "en": "involving all the stages of making and selling a product within one company",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "02834979-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "階層的、縱向的（組織、社會）",
+     "zh": "用來描述組織或社會中不同層級之間的關係，例如上下階層的溝通。",
+     "en": "relating to the different levels of rank or power within an organization or society",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "01206814-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "垂直線、垂直面",
+     "zh": "數學或幾何情境中與水平線成直角的線或方向。",
+     "en": "a line or surface that goes straight up and down",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "13851008-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "垂直的結構構件（柱子、樁）",
+     "reason": "專業建築用語，範圍過窄，一般學習者少見"
+    },
+    {
+     "meaning": "直立的東西",
+     "reason": "與形容詞「垂直的、直立的」意思重複，且現代少以名詞單獨使用"
+    }
+   ]
+  },
+  {
+   "headword": "very",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "非常、很",
+     "zh": "用來加強形容詞或副詞的程度，是日常最常見的用法。",
+     "en": "used before an adjective or adverb to make its meaning stronger",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00032295-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "正是、恰好",
+     "zh": "放在 the、this、that 等詞前，強調正是某個特定的人事物。",
+     "en": "used before words like the or this to stress that you mean that exact one",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00513282-r"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "正是的、恰好的",
+     "zh": "放在名詞前，強調就是同一個或完全相同的事物。",
+     "en": "used to stress that something is exactly the same one and not another",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "02076350-s",
+      "01845232-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "十足的、特有的",
+     "reason": "舊字典把 very 當形容詞的少見用法一併列出，現代幾乎只出現在固定搭配，學習者不必單獨記。"
+    }
+   ]
+  },
+  {
+   "headword": "vessel",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "船、船舶",
+     "zh": "泛指各種大小船隻，常見於正式或書面用語。",
+     "en": "a ship or large boat used for traveling on water",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "04537861-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "血管、脈管",
+     "zh": "身體裡輸送血液或其他液體的管狀構造，多用於醫學或生物情境。",
+     "en": "a tube or duct in the body through which blood or other liquid flows",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "05404676-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "容器、器皿",
+     "zh": "盛裝液體等物品的容器，屬較正式的書面說法。",
+     "en": "a container, especially one used for holding liquids",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "04538393-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "vest",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "背心、汗衫",
+     "zh": "穿在上半身的無袖衣物，可當內衣或外搭",
+     "en": "a sleeveless piece of clothing worn on the upper body, often under a shirt or as outerwear",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04539168-n",
+      "04230374-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "授予、賦予（權力、權利）",
+     "zh": "正式將權力、權利或財產交給某人或某機構",
+     "en": "to officially give someone the power, right, or property to control or use",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "02391530-v",
+      "02367915-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "歸屬、歸於",
+     "zh": "權利、財產等依法歸某人所有（常用被動語態）",
+     "en": "to become legally owned by or given to a person or group",
+     "usage": "less_common",
+     "register": [
+      "formal",
+      "technical"
+     ],
+     "synsets": [
+      "02226961-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "穿上（法衣）",
+     "zh": "神職人員穿上宗教儀式用的袍服",
+     "en": "to put on special robes worn by priests or other religious officials",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00051970-v",
+      "00051760-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "使穿衣服",
+     "reason": "古義，現代英語幾乎不用 vest 表示一般穿衣"
+    },
+    {
+     "meaning": "穿衣服（一般用法）",
+     "reason": "古義，現代已不使用"
+    }
+   ]
+  },
+  {
+   "headword": "vet",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "獸醫",
+     "zh": "幫動物看病的醫生，口語和正式場合都常用。",
+     "en": "a doctor whose job is to treat sick or injured animals",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10769383-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "審查、仔細檢查",
+     "zh": "在雇用、錄取或採用前仔細查核背景、資格或內容。",
+     "en": "to check someone's background or something's details carefully before accepting them",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02170561-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "退伍軍人",
+     "zh": "服過兵役的人，尤其在美式英語中常見。",
+     "en": "someone who has served in the armed forces",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "10769021-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "治療（動物）、當獸醫",
+     "zh": "替動物提供醫療照護，或從事獸醫工作。",
+     "en": "to give medical care to animals, or to work as an animal doctor",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00080209-v",
+      "02451369-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "診斷、檢審",
+     "reason": "舊字典的籠統譯法，現代多說 examine 或 check，已併入「審查、仔細檢查」"
+    },
+    {
+     "meaning": "替人提供醫療照護",
+     "reason": "罕用，現代英語幾乎不用 vet 指醫治人"
+    }
+   ]
+  },
+  {
+   "headword": "veteran",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "退伍軍人、老兵",
+     "zh": "指曾在軍隊服役的人，新聞與日常都很常見。",
+     "en": "a person who has served in the armed forces, especially in a war",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10769021-n",
+      "10769196-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "老手、資深前輩",
+     "zh": "指在某個領域做很久、經驗豐富的人，如資深球員或記者。",
+     "en": "someone with a lot of experience in a job, sport, or activity",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10768791-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "資深的、經驗老到的",
+     "zh": "放在名詞前，形容某人因長年歷練而熟練可靠。",
+     "en": "having a lot of experience and skill because of long involvement",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00939792-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "老樹",
+     "reason": "罕用義，現代英文幾乎不用 veteran 指樹木"
+    }
+   ]
+  },
+  {
+   "headword": "veterinary",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "獸醫的、獸醫相關的",
+     "zh": "用來形容與動物醫療、獸醫工作有關的事物，常接 medicine、care、clinic 等字。",
+     "en": "connected with the medical care and treatment of animals",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "03140484-a"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "獸醫",
+     "zh": "專門替動物看病、治療的醫生；日常口語常說 vet。",
+     "en": "a doctor who treats sick or injured animals",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "10769383-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "veto",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "否決、行使否決權",
+     "zh": "以投票或職權正式阻止某項決定、法案或提案通過。",
+     "en": "to officially reject or stop a plan, law, or proposal from being accepted",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02478854-v",
+      "00797525-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "否決權",
+     "zh": "有權否決他人決定或法案的權力，常見於政治與組織規範。",
+     "en": "the official power to reject a decision or law made by others",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "05206196-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "否決（票）",
+     "zh": "在會議或投票中，用來阻止決議通過的那一票或那項否決行動。",
+     "en": "a vote or act that blocks a decision from being made",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00210395-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "vi",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "六（羅馬數字）",
+     "zh": "羅馬數字中的 6，常見於時鐘、書本章節編號或版權頁年份。",
+     "en": "the number six, written as a Roman numeral",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "13766862-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "六個的",
+     "zh": "放在名詞前表示數量是六，多用於正式或編號場合。",
+     "en": "being six in number",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "02194472-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "vi 文字編輯器",
+     "zh": "Unix／Linux 系統上常見的螢幕文字編輯器，工程師會用它在終端機裡改檔案。",
+     "en": "a screen-based text editor commonly used on Unix and Linux systems",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "釩（87 號元素鍅的舊名）",
+     "reason": "化學元素舊名，現代已改用 francium，屬罕用專業舊稱"
+    },
+    {
+     "meaning": "[計] vi 文本編輯器（舊字典列為電腦用語）",
+     "reason": "已併入 senses 的科技用法，不另列"
+    }
+   ]
+  },
+  {
+   "headword": "via",
+   "senses": [
+    {
+     "pos": "prep.",
+     "label": "經由、透過（某地）",
+     "zh": "表示路線或中途經過的地點，說明從某處到另一處所走的路。",
+     "en": "going through or stopping at a place on the way to another place",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "prep.",
+     "label": "藉由、透過（方法、管道）",
+     "zh": "表示用某種方式、工具或管道來完成某事，如透過電子郵件、網站或某人的協助。",
+     "en": "by means of a particular method, system, or person",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "經過、通過（動作本身）",
+     "reason": "與「經由某地」的路線義重複，現代用法已合併處理。"
+    }
+   ]
+  },
+  {
+   "headword": "viability",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "可行性、行得通",
+     "zh": "指計畫、方案或商業模式在現實條件下做得到、能持續運作。",
+     "en": "the quality of being practical and likely to work in real life",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "05158823-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（生物）存活能力、發育能力",
+     "zh": "用於生物或細胞能否正常生長、存活，常見於生物與醫學文章。",
+     "en": "the ability of a living thing or cell to grow and stay alive normally",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "05063385-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "viable",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "可行的、行得通的",
+     "zh": "指計畫、方案或做法在現實條件下做得到、值得採用。",
+     "en": "able to work or succeed in real conditions",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01828067-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "能存活的、能生長的",
+     "zh": "用於生物、細胞或種子，指具備存活與正常發育的能力。",
+     "en": "able to live or grow normally",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00095794-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（企業、事業）能持續經營的",
+     "zh": "指公司或事業在財務上站得住腳、能長期經營下去。",
+     "en": "able to keep operating and making enough money to survive",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "能養活的",
+     "reason": "舊字典直譯，現代英文不這樣用；現代指生物存活時多說 able to survive 或 viable 搭配細胞、種子等，已併入第二個詞義。"
+    }
+   ]
+  },
+  {
+   "headword": "vibrant",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "充滿活力的、生氣蓬勃的",
+     "zh": "形容城市、氣氛、人或活動熱鬧有朝氣、充滿生命力。",
+     "en": "full of energy, life, and activity",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02288703-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "鮮豔的、鮮明的（顏色）",
+     "zh": "形容顏色明亮搶眼、飽和度高。",
+     "en": "bright and strong, especially of colors",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00405187-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "響亮有力的（聲音）",
+     "zh": "形容聲音宏亮、有共鳴感，多用於描述音樂或嗓音。",
+     "en": "loud, strong, and full of resonance",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "02018098-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "振動的、戰慄的",
+     "reason": "古義，現代英語幾乎不再這樣用，現代多改用 vibrating、trembling"
+    }
+   ]
+  },
+  {
+   "headword": "vibration",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "振動、震動",
+     "zh": "物體快速來回移動的現象，如手機震動、機械運轉的震動。",
+     "en": "a continuous quick back-and-forth movement of an object or surface",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00346752-n",
+      "14028057-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（物理）週期性振盪",
+     "zh": "物理學上指數值或位置規律地來回變化，如聲波、電磁波。",
+     "en": "a regular repeating change in value or position, studied in physics",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "07359766-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（直覺感受到的）氣氛、氣息",
+     "zh": "口語上指從某人或某地隱約感受到的情緒或氛圍。",
+     "en": "a feeling or mood that seems to come from a person or place",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "04735141-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "vic",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "V字隊形（飛機）",
+     "zh": "多架飛機排成 V 字形的編隊飛行方式，多在軍事或航空情境使用。",
+     "en": "a group of aircraft flying in a V-shaped formation",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（人名）維克",
+     "reason": "參考資料未列；此字在現代英語中最常見的其實是 Vic 作為人名或暱稱（如 Victor 的簡稱），但那是專有名詞，不屬於一般字義，故不列入。"
+    }
+   ]
+  },
+  {
+   "headword": "vicar",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "（英國國教）教區牧師",
+     "zh": "英國國教會中負責一個教區的牧師，是現代最常見的用法。",
+     "en": "a priest in the Church of England who is in charge of a parish",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10769856-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（天主教）代理神職人員",
+     "zh": "天主教中代表上級神職人員處理職務的司鐸。",
+     "en": "a Catholic priest who acts for a higher-ranking church official",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "10769699-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（美國聖公會）禮拜堂牧師",
+     "zh": "美國聖公會中負責管理小禮拜堂的神職人員。",
+     "en": "a priest in the Episcopal Church who is in charge of a chapel",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "10770033-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "代理人",
+     "reason": "舊字典的泛化譯義，現代英文中幾乎不用 vicar 表示一般代理人"
+    }
+   ]
+  },
+  {
+   "headword": "vice",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "惡習、壞習慣",
+     "zh": "指賭博、酗酒等不良的生活習慣或行為。",
+     "en": "a bad habit or way of behaving that is considered morally wrong",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04861104-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "罪行、邪惡行為",
+     "zh": "用於正式或道德討論中，指具體的犯罪或不道德行為。",
+     "en": "a particular immoral or criminal act",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00748327-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "老虎鉗、台鉗",
+     "zh": "固定在工作檯上、用來夾緊工件以便加工的工具。",
+     "en": "a tool with two jaws that holds an object firmly while you work on it",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "04545847-n"
+     ]
+    },
+    {
+     "pos": "prep.",
+     "label": "代替、接替",
+     "zh": "用於職稱前，表示某人代理該職位，如 vice president（副總裁）。",
+     "en": "used before a job title to show that someone is next in rank and can act for the person above",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "鉗住（動詞）",
+     "reason": "罕用，現代幾乎只以名詞指工具本身"
+    },
+    {
+     "meaning": "墮落、缺陷",
+     "reason": "與「惡習、罪行」詞義重疊，且現代少用"
+    },
+    {
+     "meaning": "罪惡（泛指）",
+     "reason": "與「罪行、邪惡行為」重複，已合併"
+    }
+   ]
+  },
+  {
+   "headword": "vicinity",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "附近、周遭地區",
+     "zh": "指某個地方周圍一帶的區域，常用於 in the vicinity of 的句型。",
+     "en": "the area around a particular place",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "08658688-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "接近、大約（數量）",
+     "zh": "用於 in the vicinity of 加數字，表示大約的數量或程度。",
+     "en": "used before a number to mean approximately or close to that amount",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "鄰近（抽象關係）",
+     "reason": "與「附近地區」意思重疊，現代多併入同一義項處理"
+    }
+   ]
+  },
+  {
+   "headword": "vicious",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "兇殘的、狠毒的",
+     "zh": "形容人會傷害別人，或行為帶有惡意、毫不留情",
+     "en": "cruel and likely to hurt other people, or showing a wish to cause harm",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01266123-s",
+      "00227697-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "惡性的、嚴重的（疾病、循環）",
+     "zh": "用於疾病或壞事不斷惡化、難以停止的情況",
+     "en": "used about a disease or bad situation that gets worse and is hard to stop",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "惡劣的、猛烈的（攻擊、批評）",
+     "zh": "形容攻擊或批評非常猛烈、充滿敵意",
+     "en": "very strong and full of anger, as in an attack or criticism",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "02043172-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "墮落的、敗壞的",
+     "zh": "形容生活或品性敗壞，帶有道德譴責意味",
+     "en": "involving immoral behaviour or bad habits",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "02524157-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "有錯誤的",
+     "reason": "舊字典的誤譯，現代英文沒有這個意思"
+    }
+   ]
+  },
+  {
+   "headword": "victim",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "受害者、被害人",
+     "zh": "因犯罪、事故或災害而受到傷害或損失的人",
+     "en": "a person who has been hurt, damaged, or killed by a crime, accident, or disaster",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10771761-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "被騙的人、上當者",
+     "zh": "被人欺騙、詐騙而吃虧的人",
+     "en": "a person who has been tricked into giving away money or something valuable",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10772148-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "犧牲者、犧牲品",
+     "zh": "因他人或某種情況而承受痛苦、付出代價的人",
+     "en": "someone who suffers because of other people's actions or a bad situation",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10771761-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "victor",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "勝利者、贏家",
+     "zh": "在比賽、競爭或戰爭中擊敗對手的人。",
+     "en": "a person who wins a game, competition, or battle against others",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10772598-n",
+      "10802616-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "勝利的（形容詞）",
+     "reason": "現代英文幾乎不用 victor 當形容詞，屬舊字典用法；表達「勝利的」應說 victorious"
+    }
+   ]
+  },
+  {
+   "headword": "victoria",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "維多利亞（女子名）",
+     "zh": "常見的英文女子名，源自拉丁語，意為「勝利」。",
+     "en": "a common female first name meaning victory",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "維多利亞（地名、機構名）",
+     "zh": "用於地名或機構名稱，如澳洲維多利亞州、加拿大維多利亞市、維多利亞車站等。",
+     "en": "used in names of places or institutions, such as a state in Australia or a city in Canada",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "維多利亞（英國女王）",
+     "zh": "指英國女王維多利亞（1819–1901），常出現在歷史或文化相關的敘述中。",
+     "en": "the name of a former queen of the United Kingdom, often mentioned in history",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "四輪馬車",
+     "zh": "十九世紀一種由馬拉的四輪馬車，現代只在歷史或古董相關的語境中出現。",
+     "en": "a type of horse-drawn carriage used in the past",
+     "usage": "rare",
+     "register": [
+      "old"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "victorian",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "維多利亞時代的",
+     "zh": "指英國維多利亞女王在位期間（1837–1901）的時代、風格或事物。",
+     "en": "relating to the period when Queen Victoria ruled Britain, or to its style",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03039307-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "保守拘謹的、假正經的",
+     "zh": "形容人對道德、禮儀過度講究，帶點嘲諷意味。",
+     "en": "showing very strict and old-fashioned ideas about morals and behavior, often in a way that seems false",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "01541854-s",
+      "01886245-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "維多利亞時代的人",
+     "zh": "指生活在維多利亞女王統治時期的人。",
+     "en": "a person who lived during the time when Queen Victoria ruled",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "10772729-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "篤信宗教的",
+     "reason": "舊字典的引申義，現代英文不用 victorian 單指虔誠信教，已由第一個詞義涵蓋。"
+    }
+   ]
+  },
+  {
+   "headword": "victory",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "勝利、戰勝",
+     "zh": "在比賽、戰爭或競爭中擊敗對手、成功達成目標的結果。",
+     "en": "the result of winning a game, battle, or competition, or of achieving what you wanted",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07488581-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "克服",
+     "reason": "與「勝利、戰勝」意思重疊，現代多作動詞 overcome 使用，名詞 victory 較少單獨表達此義。"
+    }
+   ]
+  },
+  {
+   "headword": "video",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "影片、短片",
+     "zh": "一段錄下來的動態影像，常指網路、社群媒體上分享的短片。",
+     "en": "a short recording of moving images, often shared online or on social media",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04541422-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "影片（電影、節目）",
+     "zh": "指電影、電視節目等較長的錄影內容，或泛指這類影音作品。",
+     "en": "a movie or television program, or recorded moving images in general",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04541422-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "影片檔、影音檔案",
+     "zh": "電腦或手機裡的影片檔案，相對於聲音檔或圖片檔。",
+     "en": "a file containing moving images, especially on a computer or phone",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "06288645-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（電視）影像",
+     "zh": "電視播送中看得見的畫面部分，與聲音相對。",
+     "en": "the picture part of a television broadcast, as opposed to the sound",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "06288456-n",
+      "06287933-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "影片的、影音的",
+     "zh": "放在名詞前，表示與影片或影音錄製有關，如 video call、video game。",
+     "en": "used before a noun to mean relating to moving images or recording them",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "電視（作為媒體）",
+     "reason": "現代多說 television 或 TV，video 單獨指「電視媒體」已少見，僅在特定搭配中出現。"
+    }
+   ]
+  },
+  {
+   "headword": "vie",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "競爭、爭奪",
+     "zh": "與他人較量，爭取某個目標或地位，常見於 vie for（爭奪）與 vie with（與……競爭）",
+     "en": "to compete hard with other people in order to get or achieve something",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01074673-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "爭相、競相（做某事）",
+     "zh": "用於 vie to do something，表示許多人搶著做同一件事",
+     "en": "to try very hard to be the one who does something, when many others are trying too",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01074673-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "提出……來競爭、以……作較量",
+     "reason": "舊字典的及物用法，現代幾乎不用，現多寫成 vie for 或 vie with"
+    }
+   ]
+  },
+  {
+   "headword": "vienna",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "維也納",
+     "zh": "奧地利的首都，也是著名的音樂與文化城市。",
+     "en": "the capital city of Austria, known for music, art, and coffee houses",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "vietnam",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "越南",
+     "zh": "東南亞國家，首都河內，最大城市為胡志明市。",
+     "en": "a country in Southeast Asia",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "vietnamese",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "越南的、越南人的、越南語的",
+     "zh": "用來描述與越南這個國家、人民或語言有關的事物。",
+     "en": "relating to Vietnam, its people, or its language",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03140890-a"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "越南人",
+     "zh": "指來自越南或在越南出生、居住的人。",
+     "en": "a person who comes from Vietnam",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "09766522-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "越南語",
+     "zh": "越南的官方語言，學習者會在語言課程或翻譯情境中遇到。",
+     "en": "the main language spoken in Vietnam",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "06950006-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "view",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "觀點、看法",
+     "zh": "對某件事或某個議題所抱持的想法或態度",
+     "en": "a personal opinion or way of thinking about something",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "06218486-n",
+      "05954491-n",
+      "06794876-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "景色、風景",
+     "zh": "從某個地方看出去所見到的景物，尤指自然風景",
+     "en": "what you can see from a particular place, especially beautiful scenery",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "05941982-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "認為、看待",
+     "zh": "以某種方式來思考或判斷某人事物",
+     "en": "to think about someone or something in a particular way",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00692380-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "視野、視線範圍",
+     "zh": "眼睛能看到或事物能被看見的範圍",
+     "en": "the area that you can see from a particular position",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "08578489-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "觀看、收看",
+     "zh": "觀看電視、影片或線上內容；也指參觀某地",
+     "en": "to watch television, a film, or online content; to look at something",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02155378-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（網路）瀏覽次數、觀看數",
+     "zh": "影片、貼文或網頁被觀看的次數，常用於社群媒體與影音平台",
+     "en": "the number of times a video, post, or page has been watched or seen online",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "v.",
+     "label": "檢視、仔細察看",
+     "zh": "仔細地檢查或研究某事物",
+     "en": "to examine or study something carefully",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "02134765-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（建築、藝術）景觀圖、視圖",
+     "zh": "建築或藝術中用來呈現某個場景的圖畫或照片",
+     "en": "a drawing or photograph that shows a place or scene",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "04151847-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（with a view to）為了、著眼於",
+     "zh": "用於片語 with a view to，表示目的或意圖",
+     "en": "used in the phrase 'with a view to' meaning with the aim of doing something",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "05992348-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "視力",
+     "reason": "現代英語中表示視力通常用 eyesight 或 vision，view 已不這樣用"
+    },
+    {
+     "meaning": "指望、意圖（單獨使用）",
+     "reason": "現代僅保留在 with a view to 片語中，單獨名詞用法已罕見"
+    },
+    {
+     "meaning": "印象",
+     "reason": "現代較少用 view 表示印象，多說 impression"
+    },
+    {
+     "meaning": "估量",
+     "reason": "舊字典釋義，現代英語中 view 沒有這個意思"
+    },
+    {
+     "meaning": "外觀、外表",
+     "reason": "古義，現代已不使用"
+    },
+    {
+     "meaning": "範圍、可預期的活動範圍",
+     "reason": "此義項在現代英語中幾乎不用，多見於舊文獻"
+    }
+   ]
+  },
+  {
+   "headword": "viewer",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "觀眾、收看者",
+     "zh": "看電視、影片或串流節目的人",
+     "en": "a person who watches television, videos, or online shows",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10652848-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "參觀者、觀賞者",
+     "zh": "到展覽、表演現場觀看的人",
+     "en": "a person who goes to look at an exhibition, show, or public event",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10652848-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "觀看器（看投影片）",
+     "zh": "用來觀看幻燈片或透明片的簡易光學裝置",
+     "en": "a small device used to look at slides or film transparencies",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "04541946-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "視察員",
+     "reason": "舊字典義，現代英文幾乎不用 viewer 表達此意，多說 inspector"
+    },
+    {
+     "meaning": "觀察者",
+     "reason": "與「觀眾、觀賞者」詞義重複，且現代較常用 observer"
+    }
+   ]
+  },
+  {
+   "headword": "viewing",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "觀看、收看",
+     "zh": "看電視、影片或展覽的行為，常指收看影音內容。",
+     "en": "the act of watching television, films, or other video content",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "（影片的）放映、播映",
+     "zh": "電影或影片公開播放的場次或活動。",
+     "en": "an occasion when a film or video is shown to people",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "06901395-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "守靈",
+     "zh": "在葬禮前夜守護遺體的習俗。",
+     "en": "the act of staying with a dead body through the night before a funeral",
+     "usage": "rare",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "01031915-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "[計] 可見的",
+     "reason": "參考資料的誤譯；此義屬於形容詞 visible，並非 viewing 的意思"
+    }
+   ]
+  },
+  {
+   "headword": "viewpoint",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "觀點、看法",
+     "zh": "對某件事所抱持的想法或立場，常用於討論、辯論與寫作中",
+     "en": "a way of thinking about or judging a subject",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "06220098-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "觀景點、視角位置",
+     "zh": "可以眺望某處的地點，或看東西時所在的位置",
+     "en": "a place from which you can see something",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "08694988-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "vigorous",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "精力充沛的、有活力的",
+     "zh": "形容人身體或精神上強健有力、做起事來充滿幹勁。",
+     "en": "full of energy and strength, either in body or in mind",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02047252-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "強而有力的、積極的",
+     "zh": "形容行動、活動或措施力道強、氣勢足，常用於運動、辯論、改革等。",
+     "en": "done with a lot of energy, force, or determination",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00878730-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（植物）茁壯的、生長旺盛的",
+     "zh": "形容植物長得健壯茂盛、長勢良好。",
+     "en": "growing strongly and healthily, used about plants",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "vigorously",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "強力地、大力地",
+     "zh": "用很大的力氣或強度去做某事，例如大力推動、猛烈攻擊。",
+     "en": "with a lot of force, energy, or strength",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00183234-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "積極地、大力（推動）",
+     "zh": "指積極、堅決地投入行動或主張，常用於政策、改革、宣傳等語境。",
+     "en": "in an active and determined way, especially to support or oppose something",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00183234-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "使勁地、用力地（動作）",
+     "zh": "形容身體動作或運動做得很有力、很起勁。",
+     "en": "using strong physical movements or effort",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00183234-r"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "茁壯、健壯（形容植物或身體）",
+     "reason": "這些是形容詞 vigorous 的舊字典釋義，不是副詞 vigorously 的現代用法"
+    }
+   ]
+  },
+  {
+   "headword": "vigour",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "精力、活力",
+     "zh": "身體或精神上充沛的力量，常用來形容人朝氣蓬勃。",
+     "en": "a lot of physical or mental energy and strength",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "05037972-n",
+      "05043116-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "氣勢、力度",
+     "zh": "形容行動、風格或作品充滿力量與生氣。",
+     "en": "energy and force in the way something is done or written",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "04640554-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "效力（法律上的）",
+     "reason": "舊字典義，現代英文表達法律效力多用 validity、effect，不用此字"
+    }
+   ]
+  },
+  {
+   "headword": "vii",
+   "senses": [
+    {
+     "pos": "num.",
+     "label": "羅馬數字 7",
+     "zh": "羅馬數字中的 7，常見於標題、鐘面、章節編號或國王名字之後。",
+     "en": "the number 7 written as a Roman numeral",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "13767056-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "七個的",
+     "zh": "放在名詞前表示數量是七，寫法為羅馬數字 VII。",
+     "en": "being seven in number",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "02194609-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "viii",
+   "senses": [
+    {
+     "pos": "num.",
+     "label": "羅馬數字 8",
+     "zh": "羅馬數字中的 8，常見於章節編號、鐘面、王室或教宗稱號等。",
+     "en": "the number 8 written as a Roman numeral",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "13767226-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "八個的",
+     "zh": "表示數量為八，用法等同數字 8。",
+     "en": "being the number eight in amount",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "02194712-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "viking",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "維京人",
+     "zh": "八到十一世紀從北歐出海、四處劫掠與航行的斯堪地那維亞人，常出現在歷史課與影集裡。",
+     "en": "a person from Scandinavia who sailed, traded, and attacked places in Europe between the 8th and 11th centuries",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "09749725-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "維京的、北歐海盜風格的",
+     "zh": "放在名詞前，指與維京人或其歷史文化有關的，例如維京船、維京時代。",
+     "en": "relating to the Vikings, their ships, or their way of life",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "海盜",
+     "reason": "舊字典的籠統譯法；維京人雖常劫掠，但這個字指的是特定民族與時代，不是泛指海盜，現代應譯為「維京人」。"
+    }
+   ]
+  },
+  {
+   "headword": "villa",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "度假別墅、豪華別墅",
+     "zh": "有錢人在郊外、海邊或度假地擁有的豪華住宅，常含花園或泳池。",
+     "en": "a large, expensive house in the countryside or by the sea, often used for holidays",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04542547-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "郊區獨棟住宅",
+     "zh": "一般指郊區或住宅區的獨棟、半獨棟房屋，房仲廣告很常見。",
+     "en": "a house in a suburb, usually standing apart from its neighbours",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "04542819-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "古羅馬鄉間宅院（含住宅與農舍、圍繞中庭）",
+     "reason": "歷史專義，只在談古羅馬建築時出現，現代一般用法不涉及"
+    }
+   ]
+  },
+  {
+   "headword": "village",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "村莊、村落",
+     "zh": "比城鎮小、居民彼此熟識的聚落，常用於描述鄉下地方。",
+     "en": "a small group of houses and people in the countryside, smaller than a town",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "08243620-n",
+      "08690476-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（都市中的）社區、小區",
+     "zh": "現代也指城市裡規劃成一個整體的住宅區，例如退休社區、藝術村。",
+     "en": "a group of houses or buildings in a city that form a small community",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "全體村民",
+     "zh": "指村莊裡的居民整體，常在新聞或正式敘述中出現。",
+     "en": "all the people who live in a small country settlement",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "鄉村的、村莊的（形容詞）",
+     "reason": "現代英文幾乎不用 village 當形容詞，改說 rural 或 village 加名詞（如 village life），舊字典的形容詞詞性已過時"
+    }
+   ]
+  },
+  {
+   "headword": "villager",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "村民、村子裡的人",
+     "zh": "住在村莊裡的人，常用來指在鄉下小村莊長住的人。",
+     "en": "a person who lives in a village, especially one who has lived there for a long time",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10773110-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "villain",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "壞人、惡棍",
+     "zh": "故事或現實中故意做壞事的人",
+     "en": "a person who does bad things on purpose",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10773214-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "反派角色",
+     "zh": "電影、小說、戲劇裡的主要壞人角色",
+     "en": "the main bad character in a movie, book, or story",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10773447-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "vincent",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "文森（男子名）",
+     "zh": "常見的英文男子名字，源自拉丁語，意思是「征服者」。",
+     "en": "a male first name of Latin origin meaning \"conquering\"",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "vine",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "藤蔓、藤本植物",
+     "zh": "莖部柔軟、會攀爬或纏繞其他東西生長的植物，如常春藤、牽牛花。",
+     "en": "a plant with a soft stem that grows by climbing up or twisting around other things",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "13121436-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "葡萄藤",
+     "zh": "種來結葡萄的藤，也常直接指葡萄這種作物。",
+     "en": "the climbing plant on which grapes grow, or grapes as a crop",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "（社群）短影音",
+     "zh": "社群平台上長度很短、會反覆播放的影片，源自短影音平台 Vine 的名稱。",
+     "en": "a very short looping video shared on social media",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "形成藤蔓",
+     "reason": "僅見於舊字典的動詞用法，現代英文幾乎不用，通常改說 grow as a vine。"
+    }
+   ]
+  },
+  {
+   "headword": "vinegar",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "醋",
+     "zh": "用酒或蘋果等發酵製成的酸味調味料，常用於拌沙拉、醃漬或沾食。",
+     "en": "a sour liquid made from wine or cider, used to add flavor to food or to preserve it",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07844963-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "醋酸（稀釋液）",
+     "zh": "實驗室或工業上指稀釋的醋酸水溶液，屬專業用法。",
+     "en": "a weak acid liquid used in labs and industry, made from acetic acid and water",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "15112678-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "尖酸刻薄",
+     "reason": "現代英文幾乎不用 vinegar 直接指人的刻薄性格，屬舊字典的引申義"
+    },
+    {
+     "meaning": "加醋於（動詞）",
+     "reason": "動詞用法在現代英語中極罕見，一般只用名詞"
+    }
+   ]
+  },
+  {
+   "headword": "vineyard",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "葡萄園",
+     "zh": "專門種植葡萄、用來釀酒或販售的農園。",
+     "en": "a piece of land where grapes are grown, especially for making wine",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04543333-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "vintage",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "復古的、經典款的",
+     "zh": "形容舊物、舊設計因年代久遠而顯得有味道、有價值，常用於服飾、家具、車款。",
+     "en": "old but valuable or stylish, especially clothes, furniture, or cars from an earlier time",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "年份、年份酒",
+     "zh": "指某一年份收成的葡萄酒，或標示該年份的酒。",
+     "en": "the wine made in a particular year, or the year a wine was made",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07908393-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（某年）出產的、年份的",
+     "zh": "放在年份前面，說明葡萄酒是哪一年釀的。",
+     "en": "used before a year to show the year a wine was produced",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "葡萄採收期、採收量",
+     "zh": "指葡萄採收的季節，或某一年採收下來的葡萄總量。",
+     "en": "the time of year when grapes are picked, or the amount picked",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "品質優良的、上等的",
+     "zh": "形容某物是某類東西中特別好、具代表性的版本，如「經典款」的表現。",
+     "en": "used to describe something as a very good or typical example of its kind",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "採葡萄（動詞）",
+     "reason": "罕用，現代一般用 pick grapes 表達"
+    },
+    {
+     "meaning": "酒的陳年、古老",
+     "reason": "WordNet 收的抽象義，現代日常幾乎不用，改以「年份」義表達"
+    }
+   ]
+  },
+  {
+   "headword": "violate",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "違反、違背（法律、規則）",
+     "zh": "做出法律、規定或約定所禁止的事。",
+     "en": "to break a law, rule, agreement, or principle",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02674312-v",
+      "02572443-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "侵犯、侵害（權利、隱私）",
+     "zh": "以不當方式侵入或損害他人的權利、隱私或領地。",
+     "en": "to intrude on or damage someone's rights, privacy, or territory",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "v.",
+     "label": "褻瀆、冒犯（神聖事物）",
+     "zh": "對神聖的場所、物品或信仰表現出不敬。",
+     "en": "to show disrespect for something sacred, such as a place or belief",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "02573980-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "強暴、性侵",
+     "zh": "強迫他人發生性行為，為法律或正式用語。",
+     "en": "to force someone to have sex against their will",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "02573434-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "破壞、摧毀",
+     "zh": "使某物遭到嚴重破壞或毀壞，現代較少用。",
+     "en": "to destroy or severely damage something",
+     "usage": "rare",
+     "register": [
+      "literary"
+     ],
+     "synsets": [
+      "01210308-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "掠奪、剝奪財產",
+     "reason": "古義，現代幾乎不用，僅見於極少數文學或歷史文本。"
+    }
+   ]
+  },
+  {
+   "headword": "violation",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "違反、違背（規定、法律）",
+     "zh": "指沒有遵守法律、規則、合約或協議的行為，是最常見的用法。",
+     "en": "an act of breaking a law, rule, agreement, or right",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00772032-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "違規行為、觸法行為",
+     "zh": "指實際發生的違規或犯罪事件本身，常見於新聞與法律報導。",
+     "en": "an action that breaks a law or rule and may be punished",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00771759-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "擅自闖入、侵入",
+     "zh": "指未經允許進入他人土地或場所，屬法律用語。",
+     "en": "the act of going onto someone's property without permission",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00734781-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "侵犯、侵害（權利）",
+     "zh": "指侵害他人權利或隱私，常見於法律與人權相關文章。",
+     "en": "an act that harms someone's rights or privacy",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "不敬的行為、無禮之舉",
+     "reason": "古義，現代幾乎不用，現多以 disrespect 表達"
+    },
+    {
+     "meaning": "強迫他人發生性行為的罪行",
+     "reason": "法律術語，現代一般改用 rape 或 sexual assault，不列為一般字義"
+    }
+   ]
+  },
+  {
+   "headword": "violence",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "暴力、暴力行為",
+     "zh": "用武力傷害他人或強迫他人的行為，是最常見的用法。",
+     "en": "behavior that uses physical force to hurt people or make them do something",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00967515-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（事件、衝突的）激烈、猛烈",
+     "zh": "形容衝突、風暴或情緒等非常激烈、失控的狀態。",
+     "en": "great force or intensity, especially in a conflict, storm, or strong feeling",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "05044968-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（影視、遊戲的）暴力內容",
+     "zh": "指電影、遊戲、新聞等媒體中呈現的打鬥、血腥畫面。",
+     "en": "scenes of fighting, blood, or cruelty shown in films, games, or news",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "暴虐、暴行",
+     "reason": "與「暴力、暴力行為」意思重疊，已合併"
+    },
+    {
+     "meaning": "動亂、騷亂造成的傷害與破壞狀態",
+     "reason": "偏書面且罕用，現代多改用 unrest、disorder 等字"
+    }
+   ]
+  },
+  {
+   "headword": "violent",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "暴力的、兇暴的",
+     "zh": "指用肢體力量傷害他人或造成破壞的行為、事件或人。",
+     "en": "using physical force to hurt people or cause damage",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02520937-a",
+      "00249427-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "猛烈的、激烈的",
+     "zh": "形容天氣、撞擊、運動或反應等力量或程度很強。",
+     "en": "very strong, forceful, or intense in effect",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02520937-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "情緒激烈的、狂熱的",
+     "zh": "形容情緒、態度或信念非常強烈，甚至帶有攻擊性。",
+     "en": "showing very strong and often angry feelings",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01515606-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（顏色、聲音）強烈的",
+     "zh": "形容顏色過於鮮豔刺眼，或聲音過於響亮刺耳。",
+     "en": "(of colors or sounds) too bright or too loud",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01518224-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "非自然的、外力造成的",
+     "zh": "指死亡或傷害是由外力造成，而非自然原因。",
+     "en": "caused by force or injury rather than natural causes",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01575140-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "violently",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "猛烈地、激烈地",
+     "zh": "以強烈、粗暴或充滿力量的方式動作，常用於身體動作、衝突或情緒爆發。",
+     "en": "in a strong, rough, or forceful way, often causing damage or harm",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00225476-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "極度地、強烈地",
+     "zh": "用在形容詞前，表示程度非常強烈，例如強烈反對或極度不適。",
+     "en": "used before an adjective to mean extremely or very strongly",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "violin",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "小提琴",
+     "zh": "用弓拉奏的四弦木製樂器，音域在弦樂家族中最高，是管弦樂團與室內樂常見的樂器。",
+     "en": "a wooden musical instrument with four strings, played with a bow, that makes the highest sound in its family",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04544161-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "virgin",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "處女、處男",
+     "zh": "指從未有過性行為的人，男女皆可，但傳統上多指女性。",
+     "en": "a person who has never had sex",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10774925-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "未開發的、原始的",
+     "zh": "形容土地、森林等自然資源尚未被人類開發或利用。",
+     "en": "not yet developed or used by people, especially land or forest",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01647815-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "純淨的、未攙雜的",
+     "zh": "形容物質（如橄欖油、羊毛）未經加工或未混入其他成分。",
+     "en": "pure and natural, not mixed with anything else",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "處女的、貞潔的",
+     "zh": "形容人保持貞潔、未曾有過性行為，帶有傳統道德意味。",
+     "en": "never having had sex, especially used in a traditional moral sense",
+     "usage": "less_common",
+     "register": [
+      "old"
+     ],
+     "synsets": [
+      "00362205-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "處女座（人）",
+     "zh": "占星學中，太陽位於處女座時出生的人。",
+     "en": "a person born when the sun is in Virgo",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "09772258-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "初始的",
+     "reason": "與「未開發的、原始的」意思重疊，且現代少單獨使用此義。"
+    }
+   ]
+  },
+  {
+   "headword": "virginia",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "維吉尼亞（美國州名）",
+     "zh": "美國東部的一州，首府為里奇蒙，常簡稱 VA。",
+     "en": "a state in the eastern United States; its capital is Richmond",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "維吉尼亞（女子名）",
+     "zh": "英語系國家常見的女性名字。",
+     "en": "a common female first name in English-speaking countries",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "virtual",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "虛擬的、數位的",
+     "zh": "指由電腦或網路產生、不是實體存在的，如虛擬會議、虛擬貨幣。",
+     "en": "made, done, or existing by computer or on the internet rather than in the physical world",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "幾乎可算是、實質上的",
+     "zh": "用來強調某人事物實際上幾乎就是那樣，如「實質上的保證」。",
+     "en": "used to say that something is almost the same as the thing mentioned in effect",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01948431-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "名義上的、形式上的",
+     "zh": "指實際上並非如此，只是表面上看起來或名義上如此。",
+     "en": "existing in name or appearance only, not in fact",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00905309-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "實際上起作用的、有效的、事實上生效的",
+     "reason": "舊字典把 virtual 誤解為「實際有效」，與現代用法相反；現代表達「實質上」時多用 effectively、in practice，此義已不合用"
+    }
+   ]
+  },
+  {
+   "headword": "virtually",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "幾乎、差不多",
+     "zh": "表示某情況差不多成立，但嚴格說還差一點，常修飾 all、every、impossible 等詞。",
+     "en": "almost, or very close to being true, but not completely",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00073433-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "實際上、實質上",
+     "zh": "強調某事物在本質或效果上成立，即使形式上不是如此。",
+     "en": "in effect or by practical result, even if not officially or literally so",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00112194-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "（線上、虛擬方式）",
+     "zh": "指透過網路或虛擬方式進行，如線上會議、遠距活動。",
+     "en": "by means of a computer or the internet rather than in person",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "virtue",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "美德、德行",
+     "zh": "指誠實、善良、正直等值得讚許的道德品格，常用來談論人的修養。",
+     "en": "a good quality in someone's character, such as honesty or kindness",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04854529-n",
+      "04854713-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "優點、長處",
+     "zh": "指事物或人身上值得稱讚的特質或好處，常與缺點對比。",
+     "en": "a good or useful quality that something or someone has",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "05146223-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（性方面的）貞潔",
+     "zh": "舊式說法中指在性關係上守規矩、合乎道德，現代較少這樣用。",
+     "en": "behavior in sexual matters that is considered morally good",
+     "usage": "less_common",
+     "register": [
+      "old"
+     ],
+     "synsets": [
+      "04856990-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "功效、效力",
+     "reason": "現代英文幾乎不用 virtue 表達「功效」，此義多見於舊字典或特定片語，已不常用。"
+    }
+   ]
+  },
+  {
+   "headword": "virus",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "病毒（生物）",
+     "zh": "會感染人體、動物或植物並在細胞內繁殖的微小病原體。",
+     "en": "a very small living thing that causes disease and can only grow inside the cells of a host",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01331343-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "電腦病毒",
+     "zh": "會自我複製、破壞檔案或程式的惡意軟體。",
+     "en": "a harmful computer program that copies itself and damages files or other programs",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "06597992-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（網路）病毒式內容",
+     "zh": "指在網路上被大量快速轉傳的影片、貼文或迷因，常說 go viral。",
+     "en": "a piece of content that spreads very quickly from person to person on the internet",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "禍害、腐蝕人心的東西",
+     "zh": "比喻像病毒一樣蔓延、敗壞人心或組織的事物，多用於書面。",
+     "en": "something that spreads harm or bad influence through people or an organization",
+     "usage": "less_common",
+     "register": [
+      "formal",
+      "literary"
+     ],
+     "synsets": [
+      "14031349-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "濾過性病毒",
+     "reason": "舊式說法，現代中文與英文一般直接說 virus／病毒，不再用這個名稱"
+    }
+   ]
+  },
+  {
+   "headword": "visa",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "簽證",
+     "zh": "護照上允許持有人入境某國的官方許可，出國前通常要先申請。",
+     "en": "an official mark or document added to a passport that allows you to enter a country",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "06700628-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "在（護照）上蓋簽證",
+     "zh": "指官方在護照上核發或加蓋入境許可的動作。",
+     "en": "to put an official entry mark or permission in someone's passport",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01000227-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "正式核准、批准",
+     "zh": "正式認可某項計畫或文件，屬較正式的用法。",
+     "en": "to officially approve or give permission for something",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00808721-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "簽發（泛指）",
+     "reason": "舊字典釋義過於籠統，現代實際用法只指在護照上加簽，已併入簽證動詞義"
+    }
+   ]
+  },
+  {
+   "headword": "visibility",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "能見度、可見距離",
+     "zh": "天氣或環境中能看多遠，常用於氣象報告與交通狀況。",
+     "en": "how far or how clearly you can see, especially in particular weather conditions",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04709893-n",
+      "05024624-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "曝光度、受關注程度",
+     "zh": "人或事物被大眾、媒體注意到的程度，常用於行銷、公關與社群經營。",
+     "en": "the degree to which something gets attention from the public or the media",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "14457795-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（系統、資料的）可見性",
+     "zh": "在軟體、資料或管理情境中，指資訊能否被相關的人看到或掌握。",
+     "en": "the state of information or a situation being open and easy for people to see or know about",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "visible",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "看得見的、可見的",
+     "zh": "指東西能被眼睛看到、不是隱藏或遮住的",
+     "en": "able to be seen with your eyes",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02525399-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "明顯的、顯而易見的",
+     "zh": "指情緒、變化或問題很容易被察覺",
+     "en": "easy to notice or clearly apparent",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01709966-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（人）常公開露面的、受注目的",
+     "zh": "指某人在媒體或公眾場合經常出現、容易被看到",
+     "en": "often seen in public or in the media",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00186092-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "可見物（名詞）",
+     "reason": "現代幾乎不用這個名詞義，實際用法多為形容詞"
+    }
+   ]
+  },
+  {
+   "headword": "vision",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "願景、遠見",
+     "zh": "對未來理想狀態的想像與規劃，常用於企業、政策或個人目標。",
+     "en": "a clear idea or plan for what something could be like in the future",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "05776249-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "視力、視覺",
+     "zh": "眼睛看東西的能力或感官，也指視覺系統。",
+     "en": "the ability to see, or the sense of sight",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "05662207-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "景象、畫面",
+     "zh": "眼睛看到的景象，或腦中浮現的畫面。",
+     "en": "something that you see, or an image in your mind",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "05721471-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "幻想、想像",
+     "zh": "脫離現實的想像或幻覺，有時指不切實際的念頭。",
+     "en": "something imagined that is not real or not present",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "05633248-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（宗教）顯靈、神視",
+     "zh": "宗教或神祕經驗中看到超自然景象。",
+     "en": "a religious experience of seeing something supernatural",
+     "usage": "rare",
+     "register": [
+      "formal",
+      "literary"
+     ],
+     "synsets": [
+      "07303190-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "vt. 夢見、想像、顯示",
+     "reason": "現代英文中 vision 幾乎只當名詞用，動詞用法極罕見，學習者不必學。"
+    }
+   ]
+  },
+  {
+   "headword": "visionary",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "有遠見的人、前瞻者",
+     "zh": "能看出未來趨勢、提出大膽新想法並付諸實現的人，常用於讚美企業家或領導者。",
+     "en": "a person who has new and forward-looking ideas about what may happen in the future",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10776101-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "有遠見的、前瞻的",
+     "zh": "形容計畫、想法或人物著眼未來、超越當下，通常帶正面評價。",
+     "en": "having or showing ideas about the future that are new and bold",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "空想家、不切實際的人",
+     "zh": "指想法天馬行空、不太考慮現實可行性的人，語氣偏負面。",
+     "en": "a person with grand ideas that are not practical or likely to come true",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "10776309-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "空想的、不切實際的",
+     "zh": "形容構想或計畫過於理想化、實際上難以實現。",
+     "en": "too idealistic to be practical or possible in real life",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "02508026-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "幻像的、幻想的",
+     "reason": "舊字典釋義，現代英文幾乎不用 visionary 表示「幻覺的」，該義多由 hallucinatory、illusory 表達"
+    }
+   ]
+  },
+  {
+   "headword": "visit",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "拜訪、探望（人）",
+     "zh": "到某人家裡或某地去看某人，短暫停留。",
+     "en": "to go to see a person for a short time, often at their home",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02493222-v",
+      "02625504-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "參觀、遊覽（地方）",
+     "zh": "到景點、城市、博物館等地方去看一看。",
+     "en": "to go to a place such as a city or museum to look around",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02498679-v",
+      "01847631-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "拜訪、來訪",
+     "zh": "到某人家或某地短暫停留的行程。",
+     "en": "a short stay with someone or at a place",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01235721-n",
+      "01057284-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "（醫師、官員）巡視、訪視",
+     "zh": "專業人員或官員到現場查看、看診或檢查。",
+     "en": "to go to a place officially or as part of your job to check or treat it",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "01847990-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "看診、諮詢（醫師、律師）",
+     "zh": "事先約好去找醫師或律師等專業人士。",
+     "en": "an arranged meeting with a doctor or lawyer for help or treatment",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "08402011-n",
+      "01235249-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "（網站）造訪、瀏覽",
+     "zh": "上網進入某個網站或網頁。",
+     "en": "to go to a website or web page and look at it",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "（網站）造訪次數",
+     "zh": "網站或網頁被使用者開啟的次數，常用於流量統計。",
+     "en": "one time that someone goes to a website or web page",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "降臨、侵襲（災禍等）",
+     "reason": "古義，現代多說 strike、hit，幾乎不用 visit"
+    },
+    {
+     "meaning": "閒談、聊天",
+     "reason": "罕用，現代口語說 chat、talk"
+    },
+    {
+     "meaning": "攻擊、襲擊",
+     "reason": "古義，現代已不使用"
+    },
+    {
+     "meaning": "施加（不愉快的事）",
+     "reason": "書面罕用，現代少見"
+    },
+    {
+     "meaning": "視察（名詞）",
+     "reason": "專業領域過窄，且已併入「巡視、訪視」義"
+    }
+   ]
+  },
+  {
+   "headword": "visiting",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "來訪的、客座的",
+     "zh": "用來形容從外地或外單位前來短暫停留的人，如客座教授、來訪球隊。",
+     "en": "used to describe someone who comes to a place for a short time, such as a guest professor or an away team",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "拜訪、探訪",
+     "zh": "到某人家裡或某地短暫停留、探望的行為，比 visit 更少單獨使用。",
+     "en": "the act of going to see a person or place for a short time",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01058160-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "參觀、訪問（名詞）",
+     "reason": "與「拜訪、探訪」詞義重複，已合併為同一義項"
+    }
+   ]
+  },
+  {
+   "headword": "visitor",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "訪客、來訪的人",
+     "zh": "到某人家裡或某個場所短暫停留、拜訪的人。",
+     "en": "a person who comes to see someone or to spend time at a place",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10776861-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "遊客、觀光客",
+     "zh": "到某地旅遊、參觀名勝或景點的人。",
+     "en": "a person who travels to a place for pleasure or sightseeing",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10776861-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（網站的）訪客、瀏覽人次",
+     "zh": "在網路、網站或應用程式上造訪頁面的人，常用於流量統計。",
+     "en": "a person who comes to a website or app, often counted to measure traffic",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "vista",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "（遼闊的）景色、景觀",
+     "zh": "從高處或遠處看出去的一大片風景，常用於書面或旅遊描述。",
+     "en": "a wide view of an area, especially a beautiful one seen from a high place",
+     "usage": "common",
+     "register": [
+      "literary"
+     ],
+     "synsets": [
+      "05941982-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（未來的）前景、展望",
+     "zh": "想像未來可能出現的局面或發展，常見於「a vista of…」的書面說法。",
+     "en": "a possible set of events or situations that may happen in the future",
+     "usage": "less_common",
+     "register": [
+      "formal",
+      "literary"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "回想",
+     "reason": "舊字典義，現代英文幾乎不用 vista 表示回想，屬過時用法"
+    }
+   ]
+  },
+  {
+   "headword": "visual",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "視覺的、眼睛的",
+     "zh": "與眼睛看到的事物或視覺感官有關，常用於視覺藝術、視覺效果等說法。",
+     "en": "connected with seeing or with the eyes",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02880845-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "看得見的、具體可見的",
+     "zh": "指實際看得到、能以圖像呈現的東西，如視覺輔助教材。",
+     "en": "able to be seen, or shown in pictures or images",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "02526205-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（多媒體）影像的",
+     "zh": "在科技與媒體語境中指畫面、影像部分，相對於聲音，如影音內容。",
+     "en": "relating to the pictures or images in a film, show, or other media",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "visualize",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "想像、在腦中構思",
+     "zh": "在腦中想像某個畫面或情況，常用於規劃、練習或理解抽象概念時。",
+     "en": "to form a picture of something in your mind, especially something you cannot see",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01638974-v",
+      "01639550-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "視覺化（資料、資訊）",
+     "zh": "把數據或資訊轉成圖表、圖像，讓人一眼看懂，是現代職場與科技領域的常見用法。",
+     "en": "to present information or data as pictures, charts, or diagrams so it is easier to understand",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00582282-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "使顯現、使可見",
+     "zh": "讓原本看不見的東西變得看得見，較少用，多見於書面或專業描述。",
+     "en": "to make something visible or able to be seen",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00582282-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（用 X 光）檢視輪廓",
+     "reason": "專業領域過窄，一般學習者不會遇到"
+    },
+    {
+     "meaning": "顯形",
+     "reason": "舊字典的罕用說法，現代英文幾乎不用"
+    }
+   ]
+  },
+  {
+   "headword": "visually",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "視覺上、就視覺而言",
+     "zh": "從眼睛看到的外觀或視覺效果來說，常用於 visually appealing、visually impaired 等搭配。",
+     "en": "in a way that relates to seeing or to how something looks",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00133950-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "以視覺方式、用看的",
+     "zh": "指用眼睛觀看、以圖像或影像呈現，而非用聽覺或文字，如 visually check、visually presented。",
+     "en": "by looking, or by showing something as pictures or images rather than in words",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "看、視力、可見、光學、形象化、栩栩如生等",
+     "reason": "參考資料把中文釋義逐字堆疊，多為誤譯或與 visually 無關的字義（如「視力」「光學」是 visual／vision 的名詞義），並非副詞用法。"
+    }
+   ]
+  },
+  {
+   "headword": "vital",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "至關重要的、不可或缺的",
+     "zh": "表示某事物極為重要，少了它事情就無法成立或順利進行。",
+     "en": "extremely important and needed for something to work or succeed",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00907116-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "維持生命必需的（器官、功能）",
+     "zh": "用於描述維持生命所必需的身體器官或生理機能。",
+     "en": "needed for keeping a person or animal alive",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00905499-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "充滿活力的、有朝氣的",
+     "zh": "形容人精力充沛、生氣勃勃，看起來很有精神。",
+     "en": "full of energy and life",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00119817-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "生命的、與生命有關的",
+     "reason": "現代多見於 vital signs 等固定搭配，單獨作此義已少用，且與「維持生命必需的」重疊"
+    },
+    {
+     "meaning": "致命的",
+     "reason": "舊字典誤譯；表示「致命」的英文是 fatal 或 lethal，vital 沒有這個意思"
+    }
+   ]
+  },
+  {
+   "headword": "vitality",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "活力、生命力",
+     "zh": "指人或生物精力充沛、朝氣十足的狀態，常用來形容健康有勁的樣子。",
+     "en": "the energy and strength that makes someone or something lively and active",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "14073625-n",
+      "04640810-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（組織、產業的）生機、存續力",
+     "zh": "指組織、產業或事物能持續存在、成長與發展的能力。",
+     "en": "the ability of an organization, industry, or thing to keep existing and growing",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "05012993-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（生物學）生命力、生命衝力",
+     "reason": "柏格森哲學與早期生物學的假設性概念，現代一般用法已不使用，屬專業領域過窄的舊義"
+    }
+   ]
+  },
+  {
+   "headword": "vitamin",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "維生素、維他命",
+     "zh": "維持身體正常運作所需的微量有機物質，常從食物或保健品攝取。",
+     "en": "one of a group of natural substances in food that your body needs in small amounts to stay healthy",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "15113825-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "vivid",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "生動的、逼真的",
+     "zh": "形容描述、記憶或想像非常清楚，讓人腦中浮現畫面。",
+     "en": "producing clear and detailed pictures in your mind",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01947643-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "鮮豔的、鮮明的",
+     "zh": "形容顏色強烈、明亮，很容易吸引注意。",
+     "en": "having a strong, bright color that stands out",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00403922-s",
+      "00394744-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "歷歷在目的、清晰的",
+     "zh": "形容對某段經驗或感受記憶猶新，好像剛發生一樣。",
+     "en": "felt or remembered very clearly, as if it just happened",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00431537-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "活潑的、充滿活力的",
+     "zh": "形容人的性格或表現有朝氣、有生氣。",
+     "en": "full of energy and life",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "vividly",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "生動地、栩栩如生地",
+     "zh": "形容描述、記憶或想像非常清楚鮮明，讓人腦中浮現畫面。",
+     "en": "in a way that produces clear and strong pictures in the mind",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00247302-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "鮮明地、強烈地（顏色、光線）",
+     "zh": "形容顏色或光線明亮飽和，看起來很突出。",
+     "en": "in a way that is bright and strong in color or light",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00247302-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "歷歷在目地、清晰地（記憶）",
+     "zh": "常與 remember、recall 連用，表示往事記得非常清楚。",
+     "en": "in a way that is remembered very clearly and in detail",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00247302-r"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "活潑、有生氣",
+     "reason": "多用於形容人或性格，現代副詞 vividly 幾乎不這樣用，屬罕用義"
+    },
+    {
+     "meaning": "逼真",
+     "reason": "與「生動地、栩栩如生地」意思重疊，已合併"
+    }
+   ]
+  },
+  {
+   "headword": "vocabulary",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "詞彙、字彙量",
+     "zh": "一個人會用或懂的單字總量，語言學習時常講到。",
+     "en": "all the words that a person knows or uses",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "05659087-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（某領域的）詞彙",
+     "zh": "某個行業、學科或活動裡會用到的特定用語。",
+     "en": "the set of words used in a particular subject or activity",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "06432321-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "單字表、詞彙表",
+     "zh": "教材或書本後面整理好的單字清單，方便查閱背誦。",
+     "en": "a list of words with their meanings, often at the back of a book",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "06432321-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "表現手法、符號系統",
+     "zh": "藝術或工藝中用來表達的一整套技巧或象徵，屬專業說法。",
+     "en": "the set of skills or symbols used to express ideas in an art or craft",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "05671119-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "vocal",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "直言不諱的、敢言的",
+     "zh": "指人樂於表達意見、敢於發聲，常用於公共議題或批評。",
+     "en": "willing to express opinions strongly and openly, especially about public issues",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00501575-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "歌唱的、聲樂的",
+     "zh": "與歌唱或聲樂有關，例如 vocal music、vocal performance。",
+     "en": "relating to singing or the voice used for singing",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "02836472-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "嗓音的、發聲的",
+     "zh": "與說話或發出聲音有關，例如 vocal cords、vocal sounds。",
+     "en": "relating to the voice or the production of sound",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "02836294-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "有聲的、充滿聲音的",
+     "zh": "形容場所或場合充滿人聲或聲音，例如 a vocal crowd。",
+     "en": "full of the sound of voices or noise",
+     "usage": "less_common",
+     "register": [
+      "literary"
+     ],
+     "synsets": [
+      "01457273-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "聲樂、歌唱部分",
+     "zh": "指歌曲或樂曲中演唱的部分，相對於樂器演奏。",
+     "en": "the singing part of a piece of music, as opposed to the instrumental part",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "07296711-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "母音、元音",
+     "zh": "語言學中指母音，但現代英語較少用 vocal 表達此義，多說 vowel。",
+     "en": "a vowel sound, especially in linguistics (less common than 'vowel')",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "聲樂作品",
+     "reason": "現代英語中 vocal 作名詞通常指樂曲中的歌唱部分，而非泛指聲樂作品；此義已罕用。"
+    },
+    {
+     "meaning": "短篇有詞的樂曲",
+     "reason": "現代英語中 vocal 作名詞不常用來指短篇歌曲，此義已罕用。"
+    }
+   ]
+  },
+  {
+   "headword": "vocational",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "職業的、技職的",
+     "zh": "與特定職業或工作技能訓練有關，常指學校或課程培養就業技能。",
+     "en": "relating to a job or to training that teaches skills for a particular occupation",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02851363-a"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "vodka",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "伏特加",
+     "zh": "一種無色、未經陳年的烈酒，常加冰或調成雞尾酒飲用。",
+     "en": "a strong clear alcoholic drink, originally from Russia, often drunk with ice or mixed in cocktails",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07922351-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "voice",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "聲音、嗓音",
+     "zh": "人說話或唱歌時發出的聲音，特別指音質與音高。",
+     "en": "the sound that a person makes when speaking or singing, especially its quality and pitch",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04989190-n",
+      "07125323-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "發言權、表達意見的權利",
+     "zh": "在團體或社會中表達想法、參與決定的權利或機會。",
+     "en": "the right or chance to express your opinions and take part in decisions",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "（內心的）聲音、心聲",
+     "zh": "指人內心深處的想法或感受，常與 inner 連用。",
+     "en": "the thoughts or feelings that exist inside your mind",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "（音樂）聲部、人聲",
+     "zh": "音樂中由人聲演唱的部分，或指歌唱的能力。",
+     "en": "the part of a piece of music that is sung, or the ability to sing",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "07044205-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（文法）語態",
+     "zh": "文法中用來表示主詞與動詞動作關係的形式，如主動語態、被動語態。",
+     "en": "the grammatical form of a verb that shows whether the subject does or receives the action",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "13825132-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "表達、說出（想法、不滿等）",
+     "zh": "把想法、感受或不滿公開說出來，常用於 voice concerns、voice an opinion。",
+     "en": "to express your thoughts, feelings, or complaints out loud or publicly",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00935365-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（發聲）有聲、濁音",
+     "zh": "語音學中指聲帶振動所發出的聲音，如 /b/、/d/ 是有聲子音。",
+     "en": "(in phonetics) a speech sound made with the vocal cords vibrating",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "92417423-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "願望",
+     "reason": "古義，現代英語中幾乎不用 voice 來表示「願望」。"
+    },
+    {
+     "meaning": "喉舌、代言人",
+     "reason": "舊式用法，現代多改用 spokesperson、mouthpiece 等詞。"
+    },
+    {
+     "meaning": "調音",
+     "reason": "罕用且專業領域過窄，現代一般不用 voice 表示調音。"
+    },
+    {
+     "meaning": "（隱喻）歌手",
+     "reason": "罕用文體用法，現代日常幾乎不這樣稱呼歌手。"
+    },
+    {
+     "meaning": "（隱喻）表達的媒介、工具",
+     "reason": "與「表達意見」義重疊，且現代少單獨使用此義。"
+    },
+    {
+     "meaning": "（隱喻）類似說話的表達方式",
+     "reason": "過於抽象且罕用，學習者不需特別區分。"
+    },
+    {
+     "meaning": "說話能力",
+     "reason": "現代多說 ability to speak，voice 單獨表此義已少見。"
+    },
+    {
+     "meaning": "（語音）濁化",
+     "reason": "與「有聲、濁音」義重複，已合併處理。"
+    }
+   ]
+  },
+  {
+   "headword": "void",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "無效的、沒有法律效力的",
+     "zh": "指合約、票據、選舉等因不符合規定而失去效力。",
+     "en": "having no legal force; not valid",
+     "usage": "common",
+     "register": [
+      "formal",
+      "technical"
+     ],
+     "synsets": [
+      "02510539-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "空虛、空洞感",
+     "zh": "指心裡覺得缺少重要東西的失落感，常用於文學或心理描述。",
+     "en": "a feeling of emptiness or lack of meaning in life",
+     "usage": "common",
+     "register": [
+      "literary"
+     ],
+     "synsets": [
+      "14479148-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "空白、空隙",
+     "zh": "指物體內部或表面沒有東西的空間區域。",
+     "en": "an empty space or gap where something is missing",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "13933131-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "使無效、取消",
+     "zh": "正式宣布合約、判決或協議不再具有效力。",
+     "en": "to officially cancel or make something no longer valid",
+     "usage": "less_common",
+     "register": [
+      "formal",
+      "technical"
+     ],
+     "synsets": [
+      "02483482-v",
+      "00449395-v"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "空的、空無一物的",
+     "zh": "描述空間或容器裡完全沒有東西，較正式的說法。",
+     "en": "completely empty; containing nothing",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "01092043-s"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "清空、騰出",
+     "zh": "把房間、場所裡的人或東西清掉，讓它變空。",
+     "en": "to empty a place by removing people or things",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00451258-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "排泄、排出（身體廢物）",
+     "reason": "專業醫學用語，現代一般場合幾乎不用。"
+    },
+    {
+     "meaning": "無人的、沒有的、無用的",
+     "reason": "舊字典分列義項，與「空的」「無效的」重疊，現代不單獨使用。"
+    }
+   ]
+  },
+  {
+   "headword": "vol",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "（書名頁的）卷、冊",
+     "zh": "指成套書籍中的一冊，或用來標示某本書屬於第幾卷。",
+     "en": "a book that is part of a set, or one book in a series",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "abbr.",
+     "label": "音量（volume 的縮寫）",
+     "zh": "音響、電視、手機等裝置上標示音量的簡寫，常見於按鍵或螢幕顯示。",
+     "en": "a short form of volume, used on devices to show or control how loud the sound is",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "abbr.",
+     "label": "第……卷（vol.）",
+     "zh": "引用書籍、期刊或法律文件時，放在卷號前面的縮寫。",
+     "en": "a written short form of volume, used before a number to refer to a book or journal",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "[計] DOS 外部命令：顯示卷標及其序號",
+     "reason": "已過時的 DOS 指令用法，現代電腦環境幾乎不會遇到，學習者不需要學。"
+    }
+   ]
+  },
+  {
+   "headword": "volatile",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "易揮發的",
+     "zh": "指液體在常溫下容易變成氣體，常用於化學、汽油等情境。",
+     "en": "evaporating easily at normal temperatures",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "02529611-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "動盪不穩的、易變的",
+     "zh": "形容局勢、市場、價格等變化劇烈、難以預測。",
+     "en": "likely to change suddenly and unpredictably",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00347949-s",
+      "02300305-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "情緒反覆的、善變的",
+     "zh": "形容人的心情或態度起伏大，一下子好一下子壞。",
+     "en": "changing moods or feelings quickly and often",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00587124-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "揮發性物質",
+     "zh": "指容易由固體或液體變成氣體的物質，多見於技術說明。",
+     "en": "a substance that easily turns into a gas",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "15118302-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "飛行的、有翅動物",
+     "reason": "古義，現代英文已不使用"
+    },
+    {
+     "meaning": "輕快的",
+     "reason": "古義，現代已不使用"
+    },
+    {
+     "meaning": "爆炸性的",
+     "reason": "與「動盪不穩」詞義重疊，且現代多直接用 explosive"
+    }
+   ]
+  },
+  {
+   "headword": "volcanic",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "火山的、火山造成的",
+     "zh": "描述與火山有關、或由火山活動產生的事物，如火山岩、火山灰。",
+     "en": "connected with a volcano, or made by a volcano",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "02837108-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "劇烈爆發的、一觸即發的",
+     "zh": "形容情緒、局勢或脾氣像火山一樣猛烈、隨時可能爆發。",
+     "en": "extremely strong and likely to explode suddenly, like a volcano",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "02301492-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "火山岩（名詞）",
+     "reason": "現代英語幾乎不用 volcanic 當名詞，地質學上多說 volcanic rock；此為舊字典的罕用用法。"
+    },
+    {
+     "meaning": "火成岩（由噴發凝固而成）",
+     "reason": "WordNet 此義實指岩石本身，現代一般以 volcanic rock 表達，不單獨用 volcanic。"
+    }
+   ]
+  },
+  {
+   "headword": "volcano",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "火山",
+     "zh": "地底岩漿與氣體噴出地表所形成的山，常在新聞中出現火山爆發、火山灰等報導。",
+     "en": "a mountain or opening in the ground where hot melted rock and gas come out",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "09493680-n",
+      "09495727-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "volleyball",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "排球（運動）",
+     "zh": "兩隊隔著高網、用手把球拍打過網的球類運動。",
+     "en": "a sport in which two teams hit a ball over a high net with their hands",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00481222-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "排球（球）",
+     "zh": "打排球時使用的球。",
+     "en": "the ball used in this sport",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04547339-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "voltage",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "電壓",
+     "zh": "電路兩點之間的電位差，用伏特表示；日常也指電器需要或供應的電壓大小。",
+     "en": "the difference in electrical charge between two points in a circuit, measured in volts",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "11514227-n",
+      "11543971-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（口語）緊張、刺激感",
+     "zh": "口語用法，形容氣氛、場面或表演帶來的緊張刺激感。",
+     "en": "a feeling of excitement or tension in a situation or performance",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "伏特數",
+     "reason": "與「電壓」同義，只是換個說法，已合併進第一個詞義"
+    }
+   ]
+  },
+  {
+   "headword": "volume",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "音量",
+     "zh": "聲音的大小，常用於調整喇叭、電視、耳機等的音量。",
+     "en": "the level of sound produced by a device or a person",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04997456-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "體積、容積",
+     "zh": "物體所佔空間的大小，或容器能容納的量。",
+     "en": "the amount of space that an object or substance fills",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "13801244-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "冊、卷",
+     "zh": "成套書籍或系列出版物中的一本。",
+     "en": "one book in a set of books or a series of publications",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02873453-n",
+      "06425309-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "量、數量",
+     "zh": "某事物的總量，常用於銷售量、交易量、工作量等。",
+     "en": "the total amount of something, especially sales, trade, or work",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "05106651-n",
+      "13801456-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "大量、許多",
+     "zh": "表示數量很多，常與 of 連用，如 volumes of mail。",
+     "en": "a large amount or number of something",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "05106651-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "成團捲起（vi.）",
+     "reason": "古義，現代英語幾乎不用"
+    },
+    {
+     "meaning": "把……收整合卷（vt.）",
+     "reason": "古義，現代英語幾乎不用"
+    },
+    {
+     "meaning": "大量的（a.）",
+     "reason": "舊字典誤標詞性，現代英語中 volume 不作形容詞用"
+    }
+   ]
+  },
+  {
+   "headword": "voluntarily",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "自願地、主動地",
+     "zh": "出於自己的意願去做，而不是被要求或被迫",
+     "en": "done by choice, without being forced or asked by anyone",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00233496-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "（法律、機構）自願退出、主動辭去",
+     "zh": "在沒有被開除的情況下，自己決定離開職位或組織",
+     "en": "choosing to leave a job or an organization rather than being made to leave",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "以自由意志",
+     "reason": "與「自願地」意思重複，只是舊字典的文言說法"
+    }
+   ]
+  },
+  {
+   "headword": "voluntary",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "自願的、主動的",
+     "zh": "出於自己意願去做，不是被強迫的",
+     "en": "done or given by choice, not because you are forced to",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02530275-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "志願的、義務的",
+     "zh": "指工作或組織，參與者不支薪或出於自願",
+     "en": "working or done without being paid, because you choose to do it",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02532426-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "刻意的、有意的",
+     "zh": "指動作或行為故意做出，尤其用於法律或醫學描述",
+     "en": "done on purpose, especially in legal or medical contexts",
+     "usage": "less_common",
+     "register": [
+      "formal",
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "自願者、志願者",
+     "zh": "主動自願參與某項活動或工作的人",
+     "en": "someone who offers to do something without being asked or paid",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "10778999-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（音樂）自由演奏曲",
+     "zh": "常為即興的獨奏曲，尤其管風琴曲，不屬於禮拜儀式的一部分",
+     "en": "a piece of music, often improvised, for a solo instrument, especially organ, not part of a service",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "07054871-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "自動的、自發的",
+     "reason": "舊字典將 voluntary 譯為「自動的」，但現代英文中 voluntary 強調出於意願，而非機械自動或自發反應，此譯易與 automatic 混淆，現代少用此義。"
+    },
+    {
+     "meaning": "自由調",
+     "reason": "舊字典名詞釋義「自由調」在現代英文中幾乎不用，且與音樂義「自由演奏曲」重疊，故不另列。"
+    }
+   ]
+  },
+  {
+   "headword": "volunteer",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "志工、義工",
+     "zh": "自願不拿報酬去幫忙做事的人，例如在醫院、學校或活動現場服務。",
+     "en": "someone who chooses to help with work or an activity without being paid",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10778819-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "自願做、主動提出",
+     "zh": "主動表示願意去做某件事，常接 to 加原形動詞。",
+     "en": "to say that you are willing to do something without being asked",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02429959-v",
+      "00881623-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "當志工、做義工",
+     "zh": "不支薪到某個組織或活動幫忙，常與 at、for 連用。",
+     "en": "to work for an organization or event without being paid",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02429831-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "自願從軍",
+     "zh": "主動報名加入軍隊，而不是被徵召。",
+     "en": "to join the armed forces by choice rather than being ordered to",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "10778999-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "志願的、無償的",
+     "zh": "形容不領薪水、出於自願提供的服務或人力。",
+     "en": "offered or done by choice and without payment",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "02531239-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "田納西州居民",
+     "reason": "美國地方性專有名詞用法，一般學習者不會遇到"
+    }
+   ]
+  },
+  {
+   "headword": "vomit",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "嘔吐、吐",
+     "zh": "胃裡的東西從口中排出，常因生病、噁心或喝醉而發生",
+     "en": "to throw up the contents of your stomach through your mouth",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00076153-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "嘔吐物",
+     "zh": "從胃裡吐出來的東西",
+     "en": "the food and liquid that comes out of your stomach when you throw up",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "14880143-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "嘔吐",
+     "zh": "把胃裡東西吐出來的動作，多用於醫學或正式描述",
+     "en": "the act of throwing up food from your stomach",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00119553-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "催吐劑",
+     "reason": "專業醫學用語，現代一般場合幾乎不用，學習者不必記"
+    }
+   ]
+  },
+  {
+   "headword": "von",
+   "senses": [
+    {
+     "pos": "prep.",
+     "label": "（德語姓氏的貴族標記）馮",
+     "zh": "用在德語系貴族姓氏前，表示「來自某家族」，英文中多半直接保留不譯。",
+     "en": "used before a German noble family name to show where the family comes from",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "[計] 馮·諾伊曼",
+     "reason": "這是 von Neumann（馮·諾伊曼）這個人名的片段，不是 von 這個字本身的詞義，屬誤譯。"
+    }
+   ]
+  },
+  {
+   "headword": "vote",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "投票、表決",
+     "zh": "在選舉或會議中表達支持某個人或某個選項。",
+     "en": "to show your choice for a person or an option in an election or meeting",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02466737-v",
+      "02468003-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "投票、表決",
+     "zh": "一群人透過計票來決定事情的行為或過程。",
+     "en": "an occasion when people make a choice by counting how many support each option",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00184354-n",
+      "00183062-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "選票、一票",
+     "zh": "選民投出的那一票，或投票時所用的票。",
+     "en": "a single choice made by one person in an election, or the paper used to make it",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "得票數、票數",
+     "zh": "候選人或方案實際拿到的票的總數。",
+     "en": "the total number of choices a person or option receives",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "05865749-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "選舉權、投票權",
+     "zh": "法律保障人民參與投票的權利。",
+     "en": "the legal right to take part in elections and make a choice",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "05193574-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "公認、一致認為",
+     "zh": "一群人共同表示某事物是最好的或最值得的，常用於新聞或網路票選。",
+     "en": "to choose or agree that someone or something is the best, often in a poll",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "02467809-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "投票通過、撥款",
+     "zh": "由投票決定成立某事或提供經費，常見於議會新聞。",
+     "en": "to approve or provide something by making a formal choice",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "02467624-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "投票族群、同一利益的一群選民",
+     "reason": "專業政治用語，範圍過窄，一般學習者少見"
+    },
+    {
+     "meaning": "依投票結果決定（be guided by in voting）",
+     "reason": "與「投票、表決」意思重複，且現代少單獨使用"
+    }
+   ]
+  },
+  {
+   "headword": "voter",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "選民、投票人",
+     "zh": "有投票權、在選舉中投票的人",
+     "en": "a person who has the right to vote in an election",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10780008-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "voting",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "投票、表決",
+     "zh": "一群人針對選項或人選表達意見並計算票數的過程，常見於選舉、會議或線上投票。",
+     "en": "the act of choosing by counting how many people support each choice",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00184354-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "投票的、選舉的",
+     "zh": "放在名詞前面，表示與投票或選舉有關，例如投票權、投票日。",
+     "en": "used before a noun to mean related to voting or elections",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "voucher",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "折價券、抵用券",
+     "zh": "可折抵消費金額或兌換商品的有價票券，常見於促銷、團購或平台發放。",
+     "en": "a printed or digital ticket that you can use to pay less for something or to get something for free",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "06530059-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "收據、支出憑證",
+     "zh": "公司或機關用來證明某筆花費的單據，報帳時會附上。",
+     "en": "a document that shows money was spent, kept as proof for accounting",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "06688436-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（住宿、旅遊的）兌換券",
+     "zh": "事先付款取得、到現場再兌換住宿或服務的票券。",
+     "en": "a ticket you receive after paying, which you exchange for a room, meal, or service",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "保證人、證明者",
+     "zh": "出面擔保他人或證明某事為真的人，屬正式或舊式用法。",
+     "en": "a person who promises that someone or something is true or reliable",
+     "usage": "rare",
+     "register": [
+      "formal",
+      "old"
+     ],
+     "synsets": [
+      "10780431-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "vt. 證實……的可靠性",
+     "reason": "動詞用法在現代英文幾乎不用，現多改用 vouch for"
+    }
+   ]
+  },
+  {
+   "headword": "vow",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "誓言、誓約",
+     "zh": "鄭重許下、表示一定會做到的承諾，常用於婚禮或宗教場合。",
+     "en": "a serious promise that you will do something or behave in a certain way",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07243411-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "發誓、立誓",
+     "zh": "鄭重承諾要做某事，或表示決心。",
+     "en": "to make a serious promise to do something",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00888280-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "（宗教）獻身、許願",
+     "zh": "在宗教儀式中把自己奉獻給神明，或立下修行誓願。",
+     "en": "to give yourself to a god or a religious life by making a promise",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00888499-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "許願",
+     "reason": "與「誓言、發誓」意思重疊，現代多說 make a wish，不另立詞義"
+    }
+   ]
+  },
+  {
+   "headword": "vowel",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "母音、母音字母",
+     "zh": "發音時氣流不受阻擋的語音，如 a、e、i、o、u；也指代表這種聲音的字母。",
+     "en": "a speech sound made with the mouth open, or a letter such as a, e, i, o, or u that represents it",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07127258-n",
+      "07129420-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "母音的（形容詞）",
+     "reason": "現代幾乎不用形容詞形式，實際都以名詞或複合詞（如 vowel sound）表達"
+    }
+   ]
+  },
+  {
+   "headword": "voyage",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "航行、航程（尤指海上的長途旅行）",
+     "zh": "搭船或太空船到遠方的一段旅程，常指為期較長的航行。",
+     "en": "a long trip by sea or through space, especially to a distant place",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00313610-n",
+      "00313379-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "太空航行、太空旅程",
+     "zh": "指太空船飛往太空或行星的旅程，新聞與科普文章常見。",
+     "en": "a journey made by a spacecraft through space",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "v.",
+     "label": "航行、航海",
+     "zh": "在海上或太空中長途旅行，多用於書面敘述。",
+     "en": "to travel a long way by sea or through space",
+     "usage": "less_common",
+     "register": [
+      "literary"
+     ],
+     "synsets": [
+      "01850262-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "航空、飛行",
+     "reason": "舊字典把 voyage 泛指旅行、航空，現代英文幾乎只用於海上或太空，航空義已不用"
+    },
+    {
+     "meaning": "航行越過、飛過（及物動詞）",
+     "reason": "及物用法罕見，現代英文 voyage 幾乎不作及物動詞"
+    }
+   ]
+  },
+  {
+   "headword": "vs",
+   "senses": [
+    {
+     "pos": "prep.",
+     "label": "對、對抗",
+     "zh": "表示兩方對立或比賽對抗，如「A 對 B」",
+     "en": "used between two names to show that they are competing or fighting each other",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "prep.",
+     "label": "相比、對照",
+     "zh": "把兩件事放在一起比較差異",
+     "en": "used to compare two things and show how they are different",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "abbr.",
+     "label": "（網路）對戰、單挑",
+     "zh": "電玩或社群貼文中表示兩人對打或互相比較",
+     "en": "used in games and online posts to mean one player against another",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "vulnerability",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "弱點、脆弱之處",
+     "zh": "系統、身體或防護上容易被攻擊或破壞的地方，常用於資安與安全討論。",
+     "en": "a weak point in a system, body, or protection that can be attacked or harmed",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "05050025-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "易受傷害、脆弱",
+     "zh": "人或群體容易受到傷害、攻擊或批評的狀態，常見於社會與心理討論。",
+     "en": "the state of being easily harmed, attacked, or criticized",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "14567533-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（情感上的）脆弱、坦露",
+     "zh": "願意顯露自己真實情緒與不安的狀態，常用於心理、人際關係話題。",
+     "en": "the state of openly showing your true feelings and fears to others",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "易受責難",
+     "reason": "與「易受傷害、脆弱」意思重疊，已合併處理"
+    },
+    {
+     "meaning": "易受傷部位",
+     "reason": "舊字典直譯，現代英文少見此名詞用法，多改說 weak spot 或 weak point"
+    }
+   ]
+  },
+  {
+   "headword": "vulnerable",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "脆弱的、易受傷害的",
+     "zh": "身體、心理或處境上容易受到傷害或攻擊，常用來談兒童、老人、病人等族群。",
+     "en": "easy to hurt, attack, or harm, especially physically or emotionally",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02533434-a",
+      "02334251-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "易受影響的、易被說服的",
+     "zh": "比較容易受到他人意見、誘惑或錯誤資訊影響而改變。",
+     "en": "easily influenced, persuaded, or tempted by other people or things",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "02371734-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（系統、程式）有漏洞的",
+     "zh": "資訊科技領域指軟體或系統存在安全弱點，可能被駭客利用。",
+     "en": "having security weaknesses that someone could use to attack a computer system",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "（市場、經濟）易受衝擊的",
+     "zh": "財經報導中指容易因價格波動或外部變化而受打擊。",
+     "en": "easily harmed by changes in prices, markets, or economic conditions",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "成局的",
+     "reason": "舊字典誤譯或罕用義，現代英文中沒有這個用法"
+    }
+   ]
+  }
+ ]
+}

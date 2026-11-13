@@ -1,0 +1,86 @@
+{
+ "model": "deepseek-flash",
+ "generatedAt": "2026-11-13",
+ "method": "scripts/llm/generate-entries.ts：以 ECDICT 中文釋義與 OEWN 詞義為參考，整理現代化詞義、中英釋義、常用程度與語域",
+ "words": [
+  {
+   "headword": "x",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "字母 X、x",
+     "zh": "英文羅馬字母中的第 24 個字母，也常寫成小寫 x。",
+     "en": "the 24th letter of the English alphabet",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "06846713-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "未知數、未知的人事物",
+     "zh": "數學裡代表未知數的符號，也泛指還不知道的人或事物。",
+     "en": "a letter used in math for an unknown number, or a person or thing not yet known",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "X 記號、叉號",
+     "zh": "用來表示錯誤、選取或標記位置的叉形符號。",
+     "en": "a mark shaped like a cross, used to show a choice, a mistake, or a place",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "十的、十個的",
+     "zh": "用在數字或等級前面，表示十的意思，例如 x 級。",
+     "en": "used before a number or level to mean ten",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "02194935-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（社群）成人內容、限制級",
+     "zh": "在網路與分級標示中代表成人或限制級內容。",
+     "en": "used in labels and online to mean adult or sexually explicit content",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "搖頭丸（MDMA）",
+     "zh": "街頭用語，指一種常被濫用的派對藥物。",
+     "en": "a slang name for the illegal drug MDMA",
+     "usage": "rare",
+     "register": [
+      "slang"
+     ],
+     "synsets": [
+      "02681592-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "十（基數）",
+     "reason": "與形容詞「十的」重複，且現代幾乎不用 x 來表示數字十"
+    },
+    {
+     "meaning": "舊英漢字典的『未知數』單一釋義",
+     "reason": "已併入較完整的『未知數、未知的人事物』詞義"
+    }
+   ]
+  }
+ ]
+}

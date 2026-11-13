@@ -1,0 +1,7965 @@
+{
+ "model": "deepseek-flash",
+ "generatedAt": "2026-11-13",
+ "method": "scripts/llm/generate-entries.ts：以 ECDICT 中文釋義與 OEWN 詞義為參考，整理現代化詞義、中英釋義、常用程度與語域",
+ "words": [
+  {
+   "headword": "ubiquitous",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "無所不在的、到處可見的",
+     "zh": "形容某事物在各地或各種場合都出現，常帶有數量多到難以避免的意味。",
+     "en": "seeming to be present everywhere at the same time",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "01853443-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（科技）普及的、隨處可見的",
+     "zh": "指某項科技、裝置或服務已融入日常生活，走到哪裡都看得到、用得到。",
+     "en": "so widely used that it can be found almost anywhere in daily life",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01853443-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "ugly",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "醜陋的、難看的",
+     "zh": "外表不好看，讓人看了不舒服（用於人、物、地方等）。",
+     "en": "not pleasant to look at; unattractive in appearance",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00222548-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "險惡的、不祥的",
+     "zh": "形容情況、氣氛或徵兆看起來不妙，可能帶來麻煩或危險。",
+     "en": "suggesting that something bad or dangerous may happen",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01142567-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "邪惡的、令人反感的",
+     "zh": "形容行為或事物在道德上讓人厭惡、無法接受。",
+     "en": "morally bad or unpleasant; deserving disapproval",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01136517-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "可怕的、駭人的",
+     "zh": "形容景象或事件極度恐怖，讓人感到震驚害怕。",
+     "en": "extremely shocking or frightening to see or experience",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00195081-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "醜陋的人（或物）",
+     "reason": "名詞用法在現代英語中極少單獨使用，多見於舊式或特定片語，學習者幾乎不會遇到。"
+    }
+   ]
+  },
+  {
+   "headword": "uh",
+   "senses": [
+    {
+     "pos": "int.",
+     "label": "嗯、呃（猶豫或思考時）",
+     "zh": "說話時停頓、想不出要說什麼，或正在思考時發出的聲音。",
+     "en": "a sound people make when they pause to think or are not sure what to say next",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "int.",
+     "label": "嗯？（沒聽清、請再說一次）",
+     "zh": "沒聽清楚對方的話，或覺得對方的話奇怪，用上揚的語調請對方重說或確認。",
+     "en": "a sound used with rising intonation to ask someone to repeat or confirm what they said",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "int.",
+     "label": "嗯（表示同意或回應）",
+     "zh": "對話中簡短回應對方，表示自己有在聽或同意，語氣比 yes 隨意。",
+     "en": "a short sound used to show you are listening or agree, less direct than saying yes",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "uk",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "英國、聯合王國",
+     "zh": "指大不列顛與北愛爾蘭聯合王國，日常與新聞中常簡稱英國。",
+     "en": "the country made up of England, Scotland, Wales and Northern Ireland; used especially in writing and news",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "ukraine",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "烏克蘭",
+     "zh": "東歐國家，首都基輔，1991 年脫離蘇聯獨立",
+     "en": "a country in eastern Europe whose capital is Kyiv",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "原蘇聯一加盟共和國",
+     "reason": "歷史描述，現已獨立，現代只用來指這個國家本身"
+    }
+   ]
+  },
+  {
+   "headword": "ukrainian",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "烏克蘭的、烏克蘭人的",
+     "zh": "用來描述與烏克蘭這個國家、人民或文化有關的事物。",
+     "en": "relating to Ukraine, its people, or its culture",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02975210-a"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "烏克蘭人",
+     "zh": "指來自烏克蘭或在烏克蘭出生、居住的人。",
+     "en": "a person who comes from Ukraine or lives there",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "09756435-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "烏克蘭語",
+     "zh": "烏克蘭人使用的斯拉夫語言，用西里爾字母書寫。",
+     "en": "the Slavic language spoken by people in Ukraine",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "06957385-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "ulcer",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "潰瘍",
+     "zh": "皮膚或胃、腸等黏膜表面因發炎而破損、化膿的傷口，常見於胃潰瘍、口腔潰瘍等。",
+     "en": "a painful area on the skin or inside the body that is swollen and may bleed or produce pus",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "14235091-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（比喻）腐敗的根源",
+     "zh": "指社會、組織中難以根除的弊病，多用於書面或評論文章。",
+     "en": "a serious problem in a society or organization that keeps causing harm and is hard to remove",
+     "usage": "less_common",
+     "register": [
+      "formal",
+      "literary"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "腐爛物",
+     "reason": "舊字典的直譯，現代英語幾乎不用這個意思，屬罕用義"
+    }
+   ]
+  },
+  {
+   "headword": "ulcerative",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "潰瘍性的、形成潰瘍的",
+     "zh": "醫學上用來說明某種疾病或傷口會造成潰瘍，例如潰瘍性結腸炎。",
+     "en": "used in medicine to describe a disease or wound that causes open sores",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "03154304-a"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（使）腐敗",
+     "reason": "舊字典把 ulcerate 的引申義一併列入，現代英語幾乎不用這個字表示腐敗，屬過時用法"
+    }
+   ]
+  },
+  {
+   "headword": "ulster",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "烏爾斯特大衣、有帶長大衣",
+     "zh": "一種厚重布料製成、通常附腰帶的寬鬆長大衣，屬較舊式的說法。",
+     "en": "a long, loose heavy coat, usually with a belt, worn in the past",
+     "usage": "rare",
+     "register": [
+      "old"
+     ],
+     "synsets": [
+      "04513697-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "北愛爾蘭（Ulster）",
+     "reason": "參考資料未列；此為地名用法，且現代多以 Northern Ireland 稱呼，不屬本詞條的衣物義。"
+    }
+   ]
+  },
+  {
+   "headword": "ultimate",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "最終的、最後的",
+     "zh": "指一系列事物或過程的最後一個，常用於強調最終結果或目標。",
+     "en": "happening at the end of a process or series, especially as the final result or aim",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01017558-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "極致的、最高的",
+     "zh": "形容程度、品質或等級達到最高，無法再超越。",
+     "en": "of the highest degree or quality; the most extreme or best of its kind",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01582720-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "根本的、基本的",
+     "zh": "指事物最基礎、最根本的部分，常用於抽象概念。",
+     "en": "basic and fundamental; forming the origin or foundation of something",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "極致、頂峰",
+     "zh": "指某類事物中最高品質或最高境界的代表。",
+     "en": "the best or most extreme example of its kind",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "04736257-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "最遠的",
+     "reason": "古義，現代英語中幾乎不再使用此義。"
+    },
+    {
+     "meaning": "基本原則（名詞）",
+     "reason": "罕用，現代英語中極少以名詞形式表示此義。"
+    }
+   ]
+  },
+  {
+   "headword": "ultimately",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "最終、最後",
+     "zh": "表示經過一連串過程或變化後，最後的結果或結論。",
+     "en": "in the end, after a series of events or changes",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00048441-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "根本上、說到底",
+     "zh": "用來說明最根本的原因或真正重要的重點。",
+     "en": "used to talk about the most basic or most important point",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "ultraviolet",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "紫外線的、紫外的",
+     "zh": "指波長比可見光短、比 X 射線長的光線，常用於防晒、殺菌或消毒等情境。",
+     "en": "relating to light with wavelengths shorter than visible light but longer than X-rays",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "02528658-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "紫外線、紫外光",
+     "zh": "太陽光中會晒傷皮膚、造成老化的一種不可見光線，日常談防晒時常提到。",
+     "en": "invisible light from the sun that can harm the skin and cause it to age",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "11542373-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "um",
+   "senses": [
+    {
+     "pos": "int.",
+     "label": "嗯、呃（遲疑、思考）",
+     "zh": "說話時一時想不出話、停頓或猶豫，用來填補空檔。",
+     "en": "used to fill a pause when you are thinking about what to say or are not sure",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "int.",
+     "label": "嗯（表示不同意、不以為然）",
+     "zh": "用上揚或拉長的語調回應，表示對對方的話有疑問或不認同。",
+     "en": "used as a short response to show doubt or that you do not agree",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "umbrella",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "雨傘、陽傘",
+     "zh": "下雨或遮陽時用手拿的可收合傘具。",
+     "en": "a small folding object with a handle that you hold over your head to keep off rain or sun",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04514450-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "保護傘、涵蓋範圍",
+     "zh": "比喻提供保護或把許多事物納入同一範圍的機制，如「保護傘」「單一窗口」。",
+     "en": "something that gives protection or covers many smaller things as one group",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00383879-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "總括的、包羅萬象的",
+     "zh": "放在名詞前，表示把多個項目合在一起的，如 umbrella term（總稱）。",
+     "en": "used before a noun to mean including many similar things under one name",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00531080-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（軍事）空中掩護",
+     "zh": "軍機在空中盤旋以掩護地面部隊的編隊，屬軍事術語。",
+     "en": "a group of military planes flying above to protect soldiers or an area below",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00831579-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "用傘遮掩（vt.）",
+     "reason": "罕用，現代幾乎不用這個動詞用法"
+    },
+    {
+     "meaning": "傘的（a.）",
+     "reason": "現代多寫成 umbrella 加名詞的複合用法，不單獨當形容詞，且與「總括的」重複"
+    }
+   ]
+  },
+  {
+   "headword": "umpire",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "裁判（棒球、網球等）",
+     "zh": "在棒球、網球等比賽中負責判定規則、做出判決的官方人員。",
+     "en": "an official who makes sure the rules are followed and decides disputes during a game",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10755641-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "擔任裁判",
+     "zh": "在比賽中擔任裁判、執行判決的工作。",
+     "en": "to act as the official who makes decisions during a game",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01087648-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "仲裁人、調解人",
+     "zh": "被找來裁斷爭議、做出公正決定的第三方，多用於正式或法律情境。",
+     "en": "a person chosen to settle a disagreement and make a fair decision",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "09822852-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "對……進行仲裁、當……的裁判（及物動詞）",
+     "reason": "與「擔任裁判」的動詞義重複，現代用法通常不分及物、不及物，合併為一個意思即可"
+    }
+   ]
+  },
+  {
+   "headword": "un",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "聯合國",
+     "zh": "1945 年成立、促進國際和平與安全的國際組織，新聞與日常常簡稱為 UN。",
+     "en": "an international organization of countries that works for world peace and security",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "08312501-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "傢伙、東西（代名詞）",
+     "reason": "法語代名詞 on 的舊字典誤植，英文中無此用法"
+    }
+   ]
+  },
+  {
+   "headword": "unable",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "不能的、無法（做某事）",
+     "zh": "表示沒有能力、辦法或條件去做某事，後面接 to 加原形動詞。",
+     "en": "not having the ability, skill, or chance to do something",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00002098-a",
+      "00308592-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（因故）未能、沒辦法",
+     "zh": "用於說明因為外在情況或限制而做不到某件事，常見於正式陳述與書面說明。",
+     "en": "not able to do something because of a situation or limit",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01830798-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "缺乏力量或氣勢的",
+     "reason": "文獻或修辭語境才出現，現代一般用法幾乎遇不到，且與「無法做到」的核心意思重疊"
+    }
+   ]
+  },
+  {
+   "headword": "unacceptable",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "無法接受的、不能容忍的",
+     "zh": "指某事物令人無法同意或忍受，常用於表達不滿或反對。",
+     "en": "too bad or wrong to be allowed or agreed to",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00018622-a",
+      "02090199-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（行為、言語）不恰當的、不得體的",
+     "zh": "形容某人的言行不合宜、讓人無法認同，帶有責備意味。",
+     "en": "said or done in a way that people think is wrong or rude",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02445119-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（用語）不標準的、不合規範的",
+     "zh": "指語言用法不符標準或正式規範，屬語言學較專門的說法。",
+     "en": "not following the accepted rules of a language",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "02306447-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unaffected",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "未受影響的、不受波及的",
+     "zh": "表示某事物沒有因為外力或變化而受到影響",
+     "en": "not changed or harmed by something that affects other people or things",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00072600-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "自然的、不造作的",
+     "zh": "形容人的態度或舉止真誠自然，不刻意裝模作樣",
+     "en": "behaving in a natural and sincere way, without trying to impress others",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00074954-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "無動於衷的、不受打動的",
+     "zh": "表示對某事沒有情緒反應，常用於 unaffected by 的句型",
+     "en": "not showing any emotional reaction to something",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01564713-a",
+      "02115107-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "未被感動的（獨立列為一個義項）",
+     "reason": "與「無動於衷的」意思重複，已合併"
+    },
+    {
+     "meaning": "不知情的、漠不關心的",
+     "reason": "WordNet 的 indifferent to 用法在現代英語少見，多改以 unaware of、indifferent to 表達"
+    }
+   ]
+  },
+  {
+   "headword": "unanimous",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "全體一致的、無異議的",
+     "zh": "指一群人（如委員會、陪審團、投票者）全部同意或全數贊成某個決定。",
+     "en": "agreed on by every person in a group, with no one disagreeing",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00555952-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（意見）一致支持的",
+     "zh": "用來形容一群人對某人或某事抱持完全相同的看法或態度。",
+     "en": "showing that all the people in a group share the same opinion",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00787771-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unanimously",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "全體一致地、無異議地",
+     "zh": "用來表示一群人全部同意、沒有任何反對意見，常見於投票、決議或聲明。",
+     "en": "with everyone agreeing and no one disagreeing",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00107003-r"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unavailable",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "無法取得的、拿不到的",
+     "zh": "指某樣東西或資源目前拿不到、買不到或無法使用。",
+     "en": "not able to be obtained, bought, or used at the moment",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00187221-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（人）沒空、聯絡不上",
+     "zh": "指某人因為忙碌或不在，暫時無法接電話、見面或處理事情。",
+     "en": "not free to meet, talk, or be reached because of being busy or away",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00187221-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（商品、服務）已售完、暫停提供",
+     "zh": "用在網站、店家或服務上，表示目前沒有貨或暫不提供。",
+     "en": "not currently being offered or sold, for example on a website or in a store",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00187221-a"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "無用的",
+     "reason": "舊字典的誤譯；「拿不到」不等於「沒有用」，現代英文不這樣用。"
+    }
+   ]
+  },
+  {
+   "headword": "unavoidable",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "不可避免的、無法避免的",
+     "zh": "指某件事一定會發生、躲不掉，常用來說明後果、情況或風險。",
+     "en": "impossible to prevent or escape from",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00344258-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "不得已的、無可奈何的",
+     "zh": "指因情勢所迫而只能接受，帶有無奈的語氣。",
+     "en": "forced to happen because there is no other choice",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00344258-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "不能作廢的",
+     "reason": "舊字典的法律用語，現代一般英文幾乎不用，且與「不可避免」的核心語義無關。"
+    }
+   ]
+  },
+  {
+   "headword": "unaware",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "沒察覺的、不知道的",
+     "zh": "不知道某件事正在發生或某個情況存在，常搭配 of 或 that 子句使用。",
+     "en": "not knowing that something is happening or that a situation exists",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00193091-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "沒意識到的、渾然不覺的",
+     "zh": "對自己造成的影響、危險或周遭變化完全沒有感覺，常與 unaware 連用的片語是 catch someone unaware（趁人不備）。",
+     "en": "not realizing something, especially a danger or a change around you",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unbeaten",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "未被打敗的、不敗的",
+     "zh": "指隊伍、選手或紀錄在比賽中從未輸過，常用於體育或競賽報導。",
+     "en": "never having lost a game, match, or competition",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00698784-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "未被超越的、未被打破的",
+     "zh": "指紀錄或成績至今無人能超越，常見於體育或新聞報導。",
+     "en": "not yet improved on or replaced by a better result",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "未走過的（路徑）",
+     "zh": "指小徑或路線還沒有人走過，多用於文學或描寫自然的情境。",
+     "en": "not walked on or traveled over before",
+     "usage": "rare",
+     "register": [
+      "literary"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "未曾捱打的、未攪打的",
+     "reason": "舊字典的字面直譯，現代英文幾乎不用這個意思，也與其他詞義重複"
+    }
+   ]
+  },
+  {
+   "headword": "unbelievable",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "難以置信的、太誇張了",
+     "zh": "形容事情太離譜或太驚人，讓人一時不敢相信，常帶驚訝或誇張的語氣。",
+     "en": "very surprising or hard to believe, often used to show shock or emphasis",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "00648515-a",
+      "01805119-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "極好的、超讚的",
+     "zh": "口語中表示某事物非常棒、令人讚嘆，語氣強烈。",
+     "en": "extremely good or impressive, used for emphasis in informal speech",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "uncertain",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "不確定的、無法確定的",
+     "zh": "指事情尚未確定、還不知道結果或真相。",
+     "en": "not known for sure; not yet decided or established",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00337066-a",
+      "02094595-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "沒把握的、不確信的",
+     "zh": "指人對某事沒有信心或把握。",
+     "en": "feeling doubt or not confident about something",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00338302-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "難以預測的、不確定的",
+     "zh": "指情況或結果可能改變，無法預先知道。",
+     "en": "likely to change; not able to be predicted",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00342303-a",
+      "02514603-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "不可靠的、不穩定的",
+     "zh": "指事物或人的表現不穩定、不能依賴。",
+     "en": "not reliable or not always behaving in the same way",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00728966-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "含糊的、模稜兩可的",
+     "zh": "指說法或態度不明確，讓人無法確定意思。",
+     "en": "not clear or definite; open to different interpretations",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00104366-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "uncertainty",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "不確定、沒把握",
+     "zh": "對事情會不會發生、結果如何沒有把握的狀態，常用於描述心情或局勢。",
+     "en": "the feeling of not being sure about something or of not knowing what will happen",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "05706212-n",
+      "04764142-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "不確定因素、變數",
+     "zh": "指讓情況難以預測的具體事物，例如經濟、天氣或計畫中的未知數。",
+     "en": "something that makes a situation hard to predict or plan for",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04764142-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（科學、測量的）不確定度",
+     "zh": "科學、工程或統計上指測量值或預測可能偏差的範圍。",
+     "en": "the range by which a measurement or prediction may be wrong",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "不可靠",
+     "reason": "舊字典釋義，現代多說 unreliable，uncertainty 本身不這樣用"
+    }
+   ]
+  },
+  {
+   "headword": "unchanged",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "未改變的、維持原樣的",
+     "zh": "表示事物和之前一樣，沒有發生變化。",
+     "en": "staying the same as before, with no change having happened",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00356369-a",
+      "00354307-a"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "uncle",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "叔叔、伯伯、舅舅",
+     "zh": "父母親的兄弟，或姑丈、姨丈等親戚的男性長輩。",
+     "en": "the brother of your mother or father, or the husband of your aunt",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10755748-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（口語）叔叔、阿伯（稱呼）",
+     "zh": "小孩用來稱呼不認識的成年男子，或晚輩對年長男性的親切叫法。",
+     "en": "a friendly way for a child to address an adult man who is not a relative",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "（俚語）投降、認輸",
+     "zh": "口語說 say uncle 表示認輸、求饒，常見於美式英語。",
+     "en": "used in the phrase \"say uncle\" to mean admit defeat",
+     "usage": "rare",
+     "register": [
+      "informal",
+      "slang"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "提供幫助與建議的人",
+     "reason": "WordNet 的引申義，現代日常幾乎不這樣用，屬罕用義"
+    }
+   ]
+  },
+  {
+   "headword": "unclear",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "不清楚的、含糊的",
+     "zh": "說法或內容表達得不夠明確，讓人不容易理解",
+     "en": "not expressed or explained in a clear way, so it is hard to understand",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00701533-a",
+      "00431687-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "難以辨認的",
+     "zh": "字跡、聲音或影像模糊，看不清楚或聽不明白",
+     "en": "hard to see, hear, or read because it is not clear enough",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01408549-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（對某事）不確定、沒把握",
+     "zh": "常用 be unclear about／on something，表示對情況或做法還不確定",
+     "en": "not sure about something, or not having a definite answer about it",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "uncomfortable",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "不自在的、彆扭的",
+     "zh": "覺得尷尬、不自然，例如在陌生場合或談到敏感話題時。",
+     "en": "feeling slightly embarrassed, nervous, or not relaxed in a situation",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00481923-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "不舒服的（身體）",
+     "zh": "身體感到疼痛或不適，例如椅子太硬、鞋子太緊。",
+     "en": "feeling pain or slight physical pain, or making your body feel this way",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00480005-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "令人不安的、讓人不舒服的",
+     "zh": "形容某件事、某句話讓人心裡不好受或覺得尷尬。",
+     "en": "making you feel worried, embarrassed, or upset",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00481923-a"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "uncommon",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "不尋常的、少見的",
+     "zh": "指事情、情況或特質在一般生活中很少遇到，不是平常會出現的。",
+     "en": "not often seen or happening; different from what is usual",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00489640-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "非凡的、格外突出的",
+     "zh": "用來強調某種特質或程度特別強、特別出色，常帶讚賞語氣。",
+     "en": "unusually strong or impressive in a particular quality",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01682771-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "不平常地（副詞用法）",
+     "reason": "現代英文幾乎不用 uncommon 當副詞，一般改用 uncommonly；此列法屬舊字典的少見用法。"
+    }
+   ]
+  },
+  {
+   "headword": "unconscious",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "失去意識的、昏迷的",
+     "zh": "因受傷、生病或麻醉而沒有知覺、叫不醒的狀態。",
+     "en": "not awake or aware because of injury, illness, or medicine, and unable to respond",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00573907-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "未察覺的、沒注意到的",
+     "zh": "沒有意識到某件事或某個情況，常搭配 of。",
+     "en": "not realizing or noticing something that is happening",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00193933-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "無意識的、不由自主的",
+     "zh": "行為或反應在不知不覺中發生，並非刻意做出。",
+     "en": "done or felt without thinking about it or choosing to do it",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02532054-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "潛意識",
+     "zh": "心理學用語，指人察覺不到、卻影響想法與行為的心理部分。",
+     "en": "the part of the mind that holds feelings and thoughts you are not aware of",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "05621057-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "無知覺的（泛指沒有感覺能力）",
+     "reason": "與「失去意識的」詞義重疊，現代多併入該義，不另立"
+    }
+   ]
+  },
+  {
+   "headword": "unconstitutional",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "違憲的、違反憲法的",
+     "zh": "指法律、命令或政府作為不符合憲法規定，常見於法律與政治新聞。",
+     "en": "not allowed by the rules of a country's constitution; going against the constitution",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00181511-a"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "uncover",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "揭露、揭發（真相、秘密）",
+     "zh": "把原本隱藏或只有少數人知道的事情公開出來，常用於新聞、調查報導。",
+     "en": "to make known something that was hidden or secret, especially to the public",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00935783-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "揭開、掀開（覆蓋物）",
+     "zh": "把蓋在上面的東西移開，讓底下的東西露出來。",
+     "en": "to remove something that is covering a thing so that it can be seen",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02142175-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "發現、找出（證據、線索）",
+     "zh": "經由調查或搜尋而找到先前不知道的事物，常見於警方、研究等情境。",
+     "en": "to find out or discover something after searching or investigating",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "v.",
+     "label": "露出（身體部位）",
+     "zh": "把衣服脫掉或拉開，使身體某部分露出來。",
+     "en": "to remove clothes from part of your body so that it can be seen",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01342187-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "脫帽致敬",
+     "reason": "舊式用法，現代英文幾乎不再這樣說，現代多說 take off one's hat (to someone)"
+    }
+   ]
+  },
+  {
+   "headword": "under",
+   "senses": [
+    {
+     "pos": "prep.",
+     "label": "在……下面、在……之下",
+     "zh": "表示位置在物體下方或被覆蓋；也指數量、年齡、標準低於某值。",
+     "en": "in or to a position below something, or less than a particular amount or level",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00488265-r"
+     ]
+    },
+    {
+     "pos": "prep.",
+     "label": "在……領導下、受……管轄",
+     "zh": "表示受某人控制、指揮，或處於某種制度、情況之下。",
+     "en": "controlled, governed, or led by someone, or in a particular situation",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00488582-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "在下面、往下",
+     "zh": "表示位置在下方，或往較低處移動。",
+     "en": "in or to a lower position or place",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00488355-r",
+      "00488265-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "低於（某數量、標準）",
+     "zh": "表示數量、程度未達到某個界線。",
+     "en": "below a certain amount, level, or limit",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00488494-r"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "下面的、下方的",
+     "zh": "形容位置在下方或較低處的事物。",
+     "en": "located below or beneath something else",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01210218-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "下級的、從屬的",
+     "zh": "形容地位、權力或階級較低的人或單位。",
+     "en": "lower in rank, power, or authority",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00797237-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "陷入昏迷",
+     "reason": "罕用，多見於文學或特定描述，現代日常少用"
+    },
+    {
+     "meaning": "走向失敗、死亡或毀滅",
+     "reason": "罕用，多為文學或隱喻用法"
+    },
+    {
+     "meaning": "在地平線以下",
+     "reason": "專業領域過窄，一般學習者少見"
+    }
+   ]
+  },
+  {
+   "headword": "undercover",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "暗中進行的、祕密從事的",
+     "zh": "形容調查、行動或工作不公開進行，以免被發現。",
+     "en": "done secretly, especially by police or investigators, so that people do not know about it",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01710918-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "臥底的、當祕密探員的",
+     "zh": "形容人以假身分潛入某組織或場所，暗中蒐集情報。",
+     "en": "working secretly inside a group or place in order to gather information",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01710918-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "從事間諜活動的",
+     "reason": "與「臥底」詞義重複，且現代多說 spy 或 secret agent，不單獨列為一個詞義"
+    }
+   ]
+  },
+  {
+   "headword": "undercut",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "削價競爭、壓低價格",
+     "zh": "以比競爭對手更低的價格出售商品或服務，搶走生意。",
+     "en": "to sell goods or services at a lower price than a competitor",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02356463-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "削弱、損害（效果、地位）",
+     "zh": "使某事物的效果、價值或地位降低，常用於抽象事物。",
+     "en": "to make something less effective or less valuable",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "v.",
+     "label": "從底部切除、削去底部",
+     "zh": "從物體的底部切掉一部分，使其下方凹陷或懸空。",
+     "en": "to cut away material from the bottom of something",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01556947-v",
+      "01557100-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "下旋球（運動）",
+     "zh": "網球、高爾夫等運動中，使球產生下旋的擊球方式。",
+     "en": "a stroke that makes a ball spin backward",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00566846-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "牛腰肉（下側）",
+     "zh": "牛腰部下方較嫩的肉塊，常用於料理。",
+     "en": "a tender cut of meat from the lower part of a cow's loin",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "07675538-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "底切、下口（切除的材料或切口）",
+     "reason": "專業領域過窄，現代一般用法罕見"
+    },
+    {
+     "meaning": "在樹幹上切口以決定倒向",
+     "reason": "林業專業術語，現代日常幾乎不用"
+    },
+    {
+     "meaning": "雕出（從下方切除材料以形成浮雕）",
+     "reason": "與「從底部切除」詞義重複，且屬特定工藝用法"
+    },
+    {
+     "meaning": "下旋削球（動詞）",
+     "reason": "與名詞「下旋球」重複，且現代多直接用 spin 等說法"
+    }
+   ]
+  },
+  {
+   "headword": "underestimate",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "低估、看輕",
+     "zh": "認為某人或某事物的能力、價值、規模比實際小",
+     "en": "to think that someone or something is smaller, weaker, or less important than they really are",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00697527-v",
+      "00673254-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "低估（數量、成本）",
+     "zh": "把數量、金額或所需時間估得比實際低",
+     "en": "to guess an amount, cost, or time as lower than it really is",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00673254-v",
+      "00675685-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "低估、估低的金額",
+     "zh": "指估得過低的判斷，或比實際少的估算數字",
+     "en": "a guess or calculation that is lower than the real amount or value",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "05812499-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "刻意估低",
+     "reason": "與「低估數量」意思重疊，且刻意為之的用法少見，併入第二個詞義"
+    }
+   ]
+  },
+  {
+   "headword": "undergo",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "經歷、接受（治療、檢查、訓練）",
+     "zh": "指接受某種過程、治療、檢查或訓練，常與 medical、surgery、training 等搭配。",
+     "en": "to experience or be given something such as medical treatment, a test, or training",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02112831-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "遭受、經歷（變化、困難）",
+     "zh": "指經歷重大變化、困難或不愉快的事，如改革、轉變、苦難。",
+     "en": "to go through a major change, difficult situation, or unpleasant experience",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02112831-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "忍受",
+     "reason": "舊字典義，現代英文幾乎不用 undergo 表達「忍受」，此義多由 endure、put up with 表達"
+    }
+   ]
+  },
+  {
+   "headword": "undergraduate",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "大學生、大學部學生",
+     "zh": "還在讀大學、尚未取得學士學位的人。",
+     "en": "a student at a university who is studying for a first degree and has not graduated yet",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10756259-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "大學部的、大學生的",
+     "zh": "放在名詞前面，表示與大學部課程或學生有關。",
+     "en": "used before a noun to mean relating to study or students at the first university level",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "大學肄業生",
+     "reason": "舊字典說法，現代英文的 undergraduate 指在學的大學生，不特別指未畢業者；此義容易誤導學習者"
+    }
+   ]
+  },
+  {
+   "headword": "underground",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "地下的",
+     "zh": "指在地面以下的空間或位置，如地下停車場、地下鐵。",
+     "en": "located or happening below the surface of the ground",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02481459-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "地鐵",
+     "zh": "城市中在地下運行的捷運系統，英式英語常用 the underground。",
+     "en": "a railway system in a city that runs below the ground",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03762667-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "秘密的、非法的",
+     "zh": "指秘密進行、不公開的活動或組織，常帶有非法或反抗體制的意味。",
+     "en": "secret and often illegal, especially against a government or authority",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01710918-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "地下組織、地下勢力",
+     "zh": "秘密運作、意圖推翻政府或占領軍的組織，也可指黑市或犯罪集團。",
+     "en": "a secret group that works to overthrow a government or an occupying force",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "08377599-n"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "在地下",
+     "zh": "表示在地面以下的位置或進入地下。",
+     "en": "below the surface of the earth",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00489115-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "秘密地、暗中",
+     "zh": "表示祕密地、不公開地從事某種活動，常與 go underground 連用。",
+     "en": "in or into hiding or secret operation",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00489216-r"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "地道",
+     "reason": "中文釋義中的「地道」在現代英語中通常用 tunnel 表達，underground 作名詞時較少單指地道，多指地鐵或地下組織。"
+    }
+   ]
+  },
+  {
+   "headword": "underlie",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "構成……的基礎、是……的根本原因",
+     "zh": "指某個想法、問題或現象背後有更深層的原因或依據，常用於說明抽象事物。",
+     "en": "to be the real cause of or the basic idea behind something",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "02670653-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "位於……之下、在……底下",
+     "zh": "指某物實際位在另一物的下方，屬較字面、正式的用法。",
+     "en": "to be located under something or below its surface",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "02698930-v"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "underline",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "強調、突顯",
+     "zh": "特別指出某件事的重要性，常用於說話或寫作中",
+     "en": "to emphasize something or show that it is important",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01016618-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "在……下劃線",
+     "zh": "在文字下方畫線，以標示重點或引起注意",
+     "en": "to draw a line under a word or phrase to show it is important",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01006280-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "底線",
+     "zh": "畫在文字下方的線條，用來標示重點",
+     "en": "a line drawn under a word or words to show importance",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "06814276-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "作……的襯裡",
+     "reason": "舊字典誤譯，應為 underlay 或 line 的意思，與 underline 無關"
+    },
+    {
+     "meaning": "圖下說明文字",
+     "reason": "罕用，現代多稱 caption，且與「底線」意思重複"
+    }
+   ]
+  },
+  {
+   "headword": "underlying",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "根本的、潛在的",
+     "zh": "構成某事物基礎、但不容易直接看見的原因或因素",
+     "en": "forming the basic reason or cause of something, though not easy to see",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01862358-s",
+      "00945209-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "下方的、底層的",
+     "zh": "位置在下面或表面之下的，常用於地質、醫學等描述",
+     "en": "located below something else or beneath the surface",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "02358143-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "undermine",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "削弱、破壞（信心、地位、效果）",
+     "zh": "讓某人的信心、權威或某件事的效果慢慢變弱",
+     "en": "to gradually make someone's confidence, authority, or the effect of something weaker",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02549304-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "暗中破壞、扯後腿",
+     "zh": "用不明顯的方式阻撓計畫或行動，使其難以成功",
+     "en": "to secretly or indirectly weaken a plan or effort so that it is less likely to succeed",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02549304-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "淘空、挖空（底部）",
+     "zh": "從物體下方挖土或挖空，使結構變得不穩",
+     "en": "to dig away the ground under something and make it weak or likely to fall",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01285636-v"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "underneath",
+   "senses": [
+    {
+     "pos": "prep.",
+     "label": "在……下面、在……底下",
+     "zh": "表示某物被另一物覆蓋或位於其正下方，常帶有「藏在表面之下」的意味。",
+     "en": "directly below something, often covered by it or hidden beneath its surface",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00489606-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "在下面、在底下",
+     "zh": "不接名詞單獨使用，指位置在下方或物體的下側。",
+     "en": "in or to a lower place, or on the bottom side of something",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00489821-r",
+      "00489606-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "（表面下）暗藏、內心裡",
+     "zh": "用來說明外表之下真正存在的事物或感受，如 underneath it all。",
+     "en": "used to talk about what is really true or felt, hidden behind how something appears",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "underpin",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "構成基礎、支撐（論點、制度）",
+     "zh": "作為某個理論、制度或說法的基礎，讓它站得住腳",
+     "en": "to be the base or main support for an idea, system, or argument",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "02669418-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "從下方支撐（結構）",
+     "zh": "在建築物或結構的下方提供實際的支撐",
+     "en": "to hold up a building or structure from below",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01221482-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "支援",
+     "reason": "與「構成基礎」意思重疊，現代多改用 support，不另立詞義"
+    }
+   ]
+  },
+  {
+   "headword": "underscore",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "強調、突顯",
+     "zh": "用來說明某件事特別重要，常見於新聞、報告與口語討論中。",
+     "en": "to show that something is especially important",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01016618-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "在……下方劃線",
+     "zh": "在文字下方畫線，用來標示重點或引起注意。",
+     "en": "to draw a line under words to show they are important",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01006280-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "底線、下劃線",
+     "zh": "文字下方所畫的線，也指電腦鍵盤上的底線符號。",
+     "en": "a line drawn under written words, or the low dash symbol on a keyboard",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "06814276-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "understand",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "理解、明白",
+     "zh": "知道某事物的意思或運作方式，是最核心的用法。",
+     "en": "to know what something means or how it works",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00590283-v",
+      "00592510-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "聽懂、看懂（語言）",
+     "zh": "能聽懂或讀懂某種語言或話語的內容。",
+     "en": "to be able to hear or read a language and know its meaning",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00595247-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "諒解、體諒",
+     "zh": "能體會別人的感受或處境，並接受其行為。",
+     "en": "to know how someone feels and accept why they behave that way",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00595453-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "認為、相信",
+     "zh": "根據聽到的資訊而相信某事是真的，常用於被動。",
+     "en": "to believe that something is true because you have been told",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00594917-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "聽說",
+     "reason": "與「認為、相信」意思重疊，已合併。"
+    }
+   ]
+  },
+  {
+   "headword": "understandable",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "可以理解的、合理的",
+     "zh": "指事情、行為或反應有道理，讓人能夠理解或接受。",
+     "en": "easy to understand or reasonable, so people can accept why it happens",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00535672-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（情緒、反應）情有可原的",
+     "zh": "常用於 it is understandable that...，表示某人的擔心、生氣等反應是可以體諒的。",
+     "en": "used to say that someone's feelings or reactions are natural and easy to sympathize with",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "understandably",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "可以理解地、難怪",
+     "zh": "表示某種反應或情況合乎情理、不令人意外",
+     "en": "in a way that is easy to understand or not surprising",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "adv.",
+     "label": "清楚地、明白地",
+     "zh": "以讓人聽得懂、看得懂的方式表達",
+     "en": "in a way that is clear and easy to follow",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00203770-r"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "可懂、可瞭解、可理解",
+     "reason": "舊字典把形容詞 understand 的被動可能義直譯成副詞，現代英文不這樣用；現代 understandably 主要表示「合乎情理、不令人意外」"
+    }
+   ]
+  },
+  {
+   "headword": "understanding",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "理解、了解",
+     "zh": "對某事物或某人的想法、情況有所了解",
+     "en": "the knowledge or ability to know how something works or what it means",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "05813483-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "體諒、善解人意",
+     "zh": "能體會別人的感受、願意包容對方",
+     "en": "the quality of being kind and able to feel what other people are going through",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01750195-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "共識、協議",
+     "zh": "雙方私下或口頭談好的條件，常見於達成協議的說法",
+     "en": "an informal agreement that people reach with each other",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "06783066-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "體貼的、善解人意的",
+     "zh": "形容一個人能理解並包容別人的處境",
+     "en": "kind and able to understand how other people feel",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01750195-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "支持或認同某意見的傾向",
+     "reason": "與「體諒、了解」意思重疊，現代少單獨這樣用"
+    },
+    {
+     "meaning": "理性思考或判斷的能力",
+     "reason": "偏哲學、心理學的抽象用法，一般情境罕見"
+    }
+   ]
+  },
+  {
+   "headword": "undertake",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "著手進行、從事",
+     "zh": "開始做某件需要時間或心力的事，如計畫、研究、任務",
+     "en": "to start doing a job or activity that takes time and effort",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01654835-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "承擔、擔負（責任、工作）",
+     "zh": "接下某項職責或任務並負責完成",
+     "en": "to accept responsibility for a duty or piece of work",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02545352-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "承諾、保證",
+     "zh": "正式答應一定會做到某事",
+     "en": "to promise formally that you will do something",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00891076-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "接受（挑戰）",
+     "zh": "把某件困難的事當成挑戰接下",
+     "en": "to accept a difficult task as a challenge",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "02575545-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "試圖",
+     "reason": "舊字典義，現代英文幾乎不用 undertake 表示單純的「嘗試」"
+    },
+    {
+     "meaning": "簽約、訂立契約",
+     "reason": "專業法律用法，一般學習者少見，且與「承擔」義重疊"
+    }
+   ]
+  },
+  {
+   "headword": "undertaking",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "任務、事業",
+     "zh": "著手去做、通常規模較大或需要投入心力的事情或計畫",
+     "en": "a task or project that someone takes on, often a large or difficult one",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00797381-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "承諾、保證",
+     "zh": "正式答應去做某件事的承諾",
+     "en": "a formal promise that you will do something",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "殯葬業",
+     "zh": "處理葬禮事宜的行業，屬專業用語",
+     "en": "the business of preparing dead bodies and arranging funerals",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01122580-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "underwater",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "水下的、水面下的",
+     "zh": "指位於水面以下的事物，如水中攝影、水下隧道。",
+     "en": "located or happening below the surface of the water",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02481727-s"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "在水下、潛入水中",
+     "zh": "表示動作或狀態發生在水面之下，如潛水、在水下游泳。",
+     "en": "in or into the water, below its surface",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "（貸款）房貸金額高於房價的",
+     "zh": "指房貸餘額超過房屋價值的財務狀況，常見於財經報導。",
+     "en": "having a home loan that is larger than the value of the house",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "水中生長的",
+     "zh": "指植物完全或大部分生長在水面下，如水中植物。",
+     "en": "growing or staying completely below the water's surface",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00125557-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "underway",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "進行中的、已展開的",
+     "zh": "指計畫、工程、調查或活動已經開始並正在進行。",
+     "en": "already started and still happening or being done",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00670007-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "航行中的（船）",
+     "zh": "指船隻已離港、正在海上行駛，多用於航運或海事的正式說法。",
+     "en": "moving through the water after leaving port",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "起步的",
+     "reason": "與「進行中的」意思重疊，現代多說 getting started，不另立一義。"
+    }
+   ]
+  },
+  {
+   "headword": "underwear",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "內衣、內衣褲",
+     "zh": "穿在外衣裡面、直接貼著皮膚的衣物，如內褲、胸罩、汗衫等。",
+     "en": "clothes that you wear next to your skin under your other clothes",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04516244-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "undesirable",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "不受歡迎的、令人反感的",
+     "zh": "指人或事物讓人不想接近、不希望出現，如不受歡迎的結果或行為。",
+     "en": "not wanted or pleasant, and likely to cause problems or dislike",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00737448-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "不理想的、負面的（效果、後果）",
+     "zh": "常用來形容政策、做法帶來的不好影響或副作用。",
+     "en": "likely to cause trouble or have a bad effect",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "不受歡迎的人",
+     "zh": "指被認為不該出現、惹人厭的人，語氣較正式或帶評價。",
+     "en": "a person who is not wanted or is thought to be a bad influence",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "10756921-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "不值得被挑選的（尤指配偶）",
+     "reason": "罕用且過窄，現代幾乎只出現在舊式法律或婚姻文本"
+    },
+    {
+     "meaning": "不合乎社會道德標準的",
+     "reason": "舊字典說法，現代多改用 unacceptable 等詞，此義已少見"
+    }
+   ]
+  },
+  {
+   "headword": "undo",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "取消、復原（動作、效果）",
+     "zh": "把已經做過的事取消或恢復原狀，常用於電腦的「復原」功能。",
+     "en": "to cancel or reverse an action or its effect, especially in computing",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01522610-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "解開、鬆開（鈕扣、繩結等）",
+     "zh": "把扣好的東西或綁緊的東西打開。",
+     "en": "to open or loosen something that is fastened or tied",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01287511-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "毀掉、使失敗",
+     "zh": "造成某人或某事失敗、毀滅，常用於被動語態。",
+     "en": "to cause someone or something to fail or be destroyed",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "02565025-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "去除（特性）、使失去",
+     "zh": "使某人或某物失去原有的特質或狀態。",
+     "en": "to make someone or something lose a particular quality or characteristic",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01622250-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "拆開、打開（包裝）",
+     "zh": "把包裝或覆蓋物移除，打開東西。",
+     "en": "to remove the cover or wrapping from something",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01286874-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "擾亂",
+     "reason": "此義在現代英文中幾乎不用，且與「毀掉」義重疊。"
+    },
+    {
+     "meaning": "鬆開（不及物）",
+     "reason": "現代用法多為及物動詞，不及物用法罕見。"
+    }
+   ]
+  },
+  {
+   "headword": "undoubtedly",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "無疑地、確實",
+     "zh": "表示對某件事很有把握，認為一定如此。",
+     "en": "used to say that something is certainly true or will certainly happen",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00079373-r"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "必定",
+     "reason": "與「無疑地、確實」意思重複，已合併為同一詞義"
+    }
+   ]
+  },
+  {
+   "headword": "undue",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "過度的、不合理的",
+     "zh": "超過正常或合理程度的，常用來描述壓力、影響、延遲等",
+     "en": "more than is normal, reasonable, or necessary",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "01538069-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "不當的、不恰當的",
+     "zh": "在特定情況下顯得不合適或不正當的",
+     "en": "not suitable or proper for a particular situation",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00139211-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "缺乏正當理由的",
+     "zh": "沒有充分依據或未經授權的，如不當影響、不當壓力",
+     "en": "not based on good reason or not officially allowed",
+     "usage": "less_common",
+     "register": [
+      "formal",
+      "technical"
+     ],
+     "synsets": [
+      "01951967-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "未到期的（票據等）",
+     "reason": "專業金融法律用語，一般學習者幾乎不會遇到"
+    }
+   ]
+  },
+  {
+   "headword": "unduly",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "過度地、過分地",
+     "zh": "表示某種情況或做法超出合理程度，常帶有負面意味，多用於正式或書面語。",
+     "en": "more than is reasonable or necessary, often in a way that causes problems",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00489957-r"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "不適當地",
+     "reason": "與「過度地」意思重疊，現代多說 excessively 或 inappropriately，不另列"
+    }
+   ]
+  },
+  {
+   "headword": "uneasy",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "擔心的、不安的",
+     "zh": "心裡覺得事情可能不對勁或會有壞事發生，而無法放鬆。",
+     "en": "feeling worried or nervous because you think something may be wrong or bad may happen",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00826017-a",
+      "02465209-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "不自在的、侷促的",
+     "zh": "在社交場合覺得尷尬、不自然，不知道該怎麼表現。",
+     "en": "feeling awkward and not relaxed when you are with other people",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00482429-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（身體）不舒服的",
+     "zh": "身體有點不適，例如胃不舒服或坐立難安。",
+     "en": "slightly uncomfortable in your body, for example an upset stomach",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00481063-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "不穩定的、令人不安的",
+     "zh": "形容局勢、關係或和平狀態不穩，隨時可能出問題。",
+     "en": "not stable and likely to change or cause problems",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01928961-a"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unemployed",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "失業的、沒工作的",
+     "zh": "指有工作能力卻找不到工作、目前沒有受雇的狀態。",
+     "en": "not having a job, especially when you are able and willing to work",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00867880-a"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "失業者（總稱）",
+     "zh": "當作群體來指所有失業的人，常與 the 連用，如 the unemployed。",
+     "en": "all the people who do not have jobs and want to work, used as a group",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "08494318-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "未被利用的",
+     "reason": "舊字典直譯，現代英文幾乎不用 unemployed 表達資源或物品閒置，多說 unused、idle 等"
+    }
+   ]
+  },
+  {
+   "headword": "unemployment",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "失業、失業狀態",
+     "zh": "指沒有工作、找不到工作的情況，常見於經濟與社會議題的討論。",
+     "en": "the situation of not having a job and being unable to find one",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "13991755-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "失業率、失業人數",
+     "zh": "指失業的人口數量或比率，常與統計數字、政府數據一起出現。",
+     "en": "the number or rate of people who do not have jobs, often used with official figures",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "uneven",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "不平坦的、凹凸不平的",
+     "zh": "表面高低起伏、不光滑平整，常用來形容地面、路面或物體表面。",
+     "en": "not flat or smooth; having parts that are higher or lower than others",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00914441-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "不均等的、不相當的",
+     "zh": "程度、數量或實力不對等，常用於比賽、分配或發展。",
+     "en": "not equal or fairly balanced, especially in a contest or comparison",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00896066-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "不規則的、不穩定的",
+     "zh": "變化不定、時好時壞，常用來描述節奏、表現或品質。",
+     "en": "changing in an irregular way; not steady or consistent",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02313332-s",
+      "00581013-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "奇數的",
+     "zh": "數學上指不能被 2 整除的數字。",
+     "en": "not able to be divided exactly by two; odd",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00916568-a"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unexpected",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "意外的、料想不到的",
+     "zh": "事先沒有預料到、突然發生的事或情況。",
+     "en": "happening or appearing in a way that you did not think would happen",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00933531-a"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "突然的",
+     "reason": "與「意外的」意思重疊，已合併為同一詞義"
+    }
+   ]
+  },
+  {
+   "headword": "unexpectedly",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "出乎意料地、意外地",
+     "zh": "事情的發展和原本預期不同，常用來描述突然發生的好事或壞事。",
+     "en": "in a way that is different from what people expected or thought would happen",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00041131-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "臨時地、事先沒安排地",
+     "zh": "強調沒有事先計畫或準備，事情就臨時發生了。",
+     "en": "without being planned or arranged before it happens",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00040959-r"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "突然的、意外的（形容詞用法）",
+     "reason": "參考資料的中文釋義混入形容詞說法；unexpectedly 是副詞，形容詞用法屬 unexpectedly 的相關詞 unexpected，不另立詞義"
+    }
+   ]
+  },
+  {
+   "headword": "unfair",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "不公平的、不公正的",
+     "zh": "對人不平等、沒有按照公平原則處理，常用來形容規則、對待或競爭。",
+     "en": "not treating people equally or not following fair rules",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00960366-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "不正當的、不合理的",
+     "zh": "形容手段、做法或要求不合理，帶有佔人便宜或不誠實的意味。",
+     "en": "not honest or reasonable, and giving someone an advantage",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00960366-a"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "不正直的",
+     "reason": "與「不公平、不正當」意思重疊，現代多說 dishonest，不另立詞義"
+    }
+   ]
+  },
+  {
+   "headword": "unfamiliar",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "不熟悉的、陌生的",
+     "zh": "指人、事物或概念以前沒接觸過、不認識，或對某事物還不熟練。",
+     "en": "not known to you, or not having experience with something",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00969666-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "不常見的、少見的",
+     "zh": "形容某種事物在一般情況下很少出現，讓人覺得不習慣。",
+     "en": "not often seen or heard, so it seems strange or new",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unfinished",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "未完成的、沒做完的",
+     "zh": "指事情、作品或工作還沒做到最後階段，尚未結束。",
+     "en": "not finished yet; still in progress or not brought to an end",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01009264-a",
+      "01007907-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "未上漆的、未做表面處理的",
+     "zh": "指木材、牆面等表面還沒上漆或做最後處理。",
+     "en": "not given a final surface treatment such as paint or polish",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01718610-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unfit",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "不適合的、不適任的",
+     "zh": "指某人或某物未達要求標準，不適合某個用途或職位。",
+     "en": "not good enough or suitable for a particular purpose or job",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01024917-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "身體狀況不佳的",
+     "zh": "指因生病或體能差而健康狀況不適合做某事。",
+     "en": "not in good physical condition, especially because of illness",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01021330-a",
+      "01177766-s"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "使不適合",
+     "zh": "指讓某人或某物變得不適合某用途或職位。",
+     "en": "to make someone or something unsuitable for a purpose",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00302119-v"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unfold",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "展開、打開（摺疊物）",
+     "zh": "把摺起來或收起來的東西攤開，例如地圖、椅子、信紙。",
+     "en": "to open something that was folded or closed so that it becomes flat or fully open",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01582662-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "（情節、事件）逐步發展、展開",
+     "zh": "故事、事件或情況慢慢發展、顯現出來，常用於敘事或報導。",
+     "en": "to develop or become known gradually as time passes",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00294522-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "（景色）展現、映入眼簾",
+     "zh": "風景或景象在眼前鋪展開來，常見於描寫旅遊或自然景色。",
+     "en": "to appear or become visible, especially a wide view or scene",
+     "usage": "less_common",
+     "register": [
+      "literary"
+     ],
+     "synsets": [
+      "02148564-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "伸展、張開（身體、翅膀）",
+     "zh": "把身體部位或翅膀伸展開來，多用於書面描述。",
+     "en": "to stretch out a part of the body or wings to full length",
+     "usage": "less_common",
+     "register": [
+      "literary"
+     ],
+     "synsets": [
+      "02058913-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "開花",
+     "reason": "舊字典義，現代英語幾乎不用 unfold 表示開花，改說 bloom、blossom"
+    },
+    {
+     "meaning": "挑明、披露",
+     "reason": "與「逐步展開、顯現」意思重疊，現代多說 reveal 或 come out，不另立義項"
+    }
+   ]
+  },
+  {
+   "headword": "unfortunate",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "不幸的、倒楣的",
+     "zh": "運氣不好、遭遇壞事的人或情況",
+     "en": "having bad luck, or happening because of bad luck",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01053161-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "令人遺憾的、可惜的",
+     "zh": "用來對某件不好的事表達遺憾或同情，常放在名詞前",
+     "en": "used to show that you feel sorry about something bad that happened",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01004966-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "不吉利的、不祥的",
+     "zh": "看起來會帶來壞運氣或壞結果，多用於書面",
+     "en": "likely to bring bad luck or a bad result",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00178121-a"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "不幸的人",
+     "zh": "遭遇不幸或生活困苦的人，常複數加 the 表示一群人",
+     "en": "a person who has suffered bad luck or hardship",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "09653829-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "不合適的",
+     "reason": "舊字典義，現代多改用 unsuitable、inappropriate，這個字已不這樣用"
+    }
+   ]
+  },
+  {
+   "headword": "unfortunately",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "不幸地、可惜",
+     "zh": "用來表示某件事令人遺憾或不順利，常放在句首引出壞消息。",
+     "en": "used to say that something is sad or unlucky, often at the start of a sentence",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00043179-r"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "恐怕",
+     "reason": "「恐怕」在現代中文多對應 I'm afraid，並非 unfortunately 的獨立義項，屬舊字典的意譯混入"
+    }
+   ]
+  },
+  {
+   "headword": "unhappy",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "不快樂的、難過的",
+     "zh": "心情低落、感到悲傷或不滿，是這個字最常見的用法。",
+     "en": "feeling sad or not satisfied with a situation",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01152997-a",
+      "00912446-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "不滿意的、不滿的",
+     "zh": "對某件事感到不滿或不高興，常用在「unhappy about/with」的搭配中。",
+     "en": "not pleased or satisfied with something",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01152997-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "令人不快的、不適當的",
+     "zh": "形容情況、安排或結果讓人不舒服、不理想，例如「unhappy situation」。",
+     "en": "causing discomfort or not suitable for a situation",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "01810198-s",
+      "01055513-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "不幸的",
+     "reason": "舊字典釋義，現代英語中表達「不幸」多用 unlucky 或 unfortunate，此義已罕用。"
+    }
+   ]
+  },
+  {
+   "headword": "unhealthy",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "不健康的、身體不好的",
+     "zh": "指身體或心理狀況不佳，沒有達到健康的狀態。",
+     "en": "not physically or mentally well; in poor health",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01176433-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "有害健康的",
+     "zh": "形容某種習慣、環境或物質會損害身體健康。",
+     "en": "likely to harm your health or make you ill",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02570304-s",
+      "01172389-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（風氣、心態）不健康的",
+     "zh": "形容想法、關係或社會現象偏差、不正常，對人或群體有負面影響。",
+     "en": "not normal or good for people, such as a harmful attitude or situation",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unidentified",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "身分不明的、未確認的",
+     "zh": "指人或事物還沒被認出、確認身分或來源，常用於新聞報導中的不明人士、不明物體。",
+     "en": "not yet known or recognized; whose identity or nature has not been established",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01381014-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "來源不明的、不知名的",
+     "zh": "指事物的來源或出處不清楚，例如不明來源的消息或不知名的飛行物。",
+     "en": "coming from a source that is not known or not named",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00121594-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unification",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "統一、整合",
+     "zh": "把原本分開的部分結合成一個整體，常用於國家、制度或組織",
+     "en": "the process of joining separate parts or groups into one whole",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00382488-n",
+      "07388202-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "一致、團結",
+     "zh": "指彼此結合、立場一致的狀態",
+     "en": "the state of being joined together or acting as one",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "14441799-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unified",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "統一的、整合的",
+     "zh": "把原本分開的部分結合成一個整體，例如統一的系統、整合後的組織。",
+     "en": "made into one whole by joining separate parts together",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02487032-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "一致的、齊一的",
+     "zh": "大家採用相同標準或做法，沒有分歧，例如一致的說法、統一的規定。",
+     "en": "following the same standard or acting together as one group",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01331181-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "uniform",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "制服",
+     "zh": "特定團體（如學校、軍隊、公司）規定穿著的服裝",
+     "en": "special clothes worn by members of a group so they can be recognized",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04516887-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "統一的、一致的",
+     "zh": "所有部分或情況都相同，沒有變化",
+     "en": "being the same in all parts or cases; not changing",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01973553-a",
+      "01203638-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "均勻的、等距的",
+     "zh": "間隔或分布平均、規律",
+     "en": "evenly spaced or distributed",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01967120-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "無區別的、不分化",
+     "reason": "罕用，現代英語幾乎不用這個意思"
+    },
+    {
+     "meaning": "提供制服",
+     "reason": "動詞用法極罕見，現代幾乎不用"
+    }
+   ]
+  },
+  {
+   "headword": "unify",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "統一、使合一",
+     "zh": "把分裂或不同的部分整合成一個整體，常用於國家、組織、制度等。",
+     "en": "to join separate parts or groups together so that they form one whole",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00368338-v",
+      "01464634-v",
+      "00244010-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "團結、使一致",
+     "zh": "讓一群人為了共同目標或信念而團結一致，常用於政黨、團隊、社會。",
+     "en": "to make people or groups agree and work together for a shared aim",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02609063-v",
+      "02475258-v"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unilateral",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "單方面的、片面的",
+     "zh": "指只有一方做出決定或採取行動，另一方沒有參與或同意。",
+     "en": "done by only one side of a group or situation, without the other side's agreement",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00238581-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "單邊的（身體部位）",
+     "zh": "用於醫學或解剖，指只發生在身體一側的動作或症狀。",
+     "en": "happening on or affecting only one side of the body",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00238581-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "單系的（血統）",
+     "zh": "用於法律或人類學，指只依父系或只依母系計算血統。",
+     "en": "based on family relationships through only the father's or only the mother's side",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01419956-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unimportant",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "不重要的、無關緊要的",
+     "zh": "形容事情、細節或人物沒有分量，不值得特別在意。",
+     "en": "not having much value or effect, and not worth paying special attention to",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01283088-a",
+      "02171958-a"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "union",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "工會",
+     "zh": "由勞工組成、與雇主協商薪資與工作條件的組織。",
+     "en": "an organization of workers that talks with employers about pay and working conditions",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "08249977-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "聯盟、聯合組織",
+     "zh": "由多個團體或國家為了共同目的而組成的聯合體。",
+     "en": "a group formed by several organizations or countries that work together for a shared purpose",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "08321825-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "結合、聯合",
+     "zh": "把分開的人或事物結合成一個整體的動作或狀態。",
+     "en": "the act or state of joining separate people or things together into one",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "14441799-n",
+      "00382488-n",
+      "07387877-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "婚姻、結縭",
+     "zh": "正式或文學用法，指兩人結婚共同生活的狀態。",
+     "en": "the state of being married; a marriage",
+     "usage": "less_common",
+     "register": [
+      "formal",
+      "literary"
+     ],
+     "synsets": [
+      "13987306-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（數學）聯集",
+     "zh": "數學術語，指兩個以上集合的所有元素組成的集合。",
+     "en": "in mathematics, a set that contains all the members of two or more sets",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "08015154-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "工會的",
+     "zh": "形容與工會相關的事物，如工會代表、工會會員。",
+     "en": "relating to a trade union or its members",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "02483666-a"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "交配、配對（動物繁殖）",
+     "reason": "專業領域過窄，一般學習者少用"
+    },
+    {
+     "meaning": "傷口癒合、骨折接合",
+     "reason": "醫學專業用法，日常少見"
+    },
+    {
+     "meaning": "（美國南北戰爭）聯邦的、北方各州的",
+     "reason": "歷史專指用法，現代一般語境不適用"
+    },
+    {
+     "meaning": "國旗上象徵聯合的圖案",
+     "reason": "罕用，僅見於旗幟學特定描述"
+    }
+   ]
+  },
+  {
+   "headword": "unionist",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "工會會員、工會成員",
+     "zh": "指加入工會的勞工，常見於勞資、罷工等新聞報導。",
+     "en": "a worker who is a member of a labor union",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10740613-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "支持工會者、工會主義者",
+     "zh": "指主張或支持工會運動的人，不一定本身是會員。",
+     "en": "a person who supports the aims and activities of labor unions",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "（英國）統一派、聯合派",
+     "zh": "指主張北愛爾蘭留在英國的人，主要出現在北愛爾蘭政治報導。",
+     "en": "in Northern Ireland, a person who wants the region to stay part of the UK",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unique",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "獨特的、與眾不同的",
+     "zh": "指某事物具有明顯特色，跟其他同類很不一樣。",
+     "en": "very special or different from anything else of its kind",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00507765-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "唯一的、僅有的",
+     "zh": "強調某事物是單獨存在、沒有其他相同個體。",
+     "en": "being the only one of its kind; not existing anywhere else",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02222756-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "罕見的、不尋常的",
+     "zh": "形容某情況或特質很少發生，令人覺得特別。",
+     "en": "unusual and not happening or seen very often",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00493556-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "專屬於（某地、某類）的",
+     "zh": "指某特質或現象只存在於特定地方或群體，常與 to 連用。",
+     "en": "existing only in a particular place or among a particular group",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "01108735-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "uniquely",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "獨特地、獨一無二地",
+     "zh": "表示某事物以與眾不同、別處找不到的方式呈現或發生。",
+     "en": "in a way that is different from anything or anyone else",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00176976-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "特別地、格外地",
+     "zh": "用於強調某特質在某對象身上特別明顯，常帶「唯有它如此」的語氣。",
+     "en": "used to emphasize that a quality belongs especially to one person or thing",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "珍奇地",
+     "reason": "舊字典用語，現代英文幾乎不用 uniquely 表達「珍奇」，多併入「獨特地」的意思。"
+    }
+   ]
+  },
+  {
+   "headword": "unison",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "一致、齊聲",
+     "zh": "多人同時做同一件事或說同樣的話，常見於 in unison 這個片語。",
+     "en": "a situation in which people do or say the same thing at the same time",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "13995952-n",
+      "05056288-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "齊唱、齊奏",
+     "zh": "音樂中多人同時唱或奏同一個音或同一個旋律。",
+     "en": "a style of music in which everyone sings or plays the same notes together",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "04989030-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "調和、和諧",
+     "reason": "與「一致」意思重疊，現代多併入該義，不另立一項"
+    },
+    {
+     "meaning": "共同做的、同聲的（形容詞）",
+     "reason": "現代幾乎不用 unison 當形容詞，屬舊式用法"
+    }
+   ]
+  },
+  {
+   "headword": "unit",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "單位、計量單位",
+     "zh": "用來計量或計算的標準量，如公尺、公斤、元等。",
+     "en": "a standard amount used for measuring or counting something",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "13604927-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "單元（教材、課程）",
+     "zh": "教科書或課程中劃分的一個學習段落。",
+     "en": "one of the parts that a textbook or course is divided into",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "部門、單位（組織）",
+     "zh": "較大組織中的一個分支或小組，如業務單位。",
+     "en": "a small group or department that is part of a larger organization",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "08206589-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（公寓）一戶、一間",
+     "zh": "公寓大樓中的一間住宅，常說 apartment unit。",
+     "en": "one apartment in a building with several apartments",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "（機器）組件、裝置",
+     "zh": "機器或系統中具有特定功能的一個部件或裝置。",
+     "en": "a part of a machine or system that has a particular function",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00003553-n",
+      "09488589-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "部隊、分隊",
+     "zh": "軍隊編制中的一個小單位。",
+     "en": "a small group of soldiers that is part of a larger military group",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "（整體中的）一個、個體",
+     "zh": "被視為整體中一個構成要素的個人或事物。",
+     "en": "one person or thing that is part of a whole",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "13832535-n",
+      "05878479-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "單位的、單元的（形容詞）",
+     "reason": "現代英文中幾乎不用 unit 當形容詞，相關概念多用名詞修飾或改用 unitary 等詞。"
+    }
+   ]
+  },
+  {
+   "headword": "unite",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "團結、聯合",
+     "zh": "指人們為了共同目標或信念而結合在一起，常與 against、behind 等介系詞連用。",
+     "en": "to join together with other people because you share the same aim or belief",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02475258-v",
+      "02609063-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "使結合、使合併",
+     "zh": "指把兩個或多個事物（如組織、國家、部分）結合成一個整體。",
+     "en": "to join two or more things together so that they form one whole",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00368338-v",
+      "00244010-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "連接、接合",
+     "zh": "指兩部分在物理上相連或連接在一起，常用於被動語態。",
+     "en": "to be joined or connected together physically",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "02628315-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "兼具、兼有",
+     "zh": "指同時擁有某種特質或特點，常用於 unite in 的句型。",
+     "en": "to have two or more different qualities or features at the same time",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "02637244-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "使粘合",
+     "reason": "現代英語中 unite 已不常用來表示物理上的黏合，此義多由 glue、stick 等字表達。"
+    }
+   ]
+  },
+  {
+   "headword": "united",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "聯合的、團結的",
+     "zh": "指多個部分或人結合成一個整體，常與國家、組織、團隊等搭配。",
+     "en": "joined together and acting as one group or whole",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02485330-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "共同的、聯合的（行動）",
+     "zh": "形容由兩個以上的人或團體一起參與的行動或努力。",
+     "en": "done by two or more people or groups working together",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02119388-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（夫妻）結婚的、有婚姻關係的",
+     "zh": "正式或法律文件中用來指兩人已結婚、共同生活。",
+     "en": "married to each other and living as a couple",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "01485119-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "和睦的",
+     "reason": "與「團結的、一致的」意思重疊，現代多說 harmonious 或 close，不另立詞義。"
+    }
+   ]
+  },
+  {
+   "headword": "unity",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "團結、一致",
+     "zh": "一群人彼此支持、目標相同而形成的整體感，常用於團隊、社會或國家。",
+     "en": "a situation in which people are joined together and support each other",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04750610-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "整體性、完整性",
+     "zh": "事物各部分合為一個完整、沒有缺漏的整體。",
+     "en": "the state of being one complete whole with nothing missing",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "14484149-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（戲劇）三一律",
+     "zh": "古典戲劇要求時間、地點、情節一致的創作原則，屬文學術語。",
+     "en": "a rule in classical drama that a play has one plot, place and day",
+     "usage": "rare",
+     "register": [
+      "technical",
+      "literary"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "單一（性）、個體",
+     "reason": "與「整體性」詞義重複，且現代少見此用法"
+    },
+    {
+     "meaning": "最小的整數或代表該數的數字",
+     "reason": "數學專用的罕見義，現代一般英文幾乎不用"
+    }
+   ]
+  },
+  {
+   "headword": "universal",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "普遍的、全體的",
+     "zh": "適用於所有人或所有情況的；到處都有的",
+     "en": "true of or shared by everyone or everything in a group",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01106367-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "全世界的、全球性的",
+     "zh": "影響或涉及整個世界的",
+     "en": "involving or affecting the whole world",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00529364-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "通用的、多用途的",
+     "zh": "設計成可適用於各種情況或用途的",
+     "en": "designed to be used in many different situations or for many purposes",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01032238-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "普遍原則、共通特質",
+     "zh": "存在於所有人類文化或語言中的共通模式或規則",
+     "en": "a feature or rule found in all human cultures or languages",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "07274652-n",
+      "05676203-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "全稱命題（邏輯）",
+     "reason": "專業領域過窄，僅見於邏輯學文獻"
+    },
+    {
+     "meaning": "萬向接頭（機械）",
+     "reason": "專業領域過窄，一般學習者不會遇到"
+    },
+    {
+     "meaning": "一般概念",
+     "reason": "舊字典的籠統釋義，現代用法中不以此義獨立出現"
+    }
+   ]
+  },
+  {
+   "headword": "universally",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "普遍地、廣泛地",
+     "zh": "表示某情況在大多數人或大多數地方都成立，常用於陳述一般現象或共識。",
+     "en": "by or among most people or in most situations",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00196734-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "全體一致地、人人都",
+     "zh": "強調所有人或所有成員都抱持相同看法或做法。",
+     "en": "in a way that everyone agrees with or does",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "adv.",
+     "label": "全世界地、各地皆然",
+     "zh": "用於描述在世界各地都適用或都能見到的情況。",
+     "en": "in or by people all over the world",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "宇宙的、萬能的、通用的",
+     "reason": "這些是舊字典把 universe、universal 等相關字的釋義混入副詞條目，並非 universally 本身的現代用法"
+    },
+    {
+     "meaning": "普通、一般",
+     "reason": "與「普遍地」意思重複，已合併"
+    }
+   ]
+  },
+  {
+   "headword": "universe",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "宇宙、萬物",
+     "zh": "指存在於空間中的所有事物，包括星球、星系等，是最常見的意思。",
+     "en": "everything that exists in space, including all stars, planets, and matter",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "09489410-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（某領域的）世界、範圍",
+     "zh": "指某個活動、興趣或思想所涵蓋的整體範圍，如「電影的世界」。",
+     "en": "a particular area of activity, interest, or experience and everything connected with it",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "（統計的）母體、全體",
+     "zh": "統計學用語，指抽樣時所來自的整體資料或對象。",
+     "en": "in statistics, all the items or people that a sample is taken from",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "06035684-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（討論中的）全部事物",
+     "zh": "指某個討論或假設中所涵蓋的所有事物，較抽象少見。",
+     "en": "everything that is stated or assumed in a particular discussion",
+     "usage": "rare",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "05822288-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "星系",
+     "reason": "舊字典把 galaxy（星系）的意思混入，現代 universe 不指單一星系"
+    }
+   ]
+  },
+  {
+   "headword": "university",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "大學",
+     "zh": "提供學位課程、設有各學院與研究設施的高等教育機構",
+     "en": "a large school for adults that offers degrees and has many departments for study and research",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "08303490-n",
+      "04518297-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "大學師生、全校",
+     "zh": "指一所大學裡的全體教職員與學生，常在新聞或正式場合這樣用",
+     "en": "all the teachers and students of a university, thought of as one group",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "08303084-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unix",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "Unix（作業系統）",
+     "zh": "一種多使用者、多工的電腦作業系統，常見於伺服器與大型系統，也是 Linux、macOS 的源頭。",
+     "en": "a computer operating system that many users can use at the same time, often found on servers and the basis of Linux and macOS",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "06580882-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unknown",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "未知的、不確定的",
+     "zh": "指某件事、某個情況或某個結果還沒有人知道或尚未確定。",
+     "en": "not known or not yet discovered",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01379820-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "身分不明的、來歷不明的",
+     "zh": "指某個人或某個東西的身分、來源或性質不清楚。",
+     "en": "not known by name or not identified",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00121594-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "沒沒無聞的、不有名的",
+     "zh": "指某人或某作品不為大眾所知、不出名。",
+     "en": "not famous or not well known",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01126357-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "陌生的、不熟悉的",
+     "zh": "指某個地方、情況或經驗對某人來說是新的、不熟悉的。",
+     "en": "not familiar or not experienced before",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00969942-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "未知數（數學）",
+     "zh": "數學方程式中數值還不知道、需要求解的變數。",
+     "en": "a number in an equation whose value is not yet known",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "07286353-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "未知的事物、未知領域",
+     "zh": "指還沒被探索、了解或發現的事物或領域。",
+     "en": "a thing or area that is not yet known or explored",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "08649671-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "不存在（not known to exist）",
+     "reason": "此義在現代英語中幾乎不單獨使用，多為學術或哲學語境，一般學習者不會遇到。"
+    },
+    {
+     "meaning": "不屬於該環境的人（anyone who does not belong in the environment）",
+     "reason": "此義過於罕用，現代日常英語幾乎不用 unknown 來指「不屬於某環境的人」。"
+    }
+   ]
+  },
+  {
+   "headword": "unlawful",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "非法的、違法的",
+     "zh": "指行為或事物違反法律規定，常見於新聞、法律與正式說明。",
+     "en": "against the law or not allowed by law",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "01399052-a",
+      "01406764-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "不正當的、不道德的",
+     "zh": "指事情不合道德或社會規範，語氣較正式。",
+     "en": "not morally right or acceptable by social standards",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "01968236-s",
+      "01555383-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "無合法權利的",
+     "zh": "法律文件中指沒有合法依據或身分的情況。",
+     "en": "not having a legal right or valid claim",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01411393-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unleash",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "釋放、宣洩（情緒、力量）",
+     "zh": "把壓抑已久的情緒、力量或破壞力一下子釋放出來",
+     "en": "to suddenly let out strong feelings, power, or force that was being controlled",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01478045-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "發動、展開（攻擊、行動）",
+     "zh": "開始進行猛烈的攻擊或大規模行動，常用於新聞報導",
+     "en": "to start an attack or a large action with great force",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "v.",
+     "label": "解開牽繩",
+     "zh": "把狗等動物的牽繩解開，讓牠自由活動",
+     "en": "to remove the leash from an animal so it can move freely",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01478458-v",
+      "01478166-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "發出",
+     "reason": "舊字典的籠統譯法，現代實際用法多為釋放情緒或發動攻勢，已併入其他詞義"
+    }
+   ]
+  },
+  {
+   "headword": "unless",
+   "senses": [
+    {
+     "pos": "conj.",
+     "label": "除非、如果不",
+     "zh": "表示只有在某個條件成立時，前面說的情況才成立或不成立。",
+     "en": "used to say that something will happen or be true only if a certain thing does not happen",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "conj.",
+     "label": "除了……的時候",
+     "zh": "用於補充說明唯一的例外情況，常見於 unless otherwise 等說法。",
+     "en": "used to mention the only situation in which something is different",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "除……之外（介系詞用法）",
+     "reason": "舊字典把 unless 標為介系詞，但現代英文中它只作連接詞用，此標法已過時且易誤導學習者。"
+    }
+   ]
+  },
+  {
+   "headword": "unlike",
+   "senses": [
+    {
+     "pos": "prep.",
+     "label": "不像、和……不同",
+     "zh": "用來比較兩個事物，指出其中一個與另一個不一樣。",
+     "en": "used to say that someone or something is different from another",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "不同的、不相似的",
+     "zh": "形容兩個事物彼此不一樣，常與介系詞 to 或 from 連用。",
+     "en": "different from each other or from something else",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01413335-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（數量）不相等的",
+     "zh": "指兩邊的數量或程度不一樣，屬於較正式的用法。",
+     "en": "not equal in amount or level",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "01414148-a"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unlikely",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "不太可能的、不太會發生的",
+     "zh": "表示某事發生的機率很低，常用於 it is unlikely that 或 be unlikely to 的句型。",
+     "en": "not probable; having little chance of happening or being true",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01416708-a",
+      "01415272-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "難以置信的、不太可信的",
+     "zh": "形容說法或情況聽起來不太可能成立，讓人難以相信。",
+     "en": "hard to believe or accept as true",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01805119-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unlimited",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "無限的、無上限的",
+     "zh": "指數量、範圍或程度沒有上限，常用於方案、額度、次數等。",
+     "en": "having no limit on amount, number, or range",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01418456-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（方案、服務）無限暢用的",
+     "zh": "商業上用來說某項服務或資源可以盡量使用、不另收費，例如無限上網、無限次搭乘。",
+     "en": "allowing you to use as much of a service as you want for one price",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01011878-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "不受限制的、無拘束的",
+     "zh": "指權力、自由或可能性沒有受到規則或外在條件限制。",
+     "en": "not controlled or restricted by rules or conditions",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "01418456-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "無保留的、完全的",
+     "zh": "用於強調某種支持或保證沒有任何附帶條件，語氣正式。",
+     "en": "complete and without any conditions or doubts",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "01920788-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "無條件的",
+     "reason": "與「無保留的、完全的」意思重疊，已合併處理"
+    }
+   ]
+  },
+  {
+   "headword": "unload",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "卸貨、卸下（貨物）",
+     "zh": "把貨物從車子、船或飛機上搬下來。",
+     "en": "to take goods or cargo off a vehicle, ship, or plane",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01492094-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "卸下（車、船）上的東西",
+     "zh": "把車輛或船上的貨物、乘客清空。",
+     "en": "to remove the things carried by a vehicle or container",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01490749-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "傾訴、發洩（情緒）",
+     "zh": "把心裡的煩惱或不滿一股腦說出來，口語常用。",
+     "en": "to tell someone all your worries or problems at once",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "v.",
+     "label": "出脫、拋售（存貨、股票）",
+     "zh": "把手上持有的東西大量賣掉，常見於商業與投資情境。",
+     "en": "to sell a large amount of something you own, often quickly",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "傾銷",
+     "reason": "舊字典用語，現代多說 dump 或 sell off，且與「出脫存貨」義重複"
+    }
+   ]
+  },
+  {
+   "headword": "unlock",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "解鎖、打開（鎖）",
+     "zh": "用鑰匙、密碼或指紋把鎖打開，讓門、車、手機等可以進入或使用。",
+     "en": "to open a lock using a key, code, or fingerprint so that something can be opened or used",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01351387-v",
+      "00220389-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "解鎖（手機、帳號）",
+     "zh": "輸入密碼或使用生物辨識，讓手機、電腦或帳號進入可用狀態。",
+     "en": "to enter a password or use a fingerprint to make a phone, computer, or account ready to use",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "v.",
+     "label": "釋放、解放",
+     "zh": "讓被關住或受限制的人或事物重獲自由。",
+     "en": "to set someone or something free from being held or controlled",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01513921-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "開啟、激發（潛能、機會）",
+     "zh": "讓原本做不到的事變得可能，常用於潛力、機會、價值等抽象事物。",
+     "en": "to make something possible that was not possible before, such as potential or an opportunity",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "v.",
+     "label": "解鎖（遊戲、功能）",
+     "zh": "在遊戲或應用程式中達到條件後，取得新的角色、關卡或功能。",
+     "en": "to gain access to a new level, character, or feature in a game or app by meeting a condition",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "表露、放出",
+     "reason": "舊字典義項，現代少見，相關語感已由「開啟、激發」涵蓋"
+    }
+   ]
+  },
+  {
+   "headword": "unlucky",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "運氣不好的、倒楣的",
+     "zh": "形容人遇到不順心的事，運氣比別人差。",
+     "en": "having bad luck; often experiencing things that are not wanted or pleasant",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01471597-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "不吉利的、不祥的",
+     "zh": "形容數字、日子、物品等被認為會帶來壞運氣。",
+     "en": "believed to bring bad luck or to be a sign of bad things to come",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01055109-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unmarried",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "未婚的、單身的",
+     "zh": "指一個人尚未結婚，用於描述婚姻狀態。",
+     "en": "not having a husband or wife; not married",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01485535-a"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unnatural",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "不自然的、矯揉造作的",
+     "zh": "言行舉止刻意做作，讓人覺得不真誠、不自在。",
+     "en": "behaving or done in a forced way that seems false and not genuine",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00073656-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "反常的、不正常的",
+     "zh": "不符合一般情況或常理，顯得奇怪、異常。",
+     "en": "different from what is normal or expected in a strange way",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01600178-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "違反自然的、不自然的",
+     "zh": "指事物不合乎自然法則，或人工痕跡明顯、不像是自然形成的。",
+     "en": "not caused by or found in nature; clearly made by people",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01574863-a"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "不近人情的",
+     "reason": "舊字典釋義，現代英語幾乎不用這個意思，多改說 cold、unfeeling 等"
+    }
+   ]
+  },
+  {
+   "headword": "unnecessarily",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "不必要地、多餘地",
+     "zh": "表示某個動作或情況本來不需要發生，帶有浪費或過度的意味。",
+     "en": "in a way that is not needed, or more than is needed",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00410408-r",
+      "00181163-r"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unnecessary",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "不必要的、多餘的",
+     "zh": "指某事物沒有需要、可以省去，或做了反而多餘。",
+     "en": "not needed, or more than what is needed",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01585523-a"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unnoticed",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "未被注意的、沒人察覺的",
+     "zh": "指某件事發生或存在，但沒有人注意到或發現。",
+     "en": "not seen or noticed by anyone",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01612846-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "被忽略的、受到忽視",
+     "zh": "指某人或某事沒有得到應有的關注或重視。",
+     "en": "not given attention or importance by other people",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01612846-a"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unofficial",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "非官方的、未經官方認可",
+     "zh": "指沒有官方授權或正式批准的消息、說法或活動。",
+     "en": "not approved or supported by an official authority",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01637634-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "非正式的、私下進行的",
+     "zh": "指不屬於正式場合或官方程序的交流、會面或安排。",
+     "en": "not part of an official process or formal situation",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01639061-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unpaid",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "未付的、尚未繳納的",
+     "zh": "指帳單、費用或款項還沒付清。",
+     "en": "not yet paid; still owed as money",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01714268-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "無薪的、不支薪的",
+     "zh": "指工作或職位沒有薪水，例如無薪假、無薪實習。",
+     "en": "done without receiving money for the work",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02531239-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "無酬的、義務性的",
+     "zh": "指人自願付出勞力而不收報酬，例如志工。",
+     "en": "doing work for no money, usually by choice",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01875584-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unpleasant",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "令人不快的、討厭的",
+     "zh": "形容事物、經驗或感覺讓人覺得不舒服、不愉快。",
+     "en": "making you feel uncomfortable, unhappy, or annoyed",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01806732-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "不友善的、態度差的",
+     "zh": "形容人的態度或言語冷淡、不客氣，讓人覺得難受。",
+     "en": "not friendly or polite, and making other people feel bad",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01806732-a"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "煞風景的",
+     "reason": "與「令人不快」意思重複，只是中文舊辭典的搭配說法，不另立詞義"
+    }
+   ]
+  },
+  {
+   "headword": "unpopular",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "不受歡迎的、不得人心的",
+     "zh": "指人、政策或做法得不到多數人喜歡或支持",
+     "en": "not liked or supported by most people",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01822300-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "不流行的、退流行的",
+     "zh": "指商品、風格或想法在市場上不受青睞、很少人採用",
+     "en": "not liked or bought by many people at a particular time",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01822300-a"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unprecedented",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "空前的、史無前例的",
+     "zh": "形容某件事以前從未發生過，規模或程度前所未見，常用於新聞與正式論述。",
+     "en": "never having happened or existed before, especially in a way that is surprising or very serious",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00129644-a"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unpredictable",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "難以預測的、變化莫測的",
+     "zh": "指事情的發展或人的行為沒有一定規律，無法事先料想。",
+     "en": "changing often in ways that are hard to guess or expect",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01847916-a",
+      "00743372-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "不規律的、不定期的",
+     "zh": "指發生時間或頻率沒有固定模式，常用於天氣、事件或排程。",
+     "en": "happening at no fixed times or without a regular pattern",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00596783-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unpublished",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "未出版的、未發表的",
+     "zh": "指作品、文章或資料還沒正式出版或公開發表。",
+     "en": "not yet printed or made available to the public",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00473062-a"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unravel",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "解開（線、繩、編織物）",
+     "zh": "把纏在一起或編織起來的線、繩子等拆開、鬆開。",
+     "en": "to separate the threads or fibers of something that is twisted or woven together",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01523477-v",
+      "01524000-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "（計畫、關係）瓦解、崩解",
+     "zh": "原本順利的計畫、協議或關係逐漸崩壞、失控。",
+     "en": "to start to fail or fall apart, especially a plan, agreement, or relationship",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00333482-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "釐清、解開（謎團、複雜問題）",
+     "zh": "把複雜難懂的事情一步步弄清楚，常用於謎團、案件、問題。",
+     "en": "to understand and explain something complicated or mysterious",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "散開（衣物、布料脫線）",
+     "reason": "與「解開線繩」詞義重複，已合併處理"
+    }
+   ]
+  },
+  {
+   "headword": "unrealistic",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "不切實際的、不現實的",
+     "zh": "形容想法、計畫或期待脫離現實，難以實現。",
+     "en": "not based on what is likely or possible in real life",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01948616-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（期望、標準）過高的",
+     "zh": "指對人或事情要求太高，超出實際能做到的範圍。",
+     "en": "expecting more than can really be achieved from someone or something",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "幻想的",
+     "reason": "舊字典釋義，現代多改用不切實際表達，單獨列為幻想容易誤導學習者"
+    }
+   ]
+  },
+  {
+   "headword": "unreasonable",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "不合理的、沒道理的",
+     "zh": "指想法、要求或做法缺乏正當理由，讓人難以接受。",
+     "en": "not based on good reasons or fair judgment, and hard to accept",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01951277-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "過度的、不合理的（價格、要求）",
+     "zh": "指價格、要求或條件超出合理範圍，常帶有抱怨的語氣。",
+     "en": "much higher or more extreme than what is fair or normal",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01538069-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "不切實際的",
+     "reason": "與「不合理的、沒道理的」意思高度重疊，現代多直接用 unrealistic，不另立義項。"
+    }
+   ]
+  },
+  {
+   "headword": "unrelated",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "無關的、不相干的",
+     "zh": "指兩件事或兩者之間沒有邏輯或因果上的關聯，常用來強調某事物與目前討論的主題無關。",
+     "en": "not connected with the subject or situation being talked about",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01981804-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "沒有親屬關係的",
+     "zh": "用於說明兩人或兩家族之間沒有血緣或親戚關係，屬較正式或法律文件的說法。",
+     "en": "not connected by family or blood ties",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "01979661-a"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "[法] 無關的（標示為法律用語）",
+     "reason": "參考資料的詞性標記有誤，此字並非法律專用術語；一般「無關的」意思已併入第一個詞義"
+    }
+   ]
+  },
+  {
+   "headword": "unreliable",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "不可靠的、靠不住的",
+     "zh": "指人或事物不能信任、不能依賴，可能出錯或讓人失望。",
+     "en": "not able to be trusted or depended on; likely to fail or be wrong",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00728305-a",
+      "00967779-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "不穩定、難以預測的",
+     "zh": "形容機械、系統或情況容易出問題、隨時可能出狀況。",
+     "en": "likely to break down or change suddenly and without warning",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "02068530-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "不負責任的",
+     "zh": "形容人做事不認真、不把責任當一回事。",
+     "en": "not taking their duties seriously or not doing what they should",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "02006280-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unrest",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "動盪、不安（社會、政治）",
+     "zh": "指社會、政治或經濟情勢不穩，群眾不滿、抗議或騷動的狀態。",
+     "en": "a situation in which many people are angry or protesting because of social or political problems",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "14002988-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "焦躁不安（情緒）",
+     "zh": "指個人內心靜不下來、煩躁難安的感覺，較少用。",
+     "en": "a feeling of being unable to relax or stay calm",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "07528950-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unsafe",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "不安全的、危險的",
+     "zh": "可能造成傷害或風險，不適合使用或進行的",
+     "en": "likely to cause harm or danger; not safe to use or do",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02066198-a",
+      "02102035-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "不穩固的、有風險的",
+     "zh": "情況或做法缺乏保障，隨時可能出問題",
+     "en": "not well protected or reliable, so problems may happen",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "02102035-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "易受攻擊的、無防護的",
+     "zh": "在運動或競爭中缺乏防守，容易被對手突破",
+     "en": "not protected well enough to stop an opponent from scoring or winning",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "02534602-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unsatisfactory",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "不令人滿意的、差強人意的",
+     "zh": "表示結果、表現或品質未達應有水準，讓人不滿意。",
+     "en": "not good enough or not meeting the standard you expected",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02089364-a"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unseen",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "未被看見的、隱形的",
+     "zh": "指沒有被看到或察覺到的，常用來描述物體、現象或人。",
+     "en": "not seen or noticed by people",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02528983-s",
+      "01613579-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "未預料到的、意外的",
+     "zh": "形容事情發生得出乎意料，事先沒有想到。",
+     "en": "not expected or predicted",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00934006-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（名詞）相信有神靈掌控的領域",
+     "reason": "罕用，現代英語中幾乎不使用，且多為宗教或哲學文本中的專業用法。"
+    }
+   ]
+  },
+  {
+   "headword": "unsettle",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "使不安、使心神不寧",
+     "zh": "讓人心裡不踏實、感到焦慮或失去平靜，常用於消息、事件或氣氛讓人不安",
+     "en": "to make someone feel worried, nervous, or not calm",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01787700-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "動搖（想法、信心、秩序）",
+     "zh": "使人對原本相信的事、既有的安排或穩定狀態產生懷疑而鬆動",
+     "en": "to make something that was steady or certain feel less sure or secure",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "使移動、攪亂",
+     "reason": "舊字典的字面義，現代幾乎不用；表示移動或弄亂一般用 move、disturb"
+    },
+    {
+     "meaning": "動盪不定、離開固定位置",
+     "reason": "罕用的不及物用法，現代英語少見"
+    }
+   ]
+  },
+  {
+   "headword": "unskilled",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "無技術的、非技術性的（工作、勞工）",
+     "zh": "指不需要專業技能就能做的工作，或從事這類工作的人。",
+     "en": "not needing special training or skill; done by workers without special skills",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02236080-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "不熟練的、技術不足的",
+     "zh": "形容人的技術或專業能力不夠好，常用於工作表現的評價。",
+     "en": "not having enough training or ability to do something well",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01876586-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "做得差的、拙劣的",
+     "zh": "形容某件事做得不好、手法粗糙，帶有批評意味。",
+     "en": "done badly or without care or ability",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01131934-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unstable",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "不穩定的、不牢固的",
+     "zh": "指結構、物體或系統容易搖晃、倒塌或出問題，缺乏穩定性。",
+     "en": "likely to move, fall, or fail because it is not firmly fixed or balanced",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02299575-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "易變的、反覆無常的",
+     "zh": "指情況、數值或人的情緒經常改變，難以預測。",
+     "en": "changing often and likely to change suddenly; not steady",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00346411-s",
+      "01999794-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（情緒、心理）不穩定的",
+     "zh": "指人的精神狀態或情緒起伏大，可能突然失控或崩潰。",
+     "en": "having moods or mental state that change suddenly and are difficult to control",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "02083947-s",
+      "00826760-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（化學）不安定的、易反應的",
+     "zh": "指物質或分子容易發生化學反應或分解，常用於科學領域。",
+     "en": "easily changing or reacting chemically, especially in a dangerous way",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01935855-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unsuccessful",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "不成功的、失敗的",
+     "zh": "指事情沒有達到預期結果，或人未能如願達成目標。",
+     "en": "not achieving the result you wanted or planned",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02341445-a",
+      "01086402-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unsuitable",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "不適合的、不恰當的",
+     "zh": "指某人事物不適合某個用途、場合或對象。",
+     "en": "not right or appropriate for a particular purpose, situation, or person",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01025223-s",
+      "01983915-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（對品德）不良的、不宜的",
+     "zh": "指內容或環境對品德發展有害，多用於較正式的評論。",
+     "en": "likely to have a bad effect on someone's moral development",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "01133323-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "不值得被挑選的（尤指配偶）",
+     "reason": "罕用且範圍極窄，現代幾乎只出現在法律或舊式婚姻語境"
+    }
+   ]
+  },
+  {
+   "headword": "unsure",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "不確定的、沒把握的",
+     "zh": "對某件事是否正確或是否會發生沒有把握，常說 unsure about／of 某事。",
+     "en": "not certain about something; not knowing if it is true or will happen",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00338302-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "缺乏自信的、沒信心的",
+     "zh": "形容人對自己沒信心，做事顯得猶豫、不敢確定。",
+     "en": "not confident about yourself or your ability to do something",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00340839-a"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unthinkable",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "難以想像的、無法想像的",
+     "zh": "表示某件事太誇張或太不可能，讓人根本無法想像。",
+     "en": "impossible to imagine or believe because it is so strange or extreme",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02427334-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "不可接受的、絕不能做的",
+     "zh": "用來強調某個做法或情況絕對不能接受、不該發生。",
+     "en": "too bad or wrong to be accepted or allowed to happen",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "不能考慮的",
+     "reason": "與「難以想像、不可接受」意思重疊，現代多以後兩者表達"
+    },
+    {
+     "meaning": "不合理的",
+     "reason": "舊字典的延伸釋義，現代英文中 unthinkable 不直接表示「不合理」，屬誤譯"
+    }
+   ]
+  },
+  {
+   "headword": "until",
+   "senses": [
+    {
+     "pos": "prep.",
+     "label": "直到（某個時間）",
+     "zh": "表示某個動作或狀態持續到某個時間點為止。",
+     "en": "continuing up to a certain time and then stopping",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "conj.",
+     "label": "直到……為止",
+     "zh": "引導子句，表示某事持續到另一個動作發生為止。",
+     "en": "used to say something continues up to the time another thing happens",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "prep.",
+     "label": "直到……才（否定句）",
+     "zh": "搭配 not，表示直到某個時間才開始做某事。",
+     "en": "used with not to say something starts only at a certain time",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "在……以前",
+     "reason": "舊字典把 until 釋為「在……以前」，但現代用法強調「持續到某時」，並非單純表示「以前」，此釋義容易誤導學習者"
+    }
+   ]
+  },
+  {
+   "headword": "untouched",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "未受影響的、未改變的",
+     "zh": "指事物保持原狀，沒有被外力改變或波及。",
+     "en": "not changed, damaged, or affected by something",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00073398-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "沒碰過的、未動過的",
+     "zh": "指東西沒有被人碰觸或使用過，常與 leave 連用。",
+     "en": "not touched or handled by anyone",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02454622-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（食物）沒動過的、原封未動",
+     "zh": "指餐點或食物幾乎沒被吃，仍保持原樣。",
+     "en": "still full or almost not eaten at all",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01090028-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "無動於衷的、不為所動",
+     "zh": "指情緒上沒有被打動，多用於書面描述。",
+     "en": "not emotionally moved or affected by something",
+     "usage": "less_common",
+     "register": [
+      "literary"
+     ],
+     "synsets": [
+      "01564713-a"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unused",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "未使用的、全新的",
+     "zh": "指物品還沒被用過、保持乾淨或原狀，例如未使用的毛巾、空白的表格。",
+     "en": "not used yet and still clean or in its original condition",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00419717-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "閒置的、未啟用的",
+     "zh": "指設備、空間或資源目前沒有在使用，例如閒置的機器、空著的房間。",
+     "en": "not being used at the moment, though it is available",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00037301-s",
+      "01647702-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unusual",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "不尋常的、罕見的",
+     "zh": "少見、不常發生的情況或事物。",
+     "en": "not happening often, or not seen or found very often",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00492026-a",
+      "00490844-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "與眾不同的、奇特的",
+     "zh": "跟一般人或事物明顯不同，帶點奇怪或特別的意味。",
+     "en": "different from what is normal in a way that seems a little strange or special",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00970318-a"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unusually",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "異常地、特別地",
+     "zh": "表示程度比一般情況明顯更高或不同，常用來修飾形容詞。",
+     "en": "more than is normal or expected; to a surprising degree",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00107917-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "非常、格外（口語）",
+     "zh": "口語中單純加強語氣，意思接近 very，不強調「不正常」。",
+     "en": "used in spoken English to mean very or especially",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "00107917-r"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unveil",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "揭幕、公開展示",
+     "zh": "為新雕像、新產品或新設施舉行揭幕儀式，讓大家第一次看到",
+     "en": "to show something new to the public for the first time, often in a ceremony",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01486292-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "公布、揭露（計畫、政策）",
+     "zh": "正式向大眾說明原本不公開的計畫、政策或消息",
+     "en": "to make a plan, policy, or piece of information known to people",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02147756-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "揭開面紗",
+     "zh": "字面上把遮住臉或物品的布拿掉，多用於書面描述",
+     "en": "to remove a cloth that covers someone's face or an object",
+     "usage": "less_common",
+     "register": [
+      "literary"
+     ],
+     "synsets": [
+      "01486108-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（面紗）自行落下、顯露",
+     "reason": "vi. 用法在現代英文幾乎不出現，屬舊式或文學用法"
+    }
+   ]
+  },
+  {
+   "headword": "unwanted",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "不需要的、多餘的",
+     "zh": "指東西或事物沒有用處、不被需要，常指應去除或避免的。",
+     "en": "not needed or useful, and often best removed or avoided",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02537893-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "不受歡迎的、沒人要的",
+     "zh": "指人、訊息或關注等不被他人歡迎或接受。",
+     "en": "not wanted or welcomed by other people",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00737448-a"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unwelcome",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "不受歡迎的、惹人厭的",
+     "zh": "指某人事物讓人不想遇到、不想接受，或帶來不快。",
+     "en": "not wanted or not received with pleasure; causing annoyance or discomfort",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02550980-a",
+      "02539553-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "冷淡；冷淡地對待、冷淡地接受",
+     "reason": "名詞與動詞用法在現代英文幾乎不用，字典多已不收，屬舊式用法"
+    }
+   ]
+  },
+  {
+   "headword": "unwilling",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "不願意的、不情願的",
+     "zh": "表示某人不想做某事，或拒絕去做",
+     "en": "not wanting to do something, or refusing to do it",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02576745-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "勉強的、不得已的",
+     "zh": "形容雖然不情願，事情還是發生了或被迫去做",
+     "en": "done or happening even though the person does not want it",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "02532301-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "unwise",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "不明智的、欠考慮的",
+     "zh": "指決定或做法欠缺判斷，可能帶來不好的後果。",
+     "en": "not showing good judgment; likely to cause problems later",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02583095-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "不恰當的、不合適的",
+     "zh": "指某個做法不適合當下的目的或情況。",
+     "en": "not suitable for the purpose or situation",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01819537-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "愚蠢的",
+     "reason": "語意過重；現代多用來指判斷不當，而非直接罵人笨，已併入第一個詞義。"
+    },
+    {
+     "meaning": "輕率的",
+     "reason": "與「欠考慮」意思重疊，已併入第一個詞義。"
+    }
+   ]
+  },
+  {
+   "headword": "up",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "向上、往上",
+     "zh": "表示從低處往高處移動，或位置在高處。",
+     "en": "toward a higher place or position",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00096883-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "提高、增加",
+     "zh": "用於數量、價格、音量等變大或升高。",
+     "en": "to a higher level, amount, or degree",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00097561-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "（走）過去、靠近",
+     "zh": "表示朝說話者或某個地方靠近。",
+     "en": "toward the person speaking or a place being mentioned",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00097471-r"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "起床的",
+     "zh": "表示已經離開床上、醒來了。",
+     "en": "awake and out of bed",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00188413-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "上升的、上漲的",
+     "zh": "形容價格、數字或水準比之前高。",
+     "en": "higher than before in price, amount, or level",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02499848-a",
+      "02496786-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（電腦、系統）正常運作的",
+     "zh": "指機器、網站或系統正在運作、可以使用。",
+     "en": "working correctly and ready to be used",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01095688-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "準備好的、有意願的",
+     "zh": "口語中表示願意做某事或已準備好，常接 for 或 to。",
+     "en": "willing to do something or ready for it",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "01850926-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（時間）到了、結束的",
+     "zh": "表示某段時間已用完或期限已到。",
+     "en": "finished or ended, used about a period of time",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01007834-s"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "往北、往內地",
+     "zh": "表示朝北方或朝較中心、較內陸的方向。",
+     "en": "toward the north or toward a more central place",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00097310-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "直到（某時間）",
+     "zh": "表示持續到某個時間點，常見於 up to、up until。",
+     "en": "until a particular time",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00097186-r"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "開著的",
+     "reason": "罕用，現代幾乎不用 up 表示 open"
+    },
+    {
+     "meaning": "在……上面、向……的較高處（介系詞用法）",
+     "reason": "舊字典列法，現代口語與書面多以 on、onto、above 表達，up 作介系詞的用法已少見"
+    },
+    {
+     "meaning": "舉起、提高（動詞）",
+     "reason": "罕用，現代一般用 raise、lift，不用 up 作動詞"
+    },
+    {
+     "meaning": "延伸或移向高處的",
+     "reason": "與「上升的、上漲的」意思重複，已合併"
+    }
+   ]
+  },
+  {
+   "headword": "upbeat",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "樂觀的、開朗的",
+     "zh": "形容人、氣氛或消息正面積極，讓人覺得有希望。",
+     "en": "positive and hopeful; cheerful and full of energy",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01668480-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "弱拍",
+     "zh": "音樂術語，指小節中不帶重音的那一拍。",
+     "en": "a beat in a bar that is not stressed, especially the last one",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "07101294-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "上升的、上升",
+     "reason": "舊字典直譯，現代英文幾乎不用 upbeat 表示「上升」"
+    },
+    {
+     "meaning": "興旺、幸福安康的狀態",
+     "reason": "古義、罕用，現代口語與書面語都不這樣用"
+    }
+   ]
+  },
+  {
+   "headword": "upbringing",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "教養、成長背景",
+     "zh": "一個人從小在家中受到的養育與教育，以及由此形成的品格與習慣",
+     "en": "the way a person is raised and educated as a child, and the qualities this gives them",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04928931-n",
+      "01131853-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "upcoming",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "即將到來的、即將舉行的",
+     "zh": "指活動、事件或作品在不久後就要發生或推出，常用於電影、選舉、賽事、會議等。",
+     "en": "happening or coming soon; used about events, releases, or plans in the near future",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01736850-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "update",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "最新消息、進度更新",
+     "zh": "關於某件事的最新資訊或進展，常用於社群媒體、新聞或工作回報。",
+     "en": "the newest information about something, especially on social media or in a news report",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "06655934-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "更新（軟體、資料）",
+     "zh": "把軟體、應用程式或資料庫換成最新版本或加入最新資料。",
+     "en": "to make software or a database more modern by adding the newest version or information",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00170701-v",
+      "00170503-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "更新（資訊、狀態）",
+     "zh": "提供或補充最新的資訊，讓某人或某事物跟上最新情況。",
+     "en": "to give someone the most recent information about something",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00835207-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "更新（動作）",
+     "zh": "使某事物跟上最新狀態的行為，例如系統更新或資料更新。",
+     "en": "the act of making something more modern or current",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00035244-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "upgrade",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "升級、提升（設備、系統、版本）",
+     "zh": "把舊的軟體、硬體或設備換成更新、更好的版本。",
+     "en": "to replace something old with a newer or better version",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00207592-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "升級（軟體、設備）",
+     "zh": "指軟體或設備更新到更好的版本，例如手機系統更新。",
+     "en": "a newer or better version of software or equipment",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "06916031-n",
+      "04520981-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "升等、升級（機位、房間）",
+     "zh": "在旅行或住宿時被安排到比原本更好的艙等或房型。",
+     "en": "to give someone a better seat, room, or class than they paid for",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00585068-v",
+      "00585297-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "升等（機位、房間）",
+     "zh": "旅行或住宿時被換到更好的艙等或房型。",
+     "en": "a better seat, room, or class than the one you paid for",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "05803662-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "提升、改善（品質、地位）",
+     "zh": "讓某事物的品質、價值或地位變得更高，例如改善服務或提升技能。",
+     "en": "to make something better in quality, value, or status",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00662522-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "升級、改良",
+     "zh": "把機械或系統加上新零件、換成更好配備的動作。",
+     "en": "the act of making a machine or system better by adding or replacing parts",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01270081-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "升職、提拔",
+     "zh": "把某人調到更高的職位，用法較正式。",
+     "en": "to move someone to a higher position at work",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "02402779-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "上坡、上升的坡度",
+     "reason": "古義，現代幾乎只在地形或工程文獻中出現，一般學習者不會遇到"
+    },
+    {
+     "meaning": "往上的（副詞）",
+     "reason": "罕用，現代英文幾乎不用 upgrade 當副詞"
+    },
+    {
+     "meaning": "上升、升高的性質",
+     "reason": "罕用，屬專業或古舊用法"
+    }
+   ]
+  },
+  {
+   "headword": "upheaval",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "劇變、動盪",
+     "zh": "社會、政治或組織發生劇烈而混亂的變化",
+     "en": "a big, sudden change that causes a lot of trouble and disorder",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "14002658-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "騷動、動亂",
+     "zh": "突然發生、場面混亂的暴力事件或抗議",
+     "en": "a sudden violent event or protest that causes disorder",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "14001179-n",
+      "00555337-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "舉起、隆起",
+     "reason": "古義；現代英語幾乎不用來指「舉起」的動作"
+    },
+    {
+     "meaning": "（地質）地層隆起",
+     "reason": "專業領域過窄，僅見於地質學文獻"
+    }
+   ]
+  },
+  {
+   "headword": "upheld",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "維持（判決、裁決）",
+     "zh": "法院或上級機關確認原判決或決定有效，不予推翻。",
+     "en": "kept a court decision or official ruling in force; did not overturn it",
+     "usage": "common",
+     "register": [
+      "formal",
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "v.",
+     "label": "維護、支持（原則、權利）",
+     "zh": "支持某項法律、原則或權利，使其繼續存在。",
+     "en": "supported a law, rule, or right and helped keep it in place",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "v.",
+     "label": "贊同、支持（決定、做法）",
+     "zh": "表示同意並支持某人的決定或做法。",
+     "en": "agreed with and supported a decision or way of doing something",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "uphold 的過去式和過去分詞",
+     "reason": "這只是詞形變化說明，不是獨立詞義；已依實際用法拆成各動詞義項。"
+    }
+   ]
+  },
+  {
+   "headword": "uphold",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "維護、堅守（原則、法律）",
+     "zh": "指堅持並捍衛某項原則、價值或法律規定，不讓它被改變或破壞。",
+     "en": "to keep and defend a law, rule, or principle so that it is not changed or broken",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00897613-v",
+      "02685709-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "維持（判決、裁決）",
+     "zh": "法律情境中用來表示上級法院確認原判決有效、不予推翻。",
+     "en": "to decide that a court decision was correct and let it stand",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00898147-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "支持、聲援",
+     "zh": "表示站在某人或某方這邊，給予支持以對抗反對者。",
+     "en": "to give support to someone or something against people who oppose them",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00898147-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "支撐、舉起（物理上）",
+     "reason": "古義，現代幾乎只用於抽象的原則、法律，不用來指實際撐起物品"
+    },
+    {
+     "meaning": "鼓勵",
+     "reason": "舊字典義，現代英文已不用 uphold 表示鼓勵"
+    }
+   ]
+  },
+  {
+   "headword": "upland",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "高地、丘陵地帶",
+     "zh": "指地勢較高、起伏的鄉間地區，常見於地理或鄉村景觀的描述。",
+     "en": "an area of high land, often hills or a plateau, away from low ground",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "09325522-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "高地的、丘陵的",
+     "zh": "放在名詞前，說明某地或某物位於地勢較高的區域。",
+     "en": "relating to or located on high ground or hilly country",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01221782-a"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "高原",
+     "reason": "中文舊釋義把 upland 譯成「高原」，但英文的高原多用 plateau，upland 只泛指高地，屬過度對應的譯法"
+    }
+   ]
+  },
+  {
+   "headword": "upon",
+   "senses": [
+    {
+     "pos": "prep.",
+     "label": "在……之上、接觸到表面",
+     "zh": "表示某物位於另一物的表面或與之接觸，多用於書面或較正式的敘述。",
+     "en": "on or touching the surface of something",
+     "usage": "less_common",
+     "register": [
+      "formal",
+      "literary"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "prep.",
+     "label": "一……就、當……時",
+     "zh": "表示某事發生後立刻接著發生另一件事，常見於故事敘述或正式文句。",
+     "en": "used to mean that something happens right after something else",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "prep.",
+     "label": "（once upon a time）從前",
+     "zh": "童話或故事開頭的固定說法，用來表示「很久以前」。",
+     "en": "used at the beginning of a story to mean a long time ago",
+     "usage": "common",
+     "register": [
+      "literary"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "prep.",
+     "label": "取決於、依據",
+     "zh": "用於 upon 後面接名詞的固定搭配，如 depend upon、rely upon，表示依靠或根據某事。",
+     "en": "used after certain verbs to show what something depends on or is based on",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "prep.",
+     "label": "逼近、即將發生",
+     "zh": "表示某事件或時間點正逐漸接近，多用於書面語。",
+     "en": "coming very soon or about to happen",
+     "usage": "less_common",
+     "register": [
+      "formal",
+      "literary"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "迫近",
+     "reason": "與「逼近、即將發生」詞義重複，已合併"
+    },
+    {
+     "meaning": "緊接著",
+     "reason": "與「一……就」詞義重複，已合併"
+    }
+   ]
+  },
+  {
+   "headword": "upper",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "上面的、較高的",
+     "zh": "指位置在另一物之上或地勢較高的一側。",
+     "en": "located above something else or higher up",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02449821-a",
+      "01208990-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "上級的、較高階的",
+     "zh": "指層級、地位或權力較高的人或組織。",
+     "en": "having a higher rank or position than others",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02348166-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（數字、範圍）上限的",
+     "zh": "用於數字或範圍，指較高或最高的那一端。",
+     "en": "at or near the top end of a range or limit",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "鞋面、鞋幫",
+     "zh": "鞋或靴子包住腳部、位於鞋底以上的部分。",
+     "en": "the part of a shoe or boot above the sole that covers the foot",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "04521654-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "上鋪",
+     "zh": "雙層床中位於上方的那一層。",
+     "en": "the higher bed in a set of bunk beds",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "04521943-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "興奮劑",
+     "zh": "指安非他命類的提神藥物，屬藥物用語。",
+     "en": "a drug that makes you feel more awake and full of energy",
+     "usage": "rare",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "02707012-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "上院的",
+     "reason": "僅見於 the Upper House 等固定政治用語，已由「上級的、較高階的」涵蓋，不另立義項。"
+    },
+    {
+     "meaning": "穿在外面的",
+     "reason": "舊字典義，現代英文不用 upper 表達「外層衣物」。"
+    },
+    {
+     "meaning": "北部的",
+     "reason": "舊義，現代多以 northern 表達，upper 不再這樣用。"
+    },
+    {
+     "meaning": "地表的、後期的",
+     "reason": "古義與罕用義，現代幾乎不出現。"
+    },
+    {
+     "meaning": "上齒",
+     "reason": "罕用，現代一般說 upper teeth，不單獨用 upper 當名詞。"
+    }
+   ]
+  },
+  {
+   "headword": "upright",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "直立的、垂直的",
+     "zh": "指物體呈垂直方向、沒有傾斜，例如直立的人體姿勢或垂直的柱子。",
+     "en": "standing or pointing straight up in a vertical position, not leaning or sloping",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01236903-s",
+      "01238732-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "正直的、誠實的",
+     "zh": "形容人品格端正、行為誠實，遵守道德原則。",
+     "en": "behaving in an honest and morally good way",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02044341-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "直立柱、支柱",
+     "zh": "建築或結構中垂直設立的支撐柱或桿件。",
+     "en": "a vertical post or bar that supports a structure",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "04522424-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "直立式鋼琴",
+     "zh": "琴身垂直放置、靠牆擺設的鋼琴，區別於平台鋼琴。",
+     "en": "a piano with strings and soundboard arranged vertically, designed to stand against a wall",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "04522298-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "豎式的",
+     "reason": "與「直立的、垂直的」意思重複，且現代少用此說法描述版面或方向。"
+    }
+   ]
+  },
+  {
+   "headword": "uprising",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "起義、暴動",
+     "zh": "一群人起身武力反抗政府或統治者，規模通常比革命小。",
+     "en": "a violent attempt by a group of people to fight against the government or those in power",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00964240-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "升起",
+     "reason": "舊字典把動詞 rise 的動作義誤列為名詞義，現代英文不用 uprising 表示「升起」"
+    }
+   ]
+  },
+  {
+   "headword": "upscale",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "高檔的、高價位的",
+     "zh": "形容商品、餐廳、住宅等價格較高、鎖定高收入客層。",
+     "en": "expensive and meant for people with a lot of money",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02497982-s"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "升級、提升檔次",
+     "zh": "指把產品、服務或品牌改得更高級、更昂貴，常見於商業與行銷語境。",
+     "en": "to make something more expensive or of higher quality",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "迎合高層次消費者的",
+     "reason": "與「高檔的、高價位的」意思重複，已合併"
+    }
+   ]
+  },
+  {
+   "headword": "upset",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "心煩的、難過的",
+     "zh": "因為不好的事而感到難過、擔心或生氣",
+     "en": "feeling unhappy, worried, or angry because something bad has happened",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02466219-s"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "使心煩、使難過",
+     "zh": "讓某人在情緒上感到不安或難受",
+     "en": "to make someone feel unhappy, worried, or angry",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01793821-v",
+      "01774422-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "打亂、弄亂",
+     "zh": "使計畫、秩序或平衡受到干擾",
+     "en": "to disturb or change something such as a plan, system, or balance",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00522376-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "翻倒、打翻",
+     "zh": "使東西從直立狀態倒下或灑出來",
+     "en": "to turn something over so that it falls or spills",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01913971-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "意外的勝利、爆冷",
+     "zh": "比賽或選舉中不被看好的一方意外獲勝",
+     "en": "an unexpected victory by a person or team that was not favored to win",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00068990-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "腸胃不適",
+     "zh": "身體輕微不舒服，尤其是消化系統的問題",
+     "en": "a slight illness, especially one that affects the stomach",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "14075885-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "弄翻的、混亂的",
+     "reason": "現代少用，且與「翻倒」和「打亂」的動詞義重複"
+    },
+    {
+     "meaning": "顛覆、推翻",
+     "reason": "古義，現代已不常用"
+    },
+    {
+     "meaning": "使不適",
+     "reason": "現代少用，通常用其他說法表達"
+    },
+    {
+     "meaning": "翻倒（不及物動詞）",
+     "reason": "現代少用，通常用 fall over 等說法"
+    },
+    {
+     "meaning": "金屬鍛造工具",
+     "reason": "專業領域過窄，一般學習者不會遇到"
+    },
+    {
+     "meaning": "用鍛模打造金屬",
+     "reason": "專業領域過窄，一般學習者不會遇到"
+    },
+    {
+     "meaning": "擾亂心智或身體的行為",
+     "reason": "罕用，現代幾乎不用"
+    },
+    {
+     "meaning": "打翻東西的行為",
+     "reason": "罕用，現代幾乎不用"
+    }
+   ]
+  },
+  {
+   "headword": "upstairs",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "在樓上、往樓上",
+     "zh": "指位置在樓上，或往樓上的方向移動。",
+     "en": "on or to a higher floor of a building",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00095095-r"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "樓上的",
+     "zh": "用來形容位於建築物較高樓層的東西，例如房間或窗戶。",
+     "en": "located on a higher floor of a building",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02503629-a"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "樓上",
+     "zh": "指建築物地面層以上的部分，常與 the 連用。",
+     "en": "the floors of a building that are above the ground level",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04523024-n"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "（口語）在腦中、心裡",
+     "zh": "用於 go upstairs 這類說法，指思考發生在腦子裡，屬較少見的比喻用法。",
+     "en": "in the mind, especially in the phrase go upstairs",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "00095225-r"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "處於更高地位",
+     "reason": "舊字典的引申義，現代英語幾乎不這樣用"
+    }
+   ]
+  },
+  {
+   "headword": "upward",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "向上、往上",
+     "zh": "表示往高處移動或朝向較高的位置。",
+     "en": "toward a higher place or position",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00096883-r"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "向上的、朝上的",
+     "zh": "形容方向或動作是往高處、往上的。",
+     "en": "moving or pointing toward a higher place",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02501514-s",
+      "02495166-s"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "（數量、價格）上升、增加",
+     "zh": "用於數字或價格變動，表示往更高的水準發展，常見於 upward of 與趨勢描述。",
+     "en": "toward a higher amount, level, or number",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "adv.",
+     "label": "（職涯、地位）向上發展",
+     "zh": "比喻往更好的職位、地位或階段前進。",
+     "en": "toward a higher rank, status, or better situation",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00096883-r"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "到較晚的時間",
+     "reason": "古義，現代幾乎不用，表示時間往後通常說 later"
+    }
+   ]
+  },
+  {
+   "headword": "upwards",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "向上、往上",
+     "zh": "表示往較高的位置或方向移動，也可用於抽象地表示增加。",
+     "en": "toward a higher place, position, or level",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00096883-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "以上、超過",
+     "zh": "接在數字後面，表示數量至少這麼多或更多。",
+     "en": "used after a number to mean at least that amount or more",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "adv.",
+     "label": "（時間）往後、之後",
+     "zh": "表示時間往較晚的方向推進，多用於書面敘述。",
+     "en": "toward a later point in time",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00097186-r"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "uranium",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "鈾",
+     "zh": "一種放射性金屬元素，用於核能發電與核武，日常多半在新聞或科普報導中出現。",
+     "en": "a heavy, radioactive metal used as fuel for nuclear power and in nuclear weapons",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "14684622-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "urban",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "都市的、城市的",
+     "zh": "與城市或人口密集地區有關的，常用於描述都市規劃、都市生活等。",
+     "en": "relating to a city or a place where many people live close together",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02832010-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "住在都市的、都市風格的",
+     "zh": "形容人或事物具有城市生活的特徵，例如都市文化、都市風格。",
+     "en": "living in a city or having the qualities of city life",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02059737-a"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "習慣於都市的",
+     "reason": "與「住在都市的、都市風格的」意思重疊，已合併處理"
+    }
+   ]
+  },
+  {
+   "headword": "urge",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "力勸、敦促",
+     "zh": "強力建議某人做某事，語氣比 suggest 更強",
+     "en": "to strongly advise someone to do something",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00767694-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "強烈主張、呼籲",
+     "zh": "公開且積極地要求某項做法或政策",
+     "en": "to argue strongly that something should be done",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00876672-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "衝動、強烈欲望",
+     "zh": "突然很想做某事的內在力量，常用於 urge to do something",
+     "en": "a strong feeling of wanting to do something",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "09203328-n",
+      "07505591-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "驅使、催促",
+     "zh": "某種力量或情緒推動人採取行動",
+     "en": "to make someone or something move or act in a certain way",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00860463-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "推動力",
+     "reason": "與「衝動、強烈欲望」詞義重複，現代多併入該義處理"
+    },
+    {
+     "meaning": "（vi.）強烈要求",
+     "reason": "現代英文中 urge 作不及物動詞的用法極少見，字典舊分法"
+    }
+   ]
+  },
+  {
+   "headword": "urgency",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "急迫、迫切性",
+     "zh": "事情需要立刻處理、不能拖延的程度",
+     "en": "the quality of needing to be dealt with or done right away",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "05179327-n",
+      "14474486-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "緊急情況",
+     "zh": "必須馬上採取行動的危急狀況",
+     "en": "a situation that needs quick action or attention",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "13967568-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "催促、懇求",
+     "zh": "一再強烈要求某人做某事",
+     "en": "the act of asking for something in a strong and repeated way",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "07203045-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "urgent",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "緊急的、急迫的",
+     "zh": "形容事情必須立刻處理，不能拖延。",
+     "en": "needing to be dealt with or done right away",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00717023-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "急切的、頻頻催促的",
+     "zh": "形容人反覆且著急地要求某件事，常用於「urgent request」、「urgent message」等搭配。",
+     "en": "asking for something in a strong and repeated way because you want it soon",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "催逼的",
+     "reason": "舊字典把「催逼」當成獨立義項，現代英文中其實就是「急切要求」的用法，已併入第二個義項，不另立。"
+    }
+   ]
+  },
+  {
+   "headword": "urgently",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "緊急地、迫切地",
+     "zh": "表示某事需要立刻處理或發生，常用於請求、通知或醫療情境。",
+     "en": "in a way that needs to be dealt with or done right away",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00073249-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "急切地、強烈地要求",
+     "zh": "用於說話或寫信時，強調自己非常希望對方儘快回應或行動。",
+     "en": "in a strong and eager way when asking for something",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00073249-r"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "urine",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "尿液、小便",
+     "zh": "身體排出體外的液體代謝物，日常或醫療情境都會用到。",
+     "en": "the yellowish liquid that your body gets rid of as waste",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "14879875-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "us",
+   "senses": [
+    {
+     "pos": "pron.",
+     "label": "我們（包含說話者與對方）",
+     "zh": "指說話者自己和聽話的對方，或包含在場的一群人。",
+     "en": "the speaker together with the person or people being spoken to",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "pron.",
+     "label": "我們（泛指一般人）",
+     "zh": "用來泛指包括自己在內的一般人，常見於說明道理或陳述經驗。",
+     "en": "people in general, including the speaker, when talking about life or experience",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "pron.",
+     "label": "我們（說話者一方、我方）",
+     "zh": "指說話者所屬的團體、公司或國家，相對於對方。",
+     "en": "the group, company, or country that the speaker belongs to, as opposed to the other side",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "pron.",
+     "label": "我們（泛指社會大眾）",
+     "zh": "在新聞或正式論述中泛指社會上的每個人，帶有共同體的意味。",
+     "en": "all of us in society, used in formal statements about shared problems or duties",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "usa",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "美國、美利堅合眾國",
+     "zh": "指美利堅合眾國，日常、新聞與正式場合都常用，通常寫成 the USA。",
+     "en": "the United States of America; the country in North America",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "美國陸軍",
+     "zh": "指美國的陸軍軍種，多在軍事或官方文件中以 USA 縮寫出現。",
+     "en": "the army of the United States, especially in official or military contexts",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "08411879-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "usage",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "用法、使用方式",
+     "zh": "某個東西怎麼使用，或使用它的方式",
+     "en": "the way in which something is used, or the act of using it",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00948944-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "慣用法（語言）",
+     "zh": "某個字詞在語言中實際被使用的方式",
+     "en": "the way words are normally used in a language, or the way people actually speak or write",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "06294112-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "使用量、用量",
+     "zh": "某項資源或產品被消耗、使用的數量",
+     "en": "the amount of something that is used, especially energy, water, or data",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "習慣、慣例",
+     "zh": "一群人長期接受並遵循的做法",
+     "en": "a usual or accepted way of doing things in a group or society",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00414252-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "習慣法",
+     "reason": "法律專業術語，指不成文的慣例法，一般學習者幾乎不會遇到"
+    }
+   ]
+  },
+  {
+   "headword": "use",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "使用、利用",
+     "zh": "拿某物來做某事，或利用某人、某物達到目的",
+     "en": "to do something with a thing or person for a particular purpose",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01161188-v",
+      "02606487-v",
+      "02567247-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "使用、運用",
+     "zh": "使用某物的行為或事實",
+     "en": "the act of doing something with a thing or person",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00948944-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "用途、功用",
+     "zh": "某物被設計來做什麼，或它能發揮的作用",
+     "en": "the purpose or function that something is designed for or can serve",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "05156572-n",
+      "05157225-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "消耗、用掉",
+     "zh": "使用資源、材料或體力，使其減少",
+     "en": "to consume or spend resources, materials, or energy",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01159815-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "使用權",
+     "zh": "法律上享有某物利益或使用某物的權利",
+     "en": "the legal right to enjoy the benefits of owning or using something",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "05197374-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "慣常服用、定期使用",
+     "zh": "規律地服用藥物或使用某物",
+     "en": "to take or consume something regularly or habitually",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01167359-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "習慣、慣例",
+     "reason": "現代英語中此義已罕用，多由 habit、custom 表達"
+    },
+    {
+     "meaning": "（心理學）自動化的行為模式",
+     "reason": "專業領域過窄，一般學習者不會遇到"
+    },
+    {
+     "meaning": "（經濟學）財貨的利用",
+     "reason": "專業領域過窄，一般學習者不會遇到"
+    },
+    {
+     "meaning": "施展狡猾的影響力以謀利",
+     "reason": "古義，現代已不使用"
+    },
+    {
+     "meaning": "慣常（僅用過去式）",
+     "reason": "古義，現代已不使用"
+    }
+   ]
+  },
+  {
+   "headword": "used",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "用過的、二手的",
+     "zh": "指物品已經被別人使用或擁有過，不是全新的。",
+     "en": "not new; owned or used by someone else before",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01644709-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "被利用的、被占便宜的",
+     "zh": "指人被人利用或占便宜，口語常說 feel used。",
+     "en": "treated unfairly by someone who takes advantage of you",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "02505376-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "使用中的、用於……的",
+     "zh": "指某物被拿來達成某個目的，常見於 used for、used to 等結構。",
+     "en": "being used for a particular purpose",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02504601-a"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "習慣的（be used to）",
+     "reason": "此義屬於片語 be used to 的用法，不是形容詞 used 單獨的意思，學習者應查片語。"
+    }
+   ]
+  },
+  {
+   "headword": "useful",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "有用的、派得上用場的",
+     "zh": "能幫上忙、能解決問題或達到目的的",
+     "en": "helpful for doing something or for achieving a goal",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02505612-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "實用的、有實際功能的",
+     "zh": "指東西設計得實用、具備實際功能，而不只是好看",
+     "en": "designed to do a practical job rather than just look nice",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01094513-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "usefully",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "有用地、派得上用場地",
+     "zh": "表示某事物能實際發揮作用、幫上忙，常與 can、be used 等搭配。",
+     "en": "in a way that helps you do something or serves a practical purpose",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00493490-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "有效地、有建設性地",
+     "zh": "用於描述討論、時間或行動帶來正面成果，例如 usefully spend time、usefully discuss。",
+     "en": "in a way that produces good results or makes good use of time and effort",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "有效地（等同 effectively）",
+     "reason": "舊字典把 usefully 直接譯為「有效地」，與 effectively 混為一談；現代英文中 usefully 強調「有用途、幫得上忙」，不泛指效率高低。"
+    }
+   ]
+  },
+  {
+   "headword": "usefulness",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "用處、實用性",
+     "zh": "指某物或某事在實際上有幫助、能派上用場的程度。",
+     "en": "the quality of being helpful or practical for a particular purpose",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "05155946-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "有益",
+     "reason": "與「用處、實用性」意思重疊，已合併為同一詞義"
+    }
+   ]
+  },
+  {
+   "headword": "useless",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "沒用的、無用的",
+     "zh": "指東西壞掉、派不上用場，或做法達不到效果。",
+     "en": "not able to do anything helpful or not working the way it should",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02506940-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "沒幫助的、徒勞的",
+     "zh": "指行動或建議沒有實際效果，白費力氣。",
+     "en": "not helping to solve a problem or make a situation better",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02506940-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（人）沒用的、不中用的",
+     "zh": "口語上說某人幫不上忙或什麼都做不好，帶貶義。",
+     "en": "used about a person who cannot help or do things well",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "02506940-a"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "user",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "使用者、用戶",
+     "zh": "使用某項產品、服務或系統的人，如網站、App、軟體的使用者。",
+     "en": "a person who uses a product, service, or system",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10761247-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（藥物）使用者、吸毒者",
+     "zh": "指使用毒品或特定藥物的人，常在新聞或醫療情境中出現。",
+     "en": "a person who takes illegal drugs or a particular medicine",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "10055991-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "利用他人的人",
+     "zh": "指自私或不道德地利用別人的人，帶負面評價。",
+     "en": "a person who uses other people in a selfish or unfair way",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "10092334-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "usher",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "引領、帶位",
+     "zh": "帶某人到座位或某個地方，常用於戲院、婚禮等場合。",
+     "en": "to lead someone to a seat or a place, especially at a theater or a ceremony",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02004579-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "帶位員、引座員",
+     "zh": "在戲院、婚禮或活動現場帶客人入座的工作人員。",
+     "en": "a person whose job is to show people to their seats at a theater or event",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10761478-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "開啟、引進（新時代、變革）",
+     "zh": "常與 in 連用，表示某事件帶來新時期或重大改變。",
+     "en": "to be the start of a new period or major change",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "（法院、議會的）門警",
+     "zh": "在法院或立法機關入口值勤的正式人員。",
+     "en": "an official who stands at the entrance of a court or law-making body",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "10761768-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "作招待員（vi.）",
+     "reason": "現代幾乎不單獨用不及物動詞，已併入帶位、引領的意思"
+    }
+   ]
+  },
+  {
+   "headword": "usl",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "使用者專用語言（UNIX）",
+     "zh": "UNIX 系統中使用者自行定義的指令別名與環境設定語言，屬專業術語。",
+     "en": "a UNIX feature that lets users define their own commands and settings",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "縮寫（abbr.）標記",
+     "reason": "僅為詞性標記，非獨立詞義"
+    }
+   ]
+  },
+  {
+   "headword": "ussr",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "蘇聯",
+     "zh": "蘇維埃社會主義共和國聯盟的縮寫，指 1922 至 1991 年存在的國家，現多用於歷史敘述。",
+     "en": "short for the Union of Soviet Socialist Republics, a country that existed from 1922 to 1991",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "usual",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "通常的、慣常的",
+     "zh": "指平常習慣會發生、會做或會遇到的情況。",
+     "en": "happening, done, or seen most of the time; normal and expected",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00491099-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "常見的、普通的",
+     "zh": "指某事物在日常生活中很常見到，並不特別。",
+     "en": "seen or found often in everyday life; not special",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00973799-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "usually",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "通常、一般來說",
+     "zh": "表示在某種情況下大多如此，是常見的習慣或一般狀況。",
+     "en": "in most cases, or as a normal habit",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00107608-r"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "大抵",
+     "reason": "與「通常」意思重複，只是舊字典的文言說法"
+    }
+   ]
+  },
+  {
+   "headword": "utilise",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "利用、運用",
+     "zh": "把某個東西實際拿來使用，尤其是有目的地發揮它的用途（英式拼法，美式拼作 utilize）",
+     "en": "to use something in an effective way for a particular purpose",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "01161188-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "使用（一般日常的「用」）",
+     "reason": "與「利用、運用」意思重疊，已合併為同一詞義"
+    }
+   ]
+  },
+  {
+   "headword": "utility",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "公用事業",
+     "zh": "提供水、電、瓦斯等公共服務的公司或設施",
+     "en": "a company or service that supplies things like water, gas, or electricity to the public",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "08202676-n",
+      "00580371-n",
+      "04524169-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "實用性、功用",
+     "zh": "某物實際上有用或能發揮作用的程度",
+     "en": "the quality of being useful or practical for a particular purpose",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "05155946-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "公用程式、工具程式",
+     "zh": "電腦系統中提供基本功能或維護的小型程式",
+     "en": "a small computer program that helps manage or maintain a system",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "06593586-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "多用途的、實用的",
+     "zh": "設計成可替代多個位置或有多種用途的（如球員、車輛）",
+     "en": "designed to be used in several different ways or positions",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01861341-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "效用（經濟學）",
+     "zh": "經濟學中衡量從消費或選擇中獲得滿足程度的指標",
+     "en": "in economics, a measure of satisfaction gained from a choice or consumption",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "13601261-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（牛肉）可用的但品質較差的",
+     "reason": "專業領域過窄，現代一般場合幾乎不用"
+    }
+   ]
+  },
+  {
+   "headword": "utilize",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "利用、使用",
+     "zh": "把某個東西實際拿來用在特定用途上，語氣比 use 正式。",
+     "en": "to use something for a particular purpose, especially in an effective way",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "01161188-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "把投資信託轉換為單位信託",
+     "reason": "金融領域的專門用法，現代一般英文幾乎不會遇到"
+    }
+   ]
+  },
+  {
+   "headword": "utmost",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "極度的、最大的",
+     "zh": "表示程度或重要性達到最高，常用於強調努力、尊重、小心等抽象事物。",
+     "en": "used to emphasize that something is as great in degree or importance as it can be",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01515272-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "極限、最大限度",
+     "zh": "指能力或程度所能達到的最高點，常見於 do/try one's utmost 的搭配。",
+     "en": "the greatest amount or level of something that is possible",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "05132193-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "最遠的（空間或時間上）",
+     "reason": "古義，現代英文幾乎不用這個意思，屬舊式或文學用法"
+    }
+   ]
+  },
+  {
+   "headword": "utter",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "完全的、徹底的",
+     "zh": "用在名詞前，強調程度達到極點，常帶負面或強烈語氣。",
+     "en": "used before a noun to emphasize that something is complete or extreme, often in a negative way",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01524174-s",
+      "00524044-s"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "發出（聲音）、說出",
+     "zh": "發出聲音、話語或叫聲，常見於正式或文學描述。",
+     "en": "to make a sound or say something, especially a word or cry",
+     "usage": "less_common",
+     "register": [
+      "formal",
+      "literary"
+     ],
+     "synsets": [
+      "00942415-v",
+      "00985856-v",
+      "00944022-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "（法律）使用（偽幣）",
+     "zh": "在法律或正式文件中指使用偽造貨幣或文件。",
+     "en": "to use false money or documents, especially in legal contexts",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "02047744-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "流通、發行",
+     "reason": "此義在現代英語中幾乎不用，僅見於古舊或極專業文本。"
+    }
+   ]
+  },
+  {
+   "headword": "utterance",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "話語、言辭",
+     "zh": "某人實際說出口的一句話或一段話，常見於語言學、心理學或正式書面語。",
+     "en": "something that a person says, especially a single remark or statement",
+     "usage": "common",
+     "register": [
+      "formal",
+      "technical"
+     ],
+     "synsets": [
+      "07124555-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "發聲、出聲",
+     "zh": "發出聲音或說話的動作本身，而非內容。",
+     "en": "the act of making sounds with the voice in order to speak",
+     "usage": "less_common",
+     "register": [
+      "formal",
+      "technical"
+     ],
+     "synsets": [
+      "07124555-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "死",
+     "reason": "舊字典的罕見義，現代英文幾乎不用 utterance 表示死亡"
+    },
+    {
+     "meaning": "說話的方式",
+     "reason": "與「話語」義重疊，現代多併入前項理解，不另立義項"
+    }
+   ]
+  },
+  {
+   "headword": "utterly",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "完全地、徹底地",
+     "zh": "用在形容詞或動詞前，強調程度達到百分之百，常用於負面或強烈的描述。",
+     "en": "used before an adjective or verb to mean completely, with no doubt or limit",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00009459-r"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "絕對（單獨作肯定答語）",
+     "reason": "舊字典將「絕對」列為獨立義項，但現代英文中 utterly 不作單獨回答或感嘆使用，只是程度副詞，已併入主要詞義。"
+    }
+   ]
+  },
+  {
+   "headword": "ux",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "使用者體驗",
+     "zh": "使用者操作產品或服務時的整體感受，常見於科技、設計與產品開發領域。",
+     "en": "the overall experience a person has when using a product, service, or system",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "使用者體驗的（設計、研究）",
+     "zh": "放在名詞前，指與使用者體驗有關的工作或職務，例如 UX 設計、UX 研究。",
+     "en": "relating to the design or study of how people use a product or service",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  }
+ ]
+}
