@@ -6,25 +6,14 @@ import { useEffect, useState } from "react";
 import { SearchBox } from "@/components/search-box";
 import { SearchResultList } from "@/components/search-results";
 import type { SearchResult } from "@/lib/dictionary";
-import { normalizeHeadword } from "@/lib/headword";
-
-/** 從 /word/xxx 取出使用者查的字；其他路徑回傳空字串 */
-function queryFromPath(pathname: string) {
-  const match = /^\/word\/([^/]+)$/.exec(pathname);
-  if (!match) return "";
-  try {
-    return normalizeHeadword(decodeURIComponent(match[1]));
-  } catch {
-    return "";
-  }
-}
+import { wordFromPath } from "@/lib/urls";
 
 /**
  * 404 頁的內容。查不到單字時不是死路：搜尋框帶入原本的字，下面列出拼法相近的建議（模糊搜尋）。
  * not-found.tsx 拿不到網址參數，所以用 usePathname 在用戶端取得查詢字。
  */
 export function WordNotFound() {
-  const query = queryFromPath(usePathname());
+  const query = wordFromPath(usePathname());
   const [result, setResult] = useState<SearchResult | null>(null);
 
   useEffect(() => {

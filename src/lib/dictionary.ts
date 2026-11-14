@@ -115,6 +115,21 @@ export async function searchDictionary(input: string, limit = 10): Promise<Searc
   };
 }
 
+export type WordSummary = { headword: string; display: string; gloss: string | null };
+
+/** 一批 headword 的顯示用拼寫與簡短中文釋義（查字歷史用）；字典裡沒有的字略過，順序依輸入 */
+export async function summarizeWords(headwords: string[]): Promise<WordSummary[]> {
+  if (headwords.length === 0) return [];
+  const [rows, glosses] = await Promise.all([
+    db.select({ headword: entries.headword, display: entries.display }).from(entries).where(inArray(entries.headword, headwords)),
+    firstGlosses(headwords),
+  ]);
+  const display = new Map(rows.map((r) => [r.headword, r.display]));
+  return headwords
+    .filter((h) => display.has(h))
+    .map((h) => ({ headword: h, display: display.get(h)!, gloss: glosses.get(h) ?? null }));
+}
+
 /**
  * 每個 headword 的簡短中文釋義（含詞性）。有 LLM 現代化詞條時取第一個詞義（第二個詞義詞性相同時一併列出），
  * 否則取 ECDICT 第一筆（優先一般釋義，專業領域釋義排後）。

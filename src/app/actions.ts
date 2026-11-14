@@ -1,10 +1,13 @@
 "use server";
 
 /**
- * Server Actions：收藏、筆記、單字本、複習、設定。
+ * Server Actions：收藏、筆記、單字本、複習、設定、查字歷史。
  * 每個 action 都自己從 session 取得 user id（不接受用戶端傳入），參數在這裡做型別檢查。
  */
 import { refresh } from "next/cache";
+import { summarizeWords, type WordSummary } from "@/lib/dictionary";
+import { normalizeHeadword } from "@/lib/headword";
+import * as history from "@/lib/lookup-history";
 import * as review from "@/lib/review";
 import { getReviewState, type ReviewState } from "@/lib/review-session";
 import { getCurrentUser } from "@/lib/session";
@@ -153,4 +156,61 @@ export async function updateSettingsAction(input: {
       frontExample: typeof input.frontExample === "boolean" ? input.frontExample : undefined,
     }),
   );
+}
+
+// ── 查字歷史 ───────────────────────────────────────────────
+// 這幾個 action 不呼叫 refresh()：記錄與讀取歷史不應讓目前頁面重新渲染。未登入不算錯誤，回傳 synced: false 讓用戶端改存瀏覽器。
+
+/** 解析用戶端送來的瀏覽器暫存歷史；格式不對的項目直接略過 */
+function lookupEntries(value: unknown): history.LookupEntry[] {
+  if (!Array.isArray(value)) return [];
+  return value
+    .filter(
+      (v): v is history.LookupEntry =>
+        typeof v === "object" && v !== null && typeof v.headword === "string" && typeof v.at === "number",
+    )
+    .slice(0, history.MAX_MERGE);
+}
+
+/** 單字頁打開時呼叫：登入時寫進資料庫；未登入回傳 synced: false */
+export async function recordLookupAction(headword: unknown): Promise<{ synced: boolean }> {
+  if (typeof headword !== "string" || !headword.trim()) return { synced: false };
+  const user = await getCurrentUser();
+  if (!user) return { synced: false };
+  try {
+    await history.recordLookups(user.id, [{ headword, at: Date.now() }]);
+    return { synced: true };
+  } catch (err) {
+    console.error(err);
+    return { synced: false };
+  }
+}
+
+/**
+ * 搜尋框聚焦時呼叫，取得最近查過的字。local = 瀏覽器暫存的歷史：
+ * 登入時先合併進資料庫再讀（synced: true，用戶端可清掉暫存）；未登入時只替暫存的字補上釋義。
+ */
+export async function recentLookupsAction(local: unknown): Promise<{ synced: boolean; items: WordSummary[] }> {
+  const entries = lookupEntries(local);
+  const user = await getCurrentUser();
+  try {
+    if (user) {
+      if (entries.length > 0) await history.recordLookups(user.id, entries);
+      return { synced: true, items: await summarizeWords(await history.listRecentLookups(user.id)) };
+    }
+    const recent = [...entries].sort((a, b) => b.at - a.at).map((e) => normalizeHeadword(e.headword));
+    return { synced: false, items: await summarizeWords([...new Set(recent)].slice(0, history.RECENT_LOOKUPS)) };
+  } catch (err) {
+    console.error(err);
+    return { synced: false, items: [] };
+  }
+}
+
+/** 從歷史移除一個字；未登入時回傳 synced: false，由用戶端從暫存移除 */
+export async function removeLookupAction(headword: unknown): Promise<{ synced: boolean }> {
+  if (typeof headword !== "string") return { synced: false };
+  const user = await getCurrentUser();
+  if (!user) return { synced: false };
+  await history.removeLookup(user.id, headword);
+  return { synced: true };
 }

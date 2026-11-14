@@ -70,6 +70,7 @@
   4. 前綴搜尋（`LIKE 'xxx%'`），依 `frequency_rank` 排序
   5. 前面都沒有結果時，用 pg_trgm `similarity()` 做模糊搜尋（拼錯字建議）
 - [x] 輸入即時提示（debounce 約 200ms，最多 10 筆）
+- [x] 查字歷史（2026-11-15）：打開單字頁就記一筆（變化形記成原形），搜尋框聚焦且還沒打字時列出最近 8 筆，可逐筆移除（× 或 Shift+Delete）。登入時存 `lookup_history`（migration `0009_lookup_history`，一人一字一筆、軟刪除）；未登入存瀏覽器 localStorage，登入後第一次開歷史時合併上雲端
 - [x] 單字頁 `/word/[headword]`：音標、發音按鈕（Web Speech API，en-US / en-GB 可切換）、中文釋義、英英釋義、例句
 - [x] 例句下方標示出處（Tatoeba 句子連結與作者）
 - [x] 頁尾或「關於」頁列出所有資料來源與授權

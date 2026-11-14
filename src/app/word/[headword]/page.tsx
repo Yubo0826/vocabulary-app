@@ -4,6 +4,7 @@ import { Suspense } from "react";
 import { ExampleBrowser } from "@/components/example-browser";
 import { highlight, type WordLinks } from "@/components/example-text";
 import { ModernDefinitions } from "@/components/modern-definitions";
+import { RecordLookup } from "@/components/record-lookup";
 import { FamiliarityControl, NoteButton, NotePreview, SaveButton } from "@/components/save-panel";
 import { SearchBox } from "@/components/search-box";
 import { AccentToggle, SpeakButton } from "@/components/speech";
@@ -73,6 +74,7 @@ function WordView({ word, from }: { word: WordDetail; from?: string }) {
 
   return (
     <article className="flex flex-col gap-7">
+      <RecordLookup headword={entry.headword} />
       <header className="flex flex-col gap-2">
         {typedKinds.length > 0 && (
           <p className="text-sm text-muted-foreground">

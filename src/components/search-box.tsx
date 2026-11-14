@@ -1,10 +1,12 @@
 "use client";
 
-import { Search } from "lucide-react";
+import { History, Search, X } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useEffect, useId, useRef, useState } from "react";
-import type { SearchItem, SearchResult } from "@/lib/dictionary";
-import { wordHref } from "@/lib/urls";
+import { recentLookupsAction, removeLookupAction } from "@/app/actions";
+import type { SearchItem, SearchResult, WordSummary } from "@/lib/dictionary";
+import { clearLocalLookups, readLocalLookups, removeLocalLookup } from "@/lib/lookup-history-local";
+import { wordFromPath, wordHref } from "@/lib/urls";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
@@ -44,6 +46,7 @@ export function SearchBox({
   const [result, setResult] = useState<SearchResult | null>(null);
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState(-1);
+  const [history, setHistory] = useState<WordSummary[] | null>(null); // 最近查過的字；聚焦時載入
   const inputRef = useRef<HTMLInputElement>(null);
 
   // Next.js（Cache Components）離開頁面時用 <Activity> 隱藏而不卸載，state 會被保留。
@@ -55,6 +58,7 @@ export function SearchBox({
       setResult(null);
       setOpen(false);
       setActive(-1);
+      setHistory(null);
     };
   }, [autoFocus, initialQuery]);
 
@@ -93,8 +97,31 @@ export function SearchBox({
     };
   }, [trimmed]);
 
-  const items = trimmed && result ? result.items : [];
-  const showList = open && trimmed.length > 0 && result !== null;
+  // 輸入框是空的時候顯示查字歷史，有輸入時顯示即時提示
+  const historyMode = !trimmed;
+  const historyItems: SearchItem[] = (history ?? []).map((h) => ({ ...h, phonetic: null, via: "exact" }));
+  const items = historyMode ? historyItems : result ? result.items : [];
+  const showList = open && (historyMode ? historyItems.length > 0 : result !== null);
+
+  /** 載入最近查過的字；順便把未登入時存在瀏覽器的歷史交給伺服器合併（合併成功就清掉暫存） */
+  const loadHistory = () => {
+    // 單字頁上不列出目前這個字。用 window.location 而不是 usePathname：後者在 Suspense 外會擋住預先渲染
+    const exclude = wordFromPath(window.location.pathname);
+    recentLookupsAction(readLocalLookups())
+      .then(({ synced, items }) => {
+        if (synced) clearLocalLookups();
+        setHistory(items.filter((h) => h.headword !== exclude));
+      })
+      .catch(() => setHistory(null));
+  };
+
+  const removeFromHistory = (headword: string) => {
+    setHistory((h) => h?.filter((x) => x.headword !== headword) ?? null);
+    setActive(-1);
+    removeLocalLookup(headword);
+    removeLookupAction(headword).catch((err) => console.error(err));
+    inputRef.current?.focus();
+  };
 
   const go = (item: SearchItem) => {
     setOpen(false);
@@ -120,6 +147,10 @@ export function SearchBox({
     } else if (e.key === "ArrowUp" && items.length) {
       e.preventDefault();
       setActive((i) => (i <= 0 ? items.length - 1 : i - 1));
+    } else if (e.key === "Delete" && e.shiftKey && historyMode && items[active]) {
+      // Shift+Delete：把選中的歷史項目移除（和瀏覽器網址列一樣）
+      e.preventDefault();
+      removeFromHistory(items[active].headword);
     } else if (e.key === "Escape") {
       setOpen(false);
       setActive(-1);
@@ -166,9 +197,14 @@ export function SearchBox({
         onChange={(e) => {
           setQuery(e.target.value);
           setOpen(true);
+          setActive(-1);
+          if (!e.target.value.trim() && history === null) loadHistory();
         }}
         onKeyDown={onKeyDown}
-        onFocus={() => setOpen(true)}
+        onFocus={() => {
+          setOpen(true);
+          if (!trimmed) loadHistory();
+        }}
         onBlur={() => {
           setTimeout(() => setOpen(false), 150);
         }}
@@ -189,8 +225,11 @@ export function SearchBox({
         // 清單卡片從輸入框頂端開始、墊在輸入框後面（同底色、同圓角），看起來是同一張卡片（Google 搜尋欄的做法）
         <div className={cn("absolute inset-x-0 top-0 z-10 overflow-hidden rounded-3xl bg-muted pb-2 text-foreground shadow-lg", md ? "pt-12" : "pt-14")}>
           <div className="mx-4 border-t" aria-hidden />
-          {result.matchType === "fuzzy" && <p className="px-4 pt-2.5 pb-1 text-sm text-muted-foreground">找不到「{result.query}」，您是不是要找：</p>}
-          {items.length === 0 && <p className="px-4 pt-2.5 pb-1 text-sm text-muted-foreground">找不到相符的單字</p>}
+          {historyMode && <p className="px-4 pt-2.5 pb-1 text-xs font-medium text-muted-foreground">最近查過</p>}
+          {!historyMode && result?.matchType === "fuzzy" && (
+            <p className="px-4 pt-2.5 pb-1 text-sm text-muted-foreground">找不到「{result.query}」，您是不是要找：</p>
+          )}
+          {!historyMode && items.length === 0 && <p className="px-4 pt-2.5 pb-1 text-sm text-muted-foreground">找不到相符的單字</p>}
           <ul id={listId} role="listbox">
             {items.map((item, i) => (
               <li
@@ -199,11 +238,16 @@ export function SearchBox({
                 role="option"
                 aria-selected={i === active}
                 // 選中列疊一層 state layer（Material 3 清單的 hover／選取樣式）
-                className={cn("flex min-w-0 cursor-pointer items-baseline gap-2 px-4 py-2.5", i === active && "bg-foreground/8")}
+                className={cn(
+                  "flex min-w-0 cursor-pointer items-baseline gap-2 px-4 py-2.5",
+                  historyMode && "items-center py-1.5 pr-2",
+                  i === active && "bg-foreground/8",
+                )}
                 onMouseDown={(e) => e.preventDefault()}
                 onMouseEnter={() => setActive(i)}
                 onClick={() => go(item)}
               >
+                {historyMode && <History className="size-4 shrink-0 text-muted-foreground" aria-hidden />}
                 <span className="shrink-0 font-semibold">{item.display}</span>
                 {item.via === "form" && (
                   <Badge variant="outline" className="shrink-0 border-primary text-primary">
@@ -211,6 +255,22 @@ export function SearchBox({
                   </Badge>
                 )}
                 {item.gloss && <span className="min-w-0 truncate text-sm text-muted-foreground">{item.gloss}</span>}
+                {historyMode && (
+                  // 不進 Tab 順序（焦點要留在輸入框）；鍵盤用 Shift+Delete 移除
+                  <button
+                    type="button"
+                    tabIndex={-1}
+                    className="ml-auto flex size-8 shrink-0 items-center justify-center rounded-full text-muted-foreground hover:bg-foreground/8 hover:text-foreground"
+                    aria-label={`從歷史移除「${item.display}」`}
+                    title="從歷史移除"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      removeFromHistory(item.headword);
+                    }}
+                  >
+                    <X className="size-4" />
+                  </button>
+                )}
               </li>
             ))}
           </ul>

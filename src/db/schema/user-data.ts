@@ -183,3 +183,22 @@ export const userSettings = pgTable("user_settings", {
   reviewFrontExample: boolean("review_front_example").notNull().default(true), // 複習題目面顯示一句例句
   updatedAt: ts("updated_at").notNull().defaultNow(),
 });
+
+/**
+ * 查字歷史：打開過的單字頁，一人一字一筆；再查一次只更新 viewedAt。
+ * 「從歷史移除」是軟刪除（deletedAt），之後再查到會清掉 deletedAt 重新出現。
+ */
+export const lookupHistory = pgTable(
+  "lookup_history",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    userId: userIdColumn(),
+    headword: text("headword").notNull(),
+    viewedAt: ts("viewed_at").notNull().defaultNow(),
+    ...syncColumns,
+  },
+  (t) => [
+    uniqueIndex("lookup_history_user_headword_idx").on(t.userId, t.headword),
+    index("lookup_history_user_viewed_idx").on(t.userId, t.viewedAt),
+  ],
+);

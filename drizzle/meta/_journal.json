@@ -64,6 +64,13 @@
       "when": 1794559163924,
       "tag": "0008_llm_entry_senses",
       "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1794674034703,
+      "tag": "0009_lookup_history",
+      "breakpoints": true
     }
   ]
 }
