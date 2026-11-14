@@ -5,6 +5,7 @@ import { ExampleBrowser } from "@/components/example-browser";
 import { highlight, type WordLinks } from "@/components/example-text";
 import { ModernDefinitions } from "@/components/modern-definitions";
 import { FamiliarityControl, NoteButton, NotePreview, SaveButton } from "@/components/save-panel";
+import { SearchBox } from "@/components/search-box";
 import { AccentToggle, SpeakButton } from "@/components/speech";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -30,17 +31,21 @@ export async function generateMetadata({ params }: PageProps<"/word/[headword]">
   return { title: normalizeHeadword(safeDecode(headword)) };
 }
 
-export default function WordPage({ params }: PageProps<"/word/[headword]">) {
+export default function WordPage({ params, searchParams }: PageProps<"/word/[headword]">) {
   return (
-    <Suspense fallback={<p className="text-muted-foreground">載入中…</p>}>
-      {params.then(({ headword }) => (
-        <WordContent raw={headword} />
-      ))}
-    </Suspense>
+    <div className="flex flex-col gap-6">
+      {/* 查下一個字不用回首頁：精簡搜尋列，按 / 聚焦。放在 Suspense 外，換字時不會閃 */}
+      <SearchBox size="md" hotkey placeholder="查其他單字" />
+      <Suspense fallback={<p className="text-muted-foreground">載入中…</p>}>
+        {Promise.all([params, searchParams]).then(([{ headword }, { from }]) => (
+          <WordContent raw={headword} from={typeof from === "string" ? from : undefined} />
+        ))}
+      </Suspense>
+    </div>
   );
 }
 
-async function WordContent({ raw }: { raw: string }) {
+async function WordContent({ raw, from }: { raw: string; from?: string }) {
   const input = safeDecode(raw);
   const headword = normalizeHeadword(input);
   if (headword !== input) redirect(wordHref(headword)); // 大小寫、空白不同時轉到正規網址
@@ -48,14 +53,17 @@ async function WordContent({ raw }: { raw: string }) {
   const word = await getWord(headword);
   if (!word) {
     const lemma = await findLemma(headword);
-    if (lemma) redirect(wordHref(lemma)); // 輸入變化形（went）時轉到原形（go）
+    if (lemma) redirect(wordHref(lemma, headword)); // 輸入變化形（went）時轉到原形（go），並帶上原本輸入的字
     notFound();
   }
-  return <WordView word={word} />;
+  return <WordView word={word} from={from} />;
 }
 
-function WordView({ word }: { word: WordDetail }) {
+function WordView({ word, from }: { word: WordDetail; from?: string }) {
   const { entry, modern, zh, en, examples, senses, inflections, lemmaOf, confusables, synonyms, linkable } = word;
+  // 從變化形轉過來（went → go）：只接受真的是這個字變化形的 from，其他值忽略
+  const typed = from ? normalizeHeadword(from) : "";
+  const typedKinds = inflections.filter((f) => f.form === typed).map((f) => FORM_LABELS[f.kind]).filter(Boolean);
   const examTags = (entry.tags ?? []).filter((t) => t in EXAM_TAGS);
   const similarCount = confusables.length + synonyms.length;
   const highlightForms = new Set([entry.headword, ...inflections.map((f) => f.form)]);
@@ -66,6 +74,12 @@ function WordView({ word }: { word: WordDetail }) {
   return (
     <article className="flex flex-col gap-7">
       <header className="flex flex-col gap-2">
+        {typedKinds.length > 0 && (
+          <p className="text-sm text-muted-foreground">
+            你查的 <span className="font-semibold text-foreground">{typed}</span> 是 {entry.display} 的
+            {[...new Set(typedKinds)].join("、")}
+          </p>
+        )}
         <div className="flex items-center gap-3">
           <h1 className="text-[clamp(2rem,8vw,2.6rem)] leading-tight font-bold wrap-anywhere">{entry.display}</h1>
           <SpeakButton text={entry.display} autoPlay />

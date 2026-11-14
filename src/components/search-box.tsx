@@ -17,7 +17,27 @@ async function fetchSearch(q: string, signal?: AbortSignal): Promise<SearchResul
   return res.json();
 }
 
-export function SearchBox({ initialQuery = "", autoFocus = false }: { initialQuery?: string; autoFocus?: boolean }) {
+/** 在頁面任何地方（輸入框以外）按 / 跳到搜尋框 */
+function isTypingTarget(target: EventTarget | null) {
+  if (!(target instanceof HTMLElement)) return false;
+  return target.isContentEditable || ["INPUT", "TEXTAREA", "SELECT"].includes(target.tagName);
+}
+
+export function SearchBox({
+  initialQuery = "",
+  autoFocus = false,
+  size = "lg",
+  hotkey = false,
+  placeholder = "輸入英文單字或片語",
+}: {
+  initialQuery?: string;
+  autoFocus?: boolean;
+  /** lg：首頁、搜尋頁的 56px 搜尋列；md：單字頁頂端的 48px 精簡版 */
+  size?: "lg" | "md";
+  /** 啟用 / 快捷鍵（同一頁只能有一個搜尋框啟用） */
+  hotkey?: boolean;
+  placeholder?: string;
+}) {
   const router = useRouter();
   const listId = useId();
   const [query, setQuery] = useState(initialQuery);
@@ -38,7 +58,20 @@ export function SearchBox({ initialQuery = "", autoFocus = false }: { initialQue
     };
   }, [autoFocus, initialQuery]);
 
+  useEffect(() => {
+    if (!hotkey) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key !== "/" || e.ctrlKey || e.metaKey || e.altKey || isTypingTarget(e.target)) return;
+      e.preventDefault();
+      inputRef.current?.focus();
+      inputRef.current?.select();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [hotkey]);
+
   const trimmed = query.trim();
+  const md = size === "md";
 
   // 輸入停頓 200ms 後才查詢；新的輸入會取消前一個請求
   useEffect(() => {
@@ -65,7 +98,7 @@ export function SearchBox({ initialQuery = "", autoFocus = false }: { initialQue
 
   const go = (item: SearchItem) => {
     setOpen(false);
-    router.push(wordHref(item.headword));
+    router.push(wordHref(item.headword, item.via === "form" ? item.form : undefined));
   };
 
   // Enter：選了提示就去那個字；完全符合或可還原原形時直接進單字頁；否則到搜尋結果頁
@@ -102,12 +135,20 @@ export function SearchBox({ initialQuery = "", autoFocus = false }: { initialQue
         void submit();
       }}
     >
-      <Search className="pointer-events-none absolute top-7 left-4.5 z-30 size-5 -translate-y-1/2 text-muted-foreground" aria-hidden />
+      <Search
+        className={cn(
+          "pointer-events-none absolute z-30 size-5 -translate-y-1/2 text-muted-foreground",
+          md ? "top-6 left-4" : "top-7 left-4.5",
+        )}
+        aria-hidden
+      />
       <Input
         ref={inputRef}
         className={cn(
           // Material 3 搜尋列沒有聚焦外框（游標就是聚焦提示）
-          "relative z-20 h-14 rounded-full border-transparent bg-muted pr-5 pl-12 text-[1.05rem] focus-visible:border-transparent focus-visible:ring-0 md:text-[1.05rem] dark:bg-muted",
+          "relative z-20 rounded-full border-transparent bg-muted pr-5 focus-visible:border-transparent focus-visible:ring-0 dark:bg-muted",
+          md ? "h-12 pl-11 text-base md:text-base" : "h-14 pl-12 text-[1.05rem] md:text-[1.05rem]",
+          hotkey && "[@media(pointer:fine)]:pr-12",
         )}
         type="search"
         inputMode="search"
@@ -115,7 +156,7 @@ export function SearchBox({ initialQuery = "", autoFocus = false }: { initialQue
         autoCapitalize="off"
         spellCheck={false}
         autoFocus={autoFocus}
-        placeholder="輸入英文單字或片語"
+        placeholder={placeholder}
         aria-label="查詢單字"
         role="combobox"
         aria-expanded={showList}
@@ -132,9 +173,21 @@ export function SearchBox({ initialQuery = "", autoFocus = false }: { initialQue
           setTimeout(() => setOpen(false), 150);
         }}
       />
+      {hotkey && !query && (
+        // 有實體鍵盤時提示快捷鍵；觸控裝置不顯示
+        <kbd
+          className={cn(
+            "pointer-events-none absolute right-4 z-30 hidden -translate-y-1/2 rounded-sm border border-border px-1.5 font-mono text-xs leading-5 text-muted-foreground [@media(pointer:fine)]:block",
+            md ? "top-6" : "top-7",
+          )}
+          aria-hidden
+        >
+          /
+        </kbd>
+      )}
       {showList && (
         // 清單卡片從輸入框頂端開始、墊在輸入框後面（同底色、同圓角），看起來是同一張卡片（Google 搜尋欄的做法）
-        <div className="absolute inset-x-0 top-0 z-10 overflow-hidden rounded-3xl bg-muted pt-14 pb-2 text-foreground shadow-lg">
+        <div className={cn("absolute inset-x-0 top-0 z-10 overflow-hidden rounded-3xl bg-muted pb-2 text-foreground shadow-lg", md ? "pt-12" : "pt-14")}>
           <div className="mx-4 border-t" aria-hidden />
           {result.matchType === "fuzzy" && <p className="px-4 pt-2.5 pb-1 text-sm text-muted-foreground">找不到「{result.query}」，您是不是要找：</p>}
           {items.length === 0 && <p className="px-4 pt-2.5 pb-1 text-sm text-muted-foreground">找不到相符的單字</p>}

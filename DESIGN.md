@@ -117,6 +117,12 @@ components:
     rounded: "{rounded.full}"
     height: "56px"
     padding: "0 20px 0 48px"
+  search-bar-compact:
+    backgroundColor: "{colors.paper-high}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.full}"
+    height: "48px"
+    padding: "0 48px 0 44px"
   text-field:
     textColor: "{colors.ink}"
     rounded: "{rounded.xs}"
@@ -261,6 +267,8 @@ Moji 像 Google 自家的工具 App：不搶戲、一眼看懂，每個按鈕都
 
 ### Search Bar（招牌元件）
 56px 高的全圓膠囊，paper-high 底、沒有框也沒有聚焦外環（游標就是聚焦提示），左側放大鏡圖示。輸入時下方展開同底色、28px 圓角的清單，看起來和搜尋列是同一張卡片，選中列疊 8% state layer。
+
+單字頁頂端用 48px 的精簡版（placeholder「查其他單字」），讓人不必回首頁就能查下一個字；按 `/` 聚焦，有實體鍵盤時右側顯示 `/` 提示（觸控裝置隱藏）。一頁只有一個搜尋框啟用 `/`。
 
 ### Navigation
 - **頁首:** 與頁面同底色、沒有陰影（Material top app bar）。左邊「Moji 單字本」logo，右邊導航連結與深淺色切換。

@@ -1,9 +1,7 @@
-import Link from "next/link";
 import { Suspense } from "react";
 import { SearchBox } from "@/components/search-box";
-import { Badge } from "@/components/ui/badge";
+import { SearchResultList } from "@/components/search-results";
 import { searchDictionary } from "@/lib/dictionary";
-import { wordHref } from "@/lib/urls";
 
 export const metadata = { title: "搜尋" };
 
@@ -34,26 +32,7 @@ async function Results({ query }: { query: string }) {
         {matchType === "fuzzy" && `找不到「${normalized}」，您是不是要找：`}
         {matchType && matchType !== "fuzzy" && `「${normalized}」的搜尋結果`}
       </p>
-      {items.length > 0 && (
-        <ul className="surface divide-y-2 divide-background overflow-hidden rounded-2xl">
-          {items.map((item) => (
-            <li key={item.headword}>
-              <Link
-                href={wordHref(item.headword)}
-                className="flex min-w-0 items-baseline gap-2 px-4 py-3 text-foreground hover:bg-accent hover:no-underline"
-              >
-                <span className="shrink-0 font-semibold">{item.display}</span>
-                {item.via === "form" && (
-                  <Badge variant="outline" className="shrink-0 border-primary text-primary">
-                    {item.form} 的原形
-                  </Badge>
-                )}
-                {item.gloss && <span className="min-w-0 truncate text-sm text-muted-foreground">{item.gloss}</span>}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      )}
+      {items.length > 0 && <SearchResultList items={items} />}
     </section>
   );
 }
