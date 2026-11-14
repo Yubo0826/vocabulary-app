@@ -2,10 +2,36 @@
   "manifest_version": 3,
   "name": "Moji 單字本",
   "short_name": "Moji",
-  "version": "0.1.0",
-  "description": "在網頁上選取英文單字，按右鍵「在 Moji 查詢」。",
-  "permissions": ["contextMenus", "storage"],
-  "background": { "service_worker": "background.js", "type": "module" },
-  "options_ui": { "page": "options.html", "open_in_tab": false },
-  "icons": { "128": "icons/icon-192.png" }
+  "version": "0.2.0",
+  "description": "在網頁上選取英文單字，點 Moji 小圖示查字、一鍵收藏到 Moji；也可按右鍵「在 Moji 查詢」。",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6umnEeOMI5XNRHbhf25MlPdxwKQvaDlJEb2xiuu5mw5BUsxztZkRlpFzFzaThqzzCdV7AdU/7W3ndEdCIrvDuzhxLkmHs5YK3xjyN24hDcL4boho5zxDGbHaEQ3L8YGLDeG9oOMbzuk7m4B0p2469DNxZbehpyhBvRC98rTHN6NvW4yWBajYb/uFWP9X4b9qjxNIpNwCsbOHOyxjeciTNvgxG3kjKzfFXHq2Js2hRrXg588Bk5ghUOfwLEo3poGwUXSjQghn3SXJbAeekR5FP7+ch3QyuYVXqmx6TN506MV7WMbmRgogwnGmt/Ggs0Qq/jLPMSVz/g1vdezPUIFI7QIDAQAB",
+  "permissions": [
+    "contextMenus",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "icons": {
+    "128": "icons/icon-192.png"
+  }
 }

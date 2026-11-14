@@ -54,27 +54,51 @@ const activeWordbook = (userId: string) => and(eq(wordbooks.userId, userId), isN
 
 // ---------------------------------------------------------------- 收藏
 
+const MAX_CONTEXT_URL_LENGTH = 2000;
+const MAX_CONTEXT_SENTENCE_LENGTH = 500;
+
+/** 從擴充元件收藏時一併記錄的出處（在哪個網頁、哪句話看到這個字） */
+export type SaveContext = { url: string | null; sentence: string | null };
+
+function cleanContext(context: SaveContext): SaveContext {
+  const url = context.url?.trim() || null;
+  const sentence = context.sentence?.replace(/\s+/g, " ").trim() || null;
+  return {
+    url: url && /^https?:\/\//i.test(url) && url.length <= MAX_CONTEXT_URL_LENGTH ? url : null,
+    sentence: sentence ? sentence.slice(0, MAX_CONTEXT_SENTENCE_LENGTH) : null,
+  };
+}
+
 /**
  * 收藏一個字：重新收藏時清除 deleted_at（並把收藏時間更新為現在）。
  * 同時確保有一張 en_zh 字卡（新卡 due = 現在、state = New；曾取消收藏則恢復原本的字卡與複習進度）。
+ * 有 context（擴充元件）時 origin 記為 'extension'；已收藏過的字也會把出處更新成這次看到的地方。
  */
-export async function saveWord(userId: string, rawHeadword: string, note?: string | null) {
+export async function saveWord(userId: string, rawHeadword: string, note?: string | null, context?: SaveContext) {
   const headword = normalizeHeadword(rawHeadword);
   const cleanedNote = note === undefined ? undefined : cleanNote(note);
-  return db.transaction((tx) => saveWordIn(tx, userId, headword, cleanedNote));
+  const cleanedContext = context ? cleanContext(context) : undefined;
+  return db.transaction((tx) => saveWordIn(tx, userId, headword, cleanedNote, cleanedContext));
 }
 
 export type Tx = Parameters<Parameters<typeof db.transaction>[0]>[0];
 
 /** saveWord 的本體，在呼叫端的 transaction 裡執行。headword 須已正規化 */
-export async function saveWordIn(tx: Tx, userId: string, headword: string, cleanedNote: string | null | undefined) {
+export async function saveWordIn(
+  tx: Tx,
+  userId: string,
+  headword: string,
+  cleanedNote: string | null | undefined,
+  context?: SaveContext,
+) {
   const [entry] = await tx.select({ h: entries.headword }).from(entries).where(eq(entries.headword, headword));
   if (!entry) throw new NotFoundError("headword");
 
   const now = new Date();
+  const contextColumns = context ? { contextUrl: context.url, contextSentence: context.sentence } : {};
   const [saved] = await tx
     .insert(savedWords)
-    .values({ userId, headword, note: cleanedNote ?? null, origin: "search" })
+    .values({ userId, headword, note: cleanedNote ?? null, origin: context ? "extension" : "search", ...contextColumns })
     .onConflictDoUpdate({
       target: [savedWords.userId, savedWords.headword],
       set: {
@@ -82,6 +106,7 @@ export async function saveWordIn(tx: Tx, userId: string, headword: string, clean
         updatedAt: now,
         createdAt: sql`CASE WHEN ${savedWords.deletedAt} IS NOT NULL THEN ${now} ELSE ${savedWords.createdAt} END`,
         ...(cleanedNote !== undefined ? { note: cleanedNote } : {}),
+        ...contextColumns,
       },
     })
     .returning({ id: savedWords.id, note: savedWords.note });
@@ -279,6 +304,15 @@ export async function updateNote(userId: string, rawHeadword: string, note: stri
     .where(and(activeSaved(userId), eq(savedWords.headword, headword)))
     .returning({ id: savedWords.id });
   if (updated.length === 0) throw new NotFoundError("saved word");
+}
+
+/** 這個字目前是否在收藏中（擴充元件的查字卡片用） */
+export async function isSaved(userId: string, rawHeadword: string): Promise<boolean> {
+  const [row] = await db
+    .select({ id: savedWords.id })
+    .from(savedWords)
+    .where(and(activeSaved(userId), eq(savedWords.headword, normalizeHeadword(rawHeadword))));
+  return Boolean(row);
 }
 
 /** 單字頁用：這個字是否已收藏、筆記、熟悉度，以及各單字本是否包含它 */

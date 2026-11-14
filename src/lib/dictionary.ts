@@ -324,6 +324,63 @@ async function findLinkableWords(texts: string[]): Promise<string[]> {
   return [...new Set([...direct, ...forms].map((r) => r.word))];
 }
 
+const QUICK_SENSES = 3;
+
+export type QuickLookup = {
+  headword: string;
+  display: string;
+  phonetic: string | null;
+  /** 使用者選到的是變化形時（went），原本選到的字 */
+  form: string | null;
+  /** 最多 3 個常用詞義：有 LLM 現代化詞條時取常用的意思（含英英），否則取 ECDICT 中文釋義 */
+  senses: { pos: string | null; label: string; zh: string | null; en: string | null }[];
+};
+
+/** 擴充元件的查字卡片：輸入可以是變化形（會轉成原形）；查不到回傳 null */
+export async function quickLookup(input: string): Promise<QuickLookup | null> {
+  "use cache";
+  cacheLife("days");
+
+  const query = normalizeHeadword(input);
+  if (!query || query.length > MAX_QUERY_LENGTH) return null;
+  let [entry] = await db
+    .select({ headword: entries.headword, display: entries.display, phonetic: entries.phonetic })
+    .from(entries)
+    .where(eq(entries.headword, query));
+  let form: string | null = null;
+  if (!entry) {
+    const lemma = await findLemma(query);
+    if (!lemma) return null;
+    [entry] = await db
+      .select({ headword: entries.headword, display: entries.display, phonetic: entries.phonetic })
+      .from(entries)
+      .where(eq(entries.headword, lemma));
+    if (!entry) return null;
+    form = query;
+  }
+
+  const modern = await db
+    .select({ pos: entrySenses.pos, label: entrySenses.labelZh, zh: entrySenses.defZh, en: entrySenses.defEn, usage: entrySenses.usage })
+    .from(entrySenses)
+    .where(eq(entrySenses.headword, entry.headword))
+    .orderBy(entrySenses.senseOrder);
+  let senses: QuickLookup["senses"];
+  if (modern.length > 0) {
+    const common = modern.filter((s) => s.usage === "common");
+    senses = (common.length > 0 ? common : modern).slice(0, QUICK_SENSES).map(({ pos, label, zh, en }) => ({ pos, label, zh, en }));
+  } else {
+    const zh = await db
+      .select({ pos: definitions.pos, text: definitions.text })
+      .from(definitions)
+      .where(and(eq(definitions.headword, entry.headword), eq(definitions.lang, "zh-TW")))
+      .orderBy(definitions.sortOrder);
+    senses = withoutTechnicalGlosses(zh)
+      .slice(0, QUICK_SENSES)
+      .map((d) => ({ pos: d.pos, label: d.text, zh: null, en: null }));
+  }
+  return { ...entry, form, senses };
+}
+
 /** 輸入不是詞條但是某字的變化形時，回傳原形（單字頁用來轉址） */
 export async function findLemma(input: string): Promise<string | null> {
   "use cache";
