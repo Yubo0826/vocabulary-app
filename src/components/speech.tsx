@@ -50,13 +50,31 @@ const noopSubscribe = () => () => {};
 const useSpeechSupported = () =>
   useSyncExternalStore(noopSubscribe, () => "speechSynthesis" in window, () => false);
 
+/**
+ * Web Speech API 沒有「性別」屬性，只能用聲音名稱挑。依序優先使用這些女聲（找不到就用該口音的第一個聲音）：
+ * Edge 的自然語音（Online (Natural)）> Chrome 的 Google 語音 > Windows 內建 > macOS／iOS 內建
+ */
+const FEMALE_VOICES: Record<Accent, string[]> = {
+  "en-US": ["Aria", "Jenny", "Ava", "Emma", "Michelle", "Google US English", "Zira", "Samantha", "Allison", "Susan"],
+  "en-GB": ["Sonia", "Libby", "Maisie", "Google UK English Female", "Hazel", "Susan", "Serena", "Kate", "Stephanie"],
+};
+
+function pickVoice(voices: SpeechSynthesisVoice[], lang: Accent): SpeechSynthesisVoice | undefined {
+  const candidates = voices.filter((v) => v.lang.replace("_", "-") === lang);
+  for (const name of FEMALE_VOICES[lang]) {
+    const voice = candidates.find((v) => v.name.includes(name));
+    if (voice) return voice;
+  }
+  return candidates[0];
+}
+
 function speak(text: string, lang: Accent) {
   const synth = window.speechSynthesis;
   synth.cancel();
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = lang;
   utterance.rate = 0.9;
-  const voice = synth.getVoices().find((v) => v.lang.replace("_", "-") === lang);
+  const voice = pickVoice(synth.getVoices(), lang);
   if (voice) utterance.voice = voice;
   synth.speak(utterance);
 }
