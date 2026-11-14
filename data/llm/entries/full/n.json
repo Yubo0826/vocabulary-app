@@ -103,6 +103,252 @@
    ]
   },
   {
+   "headword": "nab",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "逮捕、抓獲",
+     "zh": "警方抓到嫌犯或某人被當場逮住時用。",
+     "en": "to catch someone, especially a criminal, or to catch someone doing something wrong",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "01217701-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "一把抓住、搶走",
+     "zh": "迅速伸手抓住某物或從別人手中奪走。",
+     "en": "to take or grab something quickly and suddenly",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "01215837-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "（棒球）觸殺跑者",
+     "zh": "棒球守備時用球碰觸跑者使其出局。",
+     "en": "in baseball, to touch a runner with the ball to put them out",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01603680-v"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "nacl",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "氯化鈉、食鹽（化學式）",
+     "zh": "化學式 NaCl，指食鹽的主要成分氯化鈉，常見於化學、食品與科普文本。",
+     "en": "the chemical formula for sodium chloride, the main substance in table salt",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "abbr. sodium chloride（縮寫標示）",
+     "reason": "與第一義重複；NaCl 是化學式而非一般縮寫，已併入 senses 說明"
+    }
+   ]
+  },
+  {
+   "headword": "nafta",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "北美自由貿易協定",
+     "zh": "美國、加拿大、墨西哥三國於 1994 年生效的自由貿易協定；2020 年已被 USMCA 取代，但報章回顧舊聞時仍常提到。",
+     "en": "a trade agreement among the US, Canada, and Mexico that removed many trade barriers; it was replaced in 2020",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01094693-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（誤拼）拿鐵咖啡",
+     "reason": "不是這個字的義項；拼法相近的 latte 才是「拿鐵」，此處不列入。"
+    }
+   ]
+  },
+  {
+   "headword": "nag",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "不斷嘮叨、碎念",
+     "zh": "一再小聲抱怨或挑剔，讓對方覺得煩",
+     "en": "to keep complaining to someone in an annoying way about small things",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "00846620-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "不停催促、叮嚀",
+     "zh": "反覆提醒或催促某人去做某事",
+     "en": "to keep reminding or pushing someone to do something",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00612482-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "（煩惱）縈繞心頭",
+     "zh": "某件擔心的事一直盤據在心裡，揮之不去",
+     "en": "if a worry nags at you, it keeps bothering you and will not go away",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01770490-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "愛碎念的人",
+     "zh": "常被用來指老是挑剔、抱怨不停的人",
+     "en": "a person who keeps annoying others by complaining and finding fault",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "10581289-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "老馬、駑馬、劣等競賽馬",
+     "reason": "古義，現代英語幾乎不再這樣用，只在舊文學中出現"
+    }
+   ]
+  },
+  {
+   "headword": "nagging",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "持續不斷的（疼痛、疑慮）",
+     "zh": "形容疼痛或不適感一直存在、反覆發作，讓人很難忽略。",
+     "en": "continuing for a long time and hard to ignore, especially pain or doubt",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "嘮叨的、愛挑剔的",
+     "zh": "形容人不停抱怨或找碴，常指說話方式讓人煩。",
+     "en": "always complaining or criticizing in an annoying way",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01142110-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "揮之不去的（念頭、擔憂）",
+     "zh": "形容某個想法或憂慮一直盤據心頭，怎麼也擺脫不掉。",
+     "en": "of a thought or worry, staying in your mind and not going away",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "nah",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "不、不要（口語）",
+     "zh": "口語的「不」，用來拒絕、否定或表示不同意，比 no 更隨性。",
+     "en": "a casual way of saying no or disagreeing with someone",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "adv.",
+     "label": "算了、不用了",
+     "zh": "朋友之間輕鬆地回絕提議或好意，語氣比 no 更軟。",
+     "en": "used to gently turn down an offer or suggestion in a relaxed way",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "很少、很小",
+     "reason": "舊字典把 nah 誤當成形容詞「很少、很小」，現代英文沒有這個用法，應是混淆所致"
+    }
+   ]
+  },
+  {
+   "headword": "nahum",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "那鴻（聖經先知）",
+     "zh": "《聖經》舊約中的希伯來先知，傳統上認為是〈那鴻書〉的作者。",
+     "en": "a Hebrew prophet in the Old Testament who is traditionally believed to have written the Book of Nahum",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "那鴻書",
+     "zh": "《聖經》舊約十二小先知書之一，內容預言尼尼微城的毀滅。",
+     "en": "a book in the Old Testament that foretells the destruction of the city of Nineveh",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "nail",
    "senses": [
     {
@@ -198,6 +444,26 @@
    ]
   },
   {
+   "headword": "nairobi",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "奈洛比（肯亞首都）",
+     "zh": "肯亞的首都，也是東非重要的商業與交通城市。",
+     "en": "the capital city of Kenya, in East Africa",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "內羅比（舊譯）",
+     "reason": "舊式音譯，台灣現多譯為「奈洛比」"
+    }
+   ]
+  },
+  {
    "headword": "naive",
    "senses": [
     {
@@ -249,6 +515,101 @@
     }
    ],
    "omitted": []
+  },
+  {
+   "headword": "naively",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "天真地、單純地",
+     "zh": "以相信別人、不疑有他的方式做事，常用來暗示這樣的人太容易相信而吃虧。",
+     "en": "in a way that shows you trust others and do not expect bad things to happen",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00408067-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "（想法）過於天真地",
+     "zh": "用來批評某個想法或說法太簡單、沒考慮到現實的複雜面。",
+     "en": "in a way that is too simple and does not consider how complicated things really are",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00408067-r"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "無邪地；天真爛漫地",
+     "reason": "「天真爛漫」偏文學、帶褒義的舊式說法，現代多改用「天真地、單純地」，且與第一義重複，故不另列。"
+    }
+   ]
+  },
+  {
+   "headword": "naivete",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "天真、單純",
+     "zh": "因為經驗不足或心地單純，而容易相信別人、看不清現實的樣子。",
+     "en": "the quality of being simple and trusting because you have little experience of the world",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04887768-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "純真、不造作",
+     "zh": "稱讚人自然坦率、不虛偽、不世故，帶正面意味。",
+     "en": "a natural, honest way of behaving that shows no attempt to hide anything",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "天真爛漫、無邪",
+     "reason": "與「天真、單純」意思重疊，已合併；「無邪」偏文學用法，現代少單獨使用。"
+    }
+   ]
+  },
+  {
+   "headword": "naivety",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "天真、單純",
+     "zh": "因為缺乏社會經驗而容易相信別人、把事情想得太簡單，有時帶點不諳世事的意味。",
+     "en": "the quality of trusting others too easily or not understanding how complicated the world can be",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04887768-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "天真幼稚的想法、言行",
+     "zh": "指某人說的話或做的事顯得不夠成熟、不懂現實，常用來批評或調侃。",
+     "en": "a remark or action that shows someone does not understand how the world really works",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "無邪的行為",
+     "reason": "舊字典分義過細，現代通常直接歸入「天真、單純」這個意思，不另立一義"
+    }
+   ]
   },
   {
    "headword": "naked",
@@ -305,6 +666,76 @@
     {
      "meaning": "赤貧的",
      "reason": "舊字典義，現代少用，通常說 very poor 或 destitute，不單獨用 naked 表達"
+    }
+   ]
+  },
+  {
+   "headword": "nakedness",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "裸體、赤裸",
+     "zh": "身體沒有穿衣服或沒有覆蓋物的狀態。",
+     "en": "the state of not wearing any clothes or having no covering",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "14479586-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "坦率、毫不掩飾",
+     "zh": "態度開放、不隱藏自己想法或行為的狀態。",
+     "en": "the quality of being open and not hiding your actions or feelings",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "04661423-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "荒涼、光禿",
+     "zh": "形容地方空曠、沒有遮蔽或生氣，帶有冷清的感覺。",
+     "en": "a bare, empty and lonely quality in a place or situation",
+     "usage": "less_common",
+     "register": [
+      "literary"
+     ],
+     "synsets": [
+      "14549150-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "明顯",
+     "reason": "舊字典把 naked 的「明顯的」義直接套成名詞，現代英文幾乎不用 nakedness 表達「明顯」，屬誤譯"
+    }
+   ]
+  },
+  {
+   "headword": "nam",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "全國製造商協會（美國）",
+     "zh": "美國全國製造商協會（NAM）的縮寫，常見於美國產業與政策新聞中。",
+     "en": "short for National Association of Manufacturers, a US trade group that represents manufacturers",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（其他可能的字義）",
+     "reason": "參考資料僅列此一專有名詞釋義，WordNet 無對應詞義，無其他可整理的意思"
     }
    ]
   },
@@ -424,6 +855,76 @@
    ]
   },
   {
+   "headword": "named",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "指定的、指名的",
+     "zh": "用來表示某人或某物已被明確指定或點名，常接在職位或角色後面。",
+     "en": "officially chosen or stated to have a particular job, role, or name",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "以……命名的",
+     "zh": "用來說明某物是以某人或某事物來取名，常見於 be named after 的用法。",
+     "en": "given the name of a person or thing in order to honor or remember them",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "被點名的（壞事）",
+     "zh": "指被公開指出涉及某件不好的事，例如被點名為嫌疑人或犯錯者。",
+     "en": "publicly mentioned as being involved in something bad",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "nameless",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "無名的、不知名的",
+     "zh": "指某人的名字不為人知，或某事物的來源、作者不明。",
+     "en": "not known by name, or having an unknown source or maker",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00121594-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "匿名的、不具名的",
+     "zh": "刻意不公開姓名或身分，常用於描述捐款人、消息來源等。",
+     "en": "choosing not to give one's name, especially to keep it secret",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "難以言喻的、莫名的",
+     "zh": "形容某種感覺或恐懼強烈到難以用言語描述，帶文學色彩。",
+     "en": "too strong or strange to be described in words",
+     "usage": "less_common",
+     "register": [
+      "literary"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "namely",
    "senses": [
     {
@@ -446,6 +947,88 @@
      "reason": "與「即、也就是」意思重疊，合併為同一詞義"
     }
    ]
+  },
+  {
+   "headword": "namesake",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "同名的人、同名者",
+     "zh": "指和另一個人名字相同的人，常用來說明某人是以誰的名字命名的。",
+     "en": "a person who has the same name as another person, often because they were named after them",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10364653-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "同名的事物",
+     "zh": "指和另一個人、地方或事物同名的東西，例如同名的小說或城市。",
+     "en": "a thing such as a book, place, or company that has the same name as another",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "namibia",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "納米比亞",
+     "zh": "非洲西南部的國家，首都為溫荷克，官方語言包含英語。",
+     "en": "a country in southwestern Africa whose capital is Windhoek",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "naming",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "命名、取名",
+     "zh": "替人或事物取名字的行為或過程",
+     "en": "the act of giving a name to someone or something",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07245162-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "任命、指派",
+     "zh": "把某人安插到某個職位，通常不是經過選舉",
+     "en": "the act of choosing someone for a position, usually without an election",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00164600-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "命名的、取名的",
+     "zh": "用在名詞前，表示與取名有關，如「命名儀式」",
+     "en": "used before a noun to mean related to giving names",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00725830-s"
+     ]
+    }
+   ],
+   "omitted": []
   },
   {
    "headword": "nan",
@@ -477,6 +1060,39 @@
     }
    ],
    "omitted": []
+  },
+  {
+   "headword": "nana",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "奶奶、外婆（口語）",
+     "zh": "小孩或家人之間對祖母、外婆的親暱稱呼，也常當面叫。",
+     "en": "a child's word for a grandmother, or a name used to talk to her",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "保姆、奶媽（舊式）",
+     "zh": "早期英語裡對照顧小孩的女性幫傭或奶媽的稱呼，現代日常已少見。",
+     "en": "a woman employed to take care of a young child, used especially in the past",
+     "usage": "rare",
+     "register": [
+      "old"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "北美報業聯盟（NANA）",
+     "reason": "專有名詞縮寫，指特定組織，不是單字本身的通用詞義"
+    }
+   ]
   },
   {
    "headword": "nancy",
@@ -534,6 +1150,56 @@
      "reason": "罕用義，現代一般場合幾乎不用 nanny 指母山羊，多說 female goat 或 nanny goat"
     }
    ]
+  },
+  {
+   "headword": "nanotechnology",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "奈米技術、奈米科技",
+     "zh": "在極小尺度（約 1 到 100 奈米）操控原子與分子來製造材料或元件的技術，常見於半導體、醫療與材料科學。",
+     "en": "the science and engineering of controlling matter on a very small scale, usually between 1 and 100 nanometers",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "06144350-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "纖技術",
+     "reason": "舊字典的誤譯或罕用譯法，現代中文一律稱「奈米技術」。"
+    }
+   ]
+  },
+  {
+   "headword": "naomi",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "娜歐米（女子名）",
+     "zh": "常見的英文女子名，台灣常譯作「娜歐米」或「內奧米」。",
+     "en": "a common female first name",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "《聖經》中的娜歐米",
+     "zh": "《聖經・路得記》中的人物，是路得的婆婆。",
+     "en": "a woman in the Bible, the mother-in-law of Ruth",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
   },
   {
    "headword": "nap",
@@ -604,6 +1270,94 @@
    ]
   },
   {
+   "headword": "napa",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "大白菜、結球白菜",
+     "zh": "東亞常見的蔬菜，葉片包成球狀、莖部寬厚，常煮湯或醃漬。",
+     "en": "a leafy vegetable with a thick white stalk and a round head, common in East Asian cooking",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "11899277-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "納帕（加州地名）",
+     "zh": "美國加州北部的葡萄酒產區與城市名，常出現在酒標上。",
+     "en": "a city and wine region in northern California, often seen on wine labels",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "全國演員協會（National Association of Performing Artists）的縮寫",
+     "reason": "專有名詞縮寫，非一般字義，現代少見"
+    },
+    {
+     "meaning": "美國國家汽車配件協會（National Automotive Parts Association）的縮寫",
+     "reason": "專有名詞縮寫，屬特定產業名稱，非一般字義"
+    }
+   ]
+  },
+  {
+   "headword": "nape",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "後頸、頸背",
+     "zh": "脖子後面、連接頭部與背部的部位，常見於「後頸痛」、「後頸的頭髮」等說法。",
+     "en": "the back part of your neck",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "05555029-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "項（脖子前方）",
+     "reason": "舊字典把「項」與「頸」混列，容易誤解；現代英文 nape 專指脖子後方，不是整個脖子"
+    }
+   ]
+  },
+  {
+   "headword": "napier",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "納皮爾（紐西蘭港市）",
+     "zh": "紐西蘭北島東岸的港市，地名，通常大寫 Napier。",
+     "en": "a port city on the east coast of New Zealand's North Island",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "納皮爾草、象草",
+     "zh": "一種高大牧草，常寫成 Napier grass，供牲畜食用。",
+     "en": "a tall tropical grass grown as food for farm animals",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "紫狼尾草",
+     "reason": "與「納皮爾草、象草」為同一植物的不同中文譯名，已合併"
+    }
+   ]
+  },
+  {
    "headword": "napkin",
    "senses": [
     {
@@ -624,6 +1378,21 @@
      "reason": "舊義，現代英文已不用 napkin 指尿布，一般說 diaper（英式口語 nappy）"
     }
    ]
+  },
+  {
+   "headword": "naples",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "那不勒斯（義大利城市）",
+     "zh": "義大利南部的大城市，以披薩、海灣與維蘇威火山聞名。",
+     "en": "a large city in southern Italy, famous for pizza, its bay, and a nearby volcano",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
   },
   {
    "headword": "napoleon",
@@ -660,6 +1429,141 @@
      "synsets": [
       "00494753-n"
      ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "napoleonic",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "拿破崙的、拿破崙時代的",
+     "zh": "指與拿破崙・波拿巴本人、他的統治或那個時代有關的事物，最常見於「拿破崙戰爭」、「拿破崙時代」等說法。",
+     "en": "relating to Napoleon Bonaparte, his rule, or the period of his wars",
+     "usage": "common",
+     "register": [
+      "formal",
+      "technical"
+     ],
+     "synsets": [
+      "03047390-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "拿破崙式的、像拿破崙的",
+     "zh": "形容某人野心勃勃、氣勢強悍，或作風像拿破崙一樣想稱霸、掌控全局。",
+     "en": "like Napoleon in character, especially very ambitious or eager to dominate",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "03047390-a"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "拿破崙一家的",
+     "reason": "只是把「拿破崙」加上家族範圍，現代幾乎不單獨這樣用，已併入「拿破崙的」這個意思。"
+    }
+   ]
+  },
+  {
+   "headword": "nappy",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "尿布",
+     "zh": "包在嬰兒身上、用來接住排泄物的布或紙製品，英式英語常用，美式多說 diaper。",
+     "en": "a piece of cloth or soft paper fastened around a baby to catch waste",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03193215-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（頭髮）緊密捲曲的",
+     "zh": "形容頭髮捲得很緊、成小圈狀，多用於非裔髮質的描述。",
+     "en": "describing hair that grows in small, tight curls",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01034017-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "菜盆",
+     "reason": "舊字典的罕用義，現代幾乎不用，且與尿布義無關"
+    },
+    {
+     "meaning": "起毛的、多毛的",
+     "reason": "舊義，現代英語已不用這個意思"
+    },
+    {
+     "meaning": "酒精含量高的",
+     "reason": "舊義，現代已不使用"
+    }
+   ]
+  },
+  {
+   "headword": "narcissism",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "自戀、自我陶醉",
+     "zh": "過度關注自己、把自己看得比什麼都重要，常帶貶義；也指心理學上的自戀人格傾向。",
+     "en": "too much interest in and admiration for yourself, often with little concern for others",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04842491-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "自戀（心理學術語）",
+     "zh": "心理學、精神醫學中用來指一種人格特質或障礙的專業說法。",
+     "en": "a personality trait or disorder in which someone has an inflated sense of their own importance",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "narcissistic",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "自戀的、自我中心的",
+     "zh": "形容一個人過度關注自己、覺得自己比別人重要，常帶貶意。",
+     "en": "too focused on yourself and believing you are better or more important than others",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02105974-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（心理學）自戀型人格的",
+     "zh": "心理學專業用語，指符合自戀型人格特質的狀態，如自戀型人格障礙。",
+     "en": "relating to a personality type marked by an exaggerated sense of self-importance",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
     }
    ],
    "omitted": []
@@ -710,6 +1614,85 @@
     {
      "meaning": "催眠的（字面指使人入睡）",
      "reason": "與「麻醉的、令人昏沉」意思重疊，現代少單獨使用"
+    }
+   ]
+  },
+  {
+   "headword": "narrate",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "敘述、講述（故事、事件）",
+     "zh": "把發生的事或故事用口語或文字說出來。",
+     "en": "to tell a story or describe events in speech or writing",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00955248-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "擔任旁白、配旁白",
+     "zh": "在電影、紀錄片或影片中為畫面配音說明。",
+     "en": "to speak the words that describe what is happening in a film or video",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00956303-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "說明",
+     "reason": "與「敘述」意思重疊，現代多說 explain，不另立詞義"
+    }
+   ]
+  },
+  {
+   "headword": "narration",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "敘述、講述",
+     "zh": "把事件或經過說給別人聽的行為，常用於說故事或描述事情。",
+     "en": "the act of telling someone about events or a series of events",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07235433-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "旁白、敘事（影視、廣播）",
+     "zh": "電影、電視、廣播或遊戲中，由旁白者說出的說明或故事內容。",
+     "en": "spoken words that describe or tell the story in a film, TV show, or game",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07235754-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "敘述文、記敘文",
+     "zh": "以講述事件經過為主的文章或文體，常見於學校作文或文學分類。",
+     "en": "a piece of writing that tells a story or describes events",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（修辭學）演說中陳述事實的第二部分",
+     "reason": "專業領域過窄，現代一般英文幾乎不用。"
     }
    ]
   },
@@ -879,6 +1862,64 @@
    ]
   },
   {
+   "headword": "narrowing",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "變窄、縮小",
+     "zh": "指寬度或範圍逐漸變小的過程，常見於道路、血管、差距等。",
+     "en": "the process of becoming less wide or smaller in range",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "05078196-n",
+      "13539766-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "收窄（動作）",
+     "zh": "指把某物弄得更窄的動作，例如把衣服改窄、縮小路幅。",
+     "en": "the act of making something narrower",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00408228-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "逐漸變窄的",
+     "zh": "形容形狀或寬度慢慢縮小，如窄路、窄裙。",
+     "en": "becoming gradually less wide",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "02573639-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（情勢）緊縮的、受限的",
+     "zh": "形容環境或條件越來越限制自由，多用於書面或正式論述。",
+     "en": "making freedom or choices more limited",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "02572965-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "[計] 縮小性",
+     "reason": "舊字典的電腦領域直譯，現代英文不這樣用，屬過窄的專業用法"
+    }
+   ]
+  },
+  {
    "headword": "narrowly",
    "senses": [
     {
@@ -934,6 +1975,83 @@
    ]
   },
   {
+   "headword": "narrowness",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "狹窄、窄小",
+     "zh": "指空間、寬度或範圍很窄的狀態。",
+     "en": "the state of being narrow, with little width or space",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "05144053-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "狹隘、偏執",
+     "zh": "指心胸、觀點或態度不夠開放，難以接受不同想法。",
+     "en": "a tendency to be unwilling to accept different opinions or ways of behaving",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "06215146-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "侷限、範圍狹小",
+     "zh": "指範圍、種類或可能性受到限制，不夠寬廣。",
+     "en": "a limit on the range or variety of something",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "05855153-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "些微差距、小幅度",
+     "zh": "指差距、多數或勝利等非常小。",
+     "en": "a very small difference or amount by which something is won or lost",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "05128395-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "小氣",
+     "reason": "舊字典釋義，現代英文中幾乎不用 narrowness 表達「小氣」，此義多由 meanness、stinginess 等詞表達。"
+    }
+   ]
+  },
+  {
+   "headword": "nasa",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "美國太空總署",
+     "zh": "美國聯邦政府機構，負責太空探索、航空與相關研究；新聞常以 NASA 稱之。",
+     "en": "the US government agency that runs space travel and space research",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "08143272-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "國家航空和宇宙航行局",
+     "reason": "舊譯名，現代中文媒體與日常多用「美國太空總署」或直接說 NASA"
+    }
+   ]
+  },
+  {
    "headword": "nasal",
    "senses": [
     {
@@ -984,6 +2102,45 @@
      "reason": "舊字典義，與鼻音義混用，現代不這樣用"
     }
    ]
+  },
+  {
+   "headword": "nascent",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "新興的、初期的",
+     "zh": "形容事物剛開始形成、正在發展的階段，常用於產業、趨勢或想法。",
+     "en": "just beginning to develop or grow, and likely to become more important later",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00003356-a"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "發生中的",
+     "reason": "中文舊釋義用語，現代英文不強調「正在發生」，而是強調「剛起步、尚未成熟」。"
+    }
+   ]
+  },
+  {
+   "headword": "nash",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "納什（姓氏）",
+     "zh": "英文姓氏，常見於人名，如數學家約翰・納許（John Nash）。",
+     "en": "a family name, especially of the mathematician John Nash",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
   },
   {
    "headword": "nasty",
@@ -1044,6 +2201,43 @@
      "synsets": [
       "00426832-s"
      ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "nat",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "守護神、守護精靈",
+     "zh": "緬甸或東南亞民間信仰中，附在人或物上的守護靈，常見於文化、宗教與旅遊報導。",
+     "en": "a spirit that is believed to protect a person, place, or thing, especially in Myanmar and nearby regions",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "精靈（泛指）",
+     "reason": "過於籠統，現代英文中精靈一般用 spirit、elf 等字，nat 專指東南亞的守護靈，不單獨作泛稱"
+    }
+   ]
+  },
+  {
+   "headword": "natasha",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "娜塔莎（女子名）",
+     "zh": "源自俄語的常見女性名字，英文中也用來稱呼俄羅斯或東歐女性角色。",
+     "en": "a female first name of Russian origin, common in English-speaking countries",
+     "usage": "common",
+     "register": [],
+     "synsets": []
     }
    ],
    "omitted": []
@@ -1191,6 +2385,58 @@
    ]
   },
   {
+   "headword": "nationalisation",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "國有化、收歸國有",
+     "zh": "政府把私人企業或資產收歸國家所有，常見於政治、經濟新聞。",
+     "en": "the act of taking private companies or property under government ownership",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01154283-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "建國、形成民族",
+     "reason": "罕用且與現代常見的「國有化」無關，現代幾乎不用這個字表達建國"
+    },
+    {
+     "meaning": "使具有民族特色",
+     "reason": "罕用義，現代英語幾乎不用"
+    }
+   ]
+  },
+  {
+   "headword": "nationalised",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "國有的、收歸國有的",
+     "zh": "形容原本民營的企業或資產被政府接管、收歸國有。",
+     "en": "owned or controlled by the government after being taken over from private owners",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "v.",
+     "label": "國有化、收歸國有",
+     "zh": "指政府把民營企業或產業收歸國有的動作，是 nationalise 的過去式與過去分詞。",
+     "en": "made a private company or industry owned and controlled by the government",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "nationalism",
    "senses": [
     {
@@ -1275,6 +2521,33 @@
    "omitted": []
   },
   {
+   "headword": "nationalistic",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "民族主義的、國家主義的",
+     "zh": "強調自己國家的利益與文化，常帶有排他或狂熱意味",
+     "en": "strongly supporting your own nation and its interests, often in a way that is too extreme",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01744607-s",
+      "01572485-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "愛國的、擁護本國的",
+     "zh": "單純表達對自己國家的認同與支持，語氣較中性",
+     "en": "showing strong pride in and support for your own country",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "nationality",
    "senses": [
     {
@@ -1308,6 +2581,117 @@
     {
      "meaning": "民族性",
      "reason": "現代英文少用 nationality 表達「民族性」，通常說 national character，此義已過時。"
+    }
+   ]
+  },
+  {
+   "headword": "nationalization",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "國有化",
+     "zh": "政府把原本民營的企業、土地或產業收歸國家所有，常見於政治與經濟新聞。",
+     "en": "the act of taking a private company, land, or industry under the control of the government",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01154283-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "國家化、本土化",
+     "zh": "讓機構、制度或文化帶有本國色彩、由本國人主導的過程，例如教育或宗教的國家化。",
+     "en": "the process of making an institution or activity belong to and reflect a particular country",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "01154795-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "同化、歸化",
+     "reason": "舊字典把 nationalization 誤譯為同化、歸化，那其實是 naturalization 的意思，現代英文沒有這個用法"
+    },
+    {
+     "meaning": "形成民族、建國",
+     "reason": "古義與罕用義，現代一般不用這個字表達建國，多說 formation of a nation"
+    }
+   ]
+  },
+  {
+   "headword": "nationalize",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "收歸國有、國有化",
+     "zh": "由政府接管原本屬於私人或企業的產業、公司或資產。",
+     "en": "to bring a private company or industry under the control or ownership of the government",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00412472-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "使具國家色彩、民族化",
+     "zh": "讓某事物帶有國家或民族的特質，例如把地方性機構、文化或產業變成全國性的。",
+     "en": "to make something national in character or bring it under national scope",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00579372-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "使歸化（取得國籍）",
+     "reason": "舊字典誤譯；表示「使歸化、入籍」的是 naturalize，不是 nationalize，現代英文無此用法。"
+    },
+    {
+     "meaning": "使成國家",
+     "reason": "語意不明且現代幾乎不用，屬舊字典的罕見列法。"
+    }
+   ]
+  },
+  {
+   "headword": "nationalized",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "國有化的、收歸國有的",
+     "zh": "指原本私人擁有的企業、土地或產業被政府收歸國有、改由政府經營。",
+     "en": "taken from private owners and put under the control of the government",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "國營的、公營的",
+     "zh": "形容某個產業或機構由政府出資經營、不屬於私人。",
+     "en": "owned and run by the government rather than by private companies",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "國有的",
+     "reason": "與「國營的」意思重複，已合併處理"
     }
    ]
   },
@@ -1600,6 +2984,223 @@
    ]
   },
   {
+   "headword": "naturalism",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "自然主義（藝術、文學）",
+     "zh": "十九世紀興起的創作路線，主張像實錄一樣細膩、忠實地描寫現實生活。",
+     "en": "a style in art and literature that tries to show life exactly as it is, with close attention to real details",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "08486468-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "自然主義（哲學）",
+     "zh": "哲學立場，認為世界的一切都能用科學與自然法則解釋，不需要訴諸神靈或超自然力量。",
+     "en": "the belief that everything in the world can be explained by science and natural causes, without God or the supernatural",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "05982239-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "本能行動",
+     "reason": "舊字典的誤譯，應是 natural instinct 之類的說法，與 naturalism 無關"
+    }
+   ]
+  },
+  {
+   "headword": "naturalist",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "博物學家、自然觀察者",
+     "zh": "研究動植物等自然生態、熟悉自然史的專家或愛好者。",
+     "en": "a person who studies plants and animals and knows a lot about the natural world",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10366245-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "自然主義者（哲學）",
+     "zh": "主張世界可用科學方法理解的哲學立場支持者。",
+     "en": "a person who believes the world can be explained by science alone",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "10366686-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "naturalistic",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "自然主義的、寫實的",
+     "zh": "指藝術、文學或戲劇以寫實手法呈現真實生活，不加以美化或抽象化。",
+     "en": "showing life as it really is in art, writing, or drama, without making it prettier or more abstract",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01987050-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "自然的、仿自然的",
+     "zh": "指布置或環境模仿自然樣貌，看起來像在野外而非人工造景。",
+     "en": "made to look like nature, as in a garden or animal enclosure that copies a wild setting",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "（研究）實地觀察的",
+     "zh": "指研究方法在自然環境中觀察人或動物，而非在實驗室控制條件下進行。",
+     "en": "based on watching people or animals in their normal surroundings rather than in a lab",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "自然的（泛指）",
+     "reason": "舊字典把 natural 的泛義「自然的」直接套在此字，現代英文中 naturalistic 不這樣單獨使用，屬誤譯"
+    }
+   ]
+  },
+  {
+   "headword": "naturalization",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "歸化（取得國籍）",
+     "zh": "外國人依法取得該國國籍、成為公民的程序。",
+     "en": "the legal process by which a foreign person becomes a citizen of a country",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01190110-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（動植物的）歸化、馴化",
+     "zh": "外來動植物被引入新地區後成功存活、繁衍並融入當地生態。",
+     "en": "the process of bringing a plant or animal to a new place where it then lives and grows well",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00922770-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（外來詞的）本土化發音",
+     "zh": "借用的外語詞在發音上被調整成符合本地語音系統。",
+     "en": "the act of changing how a borrowed word is said so that it fits the sounds of the local language",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00085462-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "使合乎自然、自然化",
+     "reason": "罕用且抽象，現代幾乎只出現在哲學或特定論述中，一般學習者不會遇到"
+    },
+    {
+     "meaning": "移入、移植",
+     "reason": "舊字典的籠統譯法，與「動植物歸化」詞義重複，且非現代獨立用法"
+    }
+   ]
+  },
+  {
+   "headword": "naturalized",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "歸化的、入籍的",
+     "zh": "指外國人取得某國國籍、成為該國公民。",
+     "en": "having officially become a citizen of a country that is not your own",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "（動植物）歸化的、已適應野生的",
+     "zh": "指外來物種被引進後在當地自然繁殖、像原生種一樣生存。",
+     "en": "introduced from another area and now growing or living wild there",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01039104-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（庭園）仿自然種植的",
+     "zh": "形容園藝造景刻意種得像自然生長一樣。",
+     "en": "planted in a way that looks as if it grew wild naturally",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01837507-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "接收（外國人）入籍、使歸化（動詞用法）",
+     "reason": "這是動詞 naturalize 的過去式與過去分詞，不是形容詞本身的獨立詞義；學習者查動詞條即可"
+    },
+    {
+     "meaning": "吸收（外來語、觀念等）",
+     "reason": "屬動詞 naturalize 的用法，且現代多見於語言學等特定領域，不列為本形容詞詞義"
+    }
+   ]
+  },
+  {
    "headword": "naturally",
    "senses": [
     {
@@ -1721,6 +3322,61 @@
    ]
   },
   {
+   "headword": "natwest",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "國民西敏寺銀行",
+     "zh": "英國的大型銀行，正式名稱是 National Westminster Bank，常簡稱 NatWest。",
+     "en": "a large British bank; the short name of National Westminster Bank",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "naught",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "零、無",
+     "zh": "數字 0，或表示「什麼都沒有」，常見於文學或固定說法中。",
+     "en": "the number zero, or nothing at all",
+     "usage": "less_common",
+     "register": [
+      "literary",
+      "old"
+     ],
+     "synsets": [
+      "13762308-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "徹底失敗、一事無成",
+     "zh": "指完全失敗的人或計畫，語氣較強。",
+     "en": "a person or plan that has completely failed",
+     "usage": "rare",
+     "register": [
+      "literary"
+     ],
+     "synsets": [
+      "00067973-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "無價值的、無用的（形容詞）",
+     "reason": "舊字典的形容詞用法，現代英文幾乎不用 naught 當形容詞，改用 worthless、useless"
+    }
+   ]
+  },
+  {
    "headword": "naughty",
    "senses": [
     {
@@ -1785,6 +3441,30 @@
     {
      "meaning": "暈船",
      "reason": "只是噁心的一種情境，已含在第一個詞義中，不另立義項"
+    }
+   ]
+  },
+  {
+   "headword": "nautical",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "航海的、海事的",
+     "zh": "與船隻、航行或船員有關的，常用於航海術語或海事領域。",
+     "en": "connected with ships, sailing, or the work of sailors",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "02900947-a"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "海上的",
+     "reason": "與「航海的、海事的」意思重疊，已合併為同一詞義"
     }
    ]
   },
@@ -1865,6 +3545,36 @@
      "reason": "舊字典的誤譯；輪子的轂心英文是 hub，不是 nave"
     }
    ]
+  },
+  {
+   "headword": "navel",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "肚臍",
+     "zh": "人體腹部中央的凹陷處，是臍帶脫落後留下的痕跡。",
+     "en": "the small hollow mark in the middle of a person's stomach where the umbilical cord was attached",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "05564228-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "中心、中央",
+     "zh": "用於書面或比喻說法，指某個地方或事物的正中央。",
+     "en": "the middle part or central point of a place or thing",
+     "usage": "less_common",
+     "register": [
+      "literary"
+     ],
+     "synsets": [
+      "08541929-n"
+     ]
+    }
+   ],
+   "omitted": []
   },
   {
    "headword": "navigate",
@@ -1987,6 +3697,90 @@
    ]
   },
   {
+   "headword": "navigational",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "導航的、航行的",
+     "zh": "與導航、定位方向或船舶、飛機航行有關的。",
+     "en": "relating to the act of finding your way or directing a ship, aircraft, or vehicle",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "02920319-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（網站）導覽的",
+     "zh": "指網站或應用程式用來協助使用者找到頁面、切換位置的設計或功能。",
+     "en": "relating to ways of moving around a website or app to find different pages",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "[經] 船舶的",
+     "reason": "舊字典把 navigation 的「航運、航海業」義硬套成形容詞，現代英文不這樣用；與「導航的」詞義重複。"
+    }
+   ]
+  },
+  {
+   "headword": "navigator",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "導航員、領航員",
+     "zh": "負責規劃並掌握船隻或飛機航向的人員。",
+     "en": "a person whose job is to plan and direct the course of a ship or aircraft",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "10565985-n",
+      "10368096-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（網頁）瀏覽器導覽功能",
+     "zh": "網站上協助使用者瀏覽各頁面的選單或工具，常以複數 navigators 或 navigation 出現。",
+     "en": "a set of links or tools on a website that help users move between pages",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "（早期）航海探險家",
+     "zh": "指過去靠船隻探索未知海域與地區的人。",
+     "en": "in the past, a person who traveled by ship to explore unknown places",
+     "usage": "less_common",
+     "register": [
+      "old"
+     ],
+     "synsets": [
+      "10367614-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "航海家（泛指以航海為業或擅長航海的人）",
+     "reason": "舊字典的籠統譯法，現代多指船上或機上負責航向的專業人員，已併入第一個詞義"
+    }
+   ]
+  },
+  {
    "headword": "navy",
    "senses": [
     {
@@ -2026,6 +3820,120 @@
     {
      "meaning": "菸蒂",
      "reason": "舊字典義，現代英語幾乎不用 navy 表示菸蒂，多作 navy 的罕見俚語，學習者不必學"
+    }
+   ]
+  },
+  {
+   "headword": "naw",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "不、不是（口語否定）",
+     "zh": "口語中表示「不」或否定回答，是 no 的隨性說法。",
+     "en": "used as a casual way of saying no or disagreeing",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "用以表示否定的回答（舊字典標為俚語）",
+     "reason": "與現列詞義重複，僅是同一用法的舊式說明"
+    }
+   ]
+  },
+  {
+   "headword": "nay",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "不僅如此、而且",
+     "zh": "用來說明前面提到的還不夠，後面要補充更進一步的事，常見於正式或書面語。",
+     "en": "used to add something more to what you have just said, meaning not only that",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00409589-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "不、否（口頭表決）",
+     "zh": "在會議或議會口頭表決時表示反對，與 yea（贊成）相對。",
+     "en": "used to say no when voting by voice in a meeting",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "07219870-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "反對票、反對者",
+     "zh": "指表決時投下反對的一方或反對票的數量。",
+     "en": "a vote or voter against a proposal, or the total number of such votes",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "07219870-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "否、不（一般否定回答）",
+     "reason": "現代日常口語已不用 nay 表示「不」，只剩表決或戲謔用法，一般否定由 no 取代"
+    }
+   ]
+  },
+  {
+   "headword": "naylor",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "內勒（英文姓氏）",
+     "zh": "英格蘭常見姓氏，如作家內勒（Naylor）等；現代英語中幾乎只以姓氏出現。",
+     "en": "a common English family name, used as a surname",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "人名（英）內勒",
+     "reason": "與 senses 中的姓氏義重複，不另列"
+    }
+   ]
+  },
+  {
+   "headword": "naysayer",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "唱反調的人、反對者",
+     "zh": "對某個想法或計畫抱持負面態度、經常出聲反對的人。",
+     "en": "a person who often says that an idea or plan will not work",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10369282-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "拒絕者、否認者",
+     "reason": "只是把 naysayer 拆字直譯，現代英文不這樣分開使用，已併入「唱反調的人」這個意思"
     }
    ]
   },
@@ -2073,6 +3981,177 @@
     {
      "meaning": "與某種社會主義有關的",
      "reason": "WordNet 的細分詞義，實務上已含在「納粹的」這個意思裡，且一般學習者不需要單獨區分"
+    }
+   ]
+  },
+  {
+   "headword": "nazism",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "納粹主義",
+     "zh": "二十世紀德國希特勒所推行的極右政治意識形態，強調種族主義與獨裁。",
+     "en": "the far-right political ideas of Hitler's Germany, based on racism and total control by a leader",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "08383367-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "ncc",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "國家通訊傳播委員會",
+     "zh": "台灣主管電信、廣播與電視等通訊傳播事務的政府機關，新聞與政策報導中常以縮寫稱之。",
+     "en": "the government body in Taiwan that regulates telecommunications, broadcasting, and media",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "（美國）國家兒童醫院",
+     "zh": "美國大型兒童醫院的名稱縮寫，多見於醫療機構名稱或相關報導。",
+     "en": "a short name for a large children's hospital in the US",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "網路控制中心（Network Control Center）",
+     "reason": "電腦領域的專業術語，現代一般英文幾乎不用，且與一般學習者無關"
+    }
+   ]
+  },
+  {
+   "headword": "ncr",
+   "senses": [
+    {
+     "pos": "abbr.",
+     "label": "NCR 公司（自動提款機、收銀機廠商）",
+     "zh": "美國一家做收銀機、ATM 與零售系統的科技公司，常出現在財經與科技新聞中。",
+     "en": "a US technology company known for cash registers, ATMs, and retail systems",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "abbr.",
+     "label": "無碳複寫紙",
+     "zh": "舊式表單用語，指不用碳紙就能複寫的多聯單紙張，現在多被電子表單取代。",
+     "en": "paper that copies writing onto the sheets below it without carbon paper",
+     "usage": "rare",
+     "register": [
+      "technical",
+      "old"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（美國）全國現金出納機（公司）",
+     "reason": "此為公司舊全名，現代只用 NCR 這個縮寫指公司本身，已與第一義合併"
+    }
+   ]
+  },
+  {
+   "headword": "nct",
+   "senses": [
+    {
+     "pos": "abbr.",
+     "label": "非接觸式眼壓計",
+     "zh": "眼科檢查用來隔空測量眼壓的儀器縮寫。",
+     "en": "a device that measures pressure inside the eye without touching it",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "神經脊腫瘤（neural crest tumor）",
+     "reason": "參考資料把縮寫的英文全稱寫錯，且此義在現代英文中幾乎不用；NCT 在現代最常見的是韓國男團名（NCT）與「全國職業資格考試」等縮寫，與本詞條的醫學縮寫無關"
+    }
+   ]
+  },
+  {
+   "headword": "ne",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "原姓……的、本名……的",
+     "zh": "用在已婚女性名字前，表示她婚前的娘家姓氏（源自法文 née）。",
+     "en": "used before a married woman's family name to show the name she had before marriage",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "東北（方位）",
+     "zh": "羅盤上介於北與東之間的方位，即東北；現代英語通常寫成 northeast。",
+     "en": "the direction halfway between north and east",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "13854042-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "氖（化學元素）",
+     "zh": "一種無色無味的惰性氣體，常用於霓虹燈；現代通常寫成 neon。",
+     "en": "a colorless gas that glows red in a tube and is used in lights",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "14670330-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "neal",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "尼爾（人名）",
+     "zh": "常見的英文人名，多為男性名字或姓氏，音譯為尼爾。",
+     "en": "a common English first name or family name for a man",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（古）使冷卻、使變冷",
+     "reason": "古義，現代英文已不使用；現代僅作人名"
     }
    ]
   },
@@ -2348,6 +4427,29 @@
    ]
   },
   {
+   "headword": "neath",
+   "senses": [
+    {
+     "pos": "prep.",
+     "label": "在……之下（詩歌、文學用語）",
+     "zh": "詩歌或歌詞中用來表示「在……下面」，是 beneath 的縮短形式，日常口語幾乎不用。",
+     "en": "a short, poetic way of saying beneath or under something",
+     "usage": "rare",
+     "register": [
+      "literary",
+      "old"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "adv. 在……之下",
+     "reason": "參考資料把詞性標為副詞，但現代用法多為介系詞，且整體屬文學、詩歌語體，日常幾乎不用；不另立副詞義項。"
+    }
+   ]
+  },
+  {
    "headword": "neatly",
    "senses": [
     {
@@ -2418,6 +4520,37 @@
      "reason": "古義、醫學罕用，現代已不使用"
     }
    ]
+  },
+  {
+   "headword": "nebulous",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "模糊不清的、含糊的",
+     "zh": "形容計畫、想法或說法沒有明確內容，讓人難以掌握。",
+     "en": "not clear or exact; hard to understand or describe",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00785533-s",
+      "00705690-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "星雲的、星雲狀的",
+     "zh": "用在天文語境，指與星雲有關或像星雲一樣的。",
+     "en": "relating to a nebula, or looking like a cloud of gas in space",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "03100835-a"
+     ]
+    }
+   ],
+   "omitted": []
   },
   {
    "headword": "nec",
@@ -2705,6 +4838,114 @@
    "omitted": []
   },
   {
+   "headword": "neckline",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "領口、領線",
+     "zh": "衣服領部邊緣的形狀或位置，常依剪裁分為圓領、V 領、平口等。",
+     "en": "the shape or edge of the opening of a piece of clothing around the neck",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03820818-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "領圈",
+     "reason": "與「領口」同義，只是舊字典用詞，現代多說領口，故合併不另列"
+    }
+   ]
+  },
+  {
+   "headword": "necktie",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "領帶",
+     "zh": "穿襯衫、西裝時繫在領口前方的長條布飾，多為男性配戴。",
+     "en": "a long narrow piece of cloth worn around the neck and tied in front, usually with a shirt and suit",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03821155-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "nectar",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "花蜜",
+     "zh": "花朵分泌、用來吸引蜜蜂和蝴蝶等昆蟲的甜液。",
+     "en": "the sweet liquid produced by flowers that attracts bees and other insects",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "14870949-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "果肉原汁、純果汁",
+     "zh": "指未稀釋的果汁，尤其用在飲料或食品包裝上。",
+     "en": "juice from fruit, especially when it is not mixed with water",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "07940516-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "神酒、眾神的飲品",
+     "zh": "希臘羅馬神話中神明喝的飲料，現代多用於文學或比喻。",
+     "en": "in classical stories, the drink of the gods that gave them long life",
+     "usage": "less_common",
+     "register": [
+      "literary"
+     ],
+     "synsets": [
+      "07625904-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "甜美飲料、甘露",
+     "reason": "舊字典的籠統釋義，現代英語不把 nectar 當一般「甜飲料」用；比喻用法多見於文學，已併入神話義說明"
+    }
+   ]
+  },
+  {
+   "headword": "ned",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "蘇格蘭青年、蘇格蘭男子",
+     "zh": "蘇格蘭人對年輕男子或蘇格蘭男性的俗稱，帶有地方色彩，常見於蘇格蘭文學與口語。",
+     "en": "a young man or a Scottish man, used in Scottish English",
+     "usage": "rare",
+     "register": [
+      "informal",
+      "old"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "牛津大詞典",
+     "reason": "這是對 OED（Oxford English Dictionary）的誤解，並非 ned 這個字的字義；參考資料把詞典縮寫當成釋義。"
+    }
+   ]
+  },
+  {
    "headword": "need",
    "senses": [
     {
@@ -2789,6 +5030,21 @@
      "reason": "現代英文幾乎不用 need 作不及物動詞表示貧困，該義已由形容詞 needy 或名詞 need 表達。"
     }
    ]
+  },
+  {
+   "headword": "needham",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "尼達姆（姓氏）",
+     "zh": "英語系國家常見的姓氏，中文音譯為尼達姆。",
+     "en": "a family name of English origin",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
   },
   {
    "headword": "needle",
@@ -2893,6 +5149,28 @@
    "omitted": []
   },
   {
+   "headword": "needlessly",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "不必要地、多此一舉地",
+     "zh": "指某個動作或做法根本沒有必要，常帶有「何必這樣」的意味。",
+     "en": "in a way that is not necessary and could have been avoided",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00197191-r"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "無用地",
+     "reason": "「無用」偏向沒有成效，與「不必要」語義不同，現代多改用 uselessly 表達，此義已罕用"
+    }
+   ]
+  },
+  {
    "headword": "needy",
    "senses": [
     {
@@ -2934,6 +5212,124 @@
     }
    ],
    "omitted": []
+  },
+  {
+   "headword": "nefarious",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "邪惡的、惡毒的",
+     "zh": "形容壞事或壞人極度邪惡、令人髮指，常用於犯罪、陰謀等較強烈的書面描述。",
+     "en": "extremely bad or evil, especially in a way that shocks people",
+     "usage": "common",
+     "register": [
+      "formal",
+      "literary"
+     ],
+     "synsets": [
+      "02525059-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "negate",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "否定、否認",
+     "zh": "說某個說法或事實不是真的，常用於正式論述或爭論中。",
+     "en": "to say that something is not true or does not exist",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00825097-v",
+      "00668804-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "使失效、抵銷",
+     "zh": "某個因素把另一個效果完全抵消，使原本的作用消失。",
+     "en": "to stop something from having any effect by balancing it out",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00471015-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "與……相矛盾",
+     "zh": "兩件事彼此衝突，無法同時成立。",
+     "en": "to be in conflict with something so that both cannot be true",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "02669219-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "取消",
+     "reason": "舊字典把 negate 譯為「取消」，現代英文少用此義，實際表達取消多用 cancel；此義與「使失效」部分重疊，故不另列。"
+    }
+   ]
+  },
+  {
+   "headword": "negation",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "否定、否認",
+     "zh": "用言語或態度表示某件事不成立、不接受，例如否認一項說法。",
+     "en": "the act of saying that something is not true or does not exist",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "07295646-n",
+      "07221121-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "反面、相反的事物",
+     "zh": "指與某個事物完全相反或對立的一面，常用於抽象概念。",
+     "en": "the opposite of something, or something that is the reverse of it",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "否定命題（邏輯）",
+     "zh": "邏輯學中，與原命題真假值相反的命題。",
+     "en": "in logic, a statement that is true exactly when another statement is false",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "06764286-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "不存在",
+     "reason": "舊字典把 negate 的抽象結果直譯成「不存在」，現代英文少用這個字表達「不存在」，多說 absence 或 nonexistence"
+    }
+   ]
   },
   {
    "headword": "negative",
@@ -3092,6 +5488,54 @@
    ]
   },
   {
+   "headword": "negativity",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "負面情緒、消極心態",
+     "zh": "指人經常抱持悲觀、批評或看壞事情的態度，常與 positivity 對比。",
+     "en": "a way of thinking that focuses on bad things and is often critical or pessimistic",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "05175145-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "負面的事物、壞影響",
+     "zh": "指某情況中不好的部分或帶來的負面效果，常說 the negativity of something。",
+     "en": "the bad or harmful parts or effects of a situation",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "負值、負數",
+     "zh": "數學或數據中表示小於零的數值，屬專業用法。",
+     "en": "a number or amount that is less than zero",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "05115562-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "負極性（負電極的特性）",
+     "reason": "專業領域過窄，一般學習者幾乎不會遇到"
+    },
+    {
+     "meaning": "陰電性（原子吸引電子的傾向）",
+     "reason": "化學專業術語，超出一般學習需求"
+    }
+   ]
+  },
+  {
    "headword": "neglect",
    "senses": [
     {
@@ -3153,6 +5597,34 @@
    ]
   },
   {
+   "headword": "neglected",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "被忽視的、不受重視的",
+     "zh": "指人、事物或問題長期沒人理會、沒受到應有的注意。",
+     "en": "not given enough attention or care by other people",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01613238-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "缺乏照料的、無人看管的",
+     "zh": "指小孩、動物、建築或地方沒人好好照顧、維護。",
+     "en": "not looked after or taken care of by anyone",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00309518-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "negligence",
    "senses": [
     {
@@ -3183,6 +5655,28 @@
    "omitted": []
   },
   {
+   "headword": "negligent",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "疏忽的、粗心的",
+     "zh": "指該注意、該負責的事卻沒做到，常用於形容人、行為或管理上的失職。",
+     "en": "failing to give proper care or attention to something you are responsible for",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00758394-a"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "不在意的、漠不關心的",
+     "reason": "與「疏忽、未盡注意」的核心義重疊，現代多併入同一義理解，不另立義項"
+    }
+   ]
+  },
+  {
    "headword": "negligible",
    "senses": [
     {
@@ -3204,6 +5698,49 @@
      "reason": "舊字典把 negligible 譯成「無用」，偏離現代用法；現代只強調「小到可忽略」，不是指東西沒用。"
     }
    ]
+  },
+  {
+   "headword": "negotiable",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "可協商的、可商量的",
+     "zh": "指價格、條件、計畫等還有討論空間，可以談出雙方都能接受的結果。",
+     "en": "able to be discussed and changed by the people involved before an agreement is made",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01028015-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "可轉讓的（票據、證券）",
+     "zh": "指支票、匯票等金融票據可以依法轉給他人持有。",
+     "en": "able to be legally given or passed to another person as property",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00094409-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "可通行的（道路、地形）",
+     "zh": "指道路或地形可以讓人或車輛通過，多用於描述路況。",
+     "en": "able to be traveled along or across, especially of a road or path",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "01729130-s"
+     ]
+    }
+   ],
+   "omitted": []
   },
   {
    "headword": "negotiate",
@@ -3246,6 +5783,55 @@
     {
      "meaning": "處理、應付",
      "reason": "舊字典義，現代多改用 deal with、handle，此義已罕用"
+    }
+   ]
+  },
+  {
+   "headword": "negotiated",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "談判、協商",
+     "zh": "雙方就條件、價格或合約來回討論，以達成協議。",
+     "en": "discussed something with others in order to reach an agreement",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "v.",
+     "label": "談成、議定（條件）",
+     "zh": "經過討論後成功敲定價格、合約或條件，常與 deal、agreement 等搭配。",
+     "en": "successfully arranged or agreed on something after discussion",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "v.",
+     "label": "順利通過、越過（障礙）",
+     "zh": "指成功通過險路、關卡或困難的地形，多用於書面敘述。",
+     "en": "got past a difficult place or obstacle successfully",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "協商達成的",
+     "zh": "放在名詞前，表示該事物是經由談判談成的，如協商價格、協議方案。",
+     "en": "agreed on or arranged through discussion between two sides",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "兌現（支票等）",
+     "reason": "金融領域的專門用法，現代一般場合幾乎不用，學習者不必優先學"
     }
    ]
   },
@@ -3324,6 +5910,31 @@
     {
      "meaning": "議定者",
      "reason": "與「談判者」意思重複，只是舊字典的分行寫法"
+    }
+   ]
+  },
+  {
+   "headword": "negro",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "黑人（冒犯用語）",
+     "zh": "指非裔人士的舊稱，現今帶有強烈冒犯意味，除非引述歷史或種族歧視語境，否則絕不使用。",
+     "en": "an old and now very offensive word for a person of African ancestry",
+     "usage": "less_common",
+     "register": [
+      "offensive",
+      "old"
+     ],
+     "synsets": [
+      "09659490-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "黑人的（形容詞）",
+     "reason": "與名詞義重複，且同屬冒犯性舊用法，現代幾乎不單獨使用"
     }
    ]
   },
@@ -3601,6 +6212,26 @@
    "omitted": []
   },
   {
+   "headword": "neill",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "尼爾（人名）",
+     "zh": "英文姓氏或名字，蘇格蘭、愛爾蘭常見，如演員 Sam Neill。",
+     "en": "a family name or first name, common in Scotland and Ireland",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（法）內伊",
+     "reason": "法語姓氏的譯法，屬專有名詞音譯，不是英語詞義"
+    }
+   ]
+  },
+  {
    "headword": "neither",
    "senses": [
     {
@@ -3654,6 +6285,48 @@
    ]
   },
   {
+   "headword": "nell",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "內爾（女子名）",
+     "zh": "英文女子名，常作為 Helen 或 Eleanor 的暱稱，在文學與日常對話中可見。",
+     "en": "a female given name, often used as a short form of Helen or Eleanor",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "等於 Helen 的正式名字用法",
+     "reason": "參考資料僅為人名釋義，無其他詞義；此處保留為暱稱用法，未另列正式名義。"
+    }
+   ]
+  },
+  {
+   "headword": "nellie",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "內莉（女子名）",
+     "zh": "女子名字 Nellie 或 Nell 的常見拼法，也可當暱稱使用。",
+     "en": "a female first name, also used as a short form of names like Eleanor or Helen",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "膽小鬼、娘娘腔（俚語 no-no、nervous Nellie 等用法）",
+     "reason": "參考資料未列，且多為固定片語中的貶義用法，不宜當獨立詞義教學習者"
+    }
+   ]
+  },
+  {
    "headword": "nelson",
    "senses": [
     {
@@ -3668,6 +6341,132 @@
      "synsets": [
       "00814997-n"
      ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "nemesis",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "死對頭、剋星",
+     "zh": "長期與某人作對、總讓對方吃癟的人或事物，常用於體育、職場等競爭情境。",
+     "en": "a person or thing that someone cannot beat or that always causes them trouble",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "報應、天罰",
+     "zh": "因壞行為而來的懲罰，帶有「終究逃不掉」的意味。",
+     "en": "punishment that someone deserves for bad behavior and cannot escape",
+     "usage": "less_common",
+     "register": [
+      "formal",
+      "literary"
+     ],
+     "synsets": [
+      "14468692-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "復仇女神",
+     "reason": "希臘神話專有名詞，現代一般語境少見，多僅見於文學或神話討論"
+    }
+   ]
+  },
+  {
+   "headword": "neoclassical",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "新古典主義的（藝術、建築、音樂）",
+     "zh": "指十八世紀後期起，重新採用古希臘羅馬形式與風格的藝術、建築或音樂。",
+     "en": "relating to a style in art, building, or music that brings back the forms of ancient Greece and Rome",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00415599-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "新古典的（經濟學）",
+     "zh": "指以理性選擇、市場均衡為核心的現代主流經濟學派。",
+     "en": "relating to a modern school of economics based on rational choices and market balance",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "neoliberal",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "新自由主義的",
+     "zh": "指主張市場自由化、減少政府干預、強調經濟成長的政治經濟立場。",
+     "en": "relating to a belief in free markets, less government control, and economic growth",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00578362-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "新自由主義者",
+     "zh": "支持市場自由化與減少政府管制的人，常見於政治與經濟評論。",
+     "en": "a person who supports free markets and less government control of the economy",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "10372513-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "neolithic",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "新石器時代的",
+     "zh": "指人類使用磨製石器、開始農耕與定居的史前時期。",
+     "en": "relating to the later part of the Stone Age, when people made polished stone tools and began farming",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "03101544-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "極度過時的、老掉牙的",
+     "zh": "口語上用來誇張地說某想法或做法非常落伍，像石器時代一樣。",
+     "en": "used humorously to describe something very old-fashioned or out of date",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
     }
    ],
    "omitted": []
@@ -3712,6 +6511,82 @@
    "omitted": []
   },
   {
+   "headword": "neonatal",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "新生兒的、初生的",
+     "zh": "指與出生後第一個月內的嬰兒有關，或用於描述這個階段的醫療與照護。",
+     "en": "relating to a baby during the first month after birth",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "02778878-a"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "出生不滿一個月的嬰兒",
+     "reason": "詞性誤譯；此字為形容詞，並非名詞，且中文釋義把形容詞當成名詞解釋"
+    }
+   ]
+  },
+  {
+   "headword": "neophyte",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "新手、初學者",
+     "zh": "剛開始從事某項活動或加入某個團體的人，常用於正式或書面語。",
+     "en": "a person who has just started doing an activity or joined a group and is still learning",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "10375148-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "新信徒、新入教者",
+     "zh": "剛改信宗教、正在接受教義教導的人，屬宗教領域用法。",
+     "en": "a person who has recently changed religion and is still being taught its beliefs",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "09920955-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "新出現於某地區的植物",
+     "reason": "植物學專業用法，一般學習者幾乎不會遇到"
+    }
+   ]
+  },
+  {
+   "headword": "nepal",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "尼泊爾",
+     "zh": "南亞的內陸國家，首都加德滿都，位於印度與中國之間。",
+     "en": "a country in South Asia, between India and China, whose capital is Kathmandu",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "nephew",
    "senses": [
     {
@@ -3727,6 +6602,71 @@
     }
    ],
    "omitted": []
+  },
+  {
+   "headword": "neptune",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "海王星",
+     "zh": "太陽系八大行星之一，距太陽最遠的藍色行星。",
+     "en": "the eighth planet from the sun, a large blue planet in our solar system",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "海神（羅馬神話）",
+     "zh": "羅馬神話中的海神，常出現在文學、藝術與古典典故裡。",
+     "en": "the Roman god of the sea, often shown in art holding a trident",
+     "usage": "less_common",
+     "register": [
+      "literary"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "nerd",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "書呆子、宅宅",
+     "zh": "只顧讀書或沉迷特定興趣、不擅社交的人，帶點調侃但常無惡意",
+     "en": "a person who is very interested in a subject and not good at socializing, often used in a joking way",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "10704113-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（科技領域的）技術宅、高手",
+     "zh": "對電腦、科技等特定領域非常專精且投入的人，現在常帶正面意味",
+     "en": "a person who knows a lot about computers or another technical subject and spends much time on it",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "10373297-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "討厭的人",
+     "reason": "舊字典的貶義用法，現代已少見，現多指沉迷興趣、不擅社交的人，語氣也較輕鬆"
+    }
+   ]
   },
   {
    "headword": "nerve",
@@ -3876,6 +6816,64 @@
    "omitted": []
   },
   {
+   "headword": "nervousness",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "緊張、不安",
+     "zh": "面對考試、上台或重要場合時心裡忐忑、靜不下來的感覺。",
+     "en": "the feeling of being worried and unable to relax, especially before something important",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07540999-n",
+      "14398981-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "神經質、易緊張的性情",
+     "zh": "形容一個人天生敏感、容易受到驚嚇或情緒起伏的個性。",
+     "en": "a sensitive personality that makes someone easily upset or worried",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "04632316-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "神經、神經元",
+     "reason": "應為 nerve 的釋義，誤植於此字"
+    },
+    {
+     "meaning": "簡練、剛勁",
+     "reason": "舊字典對文體或筆力的罕用釋義，現代幾乎不用，且與本字無關"
+    }
+   ]
+  },
+  {
+   "headword": "ness",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "海岬、岬角",
+     "zh": "突出於海中的狹長陸地，多用於地名（如 Dungeness、Orford Ness）。",
+     "en": "a long narrow piece of land that sticks out into the sea, often used in place names",
+     "usage": "less_common",
+     "register": [
+      "literary",
+      "technical"
+     ],
+     "synsets": [
+      "09256622-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "nest",
    "senses": [
     {
@@ -3962,6 +6960,43 @@
      "reason": "罕用，現代多說 look for birds' nests，不單用 nest 表示。"
     }
    ]
+  },
+  {
+   "headword": "nesting",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "巢狀結構、層層嵌套",
+     "zh": "程式設計或資料結構中，把同類元素一層層包在另一層裡的做法。",
+     "en": "the practice of putting one thing inside another of the same kind, especially in computer code or data",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "築巢、巢居",
+     "zh": "鳥類或其他動物築巢、住在巢裡的行為，常見於生態或自然寫作。",
+     "en": "the activity of building a nest or living in one, done by birds and other animals",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "巢狀的、嵌套的",
+     "zh": "放在名詞前，形容一層包一層的結構，如巢狀迴圈、巢狀資料夾。",
+     "en": "used before a noun to describe something arranged with one part inside another of the same kind",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
   },
   {
    "headword": "nestle",
@@ -4101,6 +7136,44 @@
    ]
   },
   {
+   "headword": "nether",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "地下的、冥界的（世界）",
+     "zh": "多用於 netherworld、the nether regions 等固定搭配，指陰間或地底下的世界。",
+     "en": "used in fixed phrases about the world of the dead or the world under the ground",
+     "usage": "less_common",
+     "register": [
+      "literary"
+     ],
+     "synsets": [
+      "01306881-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "下面的、下方的",
+     "zh": "書面或文學用語，指位置在下面或較低處的部分，如 nether lip（下唇）。",
+     "en": "located below something else or in a lower position",
+     "usage": "less_common",
+     "register": [
+      "literary"
+     ],
+     "synsets": [
+      "02450336-s",
+      "01210218-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "地下的（居住於地表之下）",
+     "reason": "與「下面的、下方的」意思重疊，已合併處理"
+    }
+   ]
+  },
+  {
    "headword": "netherlands",
    "senses": [
     {
@@ -4111,6 +7184,80 @@
      "usage": "common",
      "register": [],
      "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "netting",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "網狀織物、網布",
+     "zh": "用線編成網眼狀的布料，常見於窗簾、蚊帳、運動球網或裝飾用途。",
+     "en": "a material made of threads woven into a pattern with many small holes",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03434824-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "結網、編網",
+     "zh": "製作網子的動作或工作，例如漁網、球網的編製。",
+     "en": "the act or work of making nets",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00911084-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "網魚",
+     "reason": "舊字典把動詞用法混入名詞釋義，現代英文中 netting 不作「網魚」解，捕魚會說 fishing with a net。"
+    }
+   ]
+  },
+  {
+   "headword": "nettle",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "蕁麻",
+     "zh": "葉面有刺毛、碰到會刺痛發癢的一種野生植物。",
+     "en": "a wild plant with leaves covered in small hairs that sting and make your skin hurt",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "12412587-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "激怒、惹惱",
+     "zh": "用言語或行為讓人心裡不舒服、生氣，常見於片語 grasp the nettle。",
+     "en": "to make someone feel annoyed or upset, especially slightly",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "01791774-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "被蕁麻刺到",
+     "zh": "皮膚碰到蕁麻的刺毛而刺痛發癢，字面上較少用。",
+     "en": "to sting someone, or to feel a stinging pain, as if touched by this plant",
+     "usage": "rare",
+     "register": [],
+     "synsets": [
+      "02125180-v"
+     ]
     }
    ],
    "omitted": []
@@ -4131,6 +7278,88 @@
     }
    ],
    "omitted": []
+  },
+  {
+   "headword": "networked",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "連上網路的、網路化的",
+     "zh": "指設備、系統或組織已連接網路，可互相傳輸資料。",
+     "en": "connected to a computer network so that data can be shared",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "建立人脈的、拓展關係的",
+     "zh": "指主動與他人建立關係，尤其在職場或專業場合。",
+     "en": "having made many personal or business connections with other people",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "廣播電視聯播的",
+     "reason": "舊義，指廣播或電視台加入聯播網，現代一般場合幾乎不用"
+    }
+   ]
+  },
+  {
+   "headword": "networking",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "建立人脈、拓展人際關係",
+     "zh": "在職場或社交場合主動認識人、維持關係，以獲得工作或合作機會。",
+     "en": "the activity of meeting people and building relationships, especially to help your career or business",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "（電腦）網路連結、組網",
+     "zh": "把多台電腦或裝置連接起來，讓它們能互相通訊、分享資源。",
+     "en": "the process of connecting computers or devices so they can share information",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "（電視、廣播）聯播",
+     "zh": "多家電視台或廣播電台同時播出同一個節目。",
+     "en": "the system of broadcasting the same program on many TV or radio stations at the same time",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "（社交）交流、交際",
+     "zh": "在聚會或活動中與人交談互動，建立關係的過程。",
+     "en": "the activity of talking to people and making social connections at events",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "[計] 連網、建網",
+     "reason": "已改寫為現代學習者看得懂的「網路連結、組網」，並補上職場人脈等現代常用義"
+    }
+   ]
   },
   {
    "headword": "neural",
@@ -4181,6 +7410,54 @@
    ]
   },
   {
+   "headword": "neurological",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "神經的、神經系統的",
+     "zh": "與神經系統或神經醫學有關，常用於醫學、健康報導中。",
+     "en": "relating to the nerves or the nervous system, or to the medical study of them",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "02929206-a"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "神經病學上的",
+     "reason": "舊譯法把 neurology（神經醫學）譯成「神經病學」，現代台灣多用「神經醫學、神經內科」，且原釋義範圍過窄，已併入 senses 的說明。"
+    }
+   ]
+  },
+  {
+   "headword": "neurologist",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "神經科醫師、神經內科醫師",
+     "zh": "專門診斷與治療腦、脊髓及神經系統疾病的醫師。",
+     "en": "a doctor who treats diseases of the brain, spinal cord, and nerves",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "10373964-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "神經病學者",
+     "reason": "舊譯容易與「精神科」混淆，現代中文一律稱神經科醫師，此說法已不用"
+    }
+   ]
+  },
+  {
    "headword": "neuron",
    "senses": [
     {
@@ -4201,6 +7478,159 @@
     {
      "meaning": "軸索",
      "reason": "軸索是神經元的一部分（axon），並非 neuron 本身的意思，屬舊字典的誤譯"
+    }
+   ]
+  },
+  {
+   "headword": "neurone",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "神經元、神經細胞",
+     "zh": "神經系統中負責傳遞訊息的基本細胞單位，是生物與醫學課本裡的標準用語。",
+     "en": "a cell in the nervous system that carries messages between the brain and other parts of the body",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "軸索；腦脊髓軸",
+     "reason": "軸索應為 axon、腦脊髓軸應為 cerebrospinal axis，皆非 neurone 的意思，屬舊字典誤譯；且此義在現代英文中不存在"
+    }
+   ]
+  },
+  {
+   "headword": "neuroscience",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "神經科學",
+     "zh": "研究大腦與神經系統的科學領域，常與心理學、醫學、人工智慧交叉。",
+     "en": "the scientific study of the brain and the nervous system",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "06091421-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "神經系統科學（指神經病學、神經化學等）",
+     "reason": "舊字典以列舉相關學科的方式解釋，實為同一詞義，已併入 senses"
+    }
+   ]
+  },
+  {
+   "headword": "neuroscientist",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "神經科學家",
+     "zh": "研究大腦與神經系統的專家，常在學術或醫療機構從事研究。",
+     "en": "a scientist who studies the brain and the nervous system",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "10374279-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "neurosurgeon",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "神經外科醫師",
+     "zh": "專門以手術治療腦部、脊髓與神經系統疾病的醫師。",
+     "en": "a doctor who performs operations on the brain, spine, and other parts of the nervous system",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "10374453-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "neurotic",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "神經質的、容易焦慮的",
+     "zh": "形容人容易緊張、情緒起伏大，常為小事擔心",
+     "en": "often worried, nervous, or upset, especially about small things",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "01587448-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "神經症的（醫學）",
+     "zh": "醫學上用來說與神經症（焦慮症等）有關的",
+     "en": "relating to or caused by a mental condition marked by anxiety and worry",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "02988070-a"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "神經症患者",
+     "zh": "指被診斷有神經症、長期焦慮不安的人",
+     "en": "a person who suffers from a mental condition marked by anxiety and worry",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "10374597-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "neurotransmitter",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "神經傳導物質",
+     "zh": "神經細胞之間傳遞訊號的化學物質，是生物與醫學領域的專業用語。",
+     "en": "a chemical in the body that carries signals from one nerve cell to another",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "14831728-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "神經遞質",
+     "reason": "「遞質」為中國大陸用語，台灣一般稱「神經傳導物質」，已併入 senses 說明。"
     }
    ]
   },
@@ -4289,6 +7719,135 @@
    ]
   },
   {
+   "headword": "neutralisation",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "中和（化學）",
+     "zh": "酸與鹼反應生成鹽和水的化學過程。",
+     "en": "a chemical reaction in which an acid and a base combine to form a salt and water",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "13542275-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "抵銷、使失效",
+     "zh": "採取行動使某個先前的作用或效果失去效力。",
+     "en": "an action taken to cancel out or make ineffective the effects of something else",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00234253-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "中立化（國家、政治）",
+     "zh": "使某國在政治上保持中立或排除於可能的戰爭之外。",
+     "en": "the act of keeping a country politically neutral or out of a possible war",
+     "usage": "less_common",
+     "register": [
+      "formal",
+      "technical"
+     ],
+     "synsets": [
+      "00235290-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（委婉）剷除、消滅",
+     "zh": "以殺害或摧毀方式消除威脅，尤指祕密或軍事行動。",
+     "en": "the removal of a threat by killing or destroying it, especially in a secret or military operation",
+     "usage": "rare",
+     "register": [
+      "formal",
+      "technical"
+     ],
+     "synsets": [
+      "00235542-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "中立狀態",
+     "reason": "此義較常以 neutrality 表達，neutralisation 在現代英語中少用於此義。"
+    },
+    {
+     "meaning": "[軍]壓制",
+     "reason": "軍事領域過窄，現代一般語境少見。"
+    },
+    {
+     "meaning": "[電]中和、平衡",
+     "reason": "專業領域過窄，現代一般語境少見。"
+    }
+   ]
+  },
+  {
+   "headword": "neutralise",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "抵銷、使無效",
+     "zh": "用相反的作用讓某事物的效果消失或減弱",
+     "en": "to stop something from having an effect by doing something that balances it",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00471015-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "中和（化學）",
+     "zh": "在化學中使酸鹼值變成中性",
+     "en": "to make a substance chemically neutral, especially an acid or a base",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00470835-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "使中立、使無效（軍事）",
+     "zh": "使某地區或武力失去軍事作用",
+     "en": "to make a place or force unable to take part in fighting",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01120349-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "消滅、除掉（威脅者）",
+     "zh": "用殺害等方式除掉可能造成威脅的人",
+     "en": "to remove someone who is a possible threat, especially by killing them",
+     "usage": "rare",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "01329983-v"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "neutrality",
    "senses": [
     {
@@ -4335,6 +7894,104 @@
    ]
   },
   {
+   "headword": "neutralize",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "抵銷、使失效",
+     "zh": "用相反的作用把某個效果或影響力抵消掉，讓它不再起作用。",
+     "en": "to stop something from having an effect by using an opposite force or action",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00471015-v",
+      "02549571-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "使中立、使不具威脅",
+     "zh": "讓某個國家、組織或勢力在政治上保持中立，或讓它不再具有威脅性。",
+     "en": "to make a country or group politically neutral, or to make someone or something no longer a threat",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "02541562-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "中和（化學）",
+     "zh": "在化學中讓酸和鹼反應，使溶液變成中性。",
+     "en": "to make a substance chemically neutral by adding an acid or a base",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00470835-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "使失去戰力",
+     "zh": "用軍事手段讓敵方部隊或裝備無法再作戰。",
+     "en": "to make a military force or weapon unable to fight or be used",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01120349-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "除掉、消滅（威脅）",
+     "zh": "把可能造成威脅的人殺掉或除掉，屬於較委婉的說法。",
+     "en": "to kill or remove someone who is considered a threat",
+     "usage": "rare",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "01329983-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "使成中立地帶",
+     "reason": "與「使中立」意思重複，且現代少見"
+    },
+    {
+     "meaning": "變無效、中立化（不及物用法）",
+     "reason": "現代英文幾乎不用不及物用法，多為及物動詞"
+    }
+   ]
+  },
+  {
+   "headword": "neutrino",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "微中子",
+     "zh": "一種幾乎沒有質量、不帶電的基本粒子，常出現在物理與天文報導中。",
+     "en": "a very light elementary particle that has no electric charge and rarely interacts with matter",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "09392309-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "neutron",
    "senses": [
     {
@@ -4352,6 +8009,30 @@
     }
    ],
    "omitted": []
+  },
+  {
+   "headword": "neutrophil",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "嗜中性白血球",
+     "zh": "血液中數量最多的一種白血球，負責吞噬細菌，是免疫系統對抗感染的第一線。",
+     "en": "the most common type of white blood cell, which surrounds and destroys bacteria and is a key part of the body's early defense against infection",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "05461233-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "嗜中性的（形容詞）",
+     "reason": "現代英文幾乎不用這個形容詞形，只在舊式或極專業的文獻中出現；一般只用名詞指細胞本身。"
+    }
+   ]
   },
   {
    "headword": "never",
@@ -4425,6 +8106,21 @@
      "zh": "英文男子名，源自地名，現代多作為人名使用。",
      "en": "a male first name of English origin, also used as a surname",
      "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "nevis",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "尼維斯島",
+     "zh": "加勒比海小安地列斯群島的一座島嶼，與聖啟斯島合組國家。",
+     "en": "an island in the Caribbean that forms a country together with Saint Kitts",
+     "usage": "less_common",
      "register": [],
      "synsets": []
     }
@@ -4530,6 +8226,44 @@
    ]
   },
   {
+   "headword": "newark",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "紐華克（美國紐澤西州城市）",
+     "zh": "美國紐澤西州東北部的港市，緊鄰紐約，設有國際機場。",
+     "en": "a city in the northeastern US state of New Jersey, near New York City, with a major airport",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "紐華克（美國俄亥俄州城市）",
+     "zh": "美國俄亥俄州中部的小城市，地名相同但規模較小。",
+     "en": "a small city in the central US state of Ohio",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "紐華克（英國城鎮）",
+     "zh": "英格蘭諾丁罕郡的集鎮，常出現在英國地名與旅遊資訊中。",
+     "en": "a town in Nottinghamshire in central England",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "紐瓦克市（美國紐澤西州港市）",
+     "reason": "與第一條詞義重複，僅保留一筆並改用台灣慣用譯名「紐華克」"
+    }
+   ]
+  },
+  {
    "headword": "newborn",
    "senses": [
     {
@@ -4569,6 +8303,26 @@
     }
    ],
    "omitted": []
+  },
+  {
+   "headword": "newbury",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "紐伯里（地名、姓氏）",
+     "zh": "英格蘭伯克郡的一個城鎮，也是常見的英文姓氏與地名。",
+     "en": "a town in Berkshire, England, or a family name",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "紐伯裡（舊式音譯）",
+     "reason": "與現行譯名「紐伯里」重複，僅為舊式拼寫。"
+    }
+   ]
   },
   {
    "headword": "newcastle",
@@ -4618,6 +8372,69 @@
    "omitted": []
   },
   {
+   "headword": "newfound",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "新發現的、新獲得的",
+     "zh": "指最近才發現、得到或產生的事物，常用於形容能力、信心、興趣等抽象事物。",
+     "en": "recently discovered, gained, or started to have",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01646523-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "newfoundland",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "紐芬蘭（加拿大東部島嶼、省份）",
+     "zh": "加拿大東岸的島嶼與省份，常在新聞、地理或旅遊話題中出現。",
+     "en": "an island and province in eastern Canada, known for fishing and rugged coastlines",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "紐芬蘭犬",
+     "zh": "一種體型很大、毛厚、擅長游泳的犬種，常被當作工作犬或家庭寵物。",
+     "en": "a very large strong dog with a thick coat, known for being intelligent and good at swimming",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "02113929-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "newham",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "紐漢（倫敦東部行政區）",
+     "zh": "英格蘭大倫敦東部的一個行政區，正式名稱為紐漢倫敦自治市。",
+     "en": "a borough in the east of London, England, officially called the London Borough of Newham",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "英國英格蘭東南部城市",
+     "reason": "舊字典釋義不精確：紐漢並非城市（city），而是大倫敦的一個自治市（borough），已於 senses 中更正。"
+    }
+   ]
+  },
+  {
    "headword": "newly",
    "senses": [
     {
@@ -4639,6 +8456,23 @@
      "usage": "less_common",
      "register": [],
      "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "newlywed",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "新婚者、新婚夫妻",
+     "zh": "剛結婚不久的人，通常用複數 newlyweds 指一對新婚夫妻。",
+     "en": "a person who got married a short time ago; usually plural for a couple who just married",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10375765-n"
+     ]
     }
    ],
    "omitted": []
@@ -4671,6 +8505,119 @@
     {
      "meaning": "[計] 牛曼",
      "reason": "舊字典把 Newman 當成音譯的電腦術語，現代英文並無此用法，屬誤譯。"
+    }
+   ]
+  },
+  {
+   "headword": "newmarket",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "紐馬克特（英國賽馬城鎮）",
+     "zh": "英格蘭東南部城鎮，以賽馬場與馬匹交易聞名，常指當地賽馬活動。",
+     "en": "a town in southeastern England that is famous for horse racing and for selling horses",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "紐馬克特牌（紙牌遊戲）",
+     "zh": "一種用撲克牌下注的賭博遊戲，玩家依序出牌比大小贏取籌碼。",
+     "en": "a card game played for money in which players put chips on cards and try to win them",
+     "usage": "rare",
+     "register": [
+      "old"
+     ],
+     "synsets": [
+      "00494319-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "十九世紀的長版貼身騎馬外套",
+     "reason": "古義，現代已不使用，僅見於歷史文獻"
+    }
+   ]
+  },
+  {
+   "headword": "newness",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "新穎、新奇",
+     "zh": "事物剛出現或剛形成、尚未被大家熟悉的狀態",
+     "en": "the quality of being recent or different from what existed before",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04933604-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "新鮮感、新奇感",
+     "zh": "對剛接觸的事物感到有趣、不熟悉的那種感覺",
+     "en": "the feeling of interest and excitement that something unfamiliar gives you",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "珍奇",
+     "reason": "罕用義，現代英文幾乎不用 newness 表達「珍奇」，多說 rarity 或 curiosity"
+    }
+   ]
+  },
+  {
+   "headword": "newport",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "紐波特（地名）",
+     "zh": "美國羅德島州的海港城市，以豪宅與帆船活動聞名，也是知名避暑勝地。",
+     "en": "a city in the US state of Rhode Island, known for its grand houses and sailing",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "新港（地名通稱）",
+     "zh": "英語系國家許多港口城鎮的通用名稱，如英國威爾斯的新港、美國加州的新港灘等。",
+     "en": "a common name for port towns in English-speaking countries, such as in Wales or California",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "新港（一般名詞，指新的港口）",
+     "reason": "並非獨立詞義，只是 new 加 port 的字面組合，現代不作為一般名詞使用"
+    }
+   ]
+  },
+  {
+   "headword": "newry",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "紐里（北愛爾蘭城市）",
+     "zh": "北愛爾蘭東南部的一座城市，位於貝爾法斯特與都柏林之間。",
+     "en": "a city in Northern Ireland, near the border with the Republic of Ireland",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "紐裡",
+     "reason": "參考資料只有音譯地名，無其他詞義；已保留為地名，未另列其他意思"
     }
    ]
   },
@@ -4728,6 +8675,62 @@
    "omitted": []
   },
   {
+   "headword": "newsagent",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "報刊經銷商、報攤",
+     "zh": "在店裡或街邊賣報紙、雜誌，也常兼賣菸、零食、文具的小店或老闆（英式用法）。",
+     "en": "a person or shop that sells newspapers and magazines, often along with cigarettes, snacks, and small everyday items",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10375912-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "newscast",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "新聞廣播、新聞節目",
+     "zh": "電視或廣播播出的新聞報導節目，通常指整節的新聞時段。",
+     "en": "a program on television or radio that reports the news",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "06696104-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "newscaster",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "新聞主播、新聞播報員",
+     "zh": "在電視或廣播上播報新聞的人，常指坐在主播台前的主播。",
+     "en": "a person who reads and presents the news on television or radio",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10376043-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "新聞評論廣播員",
+     "reason": "舊字典把評論員與播報員混為一談；現代新聞評論多由評論員（commentator）擔任，非 newscaster 的常見用法"
+    }
+   ]
+  },
+  {
    "headword": "newsletter",
    "senses": [
     {
@@ -4757,6 +8760,50 @@
     {
      "meaning": "時事傳報",
      "reason": "舊字典用語，與「通訊刊物」意思重複，現代英文不這樣說"
+    }
+   ]
+  },
+  {
+   "headword": "newsman",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "新聞記者、男記者",
+     "zh": "在報社、電視台或新聞網站採訪與報導新聞的男性從業人員。",
+     "en": "a man whose job is to gather and report news for a newspaper, TV station, or website",
+     "usage": "common",
+     "register": [
+      "old"
+     ],
+     "synsets": [
+      "82640040-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "報童、送報人",
+     "reason": "舊義，現代多稱 paperboy 或 newspaper delivery person，newsman 已不再這樣用"
+    }
+   ]
+  },
+  {
+   "headword": "newsome",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "紐瑟姆（姓氏）",
+     "zh": "英文姓氏，多見於英國，常音譯為紐瑟姆。",
+     "en": "a family name, common in Britain",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（英）紐瑟姆",
+     "reason": "與姓氏義重複，僅為同一人名的音譯寫法"
     }
    ]
   },
@@ -4803,6 +8850,98 @@
    "omitted": []
   },
   {
+   "headword": "newsprint",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "新聞紙、印報紙張",
+     "zh": "專門用來印報紙的便宜紙張，紙質較粗糙、容易泛黃。",
+     "en": "cheap, rough paper used for printing newspapers",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "14985861-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "newsroom",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "新聞編輯部、新聞中心",
+     "zh": "報社、通訊社或電視廣播機構裡處理與製作新聞的部門或辦公室。",
+     "en": "the department or office where journalists gather, write, and prepare the news",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "08079965-n",
+      "03828044-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "報刊閱覽室",
+     "zh": "圖書館或俱樂部裡供人閱讀報紙雜誌的空間。",
+     "en": "a room in a library or club where people can read newspapers and magazines",
+     "usage": "less_common",
+     "register": [
+      "old"
+     ],
+     "synsets": [
+      "03827901-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "售報處",
+     "reason": "舊字典義，現代幾乎不用，且與報刊閱覽室意思重疊"
+    }
+   ]
+  },
+  {
+   "headword": "newsstand",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "報攤、書報攤",
+     "zh": "在街頭或車站等地販售報紙、雜誌的攤位。",
+     "en": "a small stand or shop, often on a street or in a station, that sells newspapers and magazines",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03828196-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "報刊出售處",
+     "reason": "與「報攤」為同一意思，只是較籠統的說法，已合併"
+    }
+   ]
+  },
+  {
+   "headword": "newsworthy",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "有新聞價值的、值得報導的",
+     "zh": "指事件、人物或消息夠重要、夠受關注，值得媒體報導。",
+     "en": "important or interesting enough to be reported by the media",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01347682-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "newton",
    "senses": [
     {
@@ -4825,6 +8964,38 @@
      "reason": "參考資料未列；作為姓氏（如科學家牛頓）屬專有名詞，非本詞條的一般字義"
     }
    ]
+  },
+  {
+   "headword": "newtonian",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "牛頓的、牛頓物理的",
+     "zh": "用來指與牛頓本人或其物理學說（如萬有引力、運動定律）有關的事物。",
+     "en": "relating to Sir Isaac Newton or to the physics and ideas he developed",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "03047528-a"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "牛頓學派追隨者",
+     "zh": "指追隨或信奉牛頓學說的人，多用於科學史或哲學史的討論。",
+     "en": "a person who follows or supports the ideas of Isaac Newton",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "10376711-n"
+     ]
+    }
+   ],
+   "omitted": []
   },
   {
    "headword": "next",
@@ -4895,6 +9066,75 @@
    ]
   },
   {
+   "headword": "nexus",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "連結、關聯",
+     "zh": "指事物之間互相連接或彼此有關的關係，常用於正式或學術語境。",
+     "en": "a connection or link between things, people, or ideas",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "13814904-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（一連串事物的）核心、樞紐",
+     "zh": "指把一系列事物串連起來的中心點或關鍵環節。",
+     "en": "the central point that connects a group or series of things",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "08475844-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "nez",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "北方經濟區（簡稱）",
+     "zh": "指「北方經濟區」（Northern Economic Zone）的縮寫，多用於經濟、政策或區域發展的報導與文件中。",
+     "en": "a short form of \"Northern Economic Zone,\" used mainly in news and policy writing",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（法）內、（西）內斯（人名）",
+     "reason": "這是專有名詞的姓氏音譯，不是英文單字本身的詞義，學習者不需要當作單字義項記。"
+    }
+   ]
+  },
+  {
+   "headword": "nguyen",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "阮（越南姓氏）",
+     "zh": "越南最常見的姓氏，英文寫作 Nguyen，用於指稱越南人或其家族姓氏。",
+     "en": "a very common Vietnamese family name",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "nhs",
    "senses": [
     {
@@ -4936,6 +9176,79 @@
    "omitted": []
   },
   {
+   "headword": "niall",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "尼爾（人名）",
+     "zh": "愛爾蘭男性名字，現代英語中只當專有名詞使用。",
+     "en": "a male first name of Irish origin",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "nibble",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "小口咬、一點一點地吃",
+     "zh": "一次只咬一小口地吃東西，或輕輕地咬。",
+     "en": "to eat something by taking small bites again and again",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01449348-v",
+      "01176591-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "輕咬",
+     "zh": "輕輕地咬一下，通常不痛，常用於動物或親暱動作。",
+     "en": "to bite something gently, often not hard enough to hurt",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01449039-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "一小口、少量零食",
+     "zh": "指吃的一小口食物，或聚會時吃的少量零嘴。",
+     "en": "a small amount of food eaten between meals, or a small bite",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00843858-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "半位元組（4 位元）",
+     "zh": "電腦術語，指半個位元組、四個位元。",
+     "en": "a unit of computer data equal to four bits, or half a byte",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "13647355-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "吹毛求疵",
+     "reason": "舊字典把 nibble 的比喻用法直譯，現代英文幾乎不用這個意思，改說 nitpick。"
+    }
+   ]
+  },
+  {
    "headword": "nicaragua",
    "senses": [
     {
@@ -4954,6 +9267,34 @@
      "reason": "參考資料僅標為經濟領域用語，但此字為一般地名，非專業術語，已併入地名義項"
     }
    ]
+  },
+  {
+   "headword": "nicaraguan",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "尼加拉瓜的",
+     "zh": "用來描述與尼加拉瓜這個國家或其人民、文化有關的事物。",
+     "en": "relating to Nicaragua, its people, or its culture",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03102397-a"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "尼加拉瓜人",
+     "zh": "指出生在尼加拉瓜或長期居住在那裡的人。",
+     "en": "a person who comes from Nicaragua or lives there",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "09744070-n"
+     ]
+    }
+   ],
+   "omitted": []
   },
   {
    "headword": "nice",
@@ -5065,6 +9406,77 @@
    ]
   },
   {
+   "headword": "nicety",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "細節、微妙之處",
+     "zh": "指意義、意見或態度上細微而需要留意的差別，常說 a nicety of……",
+     "en": "a small and delicate difference in meaning, opinion, or attitude",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "06618544-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "得體、合宜",
+     "zh": "指言行符合美感或禮節上的正確標準，常見於社會或審美語境",
+     "en": "the quality of being correct or proper according to accepted social or beauty standards",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "04721129-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "美好",
+     "reason": "舊字典的籠統譯法，現代英語中 nicety 不單指「美好」，此義已不通用"
+    },
+    {
+     "meaning": "準確、精密",
+     "reason": "舊義，現代多改用 accuracy、precision 表達"
+    },
+    {
+     "meaning": "拘泥細節",
+     "reason": "舊字典義，現代少見，且與「細節、微妙之處」重疊"
+    },
+    {
+     "meaning": "纖細",
+     "reason": "舊義，現代英語中幾乎不用 nicety 表達「纖細」"
+    }
+   ]
+  },
+  {
+   "headword": "nich",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "新生兒顱內出血（醫學縮寫）",
+     "zh": "醫學文獻中用來指新生兒腦部出血的縮寫，一般日常英文幾乎不會遇到。",
+     "en": "a medical abbreviation for bleeding inside a newborn baby's skull",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（一般英文單字）",
+     "reason": "參考資料僅列此醫學縮寫，無其他常見詞義；此字在現代一般英文中幾乎不用，僅保留專業用法。"
+    }
+   ]
+  },
+  {
    "headword": "niche",
    "senses": [
     {
@@ -5125,6 +9537,46 @@
     }
    ],
    "omitted": []
+  },
+  {
+   "headword": "nicholls",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "尼科爾斯（姓氏）",
+     "zh": "英文姓氏，常見於英國、澳洲、紐西蘭等地的人名。",
+     "en": "a family name used in English-speaking countries",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（英）尼科爾斯",
+     "reason": "與姓氏義重複，僅為舊字典的譯名標註"
+    }
+   ]
+  },
+  {
+   "headword": "nichols",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "尼可斯（姓氏）",
+     "zh": "英文姓氏，常見於人名，例如美國職棒球員或影視人物。",
+     "en": "a common English family name used for people",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "尼克爾斯（舊式音譯）",
+     "reason": "僅為舊字典的譯名寫法，與現行台灣譯名重複，非獨立詞義"
+    }
+   ]
   },
   {
    "headword": "nicholson",
@@ -5354,6 +9806,23 @@
    "omitted": []
   },
   {
+   "headword": "nicol",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "尼科爾稜鏡（偏光鏡）",
+     "zh": "一種用於產生偏振光的稜鏡，常見於光學實驗與顯微鏡等專業場合。",
+     "en": "a type of prism used to produce polarized light, especially in optical instruments",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "nicola",
    "senses": [
     {
@@ -5367,6 +9836,78 @@
     }
    ],
    "omitted": []
+  },
+  {
+   "headword": "nicolas",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "尼古拉斯（男子名）",
+     "zh": "英文男子名字，源自希臘語，常見暱稱為 Nick。",
+     "en": "a male first name of Greek origin; common short form is Nick",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "nicole",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "妮可（女子名）",
+     "zh": "常見的女性英文名字，為 Nicole 的拼法變體。",
+     "en": "a female given name, a spelling variant of Nicole",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "nicolo",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "尼科洛（義大利男子名）",
+     "zh": "義大利語男性名字，在英文文本中多作為外國人名直接音譯使用。",
+     "en": "an Italian male given name used in English mainly when referring to Italian people",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（舊字典列為一般名詞的釋義）",
+     "reason": "參考資料僅列人名，無其他實詞義；WordNet 亦無對應詞義，故不另立義項"
+    }
+   ]
+  },
+  {
+   "headword": "nicotine",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "尼古丁、菸鹼",
+     "zh": "香菸與電子菸中會讓人成癮的化學物質，也常出現在戒菸、健康危害的討論中。",
+     "en": "a chemical in tobacco that makes people want to keep using it and is harmful to health",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "14738978-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "作為殺蟲劑使用的生物鹼",
+     "reason": "專業領域過窄，現代一般語境幾乎不這樣用"
+    }
+   ]
   },
   {
    "headword": "niece",
@@ -5384,6 +9925,72 @@
     }
    ],
    "omitted": []
+  },
+  {
+   "headword": "nietzsche",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "尼采的、尼采哲學的",
+     "zh": "用來指與德國哲學家尼采本人或其思想、著作相關的事物。",
+     "en": "relating to the German philosopher Friedrich Nietzsche or his ideas and writings",
+     "usage": "less_common",
+     "register": [
+      "formal",
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "nifty",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "很棒的、讚的",
+     "zh": "口語上表示某事物很好、很出色，常用在輕鬆的對話或網路留言裡。",
+     "en": "very good or impressive, used in a casual way",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "01127641-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "時髦的、有型的",
+     "zh": "形容穿著、設計或做法新潮好看，帶點小巧思。",
+     "en": "stylish and clever in a pleasing way",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "巧妙的、俐落的",
+     "zh": "形容方法、工具或點子簡單卻很有效。",
+     "en": "simple but clever and effective",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "俏皮話、漂亮話（名詞）",
+     "reason": "名詞用法在現代英文幾乎已消失，只剩極舊的文獻可見"
+    },
+    {
+     "meaning": "俏皮的",
+     "reason": "舊字典義，現代少用；現多指時髦或巧妙，而非調皮"
+    }
+   ]
   },
   {
    "headword": "nigel",
@@ -5414,6 +10021,103 @@
     }
    ],
    "omitted": []
+  },
+  {
+   "headword": "nigerian",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "奈及利亞的、奈及利亞人的",
+     "zh": "用來指與奈及利亞這個國家或其人民有關的事物。",
+     "en": "relating to Nigeria or its people",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03102765-a",
+      "03102538-a"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "奈及利亞人",
+     "zh": "指出生在奈及利亞或在奈及利亞居住、具有該國國籍的人。",
+     "en": "a person who comes from Nigeria or lives there",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "09744199-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "nigger",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "對黑人的極度侮辱稱呼",
+     "zh": "帶強烈種族歧視的蔑稱，現代英語中幾乎只出現在引用、討論種族歧視或黑人之間的自我調侃，其他人使用會被視為嚴重冒犯。",
+     "en": "an extremely offensive and racist word for a Black person",
+     "usage": "common",
+     "register": [
+      "offensive",
+      "informal"
+     ],
+     "synsets": [
+      "82422068-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "社會地位低下的人",
+     "reason": "舊字典的引申義，現代英語已不這樣使用；現今此字只有種族蔑稱的意思。"
+    },
+    {
+     "meaning": "深棕色",
+     "reason": "罕用且過時的顏色義，現代幾乎不出現。"
+    }
+   ]
+  },
+  {
+   "headword": "niggling",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "瑣碎的、惱人的（小問題）",
+     "zh": "形容小而不重要、卻一直困擾人或讓人煩心的問題、疼痛或細節。",
+     "en": "small and annoying, and difficult to stop thinking about or get rid of",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01284018-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "吹毛求疵的、過度計較細節的",
+     "zh": "形容人對細微末節過度在意、反覆挑剔。",
+     "en": "paying too much attention to small details in a way that annoys others",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "小心翼翼的",
+     "reason": "舊字典釋義，現代少用；相關語感已由「吹毛求疵」義涵蓋"
+    },
+    {
+     "meaning": "缺乏魄力的",
+     "reason": "舊義，現代幾乎不用"
+    },
+    {
+     "meaning": "過於精細的",
+     "reason": "與「瑣碎、計較細節」義重複，且現代少見"
+    }
+   ]
   },
   {
    "headword": "night",
@@ -5504,6 +10208,104 @@
    "omitted": []
   },
   {
+   "headword": "nightdress",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "女用睡衣、睡袍",
+     "zh": "女性睡覺時穿的寬鬆連身衣物，通常有肩帶或短袖。",
+     "en": "a loose dress that a woman wears in bed",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03829921-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "孩子穿的睡衣",
+     "reason": "舊字典義；現代英語指兒童睡衣多用 pajamas，nightdress 幾乎專指女性。"
+    }
+   ]
+  },
+  {
+   "headword": "nightfall",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "傍晚、黃昏",
+     "zh": "太陽下山後、天色變暗的那段時間，常見於書面敘述或天氣、戶外情境。",
+     "en": "the time of day when the sky gets dark after the sun has gone down",
+     "usage": "common",
+     "register": [
+      "literary"
+     ],
+     "synsets": [
+      "15194468-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "nightgown",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "女用睡衣、睡袍",
+     "zh": "女性睡覺時穿的寬鬆連身衣物，通常材質輕柔。",
+     "en": "a loose, comfortable dress that a woman wears in bed",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03829921-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "孩子穿的睡衣",
+     "reason": "舊字典義；現代英語指兒童睡衣多用 pajamas，nightgown 幾乎專指女性或女孩的連身睡衣，此義已併入主要詞義"
+    }
+   ]
+  },
+  {
+   "headword": "nightingale",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "夜鶯",
+     "zh": "一種在夜間鳴唱、叫聲悅耳的歐洲小鳥。",
+     "en": "a small European bird that sings sweetly, especially at night",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01562746-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "nightlife",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "夜生活、夜晚娛樂",
+     "zh": "指晚上從事的娛樂活動，如去酒吧、夜店、看表演等。",
+     "en": "things people do for fun at night, such as going to bars, clubs, or shows",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00516963-n",
+      "00432277-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "nightly",
    "senses": [
     {
@@ -5580,6 +10382,110 @@
    "omitted": []
   },
   {
+   "headword": "nightmarish",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "可怕的、恐怖的",
+     "zh": "形容情況、經驗或景象極度嚇人，像噩夢一樣令人不安。",
+     "en": "extremely frightening or upsetting, like a bad dream",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00196418-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "糟透的、難以忍受的",
+     "zh": "口語上形容某件事或某段經歷非常糟糕、讓人痛苦。",
+     "en": "extremely bad or difficult to deal with",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "nightstand",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "床頭櫃",
+     "zh": "放在床邊、用來放手機、書或檯燈的小櫃子",
+     "en": "a small table or cabinet kept beside a bed for things you need at night",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "床頭幾",
+     "reason": "「几」為舊式用字，現代台灣多用「床頭櫃」，意思已併入第一條"
+    }
+   ]
+  },
+  {
+   "headword": "nighttime",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "夜間、晚上",
+     "zh": "太陽下山後到隔天日出前、外面天黑的時段。",
+     "en": "the period of time when it is dark because the sun has gone down",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "15192074-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "夜間的、夜晚的",
+     "zh": "放在名詞前面，表示發生在晚上或供夜晚使用的。",
+     "en": "happening at night or used during the night",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "niki",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "妮基（女子名）",
+     "zh": "英文女子名，常為 Nicole、Nicola 等名字的暱稱，日常稱呼或人名介紹時使用。",
+     "en": "a female first name, often a short form of Nicole or Nicola",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "nikolai",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "尼古拉（男子名）",
+     "zh": "常見於俄語、東歐人名的男性名字，英文寫作 Nikolai。",
+     "en": "a male given name used especially in Russia and other Slavic countries",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "nil",
    "senses": [
     {
@@ -5595,6 +10501,65 @@
     }
    ],
    "omitted": []
+  },
+  {
+   "headword": "nile",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "尼羅河",
+     "zh": "非洲東北部的大河，流經埃及等地，是世界上最長的河流之一。",
+     "en": "a very long river in northeastern Africa that flows through Egypt and is one of the longest rivers in the world",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "nimble",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "敏捷的、靈活的",
+     "zh": "形容動作輕快、身手靈活，常用來描述人或動物移動的樣子。",
+     "en": "able to move quickly and easily with light, smooth movements",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00032846-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "機智的、思路敏捷的",
+     "zh": "形容頭腦反應快、思路靈活，常用於 nimble mind、nimble wit 等說法。",
+     "en": "able to think and understand things quickly and cleverly",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01337785-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（企業、制度）靈活應變的",
+     "zh": "現代商管語境中形容組織或流程能快速調整、因應變化。",
+     "en": "able to change and react quickly to new situations or demands",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "伶俐的、聰明的",
+     "reason": "與「機智的、思路敏捷的」意思重疊，已合併為同一詞義"
+    }
+   ]
   },
   {
    "headword": "nina",
@@ -5784,6 +10749,66 @@
    "omitted": []
   },
   {
+   "headword": "ninja",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "忍者",
+     "zh": "日本古代受過武術與潛行訓練、受僱從事諜報或暗殺的人；現代常指影視、電玩中的蒙面黑衣角色。",
+     "en": "a Japanese fighter in the past who was trained to move secretly and was hired to spy or kill; also a character of this kind in films and games",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10378588-n",
+      "08405825-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "高手、達人（口語）",
+     "zh": "口語中稱某方面技巧高超的人，常說「某某忍者」。",
+     "en": "used informally to describe someone who is very skilled at something",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（受過偷竊技術專門訓練被僱作間諜或刺客的）日本武士",
+     "reason": "舊字典誤譯：把忍者說成武士，且「偷竊技術」並非其訓練內容；已用現代正確釋義取代"
+    }
+   ]
+  },
+  {
+   "headword": "nintendo",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "任天堂（遊戲公司）",
+     "zh": "日本遊戲公司，以瑪利歐、薩爾達傳說、Switch 主機等聞名。",
+     "en": "a Japanese company that makes video games and game consoles, known for Mario, Zelda, and the Switch",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "任天堂遊戲機",
+     "zh": "口語中泛指任天堂出品的遊戲主機，如 Switch、DS。",
+     "en": "used in everyday speech to mean a game console made by this company",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "ninth",
    "senses": [
     {
@@ -5823,6 +10848,103 @@
    "omitted": []
   },
   {
+   "headword": "nip",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "輕咬、小口咬",
+     "zh": "用牙齒輕輕咬一下，或動物小口咬人",
+     "en": "to bite someone or something lightly and quickly",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01449188-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "捏、夾",
+     "zh": "用手指或工具緊緊夾住或捏住某物",
+     "en": "to press something tightly between two fingers or surfaces",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01459400-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "剪斷、掐掉",
+     "zh": "用剪刀或手指快速剪下或掐去小部分",
+     "en": "to cut or remove something with a quick small movement",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01459092-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "小口（酒）",
+     "zh": "喝一小口酒或飲料",
+     "en": "a small amount of a drink, especially alcohol",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "13795390-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "寒意、微冷",
+     "zh": "空氣中令人感到冷的天氣或涼意",
+     "en": "a feeling of coldness in the air",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "05022862-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "輕咬、小傷口",
+     "zh": "被小動物輕咬或夾到的小傷口",
+     "en": "a small bite or cut made by something sharp",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00843942-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "辛辣味、刺激味",
+     "zh": "食物或飲料中強烈而刺激的風味",
+     "en": "a sharp, strong taste in food or drink",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "05723811-n",
+      "05000286-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（對日本人的冒犯用語）",
+     "reason": "冒犯性俚語，現代已不應使用"
+    },
+    {
+     "meaning": "尖刻話",
+     "reason": "古義，現代幾乎不用"
+    },
+    {
+     "meaning": "快走",
+     "reason": "舊式用法，現代少見"
+    }
+   ]
+  },
+  {
    "headword": "nipple",
    "senses": [
     {
@@ -5852,6 +10974,72 @@
     {
      "meaning": "奶嘴（安撫用，pacifier）",
      "reason": "中文釋義把安撫奶嘴與奶瓶奶嘴混為一談；安撫奶嘴英文一般說 pacifier（美）或 dummy（英），不單用 nipple，此義併入奶瓶奶嘴一項"
+    }
+   ]
+  },
+  {
+   "headword": "nirvana",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "涅槃（佛教、印度教）",
+     "zh": "佛教、印度教中指脫離生死輪迴、煩惱與欲望止息的境界",
+     "en": "in Buddhism and Hinduism, a state of perfect peace in which desire and suffering end and the cycle of rebirth stops",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "14011709-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "樂土、極樂之地",
+     "zh": "比喻讓人感到完全幸福、安寧的地方",
+     "en": "a place that feels completely peaceful, happy, and free from trouble",
+     "usage": "less_common",
+     "register": [
+      "literary"
+     ],
+     "synsets": [
+      "08583035-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（樂團）Nirvana",
+     "zh": "指 1990 年代的美國搖滾樂團，常出現在音樂、流行文化話題中",
+     "en": "a famous American rock band of the 1990s, often mentioned in music and pop-culture talk",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "天堂",
+     "reason": "舊字典的簡化譯法，容易與基督教的天堂（heaven）混淆；涅槃並非一般意義的天堂，已改以更精確的說明呈現"
+    }
+   ]
+  },
+  {
+   "headword": "nissan",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "日產（汽車品牌）",
+     "zh": "日本汽車製造商 Nissan 的品牌名稱，日常說車款、買車時常遇到。",
+     "en": "a Japanese company that makes cars, or a car made by this company",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "尼散月（猶太曆七月、宗教曆正月）",
+     "reason": "與汽車品牌無關；此義為希伯來曆月份名 Nisan 的拼法，屬宗教曆法專業用語，現代一般英文幾乎不用，且與本詞條品牌義無關。"
     }
    ]
   },
@@ -5905,6 +11093,50 @@
     }
    ],
    "omitted": []
+  },
+  {
+   "headword": "nixon",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "尼克森（美國總統）",
+     "zh": "指美國第 37 任總統理查・尼克森，常在新聞、歷史或政治話題中出現。",
+     "en": "the 37th president of the United States, often mentioned in news and history",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "尼克松（中國大陸譯名）",
+     "reason": "中國大陸譯法，台灣通用譯名為「尼克森」"
+    }
+   ]
+  },
+  {
+   "headword": "nm",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "奈米、毫微米",
+     "zh": "長度單位，等於十億分之一公尺，常用於科技與半導體領域。",
+     "en": "a unit of length equal to one billionth of a meter",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "13679972-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "新黴素、弗氏黴素（抗生素）",
+     "reason": "專業醫學縮寫，一般學習者不會遇到，且與長度單位無關"
+    }
+   ]
   },
   {
    "headword": "nme",
@@ -6008,6 +11240,46 @@
     {
      "meaning": "（舊字典的形容詞義）不是、絕非",
      "reason": "與副詞、限定詞義重複，現代多歸入 adv./det. 用法"
+    }
+   ]
+  },
+  {
+   "headword": "noah",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "諾亞（聖經人物）",
+     "zh": "聖經中建造方舟、在洪水中倖存的男子，常出現在「諾亞方舟」等說法裡。",
+     "en": "in the Bible, the man who built a large boat and survived a great flood with his family and animals",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "諾亞（作為一般英文單字）",
+     "reason": "此字僅為專有名詞，無其他現代字義；舊字典只列音譯，未提供額外釋義"
+    }
+   ]
+  },
+  {
+   "headword": "nobel",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "諾貝爾（獎）",
+     "zh": "指瑞典發明家阿佛烈・諾貝爾，或日常用來簡稱諾貝爾獎。",
+     "en": "Alfred Nobel, the Swedish inventor, or a short way of saying the Nobel Prize",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "諾貝爾（僅作人名釋義）",
+     "reason": "舊字典只把它當專有名詞音譯，未區分人名與獎項；現代最常見的用法其實是「諾貝爾獎」的簡稱，已併入 senses 說明。"
     }
    ]
   },
@@ -6127,6 +11399,25 @@
    ]
   },
   {
+   "headword": "nobleman",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "貴族、貴族男子",
+     "zh": "指擁有爵位或高貴身分的男子，常見於歷史故事、小說或談論階級的場合。",
+     "en": "a man who belongs to the highest social class, especially one with a title",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "10291374-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "nobody",
    "senses": [
     {
@@ -6153,6 +11444,41 @@
     }
    ],
    "omitted": []
+  },
+  {
+   "headword": "nocturnal",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "夜行性的、夜間活動的",
+     "zh": "形容動物或人在夜晚活動、白天休息。",
+     "en": "active at night rather than during the day",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00682190-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "夜間的、夜晚發生的",
+     "zh": "形容發生在夜晚或與夜晚有關的事物，如夜間噪音、夜間航班。",
+     "en": "happening at night or connected with the night",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02943139-a"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "夜曲的",
+     "reason": "舊字典誤譯；「夜曲」是 nocturne，不是 nocturnal 的意思"
+    }
+   ]
   },
   {
    "headword": "nod",
@@ -6398,6 +11724,23 @@
    ]
   },
   {
+   "headword": "noisily",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "吵鬧地、大聲地",
+     "zh": "以吵鬧、喧嘩或令人不悅的聲響來做某事。",
+     "en": "in a way that makes a lot of loud or unpleasant sound",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00230871-r"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "noisy",
    "senses": [
     {
@@ -6426,6 +11769,109 @@
    "omitted": []
   },
   {
+   "headword": "nolan",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "諾蘭（男子名、姓氏）",
+     "zh": "愛爾蘭裔常見的男子名與姓氏，如導演克里斯多福・諾蘭。",
+     "en": "a male first name and family name of Irish origin",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "nomad",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "遊牧民族的一員、遊牧者",
+     "zh": "指隨著季節遷徙、沒有固定居所的民族成員。",
+     "en": "a member of a group of people who move from place to place with the seasons instead of living in one fixed home",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10379458-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "數位遊牧族",
+     "zh": "近年指靠遠端工作、邊旅行邊生活的人，常說 digital nomad。",
+     "en": "someone who works online and travels around, living in different places for short periods",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "漂泊者、居無定所的人",
+     "zh": "泛指沒有固定住處、四處遷移生活的人。",
+     "en": "a person who has no fixed home and keeps moving from one place to another",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "游牧的、流浪的（形容詞）",
+     "reason": "現代幾乎不用 nomad 當形容詞，通常改用 nomadic"
+    }
+   ]
+  },
+  {
+   "headword": "nomadic",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "游牧的、逐水草而居的",
+     "zh": "形容以遷徙放牧為生活方式的人群或民族。",
+     "en": "moving from place to place with animals to find grass and water, rather than living in one fixed place",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "02135465-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "漂泊的、居無定所的",
+     "zh": "形容人經常搬遷、沒有固定住所或工作地點的生活方式。",
+     "en": "living in different places for short periods and not staying in one home for long",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02135465-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（工作、生活）遊牧式的、四處移動的",
+     "zh": "現代用法，指工作或生活形態不受固定地點限制，例如遠距工作、數位遊牧。",
+     "en": "describing a way of working or living that involves moving between places, often while working online",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "流浪的",
+     "reason": "與「漂泊、居無定所」意思重疊，已合併說明"
+    }
+   ]
+  },
+  {
    "headword": "nome",
    "senses": [
     {
@@ -6449,6 +11895,40 @@
       "technical"
      ],
      "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "nomenclature",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "命名法、命名系統",
+     "zh": "某一學科或領域中，為事物命名的一套系統或規則。",
+     "en": "a system or set of rules for naming things in a particular field",
+     "usage": "common",
+     "register": [
+      "formal",
+      "technical"
+     ],
+     "synsets": [
+      "06315049-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "術語、專門用語",
+     "zh": "某個專業領域使用的詞彙總稱，外行人往往不熟悉。",
+     "en": "the set of special words used in a particular subject or activity",
+     "usage": "less_common",
+     "register": [
+      "formal",
+      "technical"
+     ],
+     "synsets": [
+      "06315049-n"
+     ]
     }
    ],
    "omitted": []
@@ -6531,6 +12011,39 @@
    ]
   },
   {
+   "headword": "nominally",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "名義上、掛名的",
+     "zh": "實際上未必如此，只是名稱或頭銜上如此，常用來說明實際情況與表面不同。",
+     "en": "in name or by title, but not in reality or in practice",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00125896-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "（數字）大約、名目上",
+     "zh": "用於金額、數據前，表示帳面上或公告的數值，實際可能略有出入。",
+     "en": "used before an amount to mean the stated figure, which may not be exact",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "名稱上地",
+     "reason": "與「名義上」意思重複，現代多併入同一義項，不另列。"
+    }
+   ]
+  },
+  {
    "headword": "nominate",
    "senses": [
     {
@@ -6566,6 +12079,36 @@
      "reason": "舊字典義，現代英語幾乎不用 nominate 表示「命名」，一般改用 name"
     }
    ]
+  },
+  {
+   "headword": "nominated",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "被提名的、獲提名的",
+     "zh": "指被提名為候選人或獎項入圍者，常見於選舉、頒獎典禮等場合。",
+     "en": "officially put forward as a candidate for a job, position, or prize",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00850164-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "被任命的",
+     "zh": "指經正式指派擔任某職位，多用於正式或書面語境。",
+     "en": "officially chosen and given a position by someone in authority",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00850164-s"
+     ]
+    }
+   ],
+   "omitted": []
   },
   {
    "headword": "nomination",
@@ -6667,6 +12210,141 @@
    "omitted": []
   },
   {
+   "headword": "nonchalantly",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "若無其事地、一派輕鬆地",
+     "zh": "面對可能令人緊張或尷尬的情況時，表現得平靜自然、好像不在意",
+     "en": "in a calm and relaxed way, as if nothing is wrong or important",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00296859-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "漠不關心地、冷淡地",
+     "zh": "對某事表現出不在乎、不感興趣的態度，帶點冷淡",
+     "en": "in a way that shows little interest or concern about something",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00244545-r"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "noncompliance",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "不遵守、未遵循（規定、法規）",
+     "zh": "指沒有照規定、法規或要求去做，常用於醫療、法律與職場情境。",
+     "en": "the act of not following a rule, law, or instruction",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "01182197-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "不服從、不順從（對人的權威）",
+     "reason": "舊釋義偏向對人服從的語感；現代 noncompliance 多指未遵守規定、法規或醫囑，對人的不服從一般說 disobedience"
+    }
+   ]
+  },
+  {
+   "headword": "nonconformist",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "不從俗者、特立獨行的人",
+     "zh": "指不願順從社會常規、喜歡照自己想法生活的人，常帶中性或略帶佩服的語氣。",
+     "en": "a person who does not follow the usual rules or ways of behaving of most people",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "09977313-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "不從俗的、不循常規的",
+     "zh": "形容想法、做法或風格不照主流規範走，常用在藝術、時尚、生活方式等情境。",
+     "en": "not following the usual customs, rules, or accepted ways of doing things",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00612640-a"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（英國）非國教徒",
+     "zh": "英國歷史上指不屬於英國國教的新教徒，屬宗教與歷史領域用法。",
+     "en": "a Protestant in England who is not a member of the Church of England",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "09977612-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "違反準則的、違反規範的",
+     "reason": "與「不從俗的」意思重複，已合併"
+    },
+    {
+     "meaning": "不遵奉宗教教義的",
+     "reason": "宗教改革語境下的舊用法，現代一般英文少見，已併入非國教徒一義"
+    }
+   ]
+  },
+  {
+   "headword": "nondescript",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "平淡無奇的、不起眼的",
+     "zh": "形容外表或特徵普通、沒有明顯特色，讓人記不住或提不起興趣。",
+     "en": "not having any special or noticeable features, and often boring",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01678145-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "平凡無奇的人",
+     "zh": "指沒有明顯特色、不容易歸類、也不太有趣的人。",
+     "en": "a person who has no special features and is not very interesting",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "10380759-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "莫可名狀的、難以區別的",
+     "reason": "舊字典釋義偏離現代用法；現代英文主要指「平淡無奇、沒有特色」，不是「難以形容」或「無法區別」。"
+    }
+   ]
+  },
+  {
    "headword": "none",
    "senses": [
     {
@@ -6752,6 +12430,134 @@
    "omitted": []
   },
   {
+   "headword": "nonfiction",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "非小說、寫實類作品",
+     "zh": "以真實人物、事件或知識為題材的散文類作品，如傳記、報導、科普書等，與小說相對。",
+     "en": "writing about real people, events, or facts, such as life stories, news reports, or books on real subjects, rather than made-up stories",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "06379016-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（非小說的）寫實文學",
+     "reason": "與所列詞義重複，且「寫實文學」易與寫實主義小說混淆，現代多直接稱「非小說」"
+    }
+   ]
+  },
+  {
+   "headword": "nongovernmental",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "非政府的、民間的",
+     "zh": "指不屬於政府、由民間組織或私人成立的，常見於非政府組織、民間機構等說法。",
+     "en": "not belonging to or controlled by the government; run by private groups or citizens",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "非政治（上）的",
+     "zh": "指與政治無關、不涉及政黨或政府運作的，多用於描述活動或組織的性質。",
+     "en": "not connected with politics or political parties",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "草野",
+     "reason": "古義，指民間、鄉野，現代英文已不使用"
+    }
+   ]
+  },
+  {
+   "headword": "nonlinear",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "非線性的、非直線的",
+     "zh": "描述事物不是一條直線、不按固定比例變化，而是有曲線、跳躍或複雜互動的關係。",
+     "en": "not forming a straight line, or not changing in a simple, steady way",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01420660-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "非線性的（敘事、思考）",
+     "zh": "指故事、影片或思考方式不按時間順序或單一主線進行，常跳來跳去或同時發展多條線。",
+     "en": "not told or organized in a straight order from beginning to end",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "nonmember",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "非會員、非成員",
+     "zh": "不屬於某個組織、團體或網站會員的人，常用於說明收費或權限差異。",
+     "en": "a person who does not belong to a group, organization, or website",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10327733-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "nonpartisan",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "無黨派的、超黨派的",
+     "zh": "指立場中立、不偏向任何政黨，常用於形容機構、報導或選民。",
+     "en": "not supporting or controlled by any political party",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00734736-a"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "無黨派人士",
+     "zh": "指不屬於、也不支持任何政黨的人。",
+     "en": "a person who does not belong to or support any political party",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "10381089-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "nonprofit",
    "senses": [
     {
@@ -6783,6 +12589,39 @@
      "reason": "舊字典把 nonprofit 誤譯成「賺不到錢、不划算」，現代英文沒有這個意思；要表達不划算應說 not profitable。"
     }
    ]
+  },
+  {
+   "headword": "nonproliferation",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "防止擴散（核武等）",
+     "zh": "指防止核子武器等大規模毀滅性武器擴散到更多國家，常見於國際政治與外交新聞。",
+     "en": "the act of stopping weapons, especially nuclear weapons, from spreading to more countries",
+     "usage": "common",
+     "register": [
+      "formal",
+      "technical"
+     ],
+     "synsets": [
+      "01080496-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "防止擴散（一般事物）",
+     "zh": "較少見的用法，泛指防止某種事物數量增加或範圍擴大。",
+     "en": "the act of stopping something from increasing in number or spreading more widely",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "01080496-n"
+     ]
+    }
+   ],
+   "omitted": []
   },
   {
    "headword": "nonsense",
@@ -6829,6 +12668,247 @@
    ]
   },
   {
+   "headword": "nonsignificant",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "無足輕重的、不足道的",
+     "zh": "形容某事物影響很小、不值得重視，常用於結果、差異或變化。",
+     "en": "too small or unimportant to have any real effect or to be worth attention",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "（統計）不顯著的",
+     "zh": "統計檢定中，結果可能只是隨機造成的，未達顯著水準。",
+     "en": "in statistics, not likely to be caused by anything other than chance",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "02173482-a"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "無意義的",
+     "reason": "與「無足輕重」意思重疊，且現代多說 meaningless，不另立詞義"
+    }
+   ]
+  },
+  {
+   "headword": "nonstick",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "不沾鍋的、防沾的",
+     "zh": "指鍋具或烤盤表面經過處理，食物不易黏在上面，好清洗。",
+     "en": "made so that food does not stick to the surface, especially of pans and baking trays",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02243075-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "nonstop",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "直達的、中途不停的",
+     "zh": "指交通工具或路線中途不停靠，直接開到目的地。",
+     "en": "going straight to a place without stopping on the way",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00764992-s"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "不停地、不間斷地",
+     "zh": "表示某動作持續進行、中間沒有停下來。",
+     "en": "continuously, without pausing or stopping",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00412530-r"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "不間斷的、全天候的",
+     "zh": "形容活動、服務或狀態一直持續，沒有休息時段。",
+     "en": "continuing all the time without a break",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00597829-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "直達班機、直飛航班",
+     "zh": "指從出發地直接飛到目的地、中途不停留的航班。",
+     "en": "a flight that goes from one place to another without stopping",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00302827-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "直達車、直達行駛",
+     "reason": "名詞用法在現代英文多指直飛航班，泛指「直達車」的說法已少見，併入直達班機義"
+    }
+   ]
+  },
+  {
+   "headword": "nontoxic",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "無毒的、不含有毒物質的",
+     "zh": "指產品、材料或化學物質不會產生毒性、對人體無害，常用於環保或安全標示。",
+     "en": "not containing or producing anything harmful or poisonous",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02459713-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "可安全食用的",
+     "zh": "指食物或食材吃了不會中毒、可以安心食用。",
+     "en": "safe to eat and not likely to cause harm",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00832685-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "nontraditional",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "非傳統的、不照傳統的",
+     "zh": "指做法、觀念或形式不遵循既有傳統，常用於教育、職涯、藝術等領域。",
+     "en": "not following the usual or accepted customs and ways of doing things",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00614561-a"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "nonverbal",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "非語言的、不用言語的",
+     "zh": "指透過表情、手勢、肢體動作或語氣來傳達訊息，而不是用說出來的字詞。",
+     "en": "done or shown through body movements, facial expressions, or tone rather than spoken words",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00500009-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（溝通）少用語言的",
+     "zh": "形容某種互動或活動中幾乎不靠語言，例如以遊戲或動作進行的溝通。",
+     "en": "involving very little use of spoken language",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00501107-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "口語表達能力弱的",
+     "zh": "形容一個人不太會用言語表達自己，較少出現在一般對話中。",
+     "en": "not good at expressing things in words",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00501228-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "不用動詞的",
+     "reason": "舊字典誤譯，應為 non-verbal 的誤解，現代英文無此用法"
+    }
+   ]
+  },
+  {
+   "headword": "nonviolence",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "非暴力、非暴力抗爭",
+     "zh": "以和平手段（如拒服兵役、靜坐、絕食）抵抗政府或爭取權利，不使用武力。",
+     "en": "the use of peaceful methods such as protests or refusal to obey to bring about change, without using force",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01245263-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "nonviolent",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "非暴力的、不使用暴力的",
+     "zh": "形容以和平手段抗爭或解決問題，不動用武力。",
+     "en": "using peaceful methods and refusing to use force or violence",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02522980-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "和平的、不流血的",
+     "zh": "形容變革或過程沒有造成傷亡或流血衝突。",
+     "en": "happening without fighting, killing, or bloodshed",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00250442-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "noodle",
    "senses": [
     {
@@ -6864,6 +12944,29 @@
    ]
   },
   {
+   "headword": "nook",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "角落、隱蔽處",
+     "zh": "房間或空間裡安靜、不受打擾的小角落，常見於片語 every nook and cranny。",
+     "en": "a small, quiet corner or hidden spot in a place",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03114532-n",
+      "08661223-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "躲蔽處、隱匿處",
+     "reason": "與「角落、隱蔽處」意思重複，已合併為同一詞義"
+    }
+   ]
+  },
+  {
    "headword": "noon",
    "senses": [
     {
@@ -6882,6 +12985,65 @@
     {
      "meaning": "全盛期",
      "reason": "古義，現代英文幾乎不用 noon 表達「全盛期」，多說 peak、prime 等"
+    }
+   ]
+  },
+  {
+   "headword": "noose",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "套索、繩圈",
+     "zh": "繩子末端打成可收緊的圈，用來套住動物或作為刑具。",
+     "en": "a loop with a knot that tightens when pulled, used for catching animals or as a hanging rope",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03835103-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "陷阱、圈套",
+     "zh": "比喻讓人陷入困境、難以脫身的處境或計謀。",
+     "en": "a difficult situation that is hard to escape from",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "v.",
+     "label": "用套索捕捉",
+     "zh": "用繩圈套住動物。",
+     "en": "to catch an animal with a rope that has a loop",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01344806-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "打繩圈、做成套索",
+     "zh": "在繩子上打出可收緊的圈。",
+     "en": "to make a loop with a knot in a rope",
+     "usage": "rare",
+     "register": [],
+     "synsets": [
+      "01677525-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "束縛",
+     "reason": "抽象用法在現代英語中罕見，多被其他詞取代。"
+    },
+    {
+     "meaning": "捕鳥或小動物的陷阱（WordNet 04255961-n）",
+     "reason": "此義項過於專門，現代一般用法已涵蓋於「套索」義。"
     }
    ]
   },
@@ -6936,6 +13098,73 @@
    "omitted": []
   },
   {
+   "headword": "nordic",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "北歐的、斯堪地那維亞的",
+     "zh": "指與北歐國家（丹麥、挪威、瑞典、芬蘭、冰島）或其人民、文化有關的。",
+     "en": "relating to the countries of northern Europe, their people, or their culture",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03103985-a",
+      "00245180-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "北歐式滑雪的",
+     "zh": "指越野滑雪、跳台滑雪這類北歐傳統滑雪項目，常見於冬奧賽事用語。",
+     "en": "relating to a style of skiing that includes cross-country and ski jumping",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "北歐語、北日耳曼語",
+     "zh": "指瑞典語、挪威語、丹麥語、冰島語等北歐語言，語言學上的分類用語。",
+     "en": "the group of languages spoken in Scandinavia and Iceland, such as Swedish and Danish",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "06966471-n",
+      "03104119-a"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "北歐人、日耳曼民族",
+     "reason": "現代英語少用 nordic 當名詞指人，通常直接說 Scandinavian 或北歐國家名稱；此名詞用法已過時"
+    },
+    {
+     "meaning": "日耳曼民族的",
+     "reason": "舊字典把北歐與日耳曼混為一談的舊式釋義，現代已不用 nordic 指日耳曼"
+    }
+   ]
+  },
+  {
+   "headword": "noreen",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "諾琳（女子名）",
+     "zh": "愛爾蘭裔常見的女性名字，為 Nora 的變體，現代英語中主要只當人名使用。",
+     "en": "a female first name of Irish origin, a variant of Nora",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "norfolk",
    "senses": [
     {
@@ -6949,6 +13178,26 @@
     }
    ],
    "omitted": []
+  },
+  {
+   "headword": "noriega",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "諾瑞加（姓氏）",
+     "zh": "西班牙語系常見姓氏，最常指巴拿馬前軍事領袖曼紐爾・諾瑞加。",
+     "en": "a Spanish surname, especially that of Manuel Noriega, the former military leader of Panama",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "(西、葡)諾列加",
+     "reason": "與姓氏詞義重複，僅為舊字典的譯名標注，不另列。"
+    }
+   ]
   },
   {
    "headword": "norm",
@@ -6993,6 +13242,28 @@
     {
      "meaning": "模範、典範",
      "reason": "現代多說 model 或 role model，單用 norm 指「模範」已少見，與「常態、一般水準」意思重疊"
+    }
+   ]
+  },
+  {
+   "headword": "norma",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "矩尺座",
+     "zh": "南天的一個小星座，正式名稱是 Norma，中文常譯作矩尺座。",
+     "en": "a small constellation in the southern sky, whose Latin name means a carpenter's square",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "矩尺（量角工具）",
+     "reason": "此字在現代英文中幾乎只作星座名；一般「矩尺」用 square 或 set square，不單獨用 norma"
     }
    ]
   },
@@ -7051,6 +13322,157 @@
     {
      "meaning": "師範的",
      "reason": "舊譯法，指師範學校（normal school），現代英文幾乎不用，台灣學習者理解為「正常的」即可"
+    }
+   ]
+  },
+  {
+   "headword": "normalcy",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "常態、正常狀態",
+     "zh": "事情回到平常、一般應有的樣子，常在新聞或正式場合用來指社會、生活恢復正常",
+     "en": "the state of things being usual, regular, or as they normally are",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "14524492-n",
+      "04802662-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "normality",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "常態、正常狀態",
+     "zh": "指事物回到或處於一般、預期的情況，常用於疫情、生活、局勢等恢復正常的語境。",
+     "en": "the state of things being usual, regular, or as they normally are",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "14524492-n",
+      "04802662-n",
+      "04721334-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（溶液）當量濃度",
+     "zh": "化學專業用語，指每公升溶液中所含溶質的克當量數。",
+     "en": "a measure of concentration equal to gram equivalents of solute per liter of solution",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "13602112-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "符合規範、守常",
+     "reason": "與「常態」詞義重疊，已合併於第一個詞義，不另列"
+    }
+   ]
+  },
+  {
+   "headword": "normalization",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "正常化、常態化",
+     "zh": "讓原本不正常或特殊的情況回到一般、正常的狀態，常用於政治、社會或疫情等情境。",
+     "en": "the process of returning to a usual or expected state after a period of trouble or change",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "正規化、標準化",
+     "zh": "把資料、流程或數值整理成統一標準，以便比較、管理或處理。",
+     "en": "the act of making things follow the same rules or standards so they can be compared or handled easily",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01161177-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（資料庫）正規化",
+     "zh": "資料庫設計中把資料表拆解、減少重複與不一致的專門做法。",
+     "en": "in computing, the process of organizing data in a database to reduce repetition and errors",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "normalize",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "使正常化、恢復正常",
+     "zh": "讓原本不正常或偏離常態的事物回到正常狀態，常用於疫情、經濟、關係等情況。",
+     "en": "to make something return to its usual or normal state, or to become normal again",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00469496-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "使標準化、使符合規範",
+     "zh": "讓資料、制度或做法符合統一標準，以便比較或管理。",
+     "en": "to make something follow a standard or rule so that it is consistent",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00469149-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "（資料庫）正規化",
+     "zh": "在資料庫設計中把資料分表整理，減少重複與不一致，是資訊領域的專門用法。",
+     "en": "to organize data in a database to reduce repetition and keep it consistent",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "v.",
+     "label": "（社群、網路）使正常化",
+     "zh": "指某種言論或行為在網路上被大量出現而變得司空見慣，常帶批評意味。",
+     "en": "to make something that was unusual become accepted as normal, often used critically",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "使（金屬）回火、調質",
+     "reason": "專業冶金術語，一般學習者幾乎不會遇到"
     }
    ]
   },
@@ -7179,6 +13601,21 @@
    ]
   },
   {
+   "headword": "norris",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "諾里斯（男子名）",
+     "zh": "英文男子名，也可作姓氏，例如一級方程式賽車手 Lando Norris。",
+     "en": "a male first name or family name",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "north",
    "senses": [
     {
@@ -7231,6 +13668,26 @@
    "omitted": []
   },
   {
+   "headword": "northallerton",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "諾思阿勒頓（英國城鎮）",
+     "zh": "英格蘭北約克郡的市集城鎮，位於北英格蘭，常作為地名出現在新聞或旅遊資訊中。",
+     "en": "a market town in North Yorkshire, northern England",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "北約克郡首府",
+     "reason": "誤譯；諾思阿勒頓並非北約克郡首府，該郡行政中心為北阿勒頓（Northallerton）僅為郡內城鎮，舊字典說明有誤"
+    }
+   ]
+  },
+  {
    "headword": "northampton",
    "senses": [
     {
@@ -7259,6 +13716,28 @@
     }
    ],
    "omitted": []
+  },
+  {
+   "headword": "northants",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "北安普敦郡（英國）",
+     "zh": "英格蘭中部的一個郡，常在新聞、體育報導中以縮寫形式出現。",
+     "en": "a county in the central part of England; used especially in news and sports writing",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "北安普敦郡（Northamptonshire）全名",
+     "reason": "與所列詞義重複，僅為同一地名的縮寫形式"
+    }
+   ]
   },
   {
    "headword": "northeast",
@@ -7352,6 +13831,56 @@
    "omitted": []
   },
   {
+   "headword": "northerly",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "偏北的、朝北的",
+     "zh": "描述位置或方向偏向北方，例如朝北的窗戶、往北的路線。",
+     "en": "located in or facing toward the north",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01605879-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（風）來自北方的",
+     "zh": "氣象報告常用來描述從北方吹來的風或冷空氣。",
+     "en": "blowing from the north, especially of wind",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01605651-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "北風",
+     "zh": "指從北方吹來的風，常見於氣象敘述。",
+     "en": "a wind that comes from the north",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "11508350-n"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "向北、往北",
+     "zh": "表示朝北方的方向移動或延伸，較少單獨使用。",
+     "en": "toward the north",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00245502-r"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "northern",
    "senses": [
     {
@@ -7428,6 +13957,121 @@
      "usage": "common",
      "register": [],
      "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "northumbria",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "諾森布里亞（中世紀英格蘭北方王國）",
+     "zh": "中世紀位於英格蘭北部的盎格魯王國，今多用於歷史敘述或地名。",
+     "en": "an Anglo-Saxon kingdom in northern England during the Middle Ages",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "northumbrian",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "諾森伯蘭（郡）的",
+     "zh": "用來指英格蘭東北部諾森伯蘭郡或古代諾森伯蘭王國的人事物。",
+     "en": "relating to Northumberland or the old kingdom of Northumbria in northern England",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "諾森伯蘭人",
+     "zh": "指出身或居住在諾森伯蘭郡、或古代諾森伯蘭王國的人。",
+     "en": "a person from Northumberland or the old kingdom of Northumbria",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "諾森伯蘭方言",
+     "zh": "指英格蘭東北部當地使用的英語方言，語言學文獻中較常出現。",
+     "en": "the local English dialect spoken in the north-east of England",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "northward",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "向北、朝北",
+     "zh": "表示往北方的方向移動或延伸，常見於天氣預報、路線描述。",
+     "en": "toward the north",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00245502-r"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "向北的、往北的",
+     "zh": "形容朝北方移動或延伸的事物，如 northward journey、northward trend。",
+     "en": "moving or going toward the north",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01605295-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "北方、北向",
+     "zh": "指北方的方向本身，多用於書面或正式敘述，如 to the northward。",
+     "en": "the direction that is toward the north",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "13853375-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "北方（羅盤方位，0 度或 360 度）",
+     "reason": "與名詞「北方、北向」詞義重複，且現代日常多直接用 north，不另列"
+    }
+   ]
+  },
+  {
+   "headword": "northwards",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "向北、朝北",
+     "zh": "表示往北方的方向移動或延伸，常與動詞連用。",
+     "en": "toward the north",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00245502-r"
+     ]
     }
    ],
    "omitted": []
@@ -7748,6 +14392,41 @@
      "reason": "與「懷舊、懷舊之情」意思重複，已合併"
     }
    ]
+  },
+  {
+   "headword": "nostalgic",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "懷舊的、勾起回憶的",
+     "zh": "讓人想起過去美好時光的人、事、物，帶有溫馨或感傷的感覺。",
+     "en": "making you remember happy times in the past with warm or slightly sad feelings",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "懷念過去的、念舊的",
+     "zh": "形容人常想起從前的日子，覺得過去比現在好。",
+     "en": "often thinking about the past and feeling that it was better than now",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "想家的、思鄉的",
+     "zh": "離家在外時想念家人與熟悉環境，感到不開心。",
+     "en": "sad because you are away from home and miss familiar people and places",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00892391-s"
+     ]
+    }
+   ],
+   "omitted": []
   },
   {
    "headword": "nostril",
@@ -8180,6 +14859,56 @@
    ]
   },
   {
+   "headword": "noted",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "著名的、知名的",
+     "zh": "指某人或某事物因為成就或特色而廣為人知、受人敬重。",
+     "en": "well known by many people, especially for being good or important",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01378757-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "顯著的、揚名的",
+     "reason": "「顯著」偏舊字典釋義，現代多說 notable 或 remarkable；「揚名」只是「著名」的另一種說法，已合併。"
+    }
+   ]
+  },
+  {
+   "headword": "notepad",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "記事本、便條本",
+     "zh": "用來隨手寫下筆記或備忘事項的小本子，通常是撕頁式的紙本。",
+     "en": "a small book of blank or lined paper used for writing notes",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "15045652-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（電腦、手機的）記事本程式",
+     "zh": "指裝置上用來快速記錄文字、不重排版的簡單文字編輯程式，如 Windows 的「記事本」。",
+     "en": "a simple computer program for writing and saving plain text",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "noteworthy",
    "senses": [
     {
@@ -8197,6 +14926,123 @@
     }
    ],
    "omitted": []
+  },
+  {
+   "headword": "nothing",
+   "senses": [
+    {
+     "pos": "pron.",
+     "label": "沒有東西、沒有事情",
+     "zh": "表示完全沒有任何事物，是最基本的用法。",
+     "en": "not a single thing or matter; no thing at all",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "13762308-n"
+     ]
+    },
+    {
+     "pos": "pron.",
+     "label": "沒什麼、不重要的事",
+     "zh": "回應別人道謝或道歉時，表示那不算什麼。",
+     "en": "used as a polite reply to say that something is not important",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "adv.",
+     "label": "一點也不、毫不",
+     "zh": "放在形容詞或副詞前，強調完全沒有某種性質。",
+     "en": "not at all; used before an adjective or adverb to mean not in any way",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00024616-r"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "無、空無",
+     "zh": "指完全不存在的狀態，常見於哲學或抽象討論。",
+     "en": "a state in which nothing exists; emptiness",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "零、沒有（分數、金額）",
+     "zh": "在計分或金額上表示零，例如比賽掛零。",
+     "en": "the number zero, especially in scores or amounts",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "感嘆詞「什麼也沒有」",
+     "reason": "現代英文不把 nothing 當感嘆詞用，屬舊字典分類錯誤"
+    }
+   ]
+  },
+  {
+   "headword": "nothingness",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "虛無、空無",
+     "zh": "哲學或文學中用來指完全不存在、空無一物的狀態。",
+     "en": "the state of not existing at all, or the quality of being completely empty",
+     "usage": "common",
+     "register": [
+      "formal",
+      "literary"
+     ],
+     "synsets": [
+      "14479148-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "無意義、空洞",
+     "zh": "形容某事物毫無內容、價值或意義，常用於抽象討論。",
+     "en": "the quality of having no meaning, value, or importance",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "空話、虛誇之言",
+     "zh": "指內容空洞、誇大或不真誠的言論。",
+     "en": "talk that is empty, exaggerated, or not sincere",
+     "usage": "rare",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "07151419-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "微不足道、無價值",
+     "reason": "與「無意義、空洞」意思重疊，已合併處理"
+    },
+    {
+     "meaning": "不存在",
+     "reason": "與「虛無、空無」意思重疊，已合併處理"
+    }
+   ]
   },
   {
    "headword": "notice",
@@ -8314,6 +15160,72 @@
    "omitted": []
   },
   {
+   "headword": "noticeably",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "明顯地、顯著地",
+     "zh": "用來表示某種變化或差異很明顯，一眼就看得出來。",
+     "en": "in a way that is easy to see or clearly different from before",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00367464-r"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "重要、值得注意",
+     "reason": "這是形容詞 noticeable 的意思，不是副詞 noticeably 的用法；舊字典把詞性混在一起，現代英文不這樣用。"
+    }
+   ]
+  },
+  {
+   "headword": "notification",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "通知、告知",
+     "zh": "把某件事告訴某人，讓對方知道的動作或訊息，常見於正式或書面情境。",
+     "en": "the act of telling someone about something, or a message that gives them information",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07227084-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（手機、App）通知",
+     "zh": "手機或應用程式跳出提醒你有新訊息、新動態的提示。",
+     "en": "a message that a phone or app shows to tell you about a new event or message",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "繳費通知、帳單",
+     "zh": "要求付款或提醒繳費的書面通知。",
+     "en": "a written request asking someone to pay money that is owed",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "07200328-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "大陪審團自行提出的犯罪指控",
+     "reason": "法律專業術語，現代一般英文幾乎不會遇到"
+    }
+   ]
+  },
+  {
    "headword": "notify",
    "senses": [
     {
@@ -8404,6 +15316,65 @@
    ]
   },
   {
+   "headword": "notional",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "概念上的、理論上的",
+     "zh": "指存在於想法或理論中，而非實際具體的事物。",
+     "en": "existing as an idea or in theory rather than in reality",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00012090-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "想像的、虛構的",
+     "zh": "指只存在於想像中，並非真實的。",
+     "en": "existing only in the imagination; not real",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01943120-s",
+      "00646620-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "沒有根據的、不切實際的",
+     "zh": "指想法或說法缺乏事實或調查依據。",
+     "en": "not based on facts or investigation",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00865005-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "notoriety",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "惡名、臭名",
+     "zh": "因為做過壞事或不好的行為而廣為人知，通常帶負面評價。",
+     "en": "the state of being widely known for something bad or unacceptable",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "14462615-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "notorious",
    "senses": [
     {
@@ -8490,6 +15461,21 @@
      "label": "諾丁漢郡",
      "zh": "英格蘭中部的一個郡，以羅賓漢傳說聞名，郡治為諾丁漢。",
      "en": "a county in the central part of England, famous for the Robin Hood stories",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "notts",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "諾丁漢郡（英國）",
+     "zh": "英格蘭中部的一個郡，常在新聞、體育或地名縮寫中看到。",
+     "en": "a county in the middle of England; used especially in short forms and sports contexts",
      "usage": "common",
      "register": [],
      "synsets": []
@@ -8598,6 +15584,86 @@
    "omitted": []
   },
   {
+   "headword": "nourish",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "滋養、供給營養",
+     "zh": "提供身體成長或維持健康所需的養分，用於食物、土壤或護膚品。",
+     "en": "to give a person, animal, or plant the food and other things needed to grow and stay healthy",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01205348-v",
+      "01206811-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "懷有（想法、感受）",
+     "zh": "心中抱持某種想法、希望或情緒，常見於書面或正式說法。",
+     "en": "to keep a feeling, idea, or hope in your mind over a period of time",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "v.",
+     "label": "培養、助長（關係、能力）",
+     "zh": "讓某種能力、關係或文化慢慢發展壯大，多用於抽象事物。",
+     "en": "to help something such as a skill, relationship, or idea grow stronger over time",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "使健壯",
+     "reason": "與「滋養、供給營養」意思重疊，已合併處理"
+    }
+   ]
+  },
+  {
+   "headword": "nourishment",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "營養、養分",
+     "zh": "身體成長與維持健康所需的養分，常見於健康、飲食類文章。",
+     "en": "the food and substances a person or living thing needs to grow and stay healthy",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07586285-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "滋養、供養",
+     "zh": "供給養分或使身心得到滋養的行為，較書面。",
+     "en": "the act of giving food or other things that help someone or something grow and stay strong",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00666092-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "滋養品、養料（當具體食物名詞）",
+     "reason": "與第一個詞義重複，現代多說 food、nutrients，不另立義項"
+    }
+   ]
+  },
+  {
    "headword": "nov",
    "senses": [
     {
@@ -8611,6 +15677,25 @@
      ],
      "synsets": [
       "15238202-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "nova",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "新星",
+     "zh": "天文學上指亮度突然大幅增加、之後再慢慢變暗的恆星。",
+     "en": "a star that suddenly becomes much brighter for a while and then slowly fades",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "09397404-n"
      ]
     }
    ],
@@ -8682,6 +15767,28 @@
     {
      "meaning": "小說（novel 的舊拼法）",
      "reason": "參考資料未列；此拼法為 novel 的舊式或誤拼，現代英文已不使用，僅在舊文獻或人名中偶見"
+    }
+   ]
+  },
+  {
+   "headword": "novella",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "中篇小說",
+     "zh": "篇幅比長篇小說短、比短篇故事長的小說，常收在單行本或合輯中。",
+     "en": "a work of fiction that is longer than a short story but shorter than a full novel",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "06380585-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "短篇故事",
+     "reason": "舊字典把短篇故事也列為此字，但現代英文中短篇故事一般說 short story，此義已不用"
     }
    ]
   },
@@ -8943,6 +16050,164 @@
    "omitted": []
   },
   {
+   "headword": "nowt",
+   "senses": [
+    {
+     "pos": "pron.",
+     "label": "沒有東西、什麼都沒有",
+     "zh": "英國北部口語用法，表示「沒有東西」或「什麼都沒有」，常出現在日常對話中。",
+     "en": "nothing at all; used in informal speech in the north of England",
+     "usage": "less_common",
+     "register": [
+      "informal",
+      "old"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "無、零",
+     "zh": "在英國北部口語中表示「沒有」或「零」，例如「什麼都沒有」。",
+     "en": "nothing; zero; used in informal northern English speech",
+     "usage": "rare",
+     "register": [
+      "informal",
+      "old"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "邪惡、惡人",
+     "reason": "舊字典的誤譯；nowt 是 naught 的方言變體，現代只表示「沒有東西」，沒有「邪惡、惡人」的意思。"
+    }
+   ]
+  },
+  {
+   "headword": "noxious",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "有害的、有毒的",
+     "zh": "指氣體、化學物質或環境對身體或健康造成傷害，常見於正式或新聞描述。",
+     "en": "harmful or poisonous to people's health",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "01615595-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "敗壞人心的、不良的",
+     "zh": "形容風氣、影響或內容對人的品德有負面作用，多用於書面語。",
+     "en": "having a bad effect on people's moral or mental state",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "01615595-a"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "nozzle",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "噴嘴、管口",
+     "zh": "裝在管子或容器末端、用來控制液體或氣體噴出的裝置，如澆花水管、加油槍、滅火器上的噴頭。",
+     "en": "the narrow part at the end of a pipe or container that controls how liquid or gas comes out",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03839104-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "鼻子（俚語）",
+     "zh": "口語或玩笑話裡指人的鼻子，日常正式場合不會這樣用。",
+     "en": "a slang or joking word for someone's nose",
+     "usage": "less_common",
+     "register": [
+      "informal",
+      "slang"
+     ],
+     "synsets": [
+      "05606462-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "nra",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "美國全國步槍協會",
+     "zh": "美國影響力很大的擁槍團體，常在新聞中簡稱 NRA，主張人民有擁槍權、反對政府管制槍械。",
+     "en": "a large and powerful US group that supports the right of people to own guns and opposes government control of guns",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "08392453-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "國家檔案登記處（National Register of Archives）",
+     "reason": "英國檔案機構的專有名稱縮寫，現代一般英文幾乎不用，學習者不需要記"
+    }
+   ]
+  },
+  {
+   "headword": "nsaid",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "非類固醇消炎藥",
+     "zh": "用來退燒、止痛、消炎，但不含類固醇的藥物，例如布洛芬、阿斯匹靈。",
+     "en": "a drug that reduces pain, fever, and swelling but does not contain steroids",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "03834005-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "nsf",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "美國國家科學基金會",
+     "zh": "美國聯邦政府機構，專門資助科學與工程的研究和教育計畫；新聞與學術文件常以縮寫 NSF 出現。",
+     "en": "a US government agency that gives money to support research and education in science and engineering",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "08143903-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "nt",
    "senses": [
     {
@@ -8963,6 +16228,25 @@
      "reason": "WordNet 的 08065877-n 其實是專有名詞 National Trust 的縮寫，並非一般字義；nt 在現代網路也常是 no text、nice try 等縮寫，皆非本詞的獨立義項"
     }
    ]
+  },
+  {
+   "headword": "nu",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "希臘字母第 13 個字母",
+     "zh": "希臘字母表的第 13 個字母，寫作 Ν（大寫）或 ν（小寫），常見於數學、物理與統計的公式中。",
+     "en": "the 13th letter of the Greek alphabet, written as Ν or ν, often used in math and science",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "06848470-n"
+     ]
+    }
+   ],
+   "omitted": []
   },
   {
    "headword": "nuance",
@@ -8989,6 +16273,35 @@
     }
    ],
    "omitted": []
+  },
+  {
+   "headword": "nuanced",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "細膩的、有層次的",
+     "zh": "形容想法、說法或表現方式細緻，能顧到細微差異，不粗略單一。",
+     "en": "showing small differences in meaning, feeling, or detail; not simple or rough",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "細微的、微妙的（差異）",
+     "zh": "形容顏色、聲音、氣味或語氣之間只有很小的差別，需要仔細分辨。",
+     "en": "having very small differences that are hard to notice",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（色彩、音調、香韻等）有細微差別的",
+     "reason": "此義已併入「細微的、微妙的（差異）」一條，不另列"
+    }
+   ]
   },
   {
    "headword": "nuclear",
@@ -9041,6 +16354,25 @@
      ],
      "synsets": [
       "00332157-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "nucleotide",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "核苷酸",
+     "zh": "構成 DNA 與 RNA 的基本單位，由鹼基、五碳醣和磷酸組成；生物、醫學與基因相關文章常見。",
+     "en": "one of the small units that make up DNA and RNA, formed from a sugar, a phosphate, and a base",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "14988729-n"
      ]
     }
    ],
@@ -9251,6 +16583,77 @@
    ]
   },
   {
+   "headword": "nudity",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "裸露、裸體",
+     "zh": "身體沒有穿衣服的狀態，常見於藝術、影視分級或公共場所規範的討論。",
+     "en": "the state of not wearing any clothes",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "14479586-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "裸露畫面、裸體內容",
+     "zh": "指電影、節目、圖片等媒體中出現的裸露內容，常出現在分級或審查的說明裡。",
+     "en": "naked bodies shown in films, shows, or pictures",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "裸露物、裸體像",
+     "reason": "舊字典義，現代幾乎不用；指具體物品時一般說 nude 或 naked figure，不稱 nudity"
+    }
+   ]
+  },
+  {
+   "headword": "nugget",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "金塊、天然金塊",
+     "zh": "從地裡挖出、未經提煉的天然金塊。",
+     "en": "a small lump of gold or other precious metal found in the ground",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "09398393-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（有價值的）資訊、見解",
+     "zh": "指談話、文章或經驗中特別有用的一小段知識或想法，常說 nugget of wisdom。",
+     "en": "a small piece of useful information, advice, or knowledge",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "雞塊、小塊食物",
+     "zh": "指一口大小的炸雞塊等小塊食物，常見於速食與冷凍食品。",
+     "en": "a small piece of food, especially chicken, that is easy to eat in one bite",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "小塊（泛指）",
+     "reason": "過於籠統，現代多指食物或金塊等具體用法，已分別併入其他詞義"
+    }
+   ]
+  },
+  {
    "headword": "nuisance",
    "senses": [
     {
@@ -9286,6 +16689,193 @@
      "reason": "舊字典把法律上的妨害逕譯為「損害」，現代一般用法少見，已併入法律義說明"
     }
    ]
+  },
+  {
+   "headword": "nuke",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "用核武攻擊",
+     "zh": "以核子武器轟炸或攻擊某地",
+     "en": "to attack a place with nuclear weapons",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01135406-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "用微波爐加熱",
+     "zh": "口語說把食物放進微波爐加熱",
+     "en": "to heat or cook food in a microwave oven",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "00322737-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "核武、核彈",
+     "zh": "指核子武器，尤其飛彈上的核彈頭",
+     "en": "a nuclear weapon, especially the warhead of a missile",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "02756886-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "徹底擊敗、打垮",
+     "zh": "口語表示把對手或事物徹底打敗、摧毀",
+     "en": "to defeat someone or destroy something completely",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "01135714-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "核電廠",
+     "reason": "罕用，現代多說 nuclear power plant"
+    },
+    {
+     "meaning": "原子核",
+     "reason": "罕用，現代多說 nucleus"
+    },
+    {
+     "meaning": "核武器的（形容詞）",
+     "reason": "罕用，現代多直接用 nuclear 當形容詞"
+    }
+   ]
+  },
+  {
+   "headword": "null",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "無效的、不具法律效力",
+     "zh": "指合約、判決、票選等在法律上不成立、沒有約束力。",
+     "en": "having no legal power or effect and therefore not valid",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "02510539-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "沒有價值的、等於零的",
+     "zh": "指某事物毫無價值或結果為零，常用於正式或書面語。",
+     "en": "having no value or amount; equal to zero",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "零、空值",
+     "zh": "指數值上的零，或表示「什麼都沒有」的空值，常見於科技與資料領域。",
+     "en": "the number zero, or a value that means nothing or none",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "13762308-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "無效力的（泛指一般事物）",
+     "reason": "與「無效的、不具法律效力」詞義重複，已合併"
+    }
+   ]
+  },
+  {
+   "headword": "nullify",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "使失效、廢止（法律、合約）",
+     "zh": "以法律或正式程序讓規定、合約、判決等不再有效",
+     "en": "to officially make a law, contract, or decision no longer valid",
+     "usage": "common",
+     "register": [
+      "formal",
+      "technical"
+     ],
+     "synsets": [
+      "02483482-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "使失去作用、抵銷",
+     "zh": "讓某個效果或影響力被抵銷掉，變得沒有實際作用",
+     "en": "to cancel out the effect or power of something so it no longer matters",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00471015-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "證明不成立、駁倒",
+     "zh": "用證據或論點顯示某個說法、主張站不住腳",
+     "en": "to show that an argument or claim is wrong or has no basis",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00669020-v"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "num",
+   "senses": [
+    {
+     "pos": "abbr.",
+     "label": "號碼、編號",
+     "zh": "number 的縮寫，常見於表格欄位、地址或清單中標示號碼。",
+     "en": "a short form of \"number\", used especially in forms, addresses, or lists",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "abbr.",
+     "label": "數字（語法用語）",
+     "zh": "numeral 的縮寫，用於文法說明中表示「數詞」。",
+     "en": "a short form of \"numeral\", used in grammar to talk about number words",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
   },
   {
    "headword": "numb",
@@ -9451,6 +17041,155 @@
    ]
   },
   {
+   "headword": "numbered",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "有編號的、編了號的",
+     "zh": "指文件、票券、座位等已標上號碼，方便辨識或排序。",
+     "en": "having a number or numbers printed or written on it",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "88306827-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "為數不多的、屈指可數的",
+     "zh": "用來說明某類人或事物數量很少，常帶強調語氣。",
+     "en": "existing in only a small number, used to emphasize how few there are",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "88121161-a"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "numbness",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "麻木、失去感覺",
+     "zh": "身體某部位因神經問題、低溫或長時間壓迫而感覺遲鈍或完全沒感覺。",
+     "en": "the condition of having little or no feeling in part of your body",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "14345955-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "麻木、漠然",
+     "zh": "對事情提不起興趣、沒有反應的心理狀態，常用於比喻。",
+     "en": "a lack of interest, emotion, or reaction toward things",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "04643967-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "numeral",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "數字、數字符號",
+     "zh": "用來表示數量的符號，如 1、2、3 或羅馬數字 I、II、III。",
+     "en": "a symbol or sign, such as 1, 2, or 3, that is used to write a number",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "06820056-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "數詞",
+     "zh": "語言中用來表示數量的詞，例如英文的 one、two、three。",
+     "en": "a word that is used to express a number, such as one, two, or three",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "92464376-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "數字的、數值的",
+     "zh": "與數字有關的，常用於 numeral system（數字系統）等說法。",
+     "en": "relating to numbers or used for showing numbers",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "02780705-a"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "數（泛指數量）",
+     "reason": "舊字典把 numeral 與 number 混為一談；現代 numeral 指符號或數詞本身，不泛指數量，屬誤譯"
+    }
+   ]
+  },
+  {
+   "headword": "numeric",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "數值的、數字的",
+     "zh": "跟數字或數值有關的，常用在技術、統計或鍵盤等情境。",
+     "en": "relating to numbers or values, especially in technical or statistical contexts",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "02780705-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "以數字表示的",
+     "zh": "用具體數字來衡量或表達的，例如數值評分、數值結果。",
+     "en": "measured or shown by using numbers",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01921967-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "數字",
+     "zh": "指一個數或數字本身，較少單獨這樣用，多出現在技術說明中。",
+     "en": "a number or figure, used mainly in technical writing",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "numerical",
    "senses": [
     {
@@ -9485,6 +17224,25 @@
      "reason": "與「擅長數字運算的」意思重複，已合併"
     }
    ]
+  },
+  {
+   "headword": "numerically",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "以數字、在數值上",
+     "zh": "表示用數字來表達、衡量，或就數值大小而言。",
+     "en": "in a way that uses numbers, or with respect to the number or amount of something",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00413081-r"
+     ]
+    }
+   ],
+   "omitted": []
   },
   {
    "headword": "numerous",
@@ -9535,6 +17293,21 @@
      "reason": "僅在語言學或宗教文本中出現，屬專門用法"
     }
    ]
+  },
+  {
+   "headword": "nuremberg",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "紐倫堡（德國城市）",
+     "zh": "德國南部巴伐利亞邦的城市，以中世紀老城、納粹大審判與聖誕市集聞名。",
+     "en": "a city in southern Germany, known for its medieval old town and its role in World War II history",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
   },
   {
    "headword": "nurse",
@@ -9760,6 +17533,35 @@
    ]
   },
   {
+   "headword": "nurturing",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "悉心養育的、培育的",
+     "zh": "形容用心照顧、教導並幫助人或事物成長的態度或環境",
+     "en": "giving care, support, and encouragement to help someone or something grow",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "v.",
+     "label": "養育、培育（nurture 的現在分詞）",
+     "zh": "表示正在照顧、撫養或培養某人、某事物的動作",
+     "en": "taking care of and helping a person, skill, or idea develop over time",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "滋長、助長",
+     "reason": "與「培育」意思重疊，已合併處理"
+    }
+   ]
+  },
+  {
    "headword": "nut",
    "senses": [
     {
@@ -9841,6 +17643,36 @@
      "reason": "罕用動詞，現代幾乎不這樣用"
     }
    ]
+  },
+  {
+   "headword": "nutmeg",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "肉豆蔻（香料）",
+     "zh": "磨碎後用於甜點、飲料與料理的芳香香料，是肉豆蔻樹的種子。",
+     "en": "a hard, sweet-smelling seed that is grated and used as a spice in cooking and drinks",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07831400-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "肉豆蔻樹",
+     "zh": "生長在熱帶、結出肉豆蔻種子的常綠喬木。",
+     "en": "a tropical evergreen tree grown for its seeds, which are used as a spice",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "11734851-n"
+     ]
+    }
+   ],
+   "omitted": []
   },
   {
    "headword": "nutrient",
@@ -9944,6 +17776,169 @@
    "omitted": []
   },
   {
+   "headword": "nutritionist",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "營養師、營養學家",
+     "zh": "研究營養學，或替人規劃飲食、提供營養建議的專業人士。",
+     "en": "a person who studies nutrition or gives expert advice about food and healthy eating",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10032138-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "nutritious",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "營養的、有營養的",
+     "zh": "形容食物富含身體所需的養分，吃了對健康有益。",
+     "en": "containing the substances your body needs to stay healthy and grow",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02568489-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "滋養的",
+     "reason": "與「營養的」意思重複，現代多說 nutritious 或 nourishing，不另列"
+    }
+   ]
+  },
+  {
+   "headword": "nutshell",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "堅果殼",
+     "zh": "包在堅果果仁外面的硬殼",
+     "en": "the hard outer shell that covers the inside of a nut",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "11704216-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "極小的東西",
+     "reason": "舊字典的引申義，現代英文幾乎不這樣單獨使用，只保留在 in a nutshell 這個片語中"
+    }
+   ]
+  },
+  {
+   "headword": "nutty",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "有堅果味的、堅果香的",
+     "zh": "形容食物帶有堅果的香味或口感，常見於咖啡、甜點的描述。",
+     "en": "having the taste or smell of nuts",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02407004-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "瘋瘋的、古怪的",
+     "zh": "口語用來形容人行為怪異、有點瘋狂，語氣通常不帶惡意。",
+     "en": "slightly crazy or strange in a funny way",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "02082059-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "著迷的、狂熱的（about、over）",
+     "zh": "口語說某人對某事物非常熱中、著迷，常接 about 或 over。",
+     "en": "very interested in or excited about something",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "產堅果的",
+     "reason": "舊字典直譯，現代英語幾乎不用來形容樹木或植物，多說 nut-bearing 或直接描述樹種"
+    }
+   ]
+  },
+  {
+   "headword": "nuzzle",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "（用鼻子、頭）磨蹭、依偎",
+     "zh": "動物或人用鼻子或頭輕輕摩擦對方，表達親暱；也常指把臉埋進對方身上撒嬌。",
+     "en": "to gently rub or press your nose or head against someone or something in a loving way",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01427004-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "蜷縮、窩進",
+     "zh": "把身體縮起來，舒服地貼靠或鑽進某個溫暖的位置。",
+     "en": "to curl up and press close to someone or something to get comfortable",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01427599-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "用鼻掘出",
+     "reason": "罕用，僅見於描述動物以鼻拱土覓食的特定情境，現代一般學習者幾乎不會遇到"
+    }
+   ]
+  },
+  {
+   "headword": "nvq",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "英國國家職業資格",
+     "zh": "英國針對職場技能核發的職業資格認證，現多由其他證照制度取代。",
+     "en": "a work-based qualification in the UK showing that someone has practical job skills",
+     "usage": "less_common",
+     "register": [
+      "technical",
+      "old"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "國家職業合格證書（一般直譯）",
+     "reason": "此為縮寫全稱的直譯，與實際制度名稱重複，已併入 senses"
+    }
+   ]
+  },
+  {
    "headword": "nylon",
    "senses": [
     {
@@ -9978,6 +17973,52 @@
       "old"
      ],
      "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "nymph",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "寧芙、山林水澤仙女",
+     "zh": "希臘羅馬神話中住在山林、水澤、樹木間的小女神，常出現在文學與藝術作品裡。",
+     "en": "in old Greek and Roman stories, a female spirit who lives in a forest, river, or other natural place",
+     "usage": "common",
+     "register": [
+      "literary"
+     ],
+     "synsets": [
+      "09571761-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "水蠆、稚蟲（昆蟲）",
+     "zh": "蜻蜓、蜉蝣等昆蟲尚未完全變態前的幼蟲階段，生物課本與自然書寫會用到。",
+     "en": "the young form of an insect such as a dragonfly before it becomes an adult",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "02314269-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "美少女、性感年輕女子",
+     "zh": "帶有男性凝視意味地形容年輕貌美的女子，現代多見於文學或略帶調侃的用法。",
+     "en": "a young woman who is thought to be very beautiful and attractive",
+     "usage": "less_common",
+     "register": [
+      "literary",
+      "old"
+     ],
+     "synsets": [
+      "10388227-n"
+     ]
     }
    ],
    "omitted": []

@@ -81,6 +81,192 @@
      "reason": "已併入較完整的『未知數、未知的人事物』詞義"
     }
    ]
+  },
+  {
+   "headword": "xerox",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "影印、複印",
+     "zh": "用影印機把文件或圖片複製一份，口語常直接說 xerox 這個動作。",
+     "en": "to make a copy of a document or picture using a copy machine",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "01740180-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "影印本、複印件",
+     "zh": "用影印機印出來的副本，常見於辦公室情境。",
+     "en": "a copy of a document made with a copy machine",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "04616593-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "影印機（品牌名）",
+     "zh": "全錄公司的商標名，常被拿來泛指影印機，尤其在較舊的說法裡。",
+     "en": "a brand name for a machine that makes paper copies, often used for any such machine",
+     "usage": "less_common",
+     "register": [
+      "old"
+     ],
+     "synsets": [
+      "04616281-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "靜電複印術（xerography 的技術描述）",
+     "reason": "屬專業技術描述，現代一般學習者不會這樣用，已併入影印的動作義"
+    }
+   ]
+  },
+  {
+   "headword": "xi",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "希臘字母 Ξ、ξ",
+     "zh": "希臘字母表的第十四個字母，常見於數學、物理與 fraternity／sorority 名稱。",
+     "en": "the 14th letter of the Greek alphabet",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "06848575-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "Ξ 粒子、重子",
+     "zh": "粒子物理中一種質量較大的重子，常寫成 xi particle 或 cascade particle。",
+     "en": "a heavy particle made of three quarks, studied in particle physics",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "十一（數字 11）",
+     "reason": "這是羅馬數字 XI 的意思，與本字 xi 無關，屬誤收"
+    },
+    {
+     "meaning": "十一的、多一個的",
+     "reason": "同樣是羅馬數字 XI 的形容詞用法，與本字無關，屬誤收"
+    }
+   ]
+  },
+  {
+   "headword": "xii",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "十二（羅馬數字 XII）",
+     "zh": "羅馬數字中代表 12 的寫法，常見於鐘面、章節編號、國王或教宗名號。",
+     "en": "the Roman numeral for the number twelve",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "13768925-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "十二的、十二個的",
+     "zh": "放在名詞前表示數量是十二，用法等同數字 12。",
+     "en": "being twelve in number",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "02195104-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "xiv",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "十四（羅馬數字）",
+     "zh": "羅馬數字寫法 XIV，表示數目 14，常見於鐘面、章節編號、年份或人名後綴。",
+     "en": "the number 14 written as a Roman numeral",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "13769488-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "十四的、十四個的",
+     "zh": "放在名詞前表示數量是十四，例如 XIV 世紀、第 XIV 章。",
+     "en": "being fourteen in number, used before a noun",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "02195338-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "xv",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "十五",
+     "zh": "羅馬數字 XV，代表數字 15，常見於鐘面、章節編號或年份標記。",
+     "en": "the number 15 written as a Roman numeral",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "13769609-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "十五的、十五個的",
+     "zh": "放在名詞前表示數量為十五，多用於正式或編號場合。",
+     "en": "having a total of fifteen in number",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "02195432-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "十五人組成的球隊",
+     "reason": "橄欖球等運動的舊式說法，現代多直接說 rugby team，幾乎不再用 XV 指稱球隊"
+    }
+   ]
   }
  ]
 }

@@ -4,6 +4,50 @@
  "method": "scripts/llm/generate-entries.ts：以 ECDICT 中文釋義與 OEWN 詞義為參考，整理現代化詞義、中英釋義、常用程度與語域",
  "words": [
   {
+   "headword": "zach",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "扎克（人名暱稱）",
+     "zh": "Zachary、Zachariah 等名字的口語暱稱，用來稱呼男性。",
+     "en": "a short, informal form of the male names Zachary or Zachariah",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "舊字典列為一般名詞釋義",
+     "reason": "實為專有名詞（人名暱稱），非一般可數名詞，不另立詞義"
+    }
+   ]
+  },
+  {
+   "headword": "zaire",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "薩伊（舊國名）",
+     "zh": "非洲國家剛果民主共和國在一九七一至一九九七年間使用的舊國名，現已不再使用。",
+     "en": "the former name of the country now called the Democratic Republic of the Congo, used from 1971 to 1997",
+     "usage": "less_common",
+     "register": [
+      "old"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "薩伊（舊貨幣單位）",
+     "reason": "該貨幣已隨國名更改而廢止，屬歷史用語，現代英文幾乎不會遇到"
+    }
+   ]
+  },
+  {
    "headword": "zambia",
    "senses": [
     {
@@ -14,6 +58,112 @@
      "usage": "common",
      "register": [],
      "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "zap",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "電擊、電到",
+     "zh": "用電流擊中某人或某物，也指被靜電電到。",
+     "en": "to hit someone or something with a strong burst of electricity",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01772856-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "迅速移動、衝",
+     "zh": "口語說某人或某物快速衝向某處。",
+     "en": "to move or go somewhere very quickly",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "v.",
+     "label": "微波加熱",
+     "zh": "口語指用微波爐快速加熱食物。",
+     "en": "to heat food quickly in a microwave oven",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "00322737-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "擊斃、消滅",
+     "zh": "用槍或強力攻擊殺死某人，常見於電影、遊戲情節。",
+     "en": "to kill someone with a gun or a powerful attack",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "01327970-v",
+      "01135714-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "活力、刺激感",
+     "zh": "指某件事帶來的強烈能量或興奮感。",
+     "en": "a sudden burst of energy or excitement",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "07494768-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（表示快速）嚓",
+     "reason": "感嘆詞用法罕見，現代幾乎不用"
+    },
+    {
+     "meaning": "快速推動",
+     "reason": "與「迅速移動」意思重疊，且現代少見"
+    }
+   ]
+  },
+  {
+   "headword": "zeal",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "熱忱、熱衷",
+     "zh": "對某件事、理念或目標投入很大的熱情與幹勁，常用於正面描述。",
+     "en": "strong enthusiasm and energy for a cause, belief, or activity",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07570967-n",
+      "04652076-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "過度狂熱",
+     "zh": "帶有貶意的狂熱，指投入過了頭、近乎偏執的熱情。",
+     "en": "too much eagerness that seems extreme or unreasonable",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "07496925-n"
+     ]
     }
    ],
    "omitted": []
@@ -48,6 +198,215 @@
      "reason": "已列為第一個詞義，未省略"
     }
    ]
+  },
+  {
+   "headword": "zealander",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "西蘭人（丹麥西蘭島居民）",
+     "zh": "指住在丹麥最大島嶼西蘭島（Zealand）的人。",
+     "en": "a person who comes from or lives on Zealand, the large island in Denmark",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "09719413-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "西蘭島（丹麥最大的島）",
+     "reason": "這是地名 Zealand 的說明，不是 zealander 這個字的詞義；zealander 指的是人，不是島。"
+    }
+   ]
+  },
+  {
+   "headword": "zealot",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "狂熱者、偏激擁護者",
+     "zh": "對某種主張、宗教或政治立場極端狂熱、甚至帶有攻擊性的人，通常帶貶義。",
+     "en": "a person who is extremely enthusiastic about a belief or cause, often in a way that seems unreasonable or aggressive",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10421831-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（西元一世紀）猶太狂熱黨人",
+     "zh": "歷史專有名詞，指西元一世紀巴勒斯坦地區反抗羅馬統治的猶太教激進派成員。",
+     "en": "a member of a first-century Jewish group that violently resisted Roman rule",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "10824878-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "熱心者",
+     "reason": "舊字典的籠統譯法，現代 zealot 幾乎都帶貶義，指極端狂熱而非單純熱心，已由第一義涵蓋"
+    }
+   ]
+  },
+  {
+   "headword": "zealous",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "熱衷的、熱心的",
+     "zh": "對某件事或某個目標投入很多心力、表現出強烈熱情，常用於追求理想、支持主張或推廣理念。",
+     "en": "showing strong interest and energy in supporting or working for something",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00889495-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "熱情的",
+     "reason": "與「熱衷的、熱心的」意思重疊，已合併為同一詞義"
+    }
+   ]
+  },
+  {
+   "headword": "zebra",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "斑馬",
+     "zh": "非洲草原上黑白條紋相間、善於奔跑的馬科動物。",
+     "en": "an African animal like a horse with black and white stripes on its body",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02393701-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "斑馬線（行人穿越道）",
+     "zh": "口語常說 zebra crossing，指馬路上黑白相間的行人穿越道。",
+     "en": "a place on a road marked with black and white stripes where people can cross",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "黑白條紋的",
+     "zh": "用來形容像斑馬一樣黑白相間條紋的圖案或設計。",
+     "en": "having a pattern of black and white stripes like a zebra",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "zeinab",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "澤納布（女性人名）",
+     "zh": "阿拉伯、波斯、阿富汗等地常見的女性名字，英文多直接音譯使用。",
+     "en": "a female given name used in Arabic, Persian, and Afghan cultures",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "賽納布（俄語人名音譯）",
+     "reason": "與同一人名的其他音譯重複，且屬特定語言轉寫，學習者不需要單獨記"
+    }
+   ]
+  },
+  {
+   "headword": "zen",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "禪、禪宗",
+     "zh": "源自佛教的修行與思想傳統，強調透過靜坐冥想直接體悟，在現代常指一種平靜專注的生活態度。",
+     "en": "a school of Buddhism that teaches that understanding comes through quiet meditation and direct insight rather than through faith",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "08115995-n",
+      "06252178-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "禪的、禪宗的",
+     "zh": "用來形容與禪宗或冥想修行有關的事物，如禪寺、禪修、禪意。",
+     "en": "relating to Zen Buddhism or to the calm, simple style connected with it",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "平靜的、淡定的",
+     "zh": "口語中形容人面對壓力時保持冷靜、不慌不忙的樣子。",
+     "en": "calm and not easily upset or worried, especially in a difficult situation",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "LSD（迷幻藥）的街頭代稱",
+     "reason": "俚語且屬特定藥物圈用語，現代一般場合幾乎不用，學習者不需學"
+    }
+   ]
+  },
+  {
+   "headword": "zenith",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "頂點、最高點",
+     "zh": "指某事物發展或成就的最高峰，常用於事業、名聲、權力等抽象事物。",
+     "en": "the highest point or best moment of something such as success, power, or fame",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "天頂",
+     "zh": "天文學用語，指觀測者正上方、與天底相對的那一點。",
+     "en": "the point in the sky directly above the person looking at it",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "08702507-n"
+     ]
+    }
+   ],
+   "omitted": []
   },
   {
    "headword": "zero",
@@ -128,6 +487,195 @@
    ]
   },
   {
+   "headword": "zest",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "熱情、興致",
+     "zh": "對某件事充滿活力與熱忱，常用於 enjoy、add zest 等說法。",
+     "en": "a strong feeling of excitement and interest in something",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07507121-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（柑橘）果皮屑",
+     "zh": "檸檬、柳橙等柑橘類外層磨下來的皮屑，用來增添食物香氣。",
+     "en": "the outer skin of a lemon or orange, used to give food extra flavor",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "風味、滋味",
+     "zh": "食物帶來的強烈而開胃的味道，也可比喻為某事物增添趣味的部分。",
+     "en": "a pleasant strong flavor that makes food or an experience more interesting",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "05000286-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "加香料調味",
+     "zh": "在食物中加入香料或柑橘皮屑來提味，較少出現在日常口語。",
+     "en": "to add spices or herbs to food to give it more flavor",
+     "usage": "rare",
+     "register": [],
+     "synsets": [
+      "02197016-v"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "zeta",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "澤塔（希臘第六個字母）",
+     "zh": "希臘字母表的第六個字母，寫作 Ζ 或 ζ，常見於數學、物理與科學符號。",
+     "en": "the sixth letter of the Greek alphabet, written as Ζ or ζ",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "06847724-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "Z世代（Gen Z）",
+     "zh": "口語中常把 Generation Z 簡稱為 Z 世代，指 1990 年代末到 2010 年代初出生的人。",
+     "en": "short for Generation Z, the group of people born in the late 1990s and early 2010s",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "zeus",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "宙斯（希臘神話主神）",
+     "zh": "希臘神話中掌管天空與雷電的眾神之王，常出現在文學、藝術與日常比喻中。",
+     "en": "the king of the gods in Greek mythology, who rules the sky and throws thunderbolts",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "zigzag",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "之字形的、曲折的",
+     "zh": "形容線條、道路或圖案呈左右交替的尖角彎折，像 Z 字一樣。",
+     "en": "having a shape with sharp turns that go first one way and then the other",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02322131-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "之字形、曲折線",
+     "zh": "指呈左右交替尖角彎折的線條、路徑或圖案。",
+     "en": "a line or path with sharp turns that keep changing direction",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "13910012-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "曲折前進、蜿蜒而行",
+     "zh": "人或車輛沿著左右彎折的路線移動，例如山路或閃避障礙時。",
+     "en": "to move forward while repeatedly turning left and right",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01995776-v"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "曲折地、成之字形地",
+     "zh": "修飾動詞，表示以左右彎折的方式移動或排列。",
+     "en": "in a course that keeps turning sharply from side to side",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00500266-r"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "使成之字形、使曲折進行（及物用法）",
+     "reason": "現代少用及物用法，實際幾乎都以不及物動詞表示「曲折前進」，故併入動詞義不另列"
+    },
+    {
+     "meaning": "鋸齒形的",
+     "reason": "與「之字形、曲折的」意思重疊，且鋸齒狀英文多說 jagged 或 sawtooth"
+    }
+   ]
+  },
+  {
+   "headword": "zillion",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "極大的數目、無數",
+     "zh": "口語用來誇張地表示數量多到數不清，常搭配 a zillion 或 zillions。",
+     "en": "a very large number that is too big to count, used for emphasis",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "13798632-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "極多的、數不清的",
+     "zh": "放在名詞前誇張地形容數量非常多，例如 a zillion times。",
+     "en": "used before a noun to mean a very large number of something",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "02207588-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "無限大的數字",
+     "reason": "舊字典誤譯；zillion 只是誇張的虛數，並非數學上的無限大。"
+    }
+   ]
+  },
+  {
    "headword": "zimbabwe",
    "senses": [
     {
@@ -138,6 +686,67 @@
      "usage": "common",
      "register": [],
      "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "zinc",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "鋅",
+     "zh": "一種藍白色金屬，常用於合金與防鏽鍍層，也常出現在保健食品（如鋅錠）中。",
+     "en": "a bluish-white metal used in alloys and for protecting iron from rust, and often taken as a mineral supplement",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "14686156-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "鍍鋅",
+     "zh": "在鐵或鋼的表面鍍上一層鋅以防生鏽，屬工業製程用語。",
+     "en": "to put a thin layer of zinc on iron or steel to stop it from rusting",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01618810-v"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "zionist",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "猶太復國主義者、錫安主義者",
+     "zh": "支持猶太人在以色列建立並維護家園的人。",
+     "en": "a person who supports the idea of a Jewish homeland in Israel",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10825105-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "猶太復國主義的、錫安主義的",
+     "zh": "用來描述與猶太復國主義相關的理念、組織或立場。",
+     "en": "relating to the movement that supports a Jewish homeland in Israel",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03143735-a",
+      "03143572-a"
+     ]
     }
    ],
    "omitted": []
@@ -228,6 +837,175 @@
     {
      "meaning": "給……以速度、使增加活力",
      "reason": "舊字典的動詞釋義，現代不這樣用"
+    }
+   ]
+  },
+  {
+   "headword": "zipper",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "拉鍊",
+     "zh": "縫在衣服、包包或帳篷上，用來開合的整排齒狀扣件。",
+     "en": "a thing with two rows of small teeth that you pull together to close clothes, bags, or tents",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "04245427-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "拉上拉鍊",
+     "zh": "把衣服、袋子等的拉鍊拉起來，常說 zipper up。",
+     "en": "to close something by pulling its zipper, often used as zipper up",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01356373-v"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "zodiac",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "星座、生肖（依出生日期）",
+     "zh": "指西洋占星依出生日期所屬的十二星座，或中國的十二生肖；日常最常說「我是什麼星座」。",
+     "en": "one of the twelve star signs that some people believe affect your character and life, based on your birth date",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "08702926-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "黃道帶",
+     "zh": "天文與占星用語，指天空中太陽運行經過的帶狀區域，較偏專業說法。",
+     "en": "the belt-shaped area of the sky through which the sun appears to move, divided into twelve parts",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "08702926-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "黃道十二宮圖",
+     "zh": "占星用的圓形圖表，標出十二星座的位置與對應關係。",
+     "en": "a round chart that shows the twelve star signs and their positions",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "04622813-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "zoe",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "柔伊（女子名）",
+     "zh": "常見的英文女子名字，源自希臘語，意思是「生命」。",
+     "en": "a female first name of Greek origin meaning \"life\"",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "生命",
+     "reason": "這是希臘字根 zoe 的字面意思，現代英文不把它當一般名詞使用，只在名字或神學、學術討論中出現，舊字典把它列為單字釋義容易誤導學習者"
+    }
+   ]
+  },
+  {
+   "headword": "zombie",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "殭屍、活屍",
+     "zh": "死後又動起來的屍體，常見於恐怖片、影集與電玩。",
+     "en": "a dead person whose body moves again as if alive, especially in horror stories and games",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10825242-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（比喻）行屍走肉、沒精神的人",
+     "zh": "形容疲累、麻木或毫無反應、像機械般行動的人。",
+     "en": "someone who moves or reacts in a slow, mechanical, or lifeless way",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "09844921-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "殭屍（電腦）",
+     "zh": "被駭客遠端控制的電腦，常被用來發動網路攻擊。",
+     "en": "a computer controlled secretly by someone else and used to attack other systems",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "（企業、制度）茍延殘喘的東西",
+     "zh": "指早已失去活力卻仍勉強存在的公司、計畫或制度。",
+     "en": "a company or system that keeps going even though it has no real strength left",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "殭屍雞尾酒",
+     "zh": "以蘭姆酒加果汁調成的雞尾酒。",
+     "en": "a cocktail made with rum and fruit juice",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "07935405-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "蛇神、西印度巫毒教所拜的神",
+     "reason": "宗教民族誌的專門用法，現代一般英文幾乎不用"
+    },
+    {
+     "meaning": "起死回生的魔力、使屍體復活的力量",
+     "reason": "罕用，現代多直接說 the power to bring back the dead"
+    },
+    {
+     "meaning": "木雞、討厭的傢伙",
+     "reason": "舊字典的罕用引申義，現代已不使用"
     }
    ]
   },
@@ -432,6 +1210,72 @@
      "reason": "罕用，現代英語幾乎不用此名詞義。"
     }
    ]
+  },
+  {
+   "headword": "zucchini",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "櫛瓜、夏南瓜",
+     "zh": "一種綠色長條狀的瓜類蔬菜，常切片煎烤或加入沙拉、義大利麵料理。",
+     "en": "a long green vegetable that is cooked and eaten, often sliced and fried or added to salads and pasta",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07732103-n",
+      "12180321-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "綠皮密生西葫蘆（植物本身）",
+     "reason": "與果實詞義重複，現代日常多指可食用的瓜果本身，植物義併入同一詞義"
+    }
+   ]
+  },
+  {
+   "headword": "zulu",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "祖魯人",
+     "zh": "住在南非東部、說祖魯語的民族成員",
+     "en": "a member of a people living mainly in eastern South Africa",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "09771354-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "祖魯語",
+     "zh": "南非東部祖魯人使用的語言，屬班圖語系",
+     "en": "the language spoken by the Zulu people, a Bantu language of South Africa",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07007452-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "zurich",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "蘇黎世",
+     "zh": "瑞士最大的城市，也是重要的金融與商業中心。",
+     "en": "the largest city in Switzerland, known as a major financial and business center",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
   }
  ]
 }

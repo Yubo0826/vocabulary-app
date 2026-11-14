@@ -1,1 +1,1634 @@
-[]
+[
+ {
+  "headword": "an",
+  "problems": [
+   "詞義 1 詞性不對：art."
+  ]
+ },
+ {
+  "headword": "my",
+  "problems": [
+   "詞義 2 詞性不對：interj.",
+   "詞義 2 中文用了半形標點：口語中表示驚訝、失望或無奈的感嘆詞，常寫成 My! 或 Oh my!。"
+  ]
+ },
+ {
+  "headword": "there",
+  "problems": [
+   "詞義 1 簡體字 边：在那裡、在那边"
+  ]
+ },
+ {
+  "headword": "could",
+  "problems": [
+   "詞義 1 詞性不對：aux.",
+   "詞義 2 詞性不對：aux.",
+   "詞義 3 詞性不對：aux.",
+   "詞義 4 詞性不對：aux.",
+   "詞義 5 詞性不對：aux.",
+   "詞義 6 詞性不對：aux."
+  ]
+ },
+ {
+  "headword": "what",
+  "problems": [
+   "詞義 4 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "erm",
+  "problems": [
+   "詞義 1 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "the",
+  "problems": [
+   "詞義 1 詞性不對：art.",
+   "詞義 2 詞性不對：art.",
+   "詞義 3 詞性不對：art.",
+   "詞義 4 詞性不對：art.",
+   "詞義 5 標籤長度不對：越……越……（the more…the more）"
+  ]
+ },
+ {
+  "headword": "can",
+  "problems": [
+   "詞義 1 詞性不對：aux."
+  ]
+ },
+ {
+  "headword": "may",
+  "problems": [
+   "詞義 1 詞性不對：aux.",
+   "詞義 2 詞性不對：aux.",
+   "詞義 3 詞性不對：aux.",
+   "詞義 4 詞性不對：aux."
+  ]
+ },
+ {
+  "headword": "would",
+  "problems": [
+   "詞義 1 詞性不對：aux.",
+   "詞義 2 詞性不對：aux.",
+   "詞義 3 詞性不對：aux.",
+   "詞義 4 詞性不對：aux.",
+   "詞義 5 詞性不對：aux.",
+   "詞義 5 中文用了半形標點：用 Would you…? 禮貌地請別人做某事或詢問意願。",
+   "詞義 6 詞性不對：aux."
+  ]
+ },
+ {
+  "headword": "must",
+  "problems": [
+   "詞義 1 詞性不對：aux.",
+   "詞義 2 詞性不對：aux.",
+   "詞義 3 詞性不對：aux."
+  ]
+ },
+ {
+  "headword": "come",
+  "problems": [
+   "詞義 8 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "oh",
+  "problems": [
+   "詞義 1 詞性不對：interj.",
+   "詞義 2 詞性不對：interj.",
+   "詞義 3 詞性不對：interj.",
+   "詞義 4 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "have",
+  "problems": [
+   "詞義 6 詞性不對：aux."
+  ]
+ },
+ {
+  "headword": "will",
+  "problems": [
+   "詞義 1 詞性不對：aux.",
+   "詞義 2 詞性不對：aux."
+  ]
+ },
+ {
+  "headword": "might",
+  "problems": [
+   "詞義 1 詞性不對：aux.",
+   "詞義 2 詞性不對：aux.",
+   "詞義 3 詞性不對：aux."
+  ]
+ },
+ {
+  "headword": "enough",
+  "problems": [
+   "詞義 4 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "shall",
+  "problems": [
+   "詞義 1 詞性不對：aux.",
+   "詞義 2 詞性不對：aux.",
+   "詞義 3 詞性不對：aux.",
+   "詞義 4 詞性不對：aux."
+  ]
+ },
+ {
+  "headword": "billion",
+  "problems": [
+   "詞義 1 中文用了半形標點：數字 1,000,000,000，現代英語最常用的數量單位，尤其美式用法。",
+   "詞義 3 中文用了半形標點：英國傳統用法指 1,000,000,000,000（一兆），現代已少見，多改用 trillion。"
+  ]
+ },
+ {
+  "headword": "million",
+  "problems": [
+   "詞義 1 中文用了半形標點：數字 1,000,000，用於計數、金額或數量。"
+  ]
+ },
+ {
+  "headword": "should",
+  "problems": [
+   "詞義 1 詞性不對：aux.",
+   "詞義 2 詞性不對：aux.",
+   "詞義 3 詞性不對：aux.",
+   "詞義 4 詞性不對：aux.",
+   "詞義 5 詞性不對：aux.",
+   "詞義 6 詞性不對：aux.",
+   "詞義 7 詞性不對：aux."
+  ]
+ },
+ {
+  "headword": "defendant",
+  "problems": [
+   "詞義 1 register 不對：legal"
+  ]
+ },
+ {
+  "headword": "jesus",
+  "problems": [
+   "詞義 2 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "mhm",
+  "problems": [
+   "詞義 1 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "ah",
+  "problems": [
+   "詞義 1 詞性不對：interj.",
+   "詞義 2 詞性不對：interj.",
+   "詞義 3 詞性不對：interj.",
+   "詞義 4 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "thanks",
+  "problems": [
+   "詞義 1 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "network",
+  "problems": [
+   "詞義 1 大陸用語 網絡：網路、網絡",
+   "詞義 1 大陸用語 網絡：指電腦、手機等互相連接的系統，或人際、組織之間的連結網絡。",
+   "詞義 4 大陸用語 網絡：（交通、通訊）網絡"
+  ]
+ },
+ {
+  "headword": "okay",
+  "problems": [
+   "詞義 3 詞性不對：interj.",
+   "詞義 4 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "ought",
+  "problems": [
+   "詞義 1 詞性不對：aux.",
+   "詞義 2 詞性不對：aux.",
+   "詞義 3 詞性不對：aux."
+  ]
+ },
+ {
+  "headword": "word",
+  "problems": [
+   "詞義 6 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "aye",
+  "problems": [
+   "詞義 1 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "hey",
+  "problems": [
+   "詞義 1 詞性不對：interj.",
+   "詞義 2 詞性不對：interj.",
+   "詞義 3 詞性不對：interj.",
+   "詞義 4 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "hi",
+  "problems": [
+   "詞義 1 詞性不對：interj.",
+   "詞義 2 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "hello",
+  "problems": [
+   "詞義 1 詞性不對：interj.",
+   "詞義 2 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "aha",
+  "problems": [
+   "詞義 1 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "recovery",
+  "problems": [
+   "詞義 3 簡體字 东：把遺失或被拿走的东西找回來"
+  ]
+ },
+ {
+  "headword": "well",
+  "problems": [
+   "詞義 5 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "eh",
+  "problems": [
+   "詞義 1 詞性不對：interj.",
+   "詞義 2 詞性不對：interj.",
+   "詞義 3 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "potato",
+  "problems": [
+   "詞義 1 大陸用語 土豆：馬鈴薯、土豆"
+  ]
+ },
+ {
+  "headword": "ha",
+  "problems": [
+   "詞義 1 詞性不對：interj.",
+   "詞義 2 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "auto",
+  "problems": [
+   "詞義 2 詞性不對：pref."
+  ]
+ },
+ {
+  "headword": "roger",
+  "problems": [
+   "詞義 1 詞性不對：interj.",
+   "詞義 2 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "bye",
+  "problems": [
+   "詞義 1 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "dioxide",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "wow",
+  "problems": [
+   "詞義 1 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "huh",
+  "problems": [
+   "詞義 1 詞性不對：interj.",
+   "詞義 2 詞性不對：interj.",
+   "詞義 3 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "takeover",
+  "problems": [
+   "詞義 1 register 不對：business"
+  ]
+ },
+ {
+  "headword": "dear",
+  "problems": [
+   "詞義 2 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "goodness",
+  "problems": [
+   "詞義 3 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "pose",
+  "problems": [
+   "詞義 6 register 不對：disapproving",
+   "詞義 7 register 不對：disapproving"
+  ]
+ },
+ {
+  "headword": "pylorus",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "goodbye",
+  "problems": [
+   "詞義 1 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "damn",
+  "problems": [
+   "詞義 1 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "guil",
+  "problems": [
+   "詞義數 0"
+  ]
+ },
+ {
+  "headword": "web",
+  "problems": [
+   "詞義 3 大陸用語 網絡：網絡、人際網"
+  ]
+ },
+ {
+  "headword": "ron",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "shit",
+  "problems": [
+   "詞義 2 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "restructuring",
+  "problems": [
+   "詞義 1 register 不對：business"
+  ]
+ },
+ {
+  "headword": "bp",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "alas",
+  "problems": [
+   "詞義 1 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "khan",
+  "problems": [
+   "詞義 1 register 不對：historical",
+   "詞義 2 register 不對：historical,technical"
+  ]
+ },
+ {
+  "headword": "ta",
+  "problems": [
+   "詞義 1 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "gosh",
+  "problems": [
+   "詞義 1 詞性不對：interj.",
+   "詞義 2 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "farewell",
+  "problems": [
+   "詞義 2 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "ace",
+  "problems": [
+   "詞義 1 簡體字 么：王牌、么點（撲克牌）"
+  ]
+ },
+ {
+  "headword": "fuck",
+  "problems": [
+   "詞義 1 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "hum",
+  "problems": [
+   "詞義 5 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "congratulations",
+  "problems": [
+   "詞義 2 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "o",
+  "problems": [
+   "詞義 4 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "gee",
+  "problems": [
+   "詞義 1 詞性不對：interj.",
+   "詞義 2 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "cor",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "kgb",
+  "problems": [
+   "詞義 1 register 不對：historical"
+  ]
+ },
+ {
+  "headword": "gastrin",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "hmm",
+  "problems": [
+   "詞義 1 詞性不對：interj.",
+   "詞義 2 詞性不對：interj.",
+   "詞義 3 詞性不對：interj.",
+   "詞義 4 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "cdna",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "hog",
+  "problems": [
+   "詞義 3 簡體字 给：口語說某人把東西全搶走、不留给別人。"
+  ]
+ },
+ {
+  "headword": "sh",
+  "problems": [
+   "詞義 1 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "broadcaster",
+  "problems": [
+   "詞義 2 大陸用語 視頻：經營廣播或電視頻道、提供節目播送的機構或公司。"
+  ]
+ },
+ {
+  "headword": "parrot",
+  "problems": [
+   "詞義 2 register 不對：disapproving",
+   "詞義 2 簡體字 云：不加理解地重複別人的話或說法，常用來批評人云亦云。",
+   "詞義 3 register 不對：disapproving"
+  ]
+ },
+ {
+  "headword": "dude",
+  "problems": [
+   "詞義 3 沒有英文定義",
+   "詞義 4 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "gracious",
+  "problems": [
+   "詞義 4 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "val",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "pam",
+  "problems": [
+   "詞義 1 usage 不對：technical",
+   "詞義 2 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "bugger",
+  "problems": [
+   "詞義 2 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "workhouse",
+  "problems": [
+   "詞義 1 register 不對：old,historical"
+  ]
+ },
+ {
+  "headword": "coping",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "weber",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "kay",
+  "problems": [
+   "詞義 3 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "damned",
+  "problems": [
+   "詞義 3 register 不對：religious"
+  ]
+ },
+ {
+  "headword": "ho",
+  "problems": [
+   "詞義 1 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "burun",
+  "problems": [
+   "詞義數 0"
+  ]
+ },
+ {
+  "headword": "carcinoma",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "schema",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "urgh",
+  "problems": [
+   "詞義 1 詞性不對：interj.",
+   "詞義 2 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "buyout",
+  "problems": [
+   "詞義 1 register 不對：business",
+   "詞義 2 register 不對：business,technical"
+  ]
+ },
+ {
+  "headword": "nope",
+  "problems": [
+   "詞義 2 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "comma",
+  "problems": [
+   "詞義 1 中文用了半形標點：句子中用來分隔詞語、子句或項目的標點符號「,」。"
+  ]
+ },
+ {
+  "headword": "ss",
+  "problems": [
+   "詞義 1 register 不對：historical"
+  ]
+ },
+ {
+  "headword": "patriarchal",
+  "problems": [
+   "詞義 3 沒有英文定義"
+  ]
+ },
+ {
+  "headword": "saver",
+  "problems": [
+   "詞義 2 沒有英文定義"
+  ]
+ },
+ {
+  "headword": "behold",
+  "problems": [
+   "詞義 2 register 不對：informal,humorous"
+  ]
+ },
+ {
+  "headword": "subpoena",
+  "problems": [
+   "詞義 1 register 不對：legal",
+   "詞義 2 register 不對：legal"
+  ]
+ },
+ {
+  "headword": "cheers",
+  "problems": [
+   "詞義 1 詞性不對：interj.",
+   "詞義 2 詞性不對：interj.",
+   "詞義 3 詞性不對：interj.",
+   "詞義 4 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "czar",
+  "problems": [
+   "詞義 1 register 不對：historical"
+  ]
+ },
+ {
+  "headword": "amen",
+  "problems": [
+   "詞義 1 詞性不對：interj.",
+   "詞義 1 register 不對：religious",
+   "詞義 2 register 不對：religious"
+  ]
+ },
+ {
+  "headword": "carboniferous",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "ventral",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "histological",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "biliary",
+  "problems": [
+   "詞義 1 usage 不對：technical",
+   "詞義 2 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "airwaves",
+  "problems": [
+   "詞義 1 大陸用語 視頻：廣播、電視頻道"
+  ]
+ },
+ {
+  "headword": "etiquette",
+  "problems": [
+   "詞義 2 大陸用語 默認：某個行業、圈子或活動裡不成文但大家默認的做法，例如商場、外交、網路社群的禮數。"
+  ]
+ },
+ {
+  "headword": "tacit",
+  "problems": [
+   "詞義 2 沒有英文定義"
+  ]
+ },
+ {
+  "headword": "mockery",
+  "problems": [
+   "詞義 2 簡體字 对：笑柄、被嘲笑的对象"
+  ]
+ },
+ {
+  "headword": "vulture",
+  "problems": [
+   "詞義 2 register 不對：figurative"
+  ]
+ },
+ {
+  "headword": "directorate",
+  "problems": [
+   "詞義 1 register 不對：business"
+  ]
+ },
+ {
+  "headword": "bingo",
+  "problems": [
+   "詞義 2 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "ipo",
+  "problems": [
+   "詞義 1 register 不對：business"
+  ]
+ },
+ {
+  "headword": "ra",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "langley",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "flotation",
+  "problems": [
+   "詞義 1 register 不對：business"
+  ]
+ },
+ {
+  "headword": "boo",
+  "problems": [
+   "詞義 1 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "mao",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "dilution",
+  "problems": [
+   "詞義 3 register 不對：business"
+  ]
+ },
+ {
+  "headword": "mmm",
+  "problems": [
+   "詞義 1 詞性不對：interj.",
+   "詞義 2 詞性不對：interj.",
+   "詞義 3 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "morphological",
+  "problems": [
+   "詞義 3 沒有英文定義"
+  ]
+ },
+ {
+  "headword": "kev",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "gemma",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "esrc",
+  "problems": [
+   "詞義數 0"
+  ]
+ },
+ {
+  "headword": "prost",
+  "problems": [
+   "詞義 1 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "referent",
+  "problems": [
+   "詞義 2 簡體字 来：語言學中用来指稱另一詞語的詞或表達方式"
+  ]
+ },
+ {
+  "headword": "epithelium",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "activator",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "epistemological",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "residuals",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "snp",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "kinase",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "enthalpy",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "crilly",
+  "problems": [
+   "詞義數 0"
+  ]
+ },
+ {
+  "headword": "tensor",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "papillae",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "qqv",
+  "problems": [
+   "詞義數 0"
+  ]
+ },
+ {
+  "headword": "oops",
+  "problems": [
+   "詞義 1 詞性不對：interj.",
+   "詞義 2 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "goody",
+  "problems": [
+   "詞義 3 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "biosolids",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "hush",
+  "problems": [
+   "詞義 1 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "regulated",
+  "problems": [
+   "詞義 2 標籤長度不對：管制、管理（regulate 的過去式／過去分詞）"
+  ]
+ },
+ {
+  "headword": "unoccupied",
+  "problems": [
+   "詞義 3 沒有英文定義"
+  ]
+ },
+ {
+  "headword": "vertigo",
+  "problems": [
+   "詞義 1 register 不對：medical"
+  ]
+ },
+ {
+  "headword": "eureka",
+  "problems": [
+   "詞義 1 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "nuts",
+  "problems": [
+   "詞義 2 詞性不對：interj.",
+   "詞義 2 沒有英文定義"
+  ]
+ },
+ {
+  "headword": "clique",
+  "problems": [
+   "詞義 1 register 不對：often disapproving"
+  ]
+ },
+ {
+  "headword": "ouch",
+  "problems": [
+   "詞義 1 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "psychometric",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "incubator",
+  "problems": [
+   "詞義 3 register 不對：business"
+  ]
+ },
+ {
+  "headword": "neurosis",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "kew",
+  "problems": [
+   "詞義 1 中文用了半形標點：指倫敦西南郊的皇家植物園，正式名稱是 Royal Botanic Gardens, Kew，常簡稱 Kew Gardens。"
+  ]
+ },
+ {
+  "headword": "pre",
+  "problems": [
+   "詞義 3 詞性不對：prefix"
+  ]
+ },
+ {
+  "headword": "te",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "boer",
+  "problems": [
+   "詞義 1 register 不對：historical"
+  ]
+ },
+ {
+  "headword": "sol",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "patronize",
+  "problems": [
+   "詞義 3 register 不對：disapproving"
+  ]
+ },
+ {
+  "headword": "roadshow",
+  "problems": [
+   "詞義 1 register 不對：business",
+   "詞義 2 register 不對：business,technical"
+  ]
+ },
+ {
+  "headword": "encore",
+  "problems": [
+   "詞義 3 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "televise",
+  "problems": [
+   "詞義 1 大陸用語 視頻：把節目、比賽或活動透過電視頻道播放給觀眾收看。"
+  ]
+ },
+ {
+  "headword": "silo",
+  "problems": [
+   "詞義 2 register 不對：business"
+  ]
+ },
+ {
+  "headword": "und",
+  "problems": [
+   "詞義 1 詞性不對：comb."
+  ]
+ },
+ {
+  "headword": "thatcherite",
+  "problems": [
+   "詞義 1 register 不對：political",
+   "詞義 2 register 不對：political"
+  ]
+ },
+ {
+  "headword": "transducer",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "counterattack",
+  "problems": [
+   "詞義 3 沒有英文定義"
+  ]
+ },
+ {
+  "headword": "hants",
+  "problems": [
+   "詞義數 0"
+  ]
+ },
+ {
+  "headword": "umm",
+  "problems": [
+   "詞義 1 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "hove",
+  "problems": [
+   "詞義 1 詞性不對：verb",
+   "詞義 2 詞性不對：verb"
+  ]
+ },
+ {
+  "headword": "grandstand",
+  "problems": [
+   "詞義 3 register 不對：disapproving"
+  ]
+ },
+ {
+  "headword": "actuator",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "cannibalism",
+  "problems": [
+   "詞義 2 register 不對：figurative"
+  ]
+ },
+ {
+  "headword": "ugh",
+  "problems": [
+   "詞義 1 詞性不對：interj.",
+   "詞義 2 詞性不對：interj.",
+   "詞義 3 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "serf",
+  "problems": [
+   "詞義 2 register 不對：figurative"
+  ]
+ },
+ {
+  "headword": "tait",
+  "problems": [
+   "詞義數 0"
+  ]
+ },
+ {
+  "headword": "arty",
+  "problems": [
+   "詞義 1 register 不對：informal,disapproving"
+  ]
+ },
+ {
+  "headword": "pugh",
+  "problems": [
+   "詞義 1 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "ay",
+  "problems": [
+   "詞義 1 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "mk",
+  "problems": [
+   "詞義 1 中文用了半形標點：《聖經》四福音書之一，常寫在經文引用中，如 Mk 1:1。"
+  ]
+ },
+ {
+  "headword": "och",
+  "problems": [
+   "詞義 1 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "aah",
+  "problems": [
+   "詞義 1 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "highfield",
+  "problems": [
+   "詞義 1 usage 不對：technical",
+   "詞義 2 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "cheerio",
+  "problems": [
+   "詞義 1 詞性不對：interj.",
+   "詞義 2 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "endogenous",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "methyl",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "ingestion",
+  "problems": [
+   "詞義 1 簡體字 过：把食物或飲料送進體內的过程，常見於醫學、營養學說明。"
+  ]
+ },
+ {
+  "headword": "nervosa",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "econometric",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "spectroscopy",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "palazzo",
+  "problems": [
+   "詞義 3 沒有英文定義"
+  ]
+ },
+ {
+  "headword": "rollover",
+  "problems": [
+   "詞義 4 沒有英文定義"
+  ]
+ },
+ {
+  "headword": "devonian",
+  "problems": [
+   "詞義 1 usage 不對：technical",
+   "詞義 2 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "apse",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "palatine",
+  "problems": [
+   "詞義 1 usage 不對：technical",
+   "詞義 2 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "fer",
+  "problems": [
+   "詞義 1 詞性不對：pref."
+  ]
+ },
+ {
+  "headword": "elisa",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "eurobond",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "ahh",
+  "problems": [
+   "詞義 1 詞性不對：interj.",
+   "詞義 2 詞性不對：interj.",
+   "詞義 3 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "heh",
+  "problems": [
+   "詞義 1 詞性不對：interj.",
+   "詞義 2 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "palaeozoic",
+  "problems": [
+   "詞義 1 usage 不對：technical",
+   "詞義 2 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "franchisee",
+  "problems": [
+   "詞義 1 register 不對：business"
+  ]
+ },
+ {
+  "headword": "polypeptide",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "radiocarbon",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "myocardial",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "collor",
+  "problems": [
+   "詞義數 0"
+  ]
+ },
+ {
+  "headword": "apical",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "reflectance",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "geomorphology",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "pons",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "phosphorylation",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "superego",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "aargh",
+  "problems": [
+   "詞義 1 詞性不對：interj.",
+   "詞義 2 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "permian",
+  "problems": [
+   "詞義 1 usage 不對：technical",
+   "詞義 2 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "parietal",
+  "problems": [
+   "詞義 1 usage 不對：technical",
+   "詞義 2 usage 不對：technical",
+   "詞義 4 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "mhc",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "ow",
+  "problems": [
+   "詞義 1 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "lo",
+  "problems": [
+   "詞義 1 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "genomic",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "ngc",
+  "problems": [
+   "詞義 1 大陸用語 視頻：電視頻道名稱，常出現在節目表、轉台或影集討論中。"
+  ]
+ },
+ {
+  "headword": "exon",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "briant",
+  "problems": [
+   "詞義數 0"
+  ]
+ },
+ {
+  "headword": "perfusion",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "ileal",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "lithosphere",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "lamina",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "deictic",
+  "problems": [
+   "詞義 1 usage 不對：technical",
+   "詞義 2 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "supernatant",
+  "problems": [
+   "詞義 1 usage 不對：technical",
+   "詞義 2 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "cholangitis",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "pepsinogen",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "trna",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "metaplasia",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "connon",
+  "problems": [
+   "詞義數 0"
+  ]
+ },
+ {
+  "headword": "acet",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "headhunting",
+  "problems": [
+   "詞義 1 register 不對：business"
+  ]
+ },
+ {
+  "headword": "superconducting",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "tacitly",
+  "problems": [
+   "詞義 1 大陸用語 默認：默認地、心照不宣地"
+  ]
+ },
+ {
+  "headword": "descriptor",
+  "problems": [
+   "詞義 2 簡體字 来：電腦系統中用来標記、辨識某筆資料的欄位或標籤。"
+  ]
+ },
+ {
+  "headword": "ach",
+  "problems": [
+   "詞義 1 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "covariate",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "nonsensical",
+  "problems": [
+   "詞義 2 簡體字 云：毫無意義的、不知所云的"
+  ]
+ },
+ {
+  "headword": "nix",
+  "problems": [
+   "詞義 3 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "phenomenological",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "yum",
+  "problems": [
+   "詞義 1 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "glib",
+  "problems": [
+   "詞義 1 register 不對：disapproving",
+   "詞義 2 register 不對：disapproving"
+  ]
+ },
+ {
+  "headword": "stabbing",
+  "problems": [
+   "詞義 3 詞性不對：noun"
+  ]
+ },
+ {
+  "headword": "congestive",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "bah",
+  "problems": [
+   "詞義 1 詞性不對：interj.",
+   "詞義 2 詞性不對：interj."
+  ]
+ },
+ {
+  "headword": "notepaper",
+  "problems": [
+   "詞義 1 大陸用語 短信：用來寫短信或便條的紙，常印有裝飾或公司抬頭。"
+  ]
+ },
+ {
+  "headword": "underpainting",
+  "problems": [
+   "詞義 1 usage 不對：technical"
+  ]
+ },
+ {
+  "headword": "gulag",
+  "problems": [
+   "詞義 1 register 不對：historical",
+   "詞義 2 register 不對：figurative"
+  ]
+ },
+ {
+  "headword": "shalt",
+  "problems": [
+   "詞義 1 詞性不對：aux."
+  ]
+ },
+ {
+  "headword": "posturing",
+  "problems": [
+   "詞義 1 register 不對：disapproving"
+  ]
+ }
+]

@@ -4,6 +4,97 @@
  "method": "scripts/llm/generate-entries.ts：以 ECDICT 中文釋義與 OEWN 詞義為參考，整理現代化詞義、中英釋義、常用程度與語域",
  "words": [
   {
+   "headword": "y",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "字母 Y、y",
+     "zh": "英文字母表的第 25 個字母，也指這個字母的小寫形式。",
+     "en": "the 25th letter of the English alphabet",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "06846826-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "釔（化學元素）",
+     "zh": "一種銀白色金屬元素，符號為 Y，常用於合金與材料工業。",
+     "en": "a silver-white metal used in alloys and other materials",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "14685919-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "[計] 原型",
+     "reason": "參考資料的標記殘缺，並非 y 這個字本身的意思，屬誤植。"
+    }
+   ]
+  },
+  {
+   "headword": "y'all",
+   "senses": [
+    {
+     "pos": "pron.",
+     "label": "你們、大家",
+     "zh": "口語中對一群人說話時的稱呼，尤其在美國南部很常見，現在網路與社群媒體上也廣泛使用。",
+     "en": "a word used to speak to a group of people, meaning you all",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "pron.",
+     "label": "各位（親切稱呼）",
+     "zh": "在網路貼文或影片中親切地稱呼觀眾或讀者，語氣輕鬆友善。",
+     "en": "used in a friendly way to address an audience or readers online",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "ya",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "年輕人（口語簡稱）",
+     "zh": "young adult 的口語縮寫，常見於行銷、出版、社群等場合，指年輕成年人。",
+     "en": "a short informal way of saying young adult, used especially in marketing and publishing",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "偏航軸（航空術語）",
+     "zh": "yaw axis 的縮寫，航空與工程領域指飛機或載具的垂直軸。",
+     "en": "a short form of yaw axis, the vertical axis a plane or vehicle turns around",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "yacht",
    "senses": [
     {
@@ -27,6 +118,130 @@
      "synsets": [
       "01949240-v"
      ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "yachting",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "帆船運動、遊艇休閒",
+     "zh": "駕駛帆船或遊艇從事休閒活動或比賽，常在新聞、旅遊與運動版面出現。",
+     "en": "the activity or sport of sailing or cruising in a boat for pleasure or racing",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00316216-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "風帆比賽",
+     "reason": "已併入第一義，比賽只是這項活動的一種情境，不另立義項"
+    },
+    {
+     "meaning": "駕駛快艇",
+     "reason": "與第一義重複，且現代多說 powerboating，不單獨列為 yachting 的意思"
+    }
+   ]
+  },
+  {
+   "headword": "yale",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "耶魯（大學）",
+     "zh": "指美國康乃狄克州紐哈芬的常春藤名校耶魯大學，常在新聞、教育與留學話題中出現。",
+     "en": "a famous private university in New Haven, Connecticut, in the northeastern United States",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（紋章學）牡鹿圖案",
+     "reason": "專業領域過窄，僅見於紋章學文獻，現代一般英文幾乎不用"
+    }
+   ]
+  },
+  {
+   "headword": "yam",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "山藥、薯蕷",
+     "zh": "一種熱帶藤蔓植物的塊根，可煮食，常見於亞洲與非洲料理。",
+     "en": "a thick root of a tropical climbing plant that is cooked and eaten as food",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "12108740-n",
+      "07727652-n",
+      "12108478-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（美式）番薯、地瓜",
+     "zh": "美國南部所稱的橘肉甘薯，烤後仍濕潤，常出現在節慶餐桌。",
+     "en": "in the southern US, a sweet potato with orange flesh that stays soft when baked",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "07728012-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "yamaha",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "山葉、Yamaha（品牌）",
+     "zh": "日本知名品牌，生產機車、樂器、音響與引擎等產品，日常常直接用來指這個牌子或它的產品。",
+     "en": "a well-known Japanese brand that makes motorcycles, musical instruments, audio equipment, and engines",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "雅馬哈（舊式音譯）",
+     "reason": "「雅馬哈」是中國大陸的舊音譯，台灣通用「山葉」，非獨立詞義"
+    }
+   ]
+  },
+  {
+   "headword": "yang",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "陽（中國哲學概念）",
+     "zh": "中國傳統思想中與「陰」相對、代表光明、剛強、主動的一面。",
+     "en": "in Chinese thought, the bright, active, male principle that is the opposite of yin",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "05923950-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "楊（華人姓氏）",
+     "zh": "華人常見的姓氏，英文寫作 Yang。",
+     "en": "a common Chinese family name written in English letters",
+     "usage": "common",
+     "register": [],
+     "synsets": []
     }
    ],
    "omitted": []
@@ -74,6 +289,62 @@
      "reason": "歷史專義，現代一般語境幾乎不用"
     }
    ]
+  },
+  {
+   "headword": "yankee",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "美國佬（非美國人使用）",
+     "zh": "非美國人（尤其英國人）對美國人的俗稱，有時帶貶義或戲謔。",
+     "en": "a word used by people outside the US, especially in Britain, for an American, often disapproving or joking",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "09766150-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "北方人（美國南方人使用）",
+     "zh": "美國南方人對北方各州居民的稱呼，源自南北戰爭時期。",
+     "en": "a word used by people in the Southern US for someone from the Northern states, especially during the Civil War",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "10821887-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "新英格蘭人",
+     "zh": "指美國東北部新英格蘭地區的居民。",
+     "en": "a person from New England, in the northeastern US",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "10375641-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "北方佬的（南方人使用）",
+     "zh": "美國南方人用來形容北方州居民或聯邦軍士兵的。",
+     "en": "used by Southerners to describe someone from a Northern state, especially a Union soldier",
+     "usage": "rare",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "01611052-s"
+     ]
+    }
+   ],
+   "omitted": []
   },
   {
    "headword": "yard",
@@ -165,6 +436,87 @@
    ]
   },
   {
+   "headword": "yardage",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "碼數、以碼計的距離",
+     "zh": "以碼為單位計算的距離，常見於美式足球或高爾夫等運動中。",
+     "en": "distance measured in yards, especially in sports such as football or golf",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "05138140-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（布料等的）碼數",
+     "zh": "布、地毯等以碼計算的長度或用量，常見於紡織與裁縫情境。",
+     "en": "the amount of cloth or other material measured in yards",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "車站旁牲畜欄的使用、牲畜欄使用費",
+     "reason": "舊字典的罕用義，現代幾乎不再使用，且與現今常見用法無關"
+    }
+   ]
+  },
+  {
+   "headword": "yardstick",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "衡量標準、準繩",
+     "zh": "用來比較或判斷好壞、成敗的標準",
+     "en": "a standard used to compare or judge how good or successful something is",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07276623-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "碼尺（三英尺長的量尺）",
+     "zh": "實際用來量長度、長三英尺的尺或捲尺",
+     "en": "a ruler or measuring tape that is three feet long",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "04619273-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "yarmouth",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "雅茅斯（地名）",
+     "zh": "加拿大與美國麻州等地的地名，常指濱海城鎮。",
+     "en": "a town or city name used in Canada and the US, especially a seaside town",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "雅茅斯（英國英格蘭東部城鎮）",
+     "reason": "參考資料只列加拿大與美國地名，但現代最常見的是英格蘭的 Great Yarmouth，已併入地名義項說明"
+    }
+   ]
+  },
+  {
    "headword": "yarn",
    "senses": [
     {
@@ -206,6 +558,213 @@
     }
    ],
    "omitted": []
+  },
+  {
+   "headword": "yates",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "耶茨（英文姓氏）",
+     "zh": "英文常見姓氏，如英國作家葉慈（W. B. Yeats 常譯葉慈，但 Yates 多譯耶茨）。",
+     "en": "a common English family name",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（英）耶茨",
+     "reason": "與所列姓氏義重複，僅為同一意思的中文譯法"
+    }
+   ]
+  },
+  {
+   "headword": "yawn",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "打哈欠",
+     "zh": "因為疲倦或無聊而不由自主張大嘴巴吸氣",
+     "en": "open your mouth wide and breathe in deeply because you are tired or bored",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00007328-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "哈欠",
+     "zh": "疲倦或無聊時張嘴吸氣的那個動作",
+     "en": "the act of opening your mouth wide and breathing in deeply when tired or bored",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00838954-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "（缺口、裂縫）敞開",
+     "zh": "形容山谷、裂口等大開著，多用於書面描寫",
+     "en": "to be or become wide open, especially a hole or gap",
+     "usage": "less_common",
+     "register": [
+      "literary"
+     ],
+     "synsets": [
+      "02724625-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "打著哈欠說",
+     "reason": "罕用，現代幾乎不用這個及物用法，通常直接說「邊打哈欠邊說」"
+    }
+   ]
+  },
+  {
+   "headword": "yawning",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "打呵欠的、想睡的",
+     "zh": "形容因為疲倦或無聊而張大嘴巴打呵欠的樣子。",
+     "en": "opening the mouth wide and breathing in because of tiredness or boredom",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01659451-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（洞口）大開的、裂開的",
+     "zh": "形容裂縫、洞口或深淵張得很大，像要把人吞進去一樣。",
+     "en": "open very wide, like a large hole that could swallow something",
+     "usage": "less_common",
+     "register": [
+      "literary"
+     ],
+     "synsets": [
+      "01657821-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "打呵欠",
+     "zh": "疲倦或無聊時不由自主張嘴吸氣的動作。",
+     "en": "the act of opening your mouth wide and breathing in when tired or bored",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00838954-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "表現出漫不經心或無聊的",
+     "reason": "與「打呵欠的、想睡的」語意重疊，現代多直接用 bored 或 inattentive 表達"
+    }
+   ]
+  },
+  {
+   "headword": "ye",
+   "senses": [
+    {
+     "pos": "pron.",
+     "label": "你們（古語、方言）",
+     "zh": "古英語或詩歌、方言中對一群人說話時用的「你們」，現代標準英文已不用，只在宗教經文、詩歌或愛爾蘭、英格蘭北部方言中出現。",
+     "en": "an old or dialect word for \"you\" when speaking to more than one person",
+     "usage": "rare",
+     "register": [
+      "old",
+      "literary"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "abbr.",
+     "label": "亞薩卡（桌球底板）",
+     "zh": "桌球器材圈對 Yasaka Extra 這款底板的簡稱，只在球具討論中出現。",
+     "en": "a short form for Yasaka Extra, a brand of table-tennis blade",
+     "usage": "rare",
+     "register": [
+      "technical",
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "abbr.",
+     "label": "酵母抽提物",
+     "zh": "食品標示與食品工業中 Yeast Extracts 的縮寫，指作為調味原料的酵母萃取物。",
+     "en": "a short form for yeast extracts, used as a food ingredient",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（參考資料未列）you 的複數代名詞用法",
+     "reason": "此義在現代標準英文已屬古語，僅存於宗教文體與部分方言，故不列為學習義；若學習者讀到詩歌或聖經仍可能遇到，已於 senses 中以 rare 標示。"
+    }
+   ]
+  },
+  {
+   "headword": "yea",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "而且、不僅如此",
+     "zh": "正式或演說場合用來加強語氣，表示「不只這樣，還……」。",
+     "en": "used to add a stronger statement after something you have just said",
+     "usage": "less_common",
+     "register": [
+      "formal",
+      "literary"
+     ],
+     "synsets": [
+      "00499758-r"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "贊成票、同意",
+     "zh": "議會或會議表決時投下的贊成票，或口頭表示同意。",
+     "en": "a vote or statement in support of something, especially in a meeting",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "07218668-n"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "是的（古式）",
+     "zh": "早期英語中表示「是」的說法，現代只在仿古或玩笑語氣中出現。",
+     "en": "an old way of saying yes",
+     "usage": "rare",
+     "register": [
+      "old"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "肯定、贊成（一般名詞用法）",
+     "reason": "與「贊成票、同意」詞義重複，已合併"
+    }
+   ]
   },
   {
    "headword": "yeah",
@@ -321,6 +880,36 @@
    "omitted": []
   },
   {
+   "headword": "yearbook",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "畢業紀念冊",
+     "zh": "高中或大學畢業班製作、收錄師生照片與回憶的紀念冊。",
+     "en": "a book made by a school's final-year class, with photos of students and teachers",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07297202-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "年鑑、年刊",
+     "zh": "每年出版一次、整理當年資料或統計的參考書。",
+     "en": "a reference book that comes out once a year with facts or figures",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "06438138-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "yearly",
    "senses": [
     {
@@ -387,6 +976,88 @@
     {
      "meaning": "喜愛、疼愛",
      "reason": "古義且罕用，現代多以 feel affection 等說法表達"
+    }
+   ]
+  },
+  {
+   "headword": "yearning",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "渴望、嚮往",
+     "zh": "對某個人、事物或某種生活強烈而持續的想念，常用於感情或人生層面。",
+     "en": "a strong, lasting wish for something you do not have",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07501768-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "渴望的、嚮往的",
+     "zh": "形容帶著強烈想念或期盼的樣子，多用於書面或文學描述。",
+     "en": "feeling a strong, lasting wish for something",
+     "usage": "less_common",
+     "register": [
+      "literary"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "懷念",
+     "reason": "與「渴望、嚮往」意思重疊，已合併處理，不另立詞義"
+    }
+   ]
+  },
+  {
+   "headword": "yeast",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "酵母、酵母菌",
+     "zh": "讓麵團發酵膨脹、或使啤酒與威士忌發酵的微生物，也指市售的酵母粉。",
+     "en": "a tiny living thing that makes bread dough rise and turns sugar into alcohol; also sold as a powder for baking or brewing",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "13046407-n",
+      "15130838-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "yeats",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "葉慈（愛爾蘭詩人）",
+     "zh": "指愛爾蘭詩人及劇作家威廉・巴特勒・葉慈，常出現在文學、歷史或文化相關的討論中。",
+     "en": "the Irish poet and playwright William Butler Yeats, often mentioned in literature and culture",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "葉慈、葉茨（姓氏）",
+     "zh": "英語姓氏，台灣常見譯法為葉慈或葉茨，也可用來指姓這個姓的人。",
+     "en": "a family name, also used to talk about someone who has this surname",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "耶茨（姓氏音譯）",
+     "reason": "與「葉慈、葉茨（姓氏）」為同一意思的不同音譯，已合併處理"
     }
    ]
   },
@@ -511,6 +1182,100 @@
    ]
   },
   {
+   "headword": "yellowed",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "泛黃的、變黃的",
+     "zh": "紙張、書頁、照片等因年代久遠而變成黃色",
+     "en": "having turned yellow, especially paper or photos that are old",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01644956-s"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "變黃、使變黃",
+     "zh": "yellow 的過去式和過去分詞，表示東西變成黃色或使東西變黃",
+     "en": "past tense and past participle of yellow; became or made something yellow",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "yellowish",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "淡黃的、微黃的",
+     "zh": "帶有一點黃色、但不是很鮮豔的黃，常用來描述顏色偏黃的物體或色調。",
+     "en": "slightly yellow in color; having a pale or light yellow tone",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00386818-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "yelp",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "（狗）尖聲吠叫",
+     "zh": "狗因興奮、疼痛或受驚而發出又短又尖的叫聲。",
+     "en": "to make a short, sharp, high sound, especially a dog",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01050043-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "（人）尖叫、高聲喊叫",
+     "zh": "人因疼痛、驚嚇或激動而發出尖銳的叫聲。",
+     "en": "to give a sharp, high cry, especially because of pain or fear",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "（狗）尖銳的叫聲",
+     "zh": "指狗發出的短促高音吠聲。",
+     "en": "a short, sharp, high sound made by a dog",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "07415152-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（人）尖叫聲",
+     "zh": "指人發出的尖銳叫聲。",
+     "en": "a sharp, high cry made by a person",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "叫喊著說（vt.）",
+     "reason": "現代幾乎不這樣用，屬舊式及物用法，口語與書面都改以其他說法表達"
+    }
+   ]
+  },
+  {
    "headword": "yeltsin",
    "senses": [
     {
@@ -522,6 +1287,21 @@
      "register": [
       "formal"
      ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "yemen",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "葉門",
+     "zh": "位於阿拉伯半島南端的國家，正式國名為葉門共和國。",
+     "en": "a country in the south of the Arabian Peninsula",
+     "usage": "common",
+     "register": [],
      "synsets": []
     }
    ],
@@ -572,6 +1352,67 @@
     {
      "meaning": "嗜好、癖好",
      "reason": "舊字典義，現代英語幾乎不用這個意思，渴望之義已涵蓋相關用法"
+    }
+   ]
+  },
+  {
+   "headword": "yeo",
+   "senses": [
+    {
+     "pos": "int.",
+     "label": "唷（水手拉繩時的吆喝聲）",
+     "zh": "水手合力拉繩時一起喊出的短促叫聲，用來統一步調。",
+     "en": "a short shout used by sailors to pull a rope together at the same time",
+     "usage": "rare",
+     "register": [
+      "technical",
+      "old"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "感嘆詞「唷」的一般用法",
+     "reason": "參考資料只收水手拉繩的吆喝聲，屬極專門的舊式航海用語，現代一般英文幾乎不用；此字在現代英語中已無常見義，故僅保留此一罕用義並標為 rare"
+    }
+   ]
+  },
+  {
+   "headword": "yeoman",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "自耕農、自由民",
+     "zh": "指舊時擁有自己土地、自行耕種的自由農民，常見於歷史敘述或文學作品。",
+     "en": "in the past, a free man who owned and farmed his own land",
+     "usage": "less_common",
+     "register": [
+      "old",
+      "literary"
+     ],
+     "synsets": [
+      "10823190-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（英國王室）儀仗衛士",
+     "zh": "指英國君主典禮護衛隊的成員，屬特定歷史與儀典場合的用法。",
+     "en": "a member of a ceremonial guard that serves the British king or queen",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "10823295-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（海軍）文書士官、yeoman 的軍職用法",
+     "reason": "參考資料未列，且屬特定軍職術語，現代一般學習者幾乎不會遇到"
     }
    ]
   },
@@ -795,6 +1636,67 @@
    "omitted": []
   },
   {
+   "headword": "yew",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "紫杉、紅豆杉",
+     "zh": "一種常綠喬木或灌木，葉片扁平呈針狀、結紅色杯狀果實，常種於庭園或作觀賞用。",
+     "en": "an evergreen tree or bush with flat needle-like leaves and small red cup-shaped berries, often grown in gardens",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "11681823-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "紫杉木",
+     "zh": "紫杉的木材，質地耐久、紋理細緻，傳統上用於製作弓與精細木工。",
+     "en": "the hard, fine-grained wood of this tree, used especially for making bows and furniture",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "11682158-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "yiddish",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "意第緒語",
+     "zh": "中歐、東歐猶太人傳統使用的語言，以德語為基礎，夾雜希伯來語等詞彙，以希伯來字母書寫。",
+     "en": "a language used by many Jewish people, based on German with Hebrew and other words, written in the Hebrew alphabet",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "06963829-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "意第緒語的",
+     "zh": "用來形容與意第緒語有關的事物，例如意第緒語文學、意第緒語劇場。",
+     "en": "relating to the language, literature, or culture of Yiddish",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "猶太人的（俚語用法）",
+     "reason": "帶貶義的舊式俚語，現代已少用且可能冒犯，不宜列為學習義"
+    }
+   ]
+  },
+  {
    "headword": "yield",
    "senses": [
     {
@@ -893,6 +1795,57 @@
    ]
   },
   {
+   "headword": "yielding",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "順從的、讓步的",
+     "zh": "形容人願意聽從他人、不堅持己見或容易妥協",
+     "en": "willing to agree with others or give in without arguing",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02337212-s",
+      "01030167-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "柔軟的、易彎曲的",
+     "zh": "形容材質受壓時會變形、不會斷裂，如軟墊或彈性材料",
+     "en": "soft and able to bend or change shape when pressed",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01158003-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（農地）有生產力的",
+     "zh": "形容土地或作物能產出收成，屬較舊的說法",
+     "en": "producing a good crop or result, used about land or plants",
+     "usage": "rare",
+     "register": [
+      "old"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "屈服、讓步（名詞）",
+     "reason": "名詞用法在現代英文幾乎不用，現多寫成 yielding 的動名詞或改用 concession、surrender"
+    },
+    {
+     "meaning": "承認失敗的言詞行為",
+     "reason": "屬語言學、法律領域的窄義，一般學習者不會遇到"
+    }
+   ]
+  },
+  {
    "headword": "yo",
    "senses": [
     {
@@ -979,6 +1932,28 @@
    "omitted": []
   },
   {
+   "headword": "yoghurt",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "優格、酸奶",
+     "zh": "用牛奶發酵製成的濃稠食品，常當早餐或點心吃。",
+     "en": "a thick food made from milk that has been left to become sour and set",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07865312-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "酸乳（舊譯）",
+     "reason": "「酸乳」是舊式說法，現代台灣多用「優格」，與現列詞義重複，故不另列。"
+    }
+   ]
+  },
+  {
    "headword": "yogurt",
    "senses": [
     {
@@ -997,6 +1972,166 @@
     {
      "meaning": "酸乳酪（舊譯）",
      "reason": "「酸乳酪」是舊式說法，現代台灣多說「優格」，意思與第一條相同，不另列。"
+    }
+   ]
+  },
+  {
+   "headword": "yoke",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "束縛、枷鎖",
+     "zh": "比喻壓迫人、使人失去自由的控制力量，常見於文學或正式論述。",
+     "en": "a situation or power that keeps people from being free and controls their lives",
+     "usage": "less_common",
+     "register": [
+      "formal",
+      "literary"
+     ],
+     "synsets": [
+      "14020394-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "牛軛",
+     "zh": "套在兩頭牛或馬脖子上、讓牠們一起拉車或犁田的木製器具。",
+     "en": "a wooden bar placed across the necks of two farm animals so they can pull a cart or plow together",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "04620197-n",
+      "08247986-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（衣服的）過肩、育克",
+     "zh": "襯衫、洋裝等上衣肩部到胸前的剪裁部分，服飾用語。",
+     "en": "the fitted top part of a shirt or dress that goes around the shoulders",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "04620372-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "結合、使連結",
+     "zh": "把兩件事物或人配在一起，書面語中常見。",
+     "en": "to join two things or people together, often in a fixed way",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "01494940-v",
+      "01494709-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "給（牲畜）上軛",
+     "zh": "把牛軛套在牲畜身上，或把牲畜成對套在一起工作。",
+     "en": "to put a yoke on animals or join them as a pair for work",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01493615-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "兩個同類的東西、一對",
+     "reason": "與 yoke 的核心意思無關，屬 WordNet 細分義，現代幾乎不這樣用"
+    },
+    {
+     "meaning": "挑水用的肩架",
+     "reason": "罕用，僅見於特定歷史或鄉村情境"
+    },
+    {
+     "meaning": "像夾鉗般的連接零件",
+     "reason": "專業領域過窄，一般學習者不會遇到"
+    },
+    {
+     "meaning": "使匹配",
+     "reason": "舊字典義，現代多以 match 表達，yoke 不這樣用"
+    }
+   ]
+  },
+  {
+   "headword": "yolk",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "蛋黃",
+     "zh": "雞蛋等蛋類中央的黃色圓形部分，是蛋裡最有營養的部位。",
+     "en": "the round yellow part in the middle of an egg, which is surrounded by the white",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07857321-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "卵黃（生物學）",
+     "zh": "生物學上指卵細胞中儲存養分、供胚胎發育使用的物質。",
+     "en": "the food material stored inside an egg cell to feed a developing embryo",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01467485-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "yon",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "那邊的、遠處的",
+     "zh": "指在遠處但看得到的人或東西，帶有文學或方言色彩。",
+     "en": "far away but still able to be seen",
+     "usage": "less_common",
+     "register": [
+      "literary",
+      "old"
+     ],
+     "synsets": [
+      "00448792-s"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "在那邊、在遠處",
+     "zh": "表示位置在遠處，常見於詩歌、歌詞或蘇格蘭、北英格蘭方言。",
+     "en": "in or at a distant place that can be seen",
+     "usage": "less_common",
+     "register": [
+      "literary",
+      "old"
+     ],
+     "synsets": [
+      "00082658-r"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "那邊、遠處的東西",
+     "reason": "名詞用法在現代英文幾乎不出現，屬古義與方言用法"
     }
    ]
   },
@@ -1043,6 +2178,28 @@
    ]
   },
   {
+   "headword": "yorks",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "約克家族、約克王朝",
+     "zh": "英格蘭歷史上與蘭開斯特家族爭奪王位的家族，見於「玫瑰戰爭」等歷史敘述。",
+     "en": "the English royal family that fought the Lancasters in the Wars of the Roses",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "約克斯集團",
+     "reason": "參考資料的釋義應為誤譯或專有名詞的機械式翻譯，並非英語中可獨立使用的字義；現代英語中 yorks 主要作約克家族、約克王朝的複數專名，或為 York 的第三人稱單數動詞（棒球術語，指投出約克球），後者領域過窄，不列入。"
+    }
+   ]
+  },
+  {
    "headword": "yorkshire",
    "senses": [
     {
@@ -1070,6 +2227,49 @@
      "reason": "歷史專有名詞，現代一般語境幾乎不用，且屬英國王室歷史的特定稱呼"
     }
    ]
+  },
+  {
+   "headword": "yorkshireman",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "約克郡人（男性）",
+     "zh": "指出生或住在英格蘭約克郡的男性；女性則說 Yorkshirewoman。",
+     "en": "a man who was born in or lives in Yorkshire, a county in northern England",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "yoruba",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "約魯巴人",
+     "zh": "住在奈及利亞西南部的西非民族成員。",
+     "en": "a member of a West African people who live mainly in southwestern Nigeria",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "09757624-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "約魯巴語",
+     "zh": "約魯巴人使用的語言，屬於夸語族。",
+     "en": "the language spoken by the Yoruba people, mainly in southwestern Nigeria",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07010028-n"
+     ]
+    }
+   ],
+   "omitted": []
   },
   {
    "headword": "you",
@@ -1163,6 +2363,43 @@
      "synsets": [
       "07960326-n"
      ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "younger",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "較年輕的、年紀較小的",
+     "zh": "用來比較兩個人或兩件事的年紀，指其中年紀較小的一方。",
+     "en": "having a lower age than someone else, especially a brother, sister, or another person being compared",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "（父子同名時）小的",
+     "zh": "父子或祖孫同名時，加在名字後面指較年輕的那一位。",
+     "en": "used after a name to show that a person is the younger one of two people with the same name",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "02108662-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "年紀較小的人、弟弟、妹妹",
+     "zh": "指家中或群體裡年紀比較小的人，口語常說 the younger。",
+     "en": "a person who is less old than another person, especially a sibling",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
     }
    ],
    "omitted": []
@@ -1438,6 +2675,69 @@
    "omitted": []
   },
   {
+   "headword": "yr",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "年（縮寫，多用於書面）",
+     "zh": "year 的縮寫，常見於表格、圖表、筆記或簡訊中，表示「年」；正式文章通常仍寫 year。",
+     "en": "a short way of writing year, used in tables, notes, or informal writing",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "15228587-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "[計] 年、[經] 年",
+     "reason": "這是舊字典標示領域的寫法，並非獨立詞義，其實就是「年」；現代英文不這樣分領域使用。"
+    }
+   ]
+  },
+  {
+   "headword": "yu",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "禹（中國古代傳說帝王）",
+     "zh": "中國上古傳說中治理洪水的聖王，夏朝的奠基者，常見於歷史與神話文本。",
+     "en": "a legendary ancient Chinese ruler known for controlling great floods and founding the Xia dynasty",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "yuan",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "人民幣、元（中國貨幣單位）",
+     "zh": "中國的貨幣基本單位，也常泛指人民幣；在台灣日常談到中國物價、匯率時會用到。",
+     "en": "the basic unit of money in China",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "13732097-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "元朝（一二七九至一三六八年中國的王朝）",
+     "reason": "專有名詞的歷史朝代義，現代一般語境幾乎不用，且多寫作 Yuan dynasty"
+    }
+   ]
+  },
+  {
    "headword": "yugoslav",
    "senses": [
     {
@@ -1473,6 +2773,93 @@
      "label": "南斯拉夫（已不存在的國家）",
      "zh": "二十世紀位於巴爾幹半島的國家，1990 年代解體；現在多用來指這個歷史上的國家或該地區。",
      "en": "a country that existed in the Balkans during the 20th century and broke apart in the 1990s",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "yummy",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "好吃的、美味的",
+     "zh": "口語形容食物很好吃，常用在輕鬆、親切的場合。",
+     "en": "tasting very good; used in a casual and friendly way about food",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "02405305-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "賞心悅目的、討人喜歡的",
+     "zh": "口語引申用法，形容人、東西或畫面很吸引人、讓人看了心情好。",
+     "en": "very attractive or pleasant to look at, used in a casual way",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "愉快的",
+     "reason": "與「賞心悅目的、討人喜歡的」意思重疊，已合併處理"
+    }
+   ]
+  },
+  {
+   "headword": "yup",
+   "senses": [
+    {
+     "pos": "int.",
+     "label": "對、是啊（口語）",
+     "zh": "口語中表示同意或肯定的簡短回答，比 yes 輕鬆隨意。",
+     "en": "a casual way of saying yes or agreeing with someone",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "yuppie",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "雅痞",
+     "zh": "指一九八〇年代起在城市工作、收入優渥、講究生活品味的年輕專業人士，現在多用來回顧那個年代或帶點調侃。",
+     "en": "a young professional who works in a city, earns good money, and likes expensive things",
+     "usage": "common",
+     "register": [
+      "informal",
+      "old"
+     ],
+     "synsets": [
+      "10824527-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "yvonne",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "伊馮（女子名）",
+     "zh": "法語來源的女性名字，英語圈也常見。",
+     "en": "a female given name of French origin, also used in English-speaking countries",
      "usage": "common",
      "register": [],
      "synsets": []

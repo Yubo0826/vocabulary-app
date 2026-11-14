@@ -106,6 +106,237 @@
    ]
   },
   {
+   "headword": "kabul",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "喀布爾（阿富汗首都）",
+     "zh": "阿富汗的首都，中亞地區的重要城市名。",
+     "en": "the capital city of Afghanistan",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "喀布林",
+     "reason": "舊譯名，現代台灣一律譯作「喀布爾」"
+    }
+   ]
+  },
+  {
+   "headword": "kaiser",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "皇帝（德國、奧地利）",
+     "zh": "歷史上德國、奧地利或神聖羅馬帝國皇帝的稱號，現代也偶爾用來指獨斷的統治者。",
+     "en": "a title used for the emperors of Germany, Austria, or the Holy Roman Empire in the past",
+     "usage": "less_common",
+     "register": [
+      "old"
+     ],
+     "synsets": [
+      "10249008-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "kale",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "羽衣甘藍",
+     "zh": "葉片皺曲、不結球的甘藍菜，常被視為健康蔬菜，用於沙拉或綠拿鐵。",
+     "en": "a green vegetable with curly leaves that does not form a round head, often eaten raw or in health drinks",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "11897445-n",
+      "07729823-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "錢（非正式說法）",
+     "reason": "俚語用法，現代幾乎不用，且與蔬菜義無關"
+    }
+   ]
+  },
+  {
+   "headword": "kaleidoscope",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "萬花筒",
+     "zh": "轉動時會看到對稱彩色圖案變化的圓筒玩具",
+     "en": "a tube-shaped toy that shows changing symmetrical patterns of colored shapes when you turn it",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03612969-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "變化多端的景象、五花八門",
+     "zh": "形容顏色、形狀或事物不斷變化、種類繁多的一團景象",
+     "en": "a constantly changing mix of colors, shapes, or things",
+     "usage": "less_common",
+     "register": [
+      "literary"
+     ],
+     "synsets": [
+      "05940613-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "kane",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "凱恩（姓氏）",
+     "zh": "英文姓氏，如美國北極探險家凱恩（Elisha Kane）。",
+     "en": "a family name, especially that of the American Arctic explorer Elisha Kane",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（舊字典列為一般名詞釋義）",
+     "reason": "參考資料僅有姓氏釋義，無其他現代常見字義；此字在現代英文中主要作專有名詞使用"
+    }
+   ]
+  },
+  {
+   "headword": "kangaroo",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "袋鼠",
+     "zh": "澳洲與新幾內亞特有的有袋類動物，用強壯的後腿跳躍前進，育兒袋裡會裝小袋鼠。",
+     "en": "a large Australian animal with strong back legs for jumping and a pocket on its body for carrying its baby",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01879775-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "kansas",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "堪薩斯州",
+     "zh": "美國中西部的一個州，常出現在新聞、地理與美國政治相關話題中。",
+     "en": "a state in the central United States",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "堪薩斯河河谷的蘇族（Siouan）原住民族成員",
+     "reason": "民族誌專用的罕見義，現代一般英文幾乎不用"
+    },
+    {
+     "meaning": "堪薩人（Kansa）所說的 Dhegiha 方言",
+     "reason": "語言學專用的罕見義，現代一般英文幾乎不用"
+    }
+   ]
+  },
+  {
+   "headword": "kant",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "康德（德國哲學家）",
+     "zh": "指十八世紀德國哲學家康德，常出現在哲學、思想史相關的討論中。",
+     "en": "the German philosopher Immanuel Kant, known for his works on ethics and knowledge",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "karajan",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "卡拉揚（指揮家）",
+     "zh": "指二十世紀著名的奧地利指揮家赫伯特・馮・卡拉揚，常出現在古典音樂相關的討論中。",
+     "en": "Herbert von Karajan, a famous Austrian orchestra conductor of the 20th century",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "一般英文單字釋義",
+     "reason": "此字為專有名詞（人名），非一般詞彙，無其他詞義可整理"
+    }
+   ]
+  },
+  {
+   "headword": "karaoke",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "卡拉OK",
+     "zh": "跟著預錄的伴奏唱歌的娛樂活動，常在包廂、酒吧或聚會中進行。",
+     "en": "a form of entertainment in which people sing popular songs along with recorded music",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01257889-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "卡拉OK錄音、自動伴奏錄音",
+     "reason": "指的是伴奏帶本身，現代多直接說 backing track，這個說法已少用"
+    }
+   ]
+  },
+  {
+   "headword": "karate",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "空手道",
+     "zh": "源自日本沖繩的徒手武術，以拳打、腳踢與格擋為主，也是奧運比賽項目。",
+     "en": "a Japanese martial art in which people fight using only their hands and feet, with punches, kicks, and blocks",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00828058-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "karen",
    "senses": [
     {
@@ -158,6 +389,135 @@
    "omitted": []
   },
   {
+   "headword": "karma",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "因果報應、業",
+     "zh": "佛教、印度教中說人的行為會決定來世的命運，也用來泛指善惡有報。",
+     "en": "the idea that the good and bad things a person does decide what will happen to them in their next life",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07344962-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（口語）報應、活該",
+     "zh": "日常口語裡說某人遇到壞事是自找的，常帶點調侃或幸災樂禍。",
+     "en": "used in everyday speech to say that something bad happening to someone is a result of their own actions",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "（社群）按讚數、人氣積分",
+     "zh": "社群網站上把按讚、留言等互動量戲稱為 karma，表示累積的網路聲量。",
+     "en": "on social media, points or attention gained from likes and comments, often talked about as if it were a reward",
+     "usage": "less_common",
+     "register": [
+      "informal",
+      "slang"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "命運",
+     "reason": "舊字典把 karma 譯成「命運」過於籠統，現代用法強調行為帶來的後果，不是單純的命定，故不另立此義。"
+    }
+   ]
+  },
+  {
+   "headword": "karpov",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "卡爾波夫（俄羅斯姓氏）",
+     "zh": "俄羅斯、芬蘭等地的姓氏，最常指前西洋棋世界冠軍 Anatoly Karpov。",
+     "en": "a Russian surname, especially of the former world chess champion Anatoly Karpov",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "(俄、芬、塞)卡爾波夫",
+     "reason": "與 senses 中的姓氏義重複，僅保留一筆"
+    }
+   ]
+  },
+  {
+   "headword": "karr",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "卡爾（姓氏、人名）",
+     "zh": "德語、英語、法語等地常見的姓氏或人名，音譯為「卡爾」。",
+     "en": "a family name or given name used in German, English and French-speaking places",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（舊字典列為一般名詞釋義）",
+     "reason": "參考資料只有人名釋義，無其他詞義可整理；此字在現代英文中主要作專有名詞使用。"
+    }
+   ]
+  },
+  {
+   "headword": "kashmir",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "克什米爾（南亞地區）",
+     "zh": "位於印度、巴基斯坦與中國交界的高山地區，常出現在國際新聞與地緣政治報導中。",
+     "en": "a mountainous region in South Asia that India, Pakistan and China dispute",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "喀什米爾羊毛、喀什米爾織品",
+     "zh": "指用喀什米爾山羊毛製成的高級柔軟毛料或毛衣、圍巾等製品。",
+     "en": "soft fine wool from a type of goat, or clothing made from it",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "kasparov",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "卡斯帕羅夫（俄羅斯棋王）",
+     "zh": "指俄羅斯西洋棋特級大師加里・卡斯帕羅夫，常出現在棋賽、人工智慧對弈的新聞中。",
+     "en": "a Russian chess grandmaster, famous for playing against computers",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（俄）卡斯帕羅夫（人名）",
+     "reason": "與第一義重複；此字本身即專有名詞，並非一般英文單字，故不另列為獨立詞義"
+    }
+   ]
+  },
+  {
    "headword": "kate",
    "senses": [
     {
@@ -165,6 +525,43 @@
      "label": "凱特（女子名）",
      "zh": "英文女子名字，常作為 Catherine、Katherine 的暱稱。",
      "en": "a female first name, often used as a short form of Catherine or Katherine",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "kath",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "凱絲（女子名）",
+     "zh": "英文名字 Katherine、Kathleen 等的常見暱稱，也用於東南亞華人名字的拼寫。",
+     "en": "a short form of the female name Katherine or Kathleen, also used in some Asian names",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（人名）卡、卡特",
+     "reason": "這是舊字典把外語姓氏音譯當成單字釋義，並非英文單字本身的詞義，現代學習者不需要。"
+    }
+   ]
+  },
+  {
+   "headword": "katharine",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "凱瑟琳（女子名）",
+     "zh": "常見的英文女子名字，在台灣常譯作「凱瑟琳」。",
+     "en": "a common female first name",
      "usage": "common",
      "register": [],
      "synsets": []
@@ -208,6 +605,21 @@
    ]
   },
   {
+   "headword": "kathy",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "凱西（女子名）",
+     "zh": "英文女子名字，常作為 Katherine 或 Kathleen 的暱稱。",
+     "en": "a female first name, often used as a short form of Katherine or Kathleen",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "katie",
    "senses": [
     {
@@ -221,6 +633,307 @@
     }
    ],
    "omitted": []
+  },
+  {
+   "headword": "katy",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "凱蒂（女子名）",
+     "zh": "英文女子名 Katherine、Katie 等的常見暱稱，日常稱呼女性時使用。",
+     "en": "a common female first name, often a short form of Katherine or Katie",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "kaufman",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "考夫曼（姓氏）",
+     "zh": "英語系常見的姓氏，源自德語，用來指姓 Kaufman 的人。",
+     "en": "a family name of German origin, used for someone whose last name is Kaufman",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "考夫曼（名字）",
+     "reason": "參考資料只列人名，未區分名字與姓氏；現代英文中幾乎只作姓氏使用，作名字的情況極少，故不另列"
+    }
+   ]
+  },
+  {
+   "headword": "kayak",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "獨木舟、皮艇",
+     "zh": "一種狹長輕便的小船，人坐在裡面用雙頭槳划行，常見於休閒活動與水上運動。",
+     "en": "a long narrow light boat that you sit in and move with a paddle that has two blades",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03614448-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "划獨木舟、划皮艇",
+     "zh": "指從事划這種小船的活動，常當作休閒運動或旅遊方式。",
+     "en": "to travel or take part in a sport using a long narrow light boat moved with a two-bladed paddle",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01951594-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "愛斯基摩人划子",
+     "reason": "舊字典用語，帶有過時的族群稱呼；現代英文只說 kayak，不再用這種描述方式"
+    }
+   ]
+  },
+  {
+   "headword": "kaye",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "凱耶（姓氏）",
+     "zh": "英文姓氏，源自威爾斯或愛爾蘭，現代主要作為人名使用。",
+     "en": "a family name of Welsh or Irish origin, used mainly as a person's name",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "kazakhstan",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "哈薩克",
+     "zh": "中亞國家，1991 年蘇聯解體後獨立，首都為阿斯塔納。",
+     "en": "a country in Central Asia that became independent from the Soviet Union in 1991",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "原蘇聯加盟共和國之一",
+     "reason": "歷史說明，非獨立詞義；現代指獨立國家"
+    }
+   ]
+  },
+  {
+   "headword": "kb",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "鍵盤（電腦）",
+     "zh": "電腦的輸入裝置，指 keyboard 的縮寫，常見於遊戲或科技討論中。",
+     "en": "a short way of writing keyboard, the device you type on",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "千位元組",
+     "zh": "資料量的單位，指 1000 位元組，常寫成 KB。",
+     "en": "a unit of computer memory or data equal to 1000 bytes",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "13649142-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "千位元（資訊量）",
+     "zh": "資訊量的單位，指 1000 位元，用於電信或資料傳輸。",
+     "en": "a unit of information equal to 1000 bits",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "13649271-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "知識庫",
+     "zh": "系統化整理、可查詢的知識集合，常見於人工智慧與資訊系統。",
+     "en": "a stored collection of knowledge that a computer system can use",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "1024 位元組",
+     "reason": "與「千位元組」重複，且現代多以 KiB 表示二進位單位，不另立詞義"
+    },
+    {
+     "meaning": "千位（數目）",
+     "reason": "罕用縮寫，現代幾乎不這樣用"
+    }
+   ]
+  },
+  {
+   "headword": "keane",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "基恩樂團",
+     "zh": "指 1990 年代末成軍的英國流行搖滾樂團，以〈Somewhere Only We Know〉等歌曲聞名。",
+     "en": "a British pop-rock band that became popular in the early 2000s",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（人名）基恩",
+     "reason": "這是姓氏 Keane 的拼寫，不是英文單字的一般詞義，字典通常另立人名條目處理"
+    }
+   ]
+  },
+  {
+   "headword": "keating",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "基廷（姓氏、男子名）",
+     "zh": "愛爾蘭常見的姓氏，也可當男子名；現代最常指澳洲前總理保羅・基廷（Paul Keating）。",
+     "en": "an Irish family name, also used as a man's first name; especially the Australian prime minister Paul Keating",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "kee",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "凱（姓氏）",
+     "zh": "英文姓氏，也可當名字使用，台灣常見音譯為「凱」。",
+     "en": "a family name or first name; often spelled as a transliteration of the sound",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "Kee（拉鏈品牌）",
+     "zh": "指以拉鏈等五金配件聞名的品牌名稱，多用於商品或商標語境。",
+     "en": "a brand name used for zippers and similar fastening products",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "keegan",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "基根（男子名、姓氏）",
+     "zh": "常見於英語系國家的男性名字或姓氏，台灣多音譯為「基根」。",
+     "en": "a male first name or family name used in English-speaking countries",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "keel",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "龍骨（船底中央的縱樑）",
+     "zh": "船底中央從船首延伸到船尾的主要縱樑，提供船身縱向的結構與水中側向的穩定。",
+     "en": "the main long beam or plate along the bottom center of a ship, giving it strength and balance in the water",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "03614755-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（胸骨等的）中央隆起",
+     "zh": "鳥類胸骨或類似構造中央突起的脊狀部分，常見於解剖或生物描述。",
+     "en": "the raised ridge running down the middle of a bird's breastbone or a similar structure",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "05235704-n",
+      "13942952-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "搖搖晃晃地走",
+     "zh": "腳步不穩、身體左右搖擺地走路，常因酒醉或虛弱而如此。",
+     "en": "to walk in an unsteady way, swaying from side to side as if about to fall",
+     "usage": "less_common",
+     "register": [
+      "literary"
+     ],
+     "synsets": [
+      "01928835-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "平底船",
+     "reason": "罕用且過時，現代英語幾乎不以 keel 指船本身"
+    },
+    {
+     "meaning": "裝以龍骨",
+     "reason": "罕用，只在造船技術的專門描述中出現"
+    },
+    {
+     "meaning": "使傾覆、傾覆",
+     "reason": "舊字典義，現代英語不用 keel 表達翻覆，通常說 capsize 或 turn over"
+    }
+   ]
   },
   {
    "headword": "keen",
@@ -290,6 +1003,55 @@
     {
      "meaning": "輓歌；唱輓歌、痛哭",
      "reason": "古義，現代英文幾乎不用"
+    }
+   ]
+  },
+  {
+   "headword": "keenly",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "強烈地、深切地",
+     "zh": "表示感受、興趣或情緒非常強烈，常與 feel、aware、interested 等動詞或形容詞連用。",
+     "en": "in a very strong or deep way, especially when feeling or noticing something",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00386914-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "熱切地、殷切地",
+     "zh": "表示對某事非常投入、渴望或期待，例如熱切期盼、熱烈歡迎。",
+     "en": "with a lot of interest, eagerness, or enthusiasm",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "adv.",
+     "label": "敏銳地、犀利地",
+     "zh": "形容觀察、察覺或思考十分靈敏，能注意到細節。",
+     "en": "in a sharp and quick way, showing good ability to notice or understand things",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "adv.",
+     "label": "（價格）激烈地、劇烈地",
+     "zh": "用於競爭、爭論或價格變動，表示程度猛烈。",
+     "en": "in a strong and intense way, as in competition, argument, or price changes",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "銳利地（指刀刃等實體鋒利）",
+     "reason": "現代英語幾乎不用 keenly 描述實體刀刃的鋒利，屬舊式或文學用法"
     }
    ]
   },
@@ -510,6 +1272,70 @@
    "omitted": []
   },
   {
+   "headword": "keeping",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "保管、照顧",
+     "zh": "負責看管或照料某人、某物的責任",
+     "en": "the act or duty of taking care of someone or something",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00820127-n",
+      "00812259-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "一致、相符",
+     "zh": "與某事物相符合、不矛盾，多用於 in keeping with 的片語",
+     "en": "the state of matching or agreeing with something else",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "01207500-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "供養",
+     "reason": "舊字典釋義，現代少見，且與「照顧、保管」意思重疊"
+    }
+   ]
+  },
+  {
+   "headword": "keg",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "小桶（裝啤酒、飲料）",
+     "zh": "用來裝啤酒或其他飲料的圓柱形小桶，常見於酒吧、派對或釀酒場合。",
+     "en": "a small barrel used for holding beer or other drinks",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03615631-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "一桶的量",
+     "zh": "指一個小桶所能裝的份量，常接在 of 後面使用。",
+     "en": "the amount of liquid that a small barrel can hold",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "13790204-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "keith",
    "senses": [
     {
@@ -605,6 +1431,62 @@
    ]
   },
   {
+   "headword": "kendal",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "肯德爾綠（粗呢）",
+     "zh": "一種源自英國肯德爾（Kendal）的綠色粗呢布料，現多用於歷史或紡織文獻中。",
+     "en": "a rough green cloth, originally made in Kendal in England, now mainly mentioned in historical or textile writing",
+     "usage": "rare",
+     "register": [
+      "technical",
+      "old"
+     ],
+     "synsets": [
+      "15013528-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "肯德爾綠染料（由菘藍植物取得）",
+     "reason": "與布料詞義高度重疊，且現代幾乎不用；WordNet 的染料義屬罕用專業用法"
+    }
+   ]
+  },
+  {
+   "headword": "kendall",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "肯德爾（人名、姓氏）",
+     "zh": "英文常見的姓氏，也常當作名字使用，例如 Kendall Jenner。",
+     "en": "a common English family name, also used as a first name",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "肯德爾（統計方法）",
+     "zh": "統計學中常見的專有名詞，如肯德爾等級相關係數、肯德爾和諧係數。",
+     "en": "used in statistics in names of measures such as Kendall's tau and Kendall's W",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "[計] 肯德爾",
+     "reason": "舊字典把它標成電腦領域術語，但現代英文中這個字並非電腦專有名詞，屬分類錯誤；人名與統計用法已另列。"
+    }
+   ]
+  },
+  {
    "headword": "kennedy",
    "senses": [
     {
@@ -627,6 +1509,52 @@
     }
    ],
    "omitted": []
+  },
+  {
+   "headword": "kennel",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "狗舍、狗屋",
+     "zh": "讓狗居住的小屋或收容設施，也常指整排的犬舍。",
+     "en": "a small building or shelter where a dog sleeps and stays",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03615737-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "犬舍、狗狗寄宿中心",
+     "zh": "外出時把狗送去短期住宿、托顧的營業場所。",
+     "en": "a place where dogs are cared for while their owners are away",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "v.",
+     "label": "把狗安置在狗舍",
+     "zh": "把狗放進狗屋或送去犬舍寄宿。",
+     "en": "to put a dog in a shelter or in a place where it is looked after",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "02465222-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "陰溝",
+     "reason": "舊字典的罕用義，現代英語幾乎不用 kennel 指排水溝"
+    },
+    {
+     "meaning": "宿於狗舍、進狗窩",
+     "reason": "對應的 vi. 用法在現代英語中極少出現，已併入動詞義"
+    }
+   ]
   },
   {
    "headword": "kenneth",
@@ -716,6 +1644,70 @@
    "omitted": []
   },
   {
+   "headword": "kentish",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "肯特郡的",
+     "zh": "用來指英格蘭東南部的肯特郡（Kent）或其居民、事物。",
+     "en": "relating to Kent, a county in southeast England, or to its people",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "肯特方言",
+     "zh": "指歷史上肯特地區使用的英語方言，屬古英語或中古英語的一支。",
+     "en": "a historical dialect of English that was spoken in the county of Kent",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "06962708-n",
+      "06962088-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "肯特人（語）的",
+     "reason": "與「肯特郡的」為同一形容詞用法，已合併；現代幾乎只出現在歷史、語言學或地名相關文本"
+    }
+   ]
+  },
+  {
+   "headword": "kenton",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "肯頓（地名、人名）",
+     "zh": "英國英格蘭西北部的地名，也常當作姓氏或名字使用。",
+     "en": "a place name in northwest England, also used as a surname or first name",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "kentucky",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "肯塔基州",
+     "zh": "美國中東部的一州，以賽馬、波本威士忌和鄉村音樂聞名。",
+     "en": "a state in the eastern central United States, known for horse racing and bourbon",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "kenya",
    "senses": [
     {
@@ -729,6 +1721,128 @@
     }
    ],
    "omitted": []
+  },
+  {
+   "headword": "kenyan",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "肯亞的、肯亞人的",
+     "zh": "用來形容與肯亞這個國家或其人民、文化有關的事物。",
+     "en": "relating to Kenya, its people, or its culture",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03090014-a"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "肯亞人",
+     "zh": "指出生在肯亞或居住在肯亞的人。",
+     "en": "a person who comes from Kenya or lives there",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "09738705-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "kerb",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "路緣、人行道邊石",
+     "zh": "人行道與車道交界處高起的石緣，台灣常說「路緣石」；英式拼法為 kerb，美式拼法為 curb。",
+     "en": "the raised edge of stone or concrete where a sidewalk meets the road",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03153586-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "kernel",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "核心、要點",
+     "zh": "指想法、計畫或問題中最重要、最關鍵的部分。",
+     "en": "the most important or central part of an idea, plan, or problem",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "05929717-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（堅果、果核的）果仁",
+     "zh": "堅果、種子或果核裡面可食用的部分。",
+     "en": "the soft part inside a nut, seed, or fruit stone that can be eaten",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "13157787-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（作業系統）核心",
+     "zh": "電腦作業系統中最底層、負責管理硬體與資源的部分。",
+     "en": "the central part of a computer operating system that controls hardware and basic functions",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "（單顆）穀粒",
+     "zh": "指一整顆的麥子、玉米等穀物。",
+     "en": "a single whole grain of wheat, corn, or similar cereal",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "12177573-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "中心",
+     "reason": "與「核心、要點」意思重複，已合併"
+    }
+   ]
+  },
+  {
+   "headword": "kerosene",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "煤油",
+     "zh": "用來點燈、取暖或當燃料的油，台灣日常多稱「煤油」。",
+     "en": "a clear oil made from petroleum that is burned for light, heat, or fuel",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "14711794-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "火油、燈油",
+     "reason": "與「煤油」同義，只是舊稱或依用途命名，已合併為同一詞義"
+    }
+   ]
   },
   {
    "headword": "kerr",
@@ -758,6 +1872,103 @@
     {
      "meaning": "[計] 克爾",
      "reason": "參考資料僅有電腦領域縮寫標記，未提供可用的現代詞義；此字在現代英文主要是人名與物理術語，一般學習者幾乎不會遇到。"
+    }
+   ]
+  },
+  {
+   "headword": "kerry",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "克里的黑色小乳牛",
+     "zh": "指愛爾蘭克里郡產的黑色小乳牛，屬地方品種，現代一般英文幾乎不會用到。",
+     "en": "a small black cow of a breed from County Kerry in Ireland",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（人名、地名）凱瑞、克里",
+     "reason": "參考資料只收乳牛義；Kerry 在現代最常見的用法是愛爾蘭地名與人名（如演員、政治人物），但那是專有名詞，不屬於一般字義，故不列入 senses。"
+    }
+   ]
+  },
+  {
+   "headword": "kestrel",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "紅隼",
+     "zh": "一種小型隼，常在空中定點盤旋尋找獵物，在歐洲、亞洲與北美都看得到。",
+     "en": "a small bird of prey that often stays still in the air while looking for food",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01614610-n",
+      "01614763-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "keswick",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "凱瑟克（英格蘭地名、姓氏）",
+     "zh": "英格蘭坎布里亞郡的小鎮，也是常見的英文姓氏；現代用法幾乎只出現在地名或人名。",
+     "en": "a town in Cumbria, England, or a family name; used mainly as a place name or surname",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（舊字典列為一般名詞釋義）",
+     "reason": "參考資料僅列人名音譯，無其他詞義；此字為專有名詞，非一般可數名詞，故不另立義項"
+    }
+   ]
+  },
+  {
+   "headword": "ketchup",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "番茄醬",
+     "zh": "用番茄製成的濃稠調味醬，常搭配薯條、漢堡等食物。",
+     "en": "a thick red sauce made from tomatoes, often eaten with fries or burgers",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07838173-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "kettering",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "凱特靈（姓氏、地名）",
+     "zh": "英文姓氏，也是美國俄亥俄州等地的地名；現代最常見的用法是指美國發明家 Charles Kettering。",
+     "en": "a family name, and the name of several places in the United States; also used for the American inventor Charles Kettering",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（舊字典列為一般名詞釋義）",
+     "reason": "非獨立詞義，僅為專有名詞的音譯，已併入 senses 說明"
     }
    ]
   },
@@ -1034,6 +2245,39 @@
    "omitted": []
   },
   {
+   "headword": "keyhole",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "鎖孔、鑰匙孔",
+     "zh": "門鎖或掛鎖上插入鑰匙的孔洞。",
+     "en": "the small hole in a lock where you put the key",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03619991-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "從鎖孔偷窺的、窺探內情的",
+     "zh": "多用於 keyhole surgery（鎖孔手術）或 keyhole view 等說法，指範圍極小、只能窺見局部的方式。",
+     "en": "seen or done through a very small opening, giving only a limited view",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "顯示內情的（形容詞舊義）",
+     "reason": "舊字典的形容詞義，現代英文幾乎不用，相關用法已由「從鎖孔偷窺的」涵蓋"
+    }
+   ]
+  },
+  {
    "headword": "keynes",
    "senses": [
     {
@@ -1049,6 +2293,172 @@
     }
    ],
    "omitted": []
+  },
+  {
+   "headword": "keynesian",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "凱因斯（學派）的",
+     "zh": "用來描述與經濟學家凱因斯或其經濟理論相關的事物，常見於經濟、政策討論。",
+     "en": "relating to the economic ideas of John Maynard Keynes or to his theories",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "03045549-a"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "凱因斯學派支持者",
+     "zh": "指主張或追隨凱因斯經濟理論的人，多用於學術與政策論述。",
+     "en": "a person who supports or follows the economic ideas of John Maynard Keynes",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "10249653-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "keynote",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "主題演講、專題演講",
+     "zh": "大型會議或活動開場時，定調全場主題的主要演講。",
+     "en": "the main speech at a large event that sets the theme for the whole meeting",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "基調、核心思想",
+     "zh": "演講、文章或活動背後最主要的思想或方向。",
+     "en": "the main idea or central theme of a speech, piece of writing, or event",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07254938-n",
+      "05934681-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "發表主題演講",
+     "zh": "在會議或活動中擔任主講人，發表定調性的演說。",
+     "en": "to give the main speech at a meeting or event",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00770310-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "定調、奠定基調",
+     "zh": "為某件事設定整體方向或氣氛，常用於活動、政策、討論。",
+     "en": "to set the main idea or mood for something that follows",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00299969-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "主音（音樂）",
+     "zh": "音階中的第一個音，是樂曲調性的中心。",
+     "en": "the first and main note of a musical scale",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "06870776-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "基音",
+     "reason": "與「主音（音樂）」重複，且屬專業術語，現代一般用法少見"
+    },
+    {
+     "meaning": "說明基本政策",
+     "reason": "舊字典對動詞的狹隘解釋，現代多說 give a keynote speech 或 set the tone"
+    }
+   ]
+  },
+  {
+   "headword": "keypad",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "數字鍵盤、小鍵盤",
+     "zh": "電話、計算機、提款機或電子鎖上，由數字鍵或功能鍵組成的一小塊按鍵區。",
+     "en": "a small set of buttons with numbers or symbols on a device such as a phone, calculator, or lock.",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03089055-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "鍵區（電腦鍵盤）",
+     "reason": "WordNet 的定義實為一般電腦鍵盤（keyboard），與 keypad 指小型按鍵區的現代用法不符，屬詞義對應錯誤。"
+    }
+   ]
+  },
+  {
+   "headword": "keystone",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "基石、關鍵支柱",
+     "zh": "比喻整個體系或計畫所依靠的核心要素",
+     "en": "the most important part that everything else depends on",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "05702197-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "拱頂石、拱心石",
+     "zh": "建築拱門正中央、使拱結構穩固的那塊石頭",
+     "en": "the stone at the top center of an arch that holds it together",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "03620342-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "楔石",
+     "reason": "與拱頂石為同一建築構件，中文舊譯用詞不同，已合併"
+    },
+    {
+     "meaning": "重點",
+     "reason": "過於籠統的舊式釋義，現代多說 key point，不單獨列為詞義"
+    }
+   ]
   },
   {
    "headword": "keyword",
@@ -1105,6 +2515,81 @@
    "omitted": []
   },
   {
+   "headword": "khaki",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "卡其色的、土黃色的",
+     "zh": "形容帶點綠的淺土黃色，常見於褲子、外套等衣物。",
+     "en": "having a light yellowish brown color, often used for clothes",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00377883-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "卡其布",
+     "zh": "一種結實的斜紋棉布，常拿來做褲子或制服。",
+     "en": "a strong cotton cloth used especially for making pants and uniforms",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03620615-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "卡其褲",
+     "zh": "口語常說 khakis，指卡其色的休閒長褲。",
+     "en": "pants made of khaki cloth, usually worn casually",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "卡其色軍服",
+     "reason": "現代少用，通常只說 military uniform；此義已由「卡其布」涵蓋"
+    }
+   ]
+  },
+  {
+   "headword": "khakis",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "卡其褲",
+     "zh": "指用卡其布做的長褲，日常穿搭常說 a pair of khakis。",
+     "en": "pants made of a strong yellowish-brown cloth, often worn casually",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "卡其軍服",
+     "zh": "指軍隊穿的卡其布制服，常見於歷史或軍事敘述。",
+     "en": "military uniforms made of khaki cloth",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "03620772-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "卡其黃（khaki 的複數）",
+     "reason": "顏色義通常用單數 khaki，複數 khakis 幾乎不這樣用，屬重複且罕見"
+    }
+   ]
+  },
+  {
    "headword": "khmer",
    "senses": [
     {
@@ -1140,6 +2625,50 @@
     }
    ],
    "omitted": []
+  },
+  {
+   "headword": "khomeini",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "霍梅尼（伊朗宗教領袖）",
+     "zh": "指伊朗伊斯蘭共和國創建者、什葉派宗教領袖何梅尼，多見於歷史、政治與新聞報導。",
+     "en": "the Iranian Shiite religious leader who led the 1979 revolution and founded the Islamic Republic of Iran",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "舊譯「霍梅尼」",
+     "reason": "台灣通用譯名為「何梅尼」，此譯法較少見，非獨立詞義"
+    }
+   ]
+  },
+  {
+   "headword": "khrushchev",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "赫魯雪夫",
+     "zh": "蘇聯 1950 至 1960 年代的領導人，常出現在冷戰歷史敘述中。",
+     "en": "a Soviet leader in the 1950s and 1960s, known for his role in the Cold War",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "赫魯曉夫（中國大陸譯名）",
+     "reason": "與「赫魯雪夫」為同一人，僅譯名用字不同，台灣慣用「赫魯雪夫」"
+    }
+   ]
   },
   {
    "headword": "kick",
@@ -1283,6 +2812,140 @@
    ]
   },
   {
+   "headword": "kickback",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "回扣、佣金",
+     "zh": "廠商私下付給採購人員或中間人的錢，用來換取交易機會，通常帶有違法或不當的意味。",
+     "en": "money paid secretly to someone who helps arrange a deal, often illegally",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "13305807-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（槍械）後座力",
+     "zh": "開槍時槍枝向後猛推的力量，常見於動作片或射擊情境。",
+     "en": "the strong backward push of a gun when it is fired",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "（活動的）餘興、附帶享受",
+     "zh": "在派對、演唱會等活動中讓人放鬆享受的部分，口語常說「這是我的 kickback 時間」。",
+     "en": "a relaxed, enjoyable part of an event, or time spent resting",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "回答、反撲、退還",
+     "reason": "舊字典的直譯與罕用義，現代英語幾乎不用 kickback 表達「回答」或單純的「退還」。"
+    }
+   ]
+  },
+  {
+   "headword": "kicker",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "踢球的人、踢球員",
+     "zh": "足球或美式足球中負責踢球的人，例如射門或開球。",
+     "en": "a player who kicks the ball, especially in football",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10250250-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（意料之外的）轉折、爆點",
+     "zh": "新聞、故事或情況最後出現、令人意想不到的轉折或結尾。",
+     "en": "an unexpected twist or surprising end to a story or situation",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "（美式足球）踢球員",
+     "zh": "美式足球中專責踢球得分的球員位置。",
+     "en": "a player whose job is to kick the ball for points in American football",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "愛踢的馬",
+     "reason": "罕用，現代幾乎不這樣說"
+    }
+   ]
+  },
+  {
+   "headword": "kickoff",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "開始、啟動（活動、專案）",
+     "zh": "指活動、計畫或會議正式開始或展開的時刻，常用於職場與商業場合。",
+     "en": "the time when an event, project, or meeting begins",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "15290329-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "開球（足球、美式足球）",
+     "zh": "足球或美式足球比賽開始、或得分後重新開始時，從中場踢出的那一球。",
+     "en": "the first kick of a football game, or the kick that restarts it after a score",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00242374-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（比賽的）起跑、開賽優勢",
+     "zh": "比賽開始時給參賽者的起跑安排或先起步的機會，現多用於比喻。",
+     "en": "an advantage or start given to someone at the beginning of a race or contest",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "07344168-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "肇始",
+     "reason": "與「開始、啟動」詞義重複，僅為舊字典的同義說明"
+    }
+   ]
+  },
+  {
    "headword": "kid",
    "senses": [
     {
@@ -1374,6 +3037,50 @@
    ]
   },
   {
+   "headword": "kidderminster",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "基德明斯特地毯",
+     "zh": "一種在英國基德明斯特（Kidderminster）製造、以雙層織法製成的耐磨地毯，常指這類無絨毛的平織地毯。",
+     "en": "a strong, hard-wearing carpet made in a flat weave, originally produced in Kidderminster, England",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "基德明斯特（英國城鎮名）",
+     "reason": "參考資料只列地毯義；地名本身是專有名詞，不是這個字的普通詞義，故不另列。"
+    }
+   ]
+  },
+  {
+   "headword": "kidding",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "開玩笑、說著玩的",
+     "zh": "用於口語，表示自己剛才說的話只是玩笑，常出現在「just kidding」、「no kidding」等說法。",
+     "en": "the act of saying something as a joke, used mostly in spoken phrases",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "山羊產羔",
+     "reason": "專業領域過窄，僅見於畜牧語境，一般學習者不會遇到"
+    }
+   ]
+  },
+  {
    "headword": "kidnap",
    "senses": [
     {
@@ -1403,6 +3110,28 @@
     {
      "meaning": "拐騙",
      "reason": "與「誘拐」意思重疊，已合併說明"
+    }
+   ]
+  },
+  {
+   "headword": "kidnapper",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "綁匪、綁架者",
+     "zh": "把他人擄走並限制行動、通常用來勒索贖金的人",
+     "en": "a person who takes someone away by force and holds them, often to demand money",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10250498-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "柺子",
+     "reason": "「柺子」是舊字典的寫法，現代台灣中文一般寫作「拐子」或直接用「綁匪」，且此義已由 senses 中的「綁匪」涵蓋，不另列"
     }
    ]
   },
@@ -1456,6 +3185,26 @@
     {
      "meaning": "個性、性情",
      "reason": "舊字典義，現代英文幾乎不用 kidney 表示個性，屬古義"
+    }
+   ]
+  },
+  {
+   "headword": "kiev",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "基輔（烏克蘭首都）",
+     "zh": "烏克蘭的首都，位於該國中北部、聶伯河畔；國際新聞與地理教材中常見的地名。",
+     "en": "the capital city of Ukraine, located in the north-central part of the country on the Dnieper River",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "舊英漢字典僅列「烏克蘭共和國首都」",
+     "reason": "釋義本身正確，但「共和國」為舊式說法，現代台灣多稱「烏克蘭」；已併入 senses 並更新說明"
     }
    ]
   },
@@ -1584,6 +3333,48 @@
     {
      "meaning": "（球類運動）擊出無法回擊的球",
      "reason": "專業領域過窄，僅限網球等特定運動"
+    }
+   ]
+  },
+  {
+   "headword": "killed",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "被殺死的、喪命的",
+     "zh": "指人或動物已經死亡，通常用在新聞、報導或故事中說明死因。",
+     "en": "having been put to death or caused to die, especially by another person or in an accident",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "被屠宰的（動物）",
+     "zh": "指動物已被宰殺、處理成肉品，常見於食品或農業語境。",
+     "en": "having been slaughtered for meat",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "（計畫、提案）被否決的",
+     "zh": "口語中說某個提案或想法被「殺掉」，意思是被否決、被擋下。",
+     "en": "having been stopped or rejected, especially a plan or proposal",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "鎮靜的",
+     "reason": "舊字典的誤譯；「鎮靜」對應的是 sedated 或 tranquilized，不是 killed 的意思。"
     }
    ]
   },
@@ -1740,6 +3531,93 @@
    ]
   },
   {
+   "headword": "kiln",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "窯、窯爐",
+     "zh": "用來燒製陶瓷、磚瓦，或烘乾木材、穀物等的密閉爐體。",
+     "en": "a large oven or furnace used for baking clay, bricks, or wood at high heat",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "03622304-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "入窯燒製、烘乾",
+     "zh": "把陶器、磚塊或木材放進窯裡加熱處理。",
+     "en": "to bake or dry something such as pottery or wood in a very hot oven",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "爐",
+     "reason": "泛指一般爐火，現代多直接用 stove、furnace，此義已少用"
+    }
+   ]
+  },
+  {
+   "headword": "kilo",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "公斤",
+     "zh": "重量單位，等於一千公克；口語常說「一公斤」時用這個字。",
+     "en": "a unit of weight equal to one thousand grams",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "13746692-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "公斤（縮寫）",
+     "zh": "書寫時常縮寫為 kg，出現在包裝、健身、貨運等標示上。",
+     "en": "the written short form used for this unit of weight",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "千",
+     "reason": "舊字典把字首 kilo- 的「千」義誤列為獨立單字義；現代英文不單獨用 kilo 表示「千」。"
+    }
+   ]
+  },
+  {
+   "headword": "kilogram",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "公斤、千克",
+     "zh": "國際通用的質量單位，等於一千公克，日常買菜、量體重或看貨運重量都會用到。",
+     "en": "a unit of weight equal to one thousand grams",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "13746692-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "kilometre",
    "senses": [
     {
@@ -1770,6 +3648,39 @@
     }
    ],
    "omitted": []
+  },
+  {
+   "headword": "kimono",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "和服、日式傳統長袍",
+     "zh": "日本傳統的長袍，以腰帶繫緊，常在祭典、婚禮等場合穿著。",
+     "en": "a traditional long Japanese robe tied with a wide belt, worn on formal or special occasions",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03622689-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "浴衣式寬鬆罩袍",
+     "zh": "受和服啟發、剪裁寬鬆的居家或海灘罩袍，西方常見。",
+     "en": "a loose robe worn at home or over swimwear, based on the Japanese garment",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "03622689-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "婦女穿著的寬大晨衣",
+     "reason": "舊字典把西方寬鬆罩袍與和服混為一談，現代多直接稱 robe 或 dressing gown，此義已少用"
+    }
+   ]
   },
   {
    "headword": "kin",
@@ -1888,6 +3799,25 @@
    ]
   },
   {
+   "headword": "kinda",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "有點、有幾分",
+     "zh": "口語中表示程度不深，意思接近 kind of，常用在對話、社群貼文與歌詞裡。",
+     "en": "a little; used in speech to mean \"kind of\"",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "00018764-r"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "kindergarten",
    "senses": [
     {
@@ -1903,6 +3833,60 @@
     }
    ],
    "omitted": []
+  },
+  {
+   "headword": "kindle",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "點燃、使燃燒",
+     "zh": "讓火開始燒起來，常用於書面或正式語境。",
+     "en": "to make a fire start burning",
+     "usage": "common",
+     "register": [
+      "formal",
+      "literary"
+     ],
+     "synsets": [
+      "02767330-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "激起（情緒、興趣）",
+     "zh": "引發某種強烈的情感、興趣或反應。",
+     "en": "to cause a strong feeling, interest, or reaction to start",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01763170-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "開始燃燒、著火",
+     "zh": "指火自己燒起來，較少單獨使用。",
+     "en": "to start to burn",
+     "usage": "less_common",
+     "register": [
+      "formal",
+      "literary"
+     ],
+     "synsets": [
+      "02767643-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "照亮",
+     "reason": "舊字典義，現代幾乎不用 kindle 表達「照亮」"
+    },
+    {
+     "meaning": "激動、發亮（vi.）",
+     "reason": "與「激起情緒」「開始燃燒」兩義重複，且現代少見"
+    }
+   ]
   },
   {
    "headword": "kindly",
@@ -1997,6 +3981,94 @@
     }
    ],
    "omitted": []
+  },
+  {
+   "headword": "kindred",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "相似的、同類的",
+     "zh": "形容事物在性質或特徵上相近，常用於 kindred spirit（氣味相投的人）等說法。",
+     "en": "very similar in nature or character",
+     "usage": "less_common",
+     "register": [
+      "literary"
+     ],
+     "synsets": [
+      "02079186-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "親屬、家族",
+     "zh": "指有血緣或婚姻關係的一群人，屬書面或文學用語。",
+     "en": "the group of people to whom you are related by blood or marriage",
+     "usage": "less_common",
+     "register": [
+      "formal",
+      "literary"
+     ],
+     "synsets": [
+      "07986142-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "有血緣或姻親關係的",
+     "zh": "形容彼此是親戚關係，現代多見於法律或正式文件。",
+     "en": "connected by family ties through blood or marriage",
+     "usage": "rare",
+     "register": [
+      "formal",
+      "technical"
+     ],
+     "synsets": [
+      "01979544-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "相似、親戚關係（名詞，指抽象的相似性）",
+     "reason": "舊字典把 kindred 的抽象「相似」義獨立成名詞義，現代幾乎不用，改以形容詞 kindred 或 similarity 表達"
+    }
+   ]
+  },
+  {
+   "headword": "kinetic",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "動能的、運動的",
+     "zh": "與物體運動或使其運動的力量有關，常見於物理與工程語境。",
+     "en": "relating to movement, or to the forces that cause things to move",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "02905079-a",
+      "00812733-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "充滿動感的、活躍的",
+     "zh": "形容藝術、設計、活動或氣氛很有活力、不斷變化。",
+     "en": "full of energy and movement; lively and always changing",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01567742-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "動力學的",
+     "reason": "屬物理學專業術語，日常少用，已併入「動能的、運動的」詞義"
+    }
+   ]
   },
   {
    "headword": "king",
@@ -2138,6 +4210,315 @@
    "omitted": []
   },
   {
+   "headword": "kingfisher",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "翠鳥、魚狗",
+     "zh": "羽毛鮮豔、頭大尾短、喙長而尖的水鳥，常在水邊捕魚。",
+     "en": "a small brightly colored bird with a big head, a short tail, and a long pointed beak that catches fish in rivers and lakes",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01830044-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "kingpin",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "（組織的）首腦、核心人物",
+     "zh": "指某個組織、集團或計畫中最有權力、最重要的人物，常用於犯罪或企業情境。",
+     "en": "the most powerful or important person in a group or organization",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10254839-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（車輛的）轉向主銷",
+     "zh": "汽車前輪轉向機構中的關鍵螺栓，屬機械專業用語。",
+     "en": "a strong metal pin that joins the steering parts of a vehicle's front wheels",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "03623755-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（保齡球）一號瓶",
+     "zh": "十瓶保齡球三角排列中最前方的那支球瓶。",
+     "en": "the front pin in the triangular setup of ten bowling pins",
+     "usage": "rare",
+     "register": [],
+     "synsets": [
+      "03509437-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "中心立軸",
+     "reason": "與「轉向主銷」為同一機械義的舊譯，現代不這樣說"
+    },
+    {
+     "meaning": "主要成分",
+     "reason": "舊字典的非正式釋義，現代英語幾乎不這樣用"
+    }
+   ]
+  },
+  {
+   "headword": "kings",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "《列王紀》（聖經篇章）",
+     "zh": "《聖經》舊約中的兩卷歷史書，記載以色列與猶大列王的事蹟。",
+     "en": "either of two books of the Hebrew Bible that tell the history of the kings of Israel and Judah",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "king 的複數（國王們）",
+     "reason": "參考資料只列《列王紀》；「kings」作為 king 的複數屬一般用法，不是獨立詞義，故不另列。"
+    }
+   ]
+  },
+  {
+   "headword": "kingship",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "王權、君主統治",
+     "zh": "國王所擁有的統治權力與地位，常用於討論政治制度或歷史。",
+     "en": "the power and position of being a king, often discussed in politics or history",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "14456467-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "王位、君主身分",
+     "zh": "指身為國王的身分或王位本身，常見於歷史與王室相關敘述。",
+     "en": "the rank or position of a king, or the fact of being a king",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "14456467-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "kingsley",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "金斯利（姓氏、地名）",
+     "zh": "英文姓氏，也用作地名與人名，例如英國作家查爾斯・金斯利。",
+     "en": "a family name, also used as a place name and a first name",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "舊英漢字典列為一般名詞",
+     "reason": "並非普通名詞，只是專有名詞（姓氏、地名），舊字典把它當成可翻譯的單字收錄"
+    }
+   ]
+  },
+  {
+   "headword": "kingston",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "金斯敦（牙買加首都）",
+     "zh": "牙買加的首都，位於該島東南岸，是該國最大的城市與港口。",
+     "en": "the capital and largest city of Jamaica, on the southeastern coast of the island",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "京斯頓（加拿大城市）",
+     "zh": "加拿大安大略省東部的城市，位於安大略湖畔，是知名大學城。",
+     "en": "a city in southeastern Ontario, Canada, on Lake Ontario",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "京斯頓（品牌名）",
+     "zh": "常見於記憶卡、隨身碟等電子產品上的品牌名稱。",
+     "en": "a brand name used on computer memory products such as flash drives and memory cards",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（舊譯）京斯敦、金斯敦等各種中文音譯寫法",
+     "reason": "僅為同一地名的不同音譯，非獨立詞義"
+    }
+   ]
+  },
+  {
+   "headword": "kink",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "扭結、打結",
+     "zh": "繩子、頭髮、水管等因扭轉而出現的小彎折或纏結。",
+     "en": "a small twist or knot in something long and thin, such as a rope, hair, or pipe",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "13900557-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（性方面的）特殊癖好",
+     "zh": "指一個人在性方面有別於一般人的偏好，常帶有戲謔或委婉語氣。",
+     "en": "a person's unusual sexual preference, often mentioned in a playful or indirect way",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "10256539-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "小毛病、缺陷（計畫、制度）",
+     "zh": "指計畫、系統或做法中不太順暢、有待解決的小問題。",
+     "en": "a small problem or flaw in a plan, system, or way of doing something",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "05696575-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "古怪的想法、怪念頭",
+     "zh": "指某人腦中奇特、不尋常的念頭或構想。",
+     "en": "a strange or unusual idea that someone has",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "05934782-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "扭結、纏繞",
+     "zh": "使繩子、頭髮等扭轉纏在一起，或本身形成彎曲纏繞的狀態。",
+     "en": "to twist or curl something, or to become twisted or curled",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01226397-v",
+      "00362781-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "肌肉抽筋（頸、背）",
+     "zh": "指頸部或背部肌肉突然疼痛收縮，常見於英式說法。",
+     "en": "a sudden painful tightening of a muscle, especially in the neck or back",
+     "usage": "rare",
+     "register": [
+      "old"
+     ],
+     "synsets": [
+      "14384587-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "蜷縮",
+     "reason": "中文釋義中的「蜷縮」在現代英文裡通常用 curl up，kink 本身不單獨表示蜷縮，屬舊字典的合併釋義。"
+    }
+   ]
+  },
+  {
+   "headword": "kinky",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "性癖特殊的、變態的",
+     "zh": "指性行為或性喜好偏離一般、帶有特殊性癖好，常帶戲謔或貶義。",
+     "en": "involving sexual tastes or behavior that most people consider unusual or strange",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "01602091-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "古怪的、特立獨行的",
+     "zh": "口語上形容想法、風格或打扮很不尋常、出人意表。",
+     "en": "strange and unusual in an interesting or surprising way",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "00611941-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（頭髮）緊密小捲的",
+     "zh": "形容頭髮捲成細小緊密的捲度。",
+     "en": "describing hair that is tightly curled in small curls",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01034017-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "彎曲的",
+     "reason": "舊字典義，現代英語幾乎不用 kinky 表示單純的彎曲，多已由 curly、bent 等字取代"
+    }
+   ]
+  },
+  {
    "headword": "kinnock",
    "senses": [
     {
@@ -2188,6 +4569,190 @@
     }
    ],
    "omitted": []
+  },
+  {
+   "headword": "kinsman",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "男性親屬、男親戚",
+     "zh": "指有血緣或婚姻關係的男性親人，常見於正式或文學性的敘述中。",
+     "en": "a man who is related to you by blood or marriage",
+     "usage": "less_common",
+     "register": [
+      "formal",
+      "literary"
+     ],
+     "synsets": [
+      "10256643-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "kiosk",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "小亭、售貨亭",
+     "zh": "在車站、商場或街角設置的小型獨立攤位，用來賣東西或提供服務。",
+     "en": "a small stand or booth in a public place where things are sold or a service is offered",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02877081-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "自助服務機、互動資訊站",
+     "zh": "車站、機場或店裡供人自行操作查詢、購票或列印的機器。",
+     "en": "a machine with a screen that people use by themselves to get information, buy tickets, or print things",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "電話亭",
+     "zh": "公共場所裡供人打電話的小隔間，現代已少見。",
+     "en": "a small enclosed structure in a public place containing a public telephone",
+     "usage": "less_common",
+     "register": [
+      "old"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "涼亭",
+     "reason": "舊字典義，現代英文指花園涼亭一般用 gazebo 或 pavilion，kiosk 幾乎不這樣用"
+    }
+   ]
+  },
+  {
+   "headword": "kipling",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "吉卜林（英國作家）",
+     "zh": "指英國作家魯德亞德・吉卜林，以《叢林奇譚》等作品聞名，1907 年獲諾貝爾文學獎。",
+     "en": "a British writer famous for stories and poems about British India, who won the Nobel Prize in Literature in 1907",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "吉卜林（姓氏）",
+     "zh": "英語姓氏，現代最常讓人聯想到上述作家。",
+     "en": "a family name; in modern use it is almost always connected with the famous British writer",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "kirby",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "卡比（男子名、姓氏）",
+     "zh": "英文人名，可作名字或姓氏，在台灣較少見。",
+     "en": "a male given name or family name of English origin",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "卡比（任天堂角色）",
+     "zh": "任天堂遊戲系列中圓滾滾的粉紅色主角，常出現在電玩與網路迷因中。",
+     "en": "a round pink character in Nintendo video games, often seen in memes",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "卡比吸塵器（品牌）",
+     "zh": "美國吸塵器品牌，在台灣較少見，多見於英文商品或二手交易討論。",
+     "en": "a brand of vacuum cleaner, mainly known in the United States",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "kirk",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "蘇格蘭教會、教堂",
+     "zh": "蘇格蘭地區的教會或教堂建築，尤其指蘇格蘭長老教會。",
+     "en": "a church in Scotland, especially one of the Presbyterian Church of Scotland",
+     "usage": "less_common",
+     "register": [
+      "old"
+     ],
+     "synsets": [
+      "03624191-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "教會（一般泛指）",
+     "reason": "「教會」的一般義在現代英文只以蘇格蘭用法留存，一般語境已不用 kirk 泛指教會"
+    }
+   ]
+  },
+  {
+   "headword": "kirov",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "基洛夫（俄羅斯城市）",
+     "zh": "俄羅斯東北部的一座城市，位於基洛夫州，為該州首府。",
+     "en": "a city in northeastern Russia, the capital of Kirov Oblast",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "kirsty",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "柯絲蒂（女子名）",
+     "zh": "英文女子名字，為 Christiana、Katherine 等名字的暱稱，在蘇格蘭與英國較常見。",
+     "en": "a female first name, common in Scotland and the UK, often a short form of Christina or Katherine",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "人名釋義中的「(英)」標記與教名來源說明",
+     "reason": "屬詞源與地區標註，非獨立詞義，已併入 senses 的說明中"
+    }
+   ]
   },
   {
    "headword": "kiss",
@@ -2262,6 +4827,32 @@
      "reason": "與及物動詞「親吻」為同一意思，已合併"
     }
    ]
+  },
+  {
+   "headword": "kissing",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "接吻的、親吻的",
+     "zh": "放在名詞前面，表示與接吻有關的，例如接吻遊戲、接吻場景。",
+     "en": "used before a noun to mean related to or involving kissing",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "親吻、接吻",
+     "zh": "指親吻這個動作本身，常出現在複合詞或固定說法中，例如親吻遊戲。",
+     "en": "the act of touching someone with your lips as a sign of love or affection",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00855630-n"
+     ]
+    }
+   ],
+   "omitted": []
   },
   {
    "headword": "kit",
@@ -2420,6 +5011,252 @@
    ]
   },
   {
+   "headword": "kitsch",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "俗豔煽情的作品、媚俗之作",
+     "zh": "指過度花俏、濫情、刻意討好大眾口味而顯得品味低俗的藝術、裝飾或商品。",
+     "en": "art, decoration, or objects that are too bright, sentimental, or showy and are seen as having bad taste",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03627144-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "媚俗的、俗豔煽情的",
+     "zh": "口語中當形容詞用，形容某物風格俗氣、刻意煽情。",
+     "en": "having a showy, sentimental style that many people consider to be in bad taste",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "粗劣作品（泛指品質低劣的成品）",
+     "reason": "舊字典的籠統譯法；kitsch 的重點在媚俗、煽情、品味低俗，不只是「粗劣」，現代用法已不這樣理解"
+    }
+   ]
+  },
+  {
+   "headword": "kitten",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "小貓",
+     "zh": "貓的幼崽，日常對話與童書裡最常見的用法。",
+     "en": "a very young cat",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02125600-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "（貓）生小貓",
+     "zh": "指母貓生產，多用於獸醫、育種或描述貓的繁殖。",
+     "en": "to give birth to young cats",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00057849-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "淘氣姑娘",
+     "reason": "舊字典的引申義，現代英語幾乎不用來指人"
+    },
+    {
+     "meaning": "賣弄風情",
+     "reason": "舊義，與 kitten 的現代用法無關，現代已不使用"
+    }
+   ]
+  },
+  {
+   "headword": "kitty",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "小貓、貓咪",
+     "zh": "口語或對小孩說話時指小貓，也常拿來暱稱家裡的貓。",
+     "en": "a young cat, or a cat in general, especially when spoken to or about affectionately",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "02125600-n",
+      "02124950-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（牌局的）共同賭注",
+     "zh": "撲克等賭局中所有玩家下注合起來的那筆錢。",
+     "en": "the total amount of money that all players have bet in a card game",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "13390647-n",
+      "13364789-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "全部賭注（泛指所有賭客合下的注）",
+     "reason": "與牌局賭注一義重複，且現代一般場合幾乎不用，已併入該義"
+    }
+   ]
+  },
+  {
+   "headword": "kiwi",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "奇異果、獼猴桃",
+     "zh": "指表皮有絨毛、果肉綠色的水果，超市與日常飲食最常見到這個意思。",
+     "en": "a small oval fruit with brown fuzzy skin and green flesh",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07779605-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "紐西蘭人",
+     "zh": "口語上指紐西蘭人，也常當作紐西蘭的暱稱或象徵。",
+     "en": "a person who comes from New Zealand",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "09743947-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "奇異鳥、鷸鴕",
+     "zh": "紐西蘭特有的不會飛夜行性鳥類，是該國的代表動物。",
+     "en": "a small bird from New Zealand that cannot fly and is active at night",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01523217-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "奇異果樹、獼猴桃藤",
+     "zh": "指結出奇異果的藤本植物，多在園藝或農業語境出現。",
+     "en": "a climbing plant that produces kiwi fruit",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "12391956-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "地勤人員",
+     "reason": "舊字典的誤譯或極罕用義，現代英文不用 kiwi 指地勤人員"
+    }
+   ]
+  },
+  {
+   "headword": "klaus",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "克勞斯（男子名）",
+     "zh": "德語系常見的男子名字，英語圈也會使用，例如《克勞斯：聖誕節的秘密》等作品中的角色名。",
+     "en": "a male first name of German origin that is also used in English-speaking countries",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "kleenex",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "面紙、紙手帕（品牌名）",
+     "zh": "用來擤鼻涕或擦手的柔軟一次性紙巾，在台灣常直接借用這個品牌名來指這類產品。",
+     "en": "a soft paper tissue used once for wiping your nose or hands; often used as a general name for such tissues",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "14952146-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "克里內克絲（註冊商標）",
+     "reason": "商標本身的專有名稱，已併入面紙義項說明，不另立義項"
+    }
+   ]
+  },
+  {
+   "headword": "klein",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "克萊因（姓氏、男子名）",
+     "zh": "德語系常見的姓氏，也用作男子名字；台灣較少見，多見於外國人名。",
+     "en": "a German family name, also used as a man's first name",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "klerk",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "書記、辦事員",
+     "zh": "南非英語中拼作 klerk，指處理文書、行政事務的職員，常見於南非地名與人名。",
+     "en": "a person who does office work such as writing and keeping records; a clerk",
+     "usage": "rare",
+     "register": [
+      "old"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "(Klerk) 人名；（南非）克勒克",
+     "reason": "專有名詞（南非姓氏），不是單字的字義，學習者不需要當作一般詞義記。"
+    }
+   ]
+  },
+  {
    "headword": "km",
    "senses": [
     {
@@ -2438,6 +5275,96 @@
     {
      "meaning": "[醫] 千米、公里",
      "reason": "「[醫]」是舊字典誤標的領域，公里並非醫學專用詞，已併入一般義"
+    }
+   ]
+  },
+  {
+   "headword": "knack",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "訣竅、竅門",
+     "zh": "做某件事特別順手的技巧或方法，常說 have a knack for something。",
+     "en": "a natural skill or a special way of doing something well",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "05632037-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "本領、天賦",
+     "zh": "與生俱來、學起來特別容易的才能，常接 for 加動名詞。",
+     "en": "a natural ability to do something easily and well",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "熟練技術、巧妙手法",
+     "reason": "與「訣竅、竅門」意思重疊，已合併處理"
+    }
+   ]
+  },
+  {
+   "headword": "knapsack",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "背包、後背包",
+     "zh": "用雙肩背帶背在背上的袋子，常見於登山、旅行或行軍。",
+     "en": "a bag with straps that you carry on your back, used for hiking, travel, or carrying things.",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02772753-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "knead",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "揉（麵糰）、揉捏",
+     "zh": "用手反覆按壓、揉合麵糰或黏土等材料，使其均勻混合；做麵包、餃子時常用。",
+     "en": "to press and mix a soft substance such as dough with your hands until it is smooth",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01237919-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "按摩、揉捏（肌肉）",
+     "zh": "用手按壓揉捏身體部位，以放鬆肌肉或舒緩痠痛。",
+     "en": "to press and rub someone's muscles with your hands to relax them or reduce pain",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01235302-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "搓揉（雙手、物品）",
+     "zh": "把某物放在手中反覆搓弄，例如緊張時搓手。",
+     "en": "to keep pressing and rubbing something with your hands, often when nervous",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "捏",
+     "reason": "與「揉麵糰」「按摩」兩義重疊，現代多為揉合或按壓的動作，不另立義項"
     }
    ]
   },
@@ -2514,6 +5441,41 @@
     }
    ],
    "omitted": []
+  },
+  {
+   "headword": "knickers",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "女用內褲",
+     "zh": "女性穿的內褲，英式口語常用複數形。",
+     "en": "a piece of underwear worn by women, usually used in the plural",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "02857998-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（及膝）短褲、燈籠褲",
+     "zh": "長度到膝蓋附近的褲子，常見於運動或舊式穿著。",
+     "en": "short trousers that end around the knee",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "02899704-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（美式）短褲",
+     "reason": "美式英語的 knickers 多指及膝短褲，與上面第二義重複，已合併"
+    }
+   ]
   },
   {
    "headword": "knife",
@@ -2623,6 +5585,81 @@
    "omitted": []
   },
   {
+   "headword": "knighthood",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "騎士頭銜、爵士身分",
+     "zh": "由英國君主授予的 knight 頭銜，是英國榮譽制度的一種，獲封者姓名前可加 Sir。",
+     "en": "the rank or title of a knight, given by the British king or queen as an honour",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "08405602-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "騎士精神、騎士風範",
+     "zh": "中世紀騎士應具備的勇敢、榮譽、禮貌等品格，多用於歷史或文學敘述。",
+     "en": "the qualities and behaviour expected of a knight in the Middle Ages, such as courage and honour",
+     "usage": "less_common",
+     "register": [
+      "literary"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "騎士（集合名詞，指全體騎士）",
+     "reason": "現代英文幾乎不用 knighthood 指「騎士們」這個群體，屬古義；WordNet 該義項偏歷史用法"
+    }
+   ]
+  },
+  {
+   "headword": "knighton",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "奈頓（英國姓氏、地名）",
+     "zh": "英國的姓氏，也是英格蘭與威爾斯幾個地名，如威爾斯的奈頓鎮。",
+     "en": "a British family name, or a place name in England and Wales",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（舊字典列為一般名詞釋義）",
+     "reason": "參考資料只有人名與地名用法，無其他現代詞義可列"
+    }
+   ]
+  },
+  {
+   "headword": "knightsbridge",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "騎士橋（倫敦地名）",
+     "zh": "倫敦市中心的高級地段，位於海德公園南側，以精品店與使館區聞名。",
+     "en": "an expensive area of central London, south of Hyde Park, known for luxury shops and embassies",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "倫敦街道名",
+     "reason": "「街道名」說法過窄；現代多指整個區域（地名），而非單一條街"
+    }
+   ]
+  },
+  {
    "headword": "knit",
    "senses": [
     {
@@ -2679,6 +5716,76 @@
    ]
   },
   {
+   "headword": "knitted",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "針織的、編織的",
+     "zh": "用毛線或紗線以針織方式做成的（衣物、布料等）",
+     "en": "made by joining wool or thread into connected loops with needles, not woven",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02590705-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（眉頭）皺起的",
+     "zh": "常用於 knitted brow(s)，形容因專注、擔心或不悅而皺起的眉毛",
+     "en": "used about eyebrows pulled close together, showing worry, anger, or deep thought",
+     "usage": "less_common",
+     "register": [
+      "literary"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "v.",
+     "label": "knit 的過去式、過去分詞",
+     "zh": "作為動詞 knit 的過去式和過去分詞，表示編織或（骨頭）癒合",
+     "en": "past tense and past participle of knit; also used for bones joining back together",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "knitter",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "編織者、打毛線的人",
+     "zh": "指用毛線或線材親手編織衣物、圍巾等的人，常指把編織當興趣的人。",
+     "en": "a person who makes clothes or other things by joining yarn or thread with needles or a machine",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10259316-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "針織機、編織機",
+     "zh": "工廠或工作室裡用來大量編織布料、衣物的機器。",
+     "en": "a machine used for making fabric or clothes by joining yarn together",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "編結者、編織工人",
+     "reason": "與「編織者」意思重複，已合併為同一詞義"
+    }
+   ]
+  },
+  {
    "headword": "knitting",
    "senses": [
     {
@@ -2710,6 +5817,23 @@
      "reason": "與「編織」的活動義重複，已合併說明"
     }
    ]
+  },
+  {
+   "headword": "knitwear",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "針織衣物、針織衫",
+     "zh": "用毛線或針織布料做成的衣服，如毛衣、針織外套等。",
+     "en": "clothes made of knitted material, such as sweaters and cardigans",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03631234-n"
+     ]
+    }
+   ],
+   "omitted": []
   },
   {
    "headword": "knob",
@@ -2852,6 +5976,209 @@
    ]
   },
   {
+   "headword": "knocker",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "門環、敲門器",
+     "zh": "裝在門上、用來敲門的金屬器具，常見於老房子的大門。",
+     "en": "a metal object fixed to a door that you hit against the door to let people know you are there",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03632051-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "敲門的人",
+     "zh": "上門敲門、想進門或拜訪的人。",
+     "en": "a person who hits on a door to be let in",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "10259458-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "愛批評的人、貶低他人者",
+     "zh": "專門挑剔、看衰別人或事物價值的人。",
+     "en": "a person who says that something or someone is not good or has no value",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "10029325-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（英式）乳房",
+     "zh": "英式口語用來說女性胸部的說法。",
+     "en": "a rude British word for a woman's breast",
+     "usage": "less_common",
+     "register": [
+      "informal",
+      "slang"
+     ],
+     "synsets": [
+      "05562038-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "自大的人、愛吹噓的大人物",
+     "reason": "源自意第緒語的罕用義，現代英文幾乎不用"
+    },
+    {
+     "meaning": "敲擊者（泛指敲打的人或物）",
+     "reason": "過度籠統的舊字典釋義，現代實際用法已由「敲門的人」「門環」等具體義涵蓋"
+    }
+   ]
+  },
+  {
+   "headword": "knocking",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "敲擊聲、叩門聲",
+     "zh": "敲門或敲打東西時發出的聲響。",
+     "en": "the sound made when someone hits a door or another hard surface",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07400970-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "引擎爆震",
+     "zh": "汽車引擎內部不正常燃燒所發出的金屬敲擊聲。",
+     "en": "a sharp metallic noise from an engine that is not burning fuel correctly",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "07400970-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "knockout",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "擊倒（拳擊）",
+     "zh": "拳擊比賽中把對手打倒在地、無法繼續比賽的一擊",
+     "en": "a punch that makes an opponent fall down and unable to continue the fight",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00134919-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "令人驚豔的人事物",
+     "zh": "看到就讓人覺得非常漂亮、出色或震撼的人或東西",
+     "en": "a person or thing that is extremely attractive, impressive, or exciting",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "10633512-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "極具吸引力的、超美的",
+     "zh": "口語形容某人或某物非常好看、非常出色",
+     "en": "extremely attractive, beautiful, or impressive",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "猛烈的、強勁的",
+     "zh": "形容打擊、力量等非常強而有力",
+     "en": "very strong and forceful, especially of a blow or effect",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "02330284-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "淘汰賽",
+     "zh": "賽制中輸一場就出局的比賽或賽事",
+     "en": "a competition in which a team or player is out as soon as they lose once",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "使昏迷的",
+     "reason": "罕用，現代多改用其他說法，且與「猛烈的」意思重疊"
+    },
+    {
+     "meaning": "引人注目的、轟動的",
+     "reason": "舊字典義，現代口語多說 stunning、sensational，不單獨用 knockout 表達"
+    }
+   ]
+  },
+  {
+   "headword": "knoll",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "小丘、圓丘",
+     "zh": "指地面上隆起的小土丘或小山，常見於文學描寫或地名。",
+     "en": "a small round hill or raised area of land",
+     "usage": "less_common",
+     "register": [
+      "literary"
+     ],
+     "synsets": [
+      "09349568-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "敲鐘；敲響",
+     "reason": "舊字典的罕用義，現代英文幾乎不用 knoll 表示敲鐘，一般用 ring 或 toll。"
+    }
+   ]
+  },
+  {
+   "headword": "knossos",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "克諾索斯（克里特島古城）",
+     "zh": "希臘克里特島上的米諾斯文明古城遺址，常出現在歷史與考古的討論中。",
+     "en": "an ancient city on the Greek island of Crete, important in Minoan history and archaeology",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "knot",
    "senses": [
     {
@@ -2940,6 +6267,57 @@
     {
      "meaning": "磯鷸（一種鳥）",
      "reason": "專業領域過窄，一般學習者不會遇到。"
+    }
+   ]
+  },
+  {
+   "headword": "knotted",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "打結的、繫成結的",
+     "zh": "指繩子、線或布料被綁成結的樣子。",
+     "en": "fastened or tied together with a knot",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00255746-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（肌肉）緊繃糾結的",
+     "zh": "常用來形容因緊張或用力而繃緊、糾結的肌肉。",
+     "en": "tight and tense, especially because of stress or effort",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "（樹木、木材）多節瘤的",
+     "zh": "形容老樹或木頭表面長滿節瘤、凹凸不平。",
+     "en": "covered with hard, uneven lumps, used about old trees or wood",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "02320915-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "錯綜複雜的、棘手的",
+     "zh": "形容問題或情況糾結難解，常與 stomach 等搭配表示心裡揪緊。",
+     "en": "complicated and difficult to deal with or understand",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "多節的、有節的（泛指有節的物體）",
+     "reason": "舊字典籠統譯法，現代多依對象分別說成打結的、肌肉糾結的或多節瘤的，已併入各詞義"
     }
    ]
   },
@@ -3042,6 +6420,99 @@
     {
      "meaning": "（名詞）只有少數人知道的事實",
      "reason": "罕用名詞用法，現代幾乎不用"
+    }
+   ]
+  },
+  {
+   "headword": "knowing",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "心照不宣的、會意的",
+     "zh": "表示彼此心裡明白、有默契，常用於描述微笑、眼神或語氣。",
+     "en": "showing that you understand something secret or private without words",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01310645-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "刻意的、有意的",
+     "zh": "形容行為或表情是故意做出來的，帶有某種意圖。",
+     "en": "done in a deliberate way with a clear purpose",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "01341128-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "精明的、內行的",
+     "zh": "形容人對某件事很了解、消息靈通，帶點世故的意味。",
+     "en": "having a lot of information or experience about something, sometimes in a way that seems too smart",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01310805-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "知道、認知",
+     "zh": "指心裡清楚明白某件事的狀態，多用於哲學或正式論述。",
+     "en": "the state of being aware of or certain about something",
+     "usage": "rare",
+     "register": [
+      "formal",
+      "technical"
+     ],
+     "synsets": [
+      "05812801-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "博學的、聰穎的",
+     "reason": "舊字典釋義，現代幾乎不用這個意思；現代表達『博學』會用 knowledgeable、learned 等字。"
+    }
+   ]
+  },
+  {
+   "headword": "knowingly",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "明知故犯地、刻意地",
+     "zh": "明明知道某件事不對或有風險，卻還是故意去做，常用在法律或新聞報導中。",
+     "en": "done on purpose even though you are aware that it is wrong or risky",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00239363-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "心照不宣地、會意地",
+     "zh": "雙方都明白某件事，卻不點破，只用表情或語氣暗示。",
+     "en": "in a way that shows you understand something without saying it directly",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "老練地",
+     "reason": "罕用，現代英文幾乎不用這個意思，且與「心照不宣地」部分重疊"
     }
    ]
   },
@@ -3176,6 +6647,30 @@
    "omitted": []
   },
   {
+   "headword": "knox",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "諾克斯（姓氏）",
+     "zh": "英語系常見的姓氏，如歷史人物約翰・諾克斯、演員強尼・諾克斯維爾的姓。",
+     "en": "a family name, especially of the Scottish religious leader John Knox",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "諾克斯堡（地名）",
+     "zh": "美國肯塔基州地名，常指陸軍基地與金條存放地 Fort Knox。",
+     "en": "used in place names such as Fort Knox, a US Army base known for storing gold",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "knuckle",
    "senses": [
     {
@@ -3230,6 +6725,47 @@
    ]
   },
   {
+   "headword": "kodak",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "柯達（品牌名）",
+     "zh": "指伊士曼柯達公司，或該公司生產的相機與底片；現代多出現在品牌歷史、懷舊或「柯達時刻」等說法裡。",
+     "en": "the Kodak company, or its cameras and film; now mostly used when talking about the brand's history or nostalgia",
+     "usage": "less_common",
+     "register": [
+      "old"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "柯達時刻、經典瞬間",
+     "zh": "源自品牌廣告的比喻說法，指值得拍下來留念的美好時刻。",
+     "en": "a memorable moment worth taking a picture of, from an old advertising slogan",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "小型照相機",
+     "reason": "舊字典把品牌名當成相機的通稱，現代英文不這樣用"
+    },
+    {
+     "meaning": "照片",
+     "reason": "舊字典的誤譯，現代英文不用 Kodak 指照片"
+    },
+    {
+     "meaning": "用小型照相機拍攝",
+     "reason": "舊字典的動詞用法，現代英文已不使用"
+    }
+   ]
+  },
+  {
    "headword": "kohl",
    "senses": [
     {
@@ -3254,6 +6790,21 @@
    ]
   },
   {
+   "headword": "koi",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "錦鯉、觀賞鯉",
+     "zh": "養在池塘或水族箱裡觀賞用的彩色鯉魚，常見於日式庭園。",
+     "en": "a large colorful fish kept in ponds or gardens for decoration",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "kong",
    "senses": [
     {
@@ -3274,6 +6825,21 @@
      "reason": "應為誤譯；「鋼」的英文是 steel，與 kong 無關"
     }
    ]
+  },
+  {
+   "headword": "koran",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "可蘭經、古蘭經",
+     "zh": "伊斯蘭教的經典，穆斯林視為阿拉透過先知穆罕默德傳達的啟示。",
+     "en": "the holy book of Islam, believed by Muslims to contain the word of God as revealed to the prophet Muhammad",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
   },
   {
    "headword": "korea",
@@ -3355,6 +6921,185 @@
    ]
   },
   {
+   "headword": "kosher",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "符合猶太飲食戒律的",
+     "zh": "指食物或餐廳依猶太教規處理、製作，猶太人可食用。",
+     "en": "prepared or served according to the rules of Jewish law about food",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00429141-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "正當的、合乎規定的",
+     "zh": "口語上指某件事合法、正當或符合規定，常用於否定句。",
+     "en": "acceptable, honest, or allowed by the rules",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "01886153-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "猶太潔食",
+     "zh": "指符合猶太飲食戒律的食物，常見於超市或餐廳標示。",
+     "en": "food that is allowed under Jewish dietary law",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "07576107-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "清淨的",
+     "reason": "舊字典的籠統譯法，現代英文中不單獨表示一般的「乾淨、清潔」。"
+    }
+   ]
+  },
+  {
+   "headword": "kosovo",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "科索沃",
+     "zh": "位於巴爾幹半島的國家，2008 年宣布獨立，台灣媒體與國際新聞經常提及。",
+     "en": "a country in the Balkans that declared independence in 2008",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "南斯拉夫自治省名",
+     "reason": "舊政治體制下的行政區名稱，南斯拉夫已解體，現代不再這樣稱呼"
+    }
+   ]
+  },
+  {
+   "headword": "kpmg",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "畢馬威（會計師事務所）",
+     "zh": "全球知名的四大會計師事務所之一，常在新聞、財經與求職場合看到。",
+     "en": "one of the large international companies that provide accounting and business advice",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "kremlin",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "克里姆林宮（俄羅斯政府）",
+     "zh": "指俄羅斯聯邦政府與總統府，新聞報導談俄羅斯政治決策時常用。",
+     "en": "the Russian government and its leaders, especially when talked about in the news",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "克里姆林（俄國城市的堡壘）",
+     "zh": "俄羅斯舊城中央的城堡或要塞建築群，最著名的是莫斯科那座。",
+     "en": "a castle or walled fortress in the center of an old Russian city",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "03633802-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "kruger",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "克魯格（姓氏）",
+     "zh": "南非、德國等地常見的姓氏，如南非前總統保羅·克魯格（Paul Kruger）。",
+     "en": "a family name, especially of a South African or German person",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "克魯格（經濟學者）",
+     "zh": "指提出尋租理論的經濟學者安妮·克魯格（Anne Krueger）等人。",
+     "en": "used in the name of the economist known for work on rent-seeking",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "格爾（南非政治家）",
+     "reason": "應為「克魯格」的誤譯或斷詞錯誤，並非獨立詞義"
+    }
+   ]
+  },
+  {
+   "headword": "kuhn",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "庫恩（人名）",
+     "zh": "德國姓氏，常見於人名，如諾貝爾化學獎得主庫恩。",
+     "en": "a German family name, especially of the chemist who won the Nobel Prize in Chemistry in 1938",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "德國化學家（曾獲 1938 年諾貝爾化學獎）",
+     "reason": "專指特定人物的百科資訊，不是單字本身的詞義，學習者查字典時不需要列為釋義"
+    }
+   ]
+  },
+  {
+   "headword": "kumar",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "庫馬爾（印度名字）",
+     "zh": "印度、南亞常見的男子名字或姓氏，在英語媒體中看到時直接音譯。",
+     "en": "a common first name or family name in India and South Asia",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "kurd",
    "senses": [
     {
@@ -3405,6 +7150,21 @@
    ]
   },
   {
+   "headword": "kurt",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "庫爾特（男子名）",
+     "zh": "英文男子名字，源自德語，在台灣較少見，多見於歐美人士姓名。",
+     "en": "a male first name of German origin",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "kuwait",
    "senses": [
     {
@@ -3427,6 +7187,65 @@
     }
    ],
    "omitted": []
+  },
+  {
+   "headword": "kuwaiti",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "科威特的、科威特人的",
+     "zh": "形容與科威特這個國家或其人民有關的事物。",
+     "en": "relating to Kuwait or its people",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03090579-a"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "科威特人",
+     "zh": "指出生在科威特或居住在科威特的人。",
+     "en": "a person who comes from or lives in Kuwait",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "09739049-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "科威特市的、科威特市居民的",
+     "zh": "形容與科威特首都科威特市或其居民有關的事物，較少單獨使用。",
+     "en": "relating to the capital city of Kuwait or the people living there",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "03090403-a"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "kyle",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "凱爾（男子名）",
+     "zh": "常見的蘇格蘭裔男子名字，現代英文裡幾乎只當人名使用。",
+     "en": "a male first name of Scottish origin",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（蘇格蘭）狹海峽、海峽",
+     "reason": "古蘇格蘭方言的罕用地形詞，現代英文已不再使用；現代看到 Kyle 幾乎都是人名或地名。"
+    }
+   ]
   },
   {
    "headword": "kylie",

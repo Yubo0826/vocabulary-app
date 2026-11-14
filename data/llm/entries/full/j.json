@@ -34,6 +34,89 @@
    "omitted": []
   },
   {
+   "headword": "jab",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "戳、刺（用手指或手肘）",
+     "zh": "用手指或手肘快速碰觸某人，通常是為了引起注意。",
+     "en": "a quick touch with a finger or elbow, often to get someone's attention",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00136131-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "戳、刺（用手指或手肘）",
+     "zh": "用手指或手肘快速碰觸某人，通常是為了引起注意。",
+     "en": "to touch someone quickly with a finger or elbow, often to get their attention",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01232540-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "刺拳",
+     "zh": "拳擊中快速筆直出拳的動作。",
+     "en": "a quick short straight punch in boxing",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00136772-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "猛戳、猛擊",
+     "zh": "用尖銳物體快速用力刺或戳。",
+     "en": "to push a sharp object quickly and forcefully into something",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01232914-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（打針的）注射",
+     "zh": "打針、接種疫苗的口語說法。",
+     "en": "an injection, especially a vaccination",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "（言語上的）抨擊、諷刺",
+     "zh": "口頭上的尖銳批評或嘲諷。",
+     "en": "a critical or teasing remark",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（手勢的）猛刺、戳",
+     "reason": "與「戳、刺」詞義重複，且現代少用。"
+    },
+    {
+     "meaning": "用短拳連續猛擊",
+     "reason": "與「刺拳」詞義重複，且現代少用。"
+    }
+   ]
+  },
+  {
    "headword": "jack",
    "senses": [
     {
@@ -265,6 +348,54 @@
    ]
   },
   {
+   "headword": "jackpot",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "頭獎、累積獎金",
+     "zh": "彩券、吃角子老虎機或抽獎活動中累積到很大一筆的獎金。",
+     "en": "a large amount of money that has built up in a lottery or gambling machine and is given to one winner",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "13364789-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "大獎、最大收穫",
+     "zh": "泛指比賽、抽獎或活動中最大的獎項或收穫。",
+     "en": "the biggest prize or reward in a contest or activity",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "13289706-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "中大獎、發大財",
+     "zh": "口語說 hit the jackpot，指贏得大獎或突然獲得極大成功。",
+     "en": "used in phrases to mean winning a big prize or having great sudden success",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "最大賭注",
+     "reason": "舊字典釋義，現代多併入「累積獎金」的意思，不再單獨使用"
+    },
+    {
+     "meaning": "困境",
+     "reason": "罕用且與現代用法無關，現代幾乎不這樣用"
+    }
+   ]
+  },
+  {
    "headword": "jackson",
    "senses": [
     {
@@ -317,6 +448,92 @@
    "omitted": []
   },
   {
+   "headword": "jacobite",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "詹姆斯黨人、擁護斯圖亞特王朝者",
+     "zh": "指十七、十八世紀支持被廢黜的詹姆斯二世及其後裔、擁護斯圖亞特王朝復辟的人，多用於英國歷史敘述。",
+     "en": "a person who supported James II after he lost the throne, or who backed the Stuart royal family",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "10238659-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "jacobs",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "雅各布斯（姓氏）",
+     "zh": "英語系常見的姓氏，用來指姓這個姓的人。",
+     "en": "a common family name in English-speaking countries",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "作者名",
+     "reason": "只是姓氏的舉例用法，不是獨立詞義，已併入姓氏義"
+    }
+   ]
+  },
+  {
+   "headword": "jacquard",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "提花布、緹花布",
+     "zh": "表面織有花紋圖案的布料，常用於窗簾、床單、沙發套等高級織品。",
+     "en": "a type of cloth with a pattern woven into it, often used for curtains, bedding, and upholstery",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "03596985-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "提花機、緹花機",
+     "zh": "能織出複雜花紋的織布機，常見於紡織業的專業說明。",
+     "en": "a machine for weaving cloth with complex patterns built into the fabric",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "03596779-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "jacqueline",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "傑奎琳（女子名）",
+     "zh": "常見的女性名字，源自法文，英文常暱稱為 Jackie。",
+     "en": "a female first name of French origin, often shortened to Jackie",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "jacques",
    "senses": [
     {
@@ -327,6 +544,121 @@
      "usage": "common",
      "register": [],
      "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "jacqui",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "雅基（女子名）",
+     "zh": "英文女子名，常作為 Jacqueline 或 Jacqui 的暱稱，用於稱呼女性。",
+     "en": "a female first name, often a short form of Jacqueline",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "舊英漢字典將其列為一般單字釋義",
+     "reason": "實為專有名詞（人名），非一般詞彙；且無 WordNet 詞義可對應"
+    }
+   ]
+  },
+  {
+   "headword": "jade",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "玉、翡翠",
+     "zh": "一種綠色（有時偏白）的寶石，常用來做飾品或雕刻品。",
+     "en": "a hard green or whitish stone used for making jewelry and carvings",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "14948740-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "玉色的、淺綠的",
+     "zh": "形容帶藍綠到黃綠的顏色，像玉一樣。",
+     "en": "having a light green color like the stone",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00377707-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "玉綠色",
+     "zh": "指介於藍綠與黃綠之間的顏色。",
+     "en": "a light green color that is between blue-green and yellow-green",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "04975926-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "厭倦、失去興趣",
+     "zh": "對某件事或某個人感到無聊、不想再繼續。",
+     "en": "to become bored with something or lose interest in it",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "00075867-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "老馬",
+     "reason": "古義，現代一般英文已不使用"
+    },
+    {
+     "meaning": "疲倦、使疲累",
+     "reason": "舊式用法，現代少見"
+    },
+    {
+     "meaning": "淫婦、不貞的女子",
+     "reason": "古義且帶貶義，現代已不使用"
+    }
+   ]
+  },
+  {
+   "headword": "jaded",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "厭倦的、膩了的",
+     "zh": "因為經歷太多或做太久而失去興趣、覺得無聊",
+     "en": "bored or no longer interested because you have had too much of something",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02085283-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "疲憊不堪的",
+     "zh": "累到沒有力氣、精神耗盡的樣子",
+     "en": "very tired and without energy",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "02442794-s"
+     ]
     }
    ],
    "omitted": []
@@ -358,6 +690,28 @@
     }
    ],
    "omitted": []
+  },
+  {
+   "headword": "jagger",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "鋸齒狀邊緣、刻齒",
+     "zh": "指物體邊緣呈不規則鋸齒狀的突起或缺口，多用於描述玻璃、金屬或岩石的斷口。",
+     "en": "a sharp, uneven point or notch along the edge of something",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "L 形吊骨（機械用語）",
+     "reason": "專業領域過窄，僅見於極少數機械詞典，現代一般英文幾乎不用；且與本詞的鋸齒義可能為不同來源的舊譯，不宜列為學習義。"
+    }
+   ]
   },
   {
    "headword": "jaguar",
@@ -437,6 +791,41 @@
     {
      "meaning": "鄉下佬、傢伙",
      "reason": "古義且帶貶意，現代已不使用"
+    }
+   ]
+  },
+  {
+   "headword": "jalapeno",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "墨西哥辣椒",
+     "zh": "一種原產墨西哥、辣度中等偏高的綠色或紅色小辣椒，常見於墨西哥料理與美式餐點。",
+     "en": "a small hot green or red pepper from Mexico, often used in cooking",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07737423-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "墨西哥辣椒（植株）",
+     "zh": "指會結出這種辣椒的植物本身，一般在園藝或農業語境中出現。",
+     "en": "the plant that produces these small hot peppers",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "12921747-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "墨西哥胡椒",
+     "reason": "舊字典誤譯；jalapeño 是辣椒，不是胡椒（pepper 在此指辣椒類，非胡椒）。"
     }
    ]
   },
@@ -560,6 +949,34 @@
    "omitted": []
   },
   {
+   "headword": "jamaican",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "牙買加的、牙買加人的",
+     "zh": "形容與牙買加這個國家、島嶼或其人民有關的事物。",
+     "en": "relating to Jamaica, its people, or its culture",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03087860-a"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "牙買加人",
+     "zh": "指出生在牙買加或設籍當地的居民。",
+     "en": "a person who comes from Jamaica or lives there",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "09737488-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "james",
    "senses": [
     {
@@ -608,6 +1025,26 @@
    ]
   },
   {
+   "headword": "jamieson",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "賈米森（地名、姓氏）",
+     "zh": "英文的姓氏，也用作美國等地的小地名；現代最常見於人名，例如澳洲政治人物 Jamieson。",
+     "en": "a family name, also used as a place name in the United States",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "美國地名",
+     "reason": "參考資料只把它當地名，但現代英文裡更常作為姓氏出現；地名用法範圍很窄，已併入上一條說明"
+    }
+   ]
+  },
+  {
    "headword": "jan",
    "senses": [
     {
@@ -623,6 +1060,39 @@
     }
    ],
    "omitted": []
+  },
+  {
+   "headword": "janata",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "人民黨（印度政黨）",
+     "zh": "印度政黨名稱，常指一九七〇年代組成的聯合政黨，或政黨名稱中的「人民」字樣。",
+     "en": "a political party in India, especially the coalition formed in the 1970s",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "人民、民眾（印度用語）",
+     "zh": "印度英語中泛指人民或群眾，常見於政黨、組織名稱。",
+     "en": "people or the public, used especially in India",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（印度）人民團體",
+     "reason": "過於籠統，現代英語中幾乎只出現在印度政黨或組織名稱裡，一般學習者不會單獨使用這個意思"
+    }
+   ]
   },
   {
    "headword": "jane",
@@ -668,6 +1138,47 @@
     {
      "meaning": "英國大學聯合科學網（JANET）",
      "reason": "這是英國學術網路的專有名詞縮寫，屬專業領域用語，現代一般學習者幾乎不會遇到，且與人名用法無關。"
+    }
+   ]
+  },
+  {
+   "headword": "janice",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "賈尼斯（女子名）",
+     "zh": "常見的英文女子名字，是 Janis 的另一種拼法。",
+     "en": "a female first name, a variant spelling of Janis",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "janitor",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "清潔工、工友",
+     "zh": "受雇負責打掃與維護建築物（如學校、辦公大樓）的人。",
+     "en": "a person whose job is to clean and take care of a building",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10239247-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "守衛、門警",
+     "reason": "舊字典釋義；現代英文的 janitor 不指守衛或門警，此義已不用，屬誤譯。"
+    },
+    {
+     "meaning": "管理人",
+     "reason": "舊字典釋義；現代英文指清潔維護人員，不泛指管理人，屬過時用法。"
     }
    ]
   },
@@ -838,6 +1349,37 @@
    ]
   },
   {
+   "headword": "jardine",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "怡和集團（Jardine Matheson）",
+     "zh": "指以香港為基地的老牌英資商行「怡和洋行」及其集團，常見於香港商業與歷史報導。",
+     "en": "a large British trading company based in Hong Kong, known in Chinese as Jardine Matheson",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "賈丁（姓氏、人名）",
+     "zh": "英文姓氏或男子名，源自蘇格蘭，現代主要出現在人名、公司名或地名中。",
+     "en": "a family name or male given name of Scottish origin",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "法國名",
+     "reason": "參考資料把此字當成法國名字，但 Jardine 實為蘇格蘭姓氏，此為舊字典的誤譯或混淆"
+    }
+   ]
+  },
+  {
    "headword": "jargon",
    "senses": [
     {
@@ -879,6 +1421,77 @@
    ]
   },
   {
+   "headword": "jarman",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "賈曼（英文姓氏）",
+     "zh": "英文姓氏，如英國導演德瑞克・賈曼（Derek Jarman）；台灣多音譯為「賈曼」。",
+     "en": "a family name of English origin, used as a surname",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（英）賈曼",
+     "reason": "與姓氏義重複，僅為同一意思的中文音譯說明"
+    }
+   ]
+  },
+  {
+   "headword": "jarvis",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "賈維斯（男子名）",
+     "zh": "英文男子名，常見於人名或姓氏，例如漫威電影中的角色 Jarvis。",
+     "en": "a male first name or family name",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "舊英漢字典僅列為人名，無其他詞義",
+     "reason": "參考資料只有人名釋義，無古義或罕用義可省略"
+    }
+   ]
+  },
+  {
+   "headword": "jasmine",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "茉莉、茉莉花",
+     "zh": "一種開白色小花、香氣濃的灌木，常種在庭園，也常用來泡茶或做香料。",
+     "en": "a bush with small white flowers that smell very sweet, often used to make tea or perfume",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "12327234-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "茉莉花香",
+     "zh": "指茉莉花散發的香味，常見於香水、香氛或茶飲的描述。",
+     "en": "the sweet smell of jasmine flowers, often used to describe perfume or tea",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "淡黃色",
+     "reason": "舊字典把茉莉花相關的淡黃色另立一義，現代英語幾乎不用 jasmine 指顏色，多說 pale yellow。"
+    }
+   ]
+  },
+  {
    "headword": "jason",
    "senses": [
     {
@@ -897,6 +1510,149 @@
      "reason": "舊字典音譯，現代台灣多譯作「傑森」，且此字僅為人名，無其他詞義"
     }
    ]
+  },
+  {
+   "headword": "jasper",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "碧玉、玉髓",
+     "zh": "一種不透明的石英類礦石，常呈紅、黃、褐或深綠色，用來做飾品或寶石。",
+     "en": "a kind of stone that is not see-through, usually red, yellow, brown, or dark green, used for decoration or as a gem",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "14949171-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "jaunt",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "短途出遊、小旅行",
+     "zh": "為了休閒娛樂而安排的短程旅行，通常當天來回。",
+     "en": "a short trip made for fun or pleasure",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00312635-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "短途出遊、去玩一趟",
+     "zh": "到附近或某個地方輕鬆玩一趟，語氣比 travel 輕。",
+     "en": "to go on a short trip for fun",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01846997-v"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "遠足、徒步旅遊",
+     "reason": "舊字典把 jaunt 譯成「遠足、徒步」，強調徒步健行；現代英文的 jaunt 只指輕鬆的短程出遊，不一定是走路，這個譯法容易誤導學習者。"
+    }
+   ]
+  },
+  {
+   "headword": "jaunty",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "神氣活現的、自信滿滿的",
+     "zh": "形容人舉止輕鬆自信、帶點得意，常用於走路或姿態。",
+     "en": "showing a relaxed and confident manner, often in the way someone walks or moves",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00365225-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "輕快活潑的、俏皮的",
+     "zh": "形容音樂、節奏或動作輕快有活力，帶點俏皮感。",
+     "en": "lively and cheerful in a light, playful way, especially of music or movement",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00365225-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "時髦有型的（穿著、打扮）",
+     "zh": "形容服裝或打扮新潮有型，帶點自信的風格。",
+     "en": "stylish and fashionable in dress or appearance",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00975112-s"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "java",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "爪哇（印尼島嶼）",
+     "zh": "印尼的一座島，也是該島出產咖啡的名稱來源。",
+     "en": "a large island in Indonesia",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "爪哇咖啡",
+     "zh": "產自爪哇島的咖啡，常指一種濃烈的咖啡。",
+     "en": "coffee grown on the island of Java, often strong and dark",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "07945759-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "Java（程式語言）",
+     "zh": "一種跨平台、物件導向的程式語言，常見於企業系統與 Android 開發。",
+     "en": "a programming language used to build software that runs on many kinds of computers",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "06913829-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "咖啡（口語）",
+     "zh": "口語中泛指一杯咖啡，常見於美國英語。",
+     "en": "a cup of coffee",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "07945759-n"
+     ]
+    }
+   ],
+   "omitted": []
   },
   {
    "headword": "jaw",
@@ -1072,6 +1828,37 @@
    ]
   },
   {
+   "headword": "jc",
+   "senses": [
+    {
+     "pos": "abbr.",
+     "label": "耶穌基督（Jesus Christ）",
+     "zh": "基督教中用來指耶穌基督的縮寫，常見於英文聖經、宗教文章或口語驚嘆。",
+     "en": "a short way of writing Jesus Christ, used in religious writing or as an exclamation",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "abbr.",
+     "label": "人名縮寫（JC）",
+     "zh": "英文人名如 James Carter、John Chen 等的姓名首字母縮寫，日常書寫與社群帳號很常見。",
+     "en": "initials used as a short form of a person's first and last name",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "法學家（jurisconsult）",
+     "reason": "極罕用的專業縮寫，現代英文幾乎不會遇到，一般學習者不需要學"
+    }
+   ]
+  },
+  {
    "headword": "jealous",
    "senses": [
     {
@@ -1110,6 +1897,38 @@
     {
      "meaning": "留心的、戒備的",
      "reason": "舊字典義，現代英文幾乎不用 jealous 表達單純的留意或警戒，多已由 watchful、wary 等字取代"
+    }
+   ]
+  },
+  {
+   "headword": "jealously",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "嫉妒地、吃醋地",
+     "zh": "帶著嫉妒或不甘心的情緒對待某人、某事，常用在感情或人際競爭的情境。",
+     "en": "in a way that shows envy or resentment toward someone or something",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00385526-r",
+      "00304549-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "小心翼翼地守護、極力維護",
+     "zh": "用力保護自己重視的東西或權利，不讓別人碰觸或搶走，常與 guard、protect 等動詞連用。",
+     "en": "in a careful way that protects something you value from being taken away",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "留心、戒備",
+     "reason": "舊字典把形容詞 jealous 的『留意、提防』義直接搬到副詞，現代英文幾乎不用 jealously 表達『戒備地』，多改用 carefully、guardedly"
     }
    ]
   },
@@ -1167,6 +1986,26 @@
    ]
   },
   {
+   "headword": "jeanne",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "珍妮（女子名）",
+     "zh": "英文女子名字，是 Joan、Jane 等名字的法文形式，在英語圈也常直接使用。",
+     "en": "a female first name, originally the French form of Joan or Jane",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "等於 Joanna",
+     "reason": "僅為字源說明，並非獨立詞義；現代英語中 Jeanne 與 Joanna 是不同名字，不宜列為釋義"
+    }
+   ]
+  },
+  {
    "headword": "jeans",
    "senses": [
     {
@@ -1187,6 +2026,21 @@
      "reason": "舊字典釋義；現代英文的 jeans 專指丹寧褲，工作褲另稱 work pants"
     }
    ]
+  },
+  {
+   "headword": "jed",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "傑德（男子名）",
+     "zh": "英文男子名，常作為 Jedediah 的暱稱，日常稱呼或人名使用。",
+     "en": "a male first name, often a short form of Jedediah",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
   },
   {
    "headword": "jeep",
@@ -1215,6 +2069,67 @@
    ]
   },
   {
+   "headword": "jeer",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "嘲笑、譏諷",
+     "zh": "用言語或笑聲公開取笑某人，表達輕蔑或不尊重",
+     "en": "to laugh at or say unkind things about someone in a way that shows you do not respect them",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00851872-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "嘲笑、奚落",
+     "zh": "針對某人的取笑言語或態度，通常帶有輕蔑意味",
+     "en": "remarks or laughter that show you think someone is stupid or not worth respecting",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "06729173-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "戲弄",
+     "reason": "與「嘲笑、譏諷」意思重疊，已合併處理"
+    }
+   ]
+  },
+  {
+   "headword": "jeez",
+   "senses": [
+    {
+     "pos": "int.",
+     "label": "天啊、哎呀",
+     "zh": "表示驚訝、不耐煩或惱怒的感嘆詞，語氣比 oh my God 略輕。",
+     "en": "used to show surprise, annoyance, or frustration",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "int.",
+     "label": "拜託、真是的",
+     "zh": "用來表達無奈或抱怨，常出現在口語對話中。",
+     "en": "used when you are annoyed or have had enough of something",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "jeff",
    "senses": [
     {
@@ -1222,6 +2137,21 @@
      "label": "傑夫（男子名）",
      "zh": "男子名 Jeffrey 的常見暱稱，口語中也常直接當正式名字使用。",
      "en": "a common male first name, often a short form of Jeffrey",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "jefferson",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "傑弗遜（姓氏）",
+     "zh": "英文姓氏，最常指美國第三任總統湯瑪斯・傑弗遜。",
+     "en": "a family name, especially that of Thomas Jefferson, the third president of the United States",
      "usage": "common",
      "register": [],
      "synsets": []
@@ -1243,6 +2173,71 @@
     }
    ],
    "omitted": []
+  },
+  {
+   "headword": "jehan",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "吉安（女子名）",
+     "zh": "英文人名，多為女性名字，源自法文或波斯文。",
+     "en": "a female given name of French or Persian origin",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "jehovah",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "耶和華",
+     "zh": "基督教與猶太教對上帝的稱呼，常見於《聖經》譯本及耶和華見證人的名稱中。",
+     "en": "the name used for God in the Bible, especially in some Christian and Jewish traditions",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "jekyll",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "雙面人、善惡雙重人格",
+     "zh": "源自小說《化身博士》，指表面善良、私下卻有邪惡一面的人，常說 Jekyll and Hyde。",
+     "en": "a person who seems good and kind but has a very different, often evil, side",
+     "usage": "less_common",
+     "register": [
+      "literary"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "哲基爾醫生（小說人物）",
+     "zh": "英國小說《化身博士》中善良的醫生角色，喝了藥水後變成邪惡的海德先生。",
+     "en": "the good doctor in a famous novel who turns into a violent, evil man after drinking a potion",
+     "usage": "less_common",
+     "register": [
+      "literary"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "舊字典把主人寫成主人工",
+     "reason": "明顯誤譯（錯字），應為「主人公」"
+    }
+   ]
   },
   {
    "headword": "jelly",
@@ -1302,6 +2297,54 @@
    ]
   },
   {
+   "headword": "jellyfish",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "水母、海蜇",
+     "zh": "生活在海裡的軟身體動物，身體透明，觸手會螫人。",
+     "en": "a soft sea animal with a clear body and tentacles that can sting",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01913388-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "意志薄弱的人、沒骨氣的人",
+     "zh": "口語用來罵人軟弱、沒主見、遇事就退縮。",
+     "en": "a weak person who has no courage or strong opinions",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "管水母（有氣囊狀浮器與螫人觸手的大型群體生物）",
+     "reason": "專業生物分類義，一般學習者不會遇到，且與「水母」通稱義重疊"
+    }
+   ]
+  },
+  {
+   "headword": "jen",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "珍（女子名）",
+     "zh": "英文女子名 Jennifer 的常見暱稱，也用於正式場合。",
+     "en": "a common female first name, often short for Jennifer",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "jenkins",
    "senses": [
     {
@@ -1347,6 +2390,21 @@
    "omitted": []
   },
   {
+   "headword": "jennings",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "詹寧斯（姓氏）",
+     "zh": "英語系國家常見的姓氏，也可用作名字。",
+     "en": "a common family name in English-speaking countries, also used as a first name",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "jenny",
    "senses": [
     {
@@ -1380,6 +2438,23 @@
      "reason": "專業領域過窄，屬特定工程術語，一般學習者不會遇到。"
     }
    ]
+  },
+  {
+   "headword": "jeopardise",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "危及、危害",
+     "zh": "使某人或某事面臨失敗、損失或危險，常用於工作、關係、安全等情境。",
+     "en": "to put someone or something in a situation where they may fail, be harmed, or be lost",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02702962-v"
+     ]
+    }
+   ],
+   "omitted": []
   },
   {
    "headword": "jeopardize",
@@ -1422,6 +2497,39 @@
     }
    ],
    "omitted": []
+  },
+  {
+   "headword": "jeremiah",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "耶利米（聖經先知）",
+     "zh": "聖經舊約中的先知，常被用來指悲觀、不斷預言災難的人。",
+     "en": "a prophet in the Old Testament known for warning people about coming disaster",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "《耶利米書》",
+     "zh": "聖經舊約中的一卷書，記錄耶利米的預言。",
+     "en": "a book of the Old Testament that contains the prophet's warnings and messages",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "悲觀的預言者、唱衰的人",
+     "reason": "由聖經人物引申的比喻用法，現代少見，且多寫作 jeremiad，不另立詞義"
+    }
+   ]
   },
   {
    "headword": "jeremy",
@@ -1518,6 +2626,70 @@
      "reason": "罕用，與「猛拉」意思相近且更少見"
     }
    ]
+  },
+  {
+   "headword": "jerky",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "牛肉乾、肉乾",
+     "zh": "把牛肉等肉類切成長條後風乾或烘乾製成的零食，常見於美國。",
+     "en": "strips of meat, usually beef, that are dried and eaten as a snack",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07680515-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "顛簸的、不平順的",
+     "zh": "形容動作或移動忽快忽慢、一頓一頓，不流暢。",
+     "en": "moving in sudden stops and starts, not smooth or steady",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02311256-s",
+      "01147235-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（動作）急促猛拉的",
+     "zh": "形容突然用力拉扯或抽動的動作，例如猛然一扯。",
+     "en": "done with a sudden sharp pull or movement",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01147235-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "抽筋的",
+     "reason": "舊字典釋義，現代英文幾乎不用 jerky 表示抽筋，多說 cramping"
+    },
+    {
+     "meaning": "愚笨的、顯露愚蠢的",
+     "reason": "古義、罕用，現代日常與報章幾乎不再這樣使用"
+    }
+   ]
+  },
+  {
+   "headword": "jerome",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "傑羅姆（男子名）",
+     "zh": "常見的英文男子名字，源自希臘語，意思是「神聖的名字」。",
+     "en": "a male first name of Greek origin meaning \"sacred name\"",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
   },
   {
    "headword": "jerry",
@@ -1629,6 +2801,28 @@
    "omitted": []
   },
   {
+   "headword": "jesse",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "耶西（聖經人物）",
+     "zh": "《聖經》中大衛王的父親，主要出現在宗教與文學相關的討論中。",
+     "en": "in the Bible, the father of King David; used mainly in religious and literary contexts",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "舊字典將 Jesse 誤標為一般英文單字",
+     "reason": "此字為專有名詞（人名），並非可自由運用的一般詞彙；舊字典把它當成普通名詞收錄，容易誤導學習者"
+    }
+   ]
+  },
+  {
    "headword": "jessica",
    "senses": [
     {
@@ -1642,6 +2836,119 @@
     }
    ],
    "omitted": []
+  },
+  {
+   "headword": "jessie",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "傑西（女子名）",
+     "zh": "常見的英文女子名字，也可當男子名或姓氏使用。",
+     "en": "a common first name for a woman, also used as a man's name or a family name",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "（俚語）娘娘腔男子",
+     "zh": "帶貶意的俚語，用來嘲笑言行舉止被認為不夠陽剛的男性。",
+     "en": "an offensive slang word for a man who seems not masculine enough",
+     "usage": "less_common",
+     "register": [
+      "slang",
+      "offensive"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "jest",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "玩笑、笑話",
+     "zh": "以幽默的方式說出的話或做的事，常用於片語 in jest（開玩笑地）",
+     "en": "something said or done to make people laugh, often used in the phrase \"in jest\"",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "06790941-n",
+      "00431990-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "開玩笑、說笑",
+     "zh": "以幽默的方式說話或行動，通常不帶惡意",
+     "en": "to say something funny or act in a playful way that is not meant to be serious",
+     "usage": "less_common",
+     "register": [
+      "literary",
+      "old"
+     ],
+     "synsets": [
+      "00855315-v",
+      "00105308-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "笑柄、嘲弄的對象",
+     "zh": "被別人拿來取笑的人或事，現代少見",
+     "en": "a person or thing that people laugh at in an unkind way",
+     "usage": "rare",
+     "register": [
+      "old"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "嘲笑（及物動詞）",
+     "reason": "舊字典分出的及物用法，現代英文幾乎不用 jest 直接帶受詞表示嘲笑，改以 mock、make fun of 表達"
+    }
+   ]
+  },
+  {
+   "headword": "jesuit",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "耶穌會士",
+     "zh": "天主教耶穌會的成員，常給人博學、從事教育與傳教的印象。",
+     "en": "a member of a Roman Catholic religious order known for teaching and missionary work",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "10241190-n"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "耶穌會的、耶穌會式的",
+     "zh": "用來形容與耶穌會有關，或帶有耶穌會風格的事物。",
+     "en": "relating to the Jesuit order or its typical ways",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "03088363-a"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "陰險的人、陰謀家",
+     "reason": "帶強烈貶義的舊式偏見用法，現代一般語境幾乎不用，也容易冒犯"
+    }
+   ]
   },
   {
    "headword": "jet",
@@ -1721,6 +3028,126 @@
     {
      "meaning": "噴嘴",
      "reason": "舊字典義，現代多說 nozzle，jet 本身少用此義"
+    }
+   ]
+  },
+  {
+   "headword": "jetliner",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "噴射客機、噴射民航機",
+     "zh": "指以噴射引擎推進、專門載運乘客的大型民航機，常見於新聞與航空相關報導。",
+     "en": "a large passenger airplane that is powered by jet engines",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03601736-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "jett",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "傑特（姓氏）",
+     "zh": "英文姓氏，常見於人名，例如美國職棒球員或名人。",
+     "en": "a family name or last name used by people",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "噴射、投擲（動詞）",
+     "reason": "參考資料未列此義；此字在現代英文中幾乎只作姓氏使用，其他用法罕見或已廢棄"
+    }
+   ]
+  },
+  {
+   "headword": "jettison",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "丟棄、拋棄（不需要的東西）",
+     "zh": "把用不到、造成負擔的東西丟掉或放棄，常用於比喻擺脫累贅的事物。",
+     "en": "to get rid of something you do not need or that is holding you back",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02227918-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "投棄（貨物、燃料）",
+     "zh": "船隻或飛機為了減輕重量，把貨物或燃料拋出機外或船外。",
+     "en": "to throw goods or fuel off a ship or aircraft to make it lighter",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "01512714-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "投棄、拋棄",
+     "zh": "指把貨物或東西丟掉的行為，現代較少單獨當名詞用。",
+     "en": "the act of throwing something away, especially from a ship or plane",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "投棄貨物（名詞，指被丟掉的貨物本身）",
+     "reason": "舊字典義，現代幾乎不這樣用，多改說 jettisoned cargo"
+    }
+   ]
+  },
+  {
+   "headword": "jetty",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "防波堤、突堤",
+     "zh": "從岸邊伸入海中的石造或混凝土結構，用來阻擋海浪、保護海岸與港口。",
+     "en": "a long structure built out from the shore into the water to stop waves from damaging the coast or a harbor",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "02897867-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "小碼頭、停泊處",
+     "zh": "供小船停靠、上下客貨的岸邊平台，常見於小型港口或河岸。",
+     "en": "a small platform at the water's edge where boats can stop to load or unload",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "黑玉般的、烏黑髮亮的",
+     "reason": "古義，現代英文幾乎不用 jetty 表示顏色或光澤"
+    },
+    {
+     "meaning": "伸出、突出",
+     "reason": "罕用動詞義，現代一般改用 jut 或 stick out"
     }
    ]
   },
@@ -1810,6 +3237,72 @@
    ]
   },
   {
+   "headword": "jeweler",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "珠寶商、珠寶店",
+     "zh": "開店販售戒指、項鍊等珠寶首飾的人或店家",
+     "en": "a person or shop that sells rings, necklaces, and other jewelry",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10241447-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "珠寶匠、珠寶製作師",
+     "zh": "以手工製作或修理珠寶首飾的工匠",
+     "en": "a person whose job is to make or repair jewelry",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "10241626-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "寶石商、寶石匠",
+     "reason": "「寶石商」與珠寶商意思重疊，「寶石匠」為舊式說法，現代多稱珠寶匠"
+    }
+   ]
+  },
+  {
+   "headword": "jeweller",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "珠寶商、珠寶店",
+     "zh": "開店販售戒指、項鍊等珠寶首飾的人或店家。",
+     "en": "a person or shop that sells rings, necklaces, and other jewelry",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10241447-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "珠寶匠、珠寶製作師",
+     "zh": "以手工製作或修理珠寶首飾的工匠。",
+     "en": "a person whose job is making or repairing jewelry by hand",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "10241626-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "寶石商、寶石匠",
+     "reason": "「寶石商」與「珠寶商」意思重疊，已合併；「寶石匠」為舊式說法，現代多稱珠寶匠。"
+    }
+   ]
+  },
+  {
    "headword": "jewellery",
    "senses": [
     {
@@ -1873,6 +3366,206 @@
      "reason": "與「猶太人的」意思重複，現代英文不另外區分種族義"
     }
    ]
+  },
+  {
+   "headword": "jig",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "吉格舞、吉格舞曲",
+     "zh": "一種節奏輕快、三拍子的傳統愛爾蘭舞蹈及其配樂，常在聖派翠克節等場合看到。",
+     "en": "a fast traditional Irish dance, or the music for it, in three-four time",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07069845-n",
+      "00540028-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "蹦跳、雀躍",
+     "zh": "形容人（或動物）輕快地上下跳動，常帶有興奮或隨音樂擺動的意味。",
+     "en": "to move up and down with quick light jumping movements",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01902025-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "夾具、治具",
+     "zh": "機械加工時用來固定工件、引導刀具的裝置，屬工廠與製造領域用語。",
+     "en": "a tool that holds a piece of work in place and guides the cutting tool",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "03603578-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（釣魚用）擬餌、鉛魚鉤",
+     "zh": "釣魚時在水中上下抖動以吸引魚隻的假餌，通常帶有鉤子。",
+     "en": "a fishing lure with hooks that is moved up and down in the water",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "03603708-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "亂跳",
+     "reason": "與「蹦跳、雀躍」意思重複，已合併"
+    },
+    {
+     "meaning": "加工用鉤釣魚",
+     "reason": "舊字典的生硬直譯，現代英文不這樣說，實際用法已併入擬餌義"
+    },
+    {
+     "meaning": "選篩",
+     "reason": "疑似舊字典誤譯，現代英文的 jig 沒有「篩選」這個意思"
+    }
+   ]
+  },
+  {
+   "headword": "jiggle",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "輕輕搖動、上下晃動",
+     "zh": "讓某物小幅、快速地來回或上下動，例如搖晃鑰匙、晃動滑鼠讓游標出現。",
+     "en": "to move something small and light quickly up and down or from side to side",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01902275-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "（身體部位）微微晃動",
+     "zh": "身體某部位不自覺地小幅抖動，例如緊張時抖腳、隨音樂輕輕擺動。",
+     "en": "to make small quick movements with part of your body",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01902275-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "輕晃、微微晃動",
+     "zh": "形容小幅而不規則的搖動，通常帶有隨意、不穩定的感覺。",
+     "en": "a small quick shaking movement that is not smooth or regular",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00348185-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "jigsaw",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "拼圖、拼圖遊戲",
+     "zh": "把許多小塊拼成一幅圖的遊戲或玩具，日常最常說的 jigsaw 就是這個意思。",
+     "en": "a picture cut into many small pieces that you fit together to make the picture again",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "線鋸、曲線鋸",
+     "zh": "木工用來鋸曲線或鏤空的細齒鋸子，也可指電動線鋸機。",
+     "en": "a saw with a thin blade and fine teeth used for cutting curves or shapes in wood",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "03603976-n",
+      "04128822-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "謎團、複雜難解的局面",
+     "zh": "常說 jigsaw puzzle，比喻由許多片段拼湊、需要慢慢釐清的複雜情況。",
+     "en": "a complicated situation made of many parts that are hard to put together",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "用線鋸鋸（動詞）",
+     "reason": "動詞用法在現代英語幾乎不用，學習者只需認識名詞。"
+    }
+   ]
+  },
+  {
+   "headword": "jihad",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "聖戰、宗教奮鬥",
+     "zh": "伊斯蘭教中指為宗教目標而付出的努力，也常指以武力對抗敵人的戰爭。",
+     "en": "a struggle or effort by Muslims for a religious goal, often understood as armed fighting against enemies",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00998599-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（對某事的）強力倡議、運動",
+     "zh": "口語或新聞中借用來指積極推動某種主張或對抗某事的行動，例如「反菸聖戰」。",
+     "en": "an energetic campaign by a group to promote a cause or fight something",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "討伐異教徒",
+     "reason": "舊字典的窄化譯法，帶有過時的對立色彩，現代多改用「聖戰、宗教奮鬥」等較中性的說法"
+    }
+   ]
+  },
+  {
+   "headword": "jihadist",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "聖戰士、聖戰分子",
+     "zh": "指參與伊斯蘭聖戰的人，現代媒體多用來指激進武裝分子。",
+     "en": "a Muslim who takes part in a holy war, often used for a violent militant",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "09702576-n"
+     ]
+    }
+   ],
+   "omitted": []
   },
   {
    "headword": "jill",
@@ -1950,6 +3643,132 @@
      ],
      "synsets": [
       "03604544-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "jingle",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "叮噹聲、鈴鐺聲",
+     "zh": "金屬小物（如鈴鐺、鑰匙）互相碰撞發出的清脆聲響。",
+     "en": "a light ringing sound made when small metal things hit each other",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07400598-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "發出叮噹聲",
+     "zh": "鈴鐺、鑰匙等金屬物搖動時發出清脆的聲音。",
+     "en": "to make a light ringing sound like small metal objects hitting each other",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02177127-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "廣告短歌、順口溜",
+     "zh": "電視、廣播廣告裡容易記住的短歌或押韻詞句。",
+     "en": "a short song or rhyme used in an advertisement, easy to remember",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "06390876-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（使）押韻",
+     "reason": "舊字典把「押韻」列為動詞義，現代英文幾乎不用 jingle 表達押韻，屬過時用法"
+    }
+   ]
+  },
+  {
+   "headword": "jinny",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "固定絞車、捲揚機",
+     "zh": "煤礦等場所用來拉動纜繩或重物的固定式絞盤機械。",
+     "en": "a fixed winch or hoisting machine used for pulling heavy loads",
+     "usage": "rare",
+     "register": [
+      "technical",
+      "old"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "自重滑行坡、重力軌道",
+     "zh": "利用重力讓車輛自行滑行的斜坡或軌道設施。",
+     "en": "a sloping track or incline where vehicles move by their own weight",
+     "usage": "rare",
+     "register": [
+      "technical",
+      "old"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "jitters",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "緊張不安、心神不寧",
+     "zh": "指在重要場合前感到的緊張、坐立難安，口語常說 have the jitters。",
+     "en": "a feeling of being very nervous or unable to relax, especially before something important",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "14399166-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "神經過敏",
+     "reason": "舊字典用語，現代中文不這樣說，已併入「緊張不安」這個意思"
+    }
+   ]
+  },
+  {
+   "headword": "jittery",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "緊張不安的、心神不寧的",
+     "zh": "因為壓力、咖啡因或等待某件事而感到緊繃、靜不下來",
+     "en": "feeling nervous and unable to relax, especially because of stress or worry",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02415166-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "抖動的、抽動的",
+     "zh": "動作不順、一頓一頓地抽動，常用來形容畫面或動作",
+     "en": "moving with sudden, uneven jerks rather than smoothly",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "02763637-a"
      ]
     }
    ],
@@ -2147,6 +3966,69 @@
    ]
   },
   {
+   "headword": "jobless",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "失業的、沒工作的",
+     "zh": "指人目前沒有工作、失去飯碗，常見於新聞與統計用語。",
+     "en": "having no job and usually looking for work",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00868194-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "失職的、未盡職責的",
+     "reason": "舊字典誤譯；jobless 只表示沒有工作，不表示失職或怠忽職守"
+    }
+   ]
+  },
+  {
+   "headword": "jock",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "（大學）運動員、體育咖",
+     "zh": "美式口語，指在學校裡熱中體育、常被認為頭腦簡單的男生，也常帶有刻板印象。",
+     "en": "a man who is very interested in sports and is often seen as not caring about schoolwork",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "09839665-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "護襠、下體護具",
+     "zh": "男性運動時穿在內褲裡、保護生殖器的護具。",
+     "en": "a piece of underwear that protects a man's sex organs during sports",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "02755620-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "蘇格蘭高原地方計程車兵",
+     "reason": "古義，現代英文幾乎不使用"
+    },
+    {
+     "meaning": "喬克（男子名）",
+     "reason": "專有名詞，非一般字義"
+    }
+   ]
+  },
+  {
    "headword": "jockey",
    "senses": [
     {
@@ -2254,6 +4136,74 @@
    "omitted": []
   },
   {
+   "headword": "joel",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "約珥（聖經人物）",
+     "zh": "聖經中的先知，舊約《約珥書》的作者。",
+     "en": "a prophet in the Bible after whom the Book of Joel is named",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "《約珥書》",
+     "zh": "舊約聖經中的一卷先知書，以約珥為名。",
+     "en": "a book of the Old Testament named after the prophet Joel",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "喬爾（男子名）",
+     "zh": "英語系國家常見的男子名字，源自希伯來文。",
+     "en": "a common male first name of Hebrew origin",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "joey",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "無尾熊、袋鼠的幼獸",
+     "zh": "指袋鼠、無尾熊等有袋類動物生下來的寶寶，常見於動物園或自然生態報導。",
+     "en": "a baby kangaroo, koala, or other animal that carries its young in a pouch",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "喬伊（人名）",
+     "zh": "英文名字，在影集、歌曲或日常稱呼中很常見，例如《六人行》的角色 Joey。",
+     "en": "a male first name, often used for a friendly or easygoing character in stories and shows",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "幼獸（泛指所有動物的幼崽）",
+     "reason": "舊字典把範圍放得太寬；現代 joey 專指有袋類的幼獸，其他動物幼崽一般說 baby animal、cub、pup 等。"
+    }
+   ]
+  },
+  {
    "headword": "jog",
    "senses": [
     {
@@ -2333,6 +4283,89 @@
    ]
   },
   {
+   "headword": "jogger",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "慢跑者、慢跑的人",
+     "zh": "把慢跑當運動或健身的人，常在公園或路上看到。",
+     "en": "a person who runs slowly for exercise, often over a regular distance",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10243129-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "撞紙機（印刷用機械）",
+     "reason": "專業領域過窄，一般學習者不會遇到，且與本詞主要詞義無關"
+    }
+   ]
+  },
+  {
+   "headword": "jogging",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "慢跑（運動）",
+     "zh": "以輕鬆、穩定的速度跑步，當作健身運動。",
+     "en": "the activity of running slowly and steadily as a way to stay fit",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00629630-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "johann",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "約翰（男子名）",
+     "zh": "德語系常見的男子名字，英文常寫成 John，在台灣多見於外國人名音譯。",
+     "en": "a male given name of German origin, the German form of John",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "約翰（姓氏）",
+     "zh": "德語系姓氏，出現在人名或機構名稱中。",
+     "en": "a family name of German origin",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "johannesburg",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "約翰尼斯堡（南非城市）",
+     "zh": "南非東北部的最大城市，也是重要的經濟與商業中心。",
+     "en": "the largest city in South Africa, an important center of business and industry",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "約翰內斯堡",
+     "reason": "「約翰內斯堡」為中國大陸譯名，台灣通用譯名為「約翰尼斯堡」，已併入 senses 呈現"
+    }
+   ]
+  },
+  {
    "headword": "john",
    "senses": [
     {
@@ -2363,6 +4396,40 @@
     }
    ],
    "omitted": []
+  },
+  {
+   "headword": "johnnie",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "傢伙、小子（泛指男子）",
+     "zh": "口語中用來指某個男人或男孩，常帶親切或輕蔑語氣，前面常接形容詞。",
+     "en": "a man or boy, used in an informal way, often with an adjective before it",
+     "usage": "less_common",
+     "register": [
+      "informal",
+      "old"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "（蘇格蘭）小夥子",
+     "zh": "蘇格蘭英語中對年輕男子的稱呼，日常對話可見。",
+     "en": "a young man, used especially in Scottish English",
+     "usage": "rare",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "紈絝子、花花公子",
+     "reason": "舊字典義，現代英語幾乎不用，現多說 playboy、dandy"
+    }
+   ]
   },
   {
    "headword": "johnny",
@@ -2396,6 +4463,48 @@
     {
      "meaning": "（美國南北戰爭）南軍士兵的綽號",
      "reason": "歷史專有名詞，僅見於南北戰爭相關文獻，現代一般用法不會遇到"
+    }
+   ]
+  },
+  {
+   "headword": "johns",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "約翰斯（姓氏）",
+     "zh": "英文姓氏 Johns，源自 John 的父名形式，常見於人名或公司名。",
+     "en": "a family name of English origin, coming from the given name John",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "廁所、茅房（複數，口語）",
+     "zh": "口語中當複數名詞用，指廁所，常見於美式口語的 the johns。",
+     "en": "toilets, used in informal American English as the plural of john",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "嫖客（複數，口語）",
+     "zh": "口語中當複數名詞用，指上門買春的男客。",
+     "en": "men who pay for sex, used in informal speech as the plural of john",
+     "usage": "rare",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "約翰斯（姓氏）以外的專有名詞用法",
+     "reason": "參考資料僅列姓氏義，未收其他專有名詞用法"
     }
    ]
   },
@@ -2448,6 +4557,26 @@
     {
      "meaning": "約翰斯頓（舊式音譯）",
      "reason": "僅為同一姓氏的舊式中文音譯，與現行譯名重複，不另立詞義"
+    }
+   ]
+  },
+  {
+   "headword": "johnstone",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "約翰斯通（姓氏）",
+     "zh": "英文姓氏，蘇格蘭與英格蘭常見，也常作為地名或公司名使用。",
+     "en": "a family name common in Scotland and England, also used in place names and company names",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（英、葡）人名",
+     "reason": "與姓氏義重複，已合併為單一詞義"
     }
    ]
   },
@@ -2517,6 +4646,41 @@
     }
    ],
    "omitted": []
+  },
+  {
+   "headword": "joiner",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "木工、細木工",
+     "zh": "製作門窗、櫥櫃等木製品的工匠，常見於英式英語",
+     "en": "a skilled worker who makes wooden things such as doors, windows, and furniture",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10243539-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "愛參加社團的人",
+     "zh": "喜歡加入各種團體、社團的人，帶點貶義或戲謔",
+     "en": "a person who likes to join many groups or organizations",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "10243664-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "接合者、接合物",
+     "reason": "舊字典把動詞 join 的動作義硬套成名詞，現代英語不這樣用"
+    }
+   ]
   },
   {
    "headword": "joint",
@@ -2649,6 +4813,30 @@
    ]
   },
   {
+   "headword": "joist",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "托梁、小樑",
+     "zh": "建築中用來支撐地板或屋頂的橫樑，常以木材或鋼材製成。",
+     "en": "a strong horizontal bar, usually of wood or metal, that supports a floor or roof",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "03607053-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "桁",
+     "reason": "「桁」在中文多指屋架或橋梁的主要大樑，與 joist 所指地板、屋頂下方的小樑不同，屬舊字典的籠統譯法"
+    }
+   ]
+  },
+  {
    "headword": "joke",
    "senses": [
     {
@@ -2713,6 +4901,87 @@
      "reason": "現代少用，通常改說「prank」或「stunt」，此義已不常見。"
     }
    ]
+  },
+  {
+   "headword": "joker",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "愛開玩笑的人、搞笑的人",
+     "zh": "喜歡講笑話、逗別人笑的人，語氣通常中性或帶點親切。",
+     "en": "a person who likes telling jokes and making other people laugh",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10243768-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（撲克牌）鬼牌",
+     "zh": "撲克牌裡印著小丑圖案、可當萬用牌的那張牌。",
+     "en": "a playing card with a picture of a jester on it, often used as a wild card",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03607177-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "討厭的傢伙、愛鬧的人",
+     "zh": "指某人做了讓人覺得煩或沒大腦的事，帶點抱怨口氣。",
+     "en": "a person who does silly or annoying things that bother others",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "10243965-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（法律、文件中的）暗藏條款",
+     "zh": "合約或法案裡藏著、不容易馬上發現的附帶條款。",
+     "en": "a hidden part of a law or contract that changes its effect in a way people may not notice",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "06405694-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "傢伙",
+     "reason": "舊字典的泛稱用法，現代口語幾乎不用 joker 來泛指「傢伙」，改用 guy、guy 等字"
+    },
+    {
+     "meaning": "巧計",
+     "reason": "舊字典釋義，現代英文沒有這個用法，屬誤譯或罕用義"
+    }
+   ]
+  },
+  {
+   "headword": "jokingly",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "開玩笑地、打趣地",
+     "zh": "用輕鬆、不正經的語氣說或做，表示不是認真的。",
+     "en": "in a way that is meant as a joke and not to be taken seriously",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00386040-r",
+      "00086017-r"
+     ]
+    }
+   ],
+   "omitted": []
   },
   {
    "headword": "jolly",
@@ -2782,6 +5051,74 @@
    ]
   },
   {
+   "headword": "jolt",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "使震驚、使猛然醒悟",
+     "zh": "突然讓人在情緒或想法上受到強烈衝擊，常用於被動語態",
+     "en": "to shock someone suddenly, or make them realize something in a surprising way",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01766815-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "震動、顛簸",
+     "zh": "車輛或物體突然猛烈晃動一下",
+     "en": "a sudden strong shake or bump",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "07353698-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "猛震、顛簸",
+     "zh": "車輛行駛在不平路面時上下猛烈晃動，或使某物這樣晃動",
+     "en": "to move with sudden rough shakes, or to make something move that way",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01868851-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（情緒的）衝擊、震撼",
+     "zh": "突然受到驚嚇或打擊的感覺，例如「給了他一個震撼」",
+     "en": "a sudden strong feeling of surprise or shock",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "（身體的）猛然一抽",
+     "zh": "身體或肌肉突然不自主地抽動一下",
+     "en": "a sudden uncontrolled movement of the body or muscles",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00336814-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "猛擊",
+     "reason": "舊字典義，現代多改用 hit、punch 等字，jolt 已不這樣單獨使用"
+    },
+    {
+     "meaning": "使慌張",
+     "reason": "與「使震驚」意思重疊，已合併處理"
+    }
+   ]
+  },
+  {
    "headword": "jon",
    "senses": [
     {
@@ -2820,6 +5157,21 @@
      "synsets": [
       "07756831-n"
      ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "jonathon",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "喬納森（人名）",
+     "zh": "英文男子名 Jonathan 的常見拼法變體，用於稱呼或指稱人名。",
+     "en": "a male first name; a common spelling variant of Jonathan",
+     "usage": "common",
+     "register": [],
+     "synsets": []
     }
    ],
    "omitted": []
@@ -2889,6 +5241,106 @@
    ]
   },
   {
+   "headword": "jordanian",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "約旦的、約旦人的",
+     "zh": "用來形容與約旦這個國家或其人民、文化有關的事物。",
+     "en": "relating to Jordan or its people",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03088663-a"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "約旦人",
+     "zh": "指出生在約旦或具有約旦國籍的人。",
+     "en": "a person who comes from Jordan or lives there",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "09738207-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "jorge",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "豪爾赫（男子名）",
+     "zh": "西班牙語、葡萄牙語常見的男子名字，英文寫作 George。",
+     "en": "a male first name used in Spanish and Portuguese, the same name as George",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "jos",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "交沙黴素（抗生素）",
+     "zh": "一種巨環類抗生素的藥名，醫療與藥學文件才會出現。",
+     "en": "a macrolide antibiotic used to treat certain bacterial infections",
+     "usage": "rare",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "怡和科技（公司簡稱）",
+     "reason": "專有名詞的公司簡稱，不是一般詞義，學習者不需要學"
+    }
+   ]
+  },
+  {
+   "headword": "jose",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "荷西、約瑟（西班牙文名）",
+     "zh": "西班牙語系常見的男子名，英文寫作 Jose，在美國也很常見。",
+     "en": "a common male name in Spanish-speaking countries, also used in English-speaking places",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "約瑟（英文人名）",
+     "reason": "「約瑟」是 Joseph 的譯名，不是 Jose；Jose 對應的是「荷西」，原資料把兩個名字混為一談"
+    }
+   ]
+  },
+  {
+   "headword": "josef",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "約瑟夫（人名）",
+     "zh": "男子英文名 Josef，多見於中歐、北歐等地，英語圈較少見。",
+     "en": "a male first name used mainly in Central and Northern Europe",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "joseph",
    "senses": [
     {
@@ -2921,6 +5373,179 @@
       "formal"
      ],
      "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "josephine",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "約瑟芬（女子名）",
+     "zh": "常見的女性英文名字，源自法文，台灣多音譯為「約瑟芬」。",
+     "en": "a female given name of French origin",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "josh",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "開玩笑、戲弄",
+     "zh": "以輕鬆、不帶惡意的方式跟人開玩笑或逗弄對方。",
+     "en": "to tease someone in a friendly, not serious way",
+     "usage": "less_common",
+     "register": [
+      "informal",
+      "old"
+     ],
+     "synsets": [
+      "00856977-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "玩笑、戲謔",
+     "zh": "朋友之間無惡意的玩笑話或打趣。",
+     "en": "a friendly joke or light teasing between people",
+     "usage": "rare",
+     "register": [
+      "informal",
+      "old"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "joshua",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "約書亞（聖經人物）",
+     "zh": "舊約聖經中帶領以色列人進入迦南地的領袖，常作為男性名字使用。",
+     "en": "a leader in the Old Testament who brought the Israelites into Canaan; also a male name",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "《約書亞記》",
+     "zh": "聖經舊約的一卷書，記載約書亞帶領以色列人進入迦南的經過。",
+     "en": "a book of the Old Testament that tells how Joshua led the Israelites into Canaan",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "josie",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "喬茜（女子名）",
+     "zh": "Josie 是 Josephine 或 Joanna 的暱稱，常當作女性的名字使用。",
+     "en": "a female first name, often a short form of Josephine or Joanna",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "何超儀（中國香港演員）",
+     "reason": "這是把特定人物的中文名誤列為詞義；Josie 是英文人名，並非該演員的英文名，屬誤譯。"
+    }
+   ]
+  },
+  {
+   "headword": "jostle",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "推擠、擠來擠去",
+     "zh": "在人群中用力推開別人前進，或人群互相碰撞推來推去。",
+     "en": "to push or bump against people roughly while moving through a crowd",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01918446-v",
+      "01875673-v"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "爭奪、搶位子",
+     "zh": "在競爭中擠進某個位置或爭取機會，常用於比喻。",
+     "en": "to compete hard with others in order to get a place or an advantage",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "推擠、碰撞",
+     "zh": "人群互相推撞的動作或情況。",
+     "en": "the act of pushing roughly against other people in a crowd",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00114915-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "煽動",
+     "reason": "舊字典義，現代幾乎不用 jostle 表達煽動，多說 stir up、incite"
+    }
+   ]
+  },
+  {
+   "headword": "jot",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "匆匆記下、隨手寫下",
+     "zh": "把想到的事或聽到的資訊快速簡短地寫下來，常與 down 連用。",
+     "en": "to write something down quickly and in a few words",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01008101-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "一點點、少許",
+     "zh": "用來說明某事物只有極少量，常見於 not a jot 這種否定說法。",
+     "en": "a very small amount of something",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "13796315-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "簡短筆記、隨手記下",
+     "zh": "匆忙寫下的簡短記錄，現代口語較少單獨用名詞，多說 notes。",
+     "en": "a short note written down quickly",
+     "usage": "rare",
+     "register": [],
+     "synsets": [
+      "06517790-n"
+     ]
     }
    ],
    "omitted": []
@@ -3055,6 +5680,39 @@
    ]
   },
   {
+   "headword": "journalistic",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "新聞的、新聞業的",
+     "zh": "與新聞採訪、報導或新聞事業有關的。",
+     "en": "relating to the work of gathering and reporting news, or to the news business",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03088847-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "新聞寫作風格的、報導體的",
+     "zh": "形容寫作或說話方式像新聞報導，重視事實、簡潔、不帶個人情緒。",
+     "en": "written or spoken in a factual, direct style like that of news reports",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "03088847-a"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "報刊特有的",
+     "reason": "與「新聞業的」意思重疊，只是舊字典依詞性分行的重複列法，不另立詞義"
+    }
+   ]
+  },
+  {
    "headword": "journey",
    "senses": [
     {
@@ -3097,6 +5755,39 @@
     {
      "meaning": "遊歷（及物動詞，穿越某地）",
      "reason": "與不及物動詞的「旅行」意思重疊，且現代幾乎不用及物用法"
+    }
+   ]
+  },
+  {
+   "headword": "jovial",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "開朗的、快活的",
+     "zh": "形容人性格爽朗、愛說笑，與人相處時氣氛輕鬆愉快。",
+     "en": "cheerful and friendly, often laughing and joking with others",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01370567-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "（氣氛、場合）歡樂的",
+     "zh": "形容聚會或場合充滿笑聲、氣氛熱絡。",
+     "en": "full of fun and happy feelings, as of a party or gathering",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01370567-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "高興的、愉快的（泛指心情好）",
+     "reason": "與「開朗、快活」意思重疊，且現代多指性格或氣氛，不單指一時的高興，故合併不另列"
     }
    ]
   },
@@ -3172,6 +5863,219 @@
    "omitted": []
   },
   {
+   "headword": "joyful",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "開心的、愉快的",
+     "zh": "形容人心情很好、充滿喜悅，常用在較正式或書面描述。",
+     "en": "feeling very happy and full of pleasure",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "01366529-a",
+      "01370127-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "令人愉快的、歡樂的",
+     "zh": "形容場合、音樂、氣氛等讓人感到快樂、熱鬧。",
+     "en": "making people feel happy and cheerful, especially an event or sound",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "01366529-a"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "joyous",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "歡樂的、喜氣洋洋的",
+     "zh": "形容氣氛、場合或聲音充滿喜悅，帶有慶祝、熱鬧的感覺。",
+     "en": "full of happiness and bright, cheerful feeling, often describing a mood, event, or sound",
+     "usage": "common",
+     "register": [
+      "formal",
+      "literary"
+     ],
+     "synsets": [
+      "01369634-a"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "開心的、欣喜的",
+     "zh": "形容人因為好消息或好事而心情非常愉快。",
+     "en": "feeling very happy and pleased about something good",
+     "usage": "less_common",
+     "register": [
+      "formal",
+      "literary"
+     ],
+     "synsets": [
+      "01369634-a"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "joystick",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "遊戲搖桿、電玩手把",
+     "zh": "玩電腦或主機遊戲時用來控制方向和動作的握桿或控制器。",
+     "en": "a handle you hold and move to control the action in a computer or video game",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03608096-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（飛機的）操縱桿",
+     "zh": "飛行員用來控制飛機升降與傾斜的駕駛桿。",
+     "en": "a stick that a pilot moves to control the direction and height of an aircraft",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "04325114-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "jp",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "治安法官、地方司法官",
+     "zh": "在英美制度中負責處理地方輕微案件、主持初步聽審的基層司法人員。",
+     "en": "a local official who deals with minor legal cases and holds early court hearings",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "太平紳士（縮寫）",
+     "zh": "Justice of the Peace 的縮寫，常見於正式文件、新聞或稱謂中。",
+     "en": "a short way of writing Justice of the Peace, a local officer of the law",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "治安官、地方司法官（舊英漢字典釋義）",
+     "reason": "釋義本身正確，但舊字典未說明這是 Justice of the Peace 的縮寫，且現代日常英文幾乎不用 jp 這個拼法，已併入 senses 並改以縮寫說明。"
+    }
+   ]
+  },
+  {
+   "headword": "jr",
+   "senses": [
+    {
+     "pos": "abbr.",
+     "label": "小（Jr.，姓名後綴）",
+     "zh": "放在英文姓名後面，表示和父親同名，中文常譯作「小」",
+     "en": "used after a man's name when he has the same name as his father",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10247160-n"
+     ]
+    },
+    {
+     "pos": "abbr.",
+     "label": "初級的、資淺的（職稱）",
+     "zh": "放在職稱後面表示層級較低，例如 junior 的縮寫 Jr.",
+     "en": "used after a job title to show a lower or less experienced level",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "小（Junior 的縮寫，用於 junior high school 等）",
+     "reason": "與「初級、資淺」義重複，且多為 junior 一詞的縮寫，不另立義項"
+    }
+   ]
+  },
+  {
+   "headword": "js",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "JavaScript（程式語言）",
+     "zh": "網頁與應用程式開發常用的程式語言，常簡寫成 JS。",
+     "en": "a programming language used to make websites and apps interactive; short for JavaScript",
+     "usage": "common",
+     "register": [
+      "technical",
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "（檔案副檔名）.js",
+     "zh": "JavaScript 原始碼檔案的副檔名，常見於專案資料夾中。",
+     "en": "the file extension for a JavaScript source code file",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "射流研究（jet study 的縮寫）",
+     "reason": "舊字典的誤譯與罕用縮寫，現代英文幾乎不用 js 表示這個意思"
+    }
+   ]
+  },
+  {
+   "headword": "ju",
+   "senses": [
+    {
+     "pos": "abbr.",
+     "label": "六月（June）",
+     "zh": "書寫時用來簡寫「June（六月）」，常見於行事曆、日期標註與表格。",
+     "en": "a short written form of June, the sixth month of the year",
+     "usage": "less_common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "其他可能的字義（如「ju」作為其他詞的縮寫或外語詞）",
+     "reason": "參考資料未列，WordNet 亦無對應詞義，不憑空增列"
+    }
+   ]
+  },
+  {
    "headword": "juan",
    "senses": [
     {
@@ -3185,6 +6089,29 @@
     }
    ],
    "omitted": []
+  },
+  {
+   "headword": "jubilant",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "歡欣鼓舞的、喜氣洋洋的",
+     "zh": "因為成功、勝利或好消息而非常高興、充滿喜悅",
+     "en": "feeling or showing great happiness, especially because of a success or good news",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "00708342-s",
+      "01370127-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "歡呼的",
+     "reason": "「歡呼」是動作，不是形容詞的意思；字典把動詞用法混進來，現代英文 jubilant 只表示「非常高興」，不直接譯為「歡呼的」"
+    }
+   ]
   },
   {
    "headword": "jubilee",
@@ -3255,6 +6182,38 @@
      "reason": "範圍過寬且不精確，現代多指猶太文化或猶太民族，不單獨作為這個字的意思"
     }
    ]
+  },
+  {
+   "headword": "judas",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "叛徒、出賣朋友的人",
+     "zh": "表面上是朋友，實際上卻出賣、背叛對方的人，常帶強烈貶義。",
+     "en": "a person who pretends to be a friend but secretly betrays the people who trust them",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "10244788-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（門上的）防盜窺視孔",
+     "zh": "裝在門上、只能從屋內往外看的單向小孔，用來看門外是誰。",
+     "en": "a small opening in a door that lets you look outside without being seen",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "03608332-n"
+     ]
+    }
+   ],
+   "omitted": []
   },
   {
    "headword": "judge",
@@ -3448,6 +6407,42 @@
    ]
   },
   {
+   "headword": "judgmental",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "愛評斷的、愛批評的",
+     "zh": "常用來形容人動不動就對別人的行為或選擇下判斷、說對錯，帶有貶義。",
+     "en": "often criticizing other people and deciding that their behavior or choices are wrong",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "判斷性的、憑判斷的",
+     "zh": "用於描述需要靠判斷力做決定的事物，如判斷性決定或判斷性預測。",
+     "en": "based on or involving the use of judgment rather than fixed rules",
+     "usage": "less_common",
+     "register": [
+      "formal",
+      "technical"
+     ],
+     "synsets": [
+      "00651999-a"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "審判的",
+     "reason": "舊字典直譯，現代英文幾乎不用這個意思，屬古義"
+    }
+   ]
+  },
+  {
    "headword": "judicial",
    "senses": [
     {
@@ -3551,6 +6546,30 @@
    ]
   },
   {
+   "headword": "judicious",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "明智的、有判斷力的",
+     "zh": "形容人在實際事務上做出審慎而正確的判斷，常用於讚美決定或做法。",
+     "en": "showing good sense and careful judgment, especially in practical matters",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "01904789-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "頭腦精明的",
+     "reason": "與「明智的、有判斷力的」意思重疊，且「精明」在現代中文偏重善於算計，容易誤導，因此合併不另列。"
+    }
+   ]
+  },
+  {
    "headword": "judith",
    "senses": [
     {
@@ -3647,6 +6666,43 @@
     {
      "meaning": "模仿夜鶯的叫聲",
      "reason": "古義，現代已不使用"
+    }
+   ]
+  },
+  {
+   "headword": "juggernaut",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "龐大勢力、不可阻擋的力量",
+     "zh": "指規模龐大、難以阻擋、會碾壓一切的人事物，如企業、組織、潮流或運動。",
+     "en": "a very large and powerful person, group, or force that cannot be stopped and seems to crush anything in its way",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "10246226-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "重型卡車、巨型車輛",
+     "zh": "口語指體積龐大、氣勢驚人的卡車或車輛，常見於新聞與日常描述。",
+     "en": "a very large and heavy truck or vehicle that takes up a lot of space",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "黑天（Krishna）的粗製神像",
+     "reason": "宗教史專有名詞，現代一般英文幾乎不用，僅見於印度宗教文化相關文獻"
+    },
+    {
+     "meaning": "世界主宰",
+     "reason": "舊字典釋義，屬古義與誤譯，現代英文不這樣使用"
     }
    ]
   },
@@ -3875,6 +6931,49 @@
    ]
   },
   {
+   "headword": "jukebox",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "自動點唱機、投幣式點唱機",
+     "zh": "酒吧、餐廳裡投幣或付費就能點播歌曲的機器，現在多為數位形式。",
+     "en": "a machine in a bar or restaurant that plays music when you put in a coin or pay",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03609369-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（數位）點播音樂服務",
+     "zh": "網路時代用來比喻可隨選播放音樂的串流服務或播放清單。",
+     "en": "a service or collection that lets you play any song you choose on demand",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "jules",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "朱爾斯（男子名）",
+     "zh": "法語系男子名 Jules 的英文拼法，常見於人名或暱稱。",
+     "en": "a male first name of French origin, used as a given name or nickname",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "julia",
    "senses": [
     {
@@ -3984,6 +7083,93 @@
      "synsets": [
       "15236963-n"
      ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "jumble",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "混雜的一堆、雜亂",
+     "zh": "指東西隨意堆在一起、毫無秩序的狀態或一堆雜物。",
+     "en": "a messy collection of different things mixed together without order",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "14524151-n"
+     ]
+    },
+    {
+     "pos": "v.",
+     "label": "使混雜、弄亂",
+     "zh": "把東西隨意混在一起或弄亂順序，常用被動語態。",
+     "en": "to mix things together in a messy or confused way",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02745736-v",
+      "01660937-v",
+      "01475437-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（英式）圓環小餅乾",
+     "zh": "英國傳統的環形小餅乾，常出現在 jumble sale（舊物義賣）這類活動中。",
+     "en": "a small ring-shaped cookie, traditionally sold at British charity events",
+     "usage": "less_common",
+     "register": [
+      "old"
+     ],
+     "synsets": [
+      "07649470-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "拼湊的理論、雜亂想法",
+     "zh": "把不相干的概念硬湊在一起的說法或論點。",
+     "en": "a set of ideas or arguments put together in a way that does not make sense",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "05962283-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "薄餅",
+     "reason": "舊字典把 ring-shaped cake 誤譯成薄餅，實際是環形小餅乾，已併入餅乾義"
+    }
+   ]
+  },
+  {
+   "headword": "jumbo",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "巨大的、特大號的",
+     "zh": "形容尺寸比一般大很多的東西，常見於商品名稱或包裝標示。",
+     "en": "much bigger than the usual size of something",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01388707-s"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "巨無霸、龐然大物",
+     "zh": "口語指體型特別龐大的人或物，也常出現在「Jumbo」這類名稱中。",
+     "en": "a very large person or thing, often used in names",
+     "usage": "less_common",
+     "register": [
+      "informal"
+     ],
+     "synsets": []
     }
    ],
    "omitted": []
@@ -4191,6 +7377,75 @@
    ]
   },
   {
+   "headword": "jumping",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "跳躍的、蹦跳的",
+     "zh": "形容動作帶有跳躍或彈跳的樣子，常用於描述活動、運動或動物。",
+     "en": "moving or acting with jumps; often used before a noun to describe activity that involves jumping",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "跳躍（動作）",
+     "zh": "指從地面或某處蹬起、騰空而起的動作，多用於運動或體能情境。",
+     "en": "the act of pushing yourself off the ground and into the air",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "00120388-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "跳躍項目（田徑）",
+     "zh": "指田徑比賽中的跳躍類項目，如跳高、跳遠等。",
+     "en": "a track-and-field event in which athletes compete at jumping",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00441158-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "jumpsuit",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "連身褲裝",
+     "zh": "上衣和褲子連成一體的服裝，常見於時尚穿搭、工作服或表演服。",
+     "en": "a piece of clothing that joins a top and trousers in one piece",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "03610811-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "飛行裝、跳傘裝",
+     "zh": "跳傘或跳傘人員穿的連身工作服，是這個字原本的意思。",
+     "en": "a one-piece suit worn by people who jump from planes",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "03610811-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
    "headword": "junction",
    "senses": [
     {
@@ -4234,6 +7489,44 @@
     }
    ],
    "omitted": []
+  },
+  {
+   "headword": "juncture",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "關鍵時刻、關頭",
+     "zh": "某個必須做出重大決定或情勢可能改變的重要時間點。",
+     "en": "a particular point in time when an important decision must be made or something may change",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "07431314-n",
+      "14056667-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "接合處、接縫",
+     "zh": "兩個部分連接在一起的地方或方式，常見於技術或正式描述。",
+     "en": "the place or way in which two things are joined together",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "13934166-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "連線",
+     "reason": "與「接合處」意思重複，且現代少見單獨這樣使用"
+    }
+   ]
   },
   {
    "headword": "june",
@@ -4379,6 +7672,39 @@
    ]
   },
   {
+   "headword": "juniper",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "杜松、檜柏類植物",
+     "zh": "一種常綠灌木或小喬木，葉呈針狀、結藍黑色漿果狀球果，常見於溫帶地區，也常種來做庭園造景。",
+     "en": "an evergreen bush or small tree with needle-like leaves and small dark berries, often grown in gardens",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "86613990-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "杜松木",
+     "zh": "杜松的木材，帶有香氣，可用來製作小件木器或當燃料。",
+     "en": "the wood of this tree, often used for small wooden items or as fuel",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "80945361-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "敘利亞、阿拉伯沙漠的灌木（舊約聖經中的「杜松」）",
+     "reason": "植物分類上的特定地域品種，現代一般英文幾乎不用，且與主要詞義重疊"
+    }
+   ]
+  },
+  {
    "headword": "junk",
    "senses": [
     {
@@ -4440,6 +7766,174 @@
    ]
   },
   {
+   "headword": "junkie",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "（某事物的）狂熱者、成癮者",
+     "zh": "因為太喜歡某件事而無法停下來的人，常接在名詞後面形成複合詞，如咖啡狂、購物狂。",
+     "en": "a person who cannot stop doing or using something because they enjoy it too much",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "09788499-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "吸毒者、毒癮者",
+     "zh": "對毒品成癮的人，新聞與日常談話中常用。",
+     "en": "a person who is addicted to illegal drugs",
+     "usage": "common",
+     "register": [
+      "informal"
+     ],
+     "synsets": [
+      "10055677-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "廢舊品商人",
+     "reason": "舊字典的過時義，現代英文已不用 junkie 指收破爛或賣舊貨的人"
+    }
+   ]
+  },
+  {
+   "headword": "junkyard",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "廢棄物堆放場、回收場",
+     "zh": "專門堆放舊車、廢金屬等廢棄物，等待回收或轉賣的地方。",
+     "en": "a place where old cars, machines, and other waste things are kept before being sold or thrown away",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "08604533-n"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "廢品舊貨棧",
+     "reason": "舊字典用語，現代英文不這樣說；已併入「廢棄物堆放場」這個意思"
+    }
+   ]
+  },
+  {
+   "headword": "junta",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "軍政府、軍事執政團",
+     "zh": "以武力奪取政權後統治國家的軍人集團，常見於拉丁美洲、非洲等地的政治報導。",
+     "en": "a group of military officers who take control of a country by force and then rule it",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "08258885-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "派系、小集團",
+     "zh": "泛指把持權力、私下運作的一小群人，常用在政治或組織內部的批評語境。",
+     "en": "a small group of people who hold power and make decisions among themselves",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "私黨、陰謀小集團",
+     "reason": "與「派系、小集團」詞義重複，已合併"
+    },
+    {
+     "meaning": "政務會",
+     "reason": "舊字典的泛稱譯法，現代英語中幾乎不單獨這樣用"
+    }
+   ]
+  },
+  {
+   "headword": "jupiter",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "木星",
+     "zh": "太陽系中體積最大的行星，位於火星與土星之間。",
+     "en": "the largest planet in the solar system, the fifth from the sun",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "朱庇特（羅馬主神）",
+     "zh": "羅馬神話中的眾神之王，相當於希臘神話的宙斯。",
+     "en": "the king of the gods in ancient Roman stories, the same as the Greek god Zeus",
+     "usage": "less_common",
+     "register": [
+      "literary"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "朱庇物",
+     "reason": "舊字典的錯字，應為「朱庇特」。"
+    }
+   ]
+  },
+  {
+   "headword": "jurassic",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "侏羅紀的",
+     "zh": "指地質年代中生代的第二個時期，常見於恐龍、化石與地層相關話題。",
+     "en": "relating to the middle period of the Mesozoic era, when dinosaurs were common",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "02764250-a"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "侏羅紀",
+     "zh": "地質年代名稱，日常多半透過電影或恐龍話題接觸到。",
+     "en": "the middle period of the Mesozoic era, between the Triassic and Cretaceous",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "02764250-a"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "侏羅系的",
+     "reason": "地質學專用地層術語，與「侏羅紀的」實質相同，一般學習者少見"
+    }
+   ]
+  },
+  {
    "headword": "jurisdiction",
    "senses": [
     {
@@ -4478,6 +7972,110 @@
       "formal"
      ],
      "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "jurisdictional",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "管轄權的、司法管轄的",
+     "zh": "與某個機關、法院或政府單位有權管轄的範圍或權力有關。",
+     "en": "relating to the power of a court, authority, or government to make decisions or enforce laws in an area",
+     "usage": "common",
+     "register": [
+      "formal",
+      "technical"
+     ],
+     "synsets": [
+      "02417589-s"
+     ]
+    },
+    {
+     "pos": "adj.",
+     "label": "跨管轄區的、涉及多個管轄區的",
+     "zh": "常用於法律、金融、企業等領域，指涉及不同地區或機關各自管轄權的情況。",
+     "en": "involving the legal powers of more than one area or authority",
+     "usage": "less_common",
+     "register": [
+      "formal",
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "裁決權的",
+     "reason": "與「管轄權」意思重疊，現代多併入管轄權一義，不另列。"
+    }
+   ]
+  },
+  {
+   "headword": "jurisprudence",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "法學、法律學",
+     "zh": "研究法律本質與原理的學科，多見於大學課程或學術討論。",
+     "en": "the study of the nature and principles of law, especially as an academic subject",
+     "usage": "common",
+     "register": [
+      "formal",
+      "technical"
+     ],
+     "synsets": [
+      "06171434-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "法律體系",
+     "zh": "某一國家或地區整套法律規則的總稱，常用於正式或學術文章。",
+     "en": "the whole system of laws of a particular country or region",
+     "usage": "less_common",
+     "register": [
+      "formal",
+      "technical"
+     ],
+     "synsets": [
+      "08458195-n"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "jurist",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "法學家、法律學者",
+     "zh": "指研究法律、精通法學理論的學者，常見於學術或正式文章。",
+     "en": "a person who has studied law in depth and writes or teaches about it",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "10247655-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "法官、司法官",
+     "zh": "指有權在法院審理並裁決案件的司法人員，屬較正式或舊式的說法。",
+     "en": "an official with the power to decide cases in a court of law",
+     "usage": "less_common",
+     "register": [
+      "formal",
+      "old"
+     ],
+     "synsets": [
+      "10244889-n"
+     ]
     }
    ],
    "omitted": []
@@ -4547,6 +8145,44 @@
     {
      "meaning": "應急的（jury-rigged 的 jury）",
      "reason": "此義實際上是 jury-rigged 的截短用法，單獨作形容詞在現代英文幾乎不用，字典的 a. 標註屬舊式處理"
+    }
+   ]
+  },
+  {
+   "headword": "jus",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "（食物的）肉汁、醬汁",
+     "zh": "指淋在肉或菜餚上的湯汁，常見於菜單或食譜，是 jus 在現代英文最常見的用法。",
+     "en": "a thin sauce made from the juices that come out of meat when it is cooked, or a similar sauce served with food",
+     "usage": "common",
+     "register": [
+      "technical"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "n.",
+     "label": "（法律上的）權利、法理",
+     "zh": "法律或正式文書中用來指某項權利或法律原則，一般日常對話很少這樣用。",
+     "en": "a right or a principle of law, used mainly in legal writing",
+     "usage": "less_common",
+     "register": [
+      "formal",
+      "technical"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "（拉）法律",
+     "reason": "拉丁文原義，現代英文只在法律術語或固定片語中殘留，一般學習者幾乎不會遇到"
+    },
+    {
+     "meaning": "汁液",
+     "reason": "與「肉汁、醬汁」意思重複，已合併為同一詞義"
     }
    ]
   },
@@ -4734,6 +8370,52 @@
    ]
   },
   {
+   "headword": "justifiable",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "有正當理由的、說得過去的",
+     "zh": "指某個行為、決定或做法有充分理由，能被接受或辯護。",
+     "en": "able to be shown to be reasonable or acceptable because there is a good reason for it",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "01726375-s"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "可證明的",
+     "reason": "舊字典把 justify 的「證明」義直接套用，現代英文幾乎不用 justifiable 表達「可證明」，多說 provable 或 can be proven"
+    }
+   ]
+  },
+  {
+   "headword": "justifiably",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "有正當理由地、情有可原",
+     "zh": "表示某個行為或感受有充分理由，別人難以責怪。",
+     "en": "in a way that is fair and has a good reason",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00240401-r"
+     ]
+    }
+   ],
+   "omitted": [
+    {
+     "meaning": "無可非議地",
+     "reason": "舊字典釋義偏窄，現代多指「有正當理由」，而非「完全無可批評」"
+    }
+   ]
+  },
+  {
    "headword": "justification",
    "senses": [
     {
@@ -4766,6 +8448,34 @@
      "reason": "宗教用語，指宣告無罪或赦免罪過，現代一般英文幾乎不用"
     }
    ]
+  },
+  {
+   "headword": "justified",
+   "senses": [
+    {
+     "pos": "adj.",
+     "label": "有道理的、合理的",
+     "zh": "指某個做法、決定或反應有充分理由，讓人覺得可以接受。",
+     "en": "having a good reason; fair and reasonable",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    },
+    {
+     "pos": "adj.",
+     "label": "（排版）左右對齊的",
+     "zh": "指文字排版時左右兩邊邊界都對齊、看起來整齊。",
+     "en": "arranged so that the text is even on both the left and right sides",
+     "usage": "less_common",
+     "register": [
+      "technical"
+     ],
+     "synsets": [
+      "00913864-s"
+     ]
+    }
+   ],
+   "omitted": []
   },
   {
    "headword": "justify",
@@ -4801,6 +8511,93 @@
      "reason": "宗教神學專用義，現代一般英文幾乎不用"
     }
    ]
+  },
+  {
+   "headword": "justin",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "賈斯汀（男子名）",
+     "zh": "常見的英文男子名字，也常寫作 Justin。",
+     "en": "a common English first name for a man or boy",
+     "usage": "common",
+     "register": [],
+     "synsets": []
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "justly",
+   "senses": [
+    {
+     "pos": "adv.",
+     "label": "公正地、公平地",
+     "zh": "依照道德或法律標準公平對待他人，不偏袒任何一方。",
+     "en": "in a fair way that follows moral or legal standards and treats people equally",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00206553-r"
+     ]
+    },
+    {
+     "pos": "adv.",
+     "label": "理所當然地、有充分理由地",
+     "zh": "因為有充分理由或事實根據，所以理當如此，常用於 justly proud、justly famous 等搭配。",
+     "en": "with good reason, because something is deserved or based on facts",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    },
+    {
+     "pos": "adv.",
+     "label": "誠實地、正直地",
+     "zh": "以誠實正直的方式行事，不欺騙他人。",
+     "en": "in an honest way, without deceiving anyone",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "00206702-r"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "jut",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "突出、伸出",
+     "zh": "指某物從表面或邊緣向外凸出，常與 out 連用。",
+     "en": "to stick out from a surface or edge, often used with \"out\"",
+     "usage": "common",
+     "register": [],
+     "synsets": [
+      "02719247-v"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "突出部分、尖端",
+     "zh": "指從物體表面凸出來的部分，較少單獨使用。",
+     "en": "a part that sticks out from the surface of something",
+     "usage": "less_common",
+     "register": [],
+     "synsets": [
+      "13917127-n",
+      "00407911-n"
+     ]
+    }
+   ],
+   "omitted": []
   },
   {
    "headword": "juvenile",
@@ -4848,6 +8645,56 @@
      "reason": "現代少用，通常說 children's books 或 young adult literature"
     }
    ]
+  },
+  {
+   "headword": "juxtapose",
+   "senses": [
+    {
+     "pos": "v.",
+     "label": "並置、並列",
+     "zh": "把兩樣東西放在一起，通常是為了比較或對照。",
+     "en": "to put two or more things next to each other, often to compare or contrast them",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "01504599-v"
+     ]
+    }
+   ],
+   "omitted": []
+  },
+  {
+   "headword": "juxtaposition",
+   "senses": [
+    {
+     "pos": "n.",
+     "label": "並置、並列",
+     "zh": "把兩樣東西放在一起（尤其是為了比較或對照）",
+     "en": "the act of putting two or more things next to each other, often to compare or contrast them",
+     "usage": "common",
+     "register": [
+      "formal"
+     ],
+     "synsets": [
+      "01053725-n",
+      "08641670-n"
+     ]
+    },
+    {
+     "pos": "n.",
+     "label": "（並置形成的）對比、對照",
+     "zh": "兩樣差異很大的事物並排呈現時所產生的對比效果，常用於藝術、文學、寫作分析",
+     "en": "a noticeable contrast produced when very different things are placed together, especially in art or writing",
+     "usage": "less_common",
+     "register": [
+      "formal"
+     ],
+     "synsets": []
+    }
+   ],
+   "omitted": []
   }
  ]
 }

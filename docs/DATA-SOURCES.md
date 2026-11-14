@@ -34,6 +34,7 @@ Moji 的字典資料（`dict_` 開頭的表）全部由 `scripts/import/` 的匯
 | 例句：LLM（deepseek-flash） | 26,658 句 |
 | 例句：LLM（claude-opus-5-5，試跑） | 100 句 |
 | 例句與詞條的關聯 | 103,372 筆，涵蓋 22,059 個詞條 |
+| LLM 現代化詞條（`dict_entry_senses`） | 58,876 個詞義，涵蓋 22,826 個詞條（2026-11-14 本機，正式環境尚未同步） |
 
 例句覆蓋率：
 
@@ -150,7 +151,7 @@ ECDICT 與 WordNet 源自舊字典：收了古義（apprehensive「敏悟的」�
 - 古義、罕用義放在 JSON 的 `omitted`（附原因），不進資料庫
 - 提示要求補上現代網路、科技用法（stream「串流」、ghost「突然斷聯」），並以自己的話撰寫英英釋義、不照抄有著作權的字典
 - 資料檔依字首分檔：`data/llm/entries/full/<字首>.json`；試跑與抽查對照在 `data/llm/entries/*.md`
-- 目前進度（2026-11-13，deepseek-flash）：10,696 字、33,969 個詞義，涵蓋詞頻約前 9,600 名。計畫做到詞頻前 2 萬，其餘的字維持 ECDICT／WordNet
+- 目前進度（2026-11-14，deepseek-flash，已完成）：詞頻前 2 萬名共 23,081 字，產生 22,826 字、58,876 個詞義。其餘 255 字（多為感嘆詞、助動詞、縮寫，如 aah、alas、could、bp）未通過檢查（詞性給了 interj./aux./art.、混入簡體字或半形標點），記在 `failed.json`，已決定不補，維持 ECDICT／WordNet；詞頻 2 萬名以外的字也一樣
 - 與 `dict_senses`（例句分組用）是兩套獨立資料
 
 ```bash
