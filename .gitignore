@@ -43,3 +43,7 @@ next-env.d.ts
 
 # raw dictionary data (downloaded, not versioned)
 /data/raw/
+
+# 編輯器／工具的本機設定
+.cursor/
+.impeccable/config.local.json

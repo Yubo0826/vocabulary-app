@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-14T00:00:00.000Z",
+  "title": "Design System: Moji 單字本",
+  "extensions": {
+    "colorMeta": {
+      "periwinkle": { "role": "primary", "displayName": "長春花藍 Periwinkle", "canonical": "#4263eb", "tonalRamp": ["#001257", "#00228b", "#1937b8", "#3451d1", "#4263eb", "#7f92ff", "#b9c3ff", "#dde1ff"] },
+      "mist-container": { "role": "secondary", "displayName": "霧藍容器 Mist Container", "canonical": "#dee1f9", "tonalRamp": ["#171b2c", "#2e3245", "#424659", "#5a5d72", "#73768c", "#a9abc2", "#c4c6dd", "#dee1f9"] },
+      "paper": { "role": "neutral", "displayName": "紙面 Paper", "canonical": "#fbf8ff", "tonalRamp": ["#131318", "#1f1f25", "#2a292f", "#46464f", "#767680", "#c6c5d0", "#e8e6ee", "#fbf8ff"] },
+      "paper-raised": { "role": "neutral", "displayName": "抬高的紙 Paper Raised", "canonical": "#f2f0f8" },
+      "paper-high": { "role": "neutral", "displayName": "更高的紙 Paper High", "canonical": "#e8e6ee" },
+      "menu-paper": { "role": "neutral", "displayName": "選單紙 Menu Paper", "canonical": "#efedf4" },
+      "ink": { "role": "neutral", "displayName": "墨色 Ink", "canonical": "#1b1b21" },
+      "ink-soft": { "role": "neutral", "displayName": "淡墨 Ink Soft", "canonical": "#5d5e67" },
+      "hairline": { "role": "neutral", "displayName": "細線 Hairline", "canonical": "#c6c5d0" },
+      "field-outline": { "role": "neutral", "displayName": "欄位外框 Field Outline", "canonical": "#767680" },
+      "highlighter": { "role": "tertiary", "displayName": "螢光筆 Highlighter", "canonical": "#fdf0c4" }
+    },
+    "typographyMeta": {
+      "word-display": { "displayName": "Word Display", "purpose": "單字頁標題與複習卡上的英文單字，全站唯一的粗體大字。" },
+      "hero": { "displayName": "Hero", "purpose": "首頁「查單字」，大而不粗。" },
+      "headline": { "displayName": "Headline", "purpose": "各頁頁面標題。" },
+      "title": { "displayName": "Title", "purpose": "區塊小標題、對話框標題。" },
+      "body": { "displayName": "Body", "purpose": "釋義、例句、筆記。" },
+      "body-small": { "displayName": "Body Small", "purpose": "清單、按鈕、說明文字。" },
+      "section-label": { "displayName": "Section Label", "purpose": "單字頁卡片的區塊標題，寬字距淡墨色。" },
+      "phonetic": { "displayName": "Phonetic", "purpose": "音標與快捷鍵。" }
+    },
+    "shadows": [
+      { "name": "none-at-rest", "value": "none", "purpose": "卡片、區塊、頁首靜止時沒有陰影（--surface-shadow: none）。" },
+      { "name": "filled-hover", "value": "0 1px 2px 0 rgb(0 0 0 / 0.05)", "purpose": "只在 filled 按鈕 hover 時出現。" },
+      { "name": "overlay", "value": "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)", "purpose": "浮在內容上的彈出層：選單、popover、展開的搜尋清單。" }
+    ],
+    "motion": [
+      { "name": "state-change", "value": "150ms cubic-bezier(0.4, 0, 0.2, 1)", "purpose": "state layer、顏色變化。" },
+      { "name": "segment-slide", "value": "200ms ease-out", "purpose": "熟悉度選中格滑動；prefers-reduced-motion 時關閉。" }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "container", "value": "720px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Filled Button",
+      "kind": "button",
+      "refersTo": "button-filled",
+      "description": "一頁最主要的動作，一個畫面只放一個。",
+      "html": "<button class=\"ds-btn-filled\">顯示答案</button>",
+      "css": ".ds-btn-filled { font-family: var(--app-font, 'Roboto Flex', 'Noto Sans TC', sans-serif); height: 40px; padding: 0 16px; border: none; border-radius: 9999px; background: var(--primary, #4263eb); color: var(--primary-foreground, #fff); font-size: 14px; font-weight: 500; cursor: pointer; transition: background-color 150ms, box-shadow 150ms; } .ds-btn-filled:hover { background: color-mix(in srgb, var(--primary, #4263eb), var(--primary-foreground, #fff) 8%); box-shadow: 0 1px 2px rgb(0 0 0 / .05); } .ds-btn-filled:active { background: color-mix(in srgb, var(--primary, #4263eb), var(--primary-foreground, #fff) 12%); } .ds-btn-filled:focus-visible { outline: none; box-shadow: 0 0 0 3px color-mix(in srgb, var(--ring, #4263eb) 50%, transparent); }"
+    },
+    {
+      "name": "Tonal Button",
+      "kind": "button",
+      "refersTo": "button-tonal",
+      "description": "次要但常用的動作；單字頁標題列的圓形圖示按鈕也用這個。",
+      "html": "<button class=\"ds-btn-tonal\">加入單字本</button>",
+      "css": ".ds-btn-tonal { font-family: var(--app-font, 'Roboto Flex', 'Noto Sans TC', sans-serif); height: 40px; padding: 0 16px; border: none; border-radius: 9999px; background: var(--secondary, #dee1f9); color: var(--secondary-foreground, #2e3245); font-size: 14px; font-weight: 500; cursor: pointer; transition: background-color 150ms; } .ds-btn-tonal:hover { background: color-mix(in srgb, var(--secondary, #dee1f9), var(--secondary-foreground, #2e3245) 8%); } .ds-btn-tonal:active { background: color-mix(in srgb, var(--secondary, #dee1f9), var(--secondary-foreground, #2e3245) 12%); } .ds-btn-tonal:focus-visible { outline: none; box-shadow: 0 0 0 3px color-mix(in srgb, var(--ring, #4263eb) 50%, transparent); }"
+    },
+    {
+      "name": "Outlined Icon Button",
+      "kind": "button",
+      "refersTo": "button-outlined",
+      "description": "發音等輔助動作：細線外框＋主色圖示。",
+      "html": "<button class=\"ds-btn-outlined\" aria-label=\"播放發音\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z\"/><path d=\"M16 9a5 5 0 0 1 0 6\"/><path d=\"M19.364 18.364a9 9 0 0 0 0-12.728\"/></svg></button>",
+      "css": ".ds-btn-outlined { width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid var(--border, #c6c5d0); border-radius: 9999px; background: transparent; color: var(--primary, #4263eb); cursor: pointer; transition: background-color 150ms; } .ds-btn-outlined:hover { background: color-mix(in srgb, var(--primary, #4263eb) 8%, transparent); } .ds-btn-outlined:active { background: color-mix(in srgb, var(--primary, #4263eb) 12%, transparent); } .ds-btn-outlined:focus-visible { outline: none; box-shadow: 0 0 0 3px color-mix(in srgb, var(--ring, #4263eb) 50%, transparent); }"
+    },
+    {
+      "name": "Search Bar",
+      "kind": "input",
+      "refersTo": "search-bar",
+      "description": "招牌元件：56px 膠囊搜尋列，沒有框也沒有聚焦外環。",
+      "html": "<label class=\"ds-search\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"11\" cy=\"11\" r=\"8\"/><path d=\"m21 21-4.3-4.3\"/></svg><input type=\"search\" placeholder=\"輸入英文單字或片語\"></label>",
+      "css": ".ds-search { font-family: var(--app-font, 'Roboto Flex', 'Noto Sans TC', sans-serif); display: flex; align-items: center; gap: 12px; height: 56px; max-width: 560px; padding: 0 20px 0 18px; border-radius: 9999px; background: var(--muted, #e8e6ee); color: var(--muted-foreground, #5d5e67); } .ds-search input { flex: 1; border: none; outline: none; background: transparent; font: inherit; font-size: 17px; color: var(--foreground, #1b1b21); } .ds-search input::placeholder { color: var(--muted-foreground, #5d5e67); }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "text-field",
+      "description": "Material outlined text field，4px 圓角。",
+      "html": "<input class=\"ds-field\" placeholder=\"Email\">",
+      "css": ".ds-field { font-family: var(--app-font, 'Roboto Flex', 'Noto Sans TC', sans-serif); height: 40px; width: 260px; padding: 4px 12px; border: 1px solid var(--input, #767680); border-radius: 4px; background: transparent; color: var(--foreground, #1b1b21); font-size: 14px; outline: none; transition: border-color 150ms, box-shadow 150ms; } .ds-field:focus-visible { border-color: var(--ring, #4263eb); box-shadow: 0 0 0 3px color-mix(in srgb, var(--ring, #4263eb) 50%, transparent); }"
+    },
+    {
+      "name": "Card with Section Label",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "單字頁區塊：抬高一階的表面色，沒有陰影和框。",
+      "html": "<section class=\"ds-card\"><h2>釋義</h2><p><b>n. 氣勢、動能</b></p><p class=\"ds-muted\">事情持續發展、越來越旺的推動力量。</p></section>",
+      "css": ".ds-card { font-family: var(--app-font, 'Roboto Flex', 'Noto Sans TC', sans-serif); max-width: 520px; padding: 16px 20px; border-radius: 16px; background: var(--card, #f2f0f8); color: var(--card-foreground, #1b1b21); display: flex; flex-direction: column; gap: 8px; } .ds-card h2 { margin: 0; font-size: 12px; font-weight: 600; letter-spacing: .1em; color: var(--muted-foreground, #5d5e67); } .ds-card p { margin: 0; font-size: 16px; line-height: 1.625; } .ds-card .ds-muted { color: var(--muted-foreground, #5d5e67); }"
+    },
+    {
+      "name": "Top Navigation",
+      "kind": "nav",
+      "refersTo": "nav-item-active",
+      "description": "頁首導航：膠囊項目，目前位置填霧藍容器。",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\" aria-current=\"page\">複習</a><a href=\"#\">我的單字</a><a href=\"#\">筆記</a></nav>",
+      "css": ".ds-nav { font-family: var(--app-font, 'Roboto Flex', 'Noto Sans TC', sans-serif); display: flex; gap: 4px; font-size: 14px; } .ds-nav a { padding: 4px 12px; border-radius: 9999px; color: var(--foreground, #1b1b21); text-decoration: none; transition: background-color 150ms; } .ds-nav a:hover { background: color-mix(in srgb, var(--foreground, #1b1b21) 8%, transparent); } .ds-nav a[aria-current=page] { background: var(--accent, #dee1f9); color: var(--accent-foreground, #2e3245); font-weight: 600; }"
+    },
+    {
+      "name": "Primary Tabs",
+      "kind": "nav",
+      "refersTo": "tab-active",
+      "description": "Material 3 primary tabs：選中文字變主色＋3px 圓頭指示條。",
+      "html": "<div class=\"ds-tabs\" role=\"tablist\"><button role=\"tab\" aria-selected=\"true\">釋義</button><button role=\"tab\" aria-selected=\"false\">相似</button></div>",
+      "css": ".ds-tabs { font-family: var(--app-font, 'Roboto Flex', 'Noto Sans TC', sans-serif); display: flex; height: 48px; max-width: 520px; border-bottom: 1px solid var(--border, #c6c5d0); } .ds-tabs button { position: relative; flex: 1; border: none; background: transparent; font: inherit; font-size: 16px; font-weight: 500; color: var(--muted-foreground, #5d5e67); cursor: pointer; transition: background-color 150ms, color 150ms; } .ds-tabs button:hover { background: color-mix(in srgb, var(--foreground, #1b1b21) 8%, transparent); color: var(--foreground, #1b1b21); } .ds-tabs button[aria-selected=true] { color: var(--primary, #4263eb); } .ds-tabs button[aria-selected=true]::after { content: ''; position: absolute; bottom: 0; left: 50%; width: 56px; height: 3px; transform: translateX(-50%); border-radius: 3px 3px 0 0; background: var(--primary, #4263eb); }"
+    },
+    {
+      "name": "Segmented Button",
+      "kind": "chip",
+      "refersTo": "segmented-selected",
+      "description": "美式／英式切換：外框膠囊，選中格填霧藍容器。",
+      "html": "<div class=\"ds-seg\" role=\"radiogroup\"><button role=\"radio\" aria-checked=\"true\">美式</button><button role=\"radio\" aria-checked=\"false\">英式</button></div>",
+      "css": ".ds-seg { font-family: var(--app-font, 'Roboto Flex', 'Noto Sans TC', sans-serif); display: inline-flex; overflow: hidden; border: 1px solid var(--input, #767680); border-radius: 9999px; } .ds-seg button { height: 28px; padding: 0 12px; border: none; background: transparent; font: inherit; font-size: 13px; font-weight: 500; color: var(--foreground, #1b1b21); cursor: pointer; } .ds-seg button + button { border-left: 1px solid var(--input, #767680); } .ds-seg button:hover { background: color-mix(in srgb, var(--foreground, #1b1b21) 8%, transparent); } .ds-seg button[aria-checked=true] { background: var(--secondary, #dee1f9); color: var(--secondary-foreground, #2e3245); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "安靜的工具（The Quiet Instrument）",
+    "overview": "Moji 像 Google 自家的工具 App：不搶戲、一眼看懂，每個按鈕都在預期的位置。畫面的主角是單字、釋義和例句，介面本身退到後面。系統建立在 Material 3 的規則上（色彩角色、表面色階、state layer、圓角尺度），只有一個品牌色：長春花藍。品牌感不靠裝飾，靠精準的細節。\n\n氣氛是乾淨俐落、專注安靜、溫和友善。乾淨來自留白和「不加東西」：沒有漸層、沒有浮起的陰影卡片、沒有裝飾動畫。專注來自層次扁平：區塊只靠底色深淺區分，複習與閱讀時視線不會被框線和陰影打斷。溫和來自偏藍紫的中性色（不是冷灰）、全圓角的按鈕，以及帶寵物感的名字。\n\n這套系統明確拒絕上一版的「AI 模板感」：淡藍漸層的 hero 卡片、白卡片加帶色柔和陰影、到處都是大圓角膠囊、Nunito 圓體字。",
+    "keyCharacteristics": [
+      "單一品牌色（長春花藍 #4263eb），其他顏色都是由它推出的中性色與 secondary container",
+      "扁平：用表面色階分層，不用陰影或邊框",
+      "Material 3 元件語彙：filled／tonal／outlined／text 按鈕、primary tabs、segmented button、膠囊搜尋列",
+      "Roboto Flex 英文＋系統中文字型，單字本身用最大最粗的字",
+      "單欄、最寬 720px，手機與桌面同一套版面"
+    ],
+    "rules": [
+      { "name": "The One Blue Rule", "body": "品牌色只有長春花藍一個。新功能需要強調時，先用 mist container 或字重，不要加新的色相。", "section": "colors" },
+      { "name": "The No-Gradient Rule", "body": "背景、按鈕、文字、圖示都不用漸層。", "section": "colors" },
+      { "name": "The Word Is the Hero Rule", "body": "粗體大字只給英文單字本身；介面標題用 600 以下的字重，不和單字搶。", "section": "typography" },
+      { "name": "The Flat-At-Rest Rule", "body": "卡片和區塊不加陰影也不加框；需要區分時，換深一階的表面色。", "section": "elevation" },
+      { "name": "The Gap-Not-Line Rule", "body": "清單項目之間用 2px 的頁面底色間隔分開，不畫分隔線。", "section": "elevation" }
+    ],
+    "dos": [
+      "Do 用表面色階（paper → paper-raised → paper-high）區分層次。",
+      "Do 讓可以按的東西是膠囊、容器是圓角矩形。",
+      "Do 一個畫面只放一個 filled 按鈕，其餘用 tonal、outlined 或 text。",
+      "Do 互動回饋用 state layer（hover 8%、按下 12%）。",
+      "Do 動畫只用在狀態變化（滑動的選中格、展開收合），並尊重「減少動態」設定。",
+      "Do 圖示一律用 lucide 線條圖示。"
+    ],
+    "donts": [
+      "Don't 使用漸層（背景、按鈕、文字都不行）。",
+      "Don't 用陰影讓卡片浮起來，或用帶色的柔和陰影。",
+      "Don't 加裝飾性、花俏的動畫（彈跳、浮動、hover 位移或縮放）。",
+      "Don't 用 emoji 當圖示。",
+      "Don't 回到上一版的樣子：淡藍漸層 hero 卡片、白卡片＋藍色陰影、到處大圓角、圓體字。",
+      "Don't 加入長春花藍以外的品牌色。"
+    ]
+  }
+}
