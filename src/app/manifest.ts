@@ -7,7 +7,7 @@ import type { MetadataRoute } from "next";
  */
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Moji",
+    name: "Moji 單字本",
     short_name: "Moji",
     description: "有雲端同步與間隔重複複習的英文單字 App",
     lang: "zh-TW",

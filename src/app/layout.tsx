@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: { default: "Moji", template: "%s｜Moji" },
+  title: { default: "Moji 單字本", template: "%s｜Moji" },
   description: "Moji：有雲端同步與間隔重複複習的英文單字 App",
   // iOS「加入主畫面」：全螢幕開啟、主畫面上的名稱（圖示是 app/apple-icon.png）
   appleWebApp: { capable: true, title: "Moji", statusBarStyle: "default" },
@@ -53,6 +53,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               className="flex h-13 items-center text-lg font-bold tracking-wider text-foreground hover:no-underline"
             >
               Moji
+              <span className="ml-1.5 tracking-normal">單字本</span>
             </Link>
             <Suspense fallback={<span className="ml-auto" />}>
               <UserNav />
