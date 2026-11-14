@@ -164,7 +164,14 @@
 ## 加分項目（暫緩）
 
 - CSV 匯入收藏（欄位對應：headword、筆記、單字本）
-- 瀏覽器擴充功能：反白查字與收藏，使用 Better Auth bearer token 外掛處理跨來源登入，收藏時記錄 `origin = 'extension'`、來源網址與原句
+- 瀏覽器擴充功能（Chrome，Manifest V3）：反白查字與收藏，收藏時記錄 `origin = 'extension'`、來源網址與原句（`saved_words` 已有 `origin`、`context_url`、`context_sentence` 欄位，不需新 migration）。2026-11-14 評估：可行，排在階段 6 完成之後，分兩步：
+  - [x] 第一步：右鍵選單「在 Moji 查詢」，開新分頁到單字頁。不改後端、不處理登入，先驗證實際使用頻率（2026-11-14：`extension/`，純 JS 不需打包；網站網址在擴充元件「選項」頁設定，預設值在 `extension/config.js`；單字或 4 字以內片語開單字頁，其他開搜尋頁）
+  - 第二步（約 2–4 天）：網頁上雙擊／反白跳出浮動卡片（Shadow DOM 隔離樣式），顯示音標、發音、釋義，一鍵收藏
+    - 後端：新增查字 JSON API（重用單字頁查詢，選到詞形變化時用 `dict_word_forms` 還原原形）與收藏 API（以登入者 `user_id` 過濾，檢查請求來源只允許網站與擴充元件 ID）
+    - 登入：預設用 Better Auth bearer token 外掛（token 存 `chrome.storage`）；也可先試由 service worker 帶網站 cookie，但較受瀏覽器 cookie 政策影響
+  - 限制：Chrome 內建 PDF 檢視器與 Google Docs 抓不到選取文字
+  - 上架：自用以「載入未封裝項目」即可；公開需 Chrome 線上應用程式商店開發者帳號（一次 US$5）、審核與隱私權政策（見階段 6）
+  - 打包盡量不用框架；需要新套件時先詢問
 
 ## 待決定
 

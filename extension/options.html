@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="utf-8" />
+    <title>Moji 選項</title>
+    <style>
+      body { font: 14px/1.6 system-ui, sans-serif; margin: 16px; min-width: 360px; color: #1f2340; }
+      label { display: block; font-weight: 600; margin-bottom: 4px; }
+      input { width: 100%; box-sizing: border-box; padding: 6px 8px; font: inherit; border: 1px solid #c5cae9; border-radius: 6px; }
+      .row { display: flex; gap: 8px; align-items: center; margin-top: 10px; }
+      button { padding: 6px 14px; font: inherit; border: 0; border-radius: 6px; background: #4263eb; color: #fff; cursor: pointer; }
+      .hint { color: #5c6080; font-size: 12px; margin-top: 4px; }
+      #status { font-size: 12px; }
+      .error { color: #c92a2a; }
+    </style>
+  </head>
+  <body>
+    <form id="form">
+      <label for="baseUrl">Moji 網站網址</label>
+      <input id="baseUrl" type="url" required placeholder="https://…" />
+      <p class="hint">右鍵查詢時開啟這個網站。本機開發用 http://localhost:3001。</p>
+      <div class="row">
+        <button type="submit">儲存</button>
+        <span id="status" role="status"></span>
+      </div>
+    </form>
+    <script type="module" src="options.js"></script>
+  </body>
+</html>

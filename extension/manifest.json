@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Moji 單字本",
+  "short_name": "Moji",
+  "version": "0.1.0",
+  "description": "在網頁上選取英文單字，按右鍵「在 Moji 查詢」。",
+  "permissions": ["contextMenus", "storage"],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "options_ui": { "page": "options.html", "open_in_tab": false },
+  "icons": { "128": "icons/icon-192.png" }
+}
