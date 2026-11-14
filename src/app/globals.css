@@ -5,70 +5,73 @@
 /* 深色模式由 <html class="dark"> 決定（預設跟隨系統，可用頁首按鈕切換，見 theme-toggle.tsx），shadcn 元件裡的 dark: 也會跟著生效 */
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* 配色：長春花藍主色、淡藍填色區塊（見 docs/UI-STYLE.md） */
+/*
+ * 配色：Material 3（Google）色彩規則，主色沿用長春花藍 #4263eb（見 docs/UI-STYLE.md 第 8 節）
+ * - 區塊靠「表面色階」深淺區分，不用陰影：background = surface、card = surface container、muted = surface container high
+ * - secondary / accent = secondary container（淡色實心按鈕、導航選中的膠囊）
+ * - border = outline variant（分隔線、外框按鈕），input = outline（輸入框）
+ */
 :root {
-  --radius: 1rem;
-  --app-font: var(--font-nunito), "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+  --radius: 0.75rem;
+  --app-font: var(--font-roboto-flex), "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
   --app-mono: var(--font-geist-mono), ui-monospace, monospace;
 
-  --background: #f5f7ff;
-  --foreground: #1f2440;
-  --card: #ffffff;
-  --card-foreground: #1f2440;
-  --popover: #ffffff;
-  --popover-foreground: #1f2440;
+  --background: #fbf8ff;
+  --foreground: #1b1b21;
+  --card: #f2f0f8;
+  --card-foreground: #1b1b21;
+  --popover: #efedf4;
+  --popover-foreground: #1b1b21;
   --primary: #4263eb;
   --primary-foreground: #ffffff;
-  --secondary: #eef2fe;
-  --secondary-foreground: #1f2440;
-  --muted: #eef2fe;
-  --muted-foreground: #646b8a;
-  --accent: #dfe6fd;
-  --accent-foreground: #2a3f9e;
-  --destructive: #c62a3a;
-  --border: #dde3f7;
-  --input: #dde3f7;
+  --secondary: #dee1f9;
+  --secondary-foreground: #2e3245;
+  --muted: #e8e6ee;
+  --muted-foreground: #5d5e67;
+  --accent: #dee1f9;
+  --accent-foreground: #2e3245;
+  --destructive: #ba1a1a;
+  --border: #c6c5d0;
+  --input: #767680;
   --ring: #4263eb;
   --mark: #fdf0c4;
-  --brand-soft: #6b8cf0; /* 裝飾用（漸層、插圖） */
-  /* 白卡片的陰影：淺色用帶藍的柔和陰影取代邊框 */
-  --surface-shadow: 0 1px 2px rgb(31 36 64 / 0.05), 0 6px 20px -8px rgb(66 99 235 / 0.18);
+  --brand-soft: #6b8cf0; /* 裝飾用（插圖） */
+  --surface-shadow: none;
 
   /* 複習評分與佇列數量 */
-  --again: #c62a3a;
+  --again: #ba1a1a;
   --hard: #c0601d;
   --good: #2f8a55;
   --easy: #4263eb;
 }
 
 :root.dark {
-  --background: #12152a;
-  --foreground: #e8ebfa;
-  --card: #1b1f38;
-  --card-foreground: #e8ebfa;
-  --popover: #1b1f38;
-  --popover-foreground: #e8ebfa;
-  --primary: #8fa6ff;
-  --primary-foreground: #12152a;
-  --secondary: #20253f;
-  --secondary-foreground: #e8ebfa;
-  --muted: #20253f;
-  --muted-foreground: #9aa2c4;
-  --accent: #26305e;
-  --accent-foreground: #c9d4ff;
-  --destructive: #ff9aa6;
-  --border: #2c3356;
-  --input: #2c3356;
-  --ring: #8fa6ff;
+  --background: #131318;
+  --foreground: #e4e1e9;
+  --card: #1f1f25;
+  --card-foreground: #e4e1e9;
+  --popover: #2a292f;
+  --popover-foreground: #e4e1e9;
+  --primary: #b9c3ff;
+  --primary-foreground: #102a8f;
+  --secondary: #424659;
+  --secondary-foreground: #dee1f9;
+  --muted: #2a292f;
+  --muted-foreground: #b4b3be;
+  --accent: #424659;
+  --accent-foreground: #dee1f9;
+  --destructive: #ffb4ab;
+  --border: #46464f;
+  --input: #90909a;
+  --ring: #b9c3ff;
   --mark: #4a3f1a;
   --brand-soft: #6b8cf0;
-  /* 深色模式陰影看不出來，改用細框 */
-  --surface-shadow: 0 0 0 1px var(--border);
+  --surface-shadow: none;
 
-  --again: #ff9aa6;
+  --again: #ffb4ab;
   --hard: #f6b37f;
   --good: #8fd6a8;
-  --easy: #8fa6ff;
+  --easy: #b9c3ff;
 
   color-scheme: dark;
 }
@@ -101,16 +104,17 @@
   --color-hard: var(--hard);
   --color-good: var(--good);
   --color-easy: var(--easy);
-  --radius-sm: calc(var(--radius) * 0.6);
-  --radius-md: calc(var(--radius) * 0.8);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) * 1.4);
-  --radius-2xl: calc(var(--radius) * 1.8);
-  --radius-3xl: calc(var(--radius) * 2.2);
-  --radius-4xl: calc(var(--radius) * 2.6);
+  /* Material 3 圓角：extra-small 4、small 8、medium 12、large 16、extra-large 28（按鈕另用 rounded-full） */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 16px;
+  --radius-3xl: 28px;
+  --radius-4xl: 28px;
 }
 
-/* 白卡片（列表、功能卡片、頁首）：取代「border bg-card」 */
+/* 卡片（列表、單字頁區塊）：surface container 底色，不加邊框與陰影 */
 @utility surface {
   background-color: var(--card);
   box-shadow: var(--surface-shadow);

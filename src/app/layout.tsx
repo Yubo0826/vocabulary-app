@@ -1,14 +1,14 @@
 import type { Metadata, Viewport } from "next";
-import { Geist_Mono, Nunito } from "next/font/google";
+import { Geist_Mono, Roboto_Flex } from "next/font/google";
 import Link from "next/link";
 import { Suspense } from "react";
 import { THEME_SCRIPT, ThemeToggle } from "@/components/theme-toggle";
 import { UserNav } from "@/components/user-nav";
 import "./globals.css";
 
-// 英文用圓潤的 Nunito；中文沒有收錄，會接到 globals.css 裡的系統中文字型
-const nunito = Nunito({
-  variable: "--font-nunito",
+// 英文用 Google 的 Roboto Flex（Material 3 預設字型）；中文沒有收錄，會接到 globals.css 裡的系統中文字型
+const robotoFlex = Roboto_Flex({
+  variable: "--font-roboto-flex",
   subsets: ["latin"],
 });
 
@@ -29,8 +29,8 @@ export const viewport: Viewport = {
   initialScale: 1,
   // 瀏覽器網址列／狀態列顏色，跟著系統深淺色（與 globals.css 的背景色相同）
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#f5f7ff" },
-    { media: "(prefers-color-scheme: dark)", color: "#12152a" },
+    { media: "(prefers-color-scheme: light)", color: "#fbf8ff" },
+    { media: "(prefers-color-scheme: dark)", color: "#131318" },
   ],
 };
 
@@ -40,12 +40,12 @@ const container = "mx-auto w-full max-w-[720px] px-4";
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     // suppressHydrationWarning：THEME_SCRIPT 會在 React 接手前加上 .dark class
-    <html lang="zh-Hant-TW" className={`${nunito.variable} ${geistMono.variable}`} suppressHydrationWarning>
+    <html lang="zh-Hant-TW" className={`${robotoFlex.variable} ${geistMono.variable}`} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: THEME_SCRIPT }} />
       </head>
       <body>
-        <header className="surface relative z-10">
+        <header className="relative z-10 bg-background">
           {/* 手機時導航換到第二列（見 UserNav） */}
           <div className={`${container} flex flex-wrap items-center gap-x-3`}>
             <Link

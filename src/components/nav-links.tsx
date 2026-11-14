@@ -1,6 +1,6 @@
 "use client";
 
-/** 頁首的主要導航連結：目前所在的區塊加淡藍膠囊底（需要 usePathname，所以是 client 元件） */
+/** 頁首的主要導航連結：目前所在的區塊加 secondary container 膠囊底（Material 3 導航的 active indicator）（需要 usePathname，所以是 client 元件） */
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
@@ -21,7 +21,7 @@ export function NavLinks() {
         href={href}
         aria-current={current ? "page" : undefined}
         className={cn(
-          "shrink-0 rounded-full px-3 py-1 text-foreground hover:bg-muted hover:no-underline",
+          "shrink-0 rounded-full px-3 py-1 text-foreground hover:bg-foreground/8 hover:no-underline",
           current && "bg-accent font-semibold text-accent-foreground hover:bg-accent",
         )}
       >

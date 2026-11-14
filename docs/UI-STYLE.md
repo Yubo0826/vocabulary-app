@@ -2,7 +2,7 @@
 
 參考：Dribbble 上 Anastasia Samarska 的單字 App 概念圖（藍紫色、柔和、圓角）。**只參考風格方向**（配色、形狀、層次），版面與插圖不照抄，圖示與插圖由我們自己製作。
 
-狀態：A–F 全部完成（2026-11-10）。每個階段完成都截圖（375px 手機、桌面、深色模式）並跑 tsc / lint / test 再 commit。
+狀態：A–F 全部完成（2026-11-10）。2026-11-14 改成 Material 3 風格，見第 8 節（第 2–4 節的色票與字體已被取代）。每個階段完成都截圖（375px 手機、桌面、深色模式）並跑 tsc / lint / test 再 commit。
 
 ---
 
@@ -120,3 +120,23 @@ A 做完整個 App 就會換成新風格，之後每個階段可以獨立上線�
 4. 插圖：暫不做。
 5. 熟悉度顏色：「低」改**紫色**（無 = 灰、低 = 紫、中 = 黃、高 = 綠）。
 6. 深色模式：先照第 2 節的深藍色系，實作後看截圖再調。
+
+---
+
+## 8. 第二次改版：Material 3（2026-11-14）
+
+第一版（長春花藍、Nunito、白卡片＋柔和陰影、淡藍漸層）看起來太像「AI 生成的模板」，改成 Google 的 Material 3 設計規則。**不換元件庫**（MUI 會和 Tailwind 打架、Material Web 已停止積極開發），保留 shadcn，只改 token 與元件樣式。主色沿用 `#4263eb`。
+
+| 面向 | 改成 |
+|---|---|
+| 色彩 | M3 色彩角色：`background` = surface、`card` = surface container、`muted` = surface container high、`secondary`／`accent` = secondary container、`border` = outline variant、`input` = outline。中性色帶一點藍紫（由主色推出） |
+| 區塊層次 | 靠表面色階深淺區分，**不用陰影也不用邊框**（`--surface-shadow: none`）；清單項目之間用 2px 背景色間隔取代分隔線 |
+| 字體 | 英文 **Roboto Flex**（`next/font/google`），中文系統字型；首頁大標題用一般粗細 |
+| 圓角 | 固定的 M3 尺度：4（輸入框）、8、12、16（卡片）、28（對話框、展開的搜尋清單）；按鈕全圓 |
+| 按鈕 | filled（`default`）、filled tonal（`secondary`、`soft`）、outlined（`outline`，細框＋主色字）、text（`ghost`）；hover 疊 8% 前景色、按下 12%（state layer），不再有按下位移 |
+| 分頁 | M3 primary tabs：整排分隔線，選中文字變主色＋下方 3px 圓頭指示條 |
+| 分段控制 | 美式／英式、熟悉度改成 M3 segmented button：外框膠囊，選中格填 secondary container |
+| 頁首 | 與頁面同底色、沒有陰影（M3 top app bar）；導航選中用 secondary container 膠囊 |
+| 首頁 | 拿掉漸層卡片，改成大標題＋56px 高的膠囊搜尋列（surface container high） |
+
+待定：手機是否改成底部導航列（M3 navigation bar）。

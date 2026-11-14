@@ -93,7 +93,7 @@ async function SavedList({ bookParam, sort }: { bookParam: string | null; sort: 
           {book ? "這個單字本還沒有字。" : "還沒有收藏任何單字。查字時按「收藏」就會出現在這裡。"}
         </p>
       ) : (
-        <ul className="surface divide-y overflow-hidden rounded-2xl">
+        <ul className="surface divide-y-2 divide-background overflow-hidden rounded-2xl">
           {words.map((w) => (
             <li key={w.id}>
               <Link

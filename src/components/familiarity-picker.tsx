@@ -68,12 +68,12 @@ export function FamiliarityPicker({ headword, level }: { headword: string; level
         <div
           role="radiogroup"
           aria-labelledby="familiarity-title"
-          className="relative grid grid-cols-4 rounded-full bg-muted p-0.5"
+          className="relative grid grid-cols-4 overflow-hidden rounded-full border border-input"
         >
-          {/* 選中的白色膠囊：四格等寬，切換時用 translateX 滑到新的那格 */}
+          {/* 選中格的 secondary container 底色（Material 3 分段按鈕）：四格等寬，切換時用 translateX 滑到新的那格 */}
           <span
             aria-hidden
-            className="absolute inset-y-0.5 left-0.5 w-[calc((100%-0.25rem)/4)] rounded-full bg-card shadow-sm transition-transform duration-200 ease-out motion-reduce:transition-none"
+            className="absolute inset-y-0 left-0 w-1/4 bg-secondary transition-transform duration-200 ease-out motion-reduce:transition-none"
             style={{ transform: `translateX(${optimistic * 100}%)` }}
           />
           {FAMILIARITY_LEVELS.map((l) => (
@@ -84,7 +84,7 @@ export function FamiliarityPicker({ headword, level }: { headword: string; level
               aria-checked={optimistic === l}
               onClick={() => choose(l)}
               title={l === 0 && optimistic > 0 ? "會把複習進度重設成新卡" : undefined}
-              className="relative flex items-center justify-center gap-1.5 rounded-full px-3 py-1.5 text-muted-foreground transition-colors hover:text-foreground aria-checked:font-semibold aria-checked:text-foreground"
+              className="relative flex items-center justify-center gap-1.5 px-3 py-2 font-medium text-foreground transition-colors not-last:border-r not-last:border-input hover:bg-foreground/8 aria-checked:text-secondary-foreground"
             >
               <FamiliarityDot level={l} className="size-3 shrink-0" />
               {FAMILIARITY_LABELS[l]}
