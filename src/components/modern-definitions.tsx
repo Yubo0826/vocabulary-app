@@ -35,7 +35,6 @@ export function ModernDefinitions({ senses, links }: { senses: Sense[]; links: W
           <SenseList senses={rest} start={shown.length + 1} links={links} />
         </details>
       )}
-      <p className="text-xs text-muted-foreground/80">釋義由 AI 參考 ECDICT、WordNet 整理</p>
     </div>
   );
 }
