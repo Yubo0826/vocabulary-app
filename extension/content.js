@@ -26,44 +26,72 @@
   root.innerHTML = `<style>
     :host { all: initial; }
     * { box-sizing: border-box; }
+    /* 配色與元件樣式對齊網站的 Material 3 設計（DESIGN.md）：選單紙底、長春花藍、霧藍容器、state layer */
     .ui {
-      --bg: #ffffff; --fg: #1f2340; --muted: #5c6080; --border: #dfe3f5; --primary: #4263eb; --primary-fg: #ffffff;
-      --accent: #eef1ff; --danger: #c92a2a;
-      font: 14px/1.55 "Nunito", "Noto Sans TC", "Microsoft JhengHei", system-ui, sans-serif; color: var(--fg);
+      --surface: #efedf4; --fg: #1b1b21; --muted: #5d5e67; --hairline: #c6c5d0;
+      --primary: #4263eb; --on-primary: #ffffff; --tonal: #dee1f9; --on-tonal: #2e3245; --danger: #ba1a1a;
+      font: 14px/1.55 "Roboto Flex", Roboto, "Segoe UI", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+      color: var(--fg);
     }
     @media (prefers-color-scheme: dark) {
-      .ui { --bg: #1b1f38; --fg: #e8eaf7; --muted: #a3a8c7; --border: #2f3457; --primary: #748ffc; --primary-fg: #12152a; --accent: #262b4d; --danger: #ff8787; }
+      .ui {
+        --surface: #2a292f; --fg: #e4e1e9; --muted: #b4b3be; --hairline: #46464f;
+        --primary: #b9c3ff; --on-primary: #102a8f; --tonal: #424659; --on-tonal: #dee1f9; --danger: #ffb4ab;
+      }
     }
+    ::selection { background: var(--tonal); color: var(--on-tonal); }
+    button { font: inherit; border: 0; padding: 0; margin: 0; cursor: pointer; }
+    button:focus-visible { outline: 3px solid color-mix(in srgb, var(--primary) 50%, transparent); outline-offset: 1px; }
+    svg { display: block; flex-shrink: 0; }
     .card {
       position: absolute; width: 340px; max-width: calc(100vw - 16px); max-height: 420px; overflow: auto;
-      background: var(--bg); border: 1px solid var(--border); border-radius: 14px; padding: 14px 16px;
-      box-shadow: 0 10px 32px rgba(20, 25, 60, .25);
+      background: var(--surface); border-radius: 12px; padding: 14px 16px 16px;
+      box-shadow: 0 0 0 1px color-mix(in srgb, var(--fg) 10%, transparent),
+        0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1);
+      scrollbar-width: thin; scrollbar-color: var(--hairline) transparent;
     }
     .head { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
-    .word { font-size: 20px; font-weight: 700; }
+    .word { font-size: 22px; line-height: 1.25; font-weight: 700; overflow-wrap: anywhere; }
     .phonetic { color: var(--muted); font-family: ui-monospace, Consolas, monospace; font-size: 13px; }
-    .speak, .close {
-      border: 0; background: var(--accent); color: var(--primary); border-radius: 999px; width: 28px; height: 28px;
-      cursor: pointer; display: inline-flex; align-items: center; justify-content: center; padding: 0;
+    /* 圖示按鈕：standard（關閉）只有 state layer；outlined（發音）細框＋主色 */
+    .icon-btn {
+      width: 32px; height: 32px; border-radius: 999px; background: transparent; color: var(--muted);
+      display: inline-flex; align-items: center; justify-content: center; transition: background-color 150ms, color 150ms;
     }
-    .close { margin-left: auto; background: transparent; color: var(--muted); font-size: 18px; }
+    .icon-btn:hover { background: color-mix(in srgb, var(--fg) 8%, transparent); color: var(--fg); }
+    .icon-btn:active { background: color-mix(in srgb, var(--fg) 12%, transparent); }
+    .speak { border: 1px solid var(--hairline); color: var(--primary); }
+    .speak:hover { background: color-mix(in srgb, var(--primary) 8%, transparent); color: var(--primary); }
+    .speak:active { background: color-mix(in srgb, var(--primary) 12%, transparent); }
+    .close { margin-left: auto; }
     .note { color: var(--muted); font-size: 12px; margin: 2px 0 0; }
     ol { list-style: none; margin: 10px 0 0; padding: 0; }
-    li { padding: 7px 0; border-top: 1px solid var(--border); }
+    li { padding: 8px 0; border-top: 1px solid var(--hairline); }
     li:first-child { border-top: 0; padding-top: 0; }
     .pos { color: var(--primary); font-style: italic; font-size: 12px; margin-right: 6px; }
-    .label { font-weight: 700; }
+    .label { font-weight: 600; }
     .zh { color: var(--muted); margin: 1px 0 0; }
     .en { font-size: 13px; margin: 1px 0 0; }
-    .foot { display: flex; align-items: center; gap: 10px; margin-top: 12px; flex-wrap: wrap; }
+    .foot { display: flex; align-items: center; gap: 8px; margin-top: 14px; flex-wrap: wrap; }
+    /* filled 按鈕（收藏）；已收藏改 tonal */
     .btn {
-      border: 0; border-radius: 999px; padding: 6px 16px; font: inherit; font-weight: 700; cursor: pointer;
-      background: var(--primary); color: var(--primary-fg);
+      height: 36px; padding: 0 16px 0 12px; border-radius: 999px; font-weight: 500;
+      display: inline-flex; align-items: center; gap: 6px;
+      background: var(--primary); color: var(--on-primary); transition: background-color 150ms, box-shadow 150ms;
     }
-    .btn.saved { background: var(--accent); color: var(--primary); }
+    .btn:hover { background: color-mix(in srgb, var(--primary), var(--on-primary) 8%); box-shadow: 0 1px 2px rgb(0 0 0 / .05); }
+    .btn:active { background: color-mix(in srgb, var(--primary), var(--on-primary) 12%); }
+    .btn.saved { background: var(--tonal); color: var(--on-tonal); }
+    .btn.saved:hover { background: color-mix(in srgb, var(--tonal), var(--on-tonal) 8%); box-shadow: none; }
+    .btn.saved:active { background: color-mix(in srgb, var(--tonal), var(--on-tonal) 12%); }
     .btn:disabled { opacity: .6; cursor: default; }
-    .link { border: 0; background: none; padding: 0; font: inherit; color: var(--primary); cursor: pointer; }
-    .link:hover { text-decoration: underline; }
+    /* text 按鈕（完整解釋、登入）：主色字＋state layer */
+    .link {
+      height: 36px; padding: 0 12px; border-radius: 999px; background: transparent; color: var(--primary); font-weight: 500;
+      display: inline-flex; align-items: center; gap: 4px; transition: background-color 150ms;
+    }
+    .link:hover { background: color-mix(in srgb, var(--primary) 8%, transparent); }
+    .link:active { background: color-mix(in srgb, var(--primary) 12%, transparent); }
     .msg { color: var(--muted); margin: 6px 0 0; }
     .error { color: var(--danger); font-size: 13px; margin: 8px 0 0; }
   </style><div class="ui"></div>`;
@@ -253,8 +281,8 @@
       { className: "head" },
       h("span", { className: "word" }, display),
       phonetic ? h("span", { className: "phonetic" }, `/${phonetic}/`) : null,
-      h("button", { className: "speak", title: "發音", "aria-label": "發音", onClick: () => speak(display) }, speakerIcon()),
-      h("button", { className: "close", title: "關閉", "aria-label": "關閉", onClick: hideCard }, "×"),
+      h("button", { className: "icon-btn speak", title: "發音", "aria-label": "發音", onClick: () => speak(display) }, icon(ICONS.speaker, 16)),
+      h("button", { className: "icon-btn close", title: "關閉", "aria-label": "關閉", onClick: hideCard }, icon(ICONS.close, 18)),
     );
   }
 
@@ -279,7 +307,8 @@
       let isSaved = saved;
       const button = h("button", { className: "btn" });
       const sync = () => {
-        button.textContent = isSaved ? "✓ 已收藏" : "＋ 收藏";
+        // 和網站的收藏鈕一樣用星星：已收藏是實心星
+        button.replaceChildren(icon(ICONS.star, 16, isSaved), isSaved ? "已收藏" : "收藏");
         button.classList.toggle("saved", isSaved);
         button.title = isSaved ? "再按一次取消收藏" : "收藏到 Moji，並記下這句話的出處";
       };
@@ -308,7 +337,9 @@
     } else {
       foot.append(h("button", { className: "link", onClick: () => open("/login") }, "登入 Moji 後即可收藏"));
     }
-    foot.append(h("button", { className: "link", onClick: () => open(`/word/${encodeURIComponent(word.headword)}`) }, "完整解釋 →"));
+    foot.append(
+      h("button", { className: "link", onClick: () => open(`/word/${encodeURIComponent(word.headword)}`) }, "完整解釋", icon(ICONS.externalLink, 15)),
+    );
 
     renderInto(
       el,
@@ -353,17 +384,36 @@
     speechSynthesis.speak(u);
   }
 
-  function speakerIcon() {
+  /** 線條圖示（路徑取自 lucide，與網站同一套） */
+  const ICONS = {
+    speaker: [
+      "M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z",
+      "M16 9a5 5 0 0 1 0 6",
+      "M19.364 18.364a9 9 0 0 0 0-12.728",
+    ],
+    close: ["M18 6 6 18", "m6 6 12 12"],
+    externalLink: ["M15 3h6v6", "M10 14 21 3", "M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"],
+    star: [
+      "M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z",
+    ],
+  };
+
+  function icon(paths, size, filled = false) {
     const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-    svg.setAttribute("viewBox", "0 0 24 24");
-    svg.setAttribute("width", "16");
-    svg.setAttribute("height", "16");
-    svg.setAttribute("fill", "none");
-    svg.setAttribute("stroke", "currentColor");
-    svg.setAttribute("stroke-width", "2");
-    svg.setAttribute("stroke-linecap", "round");
-    svg.setAttribute("stroke-linejoin", "round");
-    for (const d of ["M11 5 6 9H2v6h4l5 4V5z", "M15.5 8.5a5 5 0 0 1 0 7", "M19 5a10 10 0 0 1 0 14"]) {
+    for (const [k, v] of Object.entries({
+      viewBox: "0 0 24 24",
+      width: size,
+      height: size,
+      fill: filled ? "currentColor" : "none",
+      stroke: "currentColor",
+      "stroke-width": "2",
+      "stroke-linecap": "round",
+      "stroke-linejoin": "round",
+      "aria-hidden": "true",
+    })) {
+      svg.setAttribute(k, String(v));
+    }
+    for (const d of paths) {
       const p = document.createElementNS("http://www.w3.org/2000/svg", "path");
       p.setAttribute("d", d);
       svg.append(p);
