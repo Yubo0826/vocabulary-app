@@ -167,7 +167,7 @@
 - CSV 匯入收藏（欄位對應：headword、筆記、單字本）
 - 瀏覽器擴充功能（Chrome，Manifest V3）：反白查字與收藏，收藏時記錄 `origin = 'extension'`、來源網址與原句（`saved_words` 已有 `origin`、`context_url`、`context_sentence` 欄位，不需新 migration）。2026-11-14 評估：可行，排在階段 6 完成之後，分兩步：
   - [x] 第一步：右鍵選單「在 Moji 查詢」，開新分頁到單字頁。不改後端、不處理登入，先驗證實際使用頻率（2026-11-14：`extension/`，純 JS 不需打包；網站網址在擴充元件「選項」頁設定，預設值在 `extension/config.js`；單字或 4 字以內片語開單字頁，其他開搜尋頁）
-  - [x] 第二步：反白英文字（4 字以內）後旁邊出現 M 小圖示，點了跳出浮動卡片（closed Shadow DOM 隔離樣式），顯示音標、發音、最多 3 個常用詞義，一鍵收藏／取消收藏（2026-11-14 本機驗證）
+  - [x] 第二步：反白英文字（4 字以內）後旁邊出現 M 小圖示，點了跳出浮動卡片（2026-11-15 改成「選取時按住 Alt，或選好後單按 Alt」直接跳出卡片，拿掉小圖示）（closed Shadow DOM 隔離樣式），顯示音標、發音、最多 3 個常用詞義，一鍵收藏／取消收藏（2026-11-14 本機驗證）
     - 後端：`GET /api/extension/word?q=`（`quickLookup()`，變化形轉原形）、`POST /api/extension/save`（以登入者 `user_id` 寫入，`origin = 'extension'`，記錄出處網址與原句）
     - 登入：沿用網站登入，由 service worker 帶 Moji 網站的 cookie（實測可行，不用 bearer token）
     - 請求來源檢查（`src/lib/extension.ts`）：有 Origin 時必須是擴充元件 ID（manifest 的 `key` 固定為 `jliagbbfhngfojafccnlfndkockoppcc`，上架後的 ID 加到 `EXTENSION_ORIGINS`）；Chrome 送 GET 不帶 Origin，改看自訂標頭 `X-Moji-Extension`

@@ -1,6 +1,6 @@
 /**
- * 網頁上的查字：選取英文單字或短片語（最多 4 個字）後，選取範圍旁出現 Moji 小圖示；
- * 點圖示跳出查字卡片（音標、發音、常用詞義、收藏按鈕、連到 Moji 單字頁）。
+ * 網頁上的查字：選取英文單字或短片語（最多 4 個字）時按住 Alt（或選好後按一下 Alt），
+ * 直接跳出查字卡片（音標、發音、常用詞義、收藏按鈕、連到 Moji 單字頁）。不按 Alt 的選取不打擾。
  * 收藏時一併記錄這個網頁的網址與選字所在的句子。
  *
  * 所有 UI 放在 closed Shadow DOM 裡，不受網頁 CSS 影響、也不影響網頁。
@@ -34,12 +34,6 @@
     @media (prefers-color-scheme: dark) {
       .ui { --bg: #1b1f38; --fg: #e8eaf7; --muted: #a3a8c7; --border: #2f3457; --primary: #748ffc; --primary-fg: #12152a; --accent: #262b4d; --danger: #ff8787; }
     }
-    .icon {
-      position: absolute; width: 26px; height: 26px; border-radius: 8px; border: 0; padding: 0; cursor: pointer;
-      background: linear-gradient(135deg, #5c7cfa, #3b5bdb); color: #fff; font: 700 15px/26px system-ui, sans-serif;
-      box-shadow: 0 2px 8px rgba(30, 40, 90, .35); text-align: center;
-    }
-    .icon:hover { filter: brightness(1.08); }
     .card {
       position: absolute; width: 340px; max-width: calc(100vw - 16px); max-height: 420px; overflow: auto;
       background: var(--bg); border: 1px solid var(--border); border-radius: 14px; padding: 14px 16px;
@@ -75,9 +69,9 @@
   </style><div class="ui"></div>`;
   const ui = root.querySelector(".ui");
 
-  let icon = null;
   let card = null;
   let pending = null; // { text, sentence, url, rect }
+  let altAlone = false; // 按下 Alt 後還沒按其他鍵（放開時才算「單按 Alt」）
 
   function mount() {
     if (!host.isConnected) document.documentElement.appendChild(host);
@@ -95,7 +89,7 @@
     return el;
   }
 
-  // ---------------------------------------------------------------- 選取 → 小圖示
+  // ---------------------------------------------------------------- 選取＋Alt → 卡片
 
   function cleanSelection(text) {
     return text
@@ -110,11 +104,12 @@
     return Boolean(el?.closest("input, textarea, [contenteditable=''], [contenteditable='true']"));
   }
 
+  // 觸發方式一：按住 Alt 選取（拖曳或雙擊），放開滑鼠就查
   document.addEventListener(
     "mouseup",
     (event) => {
-      if (event.button !== 0 || event.composedPath().includes(host)) return;
-      setTimeout(onSelection, 10); // 等瀏覽器更新選取範圍
+      if (event.button !== 0 || !event.altKey || event.composedPath().includes(host)) return;
+      setTimeout(lookupSelection, 10); // 等瀏覽器更新選取範圍
     },
     true,
   );
@@ -122,60 +117,59 @@
   document.addEventListener(
     "mousedown",
     (event) => {
-      if (!event.composedPath().includes(host)) hideAll();
+      altAlone = false; // 按住 Alt 拖曳選取時，放開 Alt 不要再查一次
+      if (!event.composedPath().includes(host)) hideCard();
     },
     true,
   );
 
-  document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") hideAll();
-  });
+  // 觸發方式二：選好之後單按一下 Alt（按下到放開之間沒有按其他鍵，避免攔到 Alt+Tab、Alt+← 等快捷鍵）
+  document.addEventListener(
+    "keydown",
+    (event) => {
+      if (event.key === "Escape") hideCard();
+      altAlone = event.key === "Alt" && !event.repeat;
+    },
+    true,
+  );
 
-  function onSelection() {
+  document.addEventListener(
+    "keyup",
+    (event) => {
+      if (event.key !== "Alt" || !altAlone) return;
+      altAlone = false;
+      if (isEditable(document.activeElement)) return;
+      // 有可查的選取才攔下 Alt（Windows 上單按 Alt 會把焦點移到瀏覽器選單）
+      if (lookupSelection()) event.preventDefault();
+    },
+    true,
+  );
+
+  /** 讀目前的選取；是可查的英文字就開卡片並回傳 true */
+  function lookupSelection() {
     const sel = window.getSelection();
-    if (!sel || sel.isCollapsed || sel.rangeCount === 0) return;
+    if (!sel || sel.isCollapsed || sel.rangeCount === 0) return false;
     const text = cleanSelection(sel.toString());
-    if (!text || text.length > MAX_LENGTH || !WORD_LIKE.test(text) || text.split(" ").length > MAX_WORDS) return;
-    if (isEditable(sel.anchorNode)) return;
+    if (!text || text.length > MAX_LENGTH || !WORD_LIKE.test(text) || text.split(" ").length > MAX_WORDS) return false;
+    if (isEditable(sel.anchorNode)) return false;
 
     const range = sel.getRangeAt(0);
     const rects = range.getClientRects();
     const last = rects[rects.length - 1] ?? range.getBoundingClientRect();
-    if (!last || (last.width === 0 && last.height === 0)) return;
+    if (!last || (last.width === 0 && last.height === 0)) return false;
 
     pending = { text, sentence: sentenceAround(range), url: location.href, rect: toPageRect(last) };
-    showIcon(pending.rect);
+    void openCard();
+    return true;
   }
 
   function toPageRect(r) {
     return { left: r.left + scrollX, top: r.top + scrollY, right: r.right + scrollX, bottom: r.bottom + scrollY };
   }
 
-  function showIcon(rect) {
-    mount();
-    hideCard();
-    if (!icon) {
-      icon = h("button", { className: "icon", title: "在 Moji 查詢", "aria-label": "在 Moji 查詢", onClick: openCard }, "M");
-      ui.append(icon);
-    }
-    const left = Math.min(rect.right + 4, scrollX + document.documentElement.clientWidth - 30);
-    icon.style.left = `${Math.max(scrollX + 4, left)}px`;
-    icon.style.top = `${rect.bottom + 4}px`;
-  }
-
-  function hideIcon() {
-    icon?.remove();
-    icon = null;
-  }
-
   function hideCard() {
     card?.remove();
     card = null;
-  }
-
-  function hideAll() {
-    hideIcon();
-    hideCard();
   }
 
   // ---------------------------------------------------------------- 選字所在的句子
@@ -225,7 +219,6 @@
   async function openCard() {
     if (!pending) return;
     const target = pending;
-    hideIcon();
     mount();
     hideCard();
     card = h("div", { className: "card", role: "dialog", "aria-label": `Moji：${target.text}` });
@@ -261,7 +254,7 @@
       h("span", { className: "word" }, display),
       phonetic ? h("span", { className: "phonetic" }, `/${phonetic}/`) : null,
       h("button", { className: "speak", title: "發音", "aria-label": "發音", onClick: () => speak(display) }, speakerIcon()),
-      h("button", { className: "close", title: "關閉", "aria-label": "關閉", onClick: hideAll }, "×"),
+      h("button", { className: "close", title: "關閉", "aria-label": "關閉", onClick: hideCard }, "×"),
     );
   }
 
