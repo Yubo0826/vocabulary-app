@@ -180,6 +180,8 @@ export function SearchBox({
           "relative z-20 rounded-full border-transparent bg-muted pr-5 focus-visible:border-transparent focus-visible:ring-0 dark:bg-muted",
           md ? "h-12 pl-11 text-base md:text-base" : "h-14 pl-12 text-[1.05rem] md:text-[1.05rem]",
           hotkey && "[@media(pointer:fine)]:pr-12",
+          // 展開時輸入框和清單一起變白（深色模式用浮層色，避免整片刺眼的白）
+          showList && "bg-white dark:bg-popover",
         )}
         type="search"
         inputMode="search"
@@ -223,14 +225,15 @@ export function SearchBox({
       )}
       {showList && (
         // 清單卡片從輸入框頂端開始、墊在輸入框後面（同底色、同圓角），看起來是同一張卡片（Google 搜尋欄的做法）
-        <div className={cn("absolute inset-x-0 top-0 z-10 overflow-hidden rounded-3xl bg-muted pb-2 text-foreground shadow-lg", md ? "pt-12" : "pt-14")}>
+        <div className={cn("absolute inset-x-0 top-0 z-10 overflow-hidden rounded-3xl bg-white pb-2 dark:bg-popover text-foreground shadow-lg", md ? "pt-12" : "pt-14")}>
           <div className="mx-4 border-t" aria-hidden />
           {historyMode && <p className="px-4 pt-2.5 pb-1 text-xs font-medium text-muted-foreground">最近查過</p>}
           {!historyMode && result?.matchType === "fuzzy" && (
             <p className="px-4 pt-2.5 pb-1 text-sm text-muted-foreground">找不到「{result.query}」，您是不是要找：</p>
           )}
           {!historyMode && items.length === 0 && <p className="px-4 pt-2.5 pb-1 text-sm text-muted-foreground">找不到相符的單字</p>}
-          <ul id={listId} role="listbox">
+          {/* 第一列和分隔線、最後一列和卡片底部留點空間，選中的灰底才不會貼邊（上方有小標題時標題已隔開，不再加） */}
+          <ul id={listId} role="listbox" className={cn("pb-1", !historyMode && result?.matchType !== "fuzzy" && "pt-2")}>
             {items.map((item, i) => (
               <li
                 key={item.headword}
@@ -239,8 +242,9 @@ export function SearchBox({
                 aria-selected={i === active}
                 // 選中列疊一層 state layer（Material 3 清單的 hover／選取樣式）
                 className={cn(
-                  "flex min-w-0 cursor-pointer items-baseline gap-2 px-4 py-2.5",
-                  historyMode && "items-center py-1.5 pr-2",
+                  // 左右各內縮 8px、圓角 8px，選中的灰底不碰到卡片邊緣；文字仍和上方標題對齊（mx-2 + px-2 = 16px）
+                  "mx-2 flex min-w-0 cursor-pointer items-baseline gap-2 rounded-md px-2 py-2.5",
+                  historyMode && "items-center py-1.5 pr-0",
                   i === active && "bg-foreground/8",
                 )}
                 onMouseDown={(e) => e.preventDefault()}
