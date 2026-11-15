@@ -50,8 +50,8 @@ export function ExampleBrowser({
     <div className="flex flex-col gap-8">
       {groups.map((g) => (
         <section key={g.key} className="flex flex-col gap-3">
-          <div className="rounded-r-lg border-l-4 border-primary bg-primary/8 py-2 pr-3 pl-3">
-            <h3 className="flex items-baseline gap-1.5 font-semibold text-primary">
+          <div className="rounded-lg bg-muted px-3 py-2">
+            <h3 className="flex items-baseline gap-1.5 font-semibold text-primary-ink">
               {g.pos && <span className="text-sm font-normal italic">{g.pos}</span>}
               {g.label}
             </h3>
@@ -64,11 +64,11 @@ export function ExampleBrowser({
       ))}
       {otherEn.length > 0 && (
         <details className="group">
-          <summary className="cursor-pointer text-sm text-primary group-open:mb-2">其他英英釋義（{otherEn.length}）</summary>
+          <summary className="cursor-pointer text-sm text-primary-ink group-open:mb-2">其他英英釋義（{otherEn.length}）</summary>
           <ol className="flex list-decimal flex-col gap-1 pl-6 text-[0.95rem]">
             {otherEn.map((d, i) => (
               <li key={i}>
-                {d.pos && <span className="mr-1.5 text-sm text-primary italic">{d.pos}</span>}
+                {d.pos && <span className="mr-1.5 text-sm text-primary-ink italic">{d.pos}</span>}
                 {highlight(d.text, NO_MARK, defLinks)}
               </li>
             ))}
@@ -87,7 +87,7 @@ function Collapsible({ examples, shown, forms, links }: ListProps & { shown: num
       <ExampleList examples={examples.slice(0, shown)} forms={forms} links={links} />
       {examples.length > shown && (
         <details className="group">
-          <summary className="mt-1 cursor-pointer text-sm text-primary group-open:mb-3">顯示其餘 {examples.length - shown} 句</summary>
+          <summary className="mt-1 cursor-pointer text-sm text-primary-ink group-open:mb-3">顯示其餘 {examples.length - shown} 句</summary>
           <ExampleList examples={examples.slice(shown)} forms={forms} links={links} />
         </details>
       )}

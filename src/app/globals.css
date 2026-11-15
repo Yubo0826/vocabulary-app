@@ -34,6 +34,8 @@
   --border: #c6c5d0;
   --input: #767680;
   --ring: #4263eb;
+  /* 小字主色（摘要連結、詞性）：#4263eb 放在卡片底只有 4.4:1，小字用深一點的同色相 */
+  --primary-ink: #3b5bdb;
   --mark: #fdf0c4;
   --brand-soft: #6b8cf0; /* 裝飾用（插圖） */
   --surface-shadow: none;
@@ -64,6 +66,7 @@
   --border: #46464f;
   --input: #90909a;
   --ring: #b9c3ff;
+  --primary-ink: #b9c3ff;
   --mark: #4a3f1a;
   --brand-soft: #6b8cf0;
   --surface-shadow: none;
@@ -98,6 +101,7 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+  --color-primary-ink: var(--primary-ink);
   --color-mark: var(--mark);
   --color-brand-soft: var(--brand-soft);
   --color-again: var(--again);

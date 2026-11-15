@@ -31,7 +31,7 @@ export function ModernDefinitions({ senses, links }: { senses: Sense[]; links: W
       <SenseList senses={shown} start={1} links={links} />
       {rest.length > 0 && (
         <details className="group">
-          <summary className="cursor-pointer text-sm text-primary group-open:mb-3">較少用的意思（{rest.length}）</summary>
+          <summary className="cursor-pointer text-sm text-primary-ink group-open:mb-3">較少用的意思（{rest.length}）</summary>
           <SenseList senses={rest} start={shown.length + 1} links={links} />
         </details>
       )}
@@ -47,7 +47,7 @@ function SenseList({ senses, start, links }: { senses: Sense[]; start: number; l
           <span className="w-4 shrink-0 text-right text-sm text-muted-foreground tabular-nums">{start + i}</span>
           <div className="flex min-w-0 flex-col gap-0.5">
             <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
-              <span className="text-sm text-primary italic">{s.pos}</span>
+              <span className="text-sm text-primary-ink italic">{s.pos}</span>
               <span className="text-[1.05rem] font-semibold">{s.label}</span>
               {USAGE_LABELS[s.usage] && <Tag>{USAGE_LABELS[s.usage]}</Tag>}
               {s.register.map((r) => (

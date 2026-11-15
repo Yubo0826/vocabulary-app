@@ -164,7 +164,7 @@ function WordView({ word, from }: { word: WordDetail; from?: string }) {
                   </ol>
                   {defs.length > EN_DEFS_SHOWN && (
                     <details>
-                      <summary className="my-1.5 cursor-pointer text-sm text-primary">
+                      <summary className="my-1.5 cursor-pointer text-sm text-primary-ink">
                         顯示其餘 {defs.length - EN_DEFS_SHOWN} 筆
                       </summary>
                       <ol className="flex list-decimal flex-col gap-1 pl-6" start={EN_DEFS_SHOWN + 1}>
@@ -213,7 +213,7 @@ function WordList({ label, words }: { label: string; words: { headword: string; 
   if (words.length === 0) return null;
   return (
     <div className="flex flex-col gap-1">
-      <dt className="text-sm font-semibold text-primary">{label}</dt>
+      <dt className="text-sm font-semibold text-primary-ink">{label}</dt>
       <dd className="flex flex-wrap gap-x-1 gap-y-1 text-[1.02rem]">
         {words.map((w, i) => (
           <span key={w.headword}>
@@ -229,7 +229,7 @@ function WordList({ label, words }: { label: string; words: { headword: string; 
 }
 
 function Pos({ children }: { children: React.ReactNode }) {
-  return <span className="min-w-[2.6em] shrink-0 text-sm text-primary italic">{children}</span>;
+  return <span className="min-w-[2.6em] shrink-0 text-sm text-primary-ink italic">{children}</span>;
 }
 
 function groupBy<T>(items: T[], key: (item: T) => string): [string, T[]][] {
