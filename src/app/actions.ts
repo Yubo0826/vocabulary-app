@@ -42,39 +42,32 @@ async function run<T>(fn: (userId: string) => Promise<T>, options = { refresh: t
   }
 }
 
-export async function saveWordAction(headword: unknown): Promise<ActionResult> {
-  return run(async (userId) => {
-    await data.saveWord(userId, str(headword, "headword"));
+/**
+ * 把字放入或移出一本單字本（收藏視窗的每一列）。放進第一本時收藏、移出最後一本時取消收藏；
+ * 回傳操作後這個字是否仍是收藏中
+ */
+export async function setWordbookMembershipAction(
+  wordbookId: unknown,
+  headword: unknown,
+  member: unknown,
+): Promise<ActionResult<{ saved: boolean }>> {
+  return run((userId) => {
+    if (typeof member !== "boolean") throw new data.ValidationError("格式錯誤");
+    return data.setWordbookMembership(userId, uuid(wordbookId, "wordbook"), str(headword, "headword"), member);
   });
 }
 
-/** 收藏並設定這個字屬於哪些單字本（沒勾的會移出） */
-export async function saveToWordbooksAction(headword: unknown, wordbookIds: unknown): Promise<ActionResult> {
-  return run(async (userId) => {
-    if (!Array.isArray(wordbookIds)) throw new data.ValidationError("單字本格式錯誤");
-    await data.saveToWordbooks(userId, str(headword, "headword"), wordbookIds.map((id) => uuid(id, "wordbook")));
-  });
-}
-
-/** 匯入純文字單字清單；wordbookId 為 null 時只收藏不放進單字本 */
+/** 匯入純文字單字清單到一本單字本（一定要選單字本：收藏＝在單字本裡） */
 export async function importWordsAction(text: unknown, wordbookId: unknown): Promise<ActionResult<data.ImportResult>> {
-  return run((userId) =>
-    data.importWords(userId, str(text, "text"), wordbookId === null ? null : uuid(wordbookId, "wordbook")),
-  );
+  return run((userId) => data.importWords(userId, str(text, "text"), uuid(wordbookId, "wordbook")));
 }
 
-export async function unsaveWordAction(headword: unknown): Promise<ActionResult> {
-  return run((userId) => data.unsaveWord(userId, str(headword, "headword")));
-}
-
-/** 儲存筆記；這個字還沒收藏時會一併收藏（並建立字卡） */
+/** 儲存筆記（和收藏無關：沒收藏也能寫；空白＝清除筆記） */
 export async function saveNoteAction(headword: unknown, note: unknown): Promise<ActionResult> {
-  return run(async (userId) => {
-    await data.saveWord(userId, str(headword, "headword"), note == null ? null : str(note, "筆記"));
-  });
+  return run((userId) => data.setNote(userId, str(headword, "headword"), note == null ? null : str(note, "筆記")));
 }
 
-/** 調整熟悉度（0–3）；選低／中／高時還沒收藏會一併收藏。等級格式在 setFamiliarity 檢查 */
+/** 調整熟悉度（0–3）；只有收藏的字可以調整。等級格式在 setFamiliarity 檢查 */
 export async function setFamiliarityAction(headword: unknown, level: unknown): Promise<ActionResult<number>> {
   return run((userId) => review.setFamiliarity(userId, str(headword, "headword"), level));
 }
@@ -102,7 +95,8 @@ export async function updateWordbookAction(
   );
 }
 
-export async function deleteWordbookAction(wordbookId: unknown): Promise<ActionResult> {
+/** 刪除單字本；回傳只在這本裡、因此一併取消收藏的字數 */
+export async function deleteWordbookAction(wordbookId: unknown): Promise<ActionResult<number>> {
   return run((userId) => data.deleteWordbook(userId, uuid(wordbookId, "wordbook")));
 }
 

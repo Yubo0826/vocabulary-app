@@ -31,7 +31,7 @@ export async function SaveButton({ headword }: { headword: string }) {
       </Button>
     );
   }
-  return <SaveDialog headword={headword} saved={state.saved !== null} wordbooks={state.wordbooks} />;
+  return <SaveDialog headword={headword} saved={state.saved} wordbooks={state.wordbooks} />;
 }
 
 /** 單字標題列右側的筆記按鈕：未登入時導向登入。讀 session，需放在 Suspense 內 */
@@ -46,19 +46,19 @@ export async function NoteButton({ headword }: { headword: string }) {
       </Button>
     );
   }
-  return <NoteDialog headword={headword} note={state.saved?.note ?? null} saved={state.saved !== null} />;
+  return <NoteDialog headword={headword} note={state.note} />;
 }
 
-/** 單字標題列最右的熟悉度圓點；未登入時不顯示。讀 session，需放在 Suspense 內 */
+/** 單字標題列最右的熟悉度圓點；只有收藏的字才有（熟悉度是字卡的排程），未登入或沒收藏時不顯示。讀 session，需放在 Suspense 內 */
 export async function FamiliarityControl({ headword }: { headword: string }) {
   const state = await loadSaveState(headword);
-  if (!state) return null;
+  if (!state?.saved) return null;
   return <FamiliarityPicker headword={headword} level={state.familiarity} />;
 }
 
 /** 單字頁上顯示的筆記內容；沒有筆記（或未登入）時不顯示。編輯在筆記按鈕的視窗裡 */
 export async function NotePreview({ headword }: { headword: string }) {
-  const note = (await loadSaveState(headword))?.saved?.note;
+  const note = (await loadSaveState(headword))?.note;
   if (!note) return null;
   return (
     <section aria-label="我的筆記" className="rounded-2xl bg-muted px-4 py-3">

@@ -40,17 +40,6 @@ async function handleMessage(message, sender) {
       const res = await callApi(`${base}/api/extension/word?q=${encodeURIComponent(message.text)}`);
       return { ...res, base };
     }
-    case "save":
-      return callApi(`${base}/api/extension/save`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          headword: message.headword,
-          saved: message.saved,
-          contextUrl: message.contextUrl ?? null,
-          contextSentence: message.contextSentence ?? null,
-        }),
-      });
     case "open": {
       // 只開 Moji 網站內的頁面
       const path = typeof message.path === "string" && message.path.startsWith("/") ? message.path : "/";

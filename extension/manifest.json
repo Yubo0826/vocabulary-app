@@ -2,8 +2,8 @@
   "manifest_version": 3,
   "name": "Moji 單字本",
   "short_name": "Moji",
-  "version": "0.3.0",
-  "description": "在網頁上選取英文單字時按住 Alt（或選好後按一下 Alt）就能查字、一鍵收藏到 Moji；也可按右鍵「在 Moji 查詢」。",
+  "version": "0.4.0",
+  "description": "在網頁上選取英文單字時按住 Alt（或選好後按一下 Alt）就能查字，並可開啟 Moji 的完整解釋；也可按右鍵「在 Moji 查詢」。",
   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6umnEeOMI5XNRHbhf25MlPdxwKQvaDlJEb2xiuu5mw5BUsxztZkRlpFzFzaThqzzCdV7AdU/7W3ndEdCIrvDuzhxLkmHs5YK3xjyN24hDcL4boho5zxDGbHaEQ3L8YGLDeG9oOMbzuk7m4B0p2469DNxZbehpyhBvRC98rTHN6NvW4yWBajYb/uFWP9X4b9qjxNIpNwCsbOHOyxjeciTNvgxG3kjKzfFXHq2Js2hRrXg588Bk5ghUOfwLEo3poGwUXSjQghn3SXJbAeekR5FP7+ch3QyuYVXqmx6TN506MV7WMbmRgogwnGmt/Ggs0Qq/jLPMSVz/g1vdezPUIFI7QIDAQAB",
   "permissions": [
     "contextMenus",

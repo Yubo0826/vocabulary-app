@@ -103,6 +103,10 @@
 - 使用者資料存取集中在 `src/lib/user-data.ts`，第一個參數一律是 userId；Server Actions（`src/app/actions.ts`）自己從 session 取得 userId，不接受用戶端傳入。操作別人的資料一律回「找不到」。
 - 測試：`npm test`（`tests/user-isolation.test.ts`，用 Node 內建 test runner + tsx，使用 `TEST_DATABASE_URL` 指向的 `vocab_test`，每次執行會清空）。涵蓋資料隔離、軟刪除與重新收藏、自動建卡，以及透過 Better Auth API 刪除帳號後 8 張表的 cascade。
 - 取消收藏時，該字的字卡也一併軟刪除；重新收藏會恢復原本的字卡與複習進度，收藏時間更新為重新收藏的時間。單字本中的項目保留，重新收藏後會回到原本的單字本。
+- **2026-11-15 改版：收藏＝至少在一本單字本裡**（YouTube「儲存至…」的做法）。單字頁的星星打開「收藏至…」視窗，每點一列就立刻放入或移出那本，沒有儲存按鈕；放進第一本時收藏並建立字卡，移出最後一本時取消收藏（字卡移出複習）。沒有單字本時要先建立一本。刪除單字本時，只在這本裡的字一併取消收藏（確認視窗會寫出字數）。匯入一定要選單字本。
+  - 筆記和收藏脫鉤：改存獨立的 `word_notes` 表，沒收藏也能寫，取消收藏不會丟筆記；「筆記」頁列出所有筆記。`saved_words.note` 欄位停用但保留。
+  - 熟悉度只屬於收藏的字（它是字卡的排程）：沒收藏時不顯示，設熟悉度也不會順便收藏。
+  - migration `0010_word_notes`：建 `word_notes` 並搬入收藏中的字的筆記；沒放進任何單字本的收藏放進每位使用者新建的「未分類」單字本。**正式環境要跑 `npx drizzle-kit migrate`（0009、0010）。**
 - 尚未串接寄信服務：註冊不需 Email 驗證，也沒有「忘記密碼」。只用 Google 登入的帳號要刪除時，需在登入 1 天內操作（Better Auth 的 freshAge）。
 - 注意 Drizzle 的坑：select 欄位裡的 `sql` 子查詢，`${table.column}` 會輸出成不帶表名的欄位，關聯條件會錯。子查詢一律用別名寫完整欄位名稱（見 `user-data.ts`）。
 
@@ -167,11 +171,12 @@
 - CSV 匯入收藏（欄位對應：headword、筆記、單字本）
 - 瀏覽器擴充功能（Chrome，Manifest V3）：反白查字與收藏，收藏時記錄 `origin = 'extension'`、來源網址與原句（`saved_words` 已有 `origin`、`context_url`、`context_sentence` 欄位，不需新 migration）。2026-11-14 評估：可行，排在階段 6 完成之後，分兩步：
   - [x] 第一步：右鍵選單「在 Moji 查詢」，開新分頁到單字頁。不改後端、不處理登入，先驗證實際使用頻率（2026-11-14：`extension/`，純 JS 不需打包；網站網址在擴充元件「選項」頁設定，預設值在 `extension/config.js`；單字或 4 字以內片語開單字頁，其他開搜尋頁）
-  - [x] 第二步：反白英文字（4 字以內）後旁邊出現 M 小圖示，點了跳出浮動卡片（2026-11-15 改成「選取時按住 Alt，或選好後單按 Alt」直接跳出卡片，拿掉小圖示）（closed Shadow DOM 隔離樣式），顯示音標、發音、最多 3 個常用詞義，一鍵收藏／取消收藏（2026-11-14 本機驗證）
-    - 後端：`GET /api/extension/word?q=`（`quickLookup()`，變化形轉原形）、`POST /api/extension/save`（以登入者 `user_id` 寫入，`origin = 'extension'`，記錄出處網址與原句）
+  - [x] 第二步：反白英文字（4 字以內）後旁邊出現 M 小圖示，點了跳出浮動卡片（2026-11-15 改成「選取時按住 Alt，或選好後單按 Alt」直接跳出卡片，拿掉小圖示）（closed Shadow DOM 隔離樣式），顯示音標、發音、最多 3 個常用詞義（2026-11-14 本機驗證）
+    - 2026-11-15 拿掉擴充元件的收藏（v0.4.0）：收藏改成一定要選單字本，卡片只查字＋「完整解釋」連到網站，`POST /api/extension/save` 已刪除
+    - 後端：`GET /api/extension/word?q=`（`quickLookup()`，變化形轉原形，不需登入）
     - 登入：沿用網站登入，由 service worker 帶 Moji 網站的 cookie（實測可行，不用 bearer token）
     - 請求來源檢查（`src/lib/extension.ts`）：有 Origin 時必須是擴充元件 ID（manifest 的 `key` 固定為 `jliagbbfhngfojafccnlfndkockoppcc`，上架後的 ID 加到 `EXTENSION_ORIGINS`）；Chrome 送 GET 不帶 Origin，改看自訂標頭 `X-Moji-Extension`
-  - [ ] 網站上顯示收藏的出處（網址與原句），目前只存進資料庫、還沒有畫面
+  - ~~網站上顯示收藏的出處~~：擴充元件已不能收藏，舊資料的 `context_url`、`context_sentence` 保留在資料庫
   - 限制：Chrome 內建 PDF 檢視器與 Google Docs 抓不到選取文字
   - 上架：自用以「載入未封裝項目」即可；公開需 Chrome 線上應用程式商店開發者帳號（一次 US$5）、審核與隱私權政策（見階段 6）
   - 打包盡量不用框架；需要新套件時先詢問

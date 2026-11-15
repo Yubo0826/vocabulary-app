@@ -26,7 +26,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 
-type Wordbook = { id: string; name: string; description: string | null; count: number };
+type Wordbook = { id: string; name: string; description: string | null; count: number; exclusiveCount: number };
 
 const exportHref = (bookId?: string) => (bookId ? `/api/export/words?book=${bookId}` : "/api/export/words");
 
@@ -114,7 +114,7 @@ export function WordbookManager({ wordbooks, savedCount }: { wordbooks: Wordbook
       )}
 
       <ul className="grid grid-cols-2 gap-3">
-        {/* 固定的第一格：所有收藏（包含沒放進任何單字本的字），只能匯出 */}
+        {/* 固定的第一格：所有收藏（每個收藏都至少在一本單字本裡），只能匯出 */}
         <Tile href="/saved" name="全部收藏" count={savedCount} strong>
           <DropdownMenu>
             <MenuTrigger label="全部收藏的選項" strong />
@@ -149,7 +149,13 @@ export function WordbookManager({ wordbooks, savedCount }: { wordbooks: Wordbook
         <AlertDialogContent>
           <AlertDialogHeader>
             <AlertDialogTitle>刪除「{deleting?.name}」？</AlertDialogTitle>
-            <AlertDialogDescription>裡面的字仍會保留在收藏中。</AlertDialogDescription>
+            <AlertDialogDescription>
+              {!deleting || deleting.count === 0
+                ? "這本單字本是空的。"
+                : deleting.exclusiveCount > 0
+                  ? `其中 ${deleting.exclusiveCount} 個字只在這本裡，會一併取消收藏、移出複習。也在其他單字本的字不受影響。`
+                  : "裡面的字也都在其他單字本裡，仍會保留在收藏中。"}
+            </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>
             <AlertDialogCancel>取消</AlertDialogCancel>
@@ -231,7 +237,7 @@ export function CreateWordbookDialog() {
       <DialogContent>
         <DialogHeader>
           <DialogTitle>新增單字本</DialogTitle>
-          <DialogDescription>一個字可以放進多本單字本。刪除單字本不會取消收藏。</DialogDescription>
+          <DialogDescription>一個字可以放進多本單字本；放進任何一本就算收藏。</DialogDescription>
         </DialogHeader>
         <WordbookForm
           submitLabel="新增單字本"
@@ -281,7 +287,7 @@ function WordbookForm({
       <Input
         value={name}
         maxLength={50}
-        placeholder="單字本名稱，例如：多益、影集"
+        placeholder="單字本名稱"
         aria-label="單字本名稱"
         className="h-10 bg-card text-base md:text-sm"
         onChange={(e) => setName(e.target.value)}
@@ -294,15 +300,16 @@ function WordbookForm({
         className="h-10 bg-card text-base md:text-sm"
         onChange={(e) => setDescription(e.target.value)}
       />
-      <div className="flex gap-1">
-        <Button type="submit" size="lg" disabled={pending || !name.trim()}>
-          {submitLabel}
-        </Button>
+      {/* 主要按鈕靠右（和其他視窗一致）；有取消時放在它左邊 */}
+      <div className="mt-1 flex justify-end gap-2">
         {onCancel && (
           <Button type="button" variant="ghost" size="lg" onClick={onCancel}>
             取消
           </Button>
         )}
+        <Button type="submit" size="lg" disabled={pending || !name.trim()}>
+          {submitLabel}
+        </Button>
       </div>
     </form>
   );

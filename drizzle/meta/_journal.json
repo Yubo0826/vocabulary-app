@@ -71,6 +71,13 @@
       "when": 1794674034703,
       "tag": "0009_lookup_history",
       "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "7",
+      "when": 1794733825115,
+      "tag": "0010_word_notes",
+      "breakpoints": true
     }
   ]
 }

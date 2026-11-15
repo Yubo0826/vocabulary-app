@@ -6,6 +6,7 @@
 import assert from "node:assert/strict";
 import { randomUUID } from "node:crypto";
 import { after, before, beforeEach, describe, test } from "node:test";
+import { savingHelpers } from "./helpers";
 import { setupTestDatabase } from "./setup";
 
 type Review = typeof import("../src/lib/review");
@@ -24,6 +25,7 @@ let eq: typeof import("drizzle-orm").eq;
 const userA = "user-a";
 const userB = "user-b";
 const DAY = 86_400_000;
+const { save, unsave } = savingHelpers(() => data);
 
 before(async () => {
   await setupTestDatabase();
@@ -54,7 +56,7 @@ after(async () => {
 });
 
 async function cardOf(userId: string, headword: string) {
-  await data.saveWord(userId, headword);
+  await save(userId, headword);
   const [card] = await db
     .select()
     .from(schema.cards)
@@ -164,8 +166,8 @@ describe("復原上一張", () => {
 describe("今日佇列", () => {
   test("新卡受 newCardsPerDay 限制，依收藏順序出現", async () => {
     await cardOf(userA, "apple");
-    await data.saveWord(userA, "banana");
-    await data.saveWord(userA, "cherry");
+    await save(userA, "banana");
+    await save(userA, "cherry");
     await review.updateSettings(userA, { newCardsPerDay: 2, desiredRetention: 0.9, dayStartsAtHour: 4 });
     const settings = await review.getSettings(userA);
     const now = new Date();
@@ -197,7 +199,7 @@ describe("今日佇列", () => {
 
   test("取消收藏的字卡不會出現在佇列", async () => {
     await cardOf(userA, "apple");
-    await data.unsaveWord(userA, "apple");
+    await unsave(userA, "apple");
     const q = await review.getQueue(userA, await review.getSettings(userA));
     assert.equal(q.next, null);
     assert.equal(q.counts.new, 0);
@@ -294,8 +296,12 @@ describe("熟悉度", () => {
     assert.equal(fam.familiarityOf({ state: 2, stability: 21 }), 3);
   });
 
-  test("沒收藏時選低／中／高會自動收藏，字卡排程改成對應等級，並寫一筆 rating 0 的 log", async () => {
+  test("沒收藏時不能調熟悉度（不會順便收藏）；收藏後選低／中／高改成對應排程，並寫一筆 rating 0 的 log", async () => {
     const now = new Date();
+    await assert.rejects(review.setFamiliarity(userA, "apple", 2, now), data.ValidationError);
+    assert.equal((await data.getSaveState(userA, "apple")).saved, false);
+
+    await save(userA, "apple");
     assert.equal(await review.setFamiliarity(userA, "Apple", 2, now), 2);
 
     const state = await data.getSaveState(userA, "apple");
@@ -320,15 +326,16 @@ describe("熟悉度", () => {
     assert.equal((await data.listSavedWords(userA))[0].familiarity, 3);
   });
 
-  test("選「無」：已收藏的字重設成新卡但保留收藏；沒收藏的字不做事", async () => {
+  test("選「無」：已收藏的字重設成新卡但保留收藏；沒收藏的字不能選", async () => {
+    await save(userA, "apple");
     await review.setFamiliarity(userA, "apple", 3);
     assert.equal(await review.setFamiliarity(userA, "apple", 0), 0);
     const card = await enZh(userA, "apple");
     assert.equal(card?.state, review.STATE.New);
     assert.ok((await data.getSaveState(userA, "apple")).saved);
 
-    assert.equal(await review.setFamiliarity(userA, "banana", 0), 0);
-    assert.equal((await data.getSaveState(userA, "banana")).saved, null);
+    await assert.rejects(review.setFamiliarity(userA, "banana", 0), data.ValidationError);
+    assert.equal((await data.getSaveState(userA, "banana")).saved, false);
     await assert.rejects(review.setFamiliarity(userA, "apple", 4), data.ValidationError);
     await assert.rejects(review.setFamiliarity(userA, "apple", "2"), data.ValidationError);
   });
@@ -336,15 +343,17 @@ describe("熟悉度", () => {
   test("選「低」今天就會出現在複習佇列；手動調整不算進統計、今日新卡數與復原", async () => {
     const settings = await review.getSettings(userA);
     const now = new Date();
+    await save(userA, "apple");
     await review.setFamiliarity(userA, "apple", 1, now);
     const q = await review.getQueue(userA, settings, now);
     assert.equal(q.next?.headword, "apple");
     assert.equal(q.counts.review, 1);
 
     // 另一張新卡：手動調整前是新卡，但不應扣掉今日新卡額度
-    await data.saveWord(userA, "banana");
+    await save(userA, "banana");
     await review.setFamiliarity(userA, "banana", 0, now);
     await review.updateSettings(userA, { newCardsPerDay: 1, desiredRetention: 0.9, dayStartsAtHour: 4 });
+    await save(userA, "cherry");
     await review.setFamiliarity(userA, "cherry", 2, now);
     assert.equal((await review.getQueue(userA, await review.getSettings(userA), now)).counts.new, 1);
 
@@ -355,7 +364,8 @@ describe("熟悉度", () => {
   });
 
   test("只影響自己的字卡", async () => {
-    await data.saveWord(userB, "apple");
+    await save(userB, "apple");
+    await save(userA, "apple");
     await review.setFamiliarity(userA, "apple", 3);
     assert.equal((await data.getSaveState(userB, "apple")).familiarity, 0);
     assert.equal((await enZh(userB, "apple"))?.state, review.STATE.New);

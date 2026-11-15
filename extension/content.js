@@ -1,7 +1,7 @@
 /**
  * 網頁上的查字：選取英文單字或短片語（最多 4 個字）時按住 Alt（或選好後按一下 Alt），
- * 直接跳出查字卡片（音標、發音、常用詞義、收藏按鈕、連到 Moji 單字頁）。不按 Alt 的選取不打擾。
- * 收藏時一併記錄這個網頁的網址與選字所在的句子。
+ * 直接跳出查字卡片（音標、發音、常用詞義、連到 Moji 單字頁）。不按 Alt 的選取不打擾。
+ * 卡片只負責查字；收藏要到網站上選單字本（收藏＝放進單字本），所以這裡不提供收藏。
  *
  * 所有 UI 放在 closed Shadow DOM 裡，不受網頁 CSS 影響、也不影響網頁。
  * API 呼叫交給 background.js（才能帶上 Moji 的登入 cookie）。
@@ -13,9 +13,7 @@
 
   const MAX_WORDS = 4;
   const MAX_LENGTH = 60;
-  const MAX_SENTENCE = 500;
   const WORD_LIKE = /^[A-Za-z]+(?:['-][A-Za-z]+)*(?: [A-Za-z]+(?:['-][A-Za-z]+)*)*$/;
-  const BLOCK_SELECTOR = "p, li, td, th, dd, dt, blockquote, figcaption, h1, h2, h3, h4, h5, h6, pre, article, section, div";
   const POS_LABELS = { "n.": "名詞", "v.": "動詞", "adj.": "形容詞", "adv.": "副詞" };
 
   // ---------------------------------------------------------------- 根節點與樣式
@@ -72,20 +70,8 @@
     .label { font-weight: 600; }
     .zh { color: var(--muted); margin: 1px 0 0; }
     .en { font-size: 13px; margin: 1px 0 0; }
-    .foot { display: flex; align-items: center; gap: 8px; margin-top: 14px; flex-wrap: wrap; }
-    /* filled 按鈕（收藏）；已收藏改 tonal */
-    .btn {
-      height: 36px; padding: 0 16px 0 12px; border-radius: 999px; font-weight: 500;
-      display: inline-flex; align-items: center; gap: 6px;
-      background: var(--primary); color: var(--on-primary); transition: background-color 150ms, box-shadow 150ms;
-    }
-    .btn:hover { background: color-mix(in srgb, var(--primary), var(--on-primary) 8%); box-shadow: 0 1px 2px rgb(0 0 0 / .05); }
-    .btn:active { background: color-mix(in srgb, var(--primary), var(--on-primary) 12%); }
-    .btn.saved { background: var(--tonal); color: var(--on-tonal); }
-    .btn.saved:hover { background: color-mix(in srgb, var(--tonal), var(--on-tonal) 8%); box-shadow: none; }
-    .btn.saved:active { background: color-mix(in srgb, var(--tonal), var(--on-tonal) 12%); }
-    .btn:disabled { opacity: .6; cursor: default; }
-    /* text 按鈕（完整解釋、登入）：主色字＋state layer */
+    .foot { display: flex; justify-content: flex-end; margin: 10px -8px -6px 0; }
+    /* text 按鈕（完整解釋、在 Moji 搜尋）：主色字＋state layer */
     .link {
       height: 36px; padding: 0 12px; border-radius: 999px; background: transparent; color: var(--primary); font-weight: 500;
       display: inline-flex; align-items: center; gap: 4px; transition: background-color 150ms;
@@ -98,7 +84,7 @@
   const ui = root.querySelector(".ui");
 
   let card = null;
-  let pending = null; // { text, sentence, url, rect }
+  let pending = null; // { text, rect }
   let altAlone = false; // 按下 Alt 後還沒按其他鍵（放開時才算「單按 Alt」）
 
   function mount() {
@@ -186,7 +172,7 @@
     const last = rects[rects.length - 1] ?? range.getBoundingClientRect();
     if (!last || (last.width === 0 && last.height === 0)) return false;
 
-    pending = { text, sentence: sentenceAround(range), url: location.href, rect: toPageRect(last) };
+    pending = { text, rect: toPageRect(last) };
     void openCard();
     return true;
   }
@@ -198,40 +184,6 @@
   function hideCard() {
     card?.remove();
     card = null;
-  }
-
-  // ---------------------------------------------------------------- 選字所在的句子
-
-  /** 取選取範圍所在段落裡、包含選取文字的那一句（給收藏記錄出處用） */
-  function sentenceAround(range) {
-    try {
-      const start = range.startContainer;
-      const startEl = start instanceof Element ? start : start.parentElement;
-      const block = startEl?.closest(BLOCK_SELECTOR) ?? document.body;
-      const before = document.createRange();
-      before.selectNodeContents(block);
-      before.setEnd(range.startContainer, range.startOffset);
-      const text = block.textContent ?? "";
-      const offset = before.toString().length;
-      const end = offset + range.toString().length;
-
-      const boundary = /[.!?。！？]["'”’)]*\s/g;
-      let from = 0;
-      let to = text.length;
-      for (const m of text.matchAll(boundary)) {
-        const stop = m.index + m[0].length;
-        if (stop <= offset) from = stop;
-        else if (m.index >= end - 1) {
-          to = m.index + m[0].trimEnd().length;
-          break;
-        }
-      }
-      const sentence = text.slice(from, to).replace(/\s+/g, " ").trim();
-      if (!sentence) return null;
-      return sentence.length > MAX_SENTENCE ? null : sentence;
-    } catch {
-      return null;
-    }
   }
 
   // ---------------------------------------------------------------- 查字卡片
@@ -266,7 +218,7 @@
         h("div", { className: "foot" }, h("button", { className: "link", onClick: () => open(`/search?q=${encodeURIComponent(target.text)}`) }, "在 Moji 搜尋 →")),
       );
     } else {
-      renderWord(card, res.data, target);
+      renderWord(card, res.data);
     }
     placeCard(target.rect);
   }
@@ -286,7 +238,7 @@
     );
   }
 
-  function renderWord(el, { word, loggedIn, saved }, target) {
+  function renderWord(el, { word }) {
     const list = h(
       "ol",
       {},
@@ -300,44 +252,9 @@
         ),
       ),
     );
-    const error = h("p", { className: "error", hidden: "" });
-    const foot = h("div", { className: "foot" });
-
-    if (loggedIn) {
-      let isSaved = saved;
-      const button = h("button", { className: "btn" });
-      const sync = () => {
-        // 和網站的收藏鈕一樣用星星：已收藏是實心星
-        button.replaceChildren(icon(ICONS.star, 16, isSaved), isSaved ? "已收藏" : "收藏");
-        button.classList.toggle("saved", isSaved);
-        button.title = isSaved ? "再按一次取消收藏" : "收藏到 Moji，並記下這句話的出處";
-      };
-      sync();
-      button.addEventListener("click", async () => {
-        button.disabled = true;
-        error.hidden = true;
-        const next = !isSaved;
-        const res = await send({
-          type: "save",
-          headword: word.headword,
-          saved: next,
-          contextUrl: target.url,
-          contextSentence: target.sentence,
-        });
-        button.disabled = false;
-        if (res?.ok) {
-          isSaved = next;
-          sync();
-        } else {
-          error.textContent = res?.error ?? "收藏失敗";
-          error.hidden = false;
-        }
-      });
-      foot.append(button);
-    } else {
-      foot.append(h("button", { className: "link", onClick: () => open("/login") }, "登入 Moji 後即可收藏"));
-    }
-    foot.append(
+    const foot = h(
+      "div",
+      { className: "foot" },
       h("button", { className: "link", onClick: () => open(`/word/${encodeURIComponent(word.headword)}`) }, "完整解釋", icon(ICONS.externalLink, 15)),
     );
 
@@ -347,7 +264,6 @@
       word.form ? h("p", { className: "note" }, `「${word.form}」的原形`) : null,
       word.senses.length ? list : h("p", { className: "msg" }, "還沒有釋義資料。"),
       foot,
-      error,
     );
   }
 
@@ -393,18 +309,15 @@
     ],
     close: ["M18 6 6 18", "m6 6 12 12"],
     externalLink: ["M15 3h6v6", "M10 14 21 3", "M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"],
-    star: [
-      "M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z",
-    ],
   };
 
-  function icon(paths, size, filled = false) {
+  function icon(paths, size) {
     const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
     for (const [k, v] of Object.entries({
       viewBox: "0 0 24 24",
       width: size,
       height: size,
-      fill: filled ? "currentColor" : "none",
+      fill: "none",
       stroke: "currentColor",
       "stroke-width": "2",
       "stroke-linecap": "round",

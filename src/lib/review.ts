@@ -15,7 +15,7 @@ import { cards, reviewLogs, userSettings } from "@/db/schema";
 import { FAMILIARITY_SCHEDULE, familiarityOf, isFamiliarity, type Familiarity } from "./familiarity";
 import { normalizeHeadword } from "./headword";
 import { studyDateKey, studyDayStart } from "./study-day";
-import { NotFoundError, saveWordIn, ValidationError } from "./user-data";
+import { NotFoundError, ValidationError } from "./user-data";
 
 export type CardRow = typeof cards.$inferSelect;
 type ReviewLogRow = typeof reviewLogs.$inferSelect;
@@ -350,8 +350,9 @@ function toSchedulerRevlog(log: ReviewLogRow): DefaultSchedulerRevlog<"FSRS-6"> 
 
 /**
  * 把這個字的熟悉度調成 level，回傳調整後的等級。
- * - 低／中／高：還沒收藏就先收藏（含字卡），再把字卡改成對應的排程（見 FAMILIARITY_SCHEDULE）
- * - 無：已收藏的字重設成新卡（不取消收藏）；沒收藏的字不做任何事
+ * - 只有收藏的字（有字卡）才能調整；沒收藏時丟 ValidationError，不會順便收藏
+ * - 低／中／高：把字卡改成對應的排程（見 FAMILIARITY_SCHEDULE）
+ * - 無：重設成新卡（不取消收藏）
  * - 等級沒變時不動字卡，避免重設複習進度
  * 每次實際調整都新增一筆 rating = 0 的 review_log，記錄調整前的字卡狀態。
  */
@@ -361,8 +362,6 @@ export async function setFamiliarity(userId: string, rawHeadword: string, level:
   const scheduler = level === 0 ? null : await getScheduler(await getSettings(userId));
 
   return db.transaction(async (tx) => {
-    if (level > 0) await saveWordIn(tx, userId, headword, undefined);
-
     const [row] = await tx
       .select()
       .from(cards)
@@ -370,7 +369,8 @@ export async function setFamiliarity(userId: string, rawHeadword: string, level:
         and(eq(cards.userId, userId), eq(cards.headword, headword), eq(cards.direction, "en_zh"), isNull(cards.deletedAt)),
       )
       .for("update");
-    if (!row) return 0; // 沒收藏又選「無」
+    // 熟悉度只屬於收藏的字（字卡跟著收藏走）；沒收藏時不會順便收藏
+    if (!row) throw new ValidationError("請先收藏這個字");
     if (familiarityOf(row) === level) return level;
 
     await tx.insert(reviewLogs).values({

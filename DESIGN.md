@@ -4,6 +4,7 @@ description: 查字、收藏、複習一條龍的個人英文單字 App，Materi
 colors:
   periwinkle: "#4263eb"
   periwinkle-night: "#b9c3ff"
+  periwinkle-ink: "#3b5bdb"
   on-periwinkle: "#ffffff"
   on-periwinkle-night: "#102a8f"
   mist-container: "#dee1f9"
@@ -188,7 +189,7 @@ Moji 像 Google 自家的工具 App：不搶戲、一眼看懂，每個按鈕都
 ### Neutral
 - **Paper 紙面**（paper／night）：頁面底色，也是頁首底色。
 - **Paper Raised 抬高的紙**（paper-raised／night-raised）：卡片與清單容器，比頁面深一階。
-- **Paper High 更高的紙**（paper-high／night-high）：搜尋列與展開的搜尋清單、次要填色區塊（筆記預覽、進度條軌道）。
+- **Paper High 更高的紙**（paper-high／night-high）：搜尋列（收合時）、次要填色區塊（筆記預覽、進度條軌道）。
 - **Menu Paper 選單紙**（menu-paper）：彈出選單、對話框；深色模式用 night-high。
 - **Ink 墨色**（ink／night-ink）：主要文字，帶藍紫的近黑，不用純黑。
 - **Ink Soft 淡墨**（ink-soft／night-ink-soft）：次要文字、區塊標題、音標旁的說明。
@@ -201,7 +202,7 @@ Moji 像 Google 自家的工具 App：不搶戲、一眼看懂，每個按鈕都
 - **熟悉度圓點**：無＝淡墨空心、低＝紫、中＝琥珀、高＝翠綠（Tailwind violet／amber／emerald 500）。
 
 ### Named Rules
-**The One Blue Rule.** 品牌色只有長春花藍一個。新功能需要強調時，先用 mist container 或字重，不要加新的色相。
+**The One Blue Rule.** 品牌色只有長春花藍一個。新功能需要強調時，先用 mist container 或字重，不要加新的色相。卡片上的主色小字（摘要連結、詞性、詞義標題）用深一階的同色相 periwinkle-ink（`text-primary-ink`），因為 #4263eb 放在 paper-raised 上只有 4.4:1。
 
 **The No-Gradient Rule.** 背景、按鈕、文字、圖示都不用漸層。
 
@@ -216,7 +217,7 @@ Moji 像 Google 自家的工具 App：不搶戲、一眼看懂，每個按鈕都
 - **Word Display**（700，clamp(2rem, 8vw, 2.6rem)，1.25）：單字頁標題、複習卡上的單字。全站最大最粗的字，只給英文單字。
 - **Hero**（400，2rem → 2.6rem，1.25）：首頁「查單字」。大但不粗，安靜。
 - **Headline**（600，1.5rem）：各頁的頁面標題（我的單字、複習、筆記、設定）。
-- **Title**（600，1.05rem）：區塊內的小標題、對話框標題。
+- **Title**（600，1.05rem）：區塊內的小標題。對話框標題用 600、1.25rem。
 - **Body**（400，1rem，1.625）：釋義、例句、筆記。中文行高要寬鬆。
 - **Body Small**（400，0.875rem）：清單內容、按鈕、說明文字。
 - **Section Label**（600，0.75rem，字距 0.1em，淡墨色）：單字頁卡片的區塊標題（釋義、例句…）。
@@ -266,9 +267,17 @@ Moji 像 Google 自家的工具 App：不搶戲、一眼看懂，每個按鈕都
 - **Error:** 外框換 destructive 色＋淡紅外環。
 
 ### Search Bar（招牌元件）
-56px 高的全圓膠囊，paper-high 底、沒有框也沒有聚焦外環（游標就是聚焦提示），左側放大鏡圖示。輸入時下方展開同底色、28px 圓角的清單，看起來和搜尋列是同一張卡片，選中列疊 8% state layer。聚焦但還沒輸入時，同一張清單改列「最近查過」：每列左邊歷史圖示、右邊 32px 的 × 移除鈕（不進 Tab 順序，鍵盤用 Shift+Delete）。
+56px 高的全圓膠囊，paper-high 底、沒有框也沒有聚焦外環（游標就是聚焦提示），左側放大鏡圖示。聚焦展開時搜尋列和下方 28px 圓角的清單一起變成白底（深色模式用 menu-paper），看起來是同一張浮起的卡片，選中列疊 8% state layer。聚焦但還沒輸入時，同一張清單改列「最近查過」：每列左邊歷史圖示、右邊 32px 的 × 移除鈕（不進 Tab 順序，鍵盤用 Shift+Delete）。
 
 單字頁頂端用 48px 的精簡版（placeholder「查其他單字」），讓人不必回首頁就能查下一個字；按 `/` 聚焦，有實體鍵盤時右側顯示 `/` 提示（觸控裝置隱藏）。一頁只有一個搜尋框啟用 `/`。
+
+### Dialogs
+
+寬 448px（手機左右各留 16px）、內距 24px、元素間距 20px、28px 圓角、menu-paper 底；標題 600、1.25rem；右上角 × 關閉。確認視窗（刪除等）同尺寸。
+
+### 收藏至…
+
+收藏＝至少在一本單字本裡。單字頁的星星打開「收藏至…」視窗（YouTube「儲存至…」的做法）：單字本是 48px 高的整列清單，左邊名稱、右邊書籤圖示（已放入是主色實心，未放入是淡墨空心），每點一列就立刻放入或移出，沒有儲存按鈕；hover 疊 8% state layer、列是 8px 圓角。清單下方一條細線，再來是滿版的 tonal「＋ 新增單字本」，點了原地換成輸入框＋「建立」（點到別處或按 Esc 收起），建好的單字本直接放入這個字。沒有單字本時清單位置寫「還沒有單字本。先建立一本，這個字就會收藏在裡面。」視窗沒有底部按鈕列，右上角 × 關閉。
 
 ### Navigation
 - **頁首:** 與頁面同底色、沒有陰影（Material top app bar）。左邊「Moji 單字本」logo，右邊導航連結與深淺色切換。

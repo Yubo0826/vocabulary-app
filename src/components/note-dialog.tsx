@@ -22,10 +22,10 @@ const NoteEditor = dynamic(() => import("./note-editor"), {
   loading: () => <div className="min-h-[18.5rem]" aria-hidden />,
 });
 
-type Props = { headword: string; note: string | null; saved: boolean };
+type Props = { headword: string; note: string | null };
 
-/** 筆記按鈕與對話框。這個字還沒收藏時，儲存筆記會一併收藏 */
-export function NoteDialog({ headword, note, saved }: Props) {
+/** 筆記按鈕與對話框。筆記和收藏無關：沒收藏也能寫，不會順便收藏 */
+export function NoteDialog({ headword, note }: Props) {
   const [open, setOpen] = useState(false);
   const [draft, setDraft] = useState(note ?? "");
   const [error, setError] = useState<string | null>(null);
@@ -79,8 +79,7 @@ export function NoteDialog({ headword, note, saved }: Props) {
               取消
             </Button>
           </DialogClose>
-          {/* 沒收藏又沒寫內容時不送出，避免只為了空筆記而收藏 */}
-          <Button disabled={pending || unchanged || (!saved && !draft.trim())} onClick={save}>
+          <Button disabled={pending || unchanged} onClick={save}>
             儲存
           </Button>
         </DialogFooter>

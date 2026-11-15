@@ -42,14 +42,17 @@ const userIdColumn = () =>
     .notNull()
     .references(() => user.id, { onDelete: "cascade" });
 
-/** 收藏：使用者收藏過的字，一人一字一筆 */
+/**
+ * 收藏：使用者收藏過的字，一人一字一筆。
+ * 「收藏中」＝ deletedAt 為 null，且至少在一本單字本裡（wordbook_items）；最後一本移出時一併軟刪除。
+ */
 export const savedWords = pgTable(
   "saved_words",
   {
     id: uuid("id").primaryKey().defaultRandom(),
     userId: userIdColumn(),
     headword: text("headword").notNull(),
-    note: text("note"), // 個人筆記
+    note: text("note"), // 已停用：筆記改存 word_notes（migration 0010 已搬過去），保留欄位只為了不丟舊資料
     // 從哪裡收藏的：'search' | 'extension' | 'import'（純文字清單匯入）；擴充功能可另存出處網址與原句
     origin: text("origin"),
     contextUrl: text("context_url"),
@@ -183,6 +186,25 @@ export const userSettings = pgTable("user_settings", {
   reviewFrontExample: boolean("review_front_example").notNull().default(true), // 複習題目面顯示一句例句
   updatedAt: ts("updated_at").notNull().defaultNow(),
 });
+
+/**
+ * 筆記：一人一字一筆，和收藏無關（沒收藏的字也能寫筆記，取消收藏也不會丟）。
+ * 清空筆記是軟刪除（deletedAt），再寫一次會清掉 deletedAt。
+ */
+export const wordNotes = pgTable(
+  "word_notes",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    userId: userIdColumn(),
+    headword: text("headword").notNull(),
+    note: text("note").notNull(),
+    ...syncColumns,
+  },
+  (t) => [
+    uniqueIndex("word_notes_user_headword_idx").on(t.userId, t.headword),
+    index("word_notes_user_updated_idx").on(t.userId, t.updatedAt),
+  ],
+);
 
 /**
  * 查字歷史：打開過的單字頁，一人一字一筆；再查一次只更新 viewedAt。

@@ -1,7 +1,9 @@
 "use client";
 
-/** 「我的單字」與「管理單字本」標題列的匯入按鈕：貼上或選擇純文字檔，每行一個單字 */
+/** 「我的單字」與「管理單字本」標題列的匯入按鈕：貼上或選擇純文字檔，每行一個單字。
+ * 收藏＝在單字本裡，所以一定要選一本單字本；還沒有單字本時先到「管理單字本」建立 */
 import { Download } from "lucide-react";
+import Link from "next/link";
 import { useRef, useState, useTransition } from "react";
 import { importWordsAction } from "@/app/actions";
 import { Button } from "@/components/ui/button";
@@ -23,7 +25,8 @@ const MAX_FILE_BYTES = 1_000_000;
 export function ImportDialog({ wordbooks, defaultWordbookId }: { wordbooks: { id: string; name: string }[]; defaultWordbookId: string | null }) {
   const [open, setOpen] = useState(false);
   const [text, setText] = useState("");
-  const [wordbookId, setWordbookId] = useState(defaultWordbookId ?? "");
+  const initialBook = defaultWordbookId ?? wordbooks[0]?.id ?? "";
+  const [wordbookId, setWordbookId] = useState(initialBook);
   const [error, setError] = useState<string | null>(null);
   const [result, setResult] = useState<ImportResult | null>(null);
   const [pending, startTransition] = useTransition();
@@ -33,7 +36,7 @@ export function ImportDialog({ wordbooks, defaultWordbookId }: { wordbooks: { id
     setText("");
     setError(null);
     setResult(null);
-    setWordbookId(defaultWordbookId ?? "");
+    setWordbookId(initialBook);
   };
 
   const readFile = async (file: File | undefined) => {
@@ -49,7 +52,7 @@ export function ImportDialog({ wordbooks, defaultWordbookId }: { wordbooks: { id
   const submit = () =>
     startTransition(async () => {
       setError(null);
-      const r = await importWordsAction(text, wordbookId || null);
+      const r = await importWordsAction(text, wordbookId);
       if (r.ok) setResult(r.data);
       else setError(r.error);
     });
@@ -103,11 +106,10 @@ export function ImportDialog({ wordbooks, defaultWordbookId }: { wordbooks: { id
               />
               <span className="text-xs text-muted-foreground">.txt、.csv，一次最多 2,000 個字</span>
             </div>
-            {wordbooks.length > 0 && (
+            {wordbooks.length > 0 ? (
               <label className="flex items-center gap-2 text-sm">
                 <span className="shrink-0">放進單字本</span>
                 <NativeSelect value={wordbookId} onChange={(e) => setWordbookId(e.target.value)} className="min-w-0 flex-1">
-                  <NativeSelectOption value="">不放進單字本</NativeSelectOption>
                   {wordbooks.map((b) => (
                     <NativeSelectOption key={b.id} value={b.id}>
                       {b.name}
@@ -115,6 +117,10 @@ export function ImportDialog({ wordbooks, defaultWordbookId }: { wordbooks: { id
                   ))}
                 </NativeSelect>
               </label>
+            ) : (
+              <p className="text-sm text-muted-foreground">
+                匯入的字會放進一本單字本。請先到<Link href="/wordbooks">管理單字本</Link>建立一本。
+              </p>
             )}
             {error && (
               <p className="text-sm text-destructive" role="alert">
@@ -137,7 +143,7 @@ export function ImportDialog({ wordbooks, defaultWordbookId }: { wordbooks: { id
               <Button variant="outline" onClick={() => setOpen(false)}>
                 取消
               </Button>
-              <Button onClick={submit} disabled={pending || !text.trim()}>
+              <Button onClick={submit} disabled={pending || !text.trim() || !wordbookId}>
                 {pending ? "匯入中…" : "匯入"}
               </Button>
             </>

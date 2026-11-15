@@ -4,6 +4,7 @@
  */
 import assert from "node:assert/strict";
 import { after, before, describe, test } from "node:test";
+import { savingHelpers } from "./helpers";
 import { setupTestDatabase } from "./setup";
 
 type Data = typeof import("../src/lib/user-data");
@@ -61,12 +62,15 @@ after(async () => {
 });
 
 const isNotFound = (err: unknown) => err instanceof data.NotFoundError;
+const { save, unsave } = savingHelpers(() => data);
 
 describe("資料隔離", () => {
   test("各自的收藏只看得到自己的", async () => {
-    await data.saveWord(userA, "apple", "A 的筆記");
-    await data.saveWord(userB, "banana", "B 的筆記");
-    await data.saveWord(userB, "apple");
+    await save(userA, "apple");
+    await data.setNote(userA, "apple", "A 的筆記");
+    await save(userB, "banana");
+    await data.setNote(userB, "banana", "B 的筆記");
+    await save(userB, "apple");
 
     const listA = await data.listSavedWords(userA);
     const listB = await data.listSavedWords(userB);
@@ -79,58 +83,48 @@ describe("資料隔離", () => {
 
   test("A 無法讀取 B 的收藏狀態與筆記", async () => {
     const state = await data.getSaveState(userA, "banana");
-    assert.equal(state.saved, null);
+    assert.equal(state.saved, false);
+    assert.equal(state.note, null);
   });
 
-  test("A 無法取消 B 的收藏、無法改 B 的筆記", async () => {
-    await assert.rejects(data.unsaveWord(userA, "banana"), isNotFound);
-    await assert.rejects(data.updateNote(userA, "banana", "竄改"), isNotFound);
-    const stateB = await data.getSaveState(userB, "banana");
-    assert.equal(stateB.saved?.note, "B 的筆記");
-  });
+  test("A 改自己的筆記、移出自己的收藏，不影響 B", async () => {
+    await data.setNote(userA, "banana", "A 寫在 banana 的筆記");
+    assert.equal((await data.getSaveState(userB, "banana")).note, "B 的筆記");
 
-  test("A 修改自己的 apple 不影響 B 的 apple", async () => {
-    await data.updateNote(userA, "apple", "改過");
-    await data.unsaveWord(userA, "apple");
+    await data.setNote(userA, "apple", "改過");
+    await unsave(userA, "apple");
     const stateB = await data.getSaveState(userB, "apple");
     assert.ok(stateB.saved, "B 的 apple 仍在");
-    assert.equal(stateB.saved.note, null);
-    await data.saveWord(userA, "apple"); // 恢復，供後續測試使用
+    assert.equal(stateB.note, null);
+    await save(userA, "apple"); // 恢復，供後續測試使用
   });
 
   test("A 看不到也動不了 B 的單字本", async () => {
     const bookB = await data.createWordbook(userB, { name: "B 的單字本" });
     await data.setWordbookMembership(userB, bookB.id, "banana", true);
 
-    assert.equal((await data.listWordbooks(userA)).length, 0);
+    assert.equal((await data.listWordbooks(userA)).some((b) => b.id === bookB.id), false);
     assert.equal(await data.getWordbook(userA, bookB.id), null);
     // 用 B 的單字本篩選，A 只會得到空結果
     assert.deepEqual(await data.listSavedWords(userA, { wordbookId: bookB.id }), []);
 
     await assert.rejects(data.updateWordbook(userA, bookB.id, { name: "被改名" }), isNotFound);
     await assert.rejects(data.deleteWordbook(userA, bookB.id), isNotFound);
-    // A 不能把自己的字放進 B 的單字本，也不能把 B 的字移出
+    // A 不能把字放進 B 的單字本，也不能把 B 的字移出
     await assert.rejects(data.setWordbookMembership(userA, bookB.id, "apple", true), isNotFound);
     await assert.rejects(data.setWordbookMembership(userA, bookB.id, "banana", false), isNotFound);
 
-    const booksB = await data.listWordbooks(userB);
-    assert.equal(booksB[0].name, "B 的單字本");
-    assert.equal(booksB[0].count, 1);
-  });
-
-  test("B 不能把 A 的收藏放進自己的單字本", async () => {
-    const [bookB] = await data.listWordbooks(userB);
-    await assert.rejects(data.setWordbookMembership(userB, bookB.id, "cherry", true), isNotFound);
-    await data.saveWord(userA, "cherry");
-    // A 收藏了 cherry，B 仍然不能把它放進自己的單字本（B 沒有收藏 cherry）
-    await assert.rejects(data.setWordbookMembership(userB, bookB.id, "cherry", true), isNotFound);
+    const mine = (await data.listWordbooks(userB)).find((b) => b.id === bookB.id);
+    assert.equal(mine?.name, "B 的單字本");
+    assert.equal(mine?.count, 1);
+    assert.ok((await data.getSaveState(userB, "banana")).wordbooks.find((b) => b.id === bookB.id)?.contains);
   });
 });
 
-describe("收藏與字卡", () => {
-  test("收藏時自動建立一張 en_zh 新卡", async () => {
+describe("收藏＝在單字本裡", () => {
+  test("放進第一本時收藏並建立一張 en_zh 新卡", async () => {
     const before = Date.now();
-    await data.saveWord(userB, "cherry");
+    await save(userB, "cherry");
     const { cards } = schema;
     const { and, eq } = await import("drizzle-orm");
     const [card] = await db
@@ -142,24 +136,60 @@ describe("收藏與字卡", () => {
     assert.ok(Math.abs(card.due.getTime() - before) < 60_000, "due = 現在");
   });
 
-  test("取消收藏為軟刪除，重新收藏清除 deleted_at 並恢復原字卡", async () => {
+  test("移出最後一本＝取消收藏（軟刪除），再放進來沿用原本的收藏與字卡", async () => {
     const { cards, savedWords } = schema;
     const { and, eq } = await import("drizzle-orm");
     const where = (t: typeof cards | typeof savedWords) => and(eq(t.userId, userB), eq(t.headword, "cherry"));
 
     const [cardBefore] = await db.select().from(cards).where(where(cards));
-    await data.unsaveWord(userB, "cherry");
+    await unsave(userB, "cherry");
     const [savedRow] = await db.select().from(savedWords).where(where(savedWords));
+    const [cardGone] = await db.select().from(cards).where(where(cards));
     assert.ok(savedRow.deletedAt, "收藏仍在資料表中，只是標記刪除");
+    assert.ok(cardGone.deletedAt, "字卡移出複習");
     assert.equal((await data.listSavedWords(userB)).some((w) => w.headword === "cherry"), false);
 
-    await data.saveWord(userB, "cherry");
+    await save(userB, "cherry");
     const [savedAgain] = await db.select().from(savedWords).where(where(savedWords));
     const [cardAfter] = await db.select().from(cards).where(where(cards));
     assert.equal(savedAgain.id, savedRow.id, "沿用同一筆收藏");
     assert.equal(savedAgain.deletedAt, null);
     assert.equal(cardAfter.id, cardBefore.id, "沿用同一張字卡");
     assert.equal(cardAfter.deletedAt, null);
+  });
+
+  test("同時在兩本裡：移出一本仍是收藏，兩本都移出才取消收藏", async () => {
+    const b1 = await data.createWordbook(userA, { name: "本一" });
+    const b2 = await data.createWordbook(userA, { name: "本二" });
+    const books = async () =>
+      (await data.getSaveState(userA, "cherry")).wordbooks.filter((b) => b.contains).map((b) => b.name);
+
+    assert.deepEqual(await data.setWordbookMembership(userA, b1.id, "cherry", true), { saved: true });
+    assert.deepEqual(await data.setWordbookMembership(userA, b2.id, "Cherry ", true), { saved: true });
+    assert.deepEqual((await books()).sort(), ["本一", "本二"]);
+
+    assert.deepEqual(await data.setWordbookMembership(userA, b1.id, "cherry", false), { saved: true });
+    assert.deepEqual(await books(), ["本二"]);
+    assert.deepEqual(await data.setWordbookMembership(userA, b2.id, "cherry", false), { saved: false });
+    assert.equal((await data.getSaveState(userA, "cherry")).saved, false);
+    // 沒收藏的字再移出一次：不出錯
+    assert.deepEqual(await data.setWordbookMembership(userA, b2.id, "cherry", false), { saved: false });
+  });
+
+  test("刪除單字本：只在這本裡的字一併取消收藏，也在別本的字保留", async () => {
+    const keep = await data.createWordbook(userA, { name: "留著" });
+    const doomed = await data.createWordbook(userA, { name: "要刪" });
+    await data.setWordbookMembership(userA, doomed.id, "banana", true); // 只在要刪的這本
+    await data.setWordbookMembership(userA, doomed.id, "cherry", true);
+    await data.setWordbookMembership(userA, keep.id, "cherry", true); // 兩本都有
+
+    const listed = (await data.listWordbooks(userA)).find((b) => b.id === doomed.id);
+    assert.equal(listed?.count, 2);
+    assert.equal(listed?.exclusiveCount, 1, "只有 banana 只在這本裡");
+
+    assert.equal(await data.deleteWordbook(userA, doomed.id), 1);
+    assert.equal((await data.getSaveState(userA, "banana")).saved, false);
+    assert.equal((await data.getSaveState(userA, "cherry")).saved, true);
   });
 
   test("收藏列表的中文釋義對應到正確的字", async () => {
@@ -179,33 +209,35 @@ describe("收藏與字卡", () => {
     );
   });
 
-  test("saveToWordbooks：未收藏時一併收藏，並剛好放進勾選的單字本", async () => {
-    const b1 = await data.createWordbook(userA, { name: "本一" });
-    const b2 = await data.createWordbook(userA, { name: "本二" });
-    const books = async () =>
-      (await data.getSaveState(userA, "cherry")).wordbooks.filter((b) => b.contains).map((b) => b.name);
+  test("不存在於字典的字不能收藏", async () => {
+    await assert.rejects(save(userA, "notaword"), isNotFound);
+  });
+});
 
-    await data.saveToWordbooks(userA, "cherry", [b1.id]);
-    assert.ok((await data.getSaveState(userA, "cherry")).saved, "已收藏");
-    assert.deepEqual(await books(), ["本一"], "只進勾選的那本");
+describe("筆記和收藏無關", () => {
+  test("沒收藏也能寫筆記；取消收藏不會丟筆記；清空＝刪除", async () => {
+    await unsave(userA, "banana");
+    await data.setNote(userA, "banana", "沒收藏也能寫");
+    const state = await data.getSaveState(userA, "banana");
+    assert.equal(state.saved, false, "寫筆記不會順便收藏");
+    assert.equal(state.note, "沒收藏也能寫");
 
-    await data.saveToWordbooks(userA, "cherry", [b2.id]);
-    assert.deepEqual(await books(), ["本二"], "沒勾的移出");
+    await save(userA, "banana");
+    await data.setNote(userA, "banana", "  收藏後再改  ");
+    await unsave(userA, "banana");
+    assert.equal((await data.getSaveState(userA, "banana")).note, "收藏後再改");
 
-    await data.saveToWordbooks(userA, "cherry", []);
-    assert.deepEqual(await books(), [], "可以都不勾");
-    assert.ok((await data.getSaveState(userA, "cherry")).saved, "都不勾仍是收藏");
+    await data.setNote(userA, "banana", "   ");
+    assert.equal((await data.getSaveState(userA, "banana")).note, null);
+    await data.setNote(userA, "banana", "再寫一次");
+    assert.equal((await data.getSaveState(userA, "banana")).note, "再寫一次");
+    await assert.rejects(data.setNote(userA, "notaword", "x"), isNotFound);
   });
 
-  test("saveToWordbooks 不能放進別人的單字本", async () => {
-    const bBook = await data.createWordbook(userB, { name: "B 的本" });
-    await assert.rejects(data.saveToWordbooks(userA, "apple", [bBook.id]), isNotFound);
-  });
-
-  test("listNotes：只列自己有筆記的字，可搜尋筆記與單字", async () => {
-    await data.saveWord(userA, "apple", "紅色的 **水果**");
-    await data.saveWord(userA, "banana", "100% 黃色");
-    await data.saveWord(userB, "apple", "B 的筆記");
+  test("listNotes：列出自己所有的筆記（不論是否收藏），可搜尋筆記與單字", async () => {
+    await data.setNote(userA, "apple", "紅色的 **水果**");
+    await data.setNote(userA, "banana", "100% 黃色");
+    await data.setNote(userB, "apple", "B 的筆記");
     const words = async (q?: string) => (await data.listNotes(userA, { q, sort: "alpha" })).map((n) => n.headword);
 
     assert.deepEqual(await words(), ["apple", "banana"], "cherry 沒有筆記，不列出");
@@ -214,12 +246,9 @@ describe("收藏與字卡", () => {
     assert.deepEqual(await words("%"), ["banana"], "% 照字面比對");
     assert.deepEqual(await words("B 的"), [], "看不到別人的筆記");
 
-    await data.unsaveWord(userA, "banana");
-    assert.deepEqual(await words(), ["apple"], "取消收藏後不列出");
-  });
-
-  test("不存在於字典的字不能收藏", async () => {
-    await assert.rejects(data.saveWord(userA, "notaword"), isNotFound);
+    await unsave(userA, "apple");
+    assert.deepEqual(await words(), ["apple", "banana"], "取消收藏後筆記仍列出");
+    await save(userA, "apple");
   });
 });
 
@@ -253,12 +282,15 @@ describe("匯入單字", () => {
       .orderBy(schema.cards.createdAt);
     assert.deepEqual(cardRows.map((r) => r.headword), ["cherry", "apple", "banana"], "字卡依清單順序建立");
 
-    await data.unsaveWord(c.id, "banana");
-    const r2 = await data.importWords(c.id, "apple\nbanana", null);
+    await data.setWordbookMembership(c.id, book.id, "banana", false);
+    const book2 = await data.createWordbook(c.id, { name: "第二本" });
+    const r2 = await data.importWords(c.id, "apple\nbanana", book2.id);
     assert.equal(r2.added, 1, "曾取消收藏的 banana 重新收藏");
     assert.equal(r2.alreadySaved, 1, "apple 已收藏");
+    const inBook2 = (await data.listSavedWords(c.id, { wordbookId: book2.id, sort: "alpha" })).map((w) => w.headword);
+    assert.deepEqual(inBook2, ["apple", "banana"], "已收藏的 apple 也多放進第二本");
 
-    await assert.rejects(data.importWords(c.id, "\n# 只有註解\n", null), (e) => e instanceof data.ValidationError);
+    await assert.rejects(data.importWords(c.id, "\n# 只有註解\n", book.id), (e) => e instanceof data.ValidationError);
   });
 
   test("importWords 不能放進別人的單字本", async () => {
@@ -275,6 +307,7 @@ describe("刪除帳號", () => {
     // 讓 A 在每張使用者資料表都有資料
     const bookA = await data.createWordbook(userA, { name: "A 的單字本" });
     await data.setWordbookMembership(userA, bookA.id, "apple", true);
+    await data.setNote(userA, "apple", "A 的筆記");
     const [cardA] = await db.select({ id: s.cards.id }).from(s.cards).where(eq(s.cards.userId, userA)).limit(1);
     await db.insert(s.reviewLogs).values({
       id: crypto.randomUUID(),
@@ -292,6 +325,7 @@ describe("刪除帳號", () => {
 
     const tables = {
       saved_words: s.savedWords,
+      word_notes: s.wordNotes,
       wordbooks: s.wordbooks,
       wordbook_items: s.wordbookItems,
       cards: s.cards,

@@ -1,14 +1,17 @@
 /**
  * 使用者資料存取層：收藏、筆記、單字本、字卡。
  *
+ * 收藏的定義：至少在一本單字本裡。放進第一本時收藏（並建立字卡），從最後一本移出、
+ * 或刪掉它唯一所在的單字本時取消收藏（字卡移出複習）。筆記獨立存放，和收藏無關。
+ *
  * 規則：
  * - 第一個參數一律是 userId，只能由伺服器端從 session 取得（見 session.ts），不可來自用戶端。
  * - 每個查詢都以 userId 過濾；操作別人的資料一律視為「找不到」（NotFoundError），不透露資料是否存在。
  * - 不做硬刪除：取消收藏、刪除單字本都是設定 deleted_at（軟刪除）。
  */
-import { and, asc, desc, eq, ilike, inArray, isNotNull, isNull, notInArray, or, sql } from "drizzle-orm";
+import { and, asc, desc, eq, ilike, inArray, isNotNull, isNull, or, sql } from "drizzle-orm";
 import { db } from "@/db";
-import { cards, definitions, entries, savedWords, wordbookItems, wordbooks, wordForms } from "@/db/schema";
+import { cards, definitions, entries, savedWords, wordbookItems, wordbooks, wordForms, wordNotes } from "@/db/schema";
 import { modernGlossSql, TECHNICAL_GLOSS_PATTERN } from "@/lib/gloss";
 import { familiarityOf } from "./familiarity";
 import { normalizeHeadword } from "./headword";
@@ -54,62 +57,30 @@ const activeWordbook = (userId: string) => and(eq(wordbooks.userId, userId), isN
 
 // ---------------------------------------------------------------- 收藏
 
-const MAX_CONTEXT_URL_LENGTH = 2000;
-const MAX_CONTEXT_SENTENCE_LENGTH = 500;
-
-/** 從擴充元件收藏時一併記錄的出處（在哪個網頁、哪句話看到這個字） */
-export type SaveContext = { url: string | null; sentence: string | null };
-
-function cleanContext(context: SaveContext): SaveContext {
-  const url = context.url?.trim() || null;
-  const sentence = context.sentence?.replace(/\s+/g, " ").trim() || null;
-  return {
-    url: url && /^https?:\/\//i.test(url) && url.length <= MAX_CONTEXT_URL_LENGTH ? url : null,
-    sentence: sentence ? sentence.slice(0, MAX_CONTEXT_SENTENCE_LENGTH) : null,
-  };
-}
-
-/**
- * 收藏一個字：重新收藏時清除 deleted_at（並把收藏時間更新為現在）。
- * 同時確保有一張 en_zh 字卡（新卡 due = 現在、state = New；曾取消收藏則恢復原本的字卡與複習進度）。
- * 有 context（擴充元件）時 origin 記為 'extension'；已收藏過的字也會把出處更新成這次看到的地方。
- */
-export async function saveWord(userId: string, rawHeadword: string, note?: string | null, context?: SaveContext) {
-  const headword = normalizeHeadword(rawHeadword);
-  const cleanedNote = note === undefined ? undefined : cleanNote(note);
-  const cleanedContext = context ? cleanContext(context) : undefined;
-  return db.transaction((tx) => saveWordIn(tx, userId, headword, cleanedNote, cleanedContext));
-}
-
 export type Tx = Parameters<Parameters<typeof db.transaction>[0]>[0];
 
-/** saveWord 的本體，在呼叫端的 transaction 裡執行。headword 須已正規化 */
-export async function saveWordIn(
-  tx: Tx,
-  userId: string,
-  headword: string,
-  cleanedNote: string | null | undefined,
-  context?: SaveContext,
-) {
+/**
+ * 收藏一個字（在呼叫端的 transaction 裡，headword 須已正規化）：重新收藏時清除 deleted_at
+ * 並把收藏時間更新為現在；同時確保有一張 en_zh 字卡（曾取消收藏則恢復原本的字卡與複習進度）。
+ * 只由「放進單字本」呼叫，維持「收藏＝至少在一本單字本裡」。
+ */
+async function saveWordIn(tx: Tx, userId: string, headword: string) {
   const [entry] = await tx.select({ h: entries.headword }).from(entries).where(eq(entries.headword, headword));
   if (!entry) throw new NotFoundError("headword");
 
   const now = new Date();
-  const contextColumns = context ? { contextUrl: context.url, contextSentence: context.sentence } : {};
   const [saved] = await tx
     .insert(savedWords)
-    .values({ userId, headword, note: cleanedNote ?? null, origin: context ? "extension" : "search", ...contextColumns })
+    .values({ userId, headword, origin: "search" })
     .onConflictDoUpdate({
       target: [savedWords.userId, savedWords.headword],
       set: {
         deletedAt: null,
         updatedAt: now,
         createdAt: sql`CASE WHEN ${savedWords.deletedAt} IS NOT NULL THEN ${now} ELSE ${savedWords.createdAt} END`,
-        ...(cleanedNote !== undefined ? { note: cleanedNote } : {}),
-        ...contextColumns,
       },
     })
-    .returning({ id: savedWords.id, note: savedWords.note });
+    .returning({ id: savedWords.id });
 
   await tx
     .insert(cards)
@@ -123,46 +94,51 @@ export async function saveWordIn(
   return saved;
 }
 
-/**
- * 收藏這個字，並讓它剛好屬於 wordbookIds 這幾本單字本（沒列到的會移出）。
- * 還沒收藏時會先收藏（並建立字卡）。單字本都必須屬於這個使用者。
- */
-export async function saveToWordbooks(userId: string, rawHeadword: string, wordbookIds: string[]): Promise<void> {
-  const headword = normalizeHeadword(rawHeadword);
-  const ids = [...new Set(wordbookIds)];
-  await db.transaction(async (tx) => {
-    if (ids.length > 0) {
-      const books = await tx
-        .select({ id: wordbooks.id })
-        .from(wordbooks)
-        .where(and(activeWordbook(userId), inArray(wordbooks.id, ids)));
-      if (books.length !== ids.length) throw new NotFoundError("wordbook");
-    }
-
-    const saved = await saveWordIn(tx, userId, headword, undefined);
-    const now = new Date();
-    await tx
-      .update(wordbookItems)
-      .set({ deletedAt: now, updatedAt: now })
-      .where(
-        and(
-          eq(wordbookItems.userId, userId),
-          eq(wordbookItems.savedWordId, saved.id),
-          isNull(wordbookItems.deletedAt),
-          ids.length > 0 ? notInArray(wordbookItems.wordbookId, ids) : undefined,
+/** 取消收藏（在呼叫端的 transaction 裡）：收藏、它在各單字本的項目、字卡都改為軟刪除 */
+async function unsaveIn(tx: Tx, userId: string, savedWordIds: string[], now: Date) {
+  if (savedWordIds.length === 0) return;
+  const rows = await tx
+    .update(savedWords)
+    .set({ deletedAt: now, updatedAt: now })
+    .where(and(activeSaved(userId), inArray(savedWords.id, savedWordIds)))
+    .returning({ headword: savedWords.headword });
+  await tx
+    .update(wordbookItems)
+    .set({ deletedAt: now, updatedAt: now })
+    .where(and(eq(wordbookItems.userId, userId), inArray(wordbookItems.savedWordId, savedWordIds), isNull(wordbookItems.deletedAt)));
+  if (rows.length === 0) return;
+  await tx
+    .update(cards)
+    .set({ deletedAt: now, updatedAt: now })
+    .where(
+      and(
+        eq(cards.userId, userId),
+        inArray(
+          cards.headword,
+          rows.map((r) => r.headword),
         ),
-      );
-    if (ids.length > 0) {
-      await tx
-        .insert(wordbookItems)
-        .values(ids.map((wordbookId) => ({ wordbookId, savedWordId: saved.id, userId })))
-        .onConflictDoUpdate({
-          target: [wordbookItems.wordbookId, wordbookItems.savedWordId],
-          set: { deletedAt: null, updatedAt: now },
-          setWhere: isNotNull(wordbookItems.deletedAt),
-        });
-    }
-  });
+        isNull(cards.deletedAt),
+      ),
+    );
+}
+
+/** 這些收藏是否還在任何（未刪除的）單字本裡；回傳已經不在任何一本的 id */
+async function orphanedIn(tx: Tx, userId: string, savedWordIds: string[]): Promise<string[]> {
+  if (savedWordIds.length === 0) return [];
+  const rows = await tx
+    .select({ id: savedWords.id })
+    .from(savedWords)
+    .where(
+      and(
+        activeSaved(userId),
+        inArray(savedWords.id, savedWordIds),
+        sql`NOT EXISTS (
+          SELECT 1 FROM ${wordbookItems} wi
+          JOIN ${wordbooks} w ON w.id = wi.wordbook_id AND w.deleted_at IS NULL
+          WHERE wi.saved_word_id = "saved_words"."id" AND wi.user_id = ${userId} AND wi.deleted_at IS NULL)`,
+      ),
+    );
+  return rows.map((r) => r.id);
 }
 
 export type ImportResult = {
@@ -173,24 +149,22 @@ export type ImportResult = {
 };
 
 /**
- * 匯入純文字單字清單（格式見 word-list.ts）：收藏字典裡有的字並建立字卡，可一併放進一本單字本。
- * 字典沒有的字先試著轉成原形，仍找不到就列在 notFound。已收藏的字不變動（但會放進指定的單字本）。
+ * 匯入純文字單字清單（格式見 word-list.ts）：把字典裡有的字放進指定的單字本（未收藏的字一併收藏並建立字卡）。
+ * 字典沒有的字先試著轉成原形，仍找不到就列在 notFound。已收藏的字不變動，只會多放進這本單字本。
  * 新收藏的時間依清單順序遞增 1 毫秒，複習時新卡會照清單順序出現。
  */
-export async function importWords(userId: string, text: string, wordbookId: string | null): Promise<ImportResult> {
+export async function importWords(userId: string, text: string, wordbookId: string): Promise<ImportResult> {
   if (text.length > MAX_IMPORT_CHARS) throw new ValidationError("內容太長，請分批匯入");
   const words = parseWordList(text);
   if (words.length === 0) throw new ValidationError("沒有讀到任何單字");
   if (words.length > MAX_IMPORT_WORDS) throw new ValidationError(`一次最多匯入 ${MAX_IMPORT_WORDS} 個字（這次有 ${words.length} 個）`);
 
   return db.transaction(async (tx) => {
-    if (wordbookId) {
-      const [book] = await tx
-        .select({ id: wordbooks.id })
-        .from(wordbooks)
-        .where(and(activeWordbook(userId), eq(wordbooks.id, wordbookId)));
-      if (!book) throw new NotFoundError("wordbook");
-    }
+    const [book] = await tx
+      .select({ id: wordbooks.id })
+      .from(wordbooks)
+      .where(and(activeWordbook(userId), eq(wordbooks.id, wordbookId)));
+    if (!book) throw new NotFoundError("wordbook");
 
     // 字典查詢：先找原字，找不到的再查變化形（同一個變化形對應多個原形時取最常用的）
     const inDict = new Set(
@@ -259,69 +233,60 @@ export async function importWords(userId: string, text: string, wordbookId: stri
         });
     }
 
-    if (wordbookId) {
-      const saved = await tx
-        .select({ id: savedWords.id })
-        .from(savedWords)
-        .where(and(activeSaved(userId), inArray(savedWords.headword, headwords)));
-      const now = new Date();
-      await tx
-        .insert(wordbookItems)
-        .values(saved.map((s) => ({ wordbookId, savedWordId: s.id, userId })))
-        .onConflictDoUpdate({
-          target: [wordbookItems.wordbookId, wordbookItems.savedWordId],
-          set: { deletedAt: null, updatedAt: now },
-          setWhere: isNotNull(wordbookItems.deletedAt),
-        });
-    }
+    const saved = await tx
+      .select({ id: savedWords.id })
+      .from(savedWords)
+      .where(and(activeSaved(userId), inArray(savedWords.headword, headwords)));
+    const now = new Date();
+    await tx
+      .insert(wordbookItems)
+      .values(saved.map((s) => ({ wordbookId, savedWordId: s.id, userId })))
+      .onConflictDoUpdate({
+        target: [wordbookItems.wordbookId, wordbookItems.savedWordId],
+        set: { deletedAt: null, updatedAt: now },
+        setWhere: isNotNull(wordbookItems.deletedAt),
+      });
     return result;
   });
 }
 
-/** 取消收藏：收藏與這個字的字卡都改為軟刪除 */
-export async function unsaveWord(userId: string, rawHeadword: string): Promise<void> {
-  const headword = normalizeHeadword(rawHeadword);
-  await db.transaction(async (tx) => {
-    const now = new Date();
-    const updated = await tx
-      .update(savedWords)
-      .set({ deletedAt: now, updatedAt: now })
-      .where(and(activeSaved(userId), eq(savedWords.headword, headword)))
-      .returning({ id: savedWords.id });
-    if (updated.length === 0) throw new NotFoundError("saved word");
-    await tx
-      .update(cards)
-      .set({ deletedAt: now, updatedAt: now })
-      .where(and(eq(cards.userId, userId), eq(cards.headword, headword), isNull(cards.deletedAt)));
-  });
-}
+// ---------------------------------------------------------------- 筆記
 
-export async function updateNote(userId: string, rawHeadword: string, note: string | null): Promise<void> {
+/** 寫入這個字的筆記（沒收藏也可以）；空字串＝清除筆記（軟刪除） */
+export async function setNote(userId: string, rawHeadword: string, note: string | null): Promise<void> {
   const headword = normalizeHeadword(rawHeadword);
-  const updated = await db
-    .update(savedWords)
-    .set({ note: cleanNote(note), updatedAt: new Date() })
-    .where(and(activeSaved(userId), eq(savedWords.headword, headword)))
-    .returning({ id: savedWords.id });
-  if (updated.length === 0) throw new NotFoundError("saved word");
-}
-
-/** 這個字目前是否在收藏中（擴充元件的查字卡片用） */
-export async function isSaved(userId: string, rawHeadword: string): Promise<boolean> {
-  const [row] = await db
-    .select({ id: savedWords.id })
-    .from(savedWords)
-    .where(and(activeSaved(userId), eq(savedWords.headword, normalizeHeadword(rawHeadword))));
-  return Boolean(row);
+  const cleaned = cleanNote(note);
+  const now = new Date();
+  if (cleaned === null) {
+    await db
+      .update(wordNotes)
+      .set({ deletedAt: now, updatedAt: now })
+      .where(and(eq(wordNotes.userId, userId), eq(wordNotes.headword, headword), isNull(wordNotes.deletedAt)));
+    return;
+  }
+  const [entry] = await db.select({ h: entries.headword }).from(entries).where(eq(entries.headword, headword));
+  if (!entry) throw new NotFoundError("headword");
+  await db
+    .insert(wordNotes)
+    .values({ userId, headword, note: cleaned })
+    .onConflictDoUpdate({
+      target: [wordNotes.userId, wordNotes.headword],
+      set: { note: cleaned, deletedAt: null, updatedAt: now },
+    });
 }
 
 /** 單字頁用：這個字是否已收藏、筆記、熟悉度，以及各單字本是否包含它 */
 export async function getSaveState(userId: string, rawHeadword: string) {
   const headword = normalizeHeadword(rawHeadword);
   const [saved] = await db
-    .select({ id: savedWords.id, note: savedWords.note })
+    .select({ id: savedWords.id })
     .from(savedWords)
     .where(and(activeSaved(userId), eq(savedWords.headword, headword)));
+
+  const [noteRow] = await db
+    .select({ note: wordNotes.note })
+    .from(wordNotes)
+    .where(and(eq(wordNotes.userId, userId), eq(wordNotes.headword, headword), isNull(wordNotes.deletedAt)));
 
   const books = await db
     .select({
@@ -347,7 +312,7 @@ export async function getSaveState(userId: string, rawHeadword: string) {
         .where(enZhCard(userId, headword))
     : [];
 
-  return { saved: saved ?? null, familiarity: familiarityOf(card), wordbooks: books };
+  return { saved: Boolean(saved), note: noteRow?.note ?? null, familiarity: familiarityOf(card), wordbooks: books };
 }
 
 /** 這個字的 en_zh 字卡（熟悉度依據） */
@@ -374,7 +339,7 @@ export async function listSavedWords(userId: string, options: { wordbookId?: str
       id: savedWords.id,
       headword: savedWords.headword,
       display: sql<string>`coalesce(${entries.display}, ${savedWords.headword})`,
-      note: savedWords.note,
+      note: wordNotes.note,
       savedAt: savedWords.createdAt,
       gloss: firstGloss(),
       cardState: cards.state,
@@ -382,7 +347,11 @@ export async function listSavedWords(userId: string, options: { wordbookId?: str
     })
     .from(savedWords)
     .leftJoin(entries, eq(entries.headword, savedWords.headword)) // 字典可能被替換，不用外鍵也不用 inner join
-    .leftJoin(cards, enZhCard(userId, savedWords.headword));
+    .leftJoin(cards, enZhCard(userId, savedWords.headword))
+    .leftJoin(
+      wordNotes,
+      and(eq(wordNotes.userId, userId), eq(wordNotes.headword, savedWords.headword), isNull(wordNotes.deletedAt)),
+    );
 
   const query = wordbookId
     ? base.innerJoin(
@@ -407,10 +376,15 @@ export async function listSavedWords(userId: string, options: { wordbookId?: str
 
 export type NoteSort = "recent" | "alpha";
 
-/**
- * 筆記庫：有筆記的收藏字。q 會比對筆記內容與單字（不分大小寫）。
- * 「最近」依收藏紀錄的 updated_at 排序（筆記沒有獨立的更新時間，重新收藏也會更新它）。
- */
+/** 列表的第一筆中文釋義（同 firstGloss，給筆記庫用：主表是 word_notes） */
+const noteGloss = () => sql<string | null>`coalesce(
+    ${modernGlossSql(sql`"word_notes"."headword"`)},
+    (SELECT CASE WHEN d.pos IS NULL THEN d.text ELSE d.pos || ' ' || d.text END
+    FROM ${definitions} d
+    WHERE d.headword = "word_notes"."headword" AND d.lang = 'zh-TW'
+    ORDER BY d.text ~ ${TECHNICAL_GLOSS_PATTERN}, d.sort_order LIMIT 1))`;
+
+/** 筆記庫：所有寫過筆記的字（不論是否收藏）。q 會比對筆記內容與單字（不分大小寫）；「最近」依筆記更新時間 */
 export async function listNotes(userId: string, options: { q?: string | null; sort?: NoteSort } = {}) {
   const { sort = "recent" } = options;
   const q = options.q?.trim();
@@ -419,25 +393,24 @@ export async function listNotes(userId: string, options: { q?: string | null; so
 
   return db
     .select({
-      id: savedWords.id,
-      headword: savedWords.headword,
-      display: sql<string>`coalesce(${entries.display}, ${savedWords.headword})`,
-      note: sql<string>`${savedWords.note}`,
-      updatedAt: savedWords.updatedAt,
-      gloss: firstGloss(),
+      id: wordNotes.id,
+      headword: wordNotes.headword,
+      display: sql<string>`coalesce(${entries.display}, ${wordNotes.headword})`,
+      note: wordNotes.note,
+      updatedAt: wordNotes.updatedAt,
+      gloss: noteGloss(),
     })
-    .from(savedWords)
-    .leftJoin(entries, eq(entries.headword, savedWords.headword))
+    .from(wordNotes)
+    .leftJoin(entries, eq(entries.headword, wordNotes.headword))
     .where(
       and(
-        activeSaved(userId),
-        isNotNull(savedWords.note),
-        pattern ? or(ilike(savedWords.note, pattern), ilike(savedWords.headword, pattern)) : undefined,
+        eq(wordNotes.userId, userId),
+        isNull(wordNotes.deletedAt),
+        pattern ? or(ilike(wordNotes.note, pattern), ilike(wordNotes.headword, pattern)) : undefined,
       ),
     )
-    .orderBy(...(sort === "alpha" ? [asc(savedWords.headword)] : [desc(savedWords.updatedAt), asc(savedWords.headword)]));
+    .orderBy(...(sort === "alpha" ? [asc(wordNotes.headword)] : [desc(wordNotes.updatedAt), asc(wordNotes.headword)]));
 }
-
 /** 目前收藏中的字數 */
 export async function countSavedWords(userId: string): Promise<number> {
   const [row] = await db
@@ -462,6 +435,20 @@ export async function listWordbooks(userId: string) {
           AND wi.user_id = ${userId}
           AND wi.deleted_at IS NULL
           AND sw.deleted_at IS NULL)`,
+      // 只在這本裡的字：刪除這本單字本時會一併取消收藏
+      exclusiveCount: sql<number>`(
+        SELECT count(*)::int FROM ${wordbookItems} wi
+        JOIN ${savedWords} sw ON sw.id = wi.saved_word_id
+        WHERE wi.wordbook_id = "wordbooks"."id"
+          AND wi.user_id = ${userId}
+          AND wi.deleted_at IS NULL
+          AND sw.deleted_at IS NULL
+          AND NOT EXISTS (
+            SELECT 1 FROM ${wordbookItems} other
+            JOIN ${wordbooks} ow ON ow.id = other.wordbook_id AND ow.deleted_at IS NULL
+            WHERE other.saved_word_id = wi.saved_word_id
+              AND other.wordbook_id <> wi.wordbook_id
+              AND other.deleted_at IS NULL))`,
     })
     .from(wordbooks)
     .where(activeWordbook(userId))
@@ -499,9 +486,12 @@ export async function updateWordbook(
   if (updated.length === 0) throw new NotFoundError("wordbook");
 }
 
-/** 刪除單字本（軟刪除），其中的項目一併軟刪除；收藏本身不受影響 */
-export async function deleteWordbook(userId: string, wordbookId: string): Promise<void> {
-  await db.transaction(async (tx) => {
+/**
+ * 刪除單字本（軟刪除），其中的項目一併軟刪除。只在這本裡的字會一併取消收藏（字卡移出複習）。
+ * 回傳一併取消收藏的字數。
+ */
+export async function deleteWordbook(userId: string, wordbookId: string): Promise<number> {
+  return db.transaction(async (tx) => {
     const now = new Date();
     const updated = await tx
       .update(wordbooks)
@@ -509,35 +499,43 @@ export async function deleteWordbook(userId: string, wordbookId: string): Promis
       .where(and(activeWordbook(userId), eq(wordbooks.id, wordbookId)))
       .returning({ id: wordbooks.id });
     if (updated.length === 0) throw new NotFoundError("wordbook");
-    await tx
+    const items = await tx
       .update(wordbookItems)
       .set({ deletedAt: now, updatedAt: now })
-      .where(and(eq(wordbookItems.userId, userId), eq(wordbookItems.wordbookId, wordbookId), isNull(wordbookItems.deletedAt)));
+      .where(and(eq(wordbookItems.userId, userId), eq(wordbookItems.wordbookId, wordbookId), isNull(wordbookItems.deletedAt)))
+      .returning({ savedWordId: wordbookItems.savedWordId });
+    const orphans = await orphanedIn(
+      tx,
+      userId,
+      items.map((i) => i.savedWordId),
+    );
+    await unsaveIn(tx, userId, orphans, now);
+    return orphans.length;
   });
 }
 
-/** 把已收藏的字放入或移出單字本；單字本與收藏都必須屬於這個使用者 */
+/**
+ * 把字放入或移出一本單字本（收藏視窗每點一列就呼叫一次）。
+ * 放入：還沒收藏時一併收藏並建立字卡。移出：已經不在任何單字本時一併取消收藏（字卡移出複習）。
+ * 回傳操作後這個字是否仍是收藏中。
+ */
 export async function setWordbookMembership(
   userId: string,
   wordbookId: string,
   rawHeadword: string,
   member: boolean,
-): Promise<void> {
+): Promise<{ saved: boolean }> {
   const headword = normalizeHeadword(rawHeadword);
-  await db.transaction(async (tx) => {
+  return db.transaction(async (tx) => {
     const [book] = await tx
       .select({ id: wordbooks.id })
       .from(wordbooks)
       .where(and(activeWordbook(userId), eq(wordbooks.id, wordbookId)));
     if (!book) throw new NotFoundError("wordbook");
-    const [saved] = await tx
-      .select({ id: savedWords.id })
-      .from(savedWords)
-      .where(and(activeSaved(userId), eq(savedWords.headword, headword)));
-    if (!saved) throw new NotFoundError("saved word");
 
     const now = new Date();
     if (member) {
+      const saved = await saveWordIn(tx, userId, headword);
       await tx
         .insert(wordbookItems)
         .values({ wordbookId: book.id, savedWordId: saved.id, userId })
@@ -546,18 +544,27 @@ export async function setWordbookMembership(
           set: { deletedAt: null, updatedAt: now },
           setWhere: isNotNull(wordbookItems.deletedAt),
         });
-    } else {
-      await tx
-        .update(wordbookItems)
-        .set({ deletedAt: now, updatedAt: now })
-        .where(
-          and(
-            eq(wordbookItems.userId, userId),
-            eq(wordbookItems.wordbookId, book.id),
-            eq(wordbookItems.savedWordId, saved.id),
-            isNull(wordbookItems.deletedAt),
-          ),
-        );
+      return { saved: true };
     }
+
+    const [saved] = await tx
+      .select({ id: savedWords.id })
+      .from(savedWords)
+      .where(and(activeSaved(userId), eq(savedWords.headword, headword)));
+    if (!saved) return { saved: false }; // 本來就沒收藏：視為已移出
+    await tx
+      .update(wordbookItems)
+      .set({ deletedAt: now, updatedAt: now })
+      .where(
+        and(
+          eq(wordbookItems.userId, userId),
+          eq(wordbookItems.wordbookId, book.id),
+          eq(wordbookItems.savedWordId, saved.id),
+          isNull(wordbookItems.deletedAt),
+        ),
+      );
+    const orphans = await orphanedIn(tx, userId, [saved.id]);
+    await unsaveIn(tx, userId, orphans, now);
+    return { saved: orphans.length === 0 };
   });
 }
