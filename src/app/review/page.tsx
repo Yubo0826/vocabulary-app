@@ -1,3 +1,4 @@
+import { Settings } from "lucide-react";
 import Link from "next/link";
 import { Suspense } from "react";
 import { Button } from "@/components/ui/button";
@@ -16,8 +17,10 @@ export default function ReviewPage() {
           <h1 className="text-2xl font-semibold">複習</h1>
           <RatingHelp />
         </div>
-        <Button asChild variant="ghost" className="text-primary">
-          <Link href="/settings">複習設定</Link>
+        <Button asChild variant="ghost" size="icon-lg" className="text-muted-foreground">
+          <Link href="/settings" aria-label="複習設定" title="複習設定">
+            <Settings />
+          </Link>
         </Button>
       </div>
       <Suspense fallback={<p className="text-sm text-muted-foreground">載入中…</p>}>

@@ -211,3 +211,35 @@
     color: var(--muted-foreground);
   }
 }
+
+/* 複習完成的慶祝動畫（src/app/review/celebration.tsx）：彩帶從 🎉 往外噴出再落下；🎉 彈出放大 */
+@keyframes confetti-burst {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+    animation-timing-function: cubic-bezier(0.2, 0.7, 0.4, 1);
+  }
+  35% {
+    transform: translate(calc(var(--x) * 0.75), var(--up)) rotate(calc(var(--r) * 0.4));
+    opacity: 1;
+    animation-timing-function: cubic-bezier(0.5, 0, 0.9, 0.6);
+  }
+  100% {
+    transform: translate(var(--x), var(--down)) rotate(var(--r));
+    opacity: 0;
+  }
+}
+@keyframes celebrate-pop {
+  0% {
+    transform: scale(0) rotate(-30deg);
+  }
+  55% {
+    transform: scale(1.35) rotate(12deg);
+  }
+  75% {
+    transform: scale(0.9) rotate(-6deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}

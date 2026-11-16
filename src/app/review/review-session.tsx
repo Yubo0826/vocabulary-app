@@ -12,6 +12,7 @@ import { Card } from "@/components/ui/card";
 import type { ReviewState } from "@/lib/review-session";
 import { wordHref } from "@/lib/urls";
 import { cn } from "@/lib/utils";
+import { Celebration } from "./celebration";
 
 const RATINGS = [
   // 淡色底＋彩色字，滑過加深、按下時實心
@@ -272,8 +273,17 @@ function Answer({ item }: { item: NonNullable<ReviewState["item"]> }) {
 function Done({ state, pending, onRefresh }: { state: ReviewState; pending: boolean; onRefresh: () => void }) {
   const nextDue = state.nextLearningDue ? new Date(state.nextLearningDue) : null;
   return (
-    <Card className="gap-2 px-4">
-      <p className="text-lg font-semibold">{state.stats.reviewedToday > 0 ? "今天的複習完成了 🎉" : "目前沒有要複習的卡片"}</p>
+    // 彩帶會飛出卡片外，蓋在下方統計卡上面
+    <Card className="relative z-10 gap-2 overflow-visible px-4">
+      <p className="text-lg font-semibold">
+        {state.stats.reviewedToday > 0 ? (
+          <>
+            今天的複習完成了 <Celebration />
+          </>
+        ) : (
+          "目前沒有要複習的卡片"
+        )}
+      </p>
       {nextDue ? (
         <>
           <p className="text-sm text-muted-foreground">還有學習中的卡片，最早在 {timeFormat.format(nextDue)} 到期。</p>
