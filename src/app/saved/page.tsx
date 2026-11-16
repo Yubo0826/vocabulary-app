@@ -10,8 +10,8 @@ import { noteToPlainText } from "@/lib/note";
 import { FAMILIARITY_LABELS } from "@/lib/familiarity";
 import { FamiliarityDot } from "@/components/familiarity-picker";
 import { ImportDialog } from "./import-dialog";
-import { NavLink, SavedListArea, SavedNavProvider } from "./saved-nav";
-import { SavedPageSkeleton } from "./saved-skeleton";
+import { PendingArea, PendingNavLink, PendingNavProvider } from "@/components/pending-nav";
+import { SavedPageSkeleton, SavedWordsSkeleton } from "./saved-skeleton";
 
 export const metadata = { title: "我的單字" };
 
@@ -49,7 +49,7 @@ async function SavedList({ bookParam, sort }: { bookParam: string | null; sort: 
   const chipOn = cn(chipBase, "bg-primary font-semibold text-primary-foreground hover:bg-primary");
 
   return (
-    <SavedNavProvider>
+    <PendingNavProvider>
       <div className="flex flex-col gap-4">
         <div className="flex items-center justify-between gap-2">
           <h1 className="text-2xl font-semibold">我的單字</h1>
@@ -62,27 +62,27 @@ async function SavedList({ bookParam, sort }: { bookParam: string | null; sort: 
         </div>
 
         <nav className="flex flex-wrap gap-2" aria-label="依單字本篩選">
-          <NavLink href={href({ book: null })} param="book" value="" active={!book} className={chip} activeClassName={chipOn}>
+          <PendingNavLink href={href({ book: null })} param="book" value="" active={!book} className={chip} activeClassName={chipOn}>
             全部
-          </NavLink>
+          </PendingNavLink>
           {wordbooks.map((b) => (
-            <NavLink key={b.id} href={href({ book: b.id })} param="book" value={b.id} active={book?.id === b.id} className={chip} activeClassName={chipOn}>
+            <PendingNavLink key={b.id} href={href({ book: b.id })} param="book" value={b.id} active={book?.id === b.id} className={chip} activeClassName={chipOn}>
               {b.name}{" "}
               <span className="text-xs font-normal text-muted-foreground group-aria-[current]:text-primary-foreground/80">{b.count}</span>
-            </NavLink>
+            </PendingNavLink>
           ))}
         </nav>
 
-        <SavedListArea>
+        <PendingArea fallback={<SavedWordsSkeleton />}>
           <div className="flex flex-col gap-4">
             <div className="flex flex-wrap items-center justify-between gap-2 text-sm text-muted-foreground">
               <span>共 {words.length} 個字</span>
               <span className="flex gap-2.5">
                 排序：
                 {(["recent", "alpha"] as const).map((s) => (
-                  <NavLink key={s} href={href({ sort: s })} param="sort" value={s === "recent" ? "" : s} active={sort === s} activeClassName="font-semibold text-foreground">
+                  <PendingNavLink key={s} href={href({ sort: s })} param="sort" value={s === "recent" ? "" : s} active={sort === s} activeClassName="font-semibold text-foreground">
                     {s === "recent" ? "收藏時間" : "字母"}
-                  </NavLink>
+                  </PendingNavLink>
                 ))}
               </span>
             </div>
@@ -119,8 +119,8 @@ async function SavedList({ bookParam, sort }: { bookParam: string | null; sort: 
               </ul>
             )}
           </div>
-        </SavedListArea>
+        </PendingArea>
       </div>
-    </SavedNavProvider>
+    </PendingNavProvider>
   );
 }

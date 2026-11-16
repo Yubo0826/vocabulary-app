@@ -6,6 +6,7 @@ import { getReviewState } from "@/lib/review-session";
 import { requireUser } from "@/lib/session";
 import { RatingHelp } from "./rating-help";
 import { ReviewSession } from "./review-session";
+import { ReviewSkeleton } from "./review-skeleton";
 
 export const metadata = { title: "複習" };
 
@@ -23,7 +24,7 @@ export default function ReviewPage() {
           </Link>
         </Button>
       </div>
-      <Suspense fallback={<p className="text-sm text-muted-foreground">載入中…</p>}>
+      <Suspense fallback={<ReviewSkeleton />}>
         <Review />
       </Suspense>
     </div>

@@ -5,6 +5,7 @@ import { account } from "@/db/schema";
 import { requireUser } from "@/lib/session";
 import { Card } from "@/components/ui/card";
 import { DeleteAccount, NicknameField, SignOutButton } from "./account-actions";
+import { AccountSkeleton } from "./account-skeleton";
 
 export const metadata = { title: "帳號" };
 
@@ -12,7 +13,7 @@ const PROVIDER_LABELS: Record<string, string> = { credential: "Email 與密碼",
 
 export default function AccountPage() {
   return (
-    <Suspense fallback={<p className="text-sm text-muted-foreground">載入中…</p>}>
+    <Suspense fallback={<AccountSkeleton />}>
       <Account />
     </Suspense>
   );
