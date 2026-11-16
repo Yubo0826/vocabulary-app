@@ -56,6 +56,13 @@ export async function FamiliarityControl({ headword }: { headword: string }) {
   return <FamiliarityPicker headword={headword} level={state.familiarity} />;
 }
 
+/** 「筆記」分頁標題旁的小圓點：這個字有筆記時才顯示。讀 session，需放在 Suspense 內 */
+export async function NoteTabDot({ headword }: { headword: string }) {
+  const note = (await loadSaveState(headword))?.note;
+  if (!note) return null;
+  return <span role="img" aria-label="有筆記" className="size-1.5 shrink-0 rounded-full bg-primary" />;
+}
+
 /** 單字頁「筆記」分頁的內容：顯示筆記；沒有筆記、未登入時各自給一句提示。編輯在標題列筆記按鈕的視窗裡。讀 session，需放在 Suspense 內 */
 export async function NoteTab({ headword }: { headword: string }) {
   const user = await getCurrentUser();

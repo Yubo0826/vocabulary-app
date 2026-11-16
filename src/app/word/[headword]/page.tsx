@@ -5,7 +5,7 @@ import { ExampleBrowser } from "@/components/example-browser";
 import { highlight, type WordLinks } from "@/components/example-text";
 import { ModernDefinitions } from "@/components/modern-definitions";
 import { RecordLookup } from "@/components/record-lookup";
-import { FamiliarityControl, NoteButton, NoteTab, SaveButton } from "@/components/save-panel";
+import { FamiliarityControl, NoteButton, NoteTab, NoteTabDot, SaveButton } from "@/components/save-panel";
 import { Skeleton } from "@/components/ui/skeleton";
 import { SearchBox } from "@/components/search-box";
 import { AccentToggle, SpeakButton } from "@/components/speech";
@@ -126,6 +126,9 @@ function WordView({ word, from }: { word: WordDetail; from?: string }) {
           )}
           <TabsTrigger value="note" className="text-base">
             筆記
+            <Suspense fallback={null}>
+              <NoteTabDot headword={entry.headword} />
+            </Suspense>
           </TabsTrigger>
         </TabsList>
         <TabsContent value="main" className="flex flex-col gap-4 text-base">

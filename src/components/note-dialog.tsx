@@ -56,10 +56,9 @@ export function NoteDialog({ headword, note }: Props) {
           variant="soft"
           size="icon-lg"
           aria-label={hasNote ? "編輯筆記" : "新增筆記"}
-          className={cn("relative", hasNote && "text-primary")}
+          className={cn(hasNote && "text-primary")}
         >
           <NotebookPen />
-          {hasNote && <span className="absolute top-1.5 right-1.5 size-1.5 rounded-full bg-primary" aria-hidden />}
         </Button>
       </DialogTrigger>
       {/* 沒有說明文字，明確關掉 aria-describedby 以免 Radix 警告 */}
