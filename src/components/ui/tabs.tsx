@@ -5,7 +5,8 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "cn"
 import { Tabs as TabsPrimitive } from "radix-ui"
 
-// 使用者切換過分頁後才加上 data-animated，內容的滑入動畫只在切換時播放、首次載入不播
+// 使用者切換過分頁後才加上 data-animated，內容的滑入動畫只在切換時播放、首次載入不播。
+// data-direction 依新舊分頁在列表中的先後決定：往右邊的分頁切換時內容從右滑入，反之從左
 function Tabs({
   className,
   orientation = "horizontal",
@@ -13,13 +14,23 @@ function Tabs({
   ...props
 }: React.ComponentProps<typeof TabsPrimitive.Root>) {
   const [animated, setAnimated] = React.useState(false)
+  const [direction, setDirection] = React.useState<"forward" | "backward">("forward")
+  const rootRef = React.useRef<HTMLDivElement>(null)
+  const current = React.useRef(props.value ?? props.defaultValue)
   return (
     <TabsPrimitive.Root
+      ref={rootRef}
       data-slot="tabs"
       data-orientation={orientation}
       data-animated={animated ? "" : undefined}
+      data-direction={direction}
       orientation={orientation}
       onValueChange={(value) => {
+        const order = [...(rootRef.current?.querySelectorAll<HTMLElement>('[data-slot="tabs-trigger"]') ?? [])].map(
+          (t) => t.dataset.value
+        )
+        setDirection(order.indexOf(value) < order.indexOf(current.current) ? "backward" : "forward")
+        current.current = value
         setAnimated(true)
         onValueChange?.(value)
       }}
@@ -113,6 +124,7 @@ function TabsTrigger({
   return (
     <TabsPrimitive.Trigger
       data-slot="tabs-trigger"
+      data-value={props.value}
       className={cn(
         "relative inline-flex h-full flex-1 items-center justify-center gap-1.5 px-4 text-sm font-medium whitespace-nowrap text-muted-foreground transition-colors outline-none group-data-vertical/tabs:w-full group-data-vertical/tabs:justify-start hover:bg-foreground/8 hover:text-foreground focus-visible:bg-foreground/10 disabled:pointer-events-none disabled:opacity-50 has-data-[icon=inline-end]:pr-1 has-data-[icon=inline-start]:pl-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
         "data-active:text-primary data-active:hover:text-primary",
@@ -125,7 +137,7 @@ function TabsTrigger({
   )
 }
 
-// 切換後的滑入方向由使用端用 slide-in-from-* 指定（例如左邊分頁 slide-in-from-left-8）
+// 切換後從新分頁所在的方向滑入（方向見 Tabs 的 data-direction）
 function TabsContent({
   className,
   ...props
@@ -136,6 +148,7 @@ function TabsContent({
       className={cn(
         "flex-1 text-sm outline-none",
         "group-data-animated/tabs:motion-safe:animate-in group-data-animated/tabs:motion-safe:fade-in-0 group-data-animated/tabs:motion-safe:duration-300 group-data-animated/tabs:motion-safe:ease-[cubic-bezier(0.2,0,0,1)]",
+        "group-data-[direction=forward]/tabs:slide-in-from-right-8 group-data-[direction=backward]/tabs:slide-in-from-left-8",
         className
       )}
       {...props}

@@ -56,16 +56,21 @@ export async function FamiliarityControl({ headword }: { headword: string }) {
   return <FamiliarityPicker headword={headword} level={state.familiarity} />;
 }
 
-/** 單字頁上顯示的筆記內容；沒有筆記（或未登入）時不顯示。編輯在筆記按鈕的視窗裡 */
-export async function NotePreview({ headword }: { headword: string }) {
+/** 單字頁「筆記」分頁的內容：顯示筆記；沒有筆記、未登入時各自給一句提示。編輯在標題列筆記按鈕的視窗裡。讀 session，需放在 Suspense 內 */
+export async function NoteTab({ headword }: { headword: string }) {
+  const user = await getCurrentUser();
+  if (!user) {
+    return (
+      <p className="surface rounded-2xl px-4 py-5 text-sm text-muted-foreground">
+        <Link href={loginHref(headword)}>登入</Link>後可以寫筆記
+      </p>
+    );
+  }
   const note = (await loadSaveState(headword))?.note;
-  if (!note) return null;
+  if (!note) return <p className="surface rounded-2xl px-4 py-5 text-sm text-muted-foreground">目前沒有筆記</p>;
   return (
-    <section aria-label="我的筆記" className="rounded-2xl bg-muted px-4 py-3">
-      <h2 className="mb-1 flex items-center gap-1 text-xs font-medium text-muted-foreground">
-        <NotebookPen className="size-3.5" aria-hidden /> 我的筆記
-      </h2>
-      <NoteContent markdown={note} className="text-sm" />
+    <section aria-label="我的筆記" className="surface rounded-2xl p-4 sm:p-5">
+      <NoteContent markdown={note} />
     </section>
   );
 }

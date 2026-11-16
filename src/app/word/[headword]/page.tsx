@@ -5,7 +5,8 @@ import { ExampleBrowser } from "@/components/example-browser";
 import { highlight, type WordLinks } from "@/components/example-text";
 import { ModernDefinitions } from "@/components/modern-definitions";
 import { RecordLookup } from "@/components/record-lookup";
-import { FamiliarityControl, NoteButton, NotePreview, SaveButton } from "@/components/save-panel";
+import { FamiliarityControl, NoteButton, NoteTab, SaveButton } from "@/components/save-panel";
+import { Skeleton } from "@/components/ui/skeleton";
 import { SearchBox } from "@/components/search-box";
 import { AccentToggle, SpeakButton } from "@/components/speech";
 import { Badge } from "@/components/ui/badge";
@@ -111,23 +112,23 @@ function WordView({ word, from }: { word: WordDetail; from?: string }) {
             ))}
           </p>
         )}
-        <Suspense fallback={null}>
-          <NotePreview headword={entry.headword} />
-        </Suspense>
       </header>
 
       <Tabs defaultValue="main" className="gap-6 overflow-x-clip">
-        {similarCount > 0 && (
-          <TabsList>
-            <TabsTrigger value="main" className="text-base">
-              釋義
-            </TabsTrigger>
+        <TabsList>
+          <TabsTrigger value="main" className="text-base">
+            釋義
+          </TabsTrigger>
+          {similarCount > 0 && (
             <TabsTrigger value="similar" className="text-base">
               相似
             </TabsTrigger>
-          </TabsList>
-        )}
-        <TabsContent value="main" className="flex flex-col gap-4 text-base slide-in-from-left-8">
+          )}
+          <TabsTrigger value="note" className="text-base">
+            筆記
+          </TabsTrigger>
+        </TabsList>
+        <TabsContent value="main" className="flex flex-col gap-4 text-base">
           {/* 有 LLM 現代化詞條時取代 ECDICT 中文與 WordNet 英英 */}
           {modern.length > 0 && (
             <Section title="釋義">
@@ -187,13 +188,20 @@ function WordView({ word, from }: { word: WordDetail; from?: string }) {
         </TabsContent>
 
         {similarCount > 0 && (
-          <TabsContent value="similar" className="text-base slide-in-from-right-8">
+          <TabsContent value="similar" className="text-base">
             <dl className="surface flex flex-col gap-4 rounded-2xl p-4 sm:p-5">
               <WordList label="易混淆" words={confusables} />
               <WordList label="近義字" words={synonyms} />
             </dl>
           </TabsContent>
         )}
+
+        {/* 筆記讀 session，放在 Suspense 內；字典內容不受影響 */}
+        <TabsContent value="note" className="text-base">
+          <Suspense fallback={<Skeleton className="h-16 rounded-2xl bg-foreground/10" />}>
+            <NoteTab headword={entry.headword} />
+          </Suspense>
+        </TabsContent>
       </Tabs>
     </article>
   );
