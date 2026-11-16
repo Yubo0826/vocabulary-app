@@ -4,12 +4,13 @@ import { requireUser } from "@/lib/session";
 import { countSavedWords, listWordbooks } from "@/lib/user-data";
 import { ImportDialog } from "../saved/import-dialog";
 import { CreateWordbookDialog, WordbookManager } from "./wordbook-manager";
+import { WordbooksSkeleton } from "./wordbooks-skeleton";
 
 export const metadata = { title: "管理單字本" };
 
 export default function WordbooksPage() {
   return (
-    <Suspense fallback={<p className="text-sm text-muted-foreground">載入中…</p>}>
+    <Suspense fallback={<WordbooksSkeleton />}>
       <Wordbooks />
     </Suspense>
   );
