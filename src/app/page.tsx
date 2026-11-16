@@ -156,11 +156,15 @@ async function Intro() {
         ))}
       </ul>
 
-      {/* 已有帳號的人用頁首的「登入」；註冊頁也有連到登入的連結 */}
-      <div>
+      <div className="flex flex-wrap items-center gap-2">
         <Button asChild size="lg">
           <Link href="/signup" className="hover:no-underline">
             建立帳號，開始收藏
+          </Link>
+        </Button>
+        <Button asChild variant="ghost" size="lg" className="text-primary">
+          <Link href="/login" className="hover:no-underline">
+            登入
           </Link>
         </Button>
       </div>
