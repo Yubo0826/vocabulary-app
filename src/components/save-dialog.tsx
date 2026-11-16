@@ -123,7 +123,7 @@ export function SaveDialog({ headword, saved, wordbooks }: Props) {
             })}
           </ul>
         ) : (
-          <p className="px-6 pb-4 text-sm text-muted-foreground">還沒有單字本。先建立一本，這個字就會收藏在裡面。</p>
+          <p className="px-6 pb-4 text-sm text-muted-foreground">目前沒有單字本，請先建立單字本</p>
         )}
 
         {error && (
