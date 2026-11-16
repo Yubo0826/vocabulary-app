@@ -1,12 +1,95 @@
 "use client";
 
+import { Pencil } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { authClient } from "@/lib/auth-client";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Dialog, DialogClose, DialogContent, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+
+const NAME_MAX = 50;
+
+/** 帳號頁的暱稱：旁邊的「編輯」打開視窗修改 */
+export function NicknameField({ name }: { name: string }) {
+  const router = useRouter();
+  const [open, setOpen] = useState(false);
+  const [draft, setDraft] = useState(name);
+  const [pending, setPending] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const trimmed = draft.trim();
+
+  const onOpenChange = (next: boolean) => {
+    if (next) {
+      setDraft(name); // 每次打開都從目前的暱稱開始
+      setError(null);
+    }
+    setOpen(next);
+  };
+
+  const save = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!trimmed) return;
+    if (trimmed === name) return setOpen(false);
+    setPending(true);
+    setError(null);
+    const { error } = await authClient.updateUser({ name: trimmed });
+    setPending(false);
+    if (error) {
+      setError("儲存失敗，請稍後再試");
+      return;
+    }
+    setOpen(false);
+    router.refresh(); // 頁首與本頁都從伺服器重新讀取暱稱
+  };
+
+  return (
+    <div className="flex min-w-0 items-center gap-2">
+      <span className="min-w-0 truncate">{name || "—"}</span>
+      <Dialog open={open} onOpenChange={onOpenChange}>
+        <DialogTrigger asChild>
+          <Button variant="ghost" size="sm" className="-my-1 text-primary-ink">
+            <Pencil /> 編輯
+          </Button>
+        </DialogTrigger>
+        <DialogContent aria-describedby={undefined}>
+          <form onSubmit={save} className="contents">
+            <DialogHeader>
+              <DialogTitle>編輯暱稱</DialogTitle>
+            </DialogHeader>
+            <Input
+              autoFocus
+              value={draft}
+              maxLength={NAME_MAX}
+              aria-label="暱稱"
+              disabled={pending}
+              className="h-10 text-base md:text-sm"
+              onFocus={(e) => e.currentTarget.select()}
+              onChange={(e) => setDraft(e.target.value)}
+            />
+            {error && (
+              <p className="text-sm text-destructive" role="alert">
+                {error}
+              </p>
+            )}
+            <DialogFooter>
+              <DialogClose asChild>
+                <Button type="button" variant="ghost" disabled={pending}>
+                  取消
+                </Button>
+              </DialogClose>
+              <Button type="submit" disabled={pending || !trimmed}>
+                儲存
+              </Button>
+            </DialogFooter>
+          </form>
+        </DialogContent>
+      </Dialog>
+    </div>
+  );
+}
 
 /** 標題列右側的登出按鈕 */
 export function SignOutButton() {

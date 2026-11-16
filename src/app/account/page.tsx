@@ -4,7 +4,7 @@ import { db } from "@/db";
 import { account } from "@/db/schema";
 import { requireUser } from "@/lib/session";
 import { Card } from "@/components/ui/card";
-import { DeleteAccount, SignOutButton } from "./account-actions";
+import { DeleteAccount, NicknameField, SignOutButton } from "./account-actions";
 
 export const metadata = { title: "帳號" };
 
@@ -33,9 +33,11 @@ async function Account() {
         </div>
       </div>
       <Card className="px-4">
-        <dl className="grid grid-cols-[auto_1fr] gap-x-4 gap-y-2 text-base">
+        <dl className="grid grid-cols-[auto_minmax(0,1fr)] items-center gap-x-4 gap-y-2 text-base">
           <dt className="text-muted-foreground">暱稱</dt>
-          <dd>{user.name || "—"}</dd>
+          <dd>
+            <NicknameField name={user.name} />
+          </dd>
           <dt className="text-muted-foreground">Email</dt>
           <dd className="wrap-anywhere">{user.email}</dd>
           <dt className="text-muted-foreground">登入方式</dt>
