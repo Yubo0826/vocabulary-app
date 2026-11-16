@@ -7,6 +7,7 @@ import { ModernDefinitions } from "@/components/modern-definitions";
 import { RecordLookup } from "@/components/record-lookup";
 import { FamiliarityControl, NoteButton, NoteTab, NoteTabDot, SaveButton } from "@/components/save-panel";
 import { Skeleton } from "@/components/ui/skeleton";
+import { POS_LABELS } from "@/lib/pos";
 import { SearchBox } from "@/components/search-box";
 import { AccentToggle, SpeakButton } from "@/components/speech";
 import { Badge } from "@/components/ui/badge";
@@ -24,7 +25,6 @@ const FORM_LABELS: Record<string, string> = {
   t: "最高級",
   s: "複數",
 };
-const POS_LABELS: Record<string, string> = { "n.": "名詞", "v.": "動詞", "adj.": "形容詞", "adv.": "副詞" };
 const EXAM_TAGS: Record<string, string> = { toefl: "TOEFL", ielts: "IELTS", gre: "GRE" };
 const EN_DEFS_SHOWN = 8; // 英英釋義每個詞性預設顯示幾筆，其餘收合
 
