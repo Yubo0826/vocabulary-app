@@ -8,7 +8,7 @@ import { Card } from "@/components/ui/card";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { NativeSelect } from "@/components/ui/native-select";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 type Values = { newCardsPerDay: number; desiredRetention: number; dayStartsAtHour: number; frontExample: boolean };
 
@@ -55,35 +55,42 @@ export function SettingsForm({ initial, timezone }: { initial: Values; timezone:
 
         <Field label="目標記憶保留率" hint="複習時希望還記得的機率。越高複習越頻繁；超過 95% 複習量會大幅增加。">
           {(id) => (
-            <NativeSelect
-              id={id}
-              className="w-full [&_select]:h-10 [&_select]:text-base"
-              value={values.desiredRetention}
-              onChange={(e) => setValues({ ...values, desiredRetention: Number(e.target.value) })}
+            <Select
+              value={String(values.desiredRetention)}
+              onValueChange={(v) => setValues({ ...values, desiredRetention: Number(v) })}
             >
-              {retentionOptions.map((r) => (
-                <option key={r} value={r}>
-                  {Math.round(r * 100)}%{r === 0.9 ? "（預設）" : ""}
-                </option>
-              ))}
-            </NativeSelect>
+              <SelectTrigger id={id} className={selectClass}>
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent position="popper">
+                {retentionOptions.map((r) => (
+                  <SelectItem key={r} value={String(r)} className={itemClass}>
+                    {Math.round(r * 100)}%{r === 0.9 ? "（預設）" : ""}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
           )}
         </Field>
 
         <Field label="換日時間" hint={`這個時間之前的複習算前一天，適合熬夜的人。時區：${timezone}`}>
           {(id) => (
-            <NativeSelect
-              id={id}
-              className="w-full [&_select]:h-10 [&_select]:text-base"
-              value={values.dayStartsAtHour}
-              onChange={(e) => setValues({ ...values, dayStartsAtHour: Number(e.target.value) })}
+            <Select
+              value={String(values.dayStartsAtHour)}
+              onValueChange={(v) => setValues({ ...values, dayStartsAtHour: Number(v) })}
             >
-              {HOURS.map((h) => (
-                <option key={h} value={h}>
-                  {String(h).padStart(2, "0")}:00{h === 4 ? "（預設）" : ""}
-                </option>
-              ))}
-            </NativeSelect>
+              <SelectTrigger id={id} className={selectClass}>
+                <SelectValue />
+              </SelectTrigger>
+              {/* 24 個選項太長，限制高度捲動 */}
+              <SelectContent position="popper" className="max-h-72">
+                {HOURS.map((h) => (
+                  <SelectItem key={h} value={String(h)} className={itemClass}>
+                    {String(h).padStart(2, "0")}:00{h === 4 ? "（預設）" : ""}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
           )}
         </Field>
 
@@ -119,6 +126,8 @@ export function SettingsForm({ initial, timezone }: { initial: Values; timezone:
 }
 
 const controlClass = "h-10 text-base md:text-base";
+const selectClass = "w-full text-base data-[size=default]:h-10";
+const itemClass = "py-2 pl-2.5 text-base";
 
 function Field({ label, hint, children }: { label: string; hint: string; children: (id: string) => React.ReactNode }) {
   const id = useId();

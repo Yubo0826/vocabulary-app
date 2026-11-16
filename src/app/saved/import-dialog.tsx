@@ -16,7 +16,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { NativeSelect, NativeSelectOption } from "@/components/ui/native-select";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import type { ImportResult } from "@/lib/user-data";
 
@@ -107,16 +107,23 @@ export function ImportDialog({ wordbooks, defaultWordbookId }: { wordbooks: { id
               <span className="text-xs text-muted-foreground">.txt、.csv，一次最多 2,000 個字</span>
             </div>
             {wordbooks.length > 0 ? (
-              <label className="flex items-center gap-2 text-sm">
-                <span className="shrink-0">放進單字本</span>
-                <NativeSelect value={wordbookId} onChange={(e) => setWordbookId(e.target.value)} className="min-w-0 flex-1">
-                  {wordbooks.map((b) => (
-                    <NativeSelectOption key={b.id} value={b.id}>
-                      {b.name}
-                    </NativeSelectOption>
-                  ))}
-                </NativeSelect>
-              </label>
+              <div className="flex items-center gap-2 text-sm">
+                <span id="import-wordbook-label" className="shrink-0">
+                  放進單字本
+                </span>
+                <Select value={wordbookId} onValueChange={setWordbookId}>
+                  <SelectTrigger aria-labelledby="import-wordbook-label" className="min-w-0 flex-1">
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent position="popper" className="max-h-72">
+                    {wordbooks.map((b) => (
+                      <SelectItem key={b.id} value={b.id}>
+                        {b.name}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
             ) : (
               <p className="text-sm text-muted-foreground">
                 匯入的字會放進一本單字本。請先到<Link href="/wordbooks">管理單字本</Link>建立一本。
