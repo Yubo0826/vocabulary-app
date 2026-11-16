@@ -136,6 +136,10 @@
     @apply flex min-h-dvh flex-col bg-background leading-relaxed text-foreground antialiased;
     overflow-x: hidden;
   }
+  /* 展開／收合的標題（較少用的意思、顯示其餘 N 句等）連點時不要反白選取 */
+  summary {
+    @apply select-none;
+  }
   /* 內文中的一般連結；shadcn 元件（有 data-slot）自己決定樣式 */
   a:not([data-slot]) {
     @apply text-primary underline-offset-4 hover:underline;

@@ -116,7 +116,7 @@ function WordView({ word, from }: { word: WordDetail; from?: string }) {
         </Suspense>
       </header>
 
-      <Tabs defaultValue="main" className="gap-6">
+      <Tabs defaultValue="main" className="gap-6 overflow-x-clip">
         {similarCount > 0 && (
           <TabsList>
             <TabsTrigger value="main" className="text-base">
@@ -127,7 +127,7 @@ function WordView({ word, from }: { word: WordDetail; from?: string }) {
             </TabsTrigger>
           </TabsList>
         )}
-        <TabsContent value="main" className="flex flex-col gap-4 text-base">
+        <TabsContent value="main" className="flex flex-col gap-4 text-base slide-in-from-left-8">
           {/* 有 LLM 現代化詞條時取代 ECDICT 中文與 WordNet 英英 */}
           {modern.length > 0 && (
             <Section title="釋義">
@@ -187,7 +187,7 @@ function WordView({ word, from }: { word: WordDetail; from?: string }) {
         </TabsContent>
 
         {similarCount > 0 && (
-          <TabsContent value="similar" className="text-base">
+          <TabsContent value="similar" className="text-base slide-in-from-right-8">
             <dl className="surface flex flex-col gap-4 rounded-2xl p-4 sm:p-5">
               <WordList label="易混淆" words={confusables} />
               <WordList label="近義字" words={synonyms} />

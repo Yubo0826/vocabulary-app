@@ -67,7 +67,7 @@ export function NoteDialog({ headword, note }: Props) {
         <DialogHeader>
           <DialogTitle>筆記</DialogTitle>
         </DialogHeader>
-        <NoteEditor initial={note ?? ""} placeholder="「思考會以螺旋式成長，而活用內在資產就從記錄開始。」 —— 金翼漢《巨人的筆記》" onChange={setDraft} />
+        <NoteEditor initial={note ?? ""} placeholder="輸入關於此單字的筆記" onChange={setDraft} />
         {error && (
           <p className="text-sm text-destructive" role="alert">
             {error}

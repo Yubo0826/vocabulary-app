@@ -108,6 +108,8 @@ function DialogFooter({
       data-slot="dialog-footer"
       className={cn(
         "-mx-6 -mb-6 flex flex-col-reverse gap-2 rounded-b-3xl border-t bg-muted/50 px-6 py-4 sm:flex-row sm:justify-end",
+        // Material 3 對話框按鈕：高 40px，比一般按鈕大
+        "sm:items-center [&_button]:h-10 [&_button]:px-5 [&_button]:text-[0.95rem]",
         className
       )}
       {...props}
