@@ -5,6 +5,7 @@ import { PendingArea, PendingNavLink, PendingNavProvider } from "@/components/pe
 import { requireUser } from "@/lib/session";
 import { wordHref } from "@/lib/urls";
 import { listNotes, type NoteSort } from "@/lib/user-data";
+import { CollapsibleNote } from "./collapsible-note";
 import { NotesSearch } from "./notes-search";
 import { NotesListSkeleton, NotesSkeleton } from "./notes-skeleton";
 
@@ -90,7 +91,10 @@ async function NoteList({ q, sort }: { q: string; sort: NoteSort }) {
                       <span className="shrink-0 text-xs text-muted-foreground">{dateFormat.format(n.updatedAt)}</span>
                     </div>
                     {n.gloss && <p className="truncate text-sm text-muted-foreground">{n.gloss}</p>}
-                    <NoteContent markdown={n.note} className="text-sm" />
+                    {/* 搜尋時命中的字可能在截斷的段落裡，直接展開 */}
+                    <CollapsibleNote key={q} defaultExpanded={!!q.trim()}>
+                      <NoteContent markdown={n.note} className="text-sm" />
+                    </CollapsibleNote>
                   </li>
                 ))}
               </ul>
