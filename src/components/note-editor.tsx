@@ -4,6 +4,7 @@
  * 筆記編輯器（Tiptap）：上方一排精簡工具列，存成 Markdown 字串。
  * 檔案較大，由 note-dialog 以 next/dynamic 在打開視窗時才載入。
  */
+import { TableKit } from "@tiptap/extension-table";
 import { Markdown } from "@tiptap/markdown";
 import { Placeholder } from "@tiptap/extensions";
 import { EditorContent, useEditor, useEditorState, type Editor } from "@tiptap/react";
@@ -26,6 +27,7 @@ import {
   Redo2,
   Table,
   Trash2,
+  Underline,
   Undo2,
   type LucideIcon,
 } from "lucide-react";
@@ -51,6 +53,13 @@ import { cn } from "@/lib/utils";
  */
 const SHORTCUTS = ["orderedList"];
 
+/**
+ * 表格（GFM 語法）：第一列固定是表頭，不能合併儲存格，儲存格裡只能放單行文字（換行存成 `<br>`）。
+ * 不開放拖拉欄寬（Markdown 存不了）；renderWrapper 讓表格外面多一層可以橫向捲動的容器。
+ * 顯示端不載入 TableKit，改用 lib/note-table-parse.ts，解析結果相同。
+ */
+const NoteTable = TableKit.configure({ table: { resizable: false, renderWrapper: true } });
+
 /** 序列化時 < > & 會被轉成 HTML 實體；筆記一律當純文字，轉回原字元（不會被當成 HTML 渲染） */
 const unescapeEntities = (s: string) => s.replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&");
 
@@ -64,7 +73,7 @@ export default function NoteEditor({ initial, placeholder, onChange }: Props) {
   const editor = useEditor({
     extensions: [
       StarterKit.configure({
-        underline: false, // Markdown 沒有底線語法，存檔會遺失
+        // 底線：Markdown 沒有底線語法，Tiptap 存成 <u>…</u>，並自帶讀取規則（顯示端也讀得回來）
         link: {
           openOnClick: false,
           autolink: true,
@@ -73,6 +82,7 @@ export default function NoteEditor({ initial, placeholder, onChange }: Props) {
         },
       }),
       ...NOTE_MARKDOWN_EXTENSIONS,
+      NoteTable,
       Markdown,
       Placeholder.configure({ placeholder }),
     ],
@@ -111,6 +121,7 @@ function Toolbar({ editor }: { editor: Editor }) {
       canRedo: e.can().redo(),
       bold: e.isActive("bold"),
       italic: e.isActive("italic"),
+      underline: e.isActive("underline"),
       h2: e.isActive("heading", { level: 2 }),
       h3: e.isActive("heading", { level: 3 }),
       orderedList: e.isActive("orderedList"),
@@ -134,6 +145,12 @@ function Toolbar({ editor }: { editor: Editor }) {
       <Divider />
       <ToolButton icon={Bold} label="粗體" active={state.bold} onClick={() => run().toggleBold().run()} />
       <ToolButton icon={Italic} label="斜體" active={state.italic} onClick={() => run().toggleItalic().run()} />
+      <ToolButton
+        icon={Underline}
+        label="底線"
+        active={state.underline}
+        onClick={() => run().toggleUnderline().run()}
+      />
       <ColorButton editor={editor} color={state.color} bg={state.bg} />
       <Divider />
       <ToolButton icon={ListOrdered} label="編號清單" active={state.orderedList} onClick={() => run().toggleOrderedList().run()} />

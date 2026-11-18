@@ -16,7 +16,7 @@ export function noteToPlainText(markdown: string): string {
 
   return text
     .replace(/\\([\\`*_[\]()#+\-.!~<>|{}])/g, protect)
-    .replace(/<\/?(?:strong|em)>/g, "") // 格式重疊時存成的 HTML 標籤（見 note-markdown.ts）
+    .replace(/<\/?(?:strong|em|u)>/gi, "") // 底線，以及格式重疊時存成的 HTML 標籤（見 note-markdown.ts）
     .replace(/<br\s*\/?>/gi, " ") // 表格儲存格裡的換行
     .replace(/^[ \t]*\|?(?:[ \t]*:?-{3,}:?[ \t]*\|)+[ \t]*:?-*:?[ \t]*$/gm, "") // 表格的分隔列 | --- | --- |
     .replace(/^[ \t]*\|(.*)\|[ \t]*$/gm, (_, cells: string) => cells.split("|").map((c) => c.trim()).join("　")) // 表格列：儲存格用全形空白隔開

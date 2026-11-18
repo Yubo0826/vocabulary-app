@@ -9,10 +9,11 @@ import StarterKit from "@tiptap/starter-kit";
 import { Fragment, type ReactNode } from "react";
 import { noteColorClass } from "@/lib/note-color";
 import { NOTE_MARKDOWN_EXTENSIONS } from "@/lib/note-markdown";
+import { TableParseOnly } from "@/lib/note-table-parse";
 import { cn } from "@/lib/utils";
 
 const parser = new MarkdownManager({
-  extensions: [StarterKit.configure({ underline: false }), ...NOTE_MARKDOWN_EXTENSIONS],
+  extensions: [StarterKit, ...NOTE_MARKDOWN_EXTENSIONS, TableParseOnly],
 });
 
 const SAFE_HREF = /^(https?:|mailto:)/i;
@@ -28,6 +29,8 @@ function withMarks(text: ReactNode, marks: JSONContent["marks"] = []): ReactNode
         return <code>{inner}</code>;
       case "strike":
         return <s>{inner}</s>;
+      case "underline":
+        return <u>{inner}</u>;
       case "link": {
         const href = String(mark.attrs?.href ?? "");
         return SAFE_HREF.test(href) ? (

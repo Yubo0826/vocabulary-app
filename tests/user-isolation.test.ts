@@ -247,6 +247,9 @@ describe("筆記和收藏無關", () => {
     assert.deepEqual(await words("黃色"), ["banana"], "略過顏色語法比對文字");
     assert.deepEqual(await words("熟透"), ["banana"], "表格裡被跳脫的顏色語法也略過");
     assert.deepEqual(await words("red"), [], "顏色名稱不算筆記內容");
+    await data.setNote(userA, "apple", "紅色的 <u>水果</u>");
+    assert.deepEqual(await words("的 水"), ["apple"], "略過底線標籤比對文字");
+    assert.deepEqual(await words("u>"), [], "底線標籤不算筆記內容");
     assert.deepEqual(await words("B 的"), [], "看不到別人的筆記");
 
     await unsave(userA, "apple");

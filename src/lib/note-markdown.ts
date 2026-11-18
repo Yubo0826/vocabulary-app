@@ -1,8 +1,8 @@
 /**
  * 筆記 Markdown 的自訂擴充，編輯器（note-editor.tsx）與顯示（note-content.tsx）共用，兩邊的格式才會一致。
+ * 表格不在這裡：編輯器用完整的 TableKit，顯示端用只做解析的 note-table-parse.ts（原因見該檔）。
  */
 import { Extension, type MarkdownToken } from "@tiptap/core";
-import { TableKit } from "@tiptap/extension-table";
 import { NoteBg, NoteColor } from "./note-color";
 
 const TAGS = { strong: "bold", em: "italic" } as const;
@@ -54,11 +54,5 @@ export const HtmlBreak = Extension.create({
   parseMarkdown: () => ({ type: "hardBreak" }),
 });
 
-/**
- * 表格（GFM 語法）：第一列固定是表頭，不能合併儲存格，儲存格裡只能放單行文字（換行存成 `<br>`）。
- * 不開放拖拉欄寬（Markdown 存不了）；renderWrapper 讓編輯器裡的表格外面多一層可以橫向捲動的容器。
- */
-const NoteTable = TableKit.configure({ table: { resizable: false, renderWrapper: true } });
-
-/** 除了 StarterKit 之外，筆記解析／存檔需要的擴充 */
-export const NOTE_MARKDOWN_EXTENSIONS = [NoteColor, NoteBg, HtmlReopenMarks, HtmlBreak, NoteTable];
+/** 除了 StarterKit 與表格之外，筆記解析／存檔需要的擴充 */
+export const NOTE_MARKDOWN_EXTENSIONS = [NoteColor, NoteBg, HtmlReopenMarks, HtmlBreak];
