@@ -54,12 +54,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <header className="relative z-10 bg-background">
           {/* 手機時導航換到第二列（見 UserNav） */}
           <div className={`${container} flex flex-wrap items-center gap-x-3`}>
-            {/* logo 圖形淺色／深色主題各一張（疊色方式不同），由 html.dark 切換；文字用 logo 指定的 Nunito */}
+            {/* logo 圖形（便利貼角色）深淺主題共用；文字用 logo 指定的 Nunito */}
             <Link href="/" className={`${nunito.className} flex h-13 items-center gap-2 text-foreground hover:no-underline`}>
               {/* eslint-disable-next-line @next/next/no-img-element -- SVG 不需要 next/image 最佳化 */}
-              <img src="/logo/moji-mark.svg" alt="" width={146} height={136} className="h-6.5 w-auto dark:hidden" />
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/logo/moji-mark-dark.svg" alt="" width={146} height={136} className="hidden h-6.5 w-auto dark:block" />
+              <img src="/logo/moji-mark.svg" alt="" width={136} height={149} className="h-7 w-auto" />
               <span className="text-xl font-extrabold">
                 Moji <span className="font-semibold text-muted-foreground">Notebook</span>
               </span>

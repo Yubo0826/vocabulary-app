@@ -159,7 +159,7 @@
 
 ## 階段 6：PWA 與營運
 
-- [x] PWA manifest、圖示、可加入主畫面（2026-11-10：`src/app/manifest.ts`；圖示是暫定的藍色漸層底白色 M（2026-11-10 隨 UI 改版由墨綠改藍），`public/icons/` 與 `src/app/apple-icon.png`、`icon.svg`；尚無 Service Worker，離線時顯示瀏覽器錯誤頁）
+- [x] PWA manifest、圖示、可加入主畫面（2026-11-18 換成便利貼角色 logo，原始檔是使用者提供的 moji-sticky.zip；2026-11-10：`src/app/manifest.ts`；圖示是暫定的藍色漸層底白色 M（2026-11-10 隨 UI 改版由墨綠改藍），`public/icons/` 與 `src/app/apple-icon.png`、`icon.svg`；尚無 Service Worker，離線時顯示瀏覽器錯誤頁）
 - [ ] （需先討論）離線複習：IndexedDB 暫存卡片與 review logs，上線後依 `updated_at` 增量同步
 - [ ] 備份：GitHub Actions 每日 `pg_dump` 使用者資料表，上傳到 Railway 以外的儲存空間（如 Cloudflare R2）
 - [ ] Railway 設定 usage limit 與用量通知
