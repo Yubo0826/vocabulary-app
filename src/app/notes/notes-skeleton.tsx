@@ -19,11 +19,14 @@ export function NotesListSkeleton() {
       <ul className="flex flex-col gap-3">
         {ROWS.map((r, i) => (
           <li key={i} className="surface flex flex-col gap-2 rounded-2xl px-4 py-3.5">
-            <span className="flex items-center justify-between gap-2">
-              <Skeleton className={`h-5 ${r.title} bg-foreground/10`} />
-              <Skeleton className="h-3 w-16 bg-foreground/10" />
+            {/* 單字、釋義、日期同一行，和實際清單一致 */}
+            <span className="flex items-center gap-2">
+              <Skeleton className={`h-5 ${r.title} shrink-0 bg-foreground/10`} />
+              <span className="min-w-0 flex-1">
+                <Skeleton className={`h-4 ${r.gloss} bg-foreground/10`} />
+              </span>
+              <Skeleton className="h-3 w-16 shrink-0 bg-foreground/10" />
             </span>
-            <Skeleton className={`h-4 ${r.gloss} bg-foreground/10`} />
             {r.lines.map((w, j) => (
               <Skeleton key={j} className={`h-4 ${w} bg-foreground/10`} />
             ))}

@@ -1,15 +1,15 @@
 "use client";
 
 /**
- * 筆記頁清單的長筆記：超過約 8 行時限高、底部淡出，按「展開全文」看完整內容。
+ * 筆記頁清單的長筆記：超過約 5 行時只顯示前 4 行左右、底部淡出，按「展開全文」看完整內容（清單比較好掃過）。
  * 內容（NoteContent）仍在伺服器端渲染後當 children 傳進來；這裡只量高度與切換。
  * 只多出一兩行的筆記不截斷，免得為了藏一行還要多按一次。
  */
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 
-const MAX_HEIGHT_REM = 12; // text-sm leading-relaxed 約 8 行
-const SLACK_REM = 3; // 超出不到約 2 行就直接全部顯示
+const MAX_HEIGHT_REM = 6; // text-sm leading-relaxed 約 4 行
+const SLACK_REM = 2; // 超出不到約 1.5 行就直接全部顯示（約 5 行以內的筆記不截斷）
 const FADE = "linear-gradient(to bottom, black 60%, transparent)";
 
 export function CollapsibleNote({ children, defaultExpanded = false }: { children: ReactNode; defaultExpanded?: boolean }) {

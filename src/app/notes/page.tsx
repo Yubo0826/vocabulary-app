@@ -84,17 +84,18 @@ async function NoteList({ q, sort }: { q: string; sort: NoteSort }) {
             ) : (
               <ul className="flex flex-col gap-3">
                 {notes.map((n) => (
-                  <li key={n.id} className="surface flex flex-col gap-1.5 rounded-2xl px-4 py-3">
-                    <div className="flex items-baseline justify-between gap-2">
-                      <Link href={wordHref(n.headword)} className="text-[1.05rem] font-semibold wrap-anywhere">
+                  <li key={n.id} className="surface flex flex-col gap-1 rounded-2xl px-4 py-3">
+                    {/* 單字、釋義、日期擠在同一行，清單比較好掃；釋義太長時截斷 */}
+                    <div className="flex items-baseline gap-2">
+                      <Link href={wordHref(n.headword)} className="min-w-0 text-[1.05rem] font-semibold wrap-anywhere">
                         {n.display}
                       </Link>
+                      <span className="min-w-0 flex-1 truncate text-sm text-muted-foreground">{n.gloss}</span>
                       <span className="-my-1 flex shrink-0 items-center gap-1 text-xs text-muted-foreground">
                         {dateFormat.format(n.updatedAt)}
                         <NoteDialog headword={n.headword} note={n.note} compact={{ display: n.display }} />
                       </span>
                     </div>
-                    {n.gloss && <p className="truncate text-sm text-muted-foreground">{n.gloss}</p>}
                     {/* 搜尋時命中的字可能在截斷的段落裡，直接展開 */}
                     <CollapsibleNote key={q} defaultExpanded={!!q.trim()}>
                       <NoteContent markdown={n.note} className="text-sm" />
