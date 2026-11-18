@@ -53,7 +53,7 @@ export function CollapsibleNote({ children, defaultExpanded = false }: { childre
             if (expanded && top < 0) ref.current?.closest("li")?.scrollIntoView({ block: "start" });
           }}
           aria-expanded={expanded}
-          className="mt-1 inline-flex cursor-pointer items-center gap-0.5 text-sm text-primary-ink select-none"
+          className="mx-auto mt-1 flex w-fit cursor-pointer items-center gap-0.5 text-sm text-primary-ink select-none"
         >
           {expanded ? "收合" : "展開全文"}
           {expanded ? <ChevronUp className="size-4" /> : <ChevronDown className="size-4" />}

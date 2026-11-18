@@ -1,6 +1,6 @@
 "use client";
 
-import { NotebookPen } from "lucide-react";
+import { NotebookPen, Pencil } from "lucide-react";
 import dynamic from "next/dynamic";
 import { useState, useTransition } from "react";
 import { saveNoteAction } from "@/app/actions";
@@ -22,10 +22,15 @@ const NoteEditor = dynamic(() => import("./note-editor"), {
   loading: () => <div className="min-h-[18.5rem]" aria-hidden />,
 });
 
-type Props = { headword: string; note: string | null };
+type Props = {
+  headword: string;
+  note: string | null;
+  /** 筆記頁清單用：較小的淡色按鈕，視窗標題寫出是哪個字（單字頁不需要，畫面上就是那個字） */
+  compact?: { display: string };
+};
 
 /** 筆記按鈕與對話框。筆記和收藏無關：沒收藏也能寫，不會順便收藏 */
-export function NoteDialog({ headword, note }: Props) {
+export function NoteDialog({ headword, note, compact }: Props) {
   const [open, setOpen] = useState(false);
   const [draft, setDraft] = useState(note ?? "");
   const [error, setError] = useState<string | null>(null);
@@ -52,19 +57,31 @@ export function NoteDialog({ headword, note }: Props) {
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogTrigger asChild>
-        <Button
-          variant="soft"
-          size="icon-lg"
-          aria-label={hasNote ? "編輯筆記" : "新增筆記"}
-          className={cn(hasNote && "text-primary")}
-        >
-          <NotebookPen />
-        </Button>
+        {compact ? (
+          <Button
+            variant="ghost"
+            size="icon-sm"
+            aria-label={`編輯「${compact.display}」的筆記`}
+            title="編輯筆記"
+            className="text-muted-foreground"
+          >
+            <Pencil />
+          </Button>
+        ) : (
+          <Button
+            variant="soft"
+            size="icon-lg"
+            aria-label={hasNote ? "編輯筆記" : "新增筆記"}
+            className={cn(hasNote && "text-primary")}
+          >
+            <NotebookPen />
+          </Button>
+        )}
       </DialogTrigger>
       {/* 沒有說明文字，明確關掉 aria-describedby 以免 Radix 警告 */}
       <DialogContent aria-describedby={undefined} className="sm:max-w-xl">
         <DialogHeader>
-          <DialogTitle>筆記</DialogTitle>
+          <DialogTitle>{compact ? `「${compact.display}」的筆記` : "筆記"}</DialogTitle>
         </DialogHeader>
         <NoteEditor initial={note ?? ""} placeholder="輸入關於此單字的筆記" onChange={setDraft} />
         {error && (

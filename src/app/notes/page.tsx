@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Suspense } from "react";
 import { NoteContent } from "@/components/note-content";
+import { NoteDialog } from "@/components/note-dialog";
 import { PendingArea, PendingNavLink, PendingNavProvider } from "@/components/pending-nav";
 import { requireUser } from "@/lib/session";
 import { wordHref } from "@/lib/urls";
@@ -88,7 +89,10 @@ async function NoteList({ q, sort }: { q: string; sort: NoteSort }) {
                       <Link href={wordHref(n.headword)} className="text-[1.05rem] font-semibold wrap-anywhere">
                         {n.display}
                       </Link>
-                      <span className="shrink-0 text-xs text-muted-foreground">{dateFormat.format(n.updatedAt)}</span>
+                      <span className="-my-1 flex shrink-0 items-center gap-1 text-xs text-muted-foreground">
+                        {dateFormat.format(n.updatedAt)}
+                        <NoteDialog headword={n.headword} note={n.note} compact={{ display: n.display }} />
+                      </span>
                     </div>
                     {n.gloss && <p className="truncate text-sm text-muted-foreground">{n.gloss}</p>}
                     {/* 搜尋時命中的字可能在截斷的段落裡，直接展開 */}
