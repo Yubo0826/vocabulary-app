@@ -76,7 +76,7 @@ Moji 的字典資料（`dict_` 開頭的表）全部由 `scripts/import/` 的匯
 - 原始檔：`data/raw/tatoeba/` 的 `eng_sentences_detailed.tsv`、`cmn_sentences_detailed.tsv`、`eng_sentences_CC0.tsv`、`cmn_sentences_CC0.tsv`、`eng-cmn_links.tsv`
 - **只收有中文翻譯的英文句子**；一句英文有多個中文翻譯時，取 id 最小的一句。
 - **超過 25 個英文字的句子不收**（`MAX_WORDS`）。Tatoeba 有整段日記式的長文（例如 seemingly 原本配到 224 字的段落），因此沒有例句的字改由 LLM 補。
-- 斷詞後透過 `dict_word_forms` 還原原形，一句會關聯到句中所有字（例如含 preceding 的句子會同時掛在 precede 與 preceding 底下）。
+- 斷詞後透過 `dict_word_forms` 還原原形，一句會關聯到句中所有字（例如含 preceding 的句子會同時掛在 precede 與 preceding 底下）。其中只是在示範原形的句子，之後由 LLM 判斷移除（見下方「LLM 移除掛錯字的例句」）。
 - **計分**（0–100）：句長 5–15 字得 50 分、超出範圍每字扣 8 分；詞頻前 5,000 名的常用字比例最多 50 分。中文翻譯含大陸用語（「漲工資」等，清單與 LLM 檢查共用）扣 30 分。每個詞條保留分數最高的 20 句（`--per-headword`），同分時短句優先。
 - **去除重複用法**：依分數依序挑選，若某句的實詞（去掉功能詞與該字本身，並還原成原形）和已選句子重疊 ≥ 50%，就視為重複（例如 raise 的多句「舉手」），排到所有不重複的句子之後（分數扣 100）。只排後、不刪除，每個詞條仍保留 20 句。
 - 單字頁預設顯示前 8 句例句，其餘收在「顯示其餘 N 句」。
@@ -143,6 +143,15 @@ Moji 的字典資料（`dict_` 開頭的表）全部由 `scripts/import/` 的匯
 
 Tatoeba 匯入另外把中文翻譯裡緊接在中文字後面的半形標點（, ? ! : ;）轉成全形。
 
+## LLM 移除掛錯字的例句
+
+Tatoeba 匯入時沒有判斷詞性。一個字如果本身是詞條、又是另一個字的變化形，句子會同時掛在兩個詞條底下。例如 accomplished 是形容詞，也是 accomplish 的過去式，結果 accomplished 頁面出現 "He accomplished his mission."。
+
+- 由 `scripts/llm/filter-form-examples.ts`（`npm run llm:form-filter`）挑字：本身是詞條、又是另一個詞條的過去式、過去分詞、現在分詞或第三人稱單數（`dict_word_forms` kind = p/d/i/3），並且有 Tatoeba 例句。只有「X 的過去式」這類意思的字（went）不處理。
+- DeepSeek 逐句判斷：句中的字是用這個詞條自己的意思（an accomplished pianist、I'm tired、be used to doing），還是只是原形的動作、時態或被動（He accomplished his mission、I found my keys、He used to live here）。分不出來時保留。
+- 結果存在 `data/llm/form-filter/*.json`（進版控，以英文原文對應例句）。`import:llm-form-filter` 從該詞條刪除判斷為原形用法的關聯，原形底下的同一句不受影響。重新匯入 Tatoeba 後要再跑一次（`import:all` 已包含）。
+- 移除後例句變少的字，可以用 `llm:examples -- --max-existing=1` 補 LLM 例句。
+
 ## LLM 現代化詞條
 
 ECDICT 與 WordNet 源自舊字典：收了古義（apprehensive「敏悟的」、awful「莊嚴的」）、排序不依現代用法、沒有語域標記。改由 LLM 以這兩者為參考，重新整理每個字。由 `scripts/llm/generate-entries.ts` 產生、`import:llm-entries` 匯入 `dict_entry_senses`：
@@ -162,7 +171,7 @@ npm run import:llm-entries
 ## 重新匯入與同步正式環境
 
 ```bash
-npm run import:all          # ECDICT → WordNet → 相似字 → 詞性家族 → Tatoeba → LLM 例句 → LLM 詞義 → LLM 詞條 → 統計
+npm run import:all          # ECDICT → WordNet → 相似字 → 詞性家族 → Tatoeba → LLM 例句 → LLM 詞義 → 移除掛錯字的例句 → LLM 詞條 → 統計
 npm run llm:examples -- --limit=250            # 用 DeepSeek 產生例句（需要 .env.local 的 DEEPSEEK_API_KEY）
 npm run llm:examples -- --max-existing=1       # 補強只有 1 句例句的字
 npm run llm:check                              # 檢查 data/llm/examples/ 全部資料

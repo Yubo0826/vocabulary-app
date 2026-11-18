@@ -1,0 +1,4752 @@
+{
+ "model": "deepseek-flash",
+ "generatedAt": "2026-11-17",
+ "method": "scripts/llm/generate-examples.ts：每字 2 句，依 ECDICT 中文釋義與 OEWN 英英釋義選常見詞義，中文為台灣用語意譯",
+ "words": [
+  {
+   "headword": "forced",
+   "examples": [
+    {
+     "en": "The company issued a forced apology after the scandal.",
+     "zh": "醜聞爆發後，該公司發表了被迫的道歉。"
+    },
+    {
+     "en": "She felt forced to resign because of the pressure.",
+     "zh": "因為壓力，她感到被迫辭職。"
+    }
+   ]
+  },
+  {
+   "headword": "attempted",
+   "examples": [
+    {
+     "en": "The police arrested him for attempted robbery.",
+     "zh": "警方以搶劫未遂逮捕了他。"
+    },
+    {
+     "en": "Her attempted joke fell flat and no one laughed.",
+     "zh": "她試圖開的玩笑沒有奏效，沒有人笑。"
+    }
+   ]
+  },
+  {
+   "headword": "damaging",
+   "examples": [
+    {
+     "en": "The damaging rumors spread quickly through the office.",
+     "zh": "破壞性的謠言在辦公室裡迅速傳開。"
+    },
+    {
+     "en": "Excessive sun exposure can be damaging to your skin.",
+     "zh": "過度曝曬陽光可能會對你的皮膚造成損害。"
+    }
+   ]
+  },
+  {
+   "headword": "stolen",
+   "examples": [
+    {
+     "en": "The stolen car was found abandoned near the river.",
+     "zh": "被偷的車子在河邊被發現，遭到棄置。"
+    },
+    {
+     "en": "She reported the stolen wallet to the police immediately.",
+     "zh": "她立刻向警方報案錢包被偷。"
+    }
+   ]
+  },
+  {
+   "headword": "signing",
+   "examples": [
+    {
+     "en": "The signing of the contract took place in the conference room.",
+     "zh": "合約的簽署在會議室進行。"
+    },
+    {
+     "en": "They celebrated the signing with a small ceremony.",
+     "zh": "他們以一個小型儀式慶祝簽約。"
+    }
+   ]
+  },
+  {
+   "headword": "sustained",
+   "examples": [
+    {
+     "en": "The sustained applause lasted for several minutes.",
+     "zh": "持續的掌聲持續了好幾分鐘。"
+    },
+    {
+     "en": "His sustained effort finally paid off.",
+     "zh": "他持續的努力終於有了回報。"
+    }
+   ]
+  },
+  {
+   "headword": "recognised",
+   "examples": [
+    {
+     "en": "She is a recognised expert in the field of genetics.",
+     "zh": "她是遺傳學領域公認的專家。"
+    },
+    {
+     "en": "The new policy was recognised by the government.",
+     "zh": "新政策獲得了政府的認可。"
+    }
+   ]
+  },
+  {
+   "headword": "improving",
+   "examples": [
+    {
+     "en": "The improving economy boosted consumer confidence.",
+     "zh": "經濟好轉提振了消費者信心。"
+    },
+    {
+     "en": "His improving grades pleased his parents.",
+     "zh": "他逐漸進步的成績讓父母很高興。"
+    }
+   ]
+  },
+  {
+   "headword": "confusing",
+   "examples": [
+    {
+     "en": "The confusing instructions made it hard to assemble the furniture.",
+     "zh": "令人困惑的說明書讓組裝家具變得困難。"
+    },
+    {
+     "en": "It was confusing to have two buttons with the same label.",
+     "zh": "兩個按鈕標籤相同，讓人混淆。"
+    }
+   ]
+  },
+  {
+   "headword": "published",
+   "examples": [
+    {
+     "en": "The published book became an instant bestseller.",
+     "zh": "這本已出版的書立刻成為暢銷書。"
+    },
+    {
+     "en": "Her published research changed the way doctors treat the disease.",
+     "zh": "她已發表的研究改變了醫生治療該疾病的方式。"
+    }
+   ]
+  },
+  {
+   "headword": "reported",
+   "examples": [
+    {
+     "en": "The reported incident was investigated by the authorities.",
+     "zh": "據報道的事件已由當局調查。"
+    },
+    {
+     "en": "According to the reported figures, sales have doubled.",
+     "zh": "根據報告的數據，銷售額已經翻倍。"
+    }
+   ]
+  },
+  {
+   "headword": "happening",
+   "examples": [
+    {
+     "en": "The festival is a major happening in the small town.",
+     "zh": "這個節慶是這個小鎮的大事。"
+    },
+    {
+     "en": "She described the strange happening to the police.",
+     "zh": "她向警方描述了那件奇怪的事。"
+    }
+   ]
+  },
+  {
+   "headword": "committed",
+   "examples": [
+    {
+     "en": "He is committed to protecting the environment.",
+     "zh": "他致力於保護環境。"
+    },
+    {
+     "en": "They are a committed couple who support each other.",
+     "zh": "他們是一對互相支持的忠誠伴侶。"
+    }
+   ]
+  },
+  {
+   "headword": "protected",
+   "examples": [
+    {
+     "en": "The protected area is home to many endangered species.",
+     "zh": "這個保護區是許多瀕危物種的家園。"
+    },
+    {
+     "en": "Your personal data is protected by encryption.",
+     "zh": "你的個人資料受到加密保護。"
+    }
+   ]
+  },
+  {
+   "headword": "raised",
+   "examples": [
+    {
+     "en": "The raised platform provided a better view of the stage.",
+     "zh": "升高的平台提供了更好的舞台視野。"
+    },
+    {
+     "en": "She wore a dress with a raised pattern.",
+     "zh": "她穿了一件有浮雕圖案的衣服。"
+    }
+   ]
+  },
+  {
+   "headword": "dedicated",
+   "examples": [
+    {
+     "en": "She is a dedicated teacher who spends extra time helping students.",
+     "zh": "她是一位專注的教師，花額外時間幫助學生。"
+    },
+    {
+     "en": "The dedicated team worked overtime to finish the project.",
+     "zh": "這個奉獻的團隊加班完成了專案。"
+    }
+   ]
+  },
+  {
+   "headword": "recorded",
+   "examples": [
+    {
+     "en": "The recorded conversation was used as evidence in court.",
+     "zh": "錄製的對話在法庭上被用作證據。"
+    },
+    {
+     "en": "All recorded transactions are stored securely.",
+     "zh": "所有記錄的交易都被安全地儲存。"
+    }
+   ]
+  },
+  {
+   "headword": "organised",
+   "examples": [
+    {
+     "en": "The organised workers demanded better pay and conditions.",
+     "zh": "組織起來的工人要求更好的工資和條件。"
+    },
+    {
+     "en": "She joined an organised group to clean up the beach.",
+     "zh": "她加入了一個有組織的團體來清理海灘。"
+    }
+   ]
+  },
+  {
+   "headword": "planting",
+   "examples": [
+    {
+     "en": "The planting of new trees will help improve air quality.",
+     "zh": "種植新樹木將有助於改善空氣品質。"
+    },
+    {
+     "en": "They spent the morning planting flowers in the garden.",
+     "zh": "他們花了一上午在花園裡種花。"
+    }
+   ]
+  },
+  {
+   "headword": "implied",
+   "examples": [
+    {
+     "en": "She didn't say it directly, but her implied criticism was clear to everyone.",
+     "zh": "她沒有直接說出來，但她含蓄的批評每個人都聽得出來。"
+    },
+    {
+     "en": "The contract contains an implied promise to maintain the equipment.",
+     "zh": "這份合約包含一項默示的承諾，要維護設備。"
+    }
+   ]
+  },
+  {
+   "headword": "listening",
+   "examples": [
+    {
+     "en": "Active listening is a key skill for any good manager.",
+     "zh": "積極聆聽是任何優秀經理人的關鍵技能。"
+    },
+    {
+     "en": "She sat by the radio, listening carefully to the weather report.",
+     "zh": "她坐在收音機旁，仔細聆聽天氣預報。"
+    }
+   ]
+  },
+  {
+   "headword": "tempting",
+   "examples": [
+    {
+     "en": "The dessert menu was so tempting that I ordered two cakes.",
+     "zh": "甜點菜單太誘人了，我點了兩塊蛋糕。"
+    },
+    {
+     "en": "It's tempting to skip breakfast, but you'll regret it later.",
+     "zh": "不吃早餐很吸引人，但你之後會後悔。"
+    }
+   ]
+  },
+  {
+   "headword": "taking",
+   "examples": [
+    {
+     "en": "Her taking smile made everyone feel welcome at the party.",
+     "zh": "她迷人的微笑讓每個人在派對上都感到受歡迎。"
+    },
+    {
+     "en": "The taking of the castle was the turning point of the war.",
+     "zh": "占領城堡是戰爭的轉捩點。"
+    }
+   ]
+  },
+  {
+   "headword": "troubling",
+   "examples": [
+    {
+     "en": "The doctor found some troubling signs in the patient's test results.",
+     "zh": "醫生在病人的檢查結果中發現一些令人擔憂的跡象。"
+    },
+    {
+     "en": "It's troubling that so many students skip breakfast every day.",
+     "zh": "每天有這麼多學生不吃早餐，這令人擔憂。"
+    }
+   ]
+  },
+  {
+   "headword": "damaged",
+   "examples": [
+    {
+     "en": "The damaged bridge was closed to all traffic for repairs.",
+     "zh": "受損的橋樑封閉所有交通以進行維修。"
+    },
+    {
+     "en": "His reputation was damaged by the false rumors.",
+     "zh": "他的名譽因不實謠言而受損。"
+    }
+   ]
+  },
+  {
+   "headword": "said",
+   "examples": [
+    {
+     "en": "The said document must be signed by both parties.",
+     "zh": "上述文件必須由雙方簽署。"
+    },
+    {
+     "en": "She said she would call me later tonight.",
+     "zh": "她說她今晚晚點會打給我。"
+    }
+   ]
+  },
+  {
+   "headword": "pronounced",
+   "examples": [
+    {
+     "en": "The patient showed a pronounced improvement after the treatment.",
+     "zh": "病人在治療後有明顯的改善。"
+    },
+    {
+     "en": "There is a pronounced difference between the two candidates' policies.",
+     "zh": "兩位候選人的政策有顯著的差異。"
+    }
+   ]
+  },
+  {
+   "headword": "proven",
+   "examples": [
+    {
+     "en": "The new method is a proven way to save energy at home.",
+     "zh": "這種新方法是經過驗證的居家節能方式。"
+    },
+    {
+     "en": "Her ability to lead the team is well proven.",
+     "zh": "她領導團隊的能力已獲得充分證明。"
+    }
+   ]
+  },
+  {
+   "headword": "tracking",
+   "examples": [
+    {
+     "en": "The tracking of the package showed it had left the warehouse.",
+     "zh": "包裹的追蹤顯示它已經離開倉庫。"
+    },
+    {
+     "en": "Wildlife tracking helps scientists understand animal migration.",
+     "zh": "野生動物追蹤幫助科學家了解動物遷徙。"
+    }
+   ]
+  },
+  {
+   "headword": "helping",
+   "examples": [
+    {
+     "en": "She gave me a generous helping of mashed potatoes.",
+     "zh": "她給了我一大份馬鈴薯泥。"
+    },
+    {
+     "en": "His helping hand made the move much easier for us.",
+     "zh": "他的協助讓我們搬家輕鬆許多。"
+    }
+   ]
+  },
+  {
+   "headword": "prescribed",
+   "examples": [
+    {
+     "en": "The doctor prescribed some medicine for my cough.",
+     "zh": "醫生開了一些藥給我治咳嗽。"
+    },
+    {
+     "en": "Students must follow the prescribed dress code at school.",
+     "zh": "學生在學校必須遵守規定的服裝規範。"
+    }
+   ]
+  },
+  {
+   "headword": "seasoned",
+   "examples": [
+    {
+     "en": "The seasoned traveler knew exactly how to pack light.",
+     "zh": "這位經驗豐富的旅行者完全知道如何輕裝上路。"
+    },
+    {
+     "en": "We need a seasoned engineer to lead this project.",
+     "zh": "我們需要一位老練的工程師來領導這個專案。"
+    }
+   ]
+  },
+  {
+   "headword": "baked",
+   "examples": [
+    {
+     "en": "She baked a fresh loaf of bread for breakfast.",
+     "zh": "她烤了一條新鮮麵包當早餐。"
+    },
+    {
+     "en": "The baked potatoes were served with butter and sour cream.",
+     "zh": "烤馬鈴薯搭配奶油和酸奶油一起上桌。"
+    }
+   ]
+  },
+  {
+   "headword": "flooding",
+   "examples": [
+    {
+     "en": "Heavy rain caused flooding in several low-lying areas.",
+     "zh": "大雨造成好幾個低窪地區淹水。"
+    },
+    {
+     "en": "The flooding of the market with cheap goods hurt local producers.",
+     "zh": "廉價商品大量湧入市場，傷害了本地生產者。"
+    }
+   ]
+  },
+  {
+   "headword": "infected",
+   "examples": [
+    {
+     "en": "The infected wound required immediate medical attention.",
+     "zh": "受感染的傷口需要立即醫療處理。"
+    },
+    {
+     "en": "Several computers on the network were infected with a virus.",
+     "zh": "網路上有幾台電腦被病毒感染。"
+    }
+   ]
+  },
+  {
+   "headword": "carved",
+   "examples": [
+    {
+     "en": "The carved wooden statue stood in the center of the room.",
+     "zh": "雕刻的木雕像矗立在房間中央。"
+    },
+    {
+     "en": "He carved his initials into the tree trunk.",
+     "zh": "他把自己的姓名縮寫刻在樹幹上。"
+    }
+   ]
+  },
+  {
+   "headword": "startled",
+   "examples": [
+    {
+     "en": "The loud thunder startled the sleeping baby.",
+     "zh": "巨大的雷聲驚醒了睡夢中的嬰兒。"
+    },
+    {
+     "en": "She looked startled when I called her name from behind.",
+     "zh": "我從後面叫她名字時，她看起來嚇了一跳。"
+    }
+   ]
+  },
+  {
+   "headword": "considering",
+   "examples": [
+    {
+     "en": "Considering the heavy rain, the game was surprisingly well attended.",
+     "zh": "考慮到雨下得很大，這場比賽的觀眾出席率出乎意料地好。"
+    },
+    {
+     "en": "She did quite well on the exam, considering how little she studied.",
+     "zh": "就她念書的時間那麼少來說，她這次考試考得相當不錯。"
+    }
+   ]
+  },
+  {
+   "headword": "challenging",
+   "examples": [
+    {
+     "en": "Learning to play the violin has been a challenging but rewarding experience.",
+     "zh": "學拉小提琴是一段充滿挑戰卻很有收穫的經歷。"
+    },
+    {
+     "en": "The teacher gave us a challenging puzzle to solve in pairs.",
+     "zh": "老師給我們一個頗具挑戰性的謎題，要我們兩人一組解開。"
+    }
+   ]
+  },
+  {
+   "headword": "devoted",
+   "examples": [
+    {
+     "en": "He has been a devoted father to his three children.",
+     "zh": "他一直是他三個孩子深愛著的父親。"
+    },
+    {
+     "en": "The charity is devoted to helping families affected by floods.",
+     "zh": "這個慈善機構致力於幫助受水災影響的家庭。"
+    }
+   ]
+  },
+  {
+   "headword": "rising",
+   "examples": [
+    {
+     "en": "Rising food prices are putting pressure on many households.",
+     "zh": "不斷上漲的食品價格正對許多家庭造成壓力。"
+    },
+    {
+     "en": "The village sits at the foot of a rising slope covered with tea plants.",
+     "zh": "這座村莊位於一片種滿茶樹的上升斜坡腳下。"
+    }
+   ]
+  },
+  {
+   "headword": "visiting",
+   "examples": [
+    {
+     "en": "Visiting her grandparents every summer is a tradition she treasures.",
+     "zh": "每年夏天去探望祖父母，是她很珍惜的一項傳統。"
+    },
+    {
+     "en": "The hospital limits visiting to two hours each afternoon.",
+     "zh": "這家醫院限制每天下午的探訪時間為兩小時。"
+    }
+   ]
+  },
+  {
+   "headword": "worrying",
+   "examples": [
+    {
+     "en": "It is worrying that so many students skip breakfast.",
+     "zh": "這麼多學生不吃早餐，實在令人擔憂。"
+    },
+    {
+     "en": "The doctor noticed a worrying change in the patient's test results.",
+     "zh": "醫生注意到病人的檢驗結果出現令人憂心的變化。"
+    }
+   ]
+  },
+  {
+   "headword": "preferred",
+   "examples": [
+    {
+     "en": "For most commuters, the train is the preferred way to get to work.",
+     "zh": "對大多數通勤族來說，搭火車是上班的首選方式。"
+    },
+    {
+     "en": "She was the preferred candidate among the five who applied.",
+     "zh": "在五位應徵者中，她是最受青睞的人選。"
+    }
+   ]
+  },
+  {
+   "headword": "renewed",
+   "examples": [
+    {
+     "en": "After a long rest, he returned to work with renewed energy.",
+     "zh": "經過長時間休息後，他帶著煥然一新的精力重返工作崗位。"
+    },
+    {
+     "en": "The old library reopened after a renewed round of repairs.",
+     "zh": "這座老圖書館在重新整修後再度開放。"
+    }
+   ]
+  },
+  {
+   "headword": "accepted",
+   "examples": [
+    {
+     "en": "It is now widely accepted that exercise improves mental health.",
+     "zh": "運動能改善心理健康，這點如今已被廣泛接受。"
+    },
+    {
+     "en": "His theory was not accepted by most scientists at the time.",
+     "zh": "他的理論在當時並未獲得大多數科學家的認同。"
+    }
+   ]
+  },
+  {
+   "headword": "controlled",
+   "examples": [
+    {
+     "en": "The experiment was carried out in a carefully controlled environment.",
+     "zh": "這項實驗是在嚴格控制的環境中進行的。"
+    },
+    {
+     "en": "She kept a controlled tone even when the customer started shouting.",
+     "zh": "即使客人開始大吼，她仍保持克制的語氣。"
+    }
+   ]
+  },
+  {
+   "headword": "waiting",
+   "examples": [
+    {
+     "en": "There was a long line of people waiting outside the clinic.",
+     "zh": "診所外有一長排等候看診的人。"
+    },
+    {
+     "en": "After hours of waiting, the passengers finally boarded the plane.",
+     "zh": "等了幾個小時後，乘客終於登上飛機。"
+    }
+   ]
+  },
+  {
+   "headword": "agreed",
+   "examples": [
+    {
+     "en": "The two sides were agreed on the main points of the contract.",
+     "zh": "雙方對合約的主要條款已達成共識。"
+    },
+    {
+     "en": "All members were agreed that the meeting should end early.",
+     "zh": "所有成員都同意會議應該提早結束。"
+    }
+   ]
+  },
+  {
+   "headword": "applied",
+   "examples": [
+    {
+     "en": "She studied applied mathematics because she wanted to solve real-world problems.",
+     "zh": "她主修應用數學，因為她想解決現實生活中的問題。"
+    },
+    {
+     "en": "The course focuses on applied skills rather than abstract theory.",
+     "zh": "這門課著重應用技能，而非抽象的理論。"
+    }
+   ]
+  },
+  {
+   "headword": "restricted",
+   "examples": [
+    {
+     "en": "Access to the laboratory is restricted to authorized staff.",
+     "zh": "實驗室僅限獲授權的人員進入。"
+    },
+    {
+     "en": "The patient was put on a restricted diet after surgery.",
+     "zh": "病人在手術後被要求採取限制飲食。"
+    }
+   ]
+  },
+  {
+   "headword": "sweeping",
+   "examples": [
+    {
+     "en": "The new law brought sweeping changes to the housing market.",
+     "zh": "這項新法為房市帶來了全面性的改變。"
+    },
+    {
+     "en": "She made a sweeping gesture with her arm to show the whole valley.",
+     "zh": "她用手臂大動作一揮，指向整座山谷。"
+    }
+   ]
+  },
+  {
+   "headword": "approved",
+   "examples": [
+    {
+     "en": "Only approved vendors may sell food inside the stadium.",
+     "zh": "只有經過核准的攤商才能在體育場內販售食物。"
+    },
+    {
+     "en": "The plan was finally approved after months of discussion.",
+     "zh": "經過數月討論後，這項計畫終於獲得批准。"
+    }
+   ]
+  },
+  {
+   "headword": "closing",
+   "examples": [
+    {
+     "en": "The closing of the factory left hundreds without work.",
+     "zh": "工廠關閉讓數百人失去工作。"
+    },
+    {
+     "en": "In her closing remarks, the principal thanked all the volunteers.",
+     "zh": "校長在結語中感謝所有志工。"
+    }
+   ]
+  },
+  {
+   "headword": "failed",
+   "examples": [
+    {
+     "en": "The failed project taught the team some valuable lessons.",
+     "zh": "這個失敗的專案讓團隊學到一些寶貴的教訓。"
+    },
+    {
+     "en": "Investigators examined the failed engine to find the cause.",
+     "zh": "調查人員檢查故障的引擎，以找出原因。"
+    }
+   ]
+  },
+  {
+   "headword": "knitting",
+   "examples": [
+    {
+     "en": "My grandmother spends her evenings knitting scarves for the family.",
+     "zh": "我奶奶晚上都在為家人織圍巾。"
+    },
+    {
+     "en": "Knitting has become a popular hobby among young office workers.",
+     "zh": "編織已成為年輕上班族之間很受歡迎的嗜好。"
+    }
+   ]
+  },
+  {
+   "headword": "established",
+   "examples": [
+    {
+     "en": "The company has an established reputation for quality and reliability.",
+     "zh": "這家公司以品質和可靠性建立了既定的聲譽。"
+    },
+    {
+     "en": "It is an established fact that regular exercise improves health.",
+     "zh": "規律運動能增進健康是既定的事實。"
+    }
+   ]
+  },
+  {
+   "headword": "heading",
+   "examples": [
+    {
+     "en": "Each chapter begins with a clear heading that summarizes its content.",
+     "zh": "每一章都以一個清晰的標題開始，概述其內容。"
+    },
+    {
+     "en": "The pilot changed the plane's heading to avoid the storm.",
+     "zh": "飛行員改變了飛機的航向以避開風暴。"
+    }
+   ]
+  },
+  {
+   "headword": "holding",
+   "examples": [
+    {
+     "en": "The company's holdings include several office buildings downtown.",
+     "zh": "該公司的持有物包括市中心的幾棟辦公大樓。"
+    },
+    {
+     "en": "She was holding a small box in her hands.",
+     "zh": "她手裡拿著一個小盒子。"
+    }
+   ]
+  },
+  {
+   "headword": "eating",
+   "examples": [
+    {
+     "en": "Healthy eating habits are important for children's growth.",
+     "zh": "健康的飲食習慣對兒童的成長很重要。"
+    },
+    {
+     "en": "He enjoys eating fresh fruit every morning.",
+     "zh": "他喜歡每天早上吃新鮮水果。"
+    }
+   ]
+  },
+  {
+   "headword": "suffering",
+   "examples": [
+    {
+     "en": "The war caused immense suffering to countless families.",
+     "zh": "戰爭給無數家庭帶來了巨大的苦難。"
+    },
+    {
+     "en": "Her suffering was evident from the look on her face.",
+     "zh": "從她臉上的表情可以看出她的痛苦。"
+    }
+   ]
+  },
+  {
+   "headword": "shared",
+   "examples": [
+    {
+     "en": "They shared a common interest in classical music.",
+     "zh": "他們對古典音樂有共同的興趣。"
+    },
+    {
+     "en": "The shared resources were divided equally among the members.",
+     "zh": "共享資源在成員之間平均分配。"
+    }
+   ]
+  },
+  {
+   "headword": "extended",
+   "examples": [
+    {
+     "en": "The meeting was extended by an hour due to heated discussion.",
+     "zh": "由於討論激烈，會議延長了一小時。"
+    },
+    {
+     "en": "She extended her hand to greet the new colleague.",
+     "zh": "她伸出手來問候新同事。"
+    }
+   ]
+  },
+  {
+   "headword": "cutting",
+   "examples": [
+    {
+     "en": "The cutting of the cake was the highlight of the party.",
+     "zh": "切蛋糕是派對的高潮。"
+    },
+    {
+     "en": "He took a cutting from the rose bush to plant in his garden.",
+     "zh": "他從玫瑰叢中取了一根插枝，種在自己的花園裡。"
+    }
+   ]
+  },
+  {
+   "headword": "voting",
+   "examples": [
+    {
+     "en": "Voting is a fundamental right in a democratic society.",
+     "zh": "投票是民主社會的一項基本權利。"
+    },
+    {
+     "en": "The voting process was smooth and well-organized.",
+     "zh": "投票過程順利且組織良好。"
+    }
+   ]
+  },
+  {
+   "headword": "added",
+   "examples": [
+    {
+     "en": "The added cost of shipping made the product too expensive.",
+     "zh": "額外的運費使該產品變得太貴。"
+    },
+    {
+     "en": "She added some sugar to her coffee.",
+     "zh": "她在咖啡裡加了一些糖。"
+    }
+   ]
+  },
+  {
+   "headword": "handling",
+   "examples": [
+    {
+     "en": "Proper handling of fragile items is essential during shipping.",
+     "zh": "運輸過程中，易碎物品的妥善處理至關重要。"
+    },
+    {
+     "en": "His handling of the crisis impressed everyone.",
+     "zh": "他對危機的處理讓所有人印象深刻。"
+    }
+   ]
+  },
+  {
+   "headword": "remains",
+   "examples": [
+    {
+     "en": "The remains of the ancient temple attract many tourists.",
+     "zh": "這座古廟的遺跡吸引了許多遊客。"
+    },
+    {
+     "en": "The remains of the meal were left on the table.",
+     "zh": "餐點的剩餘物被留在桌上。"
+    }
+   ]
+  },
+  {
+   "headword": "making",
+   "examples": [
+    {
+     "en": "The making of this film took over three years.",
+     "zh": "這部電影的製作花了三年多的時間。"
+    },
+    {
+     "en": "She has the makings of a great leader.",
+     "zh": "她具備成為偉大領袖的素質。"
+    }
+   ]
+  },
+  {
+   "headword": "dealing",
+   "examples": [
+    {
+     "en": "He is known for his fair dealing with all his clients.",
+     "zh": "他以對所有客戶公平交易而聞名。"
+    },
+    {
+     "en": "The company's dealings with overseas partners have increased.",
+     "zh": "該公司與海外合作夥伴的交易增加了。"
+    }
+   ]
+  },
+  {
+   "headword": "allied",
+   "examples": [
+    {
+     "en": "The two countries have been allied for decades.",
+     "zh": "這兩個國家結盟已有數十年。"
+    },
+    {
+     "en": "The allied forces worked together to achieve a common goal.",
+     "zh": "盟軍共同努力以達成共同目標。"
+    }
+   ]
+  },
+  {
+   "headword": "reduced",
+   "examples": [
+    {
+     "en": "The store is selling reduced items at half price.",
+     "zh": "這家店以半價出售降價商品。"
+    },
+    {
+     "en": "The reduced budget forced them to cancel the project.",
+     "zh": "縮減的預算迫使他們取消該計畫。"
+    }
+   ]
+  },
+  {
+   "headword": "printed",
+   "examples": [
+    {
+     "en": "The printed instructions were easy to follow.",
+     "zh": "印刷的說明很容易遵循。"
+    },
+    {
+     "en": "She printed the document and handed it to her boss.",
+     "zh": "她列印了文件並交給老闆。"
+    }
+   ]
+  },
+  {
+   "headword": "coming",
+   "examples": [
+    {
+     "en": "The coming of spring brings warmer weather and blooming flowers.",
+     "zh": "春天的來臨帶來了更溫暖的天氣和盛開的花朵。"
+    },
+    {
+     "en": "He is looking forward to the coming holiday.",
+     "zh": "他期待著即將到來的假期。"
+    }
+   ]
+  },
+  {
+   "headword": "disturbing",
+   "examples": [
+    {
+     "en": "The disturbing news left everyone in shock.",
+     "zh": "這則令人不安的消息讓所有人震驚。"
+    },
+    {
+     "en": "It was disturbing to see so much waste in the river.",
+     "zh": "看到河裡有這麼多廢棄物令人不安。"
+    }
+   ]
+  },
+  {
+   "headword": "borrowing",
+   "examples": [
+    {
+     "en": "Borrowing money from friends can sometimes damage relationships.",
+     "zh": "向朋友借錢有時會破壞關係。"
+    },
+    {
+     "en": "The government's borrowing has increased significantly this year.",
+     "zh": "政府今年的借款大幅增加。"
+    }
+   ]
+  },
+  {
+   "headword": "scoring",
+   "examples": [
+    {
+     "en": "The scoring of the essay will be done by two teachers.",
+     "zh": "這篇作文的評分將由兩位老師負責。"
+    },
+    {
+     "en": "He is responsible for scoring the performance of each dancer.",
+     "zh": "他負責為每位舞者的表現打分。"
+    }
+   ]
+  },
+  {
+   "headword": "lending",
+   "examples": [
+    {
+     "en": "The bank's lending policies have become stricter this year.",
+     "zh": "銀行今年的放款政策變得更嚴格了。"
+    },
+    {
+     "en": "Lending money to friends can sometimes damage relationships.",
+     "zh": "借錢給朋友有時會破壞感情。"
+    }
+   ]
+  },
+  {
+   "headword": "stella",
+   "examples": [
+    {
+     "en": "The doctor applied a stella bandage to the wound.",
+     "zh": "醫生在傷口上貼了星狀繃帶。"
+    },
+    {
+     "en": "In astronomy, stella is a Latin word for star.",
+     "zh": "在天文學中，stella 是拉丁文的「星」。"
+    }
+   ]
+  },
+  {
+   "headword": "buying",
+   "examples": [
+    {
+     "en": "The buying of holiday gifts starts early in December.",
+     "zh": "節日禮物的採購在十二月初就開始了。"
+    },
+    {
+     "en": "Consumer buying has increased since the new mall opened.",
+     "zh": "自從新商場開幕後，消費者的購買力增加了。"
+    }
+   ]
+  },
+  {
+   "headword": "suspected",
+   "examples": [
+    {
+     "en": "The suspected thief was seen near the jewelry store.",
+     "zh": "有人看到那個嫌疑竊賊在珠寶店附近。"
+    },
+    {
+     "en": "A suspected gas leak forced residents to leave their homes.",
+     "zh": "疑似瓦斯外洩迫使居民撤離家園。"
+    }
+   ]
+  },
+  {
+   "headword": "answering",
+   "examples": [
+    {
+     "en": "The answering machine picked up the call after five rings.",
+     "zh": "電話響了五聲後，答錄機接起了電話。"
+    },
+    {
+     "en": "She spent the afternoon answering emails from customers.",
+     "zh": "她花了一下午回覆客戶的電子郵件。"
+    }
+   ]
+  },
+  {
+   "headword": "marking",
+   "examples": [
+    {
+     "en": "The bird has distinctive markings on its wings.",
+     "zh": "這隻鳥的翅膀上有明顯的斑紋。"
+    },
+    {
+     "en": "The teacher is marking the exam papers this weekend.",
+     "zh": "老師這個週末正在批改考卷。"
+    }
+   ]
+  },
+  {
+   "headword": "wrestling",
+   "examples": [
+    {
+     "en": "He has been wrestling since he was a teenager.",
+     "zh": "他從青少年時期就開始練摔跤。"
+    },
+    {
+     "en": "Wrestling requires strength, technique, and quick reflexes.",
+     "zh": "摔跤需要力量、技巧和快速的反應。"
+    }
+   ]
+  },
+  {
+   "headword": "bleeding",
+   "examples": [
+    {
+     "en": "The bleeding stopped after the nurse applied pressure.",
+     "zh": "護士加壓後，出血就止住了。"
+    },
+    {
+     "en": "He suffered from internal bleeding after the accident.",
+     "zh": "事故後他出現內出血。"
+    }
+   ]
+  },
+  {
+   "headword": "exposed",
+   "examples": [
+    {
+     "en": "The exposed wires are dangerous and need to be fixed.",
+     "zh": "裸露的電線很危險，需要修復。"
+    },
+    {
+     "en": "Hikers were exposed to strong winds on the mountain.",
+     "zh": "登山者在山上暴露於強風中。"
+    }
+   ]
+  },
+  {
+   "headword": "clearing",
+   "examples": [
+    {
+     "en": "They set up their tent in a small clearing in the forest.",
+     "zh": "他們在森林裡的一小塊空地上搭帳篷。"
+    },
+    {
+     "en": "The clearing of the suspect's name took several months.",
+     "zh": "洗清嫌疑人的罪名花了幾個月的時間。"
+    }
+   ]
+  },
+  {
+   "headword": "saw",
+   "examples": [
+    {
+     "en": "He used a saw to cut the branches into smaller pieces.",
+     "zh": "他用鋸子把樹枝鋸成小塊。"
+    },
+    {
+     "en": "I saw her at the market yesterday.",
+     "zh": "我昨天在市場看到她了。"
+    }
+   ]
+  },
+  {
+   "headword": "declining",
+   "examples": [
+    {
+     "en": "The declining birth rate is a major concern in many countries.",
+     "zh": "出生率下降是許多國家關注的重大問題。"
+    },
+    {
+     "en": "She refused to accept the declining quality of the product.",
+     "zh": "她拒絕接受產品品質下降的事實。"
+    }
+   ]
+  },
+  {
+   "headword": "polished",
+   "examples": [
+    {
+     "en": "The polished floor reflected the light from the windows.",
+     "zh": "拋光的地板反射了窗戶的光線。"
+    },
+    {
+     "en": "His polished manners impressed everyone at the dinner party.",
+     "zh": "他優雅的舉止讓晚宴上的每個人都留下深刻印象。"
+    }
+   ]
+  },
+  {
+   "headword": "raising",
+   "examples": [
+    {
+     "en": "Raising children requires patience and a lot of energy.",
+     "zh": "養育孩子需要耐心和大量精力。"
+    },
+    {
+     "en": "The raising of the flag marks the start of the ceremony.",
+     "zh": "升國旗標誌著典禮的開始。"
+    }
+   ]
+  },
+  {
+   "headword": "celebrated",
+   "examples": [
+    {
+     "en": "The celebrated author will give a talk at the library.",
+     "zh": "那位著名作家將在圖書館發表演講。"
+    },
+    {
+     "en": "This celebrated restaurant is known for its seafood.",
+     "zh": "這家馳名的餐廳以海鮮聞名。"
+    }
+   ]
+  },
+  {
+   "headword": "designated",
+   "examples": [
+    {
+     "en": "Please park only in the designated areas.",
+     "zh": "請僅在指定區域停車。"
+    },
+    {
+     "en": "She is the designated driver for tonight's party.",
+     "zh": "她是今晚派對的指定駕駛。"
+    }
+   ]
+  },
+  {
+   "headword": "burns",
+   "examples": [
+    {
+     "en": "He has thick burns that frame his face.",
+     "zh": "他留著濃密的絡腮鬍子，襯托著他的臉。"
+    },
+    {
+     "en": "The actor grew burns for his role in the movie.",
+     "zh": "那位演員為了電影角色留了絡腮鬍子。"
+    }
+   ]
+  },
+  {
+   "headword": "pounding",
+   "examples": [
+    {
+     "en": "The pounding of the waves against the rocks could be heard from afar.",
+     "zh": "海浪拍打岩石的重擊聲從遠處就能聽到。"
+    },
+    {
+     "en": "After the run, she could feel the pounding of her heart.",
+     "zh": "跑步後，她可以感覺到心臟的劇烈跳動。"
+    }
+   ]
+  },
+  {
+   "headword": "going",
+   "examples": [
+    {
+     "en": "Her sudden going left everyone in the office confused.",
+     "zh": "她的突然離去讓辦公室裡的每個人都感到困惑。"
+    },
+    {
+     "en": "The going was tough as the hikers climbed the muddy trail.",
+     "zh": "當登山者攀爬泥濘的小徑時，路況很艱難。"
+    }
+   ]
+  },
+  {
+   "headword": "works",
+   "examples": [
+    {
+     "en": "The steel works on the edge of town employs over a thousand people.",
+     "zh": "城鎮邊緣的鋼鐵廠雇用了超過一千人。"
+    },
+    {
+     "en": "She spent the weekend reading the complete works of Shakespeare.",
+     "zh": "她花了整個週末閱讀莎士比亞的全集。"
+    }
+   ]
+  },
+  {
+   "headword": "finding",
+   "examples": [
+    {
+     "en": "The committee's finding was that the company had violated safety rules.",
+     "zh": "委員會的調查結果是該公司違反了安全規定。"
+    },
+    {
+     "en": "Finding a quiet place to study can be difficult in a busy dorm.",
+     "zh": "在繁忙的宿舍裡找到一個安靜的讀書地方可能很困難。"
+    }
+   ]
+  },
+  {
+   "headword": "working",
+   "examples": [
+    {
+     "en": "My mother is a working nurse who often takes night shifts.",
+     "zh": "我母親是一位在職護士，經常上夜班。"
+    },
+    {
+     "en": "We need a working model of the device before we can test it.",
+     "zh": "我們需要一個能運作的裝置模型才能進行測試。"
+    }
+   ]
+  },
+  {
+   "headword": "increased",
+   "examples": [
+    {
+     "en": "The increased demand for electric cars has surprised many analysts.",
+     "zh": "電動車需求的增加讓許多分析師感到驚訝。"
+    },
+    {
+     "en": "With increased rainfall this year, the reservoirs are finally full.",
+     "zh": "由於今年雨量增加，水庫終於滿了。"
+    }
+   ]
+  },
+  {
+   "headword": "being",
+   "examples": [
+    {
+     "en": "The philosopher questioned the nature of human being.",
+     "zh": "這位哲學家質疑人類存在的本質。"
+    },
+    {
+     "en": "Every living being needs water to survive.",
+     "zh": "每個生物都需要水才能生存。"
+    }
+   ]
+  },
+  {
+   "headword": "setting",
+   "examples": [
+    {
+     "en": "The novel's setting is a small village in the mountains.",
+     "zh": "這本小說的背景是山中的一個小村莊。"
+    },
+    {
+     "en": "She adjusted the setting on the air conditioner to save energy.",
+     "zh": "她調整了空調的設定以節省能源。"
+    }
+   ]
+  },
+  {
+   "headword": "proceeding",
+   "examples": [
+    {
+     "en": "The legal proceeding against the company lasted for nearly two years.",
+     "zh": "對該公司的法律訴訟持續了近兩年。"
+    },
+    {
+     "en": "Proceeding carefully, the hikers crossed the narrow bridge one by one.",
+     "zh": "登山者小心翼翼地前進，一個接一個地走過窄橋。"
+    }
+   ]
+  },
+  {
+   "headword": "proposed",
+   "examples": [
+    {
+     "en": "The proposed budget cuts have sparked heated debate among the staff.",
+     "zh": "擬議的預算削減引發了員工之間的激烈辯論。"
+    },
+    {
+     "en": "Residents gathered to discuss the proposed new highway.",
+     "zh": "居民們聚集起來討論擬議的新高速公路。"
+    }
+   ]
+  },
+  {
+   "headword": "spending",
+   "examples": [
+    {
+     "en": "Government spending on education has risen steadily over the past decade.",
+     "zh": "過去十年來，政府在教育上的支出穩定上升。"
+    },
+    {
+     "en": "Their monthly spending on groceries is higher than they expected.",
+     "zh": "他們每月在雜貨上的開銷比預期的要高。"
+    }
+   ]
+  },
+  {
+   "headword": "continuing",
+   "examples": [
+    {
+     "en": "The continuing rain has caused flooding in several low-lying areas.",
+     "zh": "持續的降雨已在幾個低窪地區造成淹水。"
+    },
+    {
+     "en": "Despite the challenges, she is continuing her studies abroad.",
+     "zh": "儘管有種種挑戰，她仍繼續在國外求學。"
+    }
+   ]
+  },
+  {
+   "headword": "standing",
+   "examples": [
+    {
+     "en": "A standing lamp in the corner provides soft light for reading.",
+     "zh": "角落裡的立燈提供柔和的閱讀光線。"
+    },
+    {
+     "en": "The professor has high standing among her peers.",
+     "zh": "這位教授在同行中享有很高的聲望。"
+    }
+   ]
+  },
+  {
+   "headword": "fighting",
+   "examples": [
+    {
+     "en": "The fighting between the two groups finally stopped after midnight.",
+     "zh": "兩群人之間的戰鬥終於在午夜後停止。"
+    },
+    {
+     "en": "Firefighters are still fighting the blaze in the forest.",
+     "zh": "消防員仍在與森林大火搏鬥。"
+    }
+   ]
+  },
+  {
+   "headword": "continued",
+   "examples": [
+    {
+     "en": "The continued support of our volunteers makes this program possible.",
+     "zh": "志工們持續的支持讓這個計畫得以實現。"
+    },
+    {
+     "en": "Despite the noise, the continued applause showed the audience's approval.",
+     "zh": "儘管有噪音，持續的掌聲顯示了觀眾的認可。"
+    }
+   ]
+  },
+  {
+   "headword": "killing",
+   "examples": [
+    {
+     "en": "The poaching of elephants for their ivory is a cruel killing.",
+     "zh": "為了象牙而盜獵大象是一種殘忍的殺戮。"
+    },
+    {
+     "en": "He made a killing in the stock market last year.",
+     "zh": "他去年在股市賺了一大筆錢。"
+    }
+   ]
+  },
+  {
+   "headword": "ruling",
+   "examples": [
+    {
+     "en": "The court's ruling favored the small business owner.",
+     "zh": "法院的判決有利於那位小企業主。"
+    },
+    {
+     "en": "The ruling party has promised to lower taxes.",
+     "zh": "執政黨已承諾降低稅收。"
+    }
+   ]
+  },
+  {
+   "headword": "marked",
+   "examples": [
+    {
+     "en": "There has been a marked improvement in her health since the surgery.",
+     "zh": "自手術以來，她的健康有顯著的改善。"
+    },
+    {
+     "en": "The path is marked with yellow arrows.",
+     "zh": "這條小徑用黃色箭頭標示。"
+    }
+   ]
+  },
+  {
+   "headword": "improved",
+   "examples": [
+    {
+     "en": "The improved version of the software runs much faster.",
+     "zh": "改良版的軟體運行速度快得多。"
+    },
+    {
+     "en": "Her grades improved significantly after she started tutoring.",
+     "zh": "她開始接受輔導後，成績顯著提高。"
+    }
+   ]
+  },
+  {
+   "headword": "estimated",
+   "examples": [
+    {
+     "en": "The estimated cost of the project is two million dollars.",
+     "zh": "該項目的估計成本是兩百萬美元。"
+    },
+    {
+     "en": "According to the estimated figures, sales will double this year.",
+     "zh": "根據估計數字，今年銷售額將翻倍。"
+    }
+   ]
+  },
+  {
+   "headword": "torn",
+   "examples": [
+    {
+     "en": "She wore a torn jacket that had seen better days.",
+     "zh": "她穿著一件破舊的外套，已經不復當年。"
+    },
+    {
+     "en": "His loyalties were torn between his family and his career.",
+     "zh": "他在家庭與事業之間左右為難。"
+    }
+   ]
+  },
+  {
+   "headword": "landed",
+   "examples": [
+    {
+     "en": "The landed gentry owned most of the farmland in the region.",
+     "zh": "地主階級擁有該地區大部分的農地。"
+    },
+    {
+     "en": "As a landed family, they had great influence in local politics.",
+     "zh": "作為一個擁有土地的家族，他們在地方政治上有很大的影響力。"
+    }
+   ]
+  },
+  {
+   "headword": "showing",
+   "examples": [
+    {
+     "en": "The latest showing of the film attracted a large audience.",
+     "zh": "這部電影的最新放映吸引了大批觀眾。"
+    },
+    {
+     "en": "Her showing in the competition was impressive.",
+     "zh": "她在比賽中的表現令人印象深刻。"
+    }
+   ]
+  },
+  {
+   "headword": "stated",
+   "examples": [
+    {
+     "en": "The stated purpose of the meeting was to discuss the budget.",
+     "zh": "會議的既定目的是討論預算。"
+    },
+    {
+     "en": "He made a stated commitment to improve working conditions.",
+     "zh": "他公開承諾要改善工作條件。"
+    }
+   ]
+  },
+  {
+   "headword": "altered",
+   "examples": [
+    {
+     "en": "The altered document raised suspicions among the investigators.",
+     "zh": "被篡改的文件引起了調查人員的懷疑。"
+    },
+    {
+     "en": "She had altered the dress to fit her perfectly.",
+     "zh": "她已經修改了這件洋裝，使其完全合身。"
+    }
+   ]
+  },
+  {
+   "headword": "driven",
+   "examples": [
+    {
+     "en": "He is a driven entrepreneur who never stops working.",
+     "zh": "他是一位幹勁十足的企業家，從不停止工作。"
+    },
+    {
+     "en": "The driven snow piled up against the door.",
+     "zh": "被風吹積的雪堆在門邊。"
+    }
+   ]
+  },
+  {
+   "headword": "fed",
+   "examples": [
+    {
+     "en": "The Fed raised interest rates to control inflation.",
+     "zh": "聯準會升息以控制通貨膨脹。"
+    },
+    {
+     "en": "The baby was fed every three hours.",
+     "zh": "嬰兒每三小時餵食一次。"
+    }
+   ]
+  },
+  {
+   "headword": "imagined",
+   "examples": [
+    {
+     "en": "She imagined a world where everyone lived in peace.",
+     "zh": "她想像一個所有人都和平共處的世界。"
+    },
+    {
+     "en": "The danger was more imagined than real.",
+     "zh": "危險更多是想像出來的，而非真實存在。"
+    }
+   ]
+  },
+  {
+   "headword": "ringing",
+   "examples": [
+    {
+     "en": "The ringing of the church bells echoed through the valley.",
+     "zh": "教堂的鐘聲在山谷中迴盪。"
+    },
+    {
+     "en": "He heard a ringing sound in his ears after the concert.",
+     "zh": "音樂會結束後，他聽到耳朵裡有鳴響。"
+    }
+   ]
+  },
+  {
+   "headword": "shredded",
+   "examples": [
+    {
+     "en": "She added shredded cheese to the pasta.",
+     "zh": "她在義大利麵上加了起司絲。"
+    },
+    {
+     "en": "The confidential documents were shredded before disposal.",
+     "zh": "機密文件在丟棄前被碎紙機銷毀。"
+    }
+   ]
+  },
+  {
+   "headword": "folding",
+   "examples": [
+    {
+     "en": "We bought a folding table for the small apartment.",
+     "zh": "我們為小公寓買了一張折疊桌。"
+    },
+    {
+     "en": "The folding of the protein is essential for its function.",
+     "zh": "蛋白質的摺疊對其功能至關重要。"
+    }
+   ]
+  },
+  {
+   "headword": "broke",
+   "examples": [
+    {
+     "en": "After the trip, I was completely broke.",
+     "zh": "旅行結束後，我身無分文。"
+    },
+    {
+     "en": "He broke the window with a baseball.",
+     "zh": "他用棒球打破了窗戶。"
+    }
+   ]
+  },
+  {
+   "headword": "smoked",
+   "examples": [
+    {
+     "en": "We had smoked salmon for breakfast.",
+     "zh": "我們早餐吃了煙燻鮭魚。"
+    },
+    {
+     "en": "The smoked flavor of the meat was delicious.",
+     "zh": "這肉的煙燻味很美味。"
+    }
+   ]
+  },
+  {
+   "headword": "folded",
+   "examples": [
+    {
+     "en": "She folded the letter and put it in an envelope.",
+     "zh": "她把信摺好，放進信封裡。"
+    },
+    {
+     "en": "He folded his arms and waited for an answer.",
+     "zh": "他雙臂交叉，等待一個答案。"
+    }
+   ]
+  },
+  {
+   "headword": "adopted",
+   "examples": [
+    {
+     "en": "They adopted a child from the orphanage.",
+     "zh": "他們從孤兒院收養了一個孩子。"
+    },
+    {
+     "en": "The adopted policy was met with mixed reactions.",
+     "zh": "採用的政策引起了不同的反應。"
+    }
+   ]
+  },
+  {
+   "headword": "disgusted",
+   "examples": [
+    {
+     "en": "She was disgusted by the dirty kitchen.",
+     "zh": "她對髒亂的廚房感到厭惡。"
+    },
+    {
+     "en": "He looked disgusted when he saw the mess.",
+     "zh": "他看到一團亂時，露出厭惡的表情。"
+    }
+   ]
+  },
+  {
+   "headword": "measured",
+   "examples": [
+    {
+     "en": "He spoke in measured tones, careful not to offend anyone.",
+     "zh": "他說話語氣慎重，小心不得罪任何人。"
+    },
+    {
+     "en": "The measured rhythm of the poem gave it a solemn feel.",
+     "zh": "這首詩有規律的節奏賦予它莊嚴的感覺。"
+    }
+   ]
+  },
+  {
+   "headword": "focused",
+   "examples": [
+    {
+     "en": "She remained focused on her goals despite the distractions.",
+     "zh": "儘管有干擾，她仍專注於自己的目標。"
+    },
+    {
+     "en": "The camera lens was focused on the distant mountains.",
+     "zh": "相機鏡頭對焦在遠處的山脈上。"
+    }
+   ]
+  },
+  {
+   "headword": "investing",
+   "examples": [
+    {
+     "en": "Investing in education yields long-term benefits.",
+     "zh": "投資教育能帶來長期利益。"
+    },
+    {
+     "en": "He is investing a lot of time in learning English.",
+     "zh": "他投入大量時間學習英語。"
+    }
+   ]
+  },
+  {
+   "headword": "contributing",
+   "examples": [
+    {
+     "en": "Poor diet is a contributing factor to many health problems.",
+     "zh": "不良飲食是許多健康問題的促成因素。"
+    },
+    {
+     "en": "She was a contributing member of the research team.",
+     "zh": "她是研究團隊中有貢獻的成員。"
+    }
+   ]
+  },
+  {
+   "headword": "feeding",
+   "examples": [
+    {
+     "en": "The baby's feeding schedule is every three hours.",
+     "zh": "寶寶的餵食時間表是每三小時一次。"
+    },
+    {
+     "en": "Feeding the animals is one of the zookeeper's daily tasks.",
+     "zh": "餵食動物是動物園管理員的日常工作之一。"
+    }
+   ]
+  },
+  {
+   "headword": "sharing",
+   "examples": [
+    {
+     "en": "Sharing a flat with friends can help save money.",
+     "zh": "和朋友合租公寓可以幫助省錢。"
+    },
+    {
+     "en": "The sharing of ideas is essential for teamwork.",
+     "zh": "分享想法對於團隊合作至關重要。"
+    }
+   ]
+  },
+  {
+   "headword": "spreading",
+   "examples": [
+    {
+     "en": "The spreading of the virus was slowed by travel restrictions.",
+     "zh": "旅行限制減緩了病毒的傳播。"
+    },
+    {
+     "en": "Spreading rumors can damage people's reputations.",
+     "zh": "散播謠言會損害人們的名譽。"
+    }
+   ]
+  },
+  {
+   "headword": "wrinkled",
+   "examples": [
+    {
+     "en": "His wrinkled shirt suggested he had slept in it.",
+     "zh": "他皺巴巴的襯衫顯示他穿著它睡覺。"
+    },
+    {
+     "en": "She smoothed out the wrinkled tablecloth before the guests arrived.",
+     "zh": "她在客人到達前把皺巴巴的桌布鋪平。"
+    }
+   ]
+  },
+  {
+   "headword": "bottled",
+   "examples": [
+    {
+     "en": "Bottled water is convenient, but it creates a lot of plastic waste.",
+     "zh": "瓶裝水很方便，但會產生大量塑膠垃圾。"
+    },
+    {
+     "en": "They bottled the homemade wine and stored it in the cellar.",
+     "zh": "他們把自製葡萄酒裝瓶，存放在地窖裡。"
+    }
+   ]
+  },
+  {
+   "headword": "providing",
+   "examples": [
+    {
+     "en": "You can go out and play providing you finish your homework first.",
+     "zh": "只要你先完成作業，就可以出去玩。"
+    },
+    {
+     "en": "Providing that the weather is good, we will have a picnic tomorrow.",
+     "zh": "如果天氣好，我們明天就去野餐。"
+    }
+   ]
+  },
+  {
+   "headword": "decorated",
+   "examples": [
+    {
+     "en": "The Christmas tree was decorated with lights and ornaments.",
+     "zh": "聖誕樹上裝飾著燈飾和飾品。"
+    },
+    {
+     "en": "Her room is decorated in bright colors.",
+     "zh": "她的房間以明亮的顏色裝飾。"
+    }
+   ]
+  },
+  {
+   "headword": "separated",
+   "examples": [
+    {
+     "en": "The couple has been separated for a year but still meet for the kids.",
+     "zh": "這對夫妻已經分居一年，但仍為了孩子見面。"
+    },
+    {
+     "en": "The two villages are separated by a wide river.",
+     "zh": "這兩個村莊被一條寬闊的河流隔開。"
+    }
+   ]
+  },
+  {
+   "headword": "receiving",
+   "examples": [
+    {
+     "en": "The receiving department checks all incoming shipments.",
+     "zh": "接收部門檢查所有進貨。"
+    },
+    {
+     "en": "She is receiving treatment for her back pain.",
+     "zh": "她正在接受背痛治療。"
+    }
+   ]
+  },
+  {
+   "headword": "dated",
+   "examples": [
+    {
+     "en": "The furniture looked dated, so they decided to replace it.",
+     "zh": "家具看起來過時了，所以他們決定換掉。"
+    },
+    {
+     "en": "The letter was dated March 5th, 2020.",
+     "zh": "這封信的日期是2020年3月5日。"
+    }
+   ]
+  },
+  {
+   "headword": "deteriorating",
+   "examples": [
+    {
+     "en": "The patient's condition is deteriorating rapidly.",
+     "zh": "病人的情況正在迅速惡化。"
+    },
+    {
+     "en": "Deteriorating roads are a danger to drivers.",
+     "zh": "日益惡化的道路對駕駛人構成危險。"
+    }
+   ]
+  },
+  {
+   "headword": "restored",
+   "examples": [
+    {
+     "en": "After a good night's sleep, she felt restored and energetic.",
+     "zh": "經過一夜好眠，她感到精力恢復、充滿活力。"
+    },
+    {
+     "en": "The old painting was carefully restored by experts.",
+     "zh": "這幅舊畫由專家精心修復。"
+    }
+   ]
+  },
+  {
+   "headword": "converted",
+   "examples": [
+    {
+     "en": "The barn was converted into a cozy home.",
+     "zh": "穀倉被改造成舒適的住宅。"
+    },
+    {
+     "en": "She converted to Buddhism after years of study.",
+     "zh": "經過多年研究，她改信佛教。"
+    }
+   ]
+  },
+  {
+   "headword": "carrying",
+   "examples": [
+    {
+     "en": "The ship is carrying a cargo of grain.",
+     "zh": "這艘船載運一批穀物。"
+    },
+    {
+     "en": "He was carrying a heavy backpack on the hike.",
+     "zh": "他在健行時背著沉重的背包。"
+    }
+   ]
+  },
+  {
+   "headword": "assembled",
+   "examples": [
+    {
+     "en": "The crowd assembled in the square to watch the fireworks.",
+     "zh": "人群聚集在廣場觀看煙火。"
+    },
+    {
+     "en": "The furniture was assembled according to the instructions.",
+     "zh": "家具按照說明書組裝。"
+    }
+   ]
+  },
+  {
+   "headword": "pouring",
+   "examples": [
+    {
+     "en": "She was pouring tea for her guests.",
+     "zh": "她正在為客人倒茶。"
+    },
+    {
+     "en": "The pouring rain continued all night.",
+     "zh": "傾盆大雨持續了一整夜。"
+    }
+   ]
+  },
+  {
+   "headword": "ordered",
+   "examples": [
+    {
+     "en": "The books on the shelf are ordered alphabetically.",
+     "zh": "書架上的書按字母順序排列。"
+    },
+    {
+     "en": "Everything in her office is neat and ordered.",
+     "zh": "她辦公室裡的一切都整潔有序。"
+    }
+   ]
+  },
+  {
+   "headword": "resting",
+   "examples": [
+    {
+     "en": "The cat is resting on the windowsill.",
+     "zh": "貓在窗台上休息。"
+    },
+    {
+     "en": "After the long hike, we spent the afternoon resting.",
+     "zh": "長途健行後，我們整個下午都在休息。"
+    }
+   ]
+  },
+  {
+   "headword": "playing",
+   "examples": [
+    {
+     "en": "Playing the piano helps her relax after a long day.",
+     "zh": "彈鋼琴幫助她在漫長的一天後放鬆。"
+    },
+    {
+     "en": "The children's playing in the park echoed with laughter.",
+     "zh": "孩子們在公園玩耍，笑聲迴盪。"
+    }
+   ]
+  },
+  {
+   "headword": "faded",
+   "examples": [
+    {
+     "en": "The faded curtains were replaced with bright new ones.",
+     "zh": "褪色的窗簾被換成了鮮亮的新窗簾。"
+    },
+    {
+     "en": "Her faded jeans were comfortable but looked worn out.",
+     "zh": "她的褪色牛仔褲很舒服，但看起來很舊。"
+    }
+   ]
+  },
+  {
+   "headword": "pointed",
+   "examples": [
+    {
+     "en": "She made a pointed remark about his constant lateness.",
+     "zh": "她針對他經常遲到發表了尖銳的評論。"
+    },
+    {
+     "en": "The pointed roof of the tower stood out against the sky.",
+     "zh": "塔的尖頂在天空的襯托下格外顯眼。"
+    }
+   ]
+  },
+  {
+   "headword": "appointed",
+   "examples": [
+    {
+     "en": "The newly appointed manager will start next Monday.",
+     "zh": "新上任的經理將於下週一開始工作。"
+    },
+    {
+     "en": "At the appointed time, everyone gathered in the meeting room.",
+     "zh": "在指定的時間，大家都聚集在會議室。"
+    }
+   ]
+  },
+  {
+   "headword": "crushed",
+   "examples": [
+    {
+     "en": "The crushed ice melted quickly in the warm drink.",
+     "zh": "碎冰在溫熱的飲料中很快融化了。"
+    },
+    {
+     "en": "He felt crushed when he heard the bad news.",
+     "zh": "當他聽到壞消息時，感到崩潰。"
+    }
+   ]
+  },
+  {
+   "headword": "packing",
+   "examples": [
+    {
+     "en": "Packing for the trip took longer than expected.",
+     "zh": "為旅行打包行李比預期的時間更長。"
+    },
+    {
+     "en": "The packing around the fragile items prevented damage.",
+     "zh": "易碎物品周圍的包裝材料防止了損壞。"
+    }
+   ]
+  },
+  {
+   "headword": "disturbed",
+   "examples": [
+    {
+     "en": "She was disturbed by the strange noise coming from the attic.",
+     "zh": "她被閣樓傳來的奇怪噪音弄得心神不寧。"
+    },
+    {
+     "en": "The disturbed soil showed signs of recent digging.",
+     "zh": "被翻動過的土壤顯示出最近挖掘的跡象。"
+    }
+   ]
+  },
+  {
+   "headword": "welcoming",
+   "examples": [
+    {
+     "en": "The host gave us a welcoming smile at the door.",
+     "zh": "主人在門口給了我們一個歡迎的微笑。"
+    },
+    {
+     "en": "Their welcoming attitude made the new students feel at home.",
+     "zh": "他們熱情的態度讓新生感到自在。"
+    }
+   ]
+  },
+  {
+   "headword": "completed",
+   "examples": [
+    {
+     "en": "The completed project was submitted before the deadline.",
+     "zh": "完成的專案在截止日期前提交了。"
+    },
+    {
+     "en": "Once the form is completed, please hand it to the clerk.",
+     "zh": "表格填寫完成後，請交給辦事員。"
+    }
+   ]
+  },
+  {
+   "headword": "stuffed",
+   "examples": [
+    {
+     "en": "The turkey was stuffed with herbs and breadcrumbs.",
+     "zh": "火雞裡塞滿了香草和麵包屑。"
+    },
+    {
+     "en": "After the huge meal, I felt completely stuffed.",
+     "zh": "大吃一頓後，我覺得飽極了。"
+    }
+   ]
+  },
+  {
+   "headword": "hired",
+   "examples": [
+    {
+     "en": "They hired a car for the weekend trip to the mountains.",
+     "zh": "他們租了一輛車週末去山裡旅行。"
+    },
+    {
+     "en": "The hired workers finished the job ahead of schedule.",
+     "zh": "僱來的工人提前完成了工作。"
+    }
+   ]
+  },
+  {
+   "headword": "suggested",
+   "examples": [
+    {
+     "en": "She suggested a picnic in the park for Saturday.",
+     "zh": "她建議星期六在公園野餐。"
+    },
+    {
+     "en": "The suggested price for the used car seemed reasonable.",
+     "zh": "這輛二手車的建議價格似乎合理。"
+    }
+   ]
+  },
+  {
+   "headword": "fell",
+   "examples": [
+    {
+     "en": "The lumberjack felled the old tree with a few strong swings.",
+     "zh": "伐木工人用力揮了幾下斧頭，砍倒了那棵老樹。"
+    },
+    {
+     "en": "She fell asleep on the couch while watching TV.",
+     "zh": "她看電視時在沙發上睡著了。"
+    }
+   ]
+  },
+  {
+   "headword": "inspired",
+   "examples": [
+    {
+     "en": "The beautiful sunset inspired her to write a poem.",
+     "zh": "美麗的日落激發她寫了一首詩。"
+    },
+    {
+     "en": "His inspired performance earned him a standing ovation.",
+     "zh": "他極具靈感的表演贏得了全場起立鼓掌。"
+    }
+   ]
+  },
+  {
+   "headword": "recycled",
+   "examples": [
+    {
+     "en": "We recycled the old newspapers into wrapping paper.",
+     "zh": "我們把舊報紙回收用作包裝紙。"
+    },
+    {
+     "en": "The recycled plastic bottles were turned into new clothing.",
+     "zh": "回收的塑膠瓶被製成了新衣服。"
+    }
+   ]
+  },
+  {
+   "headword": "accomplished",
+   "examples": [
+    {
+     "en": "She is an accomplished musician who has performed worldwide.",
+     "zh": "她是一位曾在世界各地演出的傑出音樂家。"
+    },
+    {
+     "en": "The accomplished task was celebrated by the whole team.",
+     "zh": "完成的任務受到了整個團隊的慶祝。"
+    }
+   ]
+  },
+  {
+   "headword": "calling",
+   "examples": [
+    {
+     "en": "Teaching was her true calling, and she never regretted it.",
+     "zh": "教書是她真正的使命，她從未後悔。"
+    },
+    {
+     "en": "He felt a calling to help those in need.",
+     "zh": "他感到有幫助有需要的人的使命。"
+    }
+   ]
+  },
+  {
+   "headword": "defined",
+   "examples": [
+    {
+     "en": "The rules are clearly defined in the employee handbook.",
+     "zh": "規則在員工手冊中有明確的定義。"
+    },
+    {
+     "en": "His defined jawline gave him a strong appearance.",
+     "zh": "他輪廓分明的下顎線讓他看起來很強壯。"
+    }
+   ]
+  },
+  {
+   "headword": "touching",
+   "examples": [
+    {
+     "en": "The touching story of the lost dog brought tears to my eyes.",
+     "zh": "那隻走失狗狗的感人故事讓我熱淚盈眶。"
+    },
+    {
+     "en": "Her touching speech about her grandmother moved the audience.",
+     "zh": "她關於祖母的動人演講感動了觀眾。"
+    }
+   ]
+  },
+  {
+   "headword": "observed",
+   "examples": [
+    {
+     "en": "The observed increase in temperature matches the scientists' predictions.",
+     "zh": "觀測到的溫度上升與科學家的預測相符。"
+    },
+    {
+     "en": "These observed patterns in animal behavior suggest a complex social structure.",
+     "zh": "這些觀察到的動物行為模式顯示出複雜的社會結構。"
+    }
+   ]
+  },
+  {
+   "headword": "cracked",
+   "examples": [
+    {
+     "en": "She applied lotion to her cracked hands after working outside all day.",
+     "zh": "她在戶外工作一整天後，在龜裂的手上塗了乳液。"
+    },
+    {
+     "en": "The old paint on the door was cracked and peeling.",
+     "zh": "門上的舊漆龜裂且剝落。"
+    }
+   ]
+  },
+  {
+   "headword": "hanging",
+   "examples": [
+    {
+     "en": "A beautiful tapestry was hanging on the wall above the fireplace.",
+     "zh": "一幅美麗的掛毯掛在壁爐上方的牆上。"
+    },
+    {
+     "en": "In some countries, hanging is still used as a form of capital punishment.",
+     "zh": "在某些國家，絞刑仍被用作死刑的一種形式。"
+    }
+   ]
+  },
+  {
+   "headword": "losing",
+   "examples": [
+    {
+     "en": "The losing team walked off the field with their heads down.",
+     "zh": "輸球的隊伍低著頭走下球場。"
+    },
+    {
+     "en": "Losing his wallet was a major inconvenience during the trip.",
+     "zh": "遺失錢包在旅途中造成很大的不便。"
+    }
+   ]
+  },
+  {
+   "headword": "solving",
+   "examples": [
+    {
+     "en": "Solving this puzzle requires careful observation and logical thinking.",
+     "zh": "解決這個謎題需要仔細觀察和邏輯思考。"
+    },
+    {
+     "en": "They are solving the problem by working together as a team.",
+     "zh": "他們正透過團隊合作來解決這個問題。"
+    }
+   ]
+  },
+  {
+   "headword": "counting",
+   "examples": [
+    {
+     "en": "Counting the stars in the sky is a popular childhood activity.",
+     "zh": "數天空中的星星是受歡迎的童年活動。"
+    },
+    {
+     "en": "The teacher is counting the students to make sure everyone is present.",
+     "zh": "老師正在數學生人數，以確保每個人都到了。"
+    }
+   ]
+  },
+  {
+   "headword": "wasted",
+   "examples": [
+    {
+     "en": "All that effort was wasted because we started over from scratch.",
+     "zh": "所有的努力都白費了，因為我們從頭開始。"
+    },
+    {
+     "en": "He regretted the wasted opportunities of his youth.",
+     "zh": "他後悔年輕時浪費掉的機會。"
+    }
+   ]
+  },
+  {
+   "headword": "flowing",
+   "examples": [
+    {
+     "en": "The flowing river provided water for the entire village.",
+     "zh": "流動的河水為整個村莊提供了水源。"
+    },
+    {
+     "en": "Her flowing dress moved gracefully as she danced.",
+     "zh": "她跳舞時，飄逸的裙子優雅地擺動。"
+    }
+   ]
+  },
+  {
+   "headword": "mailing",
+   "examples": [
+    {
+     "en": "The mailing of the invitations was delayed due to a printing error.",
+     "zh": "由於印刷錯誤，邀請函的郵寄被延遲了。"
+    },
+    {
+     "en": "She received a large mailing from the university about the upcoming semester.",
+     "zh": "她收到大學寄來關於下學期的一大包郵件。"
+    }
+   ]
+  },
+  {
+   "headword": "breaking",
+   "examples": [
+    {
+     "en": "Breaking the vase was an accident, but she still felt terrible.",
+     "zh": "打破花瓶是個意外，但她還是覺得很難過。"
+    },
+    {
+     "en": "The breaking of the rope caused the box to fall.",
+     "zh": "繩子斷裂導致箱子掉落。"
+    }
+   ]
+  },
+  {
+   "headword": "deprived",
+   "examples": [
+    {
+     "en": "The deprived neighborhood lacked access to fresh food and healthcare.",
+     "zh": "這個貧困的社區缺乏新鮮食物和醫療資源。"
+    },
+    {
+     "en": "Children from deprived backgrounds often need extra support at school.",
+     "zh": "來自貧困背景的孩子在學校通常需要額外的支持。"
+    }
+   ]
+  },
+  {
+   "headword": "managed",
+   "examples": [
+    {
+     "en": "The managed fund aims to provide steady returns for investors.",
+     "zh": "這檔託管基金旨在為投資者提供穩定的回報。"
+    },
+    {
+     "en": "She managed the project efficiently despite the tight deadline.",
+     "zh": "儘管期限緊迫，她仍有效率地管理這個專案。"
+    }
+   ]
+  },
+  {
+   "headword": "threatened",
+   "examples": [
+    {
+     "en": "The threatened species is protected by strict conservation laws.",
+     "zh": "這種受威脅的物種受到嚴格的保育法保護。"
+    },
+    {
+     "en": "She felt threatened by the stranger's aggressive tone.",
+     "zh": "她對陌生人具攻擊性的語氣感到受到威脅。"
+    }
+   ]
+  },
+  {
+   "headword": "rented",
+   "examples": [
+    {
+     "en": "They rented a car for their road trip along the coast.",
+     "zh": "他們租了一輛車，沿著海岸公路旅行。"
+    },
+    {
+     "en": "The rented apartment came fully furnished with modern appliances.",
+     "zh": "這間租來的公寓附有全套現代化家電。"
+    }
+   ]
+  },
+  {
+   "headword": "beaten",
+   "examples": [
+    {
+     "en": "The beaten path led us through the forest to a hidden lake.",
+     "zh": "這條被踩平的小徑帶領我們穿過森林，來到一座隱密的湖泊。"
+    },
+    {
+     "en": "After the long hike, we were completely beaten and ready for bed.",
+     "zh": "長途健行後，我們筋疲力盡，準備上床睡覺。"
+    }
+   ]
+  },
+  {
+   "headword": "promised",
+   "examples": [
+    {
+     "en": "She promised to call her grandmother every Sunday.",
+     "zh": "她答應每個星期天都會打電話給祖母。"
+    },
+    {
+     "en": "The promised land turned out to be more beautiful than they imagined.",
+     "zh": "那片應許之地比他們想像的還要美麗。"
+    }
+   ]
+  },
+  {
+   "headword": "loaded",
+   "examples": [
+    {
+     "en": "The truck was loaded with boxes of supplies for the disaster area.",
+     "zh": "卡車上裝滿了一箱箱要送往災區的物資。"
+    },
+    {
+     "en": "The question was loaded, designed to make the witness look guilty.",
+     "zh": "這個問題帶有誘導性，旨在讓證人看起來有罪。"
+    }
+   ]
+  },
+  {
+   "headword": "darkened",
+   "examples": [
+    {
+     "en": "The darkened room felt cozy with only a few candles lit.",
+     "zh": "變暗的房間只點了幾根蠟燭，感覺很舒適。"
+    },
+    {
+     "en": "Over the years, the fabric had darkened from exposure to sunlight.",
+     "zh": "多年來，這塊布料因陽光照射而變暗。"
+    }
+   ]
+  },
+  {
+   "headword": "inviting",
+   "examples": [
+    {
+     "en": "The inviting aroma of freshly baked bread filled the kitchen.",
+     "zh": "剛出爐的麵包散發出誘人的香氣，充滿整個廚房。"
+    },
+    {
+     "en": "The hotel lobby looked inviting with its warm lighting and comfortable sofas.",
+     "zh": "飯店大廳有著溫暖的燈光和舒適的沙發，看起來很吸引人。"
+    }
+   ]
+  },
+  {
+   "headword": "bent",
+   "examples": [
+    {
+     "en": "The old bicycle had a bent front wheel after the accident.",
+     "zh": "那輛舊腳踏車在事故後前輪彎曲了。"
+    },
+    {
+     "en": "She is bent on finishing the project before the deadline.",
+     "zh": "她決心在截止日期前完成這個專案。"
+    }
+   ]
+  },
+  {
+   "headword": "earned",
+   "examples": [
+    {
+     "en": "He earned a scholarship through years of hard work.",
+     "zh": "他透過多年的努力贏得了獎學金。"
+    },
+    {
+     "en": "Her promotion was well earned after leading the team to success.",
+     "zh": "她帶領團隊取得成功後，升職是應得的。"
+    }
+   ]
+  },
+  {
+   "headword": "fixing",
+   "examples": [
+    {
+     "en": "The fixing of the broken pipe took the plumber two hours.",
+     "zh": "修理破裂的水管花了水管工兩個小時。"
+    },
+    {
+     "en": "They are fixing the old car in the garage.",
+     "zh": "他們正在車庫裡修理那輛舊車。"
+    }
+   ]
+  },
+  {
+   "headword": "decreased",
+   "examples": [
+    {
+     "en": "The number of visitors decreased significantly during the winter.",
+     "zh": "冬季期間遊客人數大幅減少。"
+    },
+    {
+     "en": "Her stress levels decreased after she started meditating.",
+     "zh": "她開始冥想後，壓力水平降低了。"
+    }
+   ]
+  },
+  {
+   "headword": "paved",
+   "examples": [
+    {
+     "en": "The road was paved with smooth asphalt last summer.",
+     "zh": "這條路去年夏天鋪上了平滑的瀝青。"
+    },
+    {
+     "en": "Their early experiments paved the way for future discoveries.",
+     "zh": "他們早期的實驗為未來的發現鋪平了道路。"
+    }
+   ]
+  },
+  {
+   "headword": "yearning",
+   "examples": [
+    {
+     "en": "She felt a deep yearning for her hometown after moving abroad.",
+     "zh": "移居國外後，她對家鄉感到深深的渴望。"
+    },
+    {
+     "en": "His yearning to travel the world never faded.",
+     "zh": "他渴望環遊世界的念頭從未消退。"
+    }
+   ]
+  },
+  {
+   "headword": "predicted",
+   "examples": [
+    {
+     "en": "The weather forecast predicted heavy rain for the weekend.",
+     "zh": "天氣預報預測週末會有大雨。"
+    },
+    {
+     "en": "Analysts predicted a rise in housing prices this year.",
+     "zh": "分析師預測今年房價會上漲。"
+    }
+   ]
+  },
+  {
+   "headword": "murdered",
+   "examples": [
+    {
+     "en": "The detective investigated the murdered businessman's case.",
+     "zh": "偵探調查了那位被謀殺的商人的案件。"
+    },
+    {
+     "en": "Many people were shocked by the murdered victim's story.",
+     "zh": "許多人對那位被謀殺的受害者的故事感到震驚。"
+    }
+   ]
+  },
+  {
+   "headword": "missed",
+   "examples": [
+    {
+     "en": "I missed the bus this morning and was late for work.",
+     "zh": "我今天早上錯過了公車，上班遲到了。"
+    },
+    {
+     "en": "She missed the target by just a few inches.",
+     "zh": "她差幾英寸就錯過了目標。"
+    }
+   ]
+  },
+  {
+   "headword": "decreasing",
+   "examples": [
+    {
+     "en": "The decreasing population is a concern for the small town.",
+     "zh": "人口減少是這個小鎮的隱憂。"
+    },
+    {
+     "en": "With decreasing resources, the project had to be scaled down.",
+     "zh": "由於資源減少，這個專案不得不縮小規模。"
+    }
+   ]
+  },
+  {
+   "headword": "switching",
+   "examples": [
+    {
+     "en": "Switching between tasks too often can reduce productivity.",
+     "zh": "太頻繁地在任務之間切換會降低生產力。"
+    },
+    {
+     "en": "He is switching his major from law to computer science.",
+     "zh": "他正從法律系轉到資訊工程系。"
+    }
+   ]
+  },
+  {
+   "headword": "revolving",
+   "examples": [
+    {
+     "en": "The revolving door at the hotel entrance spun slowly.",
+     "zh": "飯店入口的旋轉門緩緩轉動。"
+    },
+    {
+     "en": "They sat on revolving stools at the counter.",
+     "zh": "他們坐在吧台的旋轉凳上。"
+    }
+   ]
+  },
+  {
+   "headword": "drained",
+   "examples": [
+    {
+     "en": "After the marathon, he felt completely drained of energy.",
+     "zh": "馬拉松結束後，他感到精力完全耗盡。"
+    },
+    {
+     "en": "The drained pool was cleaned before the summer season.",
+     "zh": "夏天來臨前，抽乾的游泳池被清洗乾淨。"
+    }
+   ]
+  },
+  {
+   "headword": "authorized",
+   "examples": [
+    {
+     "en": "Only authorized personnel are allowed to enter the laboratory.",
+     "zh": "只有經過授權的人員才能進入實驗室。"
+    },
+    {
+     "en": "The authorized dealer offers a two-year warranty on all products.",
+     "zh": "授權經銷商對所有產品提供兩年保固。"
+    }
+   ]
+  },
+  {
+   "headword": "banned",
+   "examples": [
+    {
+     "en": "Smoking is banned in all indoor public spaces.",
+     "zh": "所有室內公共場所都禁止吸菸。"
+    },
+    {
+     "en": "The banned book was removed from the school library.",
+     "zh": "那本被禁的書已從學校圖書館移除。"
+    }
+   ]
+  },
+  {
+   "headword": "knowing",
+   "examples": [
+    {
+     "en": "She gave me a knowing smile, as if she already knew the secret.",
+     "zh": "她給我一個心照不宣的微笑，彷彿她已經知道這個秘密。"
+    },
+    {
+     "en": "His knowing look suggested he had inside information.",
+     "zh": "他那種了然於心的神情暗示他掌握了內幕消息。"
+    }
+   ]
+  },
+  {
+   "headword": "aching",
+   "examples": [
+    {
+     "en": "After the long hike, my legs were aching terribly.",
+     "zh": "長途健行後，我的雙腿痛得厲害。"
+    },
+    {
+     "en": "She had an aching feeling in her heart after saying goodbye.",
+     "zh": "道別後，她心中有一股隱隱作痛的感覺。"
+    }
+   ]
+  },
+  {
+   "headword": "whipped",
+   "examples": [
+    {
+     "en": "The chef whipped the cream until it formed soft peaks.",
+     "zh": "廚師把鮮奶油打發到出現柔軟的尖峰。"
+    },
+    {
+     "en": "The whipped horse struggled to pull the heavy cart.",
+     "zh": "那匹被鞭打的馬吃力地拉著沉重的車。"
+    }
+   ]
+  },
+  {
+   "headword": "recognized",
+   "examples": [
+    {
+     "en": "She is a recognized expert in the field of artificial intelligence.",
+     "zh": "她是人工智慧領域公認的專家。"
+    },
+    {
+     "en": "The restaurant is recognized for its excellent service.",
+     "zh": "這家餐廳以其優質服務而聞名。"
+    }
+   ]
+  },
+  {
+   "headword": "accumulated",
+   "examples": [
+    {
+     "en": "The accumulated dust on the shelves made the room look abandoned.",
+     "zh": "架子上累積的灰塵讓房間看起來像被廢棄了。"
+    },
+    {
+     "en": "Over the years, she has accumulated a vast collection of rare books.",
+     "zh": "多年來，她累積了大量的珍本書收藏。"
+    }
+   ]
+  },
+  {
+   "headword": "retiring",
+   "examples": [
+    {
+     "en": "The retiring professor gave a heartfelt speech at his farewell party.",
+     "zh": "這位即將退休的教授在歡送會上發表了感人的演說。"
+    },
+    {
+     "en": "Despite his fame, he remained a retiring man who avoided public attention.",
+     "zh": "儘管成名，他仍然是個靦腆的人，避免公眾關注。"
+    }
+   ]
+  },
+  {
+   "headword": "waking",
+   "examples": [
+    {
+     "en": "She spends her waking hours volunteering at the local animal shelter.",
+     "zh": "她醒著的時間都在當地動物收容所當志工。"
+    },
+    {
+     "en": "The loud thunder startled him into a waking state.",
+     "zh": "巨大的雷聲把他嚇醒了。"
+    }
+   ]
+  },
+  {
+   "headword": "led",
+   "examples": [
+    {
+     "en": "The new LED bulbs consume much less electricity than traditional ones.",
+     "zh": "新型LED燈泡比傳統燈泡耗電少得多。"
+    },
+    {
+     "en": "He led the team to victory in the final match.",
+     "zh": "他帶領球隊在決賽中獲勝。"
+    }
+   ]
+  },
+  {
+   "headword": "typing",
+   "examples": [
+    {
+     "en": "She improved her typing speed by practicing every day.",
+     "zh": "她每天練習，提高了打字速度。"
+    },
+    {
+     "en": "The report was full of typing errors, so I had to correct them.",
+     "zh": "這份報告滿是打字錯誤，所以我必須修正它們。"
+    }
+   ]
+  },
+  {
+   "headword": "illustrated",
+   "examples": [
+    {
+     "en": "The children's book is beautifully illustrated with colorful drawings.",
+     "zh": "這本童書配有精美的彩色插圖。"
+    },
+    {
+     "en": "He illustrated his point with a simple diagram on the whiteboard.",
+     "zh": "他在白板上用簡單的圖表說明他的觀點。"
+    }
+   ]
+  },
+  {
+   "headword": "signed",
+   "examples": [
+    {
+     "en": "The contract must be signed by both parties before it takes effect.",
+     "zh": "合同必須由雙方簽字後才能生效。"
+    },
+    {
+     "en": "She communicated with her deaf friend using signed language.",
+     "zh": "她用手語和她的聾人朋友溝通。"
+    }
+   ]
+  },
+  {
+   "headword": "calculated",
+   "examples": [
+    {
+     "en": "His calculated move to invest early paid off handsomely.",
+     "zh": "他精心計算的早期投資獲得了豐厚回報。"
+    },
+    {
+     "en": "The calculated risk was worth taking, according to the manager.",
+     "zh": "經理認為這個經過計算的風險值得一試。"
+    }
+   ]
+  },
+  {
+   "headword": "killed",
+   "examples": [
+    {
+     "en": "The sudden frost killed most of the young plants in the garden.",
+     "zh": "突如其來的霜凍殺死了花園裡大部分幼苗。"
+    },
+    {
+     "en": "He was killed in a car accident last year.",
+     "zh": "他去年在一場車禍中喪生。"
+    }
+   ]
+  },
+  {
+   "headword": "expressed",
+   "examples": [
+    {
+     "en": "She expressed her gratitude to everyone who helped her.",
+     "zh": "她向所有幫助過她的人表達了感激之情。"
+    },
+    {
+     "en": "The artist's feelings are clearly expressed in this painting.",
+     "zh": "這位藝術家的情感在這幅畫中表達得很清楚。"
+    }
+   ]
+  },
+  {
+   "headword": "cracking",
+   "examples": [
+    {
+     "en": "The cracking of the old wooden floorboards echoed through the house.",
+     "zh": "舊木地板的劈啪聲在屋內迴盪。"
+    },
+    {
+     "en": "We heard a loud cracking sound as the tree branch broke.",
+     "zh": "樹枝折斷時我們聽到一聲巨大的劈啪聲。"
+    }
+   ]
+  },
+  {
+   "headword": "connecting",
+   "examples": [
+    {
+     "en": "The connecting flight was delayed due to bad weather.",
+     "zh": "轉接班機因天氣惡劣而延誤。"
+    },
+    {
+     "en": "She used a connecting cable to link the two devices.",
+     "zh": "她使用連接線將兩個設備連接起來。"
+    }
+   ]
+  },
+  {
+   "headword": "succeeding",
+   "examples": [
+    {
+     "en": "In the succeeding years, the company expanded rapidly.",
+     "zh": "在隨後的幾年裡，公司迅速擴張。"
+    },
+    {
+     "en": "The succeeding chapters will discuss the results in detail.",
+     "zh": "隨後的章節將詳細討論結果。"
+    }
+   ]
+  },
+  {
+   "headword": "wanted",
+   "examples": [
+    {
+     "en": "The police are looking for a wanted man in connection with the robbery.",
+     "zh": "警方正在尋找一名與搶劫案有關的通緝犯。"
+    },
+    {
+     "en": "She felt wanted and appreciated by her new colleagues.",
+     "zh": "她感到新同事們需要並欣賞她。"
+    }
+   ]
+  },
+  {
+   "headword": "inherited",
+   "examples": [
+    {
+     "en": "She inherited a beautiful old house from her grandmother.",
+     "zh": "她從祖母那裡繼承了一棟美麗的老房子。"
+    },
+    {
+     "en": "The disease is inherited, so genetic testing is recommended.",
+     "zh": "這種疾病是遺傳的，因此建議進行基因檢測。"
+    }
+   ]
+  },
+  {
+   "headword": "burnt",
+   "examples": [
+    {
+     "en": "The toast was burnt, so I threw it away.",
+     "zh": "吐司烤焦了，所以我把它扔了。"
+    },
+    {
+     "en": "The burnt smell in the kitchen reminded me to turn off the stove.",
+     "zh": "廚房裡的焦味提醒我要關掉爐子。"
+    }
+   ]
+  },
+  {
+   "headword": "chilled",
+   "examples": [
+    {
+     "en": "We enjoyed a glass of chilled white wine on the patio.",
+     "zh": "我們在露台上享用了一杯冰鎮白葡萄酒。"
+    },
+    {
+     "en": "The chilled air from the air conditioner made the room comfortable.",
+     "zh": "空調吹出的冷空氣讓房間很舒適。"
+    }
+   ]
+  },
+  {
+   "headword": "approaching",
+   "examples": [
+    {
+     "en": "The approaching storm forced us to cancel the picnic.",
+     "zh": "即將來臨的暴風雨迫使我們取消野餐。"
+    },
+    {
+     "en": "As the train was approaching the station, we gathered our luggage.",
+     "zh": "當火車接近車站時，我們收拾好行李。"
+    }
+   ]
+  },
+  {
+   "headword": "acquired",
+   "examples": [
+    {
+     "en": "She acquired a taste for spicy food while living in Thailand.",
+     "zh": "她在泰國生活時養成了吃辣的習慣。"
+    },
+    {
+     "en": "The acquired skills will help you in your future career.",
+     "zh": "所獲得的技能將有助於你未來的職業生涯。"
+    }
+   ]
+  },
+  {
+   "headword": "assigned",
+   "examples": [
+    {
+     "en": "Each student was assigned a different topic for the project.",
+     "zh": "每位學生都被分配了這個專案的不同主題。"
+    },
+    {
+     "en": "She quickly finished the tasks assigned to her by the manager.",
+     "zh": "她很快完成了經理指派給她的任務。"
+    }
+   ]
+  },
+  {
+   "headword": "digging",
+   "examples": [
+    {
+     "en": "The digging for the new pipeline will begin next week.",
+     "zh": "新管線的挖掘工程將於下週開始。"
+    },
+    {
+     "en": "After hours of digging, they finally found the buried treasure.",
+     "zh": "經過數小時的挖掘，他們終於找到了埋藏的寶藏。"
+    }
+   ]
+  },
+  {
+   "headword": "created",
+   "examples": [
+    {
+     "en": "The artist created a stunning sculpture from recycled metal.",
+     "zh": "這位藝術家用回收金屬創造了一座令人驚豔的雕塑。"
+    },
+    {
+     "en": "A new committee was created to address the housing issue.",
+     "zh": "成立了一個新的委員會來處理住房問題。"
+    }
+   ]
+  },
+  {
+   "headword": "buried",
+   "examples": [
+    {
+     "en": "The old coins were buried under the tree for over a century.",
+     "zh": "這些舊硬幣被埋在樹下超過一個世紀。"
+    },
+    {
+     "en": "She felt buried by the endless paperwork at her new job.",
+     "zh": "她覺得自己被新工作中無止盡的文書工作淹沒了。"
+    }
+   ]
+  },
+  {
+   "headword": "attracting",
+   "examples": [
+    {
+     "en": "The festival is attracting thousands of visitors this year.",
+     "zh": "這個節慶今年吸引了數千名遊客。"
+    },
+    {
+     "en": "His unusual hobby was attracting a lot of attention at the party.",
+     "zh": "他與眾不同的嗜好在派對上吸引了許多注意。"
+    }
+   ]
+  },
+  {
+   "headword": "failing",
+   "examples": [
+    {
+     "en": "Failing to submit the form on time may result in a penalty.",
+     "zh": "如果沒有按時提交表格，可能會導致罰款。"
+    },
+    {
+     "en": "The failing brakes were the main cause of the accident.",
+     "zh": "失靈的煞車是這起事故的主要原因。"
+    }
+   ]
+  },
+  {
+   "headword": "burned",
+   "examples": [
+    {
+     "en": "The toast was burned because I forgot to watch the timer.",
+     "zh": "吐司烤焦了，因為我忘了看計時器。"
+    },
+    {
+     "en": "The old barn burned down in the storm last night.",
+     "zh": "那座舊穀倉在昨晚的暴風雨中燒毀了。"
+    }
+   ]
+  },
+  {
+   "headword": "gathered",
+   "examples": [
+    {
+     "en": "A crowd gathered outside the theater to see the actors.",
+     "zh": "一群人聚集在劇院外想看演員。"
+    },
+    {
+     "en": "She gathered all the documents and put them in a folder.",
+     "zh": "她收集了所有文件並把它們放進資料夾。"
+    }
+   ]
+  },
+  {
+   "headword": "borrowed",
+   "examples": [
+    {
+     "en": "I borrowed a book from the library to prepare for the exam.",
+     "zh": "我從圖書館借了一本書來準備考試。"
+    },
+    {
+     "en": "The designer borrowed ideas from traditional architecture for the new building.",
+     "zh": "這位設計師為新建築借鑒了傳統建築的想法。"
+    }
+   ]
+  },
+  {
+   "headword": "dripping",
+   "examples": [
+    {
+     "en": "The faucet in the kitchen kept dripping all night.",
+     "zh": "廚房的水龍頭整晚一直滴水。"
+    },
+    {
+     "en": "After the rain, water was dripping from the roof.",
+     "zh": "雨後，水從屋頂滴下來。"
+    }
+   ]
+  },
+  {
+   "headword": "polluted",
+   "examples": [
+    {
+     "en": "The river is heavily polluted by industrial waste.",
+     "zh": "這條河被工業廢棄物嚴重污染。"
+    },
+    {
+     "en": "Breathing polluted air can cause serious health problems.",
+     "zh": "呼吸受污染的空氣會導致嚴重的健康問題。"
+    }
+   ]
+  },
+  {
+   "headword": "discarded",
+   "examples": [
+    {
+     "en": "The discarded furniture was left on the sidewalk for pickup.",
+     "zh": "被丟棄的家具被留在人行道上等待回收。"
+    },
+    {
+     "en": "She found a discarded notebook and used it for her sketches.",
+     "zh": "她找到一本被丟棄的筆記本，並用它來畫素描。"
+    }
+   ]
+  },
+  {
+   "headword": "acknowledged",
+   "examples": [
+    {
+     "en": "He is an acknowledged expert in the field of renewable energy.",
+     "zh": "他是再生能源領域公認的專家。"
+    },
+    {
+     "en": "The company acknowledged the mistake and offered a refund.",
+     "zh": "公司承認了錯誤並提供退款。"
+    }
+   ]
+  },
+  {
+   "headword": "diminished",
+   "examples": [
+    {
+     "en": "His influence in the company has diminished over the years.",
+     "zh": "這些年來，他在公司的影響力已經減弱了。"
+    },
+    {
+     "en": "The medicine helped, but the pain was only diminished, not gone.",
+     "zh": "藥物有幫助，但疼痛只是減輕了，並沒有消失。"
+    }
+   ]
+  },
+  {
+   "headword": "keeping",
+   "examples": [
+    {
+     "en": "The keeping of wild animals as pets is often illegal.",
+     "zh": "將野生動物作為寵物飼養通常是非法的。"
+    },
+    {
+     "en": "Her actions are not in keeping with the company's values.",
+     "zh": "她的行為與公司的價值觀不一致。"
+    }
+   ]
+  },
+  {
+   "headword": "spoke",
+   "examples": [
+    {
+     "en": "One spoke of the bicycle wheel was bent after the accident.",
+     "zh": "事故後，腳踏車輪子的一根輻條彎曲了。"
+    },
+    {
+     "en": "She spoke to the manager about the scheduling conflict.",
+     "zh": "她向經理談了關於時間安排衝突的問題。"
+    }
+   ]
+  },
+  {
+   "headword": "leaving",
+   "examples": [
+    {
+     "en": "The leaving of the old manager marked the end of an era.",
+     "zh": "老經理的離開標誌著一個時代的結束。"
+    },
+    {
+     "en": "She is leaving for Taipei on the early train tomorrow.",
+     "zh": "她明天要搭早班火車去台北。"
+    }
+   ]
+  },
+  {
+   "headword": "reflected",
+   "examples": [
+    {
+     "en": "The mountains were reflected in the calm lake.",
+     "zh": "山巒倒映在平靜的湖面上。"
+    },
+    {
+     "en": "Her kindness was reflected in the way she treated everyone.",
+     "zh": "她的善良從她對待每個人的方式中反映出來。"
+    }
+   ]
+  },
+  {
+   "headword": "numbered",
+   "examples": [
+    {
+     "en": "The pages of the manuscript are numbered consecutively.",
+     "zh": "手稿的頁面是連續編號的。"
+    },
+    {
+     "en": "His days as a professional athlete are numbered.",
+     "zh": "他作為職業運動員的日子已經屈指可數了。"
+    }
+   ]
+  },
+  {
+   "headword": "received",
+   "examples": [
+    {
+     "en": "The received wisdom is that breakfast is the most important meal.",
+     "zh": "普遍公認的觀點是早餐是最重要的一餐。"
+    },
+    {
+     "en": "She used received pronunciation in her formal speech.",
+     "zh": "她在正式演講中使用了公認的發音。"
+    }
+   ]
+  },
+  {
+   "headword": "assumed",
+   "examples": [
+    {
+     "en": "He answered with an assumed name to protect his privacy.",
+     "zh": "他使用假名回答以保護自己的隱私。"
+    },
+    {
+     "en": "The assumed role of a detective was played by a famous actor.",
+     "zh": "偵探的假扮角色由一位著名演員扮演。"
+    }
+   ]
+  },
+  {
+   "headword": "abused",
+   "examples": [
+    {
+     "en": "The abused drugs were found in the suspect's apartment.",
+     "zh": "在嫌疑人的公寓裡發現了被濫用的藥物。"
+    },
+    {
+     "en": "The abused child was taken to a safe place.",
+     "zh": "受虐的孩子被帶到了一個安全的地方。"
+    }
+   ]
+  },
+  {
+   "headword": "rung",
+   "examples": [
+    {
+     "en": "She climbed the ladder and stepped onto the top rung.",
+     "zh": "她爬上梯子，踏上了最高的一級橫檔。"
+    },
+    {
+     "en": "The old chair had a broken rung between its legs.",
+     "zh": "那把舊椅子的腿之間有一根橫檔斷了。"
+    }
+   ]
+  },
+  {
+   "headword": "felt",
+   "examples": [
+    {
+     "en": "She bought a yard of red felt to make a costume.",
+     "zh": "她買了一碼紅色的毛氈來做服裝。"
+    },
+    {
+     "en": "The hat was made of soft felt and fit perfectly.",
+     "zh": "那頂帽子由柔軟的毛氈製成，非常合身。"
+    }
+   ]
+  },
+  {
+   "headword": "collected",
+   "examples": [
+    {
+     "en": "The collected works of the poet were published in one volume.",
+     "zh": "這位詩人的作品集被出版成一本書。"
+    },
+    {
+     "en": "Despite the chaos, she remained collected and gave clear instructions.",
+     "zh": "儘管一片混亂，她仍保持鎮定，並給出了明確的指示。"
+    }
+   ]
+  },
+  {
+   "headword": "wrapping",
+   "examples": [
+    {
+     "en": "He tore off the wrapping to see what was inside.",
+     "zh": "他撕開包裝紙看看裡面是什麼。"
+    },
+    {
+     "en": "The gift was covered in colorful wrapping paper.",
+     "zh": "禮物用彩色包裝紙包著。"
+    }
+   ]
+  },
+  {
+   "headword": "spent",
+   "examples": [
+    {
+     "en": "After the long hike, we were completely spent.",
+     "zh": "長途健行後，我們完全精疲力竭了。"
+    },
+    {
+     "en": "The spent batteries need to be replaced.",
+     "zh": "這些耗盡的電池需要更換。"
+    }
+   ]
+  },
+  {
+   "headword": "searching",
+   "examples": [
+    {
+     "en": "The detective gave the suspect a searching look.",
+     "zh": "偵探用銳利的目光打量嫌疑人。"
+    },
+    {
+     "en": "She asked a searching question that made everyone think.",
+     "zh": "她問了一個發人深省的問題，讓每個人都思考起來。"
+    }
+   ]
+  },
+  {
+   "headword": "biting",
+   "examples": [
+    {
+     "en": "The biting wind made us wrap our scarves tightly.",
+     "zh": "刺骨的寒風讓我們緊緊圍住圍巾。"
+    },
+    {
+     "en": "His biting remarks hurt her feelings deeply.",
+     "zh": "他辛辣的言論深深傷害了她的感情。"
+    }
+   ]
+  },
+  {
+   "headword": "dropping",
+   "examples": [
+    {
+     "en": "The dropping leaves signaled the arrival of autumn.",
+     "zh": "落下的葉子預示著秋天的到來。"
+    },
+    {
+     "en": "She watched the dropping temperature on the thermometer.",
+     "zh": "她看著溫度計上下降的溫度。"
+    }
+   ]
+  },
+  {
+   "headword": "returning",
+   "examples": [
+    {
+     "en": "The returning birds built nests in the same tree.",
+     "zh": "返回的鳥兒在同一棵樹上築巢。"
+    },
+    {
+     "en": "He waved at the returning students from the doorway.",
+     "zh": "他在門口向返回的學生們揮手。"
+    }
+   ]
+  },
+  {
+   "headword": "admiring",
+   "examples": [
+    {
+     "en": "She gave him an admiring glance after his performance.",
+     "zh": "他的表演結束後，她讚賞地看了他一眼。"
+    },
+    {
+     "en": "The admiring crowd cheered for the young musician.",
+     "zh": "欽佩的人群為這位年輕音樂家歡呼。"
+    }
+   ]
+  },
+  {
+   "headword": "checking",
+   "examples": [
+    {
+     "en": "The checking process ensures all data is accurate.",
+     "zh": "檢查過程確保所有數據準確無誤。"
+    },
+    {
+     "en": "He is responsible for checking the quality of the products.",
+     "zh": "他負責檢查產品的品質。"
+    }
+   ]
+  },
+  {
+   "headword": "giving",
+   "examples": [
+    {
+     "en": "Her generous giving to charity inspired many others.",
+     "zh": "她對慈善事業的慷慨捐贈激勵了許多人。"
+    },
+    {
+     "en": "The giving of gifts is a tradition during the holidays.",
+     "zh": "贈送禮物是假日期間的傳統。"
+    }
+   ]
+  },
+  {
+   "headword": "declared",
+   "examples": [
+    {
+     "en": "The declared winner gave a short speech.",
+     "zh": "公佈的獲勝者發表了簡短的演講。"
+    },
+    {
+     "en": "They walked through the declared area without permission.",
+     "zh": "他們未經許可穿過了公告區域。"
+    }
+   ]
+  },
+  {
+   "headword": "tried",
+   "examples": [
+    {
+     "en": "This tried method has been used for decades.",
+     "zh": "這種經過驗證的方法已經使用了幾十年。"
+    },
+    {
+     "en": "She is a tried and trusted friend.",
+     "zh": "她是一位經過考驗、值得信賴的朋友。"
+    }
+   ]
+  },
+  {
+   "headword": "laughing",
+   "examples": [
+    {
+     "en": "The laughing children played in the park.",
+     "zh": "歡笑的孩子們在公園裡玩耍。"
+    },
+    {
+     "en": "He had a laughing expression that cheered everyone up.",
+     "zh": "他帶著歡笑的表情，讓每個人都振作起來。"
+    }
+   ]
+  },
+  {
+   "headword": "clenched",
+   "examples": [
+    {
+     "en": "She clenched her fists in anger when she heard the unfair decision.",
+     "zh": "當她聽到不公平的決定時，她憤怒地緊握拳頭。"
+    },
+    {
+     "en": "His jaw was clenched as he tried to hold back his tears.",
+     "zh": "他咬緊牙關，努力忍住眼淚。"
+    }
+   ]
+  },
+  {
+   "headword": "braided",
+   "examples": [
+    {
+     "en": "The little girl wore her hair braided in two long pigtails.",
+     "zh": "那個小女孩把頭髮編成兩條長長的辮子。"
+    },
+    {
+     "en": "A thick braided rope was tied around the old wooden post.",
+     "zh": "一條粗的編織繩綁在舊木柱上。"
+    }
+   ]
+  },
+  {
+   "headword": "spoils",
+   "examples": [
+    {
+     "en": "The victorious army divided the spoils among the soldiers.",
+     "zh": "勝利的軍隊在士兵之間瓜分戰利品。"
+    },
+    {
+     "en": "After the heist, the thieves argued over how to split the spoils.",
+     "zh": "搶劫之後，竊賊們爭論如何分贓。"
+    }
+   ]
+  },
+  {
+   "headword": "letting",
+   "examples": [
+    {
+     "en": "The landlord earns a steady income from the letting of several apartments.",
+     "zh": "房東從幾間公寓的出租中獲得穩定的收入。"
+    },
+    {
+     "en": "They signed a letting agreement for the house near the park.",
+     "zh": "他們為公園附近的房子簽了一份租賃協議。"
+    }
+   ]
+  },
+  {
+   "headword": "towers",
+   "examples": [
+    {
+     "en": "The two towers of the cathedral dominate the city skyline.",
+     "zh": "大教堂的兩座塔樓主宰了城市的天際線。"
+    },
+    {
+     "en": "From the top of the towers, visitors can see the entire valley.",
+     "zh": "從塔頂，遊客可以看到整個山谷。"
+    }
+   ]
+  },
+  {
+   "headword": "ironing",
+   "examples": [
+    {
+     "en": "She spent the afternoon ironing the clothes for the whole family.",
+     "zh": "她花了一下午為全家人熨燙衣服。"
+    },
+    {
+     "en": "There is a pile of ironing on the table that needs to be done.",
+     "zh": "桌上有一堆待熨燙的衣物需要處理。"
+    }
+   ]
+  },
+  {
+   "headword": "kidding",
+   "examples": [
+    {
+     "en": "Are you kidding me? That movie was absolutely amazing!",
+     "zh": "你在開玩笑嗎？那部電影真是太棒了！"
+    },
+    {
+     "en": "He was just kidding when he said he would quit his job.",
+     "zh": "他說要辭職時只是在開玩笑。"
+    }
+   ]
+  },
+  {
+   "headword": "practicing",
+   "examples": [
+    {
+     "en": "As a practicing lawyer, she handles several cases at once.",
+     "zh": "作為一名執業律師，她同時處理好幾個案件。"
+    },
+    {
+     "en": "The clinic is run by a practicing physician with years of experience.",
+     "zh": "這家診所由一位有多年經驗的執業醫師經營。"
+    }
+   ]
+  },
+  {
+   "headword": "weakened",
+   "examples": [
+    {
+     "en": "The patient felt weakened after the long illness.",
+     "zh": "病了很久之後，病人感到虛弱。"
+    },
+    {
+     "en": "The bridge was weakened by years of neglect and bad weather.",
+     "zh": "這座橋因多年疏於維護和惡劣天氣而變得脆弱。"
+    }
+   ]
+  },
+  {
+   "headword": "treated",
+   "examples": [
+    {
+     "en": "She treated her guests to a delicious homemade dinner.",
+     "zh": "她以美味的家常晚餐招待客人。"
+    },
+    {
+     "en": "The doctor treated the wound with antibiotics and clean bandages.",
+     "zh": "醫生用抗生素和乾淨的繃帶處理傷口。"
+    }
+   ]
+  },
+  {
+   "headword": "knitted",
+   "examples": [
+    {
+     "en": "Grandma knitted a warm scarf for me last winter.",
+     "zh": "奶奶去年冬天為我編織了一條溫暖的圍巾。"
+    },
+    {
+     "en": "The baby wore a soft knitted hat that covered her ears.",
+     "zh": "嬰兒戴著一頂柔軟的針織帽，蓋住了耳朵。"
+    }
+   ]
+  },
+  {
+   "headword": "smashed",
+   "examples": [
+    {
+     "en": "After the party, he was completely smashed and couldn't walk straight.",
+     "zh": "派對結束後，他醉得東倒西歪，無法走直線。"
+    },
+    {
+     "en": "They got smashed on cheap wine and laughed all night.",
+     "zh": "他們喝廉價葡萄酒喝得爛醉，笑了一整晚。"
+    }
+   ]
+  },
+  {
+   "headword": "weeping",
+   "examples": [
+    {
+     "en": "The weeping mother held her child tightly after the accident.",
+     "zh": "事故發生後，哭泣的母親緊緊抱住她的孩子。"
+    },
+    {
+     "en": "Weeping willows lined the path along the river.",
+     "zh": "垂柳沿著河邊的小路排列。"
+    }
+   ]
+  },
+  {
+   "headword": "studied",
+   "examples": [
+    {
+     "en": "His studied calmness during the interview impressed the panel.",
+     "zh": "他在面試中刻意的冷靜給評審留下了深刻印象。"
+    },
+    {
+     "en": "The artist's studied use of color creates a sense of harmony.",
+     "zh": "這位藝術家刻意運用色彩，營造出和諧感。"
+    }
+   ]
+  },
+  {
+   "headword": "knocking",
+   "examples": [
+    {
+     "en": "The knocking on the door woke me up at midnight.",
+     "zh": "半夜的敲門聲把我吵醒了。"
+    },
+    {
+     "en": "I heard a strange knocking coming from the engine.",
+     "zh": "我聽到引擎傳來奇怪的敲擊聲。"
+    }
+   ]
+  },
+  {
+   "headword": "crashing",
+   "examples": [
+    {
+     "en": "The crashing waves made it dangerous to swim near the rocks.",
+     "zh": "猛撞的海浪使得在岩石附近游泳很危險。"
+    },
+    {
+     "en": "It was a crashing bore to listen to his long speech.",
+     "zh": "聽他冗長的演講真是無聊透頂。"
+    }
+   ]
+  },
+  {
+   "headword": "confirmed",
+   "examples": [
+    {
+     "en": "She is a confirmed optimist who always sees the bright side.",
+     "zh": "她是一個堅定的樂觀主義者，總是看到光明面。"
+    },
+    {
+     "en": "The hotel sent a confirmed reservation for our stay next week.",
+     "zh": "飯店寄來了我們下週住宿的確認預訂。"
+    }
+   ]
+  },
+  {
+   "headword": "roaring",
+   "examples": [
+    {
+     "en": "The roaring fire kept us warm throughout the cold night.",
+     "zh": "熊熊燃燒的爐火讓我們在寒冷的夜晚保持溫暖。"
+    },
+    {
+     "en": "We could hear the roaring of the crowd from inside the stadium.",
+     "zh": "我們在體育館內就能聽到群眾的怒吼聲。"
+    }
+   ]
+  },
+  {
+   "headword": "punishing",
+   "examples": [
+    {
+     "en": "The punishing schedule left the athletes exhausted by the end of the day.",
+     "zh": "令人精疲力竭的行程讓運動員們在一天結束時筋疲力盡。"
+    },
+    {
+     "en": "She found the punishing pace of the marathon almost unbearable.",
+     "zh": "她覺得馬拉松那折磨人的步調幾乎讓人受不了。"
+    }
+   ]
+  },
+  {
+   "headword": "adjusted",
+   "examples": [
+    {
+     "en": "The adjusted schedule now includes an extra hour for lunch.",
+     "zh": "調整後的時間表現在多了一小時的午餐時間。"
+    },
+    {
+     "en": "After a few weeks, he felt well adjusted to his new school.",
+     "zh": "幾週後，他覺得自己已經很適應新學校了。"
+    }
+   ]
+  },
+  {
+   "headword": "tinned",
+   "examples": [
+    {
+     "en": "She opened a tinned of soup and heated it for dinner.",
+     "zh": "她打開一罐湯罐頭，加熱當晚餐。"
+    },
+    {
+     "en": "The tinned fish can be stored for years without spoiling.",
+     "zh": "罐裝魚可以保存多年而不會變質。"
+    }
+   ]
+  },
+  {
+   "headword": "waving",
+   "examples": [
+    {
+     "en": "The waving flags added to the festive atmosphere of the parade.",
+     "zh": "飄揚的旗幟增添了遊行的節慶氣氛。"
+    },
+    {
+     "en": "He gave a quick waving gesture to catch the waiter's attention.",
+     "zh": "他快速揮手以引起服務生的注意。"
+    }
+   ]
+  },
+  {
+   "headword": "washed",
+   "examples": [
+    {
+     "en": "The freshly washed car gleamed under the afternoon sun.",
+     "zh": "剛洗過的車在午後陽光下閃閃發亮。"
+    },
+    {
+     "en": "She put the washed clothes out on the line to dry.",
+     "zh": "她把洗過的衣服掛在曬衣繩上晾乾。"
+    }
+   ]
+  },
+  {
+   "headword": "powered",
+   "examples": [
+    {
+     "en": "The new laptop is powered by a long-lasting battery.",
+     "zh": "這台新筆記型電腦由長效電池供電。"
+    },
+    {
+     "en": "They bought a solar-powered charger for their camping trips.",
+     "zh": "他們買了一個太陽能充電器以備露營旅行使用。"
+    }
+   ]
+  },
+  {
+   "headword": "poisoned",
+   "examples": [
+    {
+     "en": "The poisoned water caused several animals to fall ill.",
+     "zh": "受污染的水導致幾隻動物生病。"
+    },
+    {
+     "en": "He was rushed to the hospital after eating the poisoned berries.",
+     "zh": "他吃了有毒的漿果後被緊急送往醫院。"
+    }
+   ]
+  },
+  {
+   "headword": "considered",
+   "examples": [
+    {
+     "en": "After much thought, she made a considered decision to change careers.",
+     "zh": "經過深思熟慮後，她做出了轉換跑道的慎重決定。"
+    },
+    {
+     "en": "His advice is highly considered by his colleagues.",
+     "zh": "他的建議深受同事們的重視。"
+    }
+   ]
+  },
+  {
+   "headword": "howling",
+   "examples": [
+    {
+     "en": "The howling wind kept us awake all night.",
+     "zh": "呼嘯的風讓我們整夜無法入睡。"
+    },
+    {
+     "en": "We heard the howling of wolves in the distance.",
+     "zh": "我們聽到遠處狼群的嚎叫聲。"
+    }
+   ]
+  },
+  {
+   "headword": "repeating",
+   "examples": [
+    {
+     "en": "The repeating pattern on the wallpaper looked elegant.",
+     "zh": "壁紙上重複的圖案看起來很優雅。"
+    },
+    {
+     "en": "He kept repeating the same mistake despite the warnings.",
+     "zh": "儘管有警告，他還是一直重複同樣的錯誤。"
+    }
+   ]
+  },
+  {
+   "headword": "screaming",
+   "examples": [
+    {
+     "en": "The screaming child finally calmed down after getting his toy.",
+     "zh": "那個尖叫的孩子拿到玩具後終於平靜下來。"
+    },
+    {
+     "en": "It was a screaming success, with everyone cheering for the performance.",
+     "zh": "那是一次巨大的成功，每個人都為表演歡呼。"
+    }
+   ]
+  },
+  {
+   "headword": "hated",
+   "examples": [
+    {
+     "en": "The hated policy was finally abolished after years of protest.",
+     "zh": "那項令人憎恨的政策在多年抗議後終於被廢除。"
+    },
+    {
+     "en": "He felt hated by his classmates because of the rumor.",
+     "zh": "因為那個謠言，他覺得被同學們討厭。"
+    }
+   ]
+  },
+  {
+   "headword": "condemned",
+   "examples": [
+    {
+     "en": "The condemned building was scheduled for demolition next month.",
+     "zh": "那棟被宣告危樓的建築預定下個月拆除。"
+    },
+    {
+     "en": "The condemned prisoner waited for the final verdict.",
+     "zh": "被定罪的囚犯等待最終判決。"
+    }
+   ]
+  },
+  {
+   "headword": "resigned",
+   "examples": [
+    {
+     "en": "She gave a resigned sigh and accepted the outcome.",
+     "zh": "她無奈地嘆了口氣，接受了結果。"
+    },
+    {
+     "en": "The resigned manager handed over his duties to his successor.",
+     "zh": "已辭職的經理將職責移交給繼任者。"
+    }
+   ]
+  },
+  {
+   "headword": "practiced",
+   "examples": [
+    {
+     "en": "Her practiced hand moved swiftly across the canvas.",
+     "zh": "她熟練的手在畫布上快速移動。"
+    },
+    {
+     "en": "He is a practiced speaker who never seems nervous.",
+     "zh": "他是一位經驗豐富的演講者，似乎從不緊張。"
+    }
+   ]
+  },
+  {
+   "headword": "stepping",
+   "examples": [
+    {
+     "en": "The stepping stones across the stream were slippery after the rain.",
+     "zh": "雨後溪流上的踏腳石很滑。"
+    },
+    {
+     "en": "She is stepping down from her position next month.",
+     "zh": "她下個月將辭去職位。"
+    }
+   ]
+  },
+  {
+   "headword": "sticking",
+   "examples": [
+    {
+     "en": "The sticking plaster came off after a few hours.",
+     "zh": "OK繃幾小時後就脫落了。"
+    },
+    {
+     "en": "He had a sticking point in his argument that was hard to refute.",
+     "zh": "他的論點中有一個難以反駁的關鍵點。"
+    }
+   ]
+  },
+  {
+   "headword": "charged",
+   "examples": [
+    {
+     "en": "The charged atmosphere in the room made everyone tense.",
+     "zh": "房間裡緊張的氣氛讓每個人都緊繃起來。"
+    },
+    {
+     "en": "Make sure the battery is fully charged before the trip.",
+     "zh": "旅行前請確保電池已充滿電。"
+    }
+   ]
+  },
+  {
+   "headword": "shaking",
+   "examples": [
+    {
+     "en": "The shaking of the ground signaled an approaching earthquake.",
+     "zh": "地面的震動預示著地震即將來臨。"
+    },
+    {
+     "en": "He couldn't stop the shaking in his hands after the accident.",
+     "zh": "事故發生後，他的手抖個不停。"
+    }
+   ]
+  },
+  {
+   "headword": "lent",
+   "examples": [
+    {
+     "en": "She lent me her umbrella when it started to rain.",
+     "zh": "開始下雨時，她把她的傘借給了我。"
+    },
+    {
+     "en": "During Lent, many Christians fast or give up certain foods.",
+     "zh": "四旬齋期間，許多基督徒禁食或戒除某些食物。"
+    }
+   ]
+  },
+  {
+   "headword": "hitting",
+   "examples": [
+    {
+     "en": "The constant hitting of the hammer made it hard to concentrate.",
+     "zh": "鐵鎚不斷的敲擊聲讓人難以專心。"
+    },
+    {
+     "en": "Hitting the ball too hard can cause it to fly over the fence.",
+     "zh": "把球打得太用力可能會讓球飛過圍欄。"
+    }
+   ]
+  },
+  {
+   "headword": "trying",
+   "examples": [
+    {
+     "en": "The long delay at the airport was extremely trying for everyone.",
+     "zh": "機場的長時間延誤對每個人來說都極度難熬。"
+    },
+    {
+     "en": "She found the constant noise from the construction site very trying.",
+     "zh": "她覺得建築工地不斷傳來的噪音非常惱人。"
+    }
+   ]
+  },
+  {
+   "headword": "betrayed",
+   "examples": [
+    {
+     "en": "He felt betrayed when he learned that his friend had lied to him.",
+     "zh": "當他得知朋友對他撒謊時，他感到被背叛了。"
+    },
+    {
+     "en": "Her nervous smile betrayed how anxious she really was.",
+     "zh": "她緊張的微笑洩露了她內心真正的焦慮。"
+    }
+   ]
+  },
+  {
+   "headword": "graduated",
+   "examples": [
+    {
+     "en": "She graduated from college with a degree in economics.",
+     "zh": "她大學畢業，取得經濟學學位。"
+    },
+    {
+     "en": "The graduated cylinder is used to measure precise volumes of liquid.",
+     "zh": "量筒是用來測量精確液體體積的。"
+    }
+   ]
+  },
+  {
+   "headword": "identified",
+   "examples": [
+    {
+     "en": "The police identified the suspect from the security footage.",
+     "zh": "警方從監視器畫面中辨識出嫌疑犯。"
+    },
+    {
+     "en": "The identified problem was fixed before the software was released.",
+     "zh": "被確認的問題在軟體發布前就已修復。"
+    }
+   ]
+  },
+  {
+   "headword": "released",
+   "examples": [
+    {
+     "en": "The new movie will be released in theaters next month.",
+     "zh": "這部新電影將於下個月在戲院上映。"
+    },
+    {
+     "en": "The prisoner was released after serving his sentence.",
+     "zh": "那名囚犯服刑期滿後被釋放了。"
+    }
+   ]
+  },
+  {
+   "headword": "stressed",
+   "examples": [
+    {
+     "en": "She felt very stressed before the big exam.",
+     "zh": "大考前她感到壓力很大。"
+    },
+    {
+     "en": "The stressed syllable in 'banana' is the second one.",
+     "zh": "「banana」這個字的重音音節是第二個。"
+    }
+   ]
+  },
+  {
+   "headword": "begging",
+   "examples": [
+    {
+     "en": "The dog sat by the table, begging for scraps.",
+     "zh": "那隻狗坐在桌邊，乞求一些碎屑。"
+    },
+    {
+     "en": "Begging on the streets is illegal in some cities.",
+     "zh": "在某些城市，在街上乞討是違法的。"
+    }
+   ]
+  },
+  {
+   "headword": "pressed",
+   "examples": [
+    {
+     "en": "He looked very pressed for time as he rushed to the meeting.",
+     "zh": "他趕著去開會時，看起來時間非常緊迫。"
+    },
+    {
+     "en": "Her shirt was neatly pressed and hung in the closet.",
+     "zh": "她的襯衫被熨得整整齊齊，掛在衣櫥裡。"
+    }
+   ]
+  },
+  {
+   "headword": "spilled",
+   "examples": [
+    {
+     "en": "I accidentally spilled coffee on my keyboard.",
+     "zh": "我不小心把咖啡灑在鍵盤上了。"
+    },
+    {
+     "en": "The milk spilled all over the floor when the bottle tipped over.",
+     "zh": "瓶子翻倒時，牛奶灑得滿地都是。"
+    }
+   ]
+  },
+  {
+   "headword": "stripped",
+   "examples": [
+    {
+     "en": "The room was stripped of all its furniture before painting.",
+     "zh": "油漆前，房間裡所有的家具都被清空了。"
+    },
+    {
+     "en": "He stripped off his wet clothes and jumped into the shower.",
+     "zh": "他脫掉濕衣服，跳進淋浴間。"
+    }
+   ]
+  },
+  {
+   "headword": "peeled",
+   "examples": [
+    {
+     "en": "She peeled the apple and sliced it into pieces.",
+     "zh": "她削了蘋果皮，並把它切成片。"
+    },
+    {
+     "en": "The peeled shrimp were ready to be cooked.",
+     "zh": "剝了殼的蝦子已經準備好可以烹煮了。"
+    }
+   ]
+  },
+  {
+   "headword": "matched",
+   "examples": [
+    {
+     "en": "Her skills matched the job requirements perfectly.",
+     "zh": "她的技能與這份工作的要求完美匹配。"
+    },
+    {
+     "en": "The two players were well matched, and the game ended in a tie.",
+     "zh": "這兩位選手勢均力敵，比賽最終以平局收場。"
+    }
+   ]
+  },
+  {
+   "headword": "feared",
+   "examples": [
+    {
+     "en": "Many feared that the storm would cause serious damage.",
+     "zh": "許多人擔心這場暴風雨會造成嚴重損害。"
+    },
+    {
+     "en": "He was feared by his opponents for his aggressive playing style.",
+     "zh": "他因為攻擊性的打法而讓對手畏懼。"
+    }
+   ]
+  },
+  {
+   "headword": "blended",
+   "examples": [
+    {
+     "en": "The smoothie is made from blended fruits and yogurt.",
+     "zh": "這杯冰沙是由混合水果和優格製成的。"
+    },
+    {
+     "en": "Their blended family includes children from both previous marriages.",
+     "zh": "他們的重組家庭包括雙方前段婚姻的孩子。"
+    }
+   ]
+  },
+  {
+   "headword": "chipped",
+   "examples": [
+    {
+     "en": "The edge of the mug is chipped, so be careful.",
+     "zh": "這個馬克杯的邊緣有缺口，所以要小心。"
+    },
+    {
+     "en": "He chipped a tooth while playing basketball.",
+     "zh": "他打籃球時撞斷了一顆牙齒。"
+    }
+   ]
+  },
+  {
+   "headword": "peeling",
+   "examples": [
+    {
+     "en": "The paint on the old wall is peeling off.",
+     "zh": "舊牆上的油漆正在剝落。"
+    },
+    {
+     "en": "Peeling potatoes takes a lot of time if you don't have a peeler.",
+     "zh": "如果沒有削皮器，削馬鈴薯皮會花很多時間。"
+    }
+   ]
+  },
+  {
+   "headword": "rolled",
+   "examples": [
+    {
+     "en": "She rolled the dough into a thin circle.",
+     "zh": "她把麵團擀成一個薄圓片。"
+    },
+    {
+     "en": "The ball rolled down the hill and into the pond.",
+     "zh": "球滾下山坡，掉進了池塘。"
+    }
+   ]
+  },
+  {
+   "headword": "blown",
+   "examples": [
+    {
+     "en": "The blown glass vase shattered when it fell off the table.",
+     "zh": "那個吹製的玻璃花瓶從桌上掉下來時摔碎了。"
+    },
+    {
+     "en": "After the long race, she was blown and could barely speak.",
+     "zh": "長跑之後，她喘不過氣來，幾乎說不出話。"
+    }
+   ]
+  },
+  {
+   "headword": "whistling",
+   "examples": [
+    {
+     "en": "The whistling of the wind through the trees kept me awake all night.",
+     "zh": "風穿過樹林的呼嘯聲讓我整夜睡不著。"
+    },
+    {
+     "en": "He was whistling a cheerful tune while washing the dishes.",
+     "zh": "他一邊洗碗一邊吹著輕快的曲調。"
+    }
+   ]
+  },
+  {
+   "headword": "collapsed",
+   "examples": [
+    {
+     "en": "The old wooden bridge collapsed under the weight of the truck.",
+     "zh": "那座舊木橋在卡車的重壓下坍塌了。"
+    },
+    {
+     "en": "After the marathon, he collapsed onto the grass, exhausted.",
+     "zh": "馬拉松結束後，他筋疲力盡地倒在草地上。"
+    }
+   ]
+  },
+  {
+   "headword": "departed",
+   "examples": [
+    {
+     "en": "She often thinks about her departed grandmother during the holidays.",
+     "zh": "每逢佳節，她常常想起已故的祖母。"
+    },
+    {
+     "en": "The departed train left a cloud of dust behind it.",
+     "zh": "離去的火車在身後留下一片塵土。"
+    }
+   ]
+  },
+  {
+   "headword": "hurried",
+   "examples": [
+    {
+     "en": "He gave a hurried apology and rushed out the door.",
+     "zh": "他匆匆道了歉就衝出門去。"
+    },
+    {
+     "en": "The hurried preparations for the party left everyone stressed.",
+     "zh": "倉促的派對準備工作讓每個人都壓力很大。"
+    }
+   ]
+  },
+  {
+   "headword": "vanished",
+   "examples": [
+    {
+     "en": "The magician made the rabbit vanished before the audience's eyes.",
+     "zh": "魔術師在觀眾眼前讓兔子消失了。"
+    },
+    {
+     "en": "The vanished civilization left behind only a few stone ruins.",
+     "zh": "那個消失的文明只留下幾處石頭廢墟。"
+    }
+   ]
+  },
+  {
+   "headword": "disguised",
+   "examples": [
+    {
+     "en": "The prince disguised himself as a peasant to walk among the people.",
+     "zh": "王子裝扮成農民在百姓中走動。"
+    },
+    {
+     "en": "Her disguised voice on the phone made it hard to recognize her.",
+     "zh": "她在電話中偽裝的聲音讓人很難認出她。"
+    }
+   ]
+  },
+  {
+   "headword": "curling",
+   "examples": [
+    {
+     "en": "Curling is a popular winter sport in Canada and Scotland.",
+     "zh": "冰壺運動在加拿大和蘇格蘭是受歡迎的冬季運動。"
+    },
+    {
+     "en": "The curling iron helped her create beautiful curls for the party.",
+     "zh": "捲髮器幫她為派對做出漂亮的捲髮。"
+    }
+   ]
+  },
+  {
+   "headword": "sprained",
+   "examples": [
+    {
+     "en": "She sprained her ankle while playing basketball and had to rest for a week.",
+     "zh": "她打籃球時扭傷了腳踝，必須休息一週。"
+    },
+    {
+     "en": "The sprained wrist made it difficult for him to write.",
+     "zh": "扭傷的手腕讓他寫字很困難。"
+    }
+   ]
+  },
+  {
+   "headword": "renovated",
+   "examples": [
+    {
+     "en": "The renovated library now has brighter reading areas and more seats.",
+     "zh": "翻新後的圖書館現在有更明亮的閱讀區和更多座位。"
+    },
+    {
+     "en": "They renovated the old house and turned it into a cozy bed and breakfast.",
+     "zh": "他們整修了那棟老房子，把它變成舒適的民宿。"
+    }
+   ]
+  },
+  {
+   "headword": "shaved",
+   "examples": [
+    {
+     "en": "He shaved his beard for the first time in years.",
+     "zh": "他多年來第一次刮掉鬍子。"
+    },
+    {
+     "en": "The shaved ice dessert is perfect for a hot summer day.",
+     "zh": "刨冰甜點是炎熱夏日的最佳選擇。"
+    }
+   ]
+  },
+  {
+   "headword": "chopping",
+   "examples": [
+    {
+     "en": "She was chopping vegetables in the kitchen when the phone rang.",
+     "zh": "電話響時，她正在廚房切菜。"
+    },
+    {
+     "en": "The chopping board was covered with pieces of onion and carrot.",
+     "zh": "砧板上滿是洋蔥和胡蘿蔔的碎塊。"
+    }
+   ]
+  },
+  {
+   "headword": "destroyed",
+   "examples": [
+    {
+     "en": "The earthquake destroyed many buildings in the small town.",
+     "zh": "地震摧毀了這個小鎮的許多建築物。"
+    },
+    {
+     "en": "The destroyed documents were no longer readable.",
+     "zh": "那些被銷毀的文件已經無法閱讀了。"
+    }
+   ]
+  },
+  {
+   "headword": "escaping",
+   "examples": [
+    {
+     "en": "The escaping prisoner was caught by the police within hours.",
+     "zh": "逃脫的囚犯在幾小時內就被警方抓獲。"
+    },
+    {
+     "en": "Escaping the city for a weekend in the mountains sounds wonderful.",
+     "zh": "逃離城市到山裡度過週末聽起來很棒。"
+    }
+   ]
+  },
+  {
+   "headword": "revived",
+   "examples": [
+    {
+     "en": "The revived plants grew quickly after the rain.",
+     "zh": "重新煥發生機的植物在雨後快速生長。"
+    },
+    {
+     "en": "The old theater was revived and now hosts many performances.",
+     "zh": "那座老劇院被重新啟用，現在舉辦許多演出。"
+    }
+   ]
+  },
+  {
+   "headword": "picking",
+   "examples": [
+    {
+     "en": "Picking apples in the orchard is a fun family activity in autumn.",
+     "zh": "秋天在果園裡採蘋果是一項有趣的家庭活動。"
+    },
+    {
+     "en": "The picking of the coffee beans requires careful hands.",
+     "zh": "採摘咖啡豆需要細心的雙手。"
+    }
+   ]
+  },
+  {
+   "headword": "offered",
+   "examples": [
+    {
+     "en": "She offered to help me carry the heavy boxes.",
+     "zh": "她主動提出幫我搬那些沉重的箱子。"
+    },
+    {
+     "en": "The company offered him a higher salary to stay.",
+     "zh": "公司提供更高的薪水來挽留他。"
+    }
+   ]
+  },
+  {
+   "headword": "wearing",
+   "examples": [
+    {
+     "en": "She was wearing a beautiful red dress at the party.",
+     "zh": "她在派對上穿著一件漂亮的紅色洋裝。"
+    },
+    {
+     "en": "The wearing noise from the construction site gave me a headache.",
+     "zh": "建築工地令人疲憊的噪音讓我頭痛。"
+    }
+   ]
+  },
+  {
+   "headword": "sending",
+   "examples": [
+    {
+     "en": "Sending emails is the fastest way to reach our customers.",
+     "zh": "發送電子郵件是聯繫客戶最快的方式。"
+    },
+    {
+     "en": "The sending of the package was delayed due to bad weather.",
+     "zh": "由於天氣惡劣，包裹的寄送被延誤了。"
+    }
+   ]
+  },
+  {
+   "headword": "decided",
+   "examples": [
+    {
+     "en": "She has a decided advantage in the competition because of her experience.",
+     "zh": "由於經驗豐富，她在比賽中有明顯的優勢。"
+    },
+    {
+     "en": "There was a decided change in his attitude after the meeting.",
+     "zh": "會議之後，他的態度有明顯的改變。"
+    }
+   ]
+  },
+  {
+   "headword": "donated",
+   "examples": [
+    {
+     "en": "They donated a large sum of money to the local charity.",
+     "zh": "他們向當地的慈善機構捐了一大筆錢。"
+    },
+    {
+     "en": "He donated blood regularly when he was in college.",
+     "zh": "他大學時定期捐血。"
+    }
+   ]
+  },
+  {
+   "headword": "constructed",
+   "examples": [
+    {
+     "en": "The new bridge was constructed in just two years.",
+     "zh": "這座新橋只花了兩年就建造完成。"
+    },
+    {
+     "en": "The committee constructed a detailed plan for the project.",
+     "zh": "委員會為這個計畫擬定了一份詳細的計畫。"
+    }
+   ]
+  },
+  {
+   "headword": "spoken",
+   "examples": [
+    {
+     "en": "Her spoken English has improved a lot since she started practicing daily.",
+     "zh": "自從她開始每天練習後，她的英語口說進步了很多。"
+    },
+    {
+     "en": "The agreement was only spoken, not written down.",
+     "zh": "這個協議只是口頭上的，並沒有寫下來。"
+    }
+   ]
+  },
+  {
+   "headword": "talking",
+   "examples": [
+    {
+     "en": "The talking in the library disturbed the students who were studying.",
+     "zh": "圖書館裡的談話聲打擾了正在讀書的學生。"
+    },
+    {
+     "en": "We need to have a serious talking about your future plans.",
+     "zh": "我們需要認真談談你未來的計畫。"
+    }
+   ]
+  },
+  {
+   "headword": "serving",
+   "examples": [
+    {
+     "en": "This recipe makes four servings of soup.",
+     "zh": "這個食譜可以做出四份湯。"
+    },
+    {
+     "en": "The serving of the summons took place at his office.",
+     "zh": "傳票的送達是在他的辦公室進行的。"
+    }
+   ]
+  },
+  {
+   "headword": "bullying",
+   "examples": [
+    {
+     "en": "The school has a zero-tolerance policy for bullying.",
+     "zh": "學校對霸凌採取零容忍政策。"
+    },
+    {
+     "en": "He was accused of bullying his younger classmates.",
+     "zh": "他被指控欺負比他年幼的同學。"
+    }
+   ]
+  },
+  {
+   "headword": "checked",
+   "examples": [
+    {
+     "en": "She wore a checked shirt to the picnic.",
+     "zh": "她穿了一件格子襯衫去野餐。"
+    },
+    {
+     "en": "The tablecloth had a red and white checked pattern.",
+     "zh": "桌布有紅白相間的格子圖案。"
+    }
+   ]
+  },
+  {
+   "headword": "rejected",
+   "examples": [
+    {
+     "en": "After being rejected by his girlfriend, he felt completely lost.",
+     "zh": "被女友拒絕後，他感到完全迷失。"
+    },
+    {
+     "en": "The committee rejected the proposal because it was too expensive.",
+     "zh": "委員會拒絕了該提案，因為它太昂貴了。"
+    }
+   ]
+  },
+  {
+   "headword": "shaving",
+   "examples": [
+    {
+     "en": "He cut himself while shaving this morning.",
+     "zh": "他今天早上刮鬍子時割傷了自己。"
+    },
+    {
+     "en": "The carpenter swept up the wood shavings from the floor.",
+     "zh": "木匠掃起了地板上的木屑。"
+    }
+   ]
+  },
+  {
+   "headword": "stalking",
+   "examples": [
+    {
+     "en": "The tiger was stalking its prey through the tall grass.",
+     "zh": "老虎在高草叢中悄悄跟蹤獵物。"
+    },
+    {
+     "en": "She felt uneasy when she realized someone was stalking her.",
+     "zh": "當她意識到有人在跟蹤她時，感到不安。"
+    }
+   ]
+  },
+  {
+   "headword": "whispered",
+   "examples": [
+    {
+     "en": "She whispered a secret into my ear.",
+     "zh": "她在我耳邊低聲說了一個秘密。"
+    },
+    {
+     "en": "The doctor spoke in a whispered tone to avoid waking the patient.",
+     "zh": "醫生用低語的語氣說話，以免吵醒病人。"
+    }
+   ]
+  },
+  {
+   "headword": "staying",
+   "examples": [
+    {
+     "en": "They are staying at a hotel near the beach.",
+     "zh": "他們住在海灘附近的一家旅館。"
+    },
+    {
+     "en": "Staying calm during the emergency helped everyone feel safer.",
+     "zh": "在緊急情況下保持冷靜讓大家感到更安全。"
+    }
+   ]
+  },
+  {
+   "headword": "cheating",
+   "examples": [
+    {
+     "en": "He was accused of cheating on the exam.",
+     "zh": "他被指控考試作弊。"
+    },
+    {
+     "en": "She discovered that her husband had been cheating on her.",
+     "zh": "她發現丈夫一直對她不忠。"
+    }
+   ]
+  },
+  {
+   "headword": "sought",
+   "examples": [
+    {
+     "en": "The police sought the missing child for hours.",
+     "zh": "警察尋找失蹤兒童好幾個小時。"
+    },
+    {
+     "en": "He sought advice from his mentor before making a decision.",
+     "zh": "他在做決定前向導師尋求建議。"
+    }
+   ]
+  },
+  {
+   "headword": "arranged",
+   "examples": [
+    {
+     "en": "The books were arranged neatly on the shelf.",
+     "zh": "書本整齊地排列在書架上。"
+    },
+    {
+     "en": "She arranged a surprise party for her best friend.",
+     "zh": "她為最好的朋友安排了一場驚喜派對。"
+    }
+   ]
+  },
+  {
+   "headword": "laid",
+   "examples": [
+    {
+     "en": "He laid the documents on the desk.",
+     "zh": "他把文件放在桌上。"
+    },
+    {
+     "en": "The foundation of the house was laid last week.",
+     "zh": "房子的地基上週鋪設好了。"
+    }
+   ]
+  },
+  {
+   "headword": "stopped",
+   "examples": [
+    {
+     "en": "The car stopped suddenly at the red light.",
+     "zh": "車子在紅燈前突然停下來。"
+    },
+    {
+     "en": "My nose is stopped up because of a cold.",
+     "zh": "因為感冒，我的鼻子塞住了。"
+    }
+   ]
+  },
+  {
+   "headword": "dropped",
+   "examples": [
+    {
+     "en": "She dropped her keys on the floor.",
+     "zh": "她把鑰匙掉在地板上。"
+    },
+    {
+     "en": "The temperature dropped sharply last night.",
+     "zh": "昨晚氣溫驟降。"
+    }
+   ]
+  },
+  {
+   "headword": "despised",
+   "examples": [
+    {
+     "en": "He despised people who were cruel to animals.",
+     "zh": "他鄙視那些虐待動物的人。"
+    },
+    {
+     "en": "The despised ruler was eventually overthrown.",
+     "zh": "那個被鄙視的統治者最終被推翻了。"
+    }
+   ]
+  },
+  {
+   "headword": "facing",
+   "examples": [
+    {
+     "en": "The house has a brick facing on the front wall.",
+     "zh": "這棟房子的前牆有磚砌飾面。"
+    },
+    {
+     "en": "She added a lace facing to the neckline of the dress.",
+     "zh": "她在洋裝的領口加了一圈蕾絲貼邊。"
+    }
+   ]
+  },
+  {
+   "headword": "dyed",
+   "examples": [
+    {
+     "en": "She dyed her hair bright pink for the concert.",
+     "zh": "她為了演唱會把頭髮染成亮粉色。"
+    },
+    {
+     "en": "The fabric was dyed a deep blue color.",
+     "zh": "這塊布料被染成深藍色。"
+    }
+   ]
+  },
+  {
+   "headword": "invited",
+   "examples": [
+    {
+     "en": "They invited all their friends to the wedding.",
+     "zh": "他們邀請了所有朋友參加婚禮。"
+    },
+    {
+     "en": "His careless remarks invited criticism from the audience.",
+     "zh": "他不謹慎的言論招致了觀眾的批評。"
+    }
+   ]
+  },
+  {
+   "headword": "dissolved",
+   "examples": [
+    {
+     "en": "The sugar dissolved quickly in the hot tea.",
+     "zh": "糖在熱茶中迅速溶解。"
+    },
+    {
+     "en": "The tablet should be dissolved in water before drinking.",
+     "zh": "藥片應先溶於水再飲用。"
+    }
+   ]
+  },
+  {
+   "headword": "swearing",
+   "examples": [
+    {
+     "en": "The judge reminded the witness that swearing to tell the truth is a serious legal duty.",
+     "zh": "法官提醒證人，宣誓說實話是一項嚴肅的法律義務。"
+    },
+    {
+     "en": "Loud swearing from the next room made everyone at the dinner table uncomfortable.",
+     "zh": "隔壁房間傳來的大聲咒罵讓餐桌上所有人都覺得不自在。"
+    }
+   ]
+  }
+ ]
+}

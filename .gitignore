@@ -47,3 +47,6 @@ next-env.d.ts
 # 編輯器／工具的本機設定
 .cursor/
 .impeccable/config.local.json
+
+# 臨時的查詢／除錯腳本
+/scripts/tmp-check/
