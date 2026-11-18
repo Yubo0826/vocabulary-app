@@ -45,6 +45,19 @@
   --hard: #c0601d;
   --good: #2f8a55;
   --easy: #4263eb;
+
+  /* 筆記的文字色與底色（固定色盤，見 src/lib/note-color.ts） */
+  --note-red: #c62828;
+  --note-orange: #b45309;
+  --note-green: #2e7d32;
+  --note-blue: #1f5fd1;
+  --note-purple: #8e24aa;
+  --note-gray: #6b6b78;
+  --note-bg-yellow: #fff1a8;
+  --note-bg-green: #d5f2dc;
+  --note-bg-blue: #dbe6ff;
+  --note-bg-pink: #fddde8;
+  --note-bg-gray: #e8e7ef;
 }
 
 :root.dark {
@@ -75,6 +88,18 @@
   --hard: #f6b37f;
   --good: #8fd6a8;
   --easy: #b9c3ff;
+
+  --note-red: #ff8a80;
+  --note-orange: #ffb74d;
+  --note-green: #81c995;
+  --note-blue: #8ab4f8;
+  --note-purple: #d7a8ff;
+  --note-gray: #a9a9b6;
+  --note-bg-yellow: #5a4b00;
+  --note-bg-green: #1e4a2b;
+  --note-bg-blue: #263a66;
+  --note-bg-pink: #5c2540;
+  --note-bg-gray: #3c3c46;
 
   color-scheme: dark;
 }
@@ -183,11 +208,71 @@
     text-decoration: underline;
     text-underline-offset: 2px;
   }
-  /* 以下語法沒有輸入快捷，只在貼上或舊資料中出現，樣式從簡 */
-  .note-content :is(h1, h2, h3, h4, h5, h6) {
-    font-size: 1em;
+  /* 標題：編輯器裡是原本的 h1～h6；顯示端（note-content.tsx）降成 h3／h4，用 class 標出大小 */
+  .note-content :is(.note-h-lg, .note-h-sm),
+  .note-content.ProseMirror :is(h1, h2, h3, h4, h5, h6) {
+    font-weight: 700;
+    line-height: 1.35;
+  }
+  .note-content .note-h-lg,
+  .note-content.ProseMirror :is(h1, h2) {
+    font-size: 1.2em;
+  }
+  .note-content .note-h-sm,
+  .note-content.ProseMirror :is(h3, h4, h5, h6) {
+    font-size: 1.05em;
+  }
+  .note-content > * + :is(h1, h2, h3, h4, h5, h6) {
+    margin-top: 0.9em; /* 和上一段拉開，看得出分節 */
+  }
+  /* 表格：顯示端外層是 .note-table，編輯器裡是 Tiptap 的 .tableWrapper，都可以橫向捲動 */
+  .note-content :is(.note-table, .tableWrapper) {
+    overflow-x: auto;
+  }
+  .note-content table {
+    border-collapse: collapse;
+    min-width: 100%;
+  }
+  .note-content :is(th, td) {
+    position: relative; /* 編輯器選取儲存格時的底色要定位在格子裡 */
+    min-width: 4em;
+    border: 1px solid var(--border);
+    padding: 0.3em 0.6em;
+    text-align: left;
+    vertical-align: top;
+  }
+  .note-content th {
+    background: var(--muted);
     font-weight: 600;
   }
+  .note-content :is(th, td) > p + p {
+    margin-top: 0;
+  }
+  .note-content .selectedCell::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: color-mix(in oklab, var(--primary) 15%, transparent);
+  }
+  /* 文字色與底色：class 由 note-color.ts 的 noteColorClass() 產生 */
+  .note-c-red { color: var(--note-red); }
+  .note-c-orange { color: var(--note-orange); }
+  .note-c-green { color: var(--note-green); }
+  .note-c-blue { color: var(--note-blue); }
+  .note-c-purple { color: var(--note-purple); }
+  .note-c-gray { color: var(--note-gray); }
+  :is(.note-bg-yellow, .note-bg-green, .note-bg-blue, .note-bg-pink, .note-bg-gray) {
+    border-radius: 0.2em;
+    padding: 0 0.1em;
+    box-decoration-break: clone; /* 換行時每行都有完整的圓角 */
+  }
+  .note-bg-yellow { background: var(--note-bg-yellow); }
+  .note-bg-green { background: var(--note-bg-green); }
+  .note-bg-blue { background: var(--note-bg-blue); }
+  .note-bg-pink { background: var(--note-bg-pink); }
+  .note-bg-gray { background: var(--note-bg-gray); }
+  /* 以下語法沒有輸入快捷，只在貼上或舊資料中出現，樣式從簡 */
   .note-content blockquote {
     border-left: 3px solid var(--border);
     padding-left: 0.75em;

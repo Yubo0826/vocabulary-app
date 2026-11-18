@@ -236,7 +236,7 @@ describe("筆記和收藏無關", () => {
 
   test("listNotes：列出自己所有的筆記（不論是否收藏），可搜尋筆記與單字", async () => {
     await data.setNote(userA, "apple", "紅色的 **水果**");
-    await data.setNote(userA, "banana", "100% 黃色");
+    await data.setNote(userA, "banana", "100% {bg-yellow|黃}色\n\n| 顏色 |\n| --- |\n| {red\\|熟}透 |");
     await data.setNote(userB, "apple", "B 的筆記");
     const words = async (q?: string) => (await data.listNotes(userA, { q, sort: "alpha" })).map((n) => n.headword);
 
@@ -244,6 +244,9 @@ describe("筆記和收藏無關", () => {
     assert.deepEqual(await words("水果"), ["apple"], "比對筆記內容");
     assert.deepEqual(await words("BAN"), ["banana"], "比對單字，不分大小寫");
     assert.deepEqual(await words("%"), ["banana"], "% 照字面比對");
+    assert.deepEqual(await words("黃色"), ["banana"], "略過顏色語法比對文字");
+    assert.deepEqual(await words("熟透"), ["banana"], "表格裡被跳脫的顏色語法也略過");
+    assert.deepEqual(await words("red"), [], "顏色名稱不算筆記內容");
     assert.deepEqual(await words("B 的"), [], "看不到別人的筆記");
 
     await unsave(userA, "apple");

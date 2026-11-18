@@ -7,8 +7,19 @@ export function noteToPlainText(markdown: string): string {
   const escaped: string[] = [];
   const protect = (_: string, ch: string) => String.fromCharCode(0xe000 + escaped.push(ch) - 1);
 
-  return markdown
+  // 顏色語法 {red|文字}、{bg-yellow|文字} 可以互相包住，由內往外拆（見 note-color.ts）；在表格裡 | 會被跳脫成 \|
+  let text = markdown;
+  for (let prev = ""; prev !== text; ) {
+    prev = text;
+    text = text.replace(/\{(?:bg-)?[a-z]+\\?\|([^{}]*)\}/g, "$1");
+  }
+
+  return text
     .replace(/\\([\\`*_[\]()#+\-.!~<>|{}])/g, protect)
+    .replace(/<\/?(?:strong|em)>/g, "") // 格式重疊時存成的 HTML 標籤（見 note-markdown.ts）
+    .replace(/<br\s*\/?>/gi, " ") // 表格儲存格裡的換行
+    .replace(/^[ \t]*\|?(?:[ \t]*:?-{3,}:?[ \t]*\|)+[ \t]*:?-*:?[ \t]*$/gm, "") // 表格的分隔列 | --- | --- |
+    .replace(/^[ \t]*\|(.*)\|[ \t]*$/gm, (_, cells: string) => cells.split("|").map((c) => c.trim()).join("　")) // 表格列：儲存格用全形空白隔開
     .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1") // [文字](網址) → 文字
     .replace(/^\s*(?:[-*+]|\d+\.|#{1,6}|>)\s+/gm, "") // 清單、標題、引言開頭
     .replace(/^```.*$/gm, "")

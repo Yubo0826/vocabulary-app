@@ -406,7 +406,17 @@ export async function listNotes(userId: string, options: { q?: string | null; so
       and(
         eq(wordNotes.userId, userId),
         isNull(wordNotes.deletedAt),
-        pattern ? or(ilike(wordNotes.note, pattern), ilike(wordNotes.headword, pattern)) : undefined,
+        pattern
+          ? or(
+              // 去掉顏色語法 `{red|…}` 再比對（見 lib/note-color.ts），搜 red、blue 這類字才不會命中所有上色的筆記。
+              // 表格裡的 | 會被跳脫成 \|，先換回來；反斜線用 chr(92) 表示，免得在 SQL 字串裡被誤解
+              ilike(
+                sql`regexp_replace(replace(${wordNotes.note}, chr(92) || '|', '|'), '[{](bg-)?[a-z]+[|]|[}]', '', 'g')`,
+                pattern,
+              ),
+              ilike(wordNotes.headword, pattern),
+            )
+          : undefined,
       ),
     )
     .orderBy(...(sort === "alpha" ? [asc(wordNotes.headword)] : [desc(wordNotes.updatedAt), asc(wordNotes.headword)]));
