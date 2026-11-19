@@ -58,7 +58,8 @@ function renderNode(node: JSONContent, key: number): ReactNode {
     case "text":
       return <Fragment key={key}>{withMarks(node.text ?? "", node.marks)}</Fragment>;
     case "paragraph":
-      return <p key={key}>{children}</p>;
+      // 空段落（編輯器裡多按一次 Enter 的空行）放一個 <br> 撐出一行高，與編輯器一致；否則 <p></p> 高度為 0
+      return <p key={key}>{children?.length ? children : <br />}</p>;
     case "bulletList":
       return <ul key={key}>{children}</ul>;
     case "orderedList":
