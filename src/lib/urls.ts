@@ -27,3 +27,6 @@ export const tatoebaSentenceUrl = (id: number) => `https://tatoeba.org/zh-tw/sen
 
 export const tatoebaUserUrl = (username: string) =>
   `https://tatoeba.org/zh-tw/user/profile/${encodeURIComponent(username)}`;
+
+/** Moji 擴充元件在 Chrome 線上應用程式商店的頁面 */
+export const CHROME_STORE_URL = "https://chromewebstore.google.com/detail/emnjbfcnkbnnlfcagocgkjjmlcijjflc";

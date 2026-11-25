@@ -99,8 +99,20 @@ const STEPS = [
 
 const DETAILS = [
   { icon: Cloud, title: "雲端同步", text: "手機、電腦接著用，手機可以加入主畫面。" },
-  { icon: MousePointerClick, title: "閱讀時查字", text: "Chrome 擴充元件：讀英文網頁時反白＋Alt 就能查。" },
-  { icon: BookOpenCheck, title: "出處清楚", text: "釋義與例句來自開放授權的字典與例句庫，逐筆標示來源。", href: "/about" },
+  {
+    icon: MousePointerClick,
+    title: "閱讀時查字",
+    text: "Chrome 擴充元件：讀英文網頁時反白＋Alt 就能查。",
+    href: "/extension",
+    linkText: "了解擴充元件",
+  },
+  {
+    icon: BookOpenCheck,
+    title: "出處清楚",
+    text: "釋義與例句來自開放授權的字典與例句庫，逐筆標示來源。",
+    href: "/about",
+    linkText: "看來源",
+  },
 ];
 
 /** 首頁搜尋列下方的介紹：給誰用、查字 → 收藏 → 複習的流程、其他特色。登入後不顯示 */
@@ -137,7 +149,7 @@ async function Intro() {
       </ol>
 
       <ul className="grid gap-5 border-t pt-8 sm:grid-cols-3 sm:gap-6">
-        {DETAILS.map(({ icon: Icon, title, text, href }) => (
+        {DETAILS.map(({ icon: Icon, title, text, href, linkText }) => (
           <li key={title} className="flex flex-col gap-1">
             <h3 className="flex items-center gap-2 text-sm font-semibold">
               <Icon className="size-4 text-primary-ink" aria-hidden />
@@ -148,7 +160,7 @@ async function Intro() {
               {href && (
                 <>
                   {" "}
-                  <Link href={href}>看來源</Link>
+                  <Link href={href}>{linkText}</Link>
                 </>
               )}
             </p>
