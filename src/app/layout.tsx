@@ -72,7 +72,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <footer className="border-t text-xs text-muted-foreground">
           <div className={`${container} pt-4 pb-6`}>
             字典資料來自 ECDICT（MIT）、Open English WordNet（CC BY 4.0）與 Tatoeba（CC BY 2.0 FR／CC0）。
-            <Link href="/about">資料來源與授權</Link>
+            <Link href="/about">資料來源與授權</Link>・<Link href="/privacy">隱私權政策</Link>
           </div>
         </footer>
       </body>
