@@ -305,6 +305,15 @@ export async function getSaveState(userId: string, rawHeadword: string) {
     .where(activeWordbook(userId))
     .orderBy(asc(wordbooks.sortOrder), asc(wordbooks.createdAt));
 
+  // 最近用過的單字本＝最近放字進去的那本（點星號直接收藏用）；都沒放過字就用清單第一本
+  const [recent] = await db
+    .select({ id: wordbookItems.wordbookId })
+    .from(wordbookItems)
+    .innerJoin(wordbooks, eq(wordbooks.id, wordbookItems.wordbookId))
+    .where(and(eq(wordbookItems.userId, userId), isNull(wordbookItems.deletedAt), activeWordbook(userId)))
+    .orderBy(desc(wordbookItems.updatedAt))
+    .limit(1);
+
   const [card] = saved
     ? await db
         .select({ state: cards.state, stability: cards.stability })
@@ -312,7 +321,13 @@ export async function getSaveState(userId: string, rawHeadword: string) {
         .where(enZhCard(userId, headword))
     : [];
 
-  return { saved: Boolean(saved), note: noteRow?.note ?? null, familiarity: familiarityOf(card), wordbooks: books };
+  return {
+    saved: Boolean(saved),
+    note: noteRow?.note ?? null,
+    familiarity: familiarityOf(card),
+    wordbooks: books,
+    recentWordbookId: recent?.id ?? books[0]?.id ?? null,
+  };
 }
 
 /** 這個字的 en_zh 字卡（熟悉度依據） */

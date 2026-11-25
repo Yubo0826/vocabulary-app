@@ -31,7 +31,14 @@ export async function SaveButton({ headword }: { headword: string }) {
       </Button>
     );
   }
-  return <SaveDialog headword={headword} saved={state.saved} wordbooks={state.wordbooks} />;
+  return (
+    <SaveDialog
+      headword={headword}
+      saved={state.saved}
+      wordbooks={state.wordbooks}
+      recentWordbookId={state.recentWordbookId}
+    />
+  );
 }
 
 /** 單字標題列右側的筆記按鈕：未登入時導向登入。讀 session，需放在 Suspense 內 */

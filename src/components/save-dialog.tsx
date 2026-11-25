@@ -1,7 +1,8 @@
 "use client";
 
 import { Bookmark, Plus, Star } from "lucide-react";
-import { useState, useTransition } from "react";
+import { useEffect, useOptimistic, useRef, useState, useTransition } from "react";
+import { createPortal } from "react-dom";
 import { createWordbookAction, setWordbookMembershipAction } from "@/app/actions";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
@@ -12,15 +13,53 @@ type Props = {
   headword: string;
   saved: boolean;
   wordbooks: { id: string; name: string; contains: boolean }[];
+  /** 點星號直接收藏時放進的單字本（最近放過字的那本） */
+  recentWordbookId: string | null;
 };
+
+type Toast = { message: string; edit: boolean };
+
+const TOAST_MS = 4000;
 
 /**
  * 標題列的收藏按鈕與「收藏至…」視窗（YouTube「儲存至…」的做法）。
- * 收藏＝至少在一本單字本裡：每點一列就立刻放入或移出那本，沒有儲存按鈕；
+ * 還沒收藏時點星號直接放進最近用過的單字本，跳出 toast，按「編輯」才打開視窗；
+ * 已收藏、或還沒有任何單字本時，點星號打開視窗。
+ * 收藏＝至少在一本單字本裡：視窗裡每點一列就立刻放入或移出那本，沒有儲存按鈕；
  * 全部移出就等於取消收藏。還沒有單字本時要先建立一本，建立後這個字直接放進去。
  */
-export function SaveDialog({ headword, saved, wordbooks }: Props) {
+export function SaveDialog({ headword, saved, wordbooks, recentWordbookId }: Props) {
   const [open, setOpen] = useState(false);
+  const [toast, setToast] = useState<Toast | null>(null);
+  // 直接收藏時星號先亮起；伺服器回來並重新整理後改由 saved 決定
+  const [shownSaved, setShownSaved] = useOptimistic(saved);
+  const [quickPending, startQuick] = useTransition();
+  // 直接收藏還在送出時打開視窗，那本先顯示成已勾選
+  const quickBook = useRef<string | null>(null);
+
+  useEffect(() => {
+    if (!toast) return;
+    const t = setTimeout(() => setToast(null), TOAST_MS);
+    return () => clearTimeout(t);
+  }, [toast]);
+
+  const quickSave = (id: string) => {
+    const name = wordbooks.find((b) => b.id === id)?.name ?? "單字本";
+    quickBook.current = id;
+    setToast({ message: `已收藏至「${name}」`, edit: true });
+    startQuick(async () => {
+      setShownSaved(true);
+      const result = await setWordbookMembershipAction(id, headword, true);
+      quickBook.current = null;
+      if (!result.ok) setToast({ message: result.error, edit: false });
+    });
+  };
+
+  const onStarClick = () => {
+    if (quickPending) return;
+    if (!saved && recentWordbookId && wordbooks.some((b) => b.id === recentWordbookId)) quickSave(recentWordbookId);
+    else onOpenChange(true);
+  };
   // 視窗裡顯示的勾選狀態：點下去立刻變，伺服器失敗時改回來
   const [members, setMembers] = useState<Set<string>>(new Set());
   const [busy, setBusy] = useState<Set<string>>(new Set());
@@ -32,7 +71,11 @@ export function SaveDialog({ headword, saved, wordbooks }: Props) {
 
   const onOpenChange = (next: boolean) => {
     if (next) {
-      setMembers(new Set(wordbooks.filter((b) => b.contains).map((b) => b.id))); // 每次打開都從實際狀態開始
+      // 每次打開都從實際狀態開始（加上還在送出中的直接收藏）
+      const ids = wordbooks.filter((b) => b.contains).map((b) => b.id);
+      if (quickBook.current) ids.push(quickBook.current);
+      setMembers(new Set(ids));
+      setToast(null);
       setAdding(false);
       setNewName("");
       setError(null);
@@ -85,13 +128,30 @@ export function SaveDialog({ headword, saved, wordbooks }: Props) {
       <Button
         variant="soft"
         size="icon-lg"
-        aria-label={saved ? "已收藏，管理單字本" : "收藏"}
-        aria-haspopup="dialog"
-        className={cn(saved && "text-primary")}
-        onClick={() => onOpenChange(true)}
+        aria-label={shownSaved ? "已收藏，管理單字本" : "收藏"}
+        aria-haspopup={shownSaved || !recentWordbookId ? "dialog" : undefined}
+        className={cn(shownSaved && "text-primary")}
+        onClick={onStarClick}
       >
-        <Star className={cn(saved && "fill-current")} />
+        <Star className={cn(shownSaved && "fill-current")} />
       </Button>
+      {toast &&
+        createPortal(
+          <div className="pointer-events-none fixed inset-x-0 bottom-0 z-50 flex justify-center px-4 pb-[max(1rem,env(safe-area-inset-bottom))]">
+            <div
+              role="status"
+              className="pointer-events-auto flex min-h-12 w-full max-w-md animate-in items-center gap-3 rounded-2xl bg-popover py-2 pr-2 pl-4 text-sm text-popover-foreground shadow-lg ring-1 ring-foreground/10 duration-150 fade-in-0 slide-in-from-bottom-2"
+            >
+              <span className="min-w-0 flex-1 truncate">{toast.message}</span>
+              {toast.edit && (
+                <Button variant="ghost" size="sm" className="shrink-0 text-primary" onClick={() => onOpenChange(true)}>
+                  編輯
+                </Button>
+              )}
+            </div>
+          </div>,
+          document.body,
+        )}
       {/* 沒有說明文字，明確關掉 aria-describedby 以免 Radix 警告 */}
       <DialogContent aria-describedby={undefined} className="gap-0 p-0">
         <DialogHeader className="px-6 pt-6 pb-3">
