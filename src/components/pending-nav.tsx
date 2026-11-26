@@ -8,7 +8,7 @@ import { createContext, use, useState, useTransition } from "react";
  * 同一頁只換 searchParams（篩選、排序、搜尋）時的即時回饋：
  * 點下去先把選中狀態切過去，列表換成骨架，等新資料到了再顯示。
  * （只換 searchParams 時，Next 會留著舊畫面直到新資料好，看起來像沒反應）
- * 用在「我的單字」與「筆記」。
+ * 用在「收藏」與「筆記」。
  */
 type Nav = { pendingHref: string | null; navigate: (href: string) => void };
 

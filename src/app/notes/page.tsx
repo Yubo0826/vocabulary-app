@@ -1,25 +1,15 @@
 import Link from "next/link";
 import { Suspense } from "react";
 import { FreeNoteDialog } from "@/components/free-note-dialog";
-import { NoteContent } from "@/components/note-content";
-import { NoteDialog } from "@/components/note-dialog";
 import { PendingArea, PendingNavLink, PendingNavProvider } from "@/components/pending-nav";
 import { requireUser } from "@/lib/session";
-import { wordHref } from "@/lib/urls";
 import { listNotes, type NoteKind, type NoteSort } from "@/lib/user-data";
 import { cn } from "@/lib/utils";
-import { CollapsibleNote } from "./collapsible-note";
+import { NoteKindLabel, noteDateFormat, noteExcerpt } from "./note-meta";
 import { NotesSearch } from "./notes-search";
 import { NotesListSkeleton, NotesSkeleton } from "./notes-skeleton";
 
 export const metadata = { title: "筆記" };
-
-const dateFormat = new Intl.DateTimeFormat("zh-TW", {
-  timeZone: "Asia/Taipei",
-  year: "numeric",
-  month: "numeric",
-  day: "numeric",
-});
 
 const KINDS: { value: NoteKind; label: string }[] = [
   { value: "all", label: "全部" },
@@ -131,39 +121,35 @@ async function NoteList(params: Params) {
             {notes.length === 0 ? (
               <p className="text-sm text-muted-foreground">{empty}</p>
             ) : (
+              // 論壇文章列表的做法：類型與日期、大標題、兩行純文字摘要；整張卡片連到筆記內頁看全文
               <ul className="flex flex-col gap-3">
-                {notes.map((n) => (
-                  <li key={n.id} className="surface flex flex-col gap-1 rounded-2xl px-4 py-3">
-                    {/* 標題、釋義、日期擠在同一行，清單比較好掃；釋義太長時截斷 */}
-                    <div className="flex items-baseline gap-2">
-                      {n.headword ? (
-                        <>
-                          <Link href={wordHref(n.headword)} className="min-w-0 text-[1.05rem] font-semibold wrap-anywhere">
-                            {n.display}
-                          </Link>
-                          <span className="min-w-0 flex-1 truncate text-sm text-muted-foreground">{n.gloss}</span>
-                        </>
-                      ) : (
-                        <h2 className="min-w-0 flex-1 text-[1.05rem] font-semibold wrap-anywhere">{n.display}</h2>
-                      )}
-                      <span className="-my-1 flex shrink-0 items-center gap-1 text-xs text-muted-foreground">
-                        {dateFormat.format(n.updatedAt)}
-                        {n.headword ? (
-                          <NoteDialog headword={n.headword} note={n.note} compact={{ display: n.display }} />
-                        ) : (
-                          <FreeNoteDialog note={{ id: n.id, title: n.title ?? "", note: n.note }} />
-                        )}
-                      </span>
-                    </div>
-                    {/* 自由筆記可以只有標題 */}
-                    {n.note && (
-                      // 搜尋時命中的字可能在截斷的段落裡，直接展開
-                      <CollapsibleNote key={q} defaultExpanded={!!q.trim()}>
-                        <NoteContent markdown={n.note} className="text-sm" />
-                      </CollapsibleNote>
-                    )}
-                  </li>
-                ))}
+                {notes.map((n) => {
+                  const excerpt = n.note ? noteExcerpt(n.note, q) : "";
+                  return (
+                    <li
+                      key={n.id}
+                      className="surface relative flex flex-col gap-1.5 rounded-2xl px-5 py-4 transition-colors has-[a:hover]:bg-foreground/4"
+                    >
+                      <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                        <NoteKindLabel word={Boolean(n.headword)} />
+                        <time dateTime={n.updatedAt.toISOString()} className="ml-auto tabular-nums">
+                          {noteDateFormat.format(n.updatedAt)}
+                        </time>
+                      </div>
+                      <h2 className="flex min-w-0 items-baseline gap-2">
+                        {/* after: 撐滿整張卡片，點卡片任何地方都能進內頁 */}
+                        <Link
+                          href={`/notes/${n.id}`}
+                          className="min-w-0 text-lg leading-snug font-semibold text-foreground wrap-anywhere after:absolute after:inset-0 after:rounded-2xl hover:no-underline focus-visible:outline-none focus-visible:after:ring-3 focus-visible:after:ring-ring/50"
+                        >
+                          {n.display}
+                        </Link>
+                        {n.gloss && <span className="min-w-0 flex-1 truncate text-sm font-normal text-muted-foreground">{n.gloss}</span>}
+                      </h2>
+                      {excerpt && <p className="line-clamp-2 text-sm text-pretty text-muted-foreground">{excerpt}</p>}
+                    </li>
+                  );
+                })}
               </ul>
             )}
           </div>

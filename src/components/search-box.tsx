@@ -31,6 +31,7 @@ export function SearchBox({
   size = "lg",
   hotkey = false,
   placeholder = "輸入英文單字或片語",
+  onNavigate,
 }: {
   initialQuery?: string;
   autoFocus?: boolean;
@@ -39,6 +40,8 @@ export function SearchBox({
   /** 啟用 / 快捷鍵（同一頁只能有一個搜尋框啟用） */
   hotkey?: boolean;
   placeholder?: string;
+  /** 要換頁（去單字頁或搜尋結果頁）時呼叫；頁首的搜尋視窗用來關閉自己 */
+  onNavigate?: () => void;
 }) {
   const router = useRouter();
   const listId = useId();
@@ -125,6 +128,7 @@ export function SearchBox({
 
   const go = (item: SearchItem) => {
     setOpen(false);
+    onNavigate?.();
     router.push(wordHref(item.headword, item.via === "form" ? item.form : undefined));
   };
 
@@ -136,6 +140,7 @@ export function SearchBox({
     const first = r?.items[0];
     if (first && (r.matchType === "exact" || r.matchType === "form")) return go(first);
     setOpen(false);
+    onNavigate?.();
     router.push(`/search?q=${encodeURIComponent(trimmed)}`);
   };
 

@@ -437,6 +437,25 @@ const noteGloss = () => sql<string | null>`coalesce(
     WHERE d.headword = "word_notes"."headword" AND d.lang = 'zh-TW'
     ORDER BY d.text ~ ${TECHNICAL_GLOSS_PATTERN}, d.sort_order LIMIT 1))`;
 
+/** 筆記內頁：一筆筆記（單字筆記或自由筆記），找不到或已刪除時回傳 null */
+export async function getNote(userId: string, id: string) {
+  const [row] = await db
+    .select({
+      id: wordNotes.id,
+      headword: wordNotes.headword,
+      title: wordNotes.title,
+      display: sql<string>`coalesce(${wordNotes.title}, ${entries.display}, ${wordNotes.headword})`,
+      note: wordNotes.note,
+      createdAt: wordNotes.createdAt,
+      updatedAt: wordNotes.updatedAt,
+      gloss: noteGloss(),
+    })
+    .from(wordNotes)
+    .leftJoin(entries, eq(entries.headword, wordNotes.headword))
+    .where(and(eq(wordNotes.userId, userId), eq(wordNotes.id, id), isNull(wordNotes.deletedAt)));
+  return row ?? null;
+}
+
 /** 筆記頁的內建篩選：全部、單字筆記（有 headword）、自由筆記（沒有 headword） */
 export type NoteKind = "all" | "word" | "free";
 

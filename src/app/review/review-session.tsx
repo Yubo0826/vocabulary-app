@@ -295,7 +295,7 @@ function Done({ state, pending, onRefresh }: { state: ReviewState; pending: bool
         </>
       ) : (
         <p className="text-sm text-muted-foreground">
-          收藏新的單字就會自動建立字卡。<Link href="/saved">我的單字</Link>
+          收藏新的單字就會自動建立字卡。<Link href="/saved">前往收藏</Link>
         </p>
       )}
     </Card>

@@ -6,9 +6,9 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 
 const LINKS = [
-  { href: "/review", label: "複習", match: ["/review", "/settings"] },
-  { href: "/saved", label: "我的單字", match: ["/saved", "/wordbooks"] },
+  { href: "/saved", label: "收藏", match: ["/saved", "/wordbooks"] },
   { href: "/notes", label: "筆記", match: ["/notes"] },
+  { href: "/review", label: "複習", match: ["/review", "/settings"] },
 ] as const;
 
 export function NavLinks() {

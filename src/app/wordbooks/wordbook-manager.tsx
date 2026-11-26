@@ -31,7 +31,7 @@ type Wordbook = { id: string; name: string; description: string | null; count: n
 const exportHref = (bookId?: string) => (bookId ? `/api/export/words?book=${bookId}` : "/api/export/words");
 
 /**
- * 單字本磚塊：整塊連到「我的單字」的篩選，右上角 ⋮ 選單（編輯／匯出／刪除）。
+ * 單字本磚塊：整塊連到「收藏」的篩選，右上角 ⋮ 選單（編輯／匯出／刪除）。
  * 連結用 after:absolute 撐滿整塊，⋮ 按鈕疊在上面（z-10），兩者不巢狀。
  */
 function Tile({

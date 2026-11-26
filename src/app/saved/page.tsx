@@ -13,7 +13,7 @@ import { ImportDialog } from "./import-dialog";
 import { PendingArea, PendingNavLink, PendingNavProvider } from "@/components/pending-nav";
 import { SavedPageSkeleton, SavedWordsSkeleton } from "./saved-skeleton";
 
-export const metadata = { title: "我的單字" };
+export const metadata = { title: "收藏" };
 
 const dateFormat = new Intl.DateTimeFormat("zh-TW", { timeZone: "Asia/Taipei", year: "numeric", month: "numeric", day: "numeric" });
 
@@ -52,7 +52,7 @@ async function SavedList({ bookParam, sort }: { bookParam: string | null; sort: 
     <PendingNavProvider>
       <div className="flex flex-col gap-4">
         <div className="flex items-center justify-between gap-2">
-          <h1 className="text-2xl font-semibold">我的單字</h1>
+          <h1 className="text-2xl font-semibold">收藏</h1>
           <div className="flex items-center">
             <ImportDialog wordbooks={wordbooks.map(({ id, name }) => ({ id, name }))} defaultWordbookId={book?.id ?? null} />
             <Button asChild variant="ghost" className="text-primary">

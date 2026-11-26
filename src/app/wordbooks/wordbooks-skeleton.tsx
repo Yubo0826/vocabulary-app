@@ -9,7 +9,7 @@ export function WordbooksSkeleton() {
   return (
     <div className="flex flex-col gap-4" aria-busy="true" aria-label="載入中">
       <p>
-        <Link href="/saved">← 我的單字</Link>
+        <Link href="/saved">← 收藏</Link>
       </p>
       <div className="flex items-center gap-2">
         <h1 className="text-2xl font-semibold">管理單字本</h1>

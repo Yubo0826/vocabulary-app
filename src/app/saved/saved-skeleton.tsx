@@ -10,7 +10,7 @@ const ROWS = [
   ["w-24", "w-3/5"],
 ];
 
-/** 「我的單字」列表的骨架（含上方的字數、排序列） */
+/** 「收藏」列表的骨架（含上方的字數、排序列） */
 export function SavedWordsSkeleton() {
   return (
     <div className="flex flex-col gap-4" aria-busy="true" aria-label="載入中">
