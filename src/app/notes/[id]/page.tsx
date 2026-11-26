@@ -1,4 +1,4 @@
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
@@ -55,8 +55,8 @@ async function NoteBody({ id }: { id: string }) {
         {note.headword && (
           <p className="flex flex-wrap items-baseline gap-x-3 gap-y-1 text-sm text-muted-foreground">
             {note.gloss && <span>{note.gloss}</span>}
-            <Link href={wordHref(note.headword)} className="flex items-center gap-1">
-              查看單字頁 <ArrowRight className="size-3.5" aria-hidden />
+            <Link href={wordHref(note.headword)} className="ml-auto shrink-0">
+              查看單字頁
             </Link>
           </p>
         )}
