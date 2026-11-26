@@ -1,17 +1,22 @@
-import { BookOpenCheck, Bookmark, Cloud, MousePointerClick, Search } from "lucide-react";
+import { BookOpenCheck, Bookmark, Cloud, MousePointerClick, NotebookPen, Search } from "lucide-react";
 import Link from "next/link";
-import { Suspense } from "react";
+import { type CSSProperties, Suspense } from "react";
 import { SearchBox } from "@/components/search-box";
 import { Button } from "@/components/ui/button";
 import { getCurrentUser } from "@/lib/session";
+
+/** fade-down 進場動畫的延遲（毫秒），讓區塊由上而下依序出現 */
+const delay = (ms: number) => ({ "--delay": `${ms}ms` }) as CSSProperties;
 
 export default function Home() {
   return (
     <div className="flex flex-col pt-[clamp(0px,4vh,40px)]">
       {/* 搜尋區：Material 3 的做法，不包卡片，大標題＋膠囊搜尋列（surface container high） */}
       <section className="flex flex-col gap-5 pt-8 pb-8 sm:pt-14">
-        <h1 className="text-[2rem] leading-tight font-normal sm:text-[2.6rem]">查單字</h1>
-        <SearchBox autoFocus />
+        <h1 className="fade-down text-[2rem] leading-tight font-normal sm:text-[2.6rem]">查單字</h1>
+        <div className="fade-down" style={delay(80)}>
+          <SearchBox autoFocus />
+        </div>
       </section>
       {/* 介紹只給未登入的訪客；讀 session，放在 Suspense 內，搜尋區不受影響 */}
       <Suspense fallback={null}>
@@ -87,7 +92,7 @@ const STEPS = [
   },
   {
     title: "收藏",
-    text: "放進自己分類的單字本，標上熟悉度。每個字都能寫筆記，記下聯想和用法，之後在「筆記」頁一次翻找。",
+    text: "點星號就收進最近用的單字本，想分類再換到別本，標上熟悉度。",
     Preview: SavePreview,
   },
   {
@@ -98,30 +103,38 @@ const STEPS = [
 ];
 
 const DETAILS = [
+  {
+    icon: NotebookPen,
+    title: "筆記",
+    text: "每個字都能記下聯想和用法；文法、片語這類不屬於單一單字的，也能寫成自由筆記，在「筆記」頁搜尋翻找。",
+  },
   { icon: Cloud, title: "雲端同步", text: "手機、電腦接著用，手機可以加入主畫面。" },
   { icon: MousePointerClick, title: "閱讀時查字", text: "Chrome 擴充元件：讀英文網頁時反白＋Alt 就能查。" },
   { icon: BookOpenCheck, title: "出處清楚", text: "釋義與例句來自開放授權的字典與例句庫，逐筆標示來源。", href: "/about" },
 ];
 
-/** 首頁搜尋列下方的介紹：給誰用、查字 → 收藏 → 複習的流程、其他特色。登入後不顯示 */
+/**
+ * 首頁搜尋列下方的介紹：給誰用、查字 → 收藏 → 複習的流程、其他特色。登入後不顯示。
+ * 各區塊依序 fade-down 進場（介紹晚一步串流進來，延遲從自己出現時算）
+ */
 async function Intro() {
   if (await getCurrentUser()) return null;
 
   return (
     <section aria-labelledby="intro-heading" className="flex flex-col gap-10 pt-6 sm:pt-10">
-      <div className="flex flex-col gap-3">
+      <div className="fade-down flex flex-col gap-3" style={delay(160)}>
         <h2 id="intro-heading" className="text-2xl leading-snug font-semibold text-balance">
           查到的字，留下來，記起來。
         </h2>
         <p className="text-pretty text-muted-foreground">
-          給中文圈學英文的人使用。查字、收藏、複習在同一個地方，不用在字典和單字 App 之間搬字。
+          給中文圈學英文的人使用。查字、收藏、筆記、複習在同一個地方，不用在字典和單字 App 之間搬字。
         </p>
       </div>
 
       {/* 三張步驟卡：上半文字，下半深一階的底色放該步驟介面的縮小示意（純裝飾） */}
       <ol className="grid gap-3 sm:grid-cols-3">
         {STEPS.map(({ title, text, Preview }, i) => (
-          <li key={title} className="flex flex-col overflow-hidden rounded-2xl bg-card">
+          <li key={title} className="fade-down flex flex-col overflow-hidden rounded-2xl bg-card" style={delay(260 + i * 90)}>
             <div className="flex flex-1 flex-col gap-1.5 p-5">
               <h3 className="flex items-baseline gap-2 text-[1.05rem] font-semibold">
                 <span className="text-sm text-primary-ink tabular-nums">{i + 1}</span>
@@ -136,9 +149,9 @@ async function Intro() {
         ))}
       </ol>
 
-      <ul className="grid gap-5 border-t pt-8 sm:grid-cols-3 sm:gap-6">
-        {DETAILS.map(({ icon: Icon, title, text, href }) => (
-          <li key={title} className="flex flex-col gap-1">
+      <ul className="grid gap-5 border-t pt-8 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-6">
+        {DETAILS.map(({ icon: Icon, title, text, href }, i) => (
+          <li key={title} className="fade-down flex flex-col gap-1" style={delay(560 + i * 70)}>
             <h3 className="flex items-center gap-2 text-sm font-semibold">
               <Icon className="size-4 text-primary-ink" aria-hidden />
               {title}
@@ -156,7 +169,7 @@ async function Intro() {
         ))}
       </ul>
 
-      <div className="flex flex-wrap items-center gap-2">
+      <div className="fade-down flex flex-wrap items-center gap-2" style={delay(860)}>
         <Button asChild size="lg">
           <Link href="/signup" className="hover:no-underline">
             建立帳號，開始收藏

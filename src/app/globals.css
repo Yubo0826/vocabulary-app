@@ -297,6 +297,21 @@
   }
 }
 
+/* 首頁的進場：由上往下淡入；--delay 讓各區塊依序出現。系統設定減少動態時不播 */
+@keyframes fade-down {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+}
+@utility fade-down {
+  animation: fade-down 0.6s cubic-bezier(0.2, 0.7, 0.3, 1) both;
+  animation-delay: var(--delay, 0ms);
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
+}
+
 /* 複習完成的慶祝動畫（src/app/review/celebration.tsx）：彩帶從 🎉 往外噴出再落下；🎉 彈出放大 */
 @keyframes confetti-burst {
   0% {
