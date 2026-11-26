@@ -78,6 +78,13 @@
       "when": 1794733825115,
       "tag": "0010_word_notes",
       "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "7",
+      "when": 1795671203847,
+      "tag": "0011_free_notes",
+      "breakpoints": true
     }
   ]
 }

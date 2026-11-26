@@ -25,7 +25,9 @@ import {
   primaryKey,
   index,
   uniqueIndex,
+  check,
 } from "drizzle-orm/pg-core";
+import { sql } from "drizzle-orm";
 import { user } from "./auth";
 
 const ts = (name: string) => timestamp(name, { withTimezone: true });
@@ -188,21 +190,26 @@ export const userSettings = pgTable("user_settings", {
 });
 
 /**
- * 筆記：一人一字一筆，和收藏無關（沒收藏的字也能寫筆記，取消收藏也不會丟）。
- * 清空筆記是軟刪除（deletedAt），再寫一次會清掉 deletedAt。
+ * 筆記，分兩種：
+ * - 單字筆記：有 headword，一人一字一筆（標題就是單字），和收藏無關（沒收藏的字也能寫筆記，取消收藏也不會丟）。
+ *   清空筆記是軟刪除（deletedAt），再寫一次會清掉 deletedAt。
+ * - 自由筆記：headword 為 null、title 必填（例如文法筆記），一人可以有很多筆，從筆記頁新增；刪除也是軟刪除。
+ * 唯一索引 (user_id, headword) 在 Postgres 中 NULL 互不相等，所以只限制單字筆記。
  */
 export const wordNotes = pgTable(
   "word_notes",
   {
     id: uuid("id").primaryKey().defaultRandom(),
     userId: userIdColumn(),
-    headword: text("headword").notNull(),
+    headword: text("headword"),
+    title: text("title"),
     note: text("note").notNull(),
     ...syncColumns,
   },
   (t) => [
     uniqueIndex("word_notes_user_headword_idx").on(t.userId, t.headword),
     index("word_notes_user_updated_idx").on(t.userId, t.updatedAt),
+    check("word_notes_word_or_title", sql`${t.headword} IS NOT NULL OR ${t.title} IS NOT NULL`),
   ],
 );
 

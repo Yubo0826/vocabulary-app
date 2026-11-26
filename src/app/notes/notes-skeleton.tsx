@@ -37,14 +37,22 @@ export function NotesListSkeleton() {
   );
 }
 
-/** 第一次進筆記頁時的整頁骨架：標題、搜尋列、清單 */
+/** 第一次進筆記頁時的整頁骨架：標題與新增按鈕、搜尋列、類型篩選、清單 */
 export function NotesSkeleton() {
   return (
     <div className="flex flex-col gap-4" aria-busy="true" aria-label="載入中">
-      <Skeleton className="h-8 w-16 bg-foreground/10" />
+      <div className="flex items-center justify-between gap-2">
+        <Skeleton className="h-8 w-16 bg-foreground/10" />
+        <Skeleton className="h-10 w-28 rounded-full bg-foreground/10" />
+      </div>
       <div className="flex gap-2">
         <Skeleton className="h-9 flex-1 bg-foreground/10" />
         <Skeleton className="h-10 w-16 rounded-full bg-foreground/10" />
+      </div>
+      <div className="flex gap-2">
+        {["w-14", "w-22", "w-22"].map((w, i) => (
+          <Skeleton key={i} className={`h-8 ${w} rounded-full bg-foreground/10`} />
+        ))}
       </div>
       <NotesListSkeleton />
     </div>

@@ -67,6 +67,21 @@ export async function saveNoteAction(headword: unknown, note: unknown): Promise<
   return run((userId) => data.setNote(userId, str(headword, "headword"), note == null ? null : str(note, "筆記")));
 }
 
+/** 新增自由筆記（筆記頁的「新增筆記」）；標題必填 */
+export async function createFreeNoteAction(title: unknown, note: unknown): Promise<ActionResult<{ id: string }>> {
+  return run((userId) => data.createFreeNote(userId, { title: str(title, "標題"), note: str(note, "筆記") }));
+}
+
+/** 修改自由筆記 */
+export async function updateFreeNoteAction(id: unknown, title: unknown, note: unknown): Promise<ActionResult> {
+  return run((userId) => data.updateFreeNote(userId, uuid(id, "note"), { title: str(title, "標題"), note: str(note, "筆記") }));
+}
+
+/** 刪除自由筆記（軟刪除） */
+export async function deleteFreeNoteAction(id: unknown): Promise<ActionResult> {
+  return run((userId) => data.deleteFreeNote(userId, uuid(id, "note")));
+}
+
 /** 調整熟悉度（0–3）；只有收藏的字可以調整。等級格式在 setFamiliarity 檢查 */
 export async function setFamiliarityAction(headword: unknown, level: unknown): Promise<ActionResult<number>> {
   return run((userId) => review.setFamiliarity(userId, str(headword, "headword"), level));

@@ -32,6 +32,7 @@ export class ValidationError extends Error {
 }
 
 const MAX_NOTE_LENGTH = 2000;
+const MAX_NOTE_TITLE_LENGTH = 100;
 const MAX_WORDBOOK_NAME_LENGTH = 50;
 const MAX_WORDBOOK_DESCRIPTION_LENGTH = 200;
 
@@ -275,6 +276,43 @@ export async function setNote(userId: string, rawHeadword: string, note: string 
     });
 }
 
+function cleanNoteTitle(title: string): string {
+  const v = title.trim().replace(/\s+/g, " ");
+  if (!v) throw new ValidationError("請輸入標題");
+  if (v.length > MAX_NOTE_TITLE_LENGTH) throw new ValidationError(`標題最多 ${MAX_NOTE_TITLE_LENGTH} 字`);
+  return v;
+}
+
+/** 這位使用者、這個 id、尚未刪除的自由筆記 */
+const activeFreeNote = (userId: string, id: string) =>
+  and(eq(wordNotes.userId, userId), eq(wordNotes.id, id), isNull(wordNotes.headword), isNull(wordNotes.deletedAt));
+
+/** 新增自由筆記（不屬於任何單字，例如文法筆記）：標題必填，內容可以空白 */
+export async function createFreeNote(userId: string, input: { title: string; note: string }): Promise<{ id: string }> {
+  const title = cleanNoteTitle(input.title);
+  const note = cleanNote(input.note) ?? "";
+  const [row] = await db.insert(wordNotes).values({ userId, title, note }).returning({ id: wordNotes.id });
+  return row;
+}
+
+/** 修改自由筆記的標題與內容 */
+export async function updateFreeNote(userId: string, id: string, input: { title: string; note: string }): Promise<void> {
+  const title = cleanNoteTitle(input.title);
+  const note = cleanNote(input.note) ?? "";
+  const rows = await db
+    .update(wordNotes)
+    .set({ title, note, updatedAt: new Date() })
+    .where(activeFreeNote(userId, id))
+    .returning({ id: wordNotes.id });
+  if (rows.length === 0) throw new NotFoundError("note");
+}
+
+/** 刪除自由筆記（軟刪除） */
+export async function deleteFreeNote(userId: string, id: string): Promise<void> {
+  const now = new Date();
+  await db.update(wordNotes).set({ deletedAt: now, updatedAt: now }).where(activeFreeNote(userId, id));
+}
+
 /** 單字頁用：這個字是否已收藏、筆記、熟悉度，以及各單字本是否包含它 */
 export async function getSaveState(userId: string, rawHeadword: string) {
   const headword = normalizeHeadword(rawHeadword);
@@ -399,9 +437,19 @@ const noteGloss = () => sql<string | null>`coalesce(
     WHERE d.headword = "word_notes"."headword" AND d.lang = 'zh-TW'
     ORDER BY d.text ~ ${TECHNICAL_GLOSS_PATTERN}, d.sort_order LIMIT 1))`;
 
-/** 筆記庫：所有寫過筆記的字（不論是否收藏）。q 會比對筆記內容與單字（不分大小寫）；「最近」依筆記更新時間 */
-export async function listNotes(userId: string, options: { q?: string | null; sort?: NoteSort } = {}) {
-  const { sort = "recent" } = options;
+/** 筆記頁的內建篩選：全部、單字筆記（有 headword）、自由筆記（沒有 headword） */
+export type NoteKind = "all" | "word" | "free";
+
+/**
+ * 筆記庫：單字筆記（不論是否收藏）與自由筆記。q 會比對筆記內容、單字與標題（不分大小寫）；
+ * 「最近」依筆記更新時間，「字母」依標題（單字筆記的標題就是單字）
+ */
+export async function listNotes(
+  userId: string,
+  options: { q?: string | null; sort?: NoteSort; kind?: NoteKind } = {},
+) {
+  const { sort = "recent", kind = "all" } = options;
+  const titleSql = sql<string>`coalesce(${wordNotes.title}, ${wordNotes.headword})`;
   const q = options.q?.trim();
   // LIKE 的 \ % _ 要跳脫，搜尋字串裡的這些字元才會照字面比對
   const pattern = q ? `%${q.replace(/[\\%_]/g, (c) => "\\" + c)}%` : null;
@@ -410,7 +458,8 @@ export async function listNotes(userId: string, options: { q?: string | null; so
     .select({
       id: wordNotes.id,
       headword: wordNotes.headword,
-      display: sql<string>`coalesce(${entries.display}, ${wordNotes.headword})`,
+      title: wordNotes.title,
+      display: sql<string>`coalesce(${wordNotes.title}, ${entries.display}, ${wordNotes.headword})`,
       note: wordNotes.note,
       updatedAt: wordNotes.updatedAt,
       gloss: noteGloss(),
@@ -421,6 +470,7 @@ export async function listNotes(userId: string, options: { q?: string | null; so
       and(
         eq(wordNotes.userId, userId),
         isNull(wordNotes.deletedAt),
+        kind === "word" ? isNotNull(wordNotes.headword) : kind === "free" ? isNull(wordNotes.headword) : undefined,
         pattern
           ? or(
               // 去掉顏色語法 `{red|…}` 與底線的 <u></u> 再比對（見 lib/note-color.ts），搜 red、blue 這類字才不會命中所有上色的筆記。
@@ -430,11 +480,16 @@ export async function listNotes(userId: string, options: { q?: string | null; so
                 pattern,
               ),
               ilike(wordNotes.headword, pattern),
+              ilike(wordNotes.title, pattern),
             )
           : undefined,
       ),
     )
-    .orderBy(...(sort === "alpha" ? [asc(wordNotes.headword)] : [desc(wordNotes.updatedAt), asc(wordNotes.headword)]));
+    .orderBy(
+      ...(sort === "alpha"
+        ? [asc(sql`lower(${titleSql})`), asc(wordNotes.id)]
+        : [desc(wordNotes.updatedAt), asc(titleSql)]),
+    );
 }
 /** 目前收藏中的字數 */
 export async function countSavedWords(userId: string): Promise<number> {
