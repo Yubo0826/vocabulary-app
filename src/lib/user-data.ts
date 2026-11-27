@@ -9,12 +9,33 @@
  * - 每個查詢都以 userId 過濾；操作別人的資料一律視為「找不到」（NotFoundError），不透露資料是否存在。
  * - 不做硬刪除：取消收藏、刪除單字本都是設定 deleted_at（軟刪除）。
  */
-import { and, asc, desc, eq, ilike, inArray, isNotNull, isNull, or, sql } from "drizzle-orm";
+import { and, asc, desc, eq, ilike, inArray, isNotNull, isNull, notInArray, or, type SQL, sql } from "drizzle-orm";
 import { db } from "@/db";
-import { cards, definitions, entries, savedWords, wordbookItems, wordbooks, wordForms, wordNotes } from "@/db/schema";
+import {
+  cards,
+  definitions,
+  entries,
+  noteTags,
+  savedWords,
+  wordbookItems,
+  wordbooks,
+  wordForms,
+  wordNotes,
+  wordNoteTags,
+} from "@/db/schema";
 import { modernGlossSql, TECHNICAL_GLOSS_PATTERN } from "@/lib/gloss";
 import { familiarityOf } from "./familiarity";
 import { normalizeHeadword } from "./headword";
+import {
+  isTagColor,
+  MAX_TAG_LENGTH,
+  MAX_TAGS_PER_NOTE,
+  type NoteTag,
+  normalizeTagName,
+  TAG_COLOR_NAMES,
+  type TagColor,
+  tagKey,
+} from "./note-tags";
 import { MAX_IMPORT_CHARS, MAX_IMPORT_WORDS, parseWordList } from "./word-list";
 
 export class NotFoundError extends Error {
@@ -253,27 +274,161 @@ export async function importWords(userId: string, text: string, wordbookId: stri
 
 // ---------------------------------------------------------------- 筆記
 
-/** 寫入這個字的筆記（沒收藏也可以）；空字串＝清除筆記（軟刪除） */
-export async function setNote(userId: string, rawHeadword: string, note: string | null): Promise<void> {
+const activeTag = (userId: string) => and(eq(noteTags.userId, userId), isNull(noteTags.deletedAt));
+
+/** 整理標籤名稱並檢查長度 */
+function cleanTagName(raw: string): string {
+  const name = normalizeTagName(raw);
+  if (!name) throw new ValidationError("請輸入標籤名稱");
+  if (name.length > MAX_TAG_LENGTH) throw new ValidationError(`標籤最多 ${MAX_TAG_LENGTH} 字`);
+  return name;
+}
+
+/** 這位使用者未刪除、名稱相同（不分大小寫）的標籤 */
+async function findTagByName(tx: Tx | typeof db, userId: string, name: string) {
+  const [row] = await tx
+    .select({ id: noteTags.id, name: noteTags.name, color: noteTags.color })
+    .from(noteTags)
+    .where(and(activeTag(userId), eq(sql`lower(${noteTags.name})`, tagKey(name))));
+  return row ? toNoteTag(row) : null;
+}
+
+const toNoteTag = (row: { id: string; name: string; color: string }): NoteTag => ({
+  ...row,
+  color: isTagColor(row.color) ? row.color : "gray",
+});
+
+/**
+ * 建立標籤（筆記編輯視窗的標籤選單「建立」）；已有同名（不分大小寫）的就回傳那個。
+ * 顏色依目前標籤數輪流配
+ */
+export async function createNoteTag(userId: string, rawName: string): Promise<NoteTag> {
+  const name = cleanTagName(rawName);
+  return db.transaction(async (tx) => {
+    const existing = await findTagByName(tx, userId, name);
+    if (existing) return existing;
+    // 和標籤選單「建立」預覽的顏色算法一致（未刪除的標籤數）
+    const [{ n }] = await tx.select({ n: sql<number>`count(*)::int` }).from(noteTags).where(activeTag(userId));
+    const color = TAG_COLOR_NAMES[n % TAG_COLOR_NAMES.length];
+    const [row] = await tx
+      .insert(noteTags)
+      .values({ userId, name, color })
+      .returning({ id: noteTags.id, name: noteTags.name, color: noteTags.color });
+    return toNoteTag(row);
+  });
+}
+
+/** 改標籤名稱或顏色（所有用到它的筆記一起變）；改成和別的標籤同名時報錯 */
+export async function updateNoteTag(userId: string, id: string, input: { name?: string; color?: TagColor }): Promise<NoteTag> {
+  const name = input.name === undefined ? undefined : cleanTagName(input.name);
+  return db.transaction(async (tx) => {
+    if (name !== undefined) {
+      const same = await findTagByName(tx, userId, name);
+      if (same && same.id !== id) throw new ValidationError(`已經有「${same.name}」這個標籤`);
+    }
+    const [row] = await tx
+      .update(noteTags)
+      .set({ ...(name !== undefined && { name }), ...(input.color && { color: input.color }), updatedAt: new Date() })
+      .where(and(activeTag(userId), eq(noteTags.id, id)))
+      .returning({ id: noteTags.id, name: noteTags.name, color: noteTags.color });
+    if (!row) throw new NotFoundError("tag");
+    return toNoteTag(row);
+  });
+}
+
+/** 刪除標籤（軟刪除）：所有筆記上的這個標籤一併拿掉 */
+export async function deleteNoteTag(userId: string, id: string): Promise<void> {
+  const now = new Date();
+  await db.transaction(async (tx) => {
+    const rows = await tx
+      .update(noteTags)
+      .set({ deletedAt: now, updatedAt: now })
+      .where(and(activeTag(userId), eq(noteTags.id, id)))
+      .returning({ id: noteTags.id });
+    if (rows.length === 0) return;
+    await tx
+      .update(wordNoteTags)
+      .set({ deletedAt: now, updatedAt: now })
+      .where(and(eq(wordNoteTags.userId, userId), eq(wordNoteTags.tagId, id), isNull(wordNoteTags.deletedAt)));
+  });
+}
+
+/** 整理筆記的標籤 id 清單：去重、檢查數量上限（是否屬於這位使用者在 setNoteTags 裡檢查） */
+function cleanTagIds(ids: string[]): string[] {
+  const out = [...new Set(ids)];
+  if (out.length > MAX_TAGS_PER_NOTE) throw new ValidationError(`每則筆記最多 ${MAX_TAGS_PER_NOTE} 個標籤`);
+  return out;
+}
+
+/**
+ * 把一則筆記的標籤設成 ids（須先經 cleanTagIds）：只採用這位使用者未刪除的標籤（別人的、已刪除的略過），
+ * 補上缺的連結（之前拿掉過的清掉 deletedAt），不在清單裡的連結軟刪除。呼叫端須確認筆記屬於這位使用者
+ */
+async function setNoteTags(tx: Tx, userId: string, noteId: string, ids: string[]): Promise<void> {
+  const now = new Date();
+  let tagIds: string[] = [];
+  if (ids.length > 0) {
+    const tags = await tx
+      .select({ id: noteTags.id })
+      .from(noteTags)
+      .where(and(activeTag(userId), inArray(noteTags.id, ids)));
+    tagIds = tags.map((t) => t.id);
+  }
+  if (tagIds.length > 0) {
+    await tx
+      .insert(wordNoteTags)
+      .values(tagIds.map((tagId) => ({ noteId, tagId, userId })))
+      .onConflictDoUpdate({
+        target: [wordNoteTags.noteId, wordNoteTags.tagId],
+        set: { deletedAt: null, updatedAt: now },
+      });
+  }
+  await tx
+    .update(wordNoteTags)
+    .set({ deletedAt: now, updatedAt: now })
+    .where(
+      and(
+        eq(wordNoteTags.userId, userId),
+        eq(wordNoteTags.noteId, noteId),
+        isNull(wordNoteTags.deletedAt),
+        tagIds.length > 0 ? notInArray(wordNoteTags.tagId, tagIds) : undefined,
+      ),
+    );
+}
+
+/**
+ * 寫入這個字的筆記（沒收藏也可以）；空字串＝清除筆記（軟刪除，標籤一併拿掉）。
+ * tags 是標籤 id，省略＝不動標籤
+ */
+export async function setNote(userId: string, rawHeadword: string, note: string | null, tags?: string[]): Promise<void> {
   const headword = normalizeHeadword(rawHeadword);
   const cleaned = cleanNote(note);
+  const tagIds = tags && cleanTagIds(tags);
   const now = new Date();
   if (cleaned === null) {
-    await db
-      .update(wordNotes)
-      .set({ deletedAt: now, updatedAt: now })
-      .where(and(eq(wordNotes.userId, userId), eq(wordNotes.headword, headword), isNull(wordNotes.deletedAt)));
+    await db.transaction(async (tx) => {
+      const removed = await tx
+        .update(wordNotes)
+        .set({ deletedAt: now, updatedAt: now })
+        .where(and(eq(wordNotes.userId, userId), eq(wordNotes.headword, headword), isNull(wordNotes.deletedAt)))
+        .returning({ id: wordNotes.id });
+      for (const { id } of removed) await setNoteTags(tx, userId, id, []);
+    });
     return;
   }
   const [entry] = await db.select({ h: entries.headword }).from(entries).where(eq(entries.headword, headword));
   if (!entry) throw new NotFoundError("headword");
-  await db
-    .insert(wordNotes)
-    .values({ userId, headword, note: cleaned })
-    .onConflictDoUpdate({
-      target: [wordNotes.userId, wordNotes.headword],
-      set: { note: cleaned, deletedAt: null, updatedAt: now },
-    });
+  await db.transaction(async (tx) => {
+    const [row] = await tx
+      .insert(wordNotes)
+      .values({ userId, headword, note: cleaned })
+      .onConflictDoUpdate({
+        target: [wordNotes.userId, wordNotes.headword],
+        set: { note: cleaned, deletedAt: null, updatedAt: now },
+      })
+      .returning({ id: wordNotes.id });
+    if (tagIds) await setNoteTags(tx, userId, row.id, tagIds);
+  });
 }
 
 function cleanNoteTitle(title: string): string {
@@ -287,24 +442,35 @@ function cleanNoteTitle(title: string): string {
 const activeFreeNote = (userId: string, id: string) =>
   and(eq(wordNotes.userId, userId), eq(wordNotes.id, id), isNull(wordNotes.headword), isNull(wordNotes.deletedAt));
 
-/** 新增自由筆記（不屬於任何單字，例如文法筆記）：標題必填，內容可以空白 */
-export async function createFreeNote(userId: string, input: { title: string; note: string }): Promise<{ id: string }> {
+/** tags 是標籤 id（標籤先在標籤選單建立） */
+type FreeNoteInput = { title: string; note: string; tags: string[] };
+
+/** 新增自由筆記（不屬於任何單字，例如文法筆記）：標題必填，內容與標籤可以空白 */
+export async function createFreeNote(userId: string, input: FreeNoteInput): Promise<{ id: string }> {
   const title = cleanNoteTitle(input.title);
   const note = cleanNote(input.note) ?? "";
-  const [row] = await db.insert(wordNotes).values({ userId, title, note }).returning({ id: wordNotes.id });
-  return row;
+  const tags = cleanTagIds(input.tags);
+  return db.transaction(async (tx) => {
+    const [row] = await tx.insert(wordNotes).values({ userId, title, note }).returning({ id: wordNotes.id });
+    await setNoteTags(tx, userId, row.id, tags);
+    return row;
+  });
 }
 
-/** 修改自由筆記的標題與內容 */
-export async function updateFreeNote(userId: string, id: string, input: { title: string; note: string }): Promise<void> {
+/** 修改自由筆記的標題、內容與標籤 */
+export async function updateFreeNote(userId: string, id: string, input: FreeNoteInput): Promise<void> {
   const title = cleanNoteTitle(input.title);
   const note = cleanNote(input.note) ?? "";
-  const rows = await db
-    .update(wordNotes)
-    .set({ title, note, updatedAt: new Date() })
-    .where(activeFreeNote(userId, id))
-    .returning({ id: wordNotes.id });
-  if (rows.length === 0) throw new NotFoundError("note");
+  const tags = cleanTagIds(input.tags);
+  await db.transaction(async (tx) => {
+    const rows = await tx
+      .update(wordNotes)
+      .set({ title, note, updatedAt: new Date() })
+      .where(activeFreeNote(userId, id))
+      .returning({ id: wordNotes.id });
+    if (rows.length === 0) throw new NotFoundError("note");
+    await setNoteTags(tx, userId, id, tags);
+  });
 }
 
 /** 刪除自由筆記（軟刪除） */
@@ -322,7 +488,7 @@ export async function getSaveState(userId: string, rawHeadword: string) {
     .where(and(activeSaved(userId), eq(savedWords.headword, headword)));
 
   const [noteRow] = await db
-    .select({ note: wordNotes.note })
+    .select({ note: wordNotes.note, tags: noteTagsSql() })
     .from(wordNotes)
     .where(and(eq(wordNotes.userId, userId), eq(wordNotes.headword, headword), isNull(wordNotes.deletedAt)));
 
@@ -362,6 +528,7 @@ export async function getSaveState(userId: string, rawHeadword: string) {
   return {
     saved: Boolean(saved),
     note: noteRow?.note ?? null,
+    noteTags: noteRow?.tags ?? [],
     familiarity: familiarityOf(card),
     wordbooks: books,
     recentWordbookId: recent?.id ?? books[0]?.id ?? null,
@@ -437,6 +604,15 @@ const noteGloss = () => sql<string | null>`coalesce(
     WHERE d.headword = "word_notes"."headword" AND d.lang = 'zh-TW'
     ORDER BY d.text ~ ${TECHNICAL_GLOSS_PATTERN}, d.sort_order LIMIT 1))`;
 
+/**
+ * 一則筆記的標籤（依名稱排序），沒有標籤是空陣列。子查詢的欄位同 firstGloss 要寫出完整名稱。
+ * 顏色照資料庫原樣，不認得的顏色畫面上用 tagColorClass 當灰色
+ */
+const noteTagsSql = () => sql<NoteTag[]>`coalesce((
+    SELECT json_agg(json_build_object('id', t.id, 'name', t.name, 'color', t.color) ORDER BY lower(t.name))
+    FROM ${wordNoteTags} wnt JOIN ${noteTags} t ON t.id = wnt.tag_id
+    WHERE wnt.note_id = "word_notes"."id" AND wnt.deleted_at IS NULL AND t.deleted_at IS NULL), '[]'::json)`;
+
 /** 筆記內頁：一筆筆記（單字筆記或自由筆記），找不到或已刪除時回傳 null */
 export async function getNote(userId: string, id: string) {
   const [row] = await db
@@ -449,6 +625,7 @@ export async function getNote(userId: string, id: string) {
       createdAt: wordNotes.createdAt,
       updatedAt: wordNotes.updatedAt,
       gloss: noteGloss(),
+      tags: noteTagsSql(),
     })
     .from(wordNotes)
     .leftJoin(entries, eq(entries.headword, wordNotes.headword))
@@ -459,17 +636,23 @@ export async function getNote(userId: string, id: string) {
 /** 筆記頁的內建篩選：全部、單字筆記（有 headword）、自由筆記（沒有 headword） */
 export type NoteKind = "all" | "word" | "free";
 
+/** 這則筆記有符合 condition 的標籤（t 是標籤表的別名） */
+const hasNoteTag = (condition: SQL) => sql`EXISTS (
+    SELECT 1 FROM ${wordNoteTags} wnt JOIN ${noteTags} t ON t.id = wnt.tag_id
+    WHERE wnt.note_id = "word_notes"."id" AND wnt.deleted_at IS NULL AND t.deleted_at IS NULL AND ${condition})`;
+
 /**
- * 筆記庫：單字筆記（不論是否收藏）與自由筆記。q 會比對筆記內容、單字與標題（不分大小寫）；
- * 「最近」依筆記更新時間，「字母」依標題（單字筆記的標題就是單字）
+ * 筆記庫：單字筆記（不論是否收藏）與自由筆記。q 會比對筆記內容、單字、標題與標籤（不分大小寫）；
+ * tag 只留下有這個標籤的筆記（不分大小寫）。「最近」依筆記更新時間，「字母」依標題（單字筆記的標題就是單字）
  */
 export async function listNotes(
   userId: string,
-  options: { q?: string | null; sort?: NoteSort; kind?: NoteKind } = {},
+  options: { q?: string | null; sort?: NoteSort; kind?: NoteKind; tag?: string | null } = {},
 ) {
   const { sort = "recent", kind = "all" } = options;
   const titleSql = sql<string>`coalesce(${wordNotes.title}, ${wordNotes.headword})`;
   const q = options.q?.trim();
+  const tag = options.tag?.trim();
   // LIKE 的 \ % _ 要跳脫，搜尋字串裡的這些字元才會照字面比對
   const pattern = q ? `%${q.replace(/[\\%_]/g, (c) => "\\" + c)}%` : null;
 
@@ -482,6 +665,7 @@ export async function listNotes(
       note: wordNotes.note,
       updatedAt: wordNotes.updatedAt,
       gloss: noteGloss(),
+      tags: noteTagsSql(),
     })
     .from(wordNotes)
     .leftJoin(entries, eq(entries.headword, wordNotes.headword))
@@ -500,8 +684,10 @@ export async function listNotes(
               ),
               ilike(wordNotes.headword, pattern),
               ilike(wordNotes.title, pattern),
+              hasNoteTag(sql`t.name ILIKE ${pattern}`),
             )
           : undefined,
+        tag ? hasNoteTag(sql`lower(t.name) = lower(${tag})`) : undefined,
       ),
     )
     .orderBy(
@@ -509,6 +695,27 @@ export async function listNotes(
         ? [asc(sql`lower(${titleSql})`), asc(wordNotes.id)]
         : [desc(wordNotes.updatedAt), asc(titleSql)]),
     );
+}
+
+/**
+ * 這位使用者所有未刪除的標籤（依名稱排序）與各自的筆記數（不含已刪除的筆記）。
+ * 編輯視窗的標籤選單列出全部；筆記頁的標籤篩選只顯示 count > 0 的
+ */
+export async function listNoteTags(userId: string): Promise<(NoteTag & { count: number })[]> {
+  const rows = await db
+    .select({
+      id: noteTags.id,
+      name: noteTags.name,
+      color: noteTags.color,
+      count: sql<number>`count(${wordNotes.id})::int`,
+    })
+    .from(noteTags)
+    .leftJoin(wordNoteTags, and(eq(wordNoteTags.tagId, noteTags.id), isNull(wordNoteTags.deletedAt)))
+    .leftJoin(wordNotes, and(eq(wordNotes.id, wordNoteTags.noteId), isNull(wordNotes.deletedAt)))
+    .where(activeTag(userId))
+    .groupBy(noteTags.id)
+    .orderBy(asc(sql`lower(${noteTags.name})`));
+  return rows.map((r) => ({ ...toNoteTag(r), count: r.count }));
 }
 /** 目前收藏中的字數 */
 export async function countSavedWords(userId: string): Promise<number> {

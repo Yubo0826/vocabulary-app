@@ -1,11 +1,13 @@
+import { X } from "lucide-react";
 import Link from "next/link";
 import { Suspense } from "react";
 import { FreeNoteDialog } from "@/components/free-note-dialog";
 import { PendingArea, PendingNavLink, PendingNavProvider } from "@/components/pending-nav";
+import { tagColorClass, tagKey } from "@/lib/note-tags";
 import { requireUser } from "@/lib/session";
-import { listNotes, type NoteKind, type NoteSort } from "@/lib/user-data";
+import { listNotes, listNoteTags, type NoteKind, type NoteSort } from "@/lib/user-data";
 import { cn } from "@/lib/utils";
-import { NoteKindLabel, noteDateFormat, noteExcerpt } from "./note-meta";
+import { NoteKindLabel, NoteTagLinks, noteDateFormat, noteExcerpt } from "./note-meta";
 import { NotesSearch } from "./notes-search";
 import { NotesListSkeleton, NotesSkeleton } from "./notes-skeleton";
 
@@ -17,13 +19,14 @@ const KINDS: { value: NoteKind; label: string }[] = [
   { value: "free", label: "自由筆記" },
 ];
 
-type Params = { q: string; sort: NoteSort; kind: NoteKind };
+type Params = { q: string; sort: NoteSort; kind: NoteKind; tag: string };
 
-/** 筆記頁網址：預設值（recent、all、空搜尋）不放進網址 */
-function notesHref({ q, sort, kind }: Params) {
+/** 筆記頁網址：預設值（recent、all、空搜尋、沒選標籤）不放進網址 */
+function notesHref({ q, sort, kind, tag }: Params) {
   const params = new URLSearchParams();
   if (q.trim()) params.set("q", q.trim());
   if (kind !== "all") params.set("kind", kind);
+  if (tag) params.set("tag", tag);
   if (sort !== "recent") params.set("sort", sort);
   const qs = params.toString();
   return qs ? `/notes?${qs}` : "/notes";
@@ -32,11 +35,12 @@ function notesHref({ q, sort, kind }: Params) {
 export default function NotesPage({ searchParams }: PageProps<"/notes">) {
   return (
     <Suspense fallback={<NotesSkeleton />}>
-      {searchParams.then(({ q, sort, kind }) => (
+      {searchParams.then(({ q, sort, kind, tag }) => (
         <NoteList
           q={typeof q === "string" ? q.slice(0, 100) : ""}
           sort={sort === "alpha" ? "alpha" : "recent"}
           kind={kind === "word" || kind === "free" ? kind : "all"}
+          tag={typeof tag === "string" ? tag.trim().slice(0, 100) : ""}
         />
       ))}
     </Suspense>
@@ -44,16 +48,30 @@ export default function NotesPage({ searchParams }: PageProps<"/notes">) {
 }
 
 async function NoteList(params: Params) {
-  const { q, sort, kind } = params;
+  const { q, sort, kind, tag } = params;
   const user = await requireUser("/notes");
-  const notes = await listNotes(user.id, { q, sort, kind });
+  const [notes, tags] = await Promise.all([listNotes(user.id, { q, sort, kind, tag }), listNoteTags(user.id)]);
   const href = (change: Partial<Params>) => notesHref({ ...params, ...change });
+  // 網址上的標籤不在清單裡（例如最後一則筆記拿掉了這個標籤）時也顯示成選中，才有地方取消
+  // 篩選只列有筆記在用的標籤；網址上的標籤不在其中（例如剛被拿掉）時也顯示成選中，才有地方取消
+  const usedTags = tags.filter((t) => t.count > 0);
+  const matched = tag ? tags.find((t) => tagKey(t.name) === tagKey(tag)) : undefined;
+  const activeTag = tag ? (matched?.name ?? tag) : "";
+  const tagChips =
+    activeTag && !usedTags.some((t) => t.name === activeTag)
+      ? [{ id: "", name: activeTag, color: matched?.color ?? "gray", count: 0 }, ...usedTags]
+      : usedTags;
 
   const chipBase = "group inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-sm hover:no-underline";
   const chip = cn(chipBase, "bg-accent text-accent-foreground hover:bg-accent/70");
   const chipOn = cn(chipBase, "bg-primary font-semibold text-primary-foreground hover:bg-primary");
 
-  const empty = q.trim()
+  // 標籤篩選用標籤自己的顏色；選中的加外框
+  const tagChipBase = "inline-flex items-center gap-1 rounded-md px-2 py-0.5 text-sm hover:no-underline hover:brightness-95 dark:hover:brightness-125";
+  const tagChip = (color: string) => cn(tagChipBase, tagColorClass(color));
+  const tagChipOn = (color: string) => cn(tagChipBase, tagColorClass(color), "font-semibold ring-2 ring-foreground/50");
+
+  const empty = q.trim() || tag
     ? "沒有符合的筆記。"
     : kind === "free"
       ? "還沒有自由筆記。按右上角的「新增筆記」，可以寫文法、片語等不屬於單一單字的筆記。"
@@ -69,7 +87,7 @@ async function NoteList(params: Params) {
           <FreeNoteDialog />
         </div>
 
-        <NotesSearch q={q} sort={sort} kind={kind} />
+        <NotesSearch q={q} sort={sort} kind={kind} tag={activeTag} />
 
         <nav className="flex flex-wrap gap-2" aria-label="依筆記類型篩選">
           {KINDS.map((k) => (
@@ -86,6 +104,41 @@ async function NoteList(params: Params) {
             </PendingNavLink>
           ))}
         </nav>
+
+        {/* 標籤篩選：一次選一個；再按一次選中的標籤就取消 */}
+        {tagChips.length > 0 && (
+          <nav className="flex flex-wrap gap-1.5" aria-label="依標籤篩選">
+            {tagChips.map((t) =>
+              t.name === activeTag ? (
+                <PendingNavLink
+                  key={t.name}
+                  href={href({ tag: "" })}
+                  param="tag"
+                  value=""
+                  active={false}
+                  className={tagChipOn(t.color)}
+                  activeClassName={tagChip(t.color)}
+                >
+                  {t.name}
+                  <X className="size-3.5" aria-label="取消篩選" />
+                </PendingNavLink>
+              ) : (
+                <PendingNavLink
+                  key={t.name}
+                  href={href({ tag: t.name })}
+                  param="tag"
+                  value={t.name}
+                  active={false}
+                  className={tagChip(t.color)}
+                  activeClassName={tagChipOn(t.color)}
+                >
+                  {t.name}
+                  <span className="text-xs tabular-nums opacity-60">{t.count}</span>
+                </PendingNavLink>
+              ),
+            )}
+          </nav>
+        )}
 
         <PendingArea fallback={<NotesListSkeleton />}>
           <div className="flex flex-col gap-4">
@@ -147,6 +200,7 @@ async function NoteList(params: Params) {
                         {n.gloss && <span className="min-w-0 flex-1 truncate text-sm font-normal text-muted-foreground">{n.gloss}</span>}
                       </h2>
                       {excerpt && <p className="line-clamp-2 text-sm text-pretty text-muted-foreground">{excerpt}</p>}
+                      <NoteTagLinks tags={n.tags} className="text-xs" />
                     </li>
                   );
                 })}

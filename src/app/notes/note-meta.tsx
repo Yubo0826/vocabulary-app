@@ -1,4 +1,7 @@
+import Link from "next/link";
+import { TagChip } from "@/components/tag-chip";
 import { noteToPlainText } from "@/lib/note";
+import type { NoteTag } from "@/lib/note-tags";
 import { cn } from "@/lib/utils";
 
 export const noteDateFormat = new Intl.DateTimeFormat("zh-TW", {
@@ -18,6 +21,31 @@ export function NoteKindLabel({ word }: { word: boolean }) {
       )}
     >
       {word ? "單字筆記" : "自由筆記"}
+    </span>
+  );
+}
+
+/** 筆記頁依標籤篩選的網址 */
+export const noteTagHref = (tag: string) => `/notes?tag=${encodeURIComponent(tag)}`;
+
+/**
+ * 筆記的標籤（#文法 #片語），點了到筆記頁篩選這個標籤。
+ * 清單卡片整張是連結（stretched link），標籤要 relative z-10 才點得到自己
+ */
+export function NoteTagLinks({ tags, className }: { tags: NoteTag[]; className?: string }) {
+  if (tags.length === 0) return null;
+  return (
+    <span className={cn("flex min-w-0 flex-wrap gap-1.5", className)}>
+      {tags.map((t) => (
+        <Link
+          key={t.id}
+          href={noteTagHref(t.name)}
+          title={`篩選「${t.name}」`}
+          className="relative z-10 flex max-w-full rounded-md hover:no-underline hover:brightness-95 dark:hover:brightness-125"
+        >
+          <TagChip name={t.name} color={t.color} />
+        </Link>
+      ))}
     </span>
   );
 }

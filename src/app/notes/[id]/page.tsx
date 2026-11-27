@@ -3,15 +3,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { Suspense } from "react";
-import { FreeNoteDialog } from "@/components/free-note-dialog";
 import { NoteContent } from "@/components/note-content";
-import { NoteDialog } from "@/components/note-dialog";
 import { Skeleton } from "@/components/ui/skeleton";
 import { requireUser } from "@/lib/session";
 import { wordHref } from "@/lib/urls";
 import { getNote } from "@/lib/user-data";
 import { isUuid } from "@/lib/uuid";
-import { NoteKindLabel, noteDateFormat } from "../note-meta";
+import { NoteKindLabel, NoteTagLinks, noteDateFormat } from "../note-meta";
+import { NoteActions } from "./note-actions";
 
 export const metadata: Metadata = { title: "筆記" };
 
@@ -44,14 +43,11 @@ async function NoteBody({ id }: { id: string }) {
             更新於 <time dateTime={note.updatedAt.toISOString()}>{noteDateFormat.format(note.updatedAt)}</time>
           </span>
           <span className="-my-2 ml-auto">
-            {note.headword ? (
-              <NoteDialog headword={note.headword} note={note.note} compact={{ display: note.display }} />
-            ) : (
-              <FreeNoteDialog note={{ id: note.id, title: note.title ?? "", note: note.note }} />
-            )}
+            <NoteActions note={note} />
           </span>
         </div>
         <h1 className="text-2xl leading-snug font-semibold wrap-anywhere">{note.display}</h1>
+        <NoteTagLinks tags={note.tags} className="text-sm" />
         {note.headword && (
           <p className="flex flex-wrap items-baseline gap-x-3 gap-y-1 text-sm text-muted-foreground">
             {note.gloss && <span>{note.gloss}</span>}

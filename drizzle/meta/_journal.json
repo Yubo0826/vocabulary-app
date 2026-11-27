@@ -85,6 +85,13 @@
       "when": 1795671203847,
       "tag": "0011_free_notes",
       "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "7",
+      "when": 1795744779213,
+      "tag": "0012_note_tags",
+      "breakpoints": true
     }
   ]
 }

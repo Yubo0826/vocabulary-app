@@ -8,6 +8,7 @@ import { refresh } from "next/cache";
 import { summarizeWords, type WordSummary } from "@/lib/dictionary";
 import { normalizeHeadword } from "@/lib/headword";
 import * as history from "@/lib/lookup-history";
+import { isTagColor, type NoteTag, type TagColor } from "@/lib/note-tags";
 import * as review from "@/lib/review";
 import { getReviewState, type ReviewState } from "@/lib/review-session";
 import { getCurrentUser } from "@/lib/session";
@@ -62,19 +63,65 @@ export async function importWordsAction(text: unknown, wordbookId: unknown): Pro
   return run((userId) => data.importWords(userId, str(text, "text"), uuid(wordbookId, "wordbook")));
 }
 
-/** 儲存筆記（和收藏無關：沒收藏也能寫；空白＝清除筆記） */
-export async function saveNoteAction(headword: unknown, note: unknown): Promise<ActionResult> {
-  return run((userId) => data.setNote(userId, str(headword, "headword"), note == null ? null : str(note, "筆記")));
+/** 筆記的標籤 id 清單；數量上限在 user-data 檢查，這裡先擋掉格式不對或過大的輸入 */
+function tagList(value: unknown): string[] {
+  if (!Array.isArray(value) || value.length > 50 || !value.every(isUuid)) {
+    throw new data.ValidationError("標籤格式錯誤");
+  }
+  return value;
 }
 
-/** 新增自由筆記（筆記頁的「新增筆記」）；標題必填 */
-export async function createFreeNoteAction(title: unknown, note: unknown): Promise<ActionResult<{ id: string }>> {
-  return run((userId) => data.createFreeNote(userId, { title: str(title, "標題"), note: str(note, "筆記") }));
+/** 儲存筆記（和收藏無關：沒收藏也能寫；空白＝清除筆記）。tags 省略＝不動標籤 */
+export async function saveNoteAction(headword: unknown, note: unknown, tags?: unknown): Promise<ActionResult> {
+  return run((userId) =>
+    data.setNote(
+      userId,
+      str(headword, "headword"),
+      note == null ? null : str(note, "筆記"),
+      tags === undefined ? undefined : tagList(tags),
+    ),
+  );
+}
+
+/** 新增自由筆記（筆記頁的「新增筆記」）；標題必填，標籤可以不填 */
+export async function createFreeNoteAction(title: unknown, note: unknown, tags: unknown): Promise<ActionResult<{ id: string }>> {
+  return run((userId) =>
+    data.createFreeNote(userId, { title: str(title, "標題"), note: str(note, "筆記"), tags: tagList(tags) }),
+  );
 }
 
 /** 修改自由筆記 */
-export async function updateFreeNoteAction(id: unknown, title: unknown, note: unknown): Promise<ActionResult> {
-  return run((userId) => data.updateFreeNote(userId, uuid(id, "note"), { title: str(title, "標題"), note: str(note, "筆記") }));
+export async function updateFreeNoteAction(id: unknown, title: unknown, note: unknown, tags: unknown): Promise<ActionResult> {
+  return run((userId) =>
+    data.updateFreeNote(userId, uuid(id, "note"), { title: str(title, "標題"), note: str(note, "筆記"), tags: tagList(tags) }),
+  );
+}
+
+/** 所有標籤（編輯視窗的標籤選單打開時取得）；只讀，不重新渲染頁面 */
+export async function listNoteTagsAction(): Promise<ActionResult<(NoteTag & { count: number })[]>> {
+  return run((userId) => data.listNoteTags(userId), { refresh: false });
+}
+
+/** 建立標籤（標籤選單的「建立」）；同名已存在就回傳那個。要等筆記儲存才會掛到筆記上，所以不重新渲染 */
+export async function createNoteTagAction(name: unknown): Promise<ActionResult<NoteTag>> {
+  return run((userId) => data.createNoteTag(userId, str(name, "標籤")), { refresh: false });
+}
+
+/** 改標籤名稱或顏色（所有筆記上的這個標籤一起變） */
+export async function updateNoteTagAction(id: unknown, change: unknown): Promise<ActionResult<NoteTag>> {
+  return run((userId) => {
+    const c = (change ?? {}) as { name?: unknown; color?: unknown };
+    if (c.color !== undefined && !isTagColor(c.color)) throw new data.ValidationError("顏色格式錯誤");
+    return data.updateNoteTag(userId, uuid(id, "tag"), {
+      name: c.name === undefined ? undefined : str(c.name, "標籤"),
+      color: c.color as TagColor | undefined,
+    });
+  });
+}
+
+/** 刪除標籤：所有筆記上的這個標籤一併拿掉 */
+export async function deleteNoteTagAction(id: unknown): Promise<ActionResult> {
+  return run((userId) => data.deleteNoteTag(userId, uuid(id, "tag")));
 }
 
 /** 刪除自由筆記（軟刪除） */

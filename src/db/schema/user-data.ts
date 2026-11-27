@@ -214,6 +214,48 @@ export const wordNotes = pgTable(
 );
 
 /**
+ * 筆記標籤（只給筆記用，和單字本無關），在筆記編輯視窗的標籤選單裡建立、改名、改顏色、刪除。
+ * 未刪除的標籤名稱不分大小寫唯一（Grammar 和 grammar 是同一個標籤）；刪除是軟刪除，同名可以再建新的。
+ * color 是 lib/note-tags.ts 的 TAG_COLORS 其中之一，建立時自動輪流配色。
+ */
+export const noteTags = pgTable(
+  "note_tags",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    userId: userIdColumn(),
+    name: text("name").notNull(),
+    color: text("color").notNull().default("gray"),
+    ...syncColumns,
+  },
+  (t) => [
+    uniqueIndex("note_tags_user_name_idx")
+      .on(t.userId, sql`lower(${t.name})`)
+      .where(sql`${t.deletedAt} IS NULL`),
+    index("note_tags_user_updated_idx").on(t.userId, t.updatedAt),
+  ],
+);
+
+/** 筆記 ↔ 標籤（多對多：一則筆記可以有多個標籤）；拿掉標籤是軟刪除，再加回來清掉 deletedAt */
+export const wordNoteTags = pgTable(
+  "word_note_tags",
+  {
+    noteId: uuid("note_id")
+      .notNull()
+      .references(() => wordNotes.id, { onDelete: "cascade" }),
+    tagId: uuid("tag_id")
+      .notNull()
+      .references(() => noteTags.id, { onDelete: "cascade" }),
+    userId: userIdColumn(), // 冗餘存一份，同步查詢與權限檢查較簡單
+    ...syncColumns,
+  },
+  (t) => [
+    primaryKey({ columns: [t.noteId, t.tagId] }),
+    index("word_note_tags_tag_idx").on(t.tagId),
+    index("word_note_tags_user_updated_idx").on(t.userId, t.updatedAt),
+  ],
+);
+
+/**
  * 查字歷史：打開過的單字頁，一人一字一筆；再查一次只更新 viewedAt。
  * 「從歷史移除」是軟刪除（deletedAt），之後再查到會清掉 deletedAt 重新出現。
  */

@@ -53,7 +53,7 @@ export async function NoteButton({ headword }: { headword: string }) {
       </Button>
     );
   }
-  return <NoteDialog headword={headword} note={state.note} />;
+  return <NoteDialog headword={headword} note={state.note} tags={state.noteTags} />;
 }
 
 /** 單字標題列最右的熟悉度圓點；只有收藏的字才有（熟悉度是字卡的排程），未登入或沒收藏時不顯示。讀 session，需放在 Suspense 內 */
